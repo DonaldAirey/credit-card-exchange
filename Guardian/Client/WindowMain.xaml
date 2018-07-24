@@ -1,0 +1,828 @@
+﻿<NavigationWindow x:Class="FluidTrade.Guardian.WindowMain"
+									Height = "{Binding Source={StaticResource guardianSettings}, Path=Default.MainHeight, Mode=TwoWay}"
+									Left = "{Binding Source={StaticResource guardianSettings}, Path=Default.MainLeft, Mode=TwoWay}"
+									Icon="Resources\Application.ico"
+									Loaded="OnLoaded"
+									ResizeMode="CanResizeWithGrip"
+									Top = "{Binding Source={StaticResource guardianSettings}, Path=Default.MainTop, Mode=TwoWay}"
+									Title="{Binding Source={StaticResource guardianSettings}, Path=Default.ApplicationName}"
+									Width = "{Binding Source={StaticResource guardianSettings}, Path=Default.MainWidth, Mode=TwoWay}"
+									MinHeight="200"
+									WindowState = "{Binding Source={StaticResource guardianSettings}, Path=Default.MainWindowState, Mode=TwoWay}"
+									xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+									xmlns:fluidtrade="http://schemas.fluidtrade.com/winfx/2006/xaml/fluidtrade/presentation"
+									xmlns:guardian="http://schemas.fluidtrade.com/winfx/2006/xaml/guardian/presentation"
+									xmlns:src="clr-namespace:FluidTrade.Guardian"
+									xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Classic"
+									xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<!-- Resources -->
+	<NavigationWindow.Resources>
+		<Style TargetType="TextBlock">
+			<Setter Property="FontFamily" Value="Segoe UI"/>
+		</Style>
+	</NavigationWindow.Resources>
+	<!-- Command Bindings -->
+	<NavigationWindow.CommandBindings>
+		<CommandBinding Command="guardian:GuardianCommands.SelectAddressBar"
+										Executed="OnAddressBar" />
+		<CommandBinding Command="ApplicationCommands.Close"
+										Executed="OnClose" />
+		<CommandBinding Command="guardian:GuardianCommands.Find"
+										Executed="OnFind" />	
+		<CommandBinding Command="FluidTradeCommands.Login"
+										Executed="OnLogin" />
+		<CommandBinding Command="FluidTradeCommands.MaximizeRestore"
+										Executed="OnMaximizeRestore" />
+		<CommandBinding Command="FluidTradeCommands.ResetSettings"
+										Executed="OnResetSettings" />
+		<CommandBinding Command="FluidTradeCommands.ResyncData"
+										Executed="OnResyncData" />
+		<CommandBinding Command="FluidTradeCommands.SetFrame"
+										Executed="OnSetFrame" />
+		<CommandBinding Command="FluidTradeCommands.SetIsNavigationPaneVisible"
+										Executed="OnSetIsNavigationPaneVisible" />
+		<CommandBinding Command="guardian:GuardianCommands.HelpAbout"
+										Executed="OnHelpAbout" />
+
+
+	</NavigationWindow.CommandBindings>
+	<!-- Template -->
+	<NavigationWindow.Template>
+		<ControlTemplate TargetType="{x:Type NavigationWindow}">
+			<ControlTemplate.Resources>
+				<!-- Brush used to fill the navigation buttons -->
+				<LinearGradientBrush x:Key="NavigationButtonFillBrush" StartPoint="0.5,0.0" EndPoint="0.5,1.0">
+					<GradientBrush.GradientStops>
+						<GradientStopCollection>
+							<GradientStop Color="#FFFFFF" Offset="0.0"/>
+							<GradientStop Color="#CCD4E9" Offset="0.1"/>
+							<GradientStop Color="#4881D2" Offset="0.47"/>
+							<GradientStop Color="#001A5A" Offset="0.47"/>
+							<GradientStop Color="#007BD6" Offset="0.70"/>
+							<GradientStop Color="#54DAFF" Offset="0.85"/>
+							<GradientStop Color="#86FFFF" Offset="0.95"/>
+							<GradientStop Color="#FFFFFF" Offset="1.0"/>
+						</GradientStopCollection>
+					</GradientBrush.GradientStops>
+				</LinearGradientBrush>
+				<!-- Brush used to highlight the navigation button when the mouse is over it. -->
+				<LinearGradientBrush x:Key="NavigationButtonMouseOverBrush" StartPoint="0.5,0.0" EndPoint="0.5,1.0">
+					<GradientBrush.GradientStops>
+						<GradientStopCollection>
+							<GradientStop Color="#FFFFFF" Offset="0.0"/>
+							<GradientStop Color="#DFEDF9" Offset="0.1"/>
+							<GradientStop Color="#3086E1" Offset="0.47"/>
+							<GradientStop Color="#003B91" Offset="0.47"/>
+							<GradientStop Color="#1793EF" Offset="0.70"/>
+							<GradientStop Color="#5AD4FF" Offset="0.85"/>
+							<GradientStop Color="#BDFFFF" Offset="0.95"/>
+							<GradientStop Color="#FFFFFF" Offset="1.0"/>
+						</GradientStopCollection>
+					</GradientBrush.GradientStops>
+				</LinearGradientBrush>
+				<!-- Brush used to highlight the navigation button when pressed. -->
+				<LinearGradientBrush x:Key="NavigationButtonPressedBrush" StartPoint="0.5,0.0" EndPoint="0.5,1.0">
+					<GradientBrush.GradientStops>
+						<GradientStopCollection>
+							<GradientStop Color="#C0D2F5" Offset="0.0"/>
+							<GradientStop Color="#5E7A9C" Offset="0.47"/>
+							<GradientStop Color="#00062D" Offset="0.47"/>
+							<GradientStop Color="#005F9F" Offset="0.70"/>
+							<GradientStop Color="#1FA4E2" Offset="0.85"/>
+							<GradientStop Color="#61DAFF" Offset="0.95"/>
+							<GradientStop Color="#48CFFF" Offset="1.0"/>
+						</GradientStopCollection>
+					</GradientBrush.GradientStops>
+				</LinearGradientBrush>
+				<!-- Brush used to highlight the buttons in the Path box. -->
+				<LinearGradientBrush x:Key="NavigationPathButtonMouseOverBrush" StartPoint="0.5,0.0" EndPoint="0.5,1.0">
+					<GradientBrush.GradientStops>
+						<GradientStopCollection>
+							<GradientStop Color="#D3EDFB" Offset="0.0"/>
+							<GradientStop Color="#C7E9FA" Offset="0.49"/>
+							<GradientStop Color="#A2DAF7" Offset="0.5"/>
+							<GradientStop Color="#89D0F5" Offset="1.0"/>
+						</GradientStopCollection>
+					</GradientBrush.GradientStops>
+				</LinearGradientBrush>
+				<!-- Brush used to highlight the navigation path button when the mouse is over it. -->
+				<LinearGradientBrush x:Key="NavigationPathButtonPressedBrush" StartPoint="0.5,0.0" EndPoint="0.5,1.0">
+					<GradientBrush.GradientStops>
+						<GradientStopCollection>
+							<GradientStop Color="#E5F4FC" Offset="0.0"/>
+							<GradientStop Color="#C4E5F6" Offset="0.49"/>
+							<GradientStop Color="#98D1EF" Offset="0.50"/>
+							<GradientStop Color="#68B3DB" Offset="1.00"/>
+						</GradientStopCollection>
+					</GradientBrush.GradientStops>
+				</LinearGradientBrush>
+				<!-- Brush used to for a disabled navigation button. -->
+				<LinearGradientBrush x:Key="NavigationButtonDisabledBrush" StartPoint="0.5,0.0" EndPoint="0.5,1.0" Opacity=".75">
+					<GradientBrush.GradientStops>
+						<GradientStopCollection>
+							<GradientStop Color="#FFFFFFFF" Offset="0"/>
+							<GradientStop Color="#AADDDDDD" Offset="0.5"/>
+							<GradientStop Color="#AA888888" Offset="0.5"/>
+							<GradientStop Color="#33E3E9EF" Offset="1.0"/>
+						</GradientStopCollection>
+					</GradientBrush.GradientStops>
+				</LinearGradientBrush>
+				<!-- Brush used to fill the arrow for a disabled navigation button. -->
+				<LinearGradientBrush x:Key="NavigationArrowFillDisabledBrush" StartPoint="0,0" EndPoint="0,1">
+					<LinearGradientBrush.GradientStops>
+						<GradientStopCollection>
+							<GradientStop Color="#FFEFF3F4" Offset="0"/>
+							<GradientStop Color="#AAE7F0F2" Offset="0.4"/>
+							<GradientStop Color="#AADDE3E8" Offset="0.4"/>
+							<GradientStop Color="#33C4CCD1" Offset="1.0"/>
+						</GradientStopCollection>
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+				<!-- Brush used to for a draw the outline of the arrow for a disabled navigation button. -->
+				<LinearGradientBrush x:Key="NavigationArrowStrokeDisabledBrush" StartPoint="0,0" EndPoint="0,1">
+					<LinearGradientBrush.GradientStops>
+						<GradientStop Color="#00FFFFFF" Offset="0"/>
+						<GradientStop Color="#00FFFFFF" Offset="0.5"/>
+						<GradientStop Color="#BEC9D1" Offset="0.5"/>
+						<GradientStop Color="#BEC9D1" Offset="1"/>
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+				<!-- Brush used to for a draw the outline of the button. -->
+				<LinearGradientBrush x:Key="NavigationButtonStrokeBrush" StartPoint="0,0" EndPoint="0,1">
+					<GradientBrush.GradientStops>
+						<GradientStopCollection>
+							<GradientStop Color="#88959D" Offset="0"/>
+							<GradientStop Color="#8795A2" Offset="0.5"/>
+							<GradientStop Color="#7C8898" Offset="0.5"/>
+							<GradientStop Color="#08174C" Offset="1"/>
+						</GradientStopCollection>
+					</GradientBrush.GradientStops>
+				</LinearGradientBrush>
+				<!-- Brush used to for a draw the outline of the arrows in the navigation button. -->
+				<LinearGradientBrush x:Key="NavigationArrowStrokeBrush" StartPoint="0,0" EndPoint="0,1">
+					<LinearGradientBrush.GradientStops>
+						<GradientStop Color="#8AB1FB" Offset="0"/>
+						<GradientStop Color="#002874" Offset="1"/>
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+				<!-- Brush used to fill the arrows in the navigation button. -->
+				<LinearGradientBrush x:Key="NavigationArrowFillBrush" StartPoint="0,0" EndPoint="0,1">
+					<LinearGradientBrush.GradientStops>
+						<GradientStopCollection>
+							<GradientStop Color="#FFFFFF" Offset="0.5"/>
+							<GradientStop Color="#EEEEEE" Offset="0.5"/>
+							<GradientStop Color="#B0B0B0" Offset="1"/>
+						</GradientStopCollection>
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+				<!-- Brush used to fill the arrow that opens up the menu for navigating. -->
+				<LinearGradientBrush x:Key="NavigationMenuArrowFillBrush" StartPoint="0,0" EndPoint="0,1">
+					<LinearGradientBrush.GradientStops>
+						<GradientStopCollection>
+							<GradientStop Color="#32B5DA" Offset="0"/>
+							<GradientStop Color="#325699" Offset="1"/>
+						</GradientStopCollection>
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+				<!-- Brush used highlight the currently selected menu item in the list of navigated pages. -->
+				<SolidColorBrush x:Key="CurrentNavigationMenuItemBrush" Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"
+				 Opacity="0.25"/>
+				<!-- Brushes for the address bar and search box -->
+				<LinearGradientBrush x:Key="NavigationBarOuterBorder" StartPoint="0.5,0.0" EndPoint="0.5,1.0">
+					<LinearGradientBrush.GradientStops>
+						<GradientStop Color="#77E5ECF2" Offset="0"/>
+						<GradientStop Color="#77E7ECF2" Offset="1"/>
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+				<LinearGradientBrush x:Key="NavigationBarMiddleBorder" StartPoint="0.5,0.0" EndPoint="0.5,1.0">
+					<LinearGradientBrush.GradientStops>
+						<GradientStop Color="#FF5A5D5F" Offset="0"/>
+						<GradientStop Color="#77B5BABE" Offset="1"/>
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+				<SolidColorBrush x:Key="NavigationBarInnerBorder" Color="#F1F1F1" />
+				<SolidColorBrush x:Key="NavigationInactiveForeground" Color="#575757" />
+				<SolidColorBrush x:Key="NavigationInactiveBackground" Color="#CCEFF3F7" />
+				<SolidColorBrush x:Key="NavigationActiveBackground" Color="#FFFFFFFF" />
+				<SolidColorBrush x:Key="NavigationActiveForeground" Color="#FF000000" />
+				<SolidColorBrush x:Key="NavigationHoverBackground" Color="#EEF7FAFC" />
+				<!-- Navigation Menu Style -->
+				<Style x:Key="NavigationMenuStyle" TargetType="{x:Type Menu}">
+					<Setter Property="ItemsPanel">
+						<Setter.Value>
+							<ItemsPanelTemplate>
+								<DockPanel/>
+							</ItemsPanelTemplate>
+						</Setter.Value>
+					</Setter>
+					<Setter Property="OverridesDefaultStyle" Value="true"/>
+					<Setter Property="FocusManager.IsFocusScope" Value="false"/>
+					<Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
+					<Setter Property="IsMainMenu" Value="false"/>
+					<Setter Property="Template">
+						<Setter.Value>
+							<ControlTemplate TargetType="{x:Type Menu}">
+								<ItemsPresenter/>
+							</ControlTemplate>
+						</Setter.Value>
+					</Setter>
+				</Style>
+				<!-- Menu item for selecting the previously navigated pages. -->
+				<Style x:Key="NavigationMenuItemStyle" TargetType="{x:Type MenuItem}">
+					<Setter Property="OverridesDefaultStyle" Value="true"/>
+					<Setter Property="Template">
+						<Setter.Value>
+							<ControlTemplate TargetType="{x:Type MenuItem}">
+								<Grid>
+									<!-- Describes how the Popup is displayed when the Navigate Menu item is selected. -->
+									<Popup x:Name="PART_Popup" AllowsTransparency="true" Placement="Bottom" VerticalOffset="4" HorizontalOffset="-30"
+												 IsOpen="{Binding Path=(MenuItem.IsSubmenuOpen),RelativeSource={RelativeSource TemplatedParent}}"
+												 Focusable="false" PopupAnimation="{DynamicResource {x:Static SystemParameters.MenuPopupAnimationKey}}">
+										<theme:SystemDropShadowChrome Name="ChromeShadow" Color="Transparent">
+											<Border Name="SubMenuBorder" Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}"
+															BorderThickness="1" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"
+															Padding="1">
+												<ScrollViewer CanContentScroll="true"
+																			Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type FrameworkElement}, ResourceId=MenuScrollViewer}}">
+													<ItemsPresenter Margin="2" KeyboardNavigation.TabNavigation="Cycle" KeyboardNavigation.DirectionalNavigation="Cycle"/>
+												</ScrollViewer>
+											</Border>
+										</theme:SystemDropShadowChrome>
+									</Popup>
+									<Grid x:Name="Panel" Width="26" Background="Transparent" HorizontalAlignment="Right" >
+										<!-- Highlighted border around the 'Down' arrow. -->
+										<Border SnapsToDevicePixels="True" Visibility="Hidden" Name="HighlightBorder" BorderThickness="1,1,1,1"
+														BorderBrush="#B0B5BACE" CornerRadius="2">
+											<Border.Background>
+												<LinearGradientBrush StartPoint="0,0" EndPoint="0,1" >
+													<LinearGradientBrush.GradientStops>
+														<GradientStop Color="#20DDDDDD" Offset="0" />
+														<GradientStop Color="#80FFFFFF" Offset="1" />
+													</LinearGradientBrush.GradientStops>
+												</LinearGradientBrush>
+											</Border.Background>
+											<Border BorderBrush="#A0FFFFFF" CornerRadius="1.5" BorderThickness="1" />
+										</Border>
+										<!-- 'Down' Arrow for opening up the list of navigated pages. -->
+										<Path x:Name="Arrow" SnapsToDevicePixels="false" HorizontalAlignment="Right" VerticalAlignment="Center"
+													Margin="{TemplateBinding Padding}" Fill="{StaticResource NavigationMenuArrowFillBrush}" Stroke="#042858"
+													StrokeThickness="1" StrokeLineJoin="Round" Data="M 0 0 L 4.5 5 L 9 0 Z"/>
+									</Grid>
+								</Grid>
+								<ControlTemplate.Triggers>
+									<Trigger Property="IsHighlighted" Value="true">
+										<Setter TargetName="HighlightBorder" Property="Visibility" Value="Visible"/>
+									</Trigger>
+									<Trigger Property="IsEnabled" Value="false">
+										<Setter TargetName="Arrow" Property="Fill" Value="#D1E1F1"/>
+										<Setter TargetName="Arrow" Property="Stroke" Value="#95A9BD"/>
+									</Trigger>
+									<Trigger SourceName="PART_Popup" Property="Popup.HasDropShadow" Value="true">
+										<Setter TargetName="ChromeShadow" Property="Margin" Value="0,0,5,5"/>
+										<Setter TargetName="ChromeShadow" Property="SnapsToDevicePixels" Value="true"/>
+										<Setter TargetName="ChromeShadow" Property="Color" Value="#71000000"/>
+									</Trigger>
+								</ControlTemplate.Triggers>
+							</ControlTemplate>
+						</Setter.Value>
+					</Setter>
+				</Style>
+				<!-- Style used to control the appearance of each of the navigated pages listed in the navigation menu. -->
+				<Style x:Key="NavigationMenuItemContainerStyle" TargetType="{x:Type MenuItem}">
+					<Style.Resources>
+						<SolidColorBrush x:Key="CurrentItemStrokeBrush"  Color="#CDD3E6"/>
+						<SolidColorBrush x:Key="CurrentItemFillBrush"  Color="#E6EFF4"/>
+						<SolidColorBrush x:Key="SelectedItemStrokeBrush"  Color="#A8D8EB"/>
+						<LinearGradientBrush  x:Key="SelectedItemFillBrush">
+							<GradientStop Color="#EBF1F4" Offset="0"/>
+							<GradientStop Color="#DAEBF3" Offset="1"/>
+						</LinearGradientBrush>
+						<LinearGradientBrush x:Key="ArrowFillBrush">
+							<GradientStop Color="#1EA5FF" Offset="0"/>
+							<GradientStop Color="#1E1E78" Offset="1"/>
+						</LinearGradientBrush>
+					</Style.Resources>
+					<Setter Property="OverridesDefaultStyle" Value="true"/>
+					<Setter Property="Header" Value="{Binding Path=(JournalEntry.Name)}"/>
+					<Setter Property="Command" Value="NavigationCommands.NavigateJournal"/>
+					<Setter Property="CommandTarget" Value="{Binding RelativeSource={RelativeSource Self}}"/>
+					<Setter Property="CommandParameter" Value="{Binding RelativeSource={RelativeSource Self}}"/>
+					<Setter Property="JournalEntryUnifiedViewConverter.JournalEntryPosition"
+									Value="{Binding (JournalEntryUnifiedViewConverter.JournalEntryPosition)}"/>
+					<Setter Property="Template">
+						<Setter.Value>
+							<ControlTemplate TargetType="{x:Type MenuItem}">
+								<Grid Name="Panel" Background="Transparent" SnapsToDevicePixels="true">
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="Auto" />
+										<ColumnDefinition Width="Auto" />
+										<ColumnDefinition Width="*" />
+									</Grid.ColumnDefinitions>
+									<Path Name="Glyph" SnapsToDevicePixels="false" Margin="7,5" Width="10" Height="10" HorizontalAlignment="Left"
+												StrokeStartLineCap="Triangle" StrokeEndLineCap="Triangle" StrokeThickness="2"
+												Stroke="#0F0F6F" Grid.Column="0" />
+									<Separator Margin="0,-1,1,-1" Grid.Column="1">
+										<Separator.Style>
+											<Style TargetType="{x:Type Separator}" BasedOn="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}"/>
+										</Separator.Style>
+									</Separator>
+									<ContentPresenter ContentSource="Header" Margin="0,5,21,5" Grid.Column="2" />
+									<Border Name="Highlight" BorderThickness="1" CornerRadius="1.5" VerticalAlignment="Stretch"
+													HorizontalAlignment="Stretch" Grid.Column="0" Grid.ColumnSpan="3" Panel.ZIndex="-1" />
+								</Grid>
+								<ControlTemplate.Triggers>
+									<Trigger Property="JournalEntryUnifiedViewConverter.JournalEntryPosition" Value="Current">
+										<Setter TargetName="Glyph" Property="Data" Value="M 0,5 L 2.5,8 L 7,3 "/>
+										<Setter TargetName="Glyph" Property="FlowDirection" Value="LeftToRight"/>
+										<Setter TargetName="Glyph" Property="StrokeLineJoin" Value="Miter"/>
+										<Setter TargetName="Glyph" Property="StrokeThickness" Value="1"/>
+										<Setter Property="FontWeight" Value="Bold"/>
+										<Setter TargetName="Highlight" Property="BorderBrush" Value="{StaticResource CurrentItemStrokeBrush}"/>
+										<Setter TargetName="Highlight" Property="Background" Value="{StaticResource CurrentItemFillBrush}"/>
+									</Trigger>
+									<Trigger Property="IsHighlighted" Value="true">
+										<Setter TargetName="Highlight" Property="BorderBrush" Value="{StaticResource SelectedItemStrokeBrush}"/>
+										<Setter TargetName="Highlight" Property="Background" Value="{StaticResource SelectedItemFillBrush}"/>
+									</Trigger>
+									<MultiTrigger>
+										<MultiTrigger.Conditions>
+											<Condition Property="MenuItem.IsHighlighted" Value="true"/>
+											<Condition Property="JournalEntryUnifiedViewConverter.JournalEntryPosition" Value="Forward"/>
+										</MultiTrigger.Conditions>
+										<Setter TargetName="Glyph" Property="Stroke">
+											<Setter.Value>
+												<LinearGradientBrush StartPoint="0.5, 0.0" EndPoint="0.5, 1.0">
+													<LinearGradientBrush.GradientStops>
+														<GradientStopCollection>
+															<GradientStop Color="#0F9FFF" Offset="0"/>
+															<GradientStop Color="#0F0F6F" Offset="1"/>
+														</GradientStopCollection>
+													</LinearGradientBrush.GradientStops>
+												</LinearGradientBrush>
+											</Setter.Value>
+										</Setter>
+										<Setter TargetName="Glyph" Property="Data" Value="M 1,5 L 7,5 M 5,1 L 9,5 L 5,9"/>
+									</MultiTrigger>
+									<MultiTrigger>
+										<MultiTrigger.Conditions>
+											<Condition Property="MenuItem.IsHighlighted" Value="true"/>
+											<Condition Property="JournalEntryUnifiedViewConverter.JournalEntryPosition" Value="Back"/>
+										</MultiTrigger.Conditions>
+										<Setter TargetName="Glyph" Property="Data" Value="M 9,5 L 3,5 M 5,1 L 1,5 L 5,9"/>
+										<Setter TargetName="Glyph" Property="Stroke">
+											<Setter.Value>
+												<LinearGradientBrush StartPoint="0.5, 0.0" EndPoint="0.5, 1.0">
+													<LinearGradientBrush.GradientStops>
+														<GradientStopCollection>
+															<GradientStop Color="#0F9FFF" Offset="0"/>
+															<GradientStop Color="#0F0F6F" Offset="1"/>
+														</GradientStopCollection>
+														</LinearGradientBrush.GradientStops>
+												</LinearGradientBrush>
+											</Setter.Value>
+										</Setter>
+									</MultiTrigger>
+								</ControlTemplate.Triggers>
+							</ControlTemplate>
+						</Setter.Value>
+					</Setter>
+				</Style>
+				<JournalEntryUnifiedViewConverter x:Key="&#225;"/>
+				<!-- Navigation Window Back Button Style -->
+				<Style x:Key="NavigationBackButtonStyle" TargetType="{x:Type Button}">
+					<Setter Property="OverridesDefaultStyle" Value="true"/>
+					<Setter Property="Command" Value="NavigationCommands.BrowseBack"/>
+					<Setter Property="Focusable" Value="false"/>
+					<Setter Property="Template">
+						<Setter.Value>
+							<ControlTemplate TargetType="{x:Type Button}">
+								<Grid Width="24" Height="24" Background="Transparent">
+									<!-- Circle -->
+									<Ellipse Name="Circle" StrokeThickness="1" Fill="{StaticResource NavigationButtonFillBrush}" Stroke="{StaticResource NavigationButtonStrokeBrush}" />
+									<!-- Arrow -->
+									<Path Name="Arrow" VerticalAlignment="Center" HorizontalAlignment="Center" StrokeThickness="0.75"
+												Data="M0.37,7.69 L5.74,14.20 A1.5,1.5,0,1,0,10.26,12.27 L8.42,10.42 14.90,10.39 A1.5,1.5,0,1,0,14.92,5.87 L8.44,5.90 10.31,4.03 A1.5,1.5,0,1,0,5.79,1.77 z"
+												Stroke="{StaticResource NavigationArrowStrokeBrush}" Fill="{StaticResource NavigationArrowFillBrush}" />
+								</Grid>
+								<ControlTemplate.Triggers>
+									<Trigger Property="IsEnabled" Value="false">
+										<Setter Property="Fill" Value="{StaticResource NavigationButtonDisabledBrush}" TargetName="Circle"/>
+										<Setter Property="Stroke" Value="{StaticResource NavigationArrowStrokeDisabledBrush}" TargetName="Arrow"/>
+										<Setter Property="Fill" Value="{StaticResource NavigationArrowFillDisabledBrush}" TargetName="Arrow"/>
+									</Trigger>
+									<Trigger Property="IsMouseOver" Value="true">
+										<Setter Property="Fill" Value="{StaticResource NavigationButtonMouseOverBrush}" TargetName="Circle"/>
+									</Trigger>
+									<Trigger Property="IsPressed" Value="true">
+										<Setter Property="Fill" Value="{StaticResource NavigationButtonPressedBrush}" TargetName="Circle"/>
+									</Trigger>
+								</ControlTemplate.Triggers>
+							</ControlTemplate>
+						</Setter.Value>
+					</Setter>
+				</Style>
+        <!-- Search Cancel Button Style -->
+        <Style x:Key="SearchCancelButtonStyle" TargetType="{x:Type Button}">
+          <Setter Property="Template">
+            <Setter.Value>
+              <ControlTemplate TargetType="{x:Type Button}">
+                <Grid Width="21" Height="21" Background="Transparent">
+                  <!-- Rectangle -->
+                  <Rectangle Name="RectangleBox" Grid.Column="0" StrokeThickness="1" Fill="{StaticResource NavigationButtonFillBrush}"
+													 Stroke="{StaticResource NavigationButtonStrokeBrush}"/>
+                  <!-- X_Path -->
+                  <Path Name="X_Path" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" StrokeThickness="0.75"
+												Data="M0.00,3.0 L4.5,7.5 0.40,12.0 3.0,15.60 7.5,10.5 12,15.60 15.60,12 10.5,7.5 16.00,3 12,0.40 8.0,5.5 4.0,0.40 z"
+												Stroke="{StaticResource NavigationArrowStrokeBrush}" Fill="{StaticResource NavigationArrowFillBrush}" RenderTransformOrigin="0.5,0">
+                    <Path.RenderTransform>
+                      <ScaleTransform ScaleX="-1" />
+                    </Path.RenderTransform>
+                  </Path>
+                </Grid>
+                <ControlTemplate.Triggers>
+                 <Trigger Property="IsEnabled" Value="false">
+										<Setter Property="Fill" Value="{StaticResource NavigationButtonDisabledBrush}" TargetName="RectangleBox"/>
+										<Setter Property="Stroke" Value="{StaticResource NavigationArrowStrokeDisabledBrush}" TargetName="X_Path"/>
+										<Setter Property="Fill" Value="{StaticResource NavigationArrowFillDisabledBrush}" TargetName="X_Path"/>
+									</Trigger>
+                  <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Fill" Value="{StaticResource NavigationButtonMouseOverBrush}" TargetName="RectangleBox"/>
+                  </Trigger>
+                  <Trigger Property="IsPressed" Value="true">
+                    <Setter Property="Fill" Value="{StaticResource NavigationButtonPressedBrush}" TargetName="RectangleBox"/>
+                  </Trigger>
+                </ControlTemplate.Triggers>
+              </ControlTemplate>
+            </Setter.Value>
+          </Setter>
+        </Style>
+        <!-- Navigation Window Forward Button Style -->
+				<Style x:Key="NavigationForwardButtonStyle" TargetType="{x:Type Button}">
+					<Setter Property="OverridesDefaultStyle" Value="true"/>
+					<Setter Property="Command" Value="NavigationCommands.BrowseForward"/>
+					<Setter Property="Focusable" Value="false"/>
+					<Setter Property="Template">
+						<Setter.Value>
+							<ControlTemplate TargetType="{x:Type Button}">
+								<Grid Width="24" Height="24" Background="Transparent">
+									<!-- Circle -->
+									<Ellipse Name="Circle" Grid.Column="0" StrokeThickness="1" Fill="{StaticResource NavigationButtonFillBrush}"
+													 Stroke="{StaticResource NavigationButtonStrokeBrush}"/>
+									<!-- Arrow -->
+									<Path Name="Arrow" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" StrokeThickness="0.75"
+												Data="M0.37,7.69 L5.74,14.20 A1.5,1.5,0,1,0,10.26,12.27 L8.42,10.42 14.90,10.39 A1.5,1.5,0,1,0,14.92,5.87 L8.44,5.90 10.31,4.03 A1.5,1.5,0,1,0,5.79,1.77 z"
+												Stroke="{StaticResource NavigationArrowStrokeBrush}" Fill="{StaticResource NavigationArrowFillBrush}" RenderTransformOrigin="0.5,0">
+										<Path.RenderTransform>
+											<ScaleTransform ScaleX="-1" />
+										</Path.RenderTransform>
+									</Path>
+								</Grid>
+								<ControlTemplate.Triggers>
+									<Trigger Property="IsEnabled" Value="false">
+										<Setter Property="Fill" Value="{StaticResource NavigationButtonDisabledBrush}" TargetName="Circle"/>
+										<Setter Property="Stroke" Value="{StaticResource NavigationArrowStrokeDisabledBrush}" TargetName="Arrow"/>
+										<Setter Property="Fill" Value="{StaticResource NavigationArrowFillDisabledBrush}" TargetName="Arrow"/>
+									</Trigger>
+									<Trigger Property="IsMouseOver" Value="true">
+										<Setter Property="Fill" Value="{StaticResource NavigationButtonMouseOverBrush}" TargetName="Circle"/>
+									</Trigger>
+									<Trigger Property="IsPressed" Value="true">
+										<Setter Property="Fill" Value="{StaticResource NavigationButtonPressedBrush}" TargetName="Circle"/>
+									</Trigger>
+								</ControlTemplate.Triggers>
+							</ControlTemplate>
+						</Setter.Value>
+					</Setter>
+				</Style>
+				<!-- Navigation Path Button Style -->
+				<Style x:Key="NavigationPathButtonStyle" TargetType="{x:Type Button}">
+					<Setter Property="OverridesDefaultStyle" Value="true"/>
+					<Setter Property="Focusable" Value="false"/>
+					<Setter Property="Template">
+						<Setter.Value>
+							<ControlTemplate TargetType="{x:Type Button}">
+								<Grid Background="Transparent">
+									<!-- Circle -->
+									<Rectangle Name="Rectangle" Fill="Transparent" />
+									<ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+								</Grid>
+								<ControlTemplate.Triggers>
+									<Trigger Property="IsMouseOver" Value="true">
+										<Setter Property="Fill" Value="{StaticResource NavigationPathButtonMouseOverBrush}" TargetName="Rectangle"/>
+									</Trigger>
+									<Trigger Property="IsPressed" Value="true">
+										<Setter Property="Fill" Value="{StaticResource NavigationPathButtonPressedBrush}" TargetName="Rectangle"/>
+									</Trigger>
+								</ControlTemplate.Triggers>
+							</ControlTemplate>
+						</Setter.Value>
+					</Setter>
+				</Style>
+			</ControlTemplate.Resources>
+			<!-- This is the grid that controls the layout of the entire navigation window. -->
+			<AdornerDecorator>
+				<Grid Background="{TemplateBinding Background}"
+							Name="gridMain">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="0" />
+						<ColumnDefinition />
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="35" />
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="31" />
+						<RowDefinition />
+						<RowDefinition MinHeight="48" Height="{Binding Source={StaticResource guardianSettings}, Path=Default.StatusBarHeight, Mode=TwoWay}"
+													 MaxHeight="{Binding MaxStatusBarHeight,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type NavigationWindow},AncestorLevel=1}}"/>
+					</Grid.RowDefinitions>
+					<!-- Navigation Bar -->
+					<Grid Background="Transparent"
+								Grid.Column="0"
+								Grid.ColumnSpan="2"
+								Grid.Row="0"
+								Name="NavChrome">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="28"/>
+							<ColumnDefinition Width="29"/>
+							<ColumnDefinition Width="14"/>
+							<ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="240"/>
+              <ColumnDefinition Width="30"/>
+            </Grid.ColumnDefinitions>
+						<!-- Menu for selecting previously navigated pages. -->
+						<Menu Name="NavMenu"
+									Grid.ColumnSpan="2"
+									Grid.Column="1"
+									Height="22"
+									Margin="1,1,0,1"
+									VerticalAlignment="Center"
+									Style="{StaticResource NavigationMenuStyle}">
+							<MenuItem Padding="0,2,3,0" Style="{StaticResource NavigationMenuItemStyle}"
+												ItemContainerStyle="{StaticResource NavigationMenuItemContainerStyle}"
+												IsSubmenuOpen="{Binding Path=(MenuItem.IsSubmenuOpen),Mode=TwoWay,RelativeSource={RelativeSource TemplatedParent}}">
+								<MenuItem.ItemsSource>
+									<MultiBinding Converter="{StaticResource &#225;}">
+										<MultiBinding.Bindings>
+											<Binding RelativeSource="{RelativeSource TemplatedParent}"
+															 Path="(NavigationWindow.BackStack)" />
+											<Binding RelativeSource="{RelativeSource TemplatedParent}"
+															 Path="(NavigationWindow.ForwardStack)" />
+										</MultiBinding.Bindings>
+									</MultiBinding>
+								</MenuItem.ItemsSource>
+							</MenuItem>
+						</Menu>
+						<!-- This is a 3D border around the forward and backward buttons -->
+						<Path Grid.Column="0"
+									SnapsToDevicePixels="false"
+									IsHitTestVisible="false"
+									Margin="2,0,0,0"
+									Grid.ColumnSpan="2"
+									StrokeThickness="1.5"
+									HorizontalAlignment="Left"
+									VerticalAlignment="Center"
+									Data="M22.5767,21.035 Q27,19.37 31.424,21.035 A12.5,12.5,0,0,0,53.5,13 A12.5,12.5,0,0,0,37.765,0.926 Q27,4.93 16.235,0.926 A12.5,12.5,0,0,0,0.5,13 A12.5,12.5,0,0,0,22.5767,21.035 z">
+							<Path.Fill>
+								<LinearGradientBrush StartPoint="0,0" EndPoint="0,1" Opacity=".5">
+									<LinearGradientBrush.GradientStops>
+										<GradientStopCollection>
+											<GradientStop Color="#55333355" Offset="0"/>
+											<GradientStop Color="#33EEEEEE" Offset="1"/>
+										</GradientStopCollection>
+									</LinearGradientBrush.GradientStops>
+								</LinearGradientBrush>
+							</Path.Fill>
+							<Path.Stroke>
+								<LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+									<LinearGradientBrush.GradientStops>
+										<GradientStopCollection>
+											<GradientStop Color="#65333355" Offset="0.2"/>
+											<GradientStop Color="#60EEEEEE" Offset="0.9"/>
+										</GradientStopCollection>
+									</LinearGradientBrush.GradientStops>
+								</LinearGradientBrush>
+							</Path.Stroke>
+						</Path>
+						<!-- The 'Navigate Backward' button -->
+						<Button Style="{StaticResource NavigationBackButtonStyle}" Margin="3.5,0,0,0" Grid.Column="0"/>
+						<!-- The 'Navigate Forward' button -->
+						<Button Style="{StaticResource NavigationForwardButtonStyle}" Margin="0,0,0,0" Grid.Column="1"/>
+						<!-- The address bar -->
+						<fluidtrade:FolderNavBar Name="folderNavBar" Height="24" NodeSelectionChanged="OnNavBarNodeChanged"
+																			BorderThickness="0" Grid.Column="3" Margin="0,0,4,0">
+							<fluidtrade:FolderNavBar.Template>
+								<ControlTemplate>
+									<Border BorderBrush="{StaticResource NavigationBarOuterBorder}" BorderThickness="1" CornerRadius="1" SnapsToDevicePixels="True">
+										<Border BorderBrush="{StaticResource NavigationBarMiddleBorder}" CornerRadius="1" BorderThickness="1" SnapsToDevicePixels="True">
+											<Border Name="Border" Background="{StaticResource NavigationInactiveBackground}"
+															BorderBrush="{StaticResource NavigationBarInnerBorder}" CornerRadius="1" BorderThickness="1" SnapsToDevicePixels="True">
+												<UserControl x:Name="PART_ContentHost"/>
+											</Border>
+										</Border>
+									</Border>
+
+									<ControlTemplate.Triggers>
+										<Trigger Property="IsKeyboardFocusWithin" Value="True">
+											<Setter TargetName="Border" Property="Background" Value="{StaticResource NavigationActiveBackground}" />
+											<Setter Property="Foreground" Value="{StaticResource NavigationActiveForeground}" />
+										</Trigger>
+										<MultiTrigger>
+											<MultiTrigger.Conditions>
+												<Condition Property="IsMouseOver" Value="True" />
+												<Condition Property="IsKeyboardFocusWithin" Value="False" />
+											</MultiTrigger.Conditions>
+
+											<Setter TargetName="Border" Property="Background" Value="{StaticResource NavigationHoverBackground}" />
+										</MultiTrigger>
+									</ControlTemplate.Triggers>
+								</ControlTemplate>
+							</fluidtrade:FolderNavBar.Template>
+						</fluidtrade:FolderNavBar>
+						<!-- The search box -->
+						<TextBox Name="searchBox" Grid.Column="4" Height="24" FontStyle="Italic" Foreground="{StaticResource NavigationInactiveForeground}"
+										 LostKeyboardFocus="OnSearchBoxLostFocus"  GotKeyboardFocus="OnSearchBoxGotFocus">
+							<TextBox.Template>
+								<ControlTemplate>
+									<Border BorderBrush="{StaticResource NavigationBarOuterBorder}" BorderThickness="1" CornerRadius="1" SnapsToDevicePixels="True">
+										<Border BorderBrush="{StaticResource NavigationBarMiddleBorder}" CornerRadius="1" BorderThickness="1" SnapsToDevicePixels="True">
+											<Border Name="Border" Background="{StaticResource NavigationInactiveBackground}"
+															BorderBrush="{StaticResource NavigationBarInnerBorder}" CornerRadius="1" BorderThickness="1" SnapsToDevicePixels="True">
+												<DockPanel>
+													<ScrollViewer x:Name="PART_ContentHost"/>
+													<Button Name="searchButton" DockPanel.Dock="Right" Width="26" Style="{StaticResource NavigationPathButtonStyle}" Command="guardian:GuardianCommands.Find">
+														<Image Height="18" Width="18" SnapsToDevicePixels="True" Source="Resources\Search.png"/>
+													</Button>																										
+													<StackPanel>
+													</StackPanel>
+												</DockPanel>
+											</Border>
+										</Border>
+									</Border>
+									
+									<ControlTemplate.Triggers>
+										<Trigger Property="IsKeyboardFocusWithin" Value="True">
+											<Setter TargetName="Border" Property="Background" Value="{StaticResource NavigationActiveBackground}" />
+											<Setter Property="Foreground" Value="{StaticResource NavigationActiveForeground}" />
+										</Trigger>
+										<MultiTrigger>
+											<MultiTrigger.Conditions>
+												<Condition Property="IsMouseOver" Value="True" />
+												<Condition Property="IsKeyboardFocusWithin" Value="False" />
+											</MultiTrigger.Conditions>
+											
+											<Setter TargetName="Border" Property="Background" Value="{StaticResource NavigationHoverBackground}" />
+										</MultiTrigger>
+									</ControlTemplate.Triggers>
+								</ControlTemplate>
+							</TextBox.Template>
+							Search
+						</TextBox>
+						<Button Name="searchCancelButton" IsEnabled="false" Grid.Column="5" Margin="1,8,0,0" Height="21" VerticalAlignment="Top" HorizontalAlignment="Left" Width="21" Click="searchCancelButton_Click" Style="{StaticResource SearchCancelButtonStyle}"></Button>
+					</Grid>
+					<!-- Menu -->
+					<Menu Grid.Column="0"
+								Grid.ColumnSpan="2"
+								Grid.Row="1"
+								Margin="0,0,0,0"
+								Name="menuMain">
+						<MenuItem Header="_File"
+											Name="menuItemFile">
+							<Separator />
+							<MenuItem Command="ApplicationCommands.Close"
+												Header="E_xit"
+												Name="menuItemExit" />
+						</MenuItem>
+						<MenuItem Name="menuItemEdit"
+											Header="_Edit">
+							<MenuItem Command="FluidTradeCommands.ResetSettings"
+												Header="Reset Settings"
+												Name="menuItemResetSettings" />
+						</MenuItem>
+						<MenuItem Header="_View"
+											Name="menuItemView">
+							<MenuItem Command="FluidTradeCommands.SetIsNavigationPaneVisible"
+												Header="Show Navigation Pane"
+												Name="menuItemIsNavigationPaneVisible"
+									/>
+						</MenuItem>
+			<MenuItem Header="_Help"
+				Name="menuItemHelp">
+				<MenuItem Command="guardian:GuardianCommands.HelpAbout"
+					Header="_About"
+					Name="menuItemHelpAbout" />
+			</MenuItem>
+		</Menu> 
+					<!-- ToolBar -->
+					<ToolBar Grid.Column="0"
+									 Grid.ColumnSpan="2"
+									 Grid.Row="2"
+									 x:Name="toolBarMain"
+									 Template="{StaticResource ToolBarTemplate}" />
+					<!-- folderTreeView -->
+					<guardian:FolderTreeView Grid.Column="0"
+																	 Grid.Row="3"
+																	 Name="folderTreeView"
+																	 TreeUpdated="OnFolderTreeViewUpdated"
+																	 SelectedItemChanged="OnFolderTreeViewItemChanged" />
+					<!-- gridSplitter1 -->
+					<GridSplitter Focusable="False"
+												Grid.Column="1"
+												Grid.Row="3"
+												HorizontalAlignment="Left"
+												IsTabStop="False"
+												Name="gridSplitter1"
+												Panel.ZIndex="1"
+												VerticalAlignment="Stretch"
+												Width="2">
+						<GridSplitter.Background>
+							<LinearGradientBrush StartPoint="0, 0.5" EndPoint="1, 0.5">
+								<GradientStop Color="#A7BAC5" Offset="0" />
+								<GradientStop Color="#A7BAC5" Offset="0.5" />
+								<GradientStop Color="White" Offset="0.5" />
+								<GradientStop Color="White" Offset="1" />
+							</LinearGradientBrush>
+						</GridSplitter.Background>
+					</GridSplitter>
+					<!-- frameMain -->
+					<Border Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"
+									Focusable="True"
+									Grid.Column="1"
+									Grid.Row="3"
+									x:Name="frameMain">
+						<ContentPresenter ClipToBounds="True"
+															Name="PART_NavWinCP" />			
+					</Border>
+					<!-- gridSplitter2 -->
+					<GridSplitter Focusable="False"
+												Grid.Column="0"
+												Grid.ColumnSpan="2"
+												Grid.Row="4"
+												Height="8"
+												IsTabStop="False"
+												HorizontalAlignment="Stretch"
+												Name="gridSplitter2"
+												Panel.ZIndex="1"
+												VerticalAlignment="Top">
+						<GridSplitter.Background>
+							<LinearGradientBrush StartPoint="0.5, 0.0" EndPoint="0.5, 1.0">
+								<GradientStop Color="#FF9DB6C5" Offset="0" />
+								<GradientStop Color="#00FFFFFF" Offset="1" />
+							</LinearGradientBrush>
+						</GridSplitter.Background>
+					</GridSplitter>
+					<!-- statusBarMain -->
+					<guardian:StatusBar Icon="Resources\Application.ico"  Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="5" Name="statusBarMain">
+						<guardian:FlowGridRow>
+							<TextBlock Text="Server:" 
+												 HorizontalAlignment="Left"
+												 VerticalAlignment="Center"
+												 FontSize="12"
+												 Foreground="Gray"
+												 Margin="5,0,10,0" />
+							<TextBlock Name="statusBarServerName" 
+												 HorizontalAlignment="Left"
+												 VerticalAlignment="Center"
+												 FontSize="12"
+												 Margin="0,0,10,2" />
+						</guardian:FlowGridRow>
+						<guardian:FlowGridRow>
+							<TextBlock Text="Status:" 
+												 HorizontalAlignment="Left"
+												 VerticalAlignment="Center"
+												 FontSize="12"
+												 Foreground="Gray"
+												 Margin="5,0,10,0" />
+							<TextBlock Name="statusText"
+												 HorizontalAlignment="Left"
+												 VerticalAlignment="Center"
+												 FontSize="12"
+												 Margin="0,0,10,2" />
+						</guardian:FlowGridRow>
+							<guardian:FlowGridRow>
+							<TextBlock Text=""
+												 Margin="5,0,10,0" />
+							<ProgressBar Margin="0,0,10,2" Name="progressBar"
+													 Height="15" Width="140"
+													 HorizontalAlignment="Left"
+													VerticalAlignment="Center" 
+													 Visibility="Hidden"/>
+						</guardian:FlowGridRow>
+						
+					</guardian:StatusBar>
+				</Grid>
+			</AdornerDecorator>
+			<ControlTemplate.Triggers>
+				<Trigger Property="ShowsNavigationUI" Value="False">
+					<Setter TargetName="NavChrome" Property="Visibility" Value="Collapsed"/>
+				</Trigger>
+				<MultiTrigger>
+					<MultiTrigger.Conditions>
+						<Condition Property="NavigationWindow.CanGoForward" Value="false"/>
+						<Condition Property="NavigationWindow.CanGoBack" Value="false"/>
+					</MultiTrigger.Conditions>
+					<Setter TargetName="NavMenu" Property="IsEnabled" Value="false"/>
+				</MultiTrigger>
+			</ControlTemplate.Triggers>
+		</ControlTemplate>
+	</NavigationWindow.Template>
+</NavigationWindow>

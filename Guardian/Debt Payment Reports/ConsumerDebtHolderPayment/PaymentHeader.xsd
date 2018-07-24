@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PrototypeView"
+           targetNamespace="urn:schemas-fluidtrade-com:guardian:debt-holder-payment-summary-header"
+           xmlns:mstns="urn:schemas-fluidtrade-com:guardian:debt-holder-payment-summary-header"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:r="urn:schemas-fluidtrade-com:report"
+           xmlns:m="urn:schemas-fluidtrade-com:guardian:debt-holder-payment-summary">
+  <xs:annotation>
+    <xs:appinfo>
+      <r:generatedCode destinationNamespace="FluidTrade.Guardian.Schema.DebtHolderPaymentSummaryHeader" />
+    </xs:appinfo>
+  </xs:annotation>
+  <!-- Imports -->
+  <xs:import namespace="urn:schemas-fluidtrade-com:guardian:debt-holder-payment-summary"
+             schemaLocation="Payment.xsd" />
+  <xs:complexType name="ActiveFlag" />
+  <xs:complexType name="ActualPaymentDate" />
+  <xs:complexType name="ActualPaymentValue" />
+  <xs:complexType name="CheckId" />
+  <xs:complexType name="ClearedDate" />
+  <xs:complexType name="CreatedDateTime" />
+  <xs:complexType name="CreatedUserId" />
+  <xs:complexType name="EffectivePaymentDate" />
+  <xs:complexType name="EffectivePaymentValue" />
+  <xs:complexType name="Fee0" />
+  <xs:complexType name="IsCleared" />
+  <xs:complexType name="Memo0" />
+  <xs:complexType name="Memo1" />
+  <xs:complexType name="Memo2" />
+  <xs:complexType name="ModifiedDateTime" />
+  <xs:complexType name="ModifiedUserId" />
+  <xs:complexType name="SelectRow" />
+  <xs:complexType name="StatusId" />
+  <xs:complexType name="TrackingNumber" />
+  <!-- Working Order Header -->
+  <xs:complexType name="PaymentHeader">
+    <xs:annotation>
+      <xs:appinfo>
+        <r:constructor>
+          <r:arguments>
+            <r:argument type="System.Guid"
+                        name="guid" />
+          </r:arguments>
+          <r:setter property="key"
+                    value="guid" />
+        </r:constructor>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="ActiveFlag"
+                  type="mstns:ActiveFlag" />
+      <xs:element name="ActualPaymentDate"
+                  type="mstns:ActualPaymentDate" />
+      <xs:element name="ActualPaymentValue"
+                  type="mstns:ActualPaymentValue" />
+      <xs:element name="CheckId"
+                  type="mstns:CheckId " />
+      <xs:element name="ClearedDate"
+                  type="mstns:ClearedDate" />
+      <xs:element name="CreatedDateTime"
+                  type="mstns:CreatedDateTime" />
+      <xs:element name="CreatedUserId"
+                  type="mstns:CreatedUserId" />
+      <xs:element name="EffectivePaymentDate"
+                  type="mstns:EffectivePaymentDate" />
+      <xs:element name="EffectivePaymentValue"
+                  type="mstns:EffectivePaymentValue" />
+      <xs:element name="Fee0"
+                  type="mstns:Fee0" />
+      <xs:element name="IsCleared"
+                  type="mstns:IsCleared" />
+      <xs:element name="Memo0"
+                  type="mstns:Memo0" />
+      <xs:element name="Memo1"
+                  type="mstns:Memo1" />
+      <xs:element name="Memo2"
+                  type="mstns:Memo2" />
+      <xs:element name="ModifiedDateTime"
+                  type="mstns:ModifiedDateTime" />
+      <xs:element name="ModifiedUserId"
+                  type="mstns:ModifiedUserId" />
+      <xs:element name="SelectRow"
+                  type="mstns:SelectRow" />
+      <xs:element name="StatusId"
+                  type="mstns:StatusId" />
+      <xs:element name="TrackingNumber"
+                  type="mstns:TrackingNumber" />
+      <xs:element name="PaymentList"
+                  type="m:PaymentSummary"
+                  minOccurs="0"
+                  maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:where predicate="Prefilter"
+                     source="DataModel.ConsumerDebtPayment"
+                     sourceType="FluidTrade.Guardian.ConsumerDebtPaymentRow" />
+            <r:select selector="Selector" />
+            <r:where predicate="Filter" />
+            <r:orderBy comparer="Comparer"
+                       keySelector="m:PaymentSummary.SelectSelf"
+                       keyType="m:PaymentSummary" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<script name="National Holdings Users">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  
+  <!--################### Kai Hitori ############################### -->	
+  <transaction>
+    <method name="CreateEntityEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="createdTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="externalId0" value="Kai Hitori" />
+      <parameter name="externalId7" value="Kai Hitori" />
+      <parameter name="hidden" value="false" />
+      <parameter name="imageKey" value="USER" />
+      <parameter name="modifiedTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="name" value="Kai Hitori" />
+      <parameter name="readOnly" value="false" />
+      <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+      <parameter name="typeKey" value="TRADER" />
+    </method>
+    <method name="CreateRightsHolderEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="entityKey" value="Kai Hitori" />
+      <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+    </method>
+    <method name="CreateUserEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="rightsHolderKey" value="Kai Hitori" />
+      <parameter name="identityName" value="kai.hitori@nationalholdings.com" />
+      <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+    </method>
+    <method name="CreateTraderEx" client="DataModelClient">
+      <parameter name="blotterIdDefault" value="National Holdings Kai Hitori BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="isAgencyMatch" value="true" />
+      <parameter name="isBrokerMatch" value="true" />
+      <parameter name="isCommissionChangeAllowed" value="false" />
+      <parameter name="isEditExecutionsAllowed" value="true" />
+      <parameter name="isHedgeMatch" value="true" />
+      <parameter name="isHeld" value="true" />
+      <parameter name="isInstitutionMatch" value="true" />
+      <parameter name="lotSizeDefault" value="100" />
+      <parameter name="marketSleep" value="10" />
+      <parameter name="reviewWindow" value="0" />
+      <parameter name="submissionTypeCode" value="AlwaysMatch" />
+      <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+      <parameter name="userKey" value="Kai Hitori" />
+    </method>
+    <method name="CreateGroupUsersEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="{4fbab366-294a-430e-91a0-263dca285105}" />
+      <parameter name="groupKey" value="National Holdings ADMINISTRATORS" />
+      <parameter name="userKey" value="Kai Hitori" />
+      <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+    </method>
+  </transaction>
+  	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Kai Hitori" />
+		<parameter name="rightsHolderKey" value="FLUID TRADE ADMINISTRATORS" />
+		<parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Kai Hitori" />
+		<parameter name="rightsHolderKey" value="National Holdings ADMINISTRATORS" />
+		<parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="READ BROWSE" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Kai Hitori" />
+		<parameter name="rightsHolderKey" value="National Holdings USERS" />
+		<parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+	</method>
+	
+  <!--################### Ingrid Yeoh ############################### -->
+  <transaction>
+    <method name="CreateEntityEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+			<parameter name="createdTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="externalId0" value="Ingrid Yeoh" />
+      <parameter name="externalId7" value="Ingrid Yeoh" />
+      <parameter name="hidden" value="false" />
+      <parameter name="imageKey" value="USER" />
+			<parameter name="modifiedTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="name" value="Ingrid Yeoh" />
+      <parameter name="readOnly" value="false" />
+	    <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+      <parameter name="typeKey" value="TRADER" />
+    </method>
+    <method name="CreateRightsHolderEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="entityKey" value="Ingrid Yeoh" />
+        <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+    </method>
+    <method name="CreateUserEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="rightsHolderKey" value="Ingrid Yeoh" />
+      <parameter name="identityName" value="ingrid.yeoh@nationalholdings.com" />
+	    <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+    </method>
+    <method name="CreateTraderEx" client="DataModelClient">
+      <parameter name="blotterIdDefault" value="National Holdings Ingrid Yeoh BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="isAgencyMatch" value="true" />
+      <parameter name="isBrokerMatch" value="true" />
+      <parameter name="isCommissionChangeAllowed" value="false" />
+      <parameter name="isEditExecutionsAllowed" value="true" />
+      <parameter name="isHedgeMatch" value="true" />
+      <parameter name="isHeld" value="true" />
+      <parameter name="isInstitutionMatch" value="true" />
+      <parameter name="lotSizeDefault" value="100" />
+      <parameter name="marketSleep" value="10" />
+      <parameter name="reviewWindow" value="0" />
+      <parameter name="submissionTypeCode" value="AlwaysMatch" />
+      <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+      <parameter name="userKey" value="Ingrid Yeoh" />
+    </method>
+    <method name="CreateGroupUsersEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="{287c098b-45f7-46bf-9f77-2cf67ed7c8fb}" />
+      <parameter name="groupKey" value="National Holdings USERS" />
+      <parameter name="userKey" value="Ingrid Yeoh" />
+      <parameter name="tenantKey" value="National Holdings ORGANIZATION" />      
+    </method>
+  </transaction>
+  	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Ingrid Yeoh" />
+		<parameter name="rightsHolderKey" value="FLUID TRADE ADMINISTRATORS" />
+		<parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Ingrid Yeoh" />
+		<parameter name="rightsHolderKey" value="National Holdings ADMINISTRATORS" />
+		<parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="READ BROWSE" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Ingrid Yeoh" />
+		<parameter name="rightsHolderKey" value="National Holdings USERS" />
+		<parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+	</method>
+	
+</script>

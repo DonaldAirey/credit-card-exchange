@@ -1,0 +1,251 @@
+﻿<Viewer x:Class="FluidTrade.Guardian.ViewerDebtNegotiatorBlotter"
+	Name="viewerDebtNegotiatorBlotter"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"               
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:guardian="http://schemas.fluidtrade.com/winfx/2006/xaml/guardian/presentation"
+	xmlns:src="clr-namespace:FluidTrade.Guardian" >
+	<!-- Resources -->
+	<Viewer.Resources>
+		<BitmapImage x:Key="lock"
+								 UriSource="Resources/Lock.png" />
+		<BitmapImage x:Key="unlock"
+								 UriSource="Resources/Unlock.png" />
+	</Viewer.Resources>
+	<!-- CommandBindings -->
+	<Viewer.CommandBindings>
+		<CommandBinding Command="FluidTradeCommands.FreezeHeaders"
+										Executed="OnSetIsHeaderFrozen" />
+		<CommandBinding Command="guardian:GuardianCommands.Import"
+										Executed="OnImport" />
+		<CommandBinding Command="guardian:GuardianCommands.ManageUsers"
+										Executed="OnManageUsers" />
+		<CommandBinding Command="FluidTradeCommands.SelectColumns"
+										Executed="OnSelectColumns" />
+		<CommandBinding Command="ApplicationCommands.SelectAll"
+										Executed="OnSelectAll" />
+		<CommandBinding Command="ApplicationCommands.Delete"
+										Executed="OnApplicationCommandDelete" />
+		<CommandBinding Command="FluidTradeCommands.SetAnimationFast"
+										Executed="OnSetAnimationFast" />
+		<CommandBinding Command="FluidTradeCommands.SetAnimationMedium"
+										Executed="OnSetAnimationMedium" />
+		<CommandBinding Command="FluidTradeCommands.SetAnimationSlow"
+										Executed="OnSetAnimationSlow" />
+		<CommandBinding Command="FluidTradeCommands.SetAnimationOff"
+										Executed="OnSetAnimationOff" />
+		<CommandBinding Command="guardian:GuardianCommands.CreateSlice"
+										Executed="OnCreateSlice" />
+		<CommandBinding Command="guardian:GuardianCommands.SendTo"
+										Executed="OnSendTo" />
+		<CommandBinding Command="FluidTradeCommands.MarkAsRead"
+										Executed="OnMarkAsRead" />
+		<CommandBinding Command="FluidTradeCommands.MarkAsUnread"
+										Executed="OnMarkAsUnread" />
+		<CommandBinding Command="FluidTradeCommands.PrintPreview"
+										Executed="OnPrintPreview" />
+	</Viewer.CommandBindings>
+		<!-- Context Menu -->
+	<Viewer.ContextMenu>
+		<ContextMenu Background="#F0F0F0" Name="contextMenuDebtNegotiator" Opened="OnContextMenuOpen">
+			<MenuItem Command="FluidTradeCommands.SelectColumns"
+								CommandTarget="{Binding ElementName=viewerDebtNegotiatorBlotter}"
+								Header="Select Columns"
+								x:Name="contextMenuItemSelectColumns" />
+			<MenuItem Header="{Binding Path=Command.Text,RelativeSource={RelativeSource Self}}"
+								Command="guardian:GuardianCommands.SendTo"
+								Name="contextMenuItemSendTo"
+								Width="Auto"/>
+			<MenuItem Command="FluidTradeCommands.MarkAsRead"
+								Header="Mark as Read"
+								Name="contextMenuItemMarkAsRead" 
+								Width="Auto" 
+								Visibility="Collapsed"/>
+			<MenuItem Command="FluidTradeCommands.MarkAsUnread"
+								Header="Mark as Unread"
+								Name="contextMenuItemMarkAsUnread" 
+								Width="Auto" 
+								Visibility="Collapsed"/>
+			<MenuItem Command="ApplicationCommands.Delete"
+								CommandTarget="{Binding ElementName=viewerDebtNegotiatorBlotter}"
+								x:Name="contextMenuItemApplicationCommandDelete" />
+			<MenuItem Command="ApplicationCommands.SelectAll"
+								CommandTarget="{Binding ElementName=viewerDebtHolderBlotter}"
+								x:Name="contextMenuItemSelectAll" />
+		</ContextMenu>
+	</Viewer.ContextMenu>
+		<!-- InputBindings [This method does not work bind in code.]-->
+		<!--<Viewer.InputBindings>
+	<KeyBinding Command="FluidTradeCommands.SelectAll"
+				Gesture="CTRL+A" />
+		</Viewer.InputBindings>-->
+		<!-- Menu -->
+	<Viewer.Menu>
+		<Menu>
+			<MenuItem Header="_File"
+								x:Name="menuItemFile" >
+				<MenuItem Command="guardian:GuardianCommands.Import"
+									CommandTarget="{Binding ElementName=viewerDebtNegotiatorBlotter}"
+									x:Name="menuItemImport" />
+				<MenuItem Command="guardian:GuardianCommands.ManageUsers"
+									CommandTarget="{Binding ElementName=viewerDebtNegotiatorBlotter}"
+									x:Name="menuItemManageUsers" />
+				<Separator Name="printPreviewSeparator" Visibility="Hidden"/>
+				<MenuItem Header="Print Pre_view"
+									Command="FluidTradeCommands.PrintPreview"
+									CommandTarget="{Binding ElementName=viewerDebtNegotiatorBlotter}"
+									x:Name="menuItemPrintPreview" 
+									Visibility="Hidden"/>
+				<Separator />
+				<MenuItem Header="E_xit"
+									Command="ApplicationCommands.Close"
+									CommandTarget="{Binding ElementName=viewerDebtNegotiatorBlotter}"
+									x:Name="menuItemExit" />
+			</MenuItem>
+			<MenuItem Header="_Edit"
+								SubmenuOpened="OnContextMenuOpen"
+								x:Name="menuItemEdit">
+				<MenuItem Command="FluidTradeCommands.ResetSettings"
+									Header="Reset Settings"
+									x:Name="menuItemResetSettings" />
+				<MenuItem Command="ApplicationCommands.SelectAll"
+									CommandTarget="{Binding ElementName=viewerDebtNegotiatorBlotter}"
+									x:Name="menuItemSelectAll" />
+				<MenuItem Header="{Binding Path=Command.Text,RelativeSource={RelativeSource Self}}"
+									Command="guardian:GuardianCommands.SendTo"
+									CommandTarget="{Binding ElementName=viewerDebtNegotiatorBlotter}"
+									Name="menuItemSendTo"
+									Width="Auto"/>
+				<MenuItem Command="FluidTradeCommands.MarkAsRead"
+									CommandTarget="{Binding ElementName=viewerDebtNegotiatorBlotter}"
+									Header="Mark as Read"
+									Name="menuItemMarkAsRead"
+									Width="Auto" />
+				<MenuItem Command="FluidTradeCommands.MarkAsUnread"
+									CommandTarget="{Binding ElementName=viewerDebtNegotiatorBlotter}"
+									Header="Mark as Unread"
+									Name="menuItemMarkAsUnread"
+									Width="Auto" />
+				<MenuItem Command="FluidTradeCommands.FreezeHeaders"
+									CommandTarget="{Binding ElementName=viewerDebtNegotiatorBlotter}"
+									Focusable="False"
+									Header="Freeze Headers"
+									IsChecked="False"
+									Visibility="Collapsed"
+									x:Name="toggleColumnMode" />
+				<MenuItem Command="ApplicationCommands.Delete"
+									CommandTarget="{Binding ElementName=viewerDebtNegotiatorBlotter}"
+									x:Name="menuItemApplicationCommandDelete" />
+			</MenuItem>		
+			<MenuItem Header="_View"
+								x:Name="menuItemView" >
+				<MenuItem Command="FluidTradeCommands.SetIsNavigationPaneVisible"
+									Header="Show Navigation Pane"
+									IsChecked="True"
+									x:Name="menuItemIsNavigationPaneVisible" />
+				<Separator />
+				<MenuItem Command="FluidTradeCommands.SelectColumns"
+									CommandTarget="{Binding ElementName=viewerDebtNegotiatorBlotter}"
+									Header="Select Columns"
+									x:Name="menuItemSelectColumns" />
+				<MenuItem Header="Animation"
+									CommandTarget="{Binding ElementName=viewerDebtNegotiatorBlotter}"
+									x:Name="menuItemAnimation" >
+					<MenuItem Command="FluidTradeCommands.SetAnimationSlow"
+										CommandTarget="{Binding ElementName=viewerDebtNegotiatorBlotter}"
+										Header="Slow Animation"
+										IsChecked="False"
+										x:Name="menuItemSetAnimationSlow" />
+					<MenuItem Command="FluidTradeCommands.SetAnimationMedium"
+										CommandTarget="{Binding ElementName=viewerDebtNegotiatorBlotter}"
+										Header="Medium Animation"
+										IsChecked="False"
+										x:Name="menuItemSetAnimationMedium"  />
+					<MenuItem Command="FluidTradeCommands.SetAnimationFast"
+										CommandTarget="{Binding ElementName=viewerDebtNegotiatorBlotter}"
+										Header="Fast Animation"
+										IsChecked="False"
+										x:Name="menuItemSetAnimationFast" />
+					<MenuItem Command="FluidTradeCommands.SetAnimationOff"
+										CommandTarget="{Binding ElementName=viewerDebtNegotiatorBlotter}"
+										Header="Animation Off"
+										IsChecked="True"
+										x:Name="menuItemSetAnimationOff" />
+				</MenuItem>
+			</MenuItem>
+			<MenuItem Header="_Reports"
+								Name="menuItemReports">
+				<MenuItem Command="FluidTradeCommands.ReportShowWindow"
+									CommandTarget="{Binding ElementName=viewerDebtNegotiatorBlotter}"
+									Header="Report..."
+									x:Name="menuItemReportShowWindow" />
+			</MenuItem>
+			<MenuItem Header="_Help"
+								Name="menuItemHelp">
+				<MenuItem Command="guardian:GuardianCommands.HelpAbout"
+									Header="_About"
+									Name="menuItemHelpAbout" />
+			</MenuItem>
+		</Menu>
+	</Viewer.Menu>
+		<!-- StatusBar -->
+	<Viewer.StatusBar>
+		<guardian:DebtNegotiatorStatusBar Entity="{Binding Path=Content,ElementName=viewerDebtNegotiatorBlotter}"
+															 Zoom="{Binding Path=Scale,ElementName=viewerDebtNegotiatorBlotter,Mode=TwoWay}" />
+	</Viewer.StatusBar>
+		<!-- ToolBar -->
+	<Viewer.ToolBar>
+	<ToolBar Grid.Column="0"
+		 Grid.ColumnSpan="2"
+		 Grid.Row="2"
+		 x:Name="toolBarMain"
+		 Template="{StaticResource ToolBarTemplate}">
+			<TextBlock Foreground="White" VerticalAlignment="Center" Text="Balance &gt;" />
+			<TextBox AcceptsTab="False"
+				 IsTabStop="False"
+				 Margin="4,0,4,0"
+				 x:Name="textBoxBalanceFilter"
+				 TextChanged="OnBalanceChanged"
+				 Width="100" />
+			<ToggleButton Focusable="False"
+				x:Name="toggleButtonApplyIsEmployedFilter"
+				Checked="OnIsEmployedChecked"
+				Unchecked="OnIsEmployedChecked"
+				Style="{StaticResource ToolBarToggleButtonStyle}">
+		<TextBlock Foreground="White"
+				 Text="Is Employed"/>
+			</ToggleButton>
+			<ToggleButton Command="FluidTradeCommands.FreezeHeaders"
+				CommandTarget="{Binding ElementName=viewerDebtNegotiatorBlotter}"
+				Focusable="False"
+				IsChecked="True"
+				x:Name="toggleButtonIsHeaderFrozen"
+				Margin="20,0,20,0"
+													Visibility="Collapsed">
+		<ToggleButton.Template>
+				<ControlTemplate TargetType="{x:Type ToggleButton}">
+			<Image Name="ToggleImage"
+						 Source="{StaticResource lock}"
+						 Height="24" />
+			<ControlTemplate.Triggers>
+					<Trigger Property="IsChecked"
+						 Value="false">
+				<Setter TargetName="ToggleImage"
+					Property="Source"
+					Value="{StaticResource unlock}" />
+					</Trigger>
+			</ControlTemplate.Triggers>
+				</ControlTemplate>
+		</ToggleButton.Template>
+			</ToggleButton>
+				<Separator Margin="10,0,10,0"/>
+				<Button x:Name="buttonPrintPreview"
+								Click="OnPrintPreviewButton"
+								Visibility="Collapsed">
+							<Image Source="Resources\document_view.png" />
+							<Button.ToolTip>
+								Print Preview
+							</Button.ToolTip>
+						</Button>
+	</ToolBar>
+		</Viewer.ToolBar>
+</Viewer>

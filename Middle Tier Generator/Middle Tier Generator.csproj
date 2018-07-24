@@ -1,0 +1,327 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A930A413-04BB-4AB2-AB39-B44633335CBE}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>FluidTrade.MiddleTierGenerator</AssemblyName>
+    <AssemblyOriginatorKeyFile>Public Key.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>true</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FluidTrade.MiddleTierGenerator</RootNamespace>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>true</SignAssembly>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>0618</NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>0618</NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <FileAlignment>4096</FileAlignment>
+    <NoWarn>0618</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <NoWarn>0618</NoWarn>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <FileAlignment>4096</FileAlignment>
+    <NoWarn>0618</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <NoWarn>0618</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CodeThrowFormatExceptionStatement.cs" />
+    <Compile Include="DataSetClass\AddTransactionMethod.cs" />
+    <Compile Include="DataSetClass\CompressorThreadField.cs" />
+    <Compile Include="DataSetClass\CompressorLogMethod.cs" />
+    <Compile Include="DataSetClass\ReconcileMethod.cs" />
+    <Compile Include="TargetClass\ReconcileMethod.cs" />
+    <Compile Include="DataSetClass\ReadBufferSizeField.cs" />
+    <Compile Include="DataSetClass\TransactionLogAgeField.cs" />
+    <Compile Include="DataSetClass\TransactionLogCompressionSizeField.cs" />
+    <Compile Include="DataSetClass\TransactionLogCompressionTimeField.cs" />
+    <Compile Include="DataSetClass\IncrementRowVersionMethod.cs" />
+    <Compile Include="DataSetClass\DataSetClass.cs" />
+    <Compile Include="DataSetClass\ReadMethod.cs" />
+    <Compile Include="DataSetClass\VoidConstructor.cs" />
+    <Compile Include="FieldCollectorClass\FieldTableField.cs" />
+    <Compile Include="FieldCollectorClass\LinkedListNodeField.cs" />
+    <Compile Include="FieldCollectorClass\FieldCollectorClass.cs" />
+    <Compile Include="FieldCollectorClass\Constructor.cs" />
+    <Compile Include="FilterContextDelegate.cs" />
+    <Compile Include="RowClass\CodeCheckReaderLockHeldStatements.cs" />
+    <Compile Include="RowClass\CodeCheckWriterLockHeldStatements.cs" />
+    <Compile Include="RowClass\LockTimeoutProperty.cs" />
+    <Compile Include="RowClass\ParentRowProperty.cs" />
+    <Compile Include="TableClass\GetOwnerHandlerProperty.cs" />
+    <Compile Include="TableClass\GetOwnerHandlerField.cs" />
+    <Compile Include="TableClass\GetOwnerMethod.cs" />
+    <Compile Include="TargetClass\AddTransactionMethod.cs" />
+    <Compile Include="TargetClass\GetFilterContextHandlerProperty.cs" />
+    <Compile Include="TargetClass\RelationsProperty.cs" />
+    <Compile Include="TargetClass\TablesProperty.cs" />
+    <Compile Include="TargetClass\TransactionLogLockProperty.cs" />
+    <Compile Include="TargetClass\DataLockProperty.cs" />
+    <Compile Include="DataSetClass\LoadDataMethod.cs" />
+    <Compile Include="DataSetClass\SequenceRecordMethod.cs" />
+    <Compile Include="TargetClass\SequenceField.cs" />
+    <Compile Include="DataSetClass\TransactionLogField.cs" />
+    <Compile Include="DataSetClass\DataLockProperty.cs" />
+    <Compile Include="DataSetClass\DataLockField.cs" />
+    <Compile Include="DataSetClass\TransactionLogLockField.cs" />
+    <Compile Include="DataSetClass\TransactionLogLockProperty.cs" />
+    <Compile Include="TableClass\OrdinalProperty.cs" />
+    <Compile Include="TableClass\OrdinalField.cs" />
+    <Compile Include="TargetClass\CodeAcquireRecordWriterLockExpression.cs" />
+    <Compile Include="TargetClass\CodeAddLockToTransactionExpression.cs" />
+    <Compile Include="TargetClass\CodeCheckRecordExistsStatement.cs" />
+    <Compile Include="TargetClass\CodeFindByIndexExpression.cs" />
+    <Compile Include="TargetClass\CodeResolveExternalVariableStatements.cs" />
+    <Compile Include="TargetClass\CodeResolveForeignKeyExpression.cs" />
+    <Compile Include="TargetClass\CodeResolvePrimaryKey.cs" />
+    <Compile Include="TargetClass\CodeThrowRecordNotFoundExceptionStatement.cs" />
+    <Compile Include="TargetClass\CodeCheckRecordDetachedStatement.cs" />
+    <Compile Include="TargetClass\CodeCheckConcurrencyStatement.cs" />
+    <Compile Include="TargetClass\CodeThrowConcurrencyExceptionStatement.cs" />
+    <Compile Include="TargetClass\CodeAddRecordToTransactionExpression.cs" />
+    <Compile Include="TargetClass\CodeAcquireRecordReaderLockExpression.cs" />
+    <Compile Include="CodeCreateMiddleTierContextStatement.cs" />
+    <Compile Include="CodeThrowArgumentExceptionStatement.cs" />
+    <Compile Include="TargetClass\CodeCheckIndexExistsStatement.cs" />
+    <Compile Include="TargetClass\CodeThrowIndexNotFoundExceptionStatement.cs" />
+    <Compile Include="TargetClass\CodeFindByRowExpression.cs" />
+    <Compile Include="DataSetClass\IdentifierField.cs" />
+    <Compile Include="TargetClass\DataSetField.cs" />
+    <Compile Include="DataSetClass\GetFilterContextHandlerField.cs" />
+    <Compile Include="DataSetClass\GetFilterContextHandlerProperty.cs" />
+    <Compile Include="DataSetClass\GetFilterContextMethod.cs" />
+    <Compile Include="TargetClass\ReadXmlMethod.cs" />
+    <Compile Include="TargetClass\DestroyExMethod.cs" />
+    <Compile Include="TargetClass\UpdateExMethod.cs" />
+    <Compile Include="ClusteredIndexClass\Constructor.cs" />
+    <Compile Include="ClusteredIndexClass\FindByKeyMethod.cs" />
+    <Compile Include="ClusteredIndexClass\FindByMethod.cs" />
+    <Compile Include="ClusteredIndexClass\ClusteredIndexClass.cs" />
+    <Compile Include="TargetClass\KeyArrayField.cs" />
+    <Compile Include="TargetClass\CreateExMethod.cs" />
+    <Compile Include="TargetClass\TypeConverter.cs" />
+    <Compile Include="TargetClass\LockTimeoutProperty.cs" />
+    <Compile Include="TargetClass\LockTimeoutField.cs" />
+    <Compile Include="TargetClass\ReadMethod.cs" />
+    <Compile Include="TargetClass\StaticConstructor.cs" />
+    <Compile Include="TargetClass\CompactTimeField.cs" />
+    <Compile Include="DataSetClass\MasterRowVersionField.cs" />
+    <Compile Include="RowClass\CodeThrowSynchronizationExceptionStatement.cs" />
+    <Compile Include="RowClass\SetNullMethod.cs" />
+    <Compile Include="RowClass\GetChildRowsMethod.cs" />
+    <Compile Include="NonClusteredIndexClass\Constructor.cs" />
+    <Compile Include="NonClusteredIndexClass\FindByKeyMethod.cs" />
+    <Compile Include="NonClusteredIndexClass\FindByMethod.cs" />
+    <Compile Include="NonClusteredIndexClass\NonClusteredIndexClass.cs" />
+    <Compile Include="TableClass\FilterRowHandlerField.cs" />
+    <Compile Include="TableClass\FilterRowHandlerProperty.cs" />
+    <Compile Include="TableClass\FilterRowMethod.cs" />
+    <Compile Include="TableClass\OnRowValidateMethod.cs" />
+    <Compile Include="TableClass\RowValidateEvent.cs" />
+    <Compile Include="TableClass\ItemInt32Property.cs" />
+    <Compile Include="TargetClass\DestroyMethod.cs" />
+    <Compile Include="TargetClass\CreateMethod.cs" />
+    <Compile Include="TargetClass\UpdateMethod.cs" />
+    <Compile Include="TableClass\VoidConstructor.cs" />
+    <Compile Include="TableClass\CountProperty.cs" />
+    <Compile Include="RowClass\ColumnProperty.cs" />
+    <Compile Include="RowClass\IsNullMethod.cs" />
+    <Compile Include="RowClass\RowBuilderConstructor.cs" />
+    <Compile Include="TargetClass\ThreadWaitTimeField.cs" />
+    <Compile Include="MiddleTierGenerator.cs" />
+    <Compile Include="TargetClass\TargetClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Namespace.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RowClass\RowClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TableClass\TableClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransactionClass\ConnectionStringField.cs" />
+    <Compile Include="TransactionClass\AddLockMethod.cs" />
+    <Compile Include="TransactionClass\AddRecordMethod.cs" />
+    <Compile Include="TransactionClass\CommitMethod.cs" />
+    <Compile Include="TransactionClass\RollbackMethod.cs" />
+    <Compile Include="TransactionClass\PrepareMethod.cs" />
+    <Compile Include="TransactionClass\OnTransactionCompletedMethod.cs" />
+    <Compile Include="TransactionClass\InDoubtMethod.cs" />
+    <Compile Include="TransactionClass\TransactionIdProperty.cs" />
+    <Compile Include="TransactionClass\CurrentProperty.cs" />
+    <Compile Include="TransactionClass\VoidConstructor.cs" />
+    <Compile Include="TransactionClass\StaticConstructor.cs" />
+    <Compile Include="TransactionClass\TransactionIdField.cs" />
+    <Compile Include="TransactionClass\SyncRootField.cs" />
+    <Compile Include="TransactionClass\RecordListField.cs" />
+    <Compile Include="TransactionClass\LockListField.cs" />
+    <Compile Include="TransactionClass\TransactionTableField.cs" />
+    <Compile Include="TransactionClass\SqlConnectionField.cs" />
+    <Compile Include="TransactionClass\SqlConnectionProperty.cs" />
+    <Compile Include="TransactionClass\TransactionClass.cs" />
+    <Compile Include="TransactionLogItemClass\Constructor.cs" />
+    <Compile Include="TransactionLogItemClass\ContainerContextField.cs" />
+    <Compile Include="TransactionLogItemClass\GetHashCodeMethod.cs" />
+    <Compile Include="TransactionLogItemClass\EqualsMethod.cs" />
+    <Compile Include="TransactionLogItemClass\TimeStampField.cs" />
+    <Compile Include="TransactionLogItemClass\SequenceField.cs" />
+    <Compile Include="TransactionLogItemClass\KeyLengthField.cs" />
+    <Compile Include="TransactionLogItemClass\DataField.cs" />
+    <Compile Include="TransactionLogItemClass\TransactionLogItemClass.cs" />
+    <None Include="Public Key.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Code Generator\Code Generator.csproj">
+      <Project>{D0267087-ADD8-41B8-A030-215D40A68FE5}</Project>
+      <Name>Code Generator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data Model Schema\Data Model Schema.csproj">
+      <Project>{11AD479E-B83C-4611-AA96-0AF71289119D}</Project>
+      <Name>Data Model Schema</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fluid Trade Library\Fluid Trade Library.csproj">
+      <Project>{734051D9-B2A3-44E9-A88B-7B4FDB90109F}</Project>
+      <Name>Mark Three Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Mark Three Software.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

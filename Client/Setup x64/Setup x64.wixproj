@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" InitialTargets="EnsureWixToolsetInstalled" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>3.10</ProductVersion>
+    <ProjectGuid>a1fa7f61-c1dc-42f2-9a2b-c2a87de109f2</ProjectGuid>
+    <SchemaVersion>2.0</SchemaVersion>
+    <OutputName>SetupGuardianClient64</OutputName>
+    <OutputType>Package</OutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <DefineConstants>Debug</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Product.wxs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bindings.config" />
+    <Content Include="DebtTrak.Client.exe.config" />
+    <Content Include="Resources\Banner.png" />
+    <Content Include="Resources\chest.png" />
+    <Content Include="Resources\creditcards.ico" />
+    <Content Include="Resources\Explorer.ico" />
+    <Content Include="Resources\Welcome.png" />
+    <Content Include="Sign.ps1" />
+  </ItemGroup>
+  <ItemGroup>
+    <WixExtension Include="WixUtilExtension">
+      <HintPath>$(WixExtDir)\WixUtilExtension.dll</HintPath>
+      <Name>WixUtilExtension</Name>
+    </WixExtension>
+    <WixExtension Include="WixUIExtension">
+      <HintPath>$(WixExtDir)\WixUIExtension.dll</HintPath>
+      <Name>WixUIExtension</Name>
+    </WixExtension>
+    <WixExtension Include="WixNetFxExtension">
+      <HintPath>$(WixExtDir)\WixNetFxExtension.dll</HintPath>
+      <Name>WixNetFxExtension</Name>
+    </WixExtension>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Additional Client Libraries\Additional Client Libraries.csproj">
+      <Name>Additional Client Libraries</Name>
+      <Project>{dada5295-0d66-4cca-950f-ce3c207a8d2d}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Fluid Trade Library\Fluid Trade Library.csproj">
+      <Name>Fluid Trade Library</Name>
+      <Project>{734051d9-b2a3-44e9-a88b-7b4fdb90109f}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Fluid Trade Windows\Fluid Trade Windows.csproj">
+      <Name>Fluid Trade Windows</Name>
+      <Project>{96e46257-35ee-4466-ad52-b4ddfb2f81d4}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Blotter Detail Report\Blotter Detail Report.csproj">
+      <Name>Blotter Detail Report</Name>
+      <Project>{fdff870b-8922-49e4-9ad8-ab41cf28a559}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Blotter Viewer\Blotter Viewer.csproj">
+      <Name>Blotter Viewer</Name>
+      <Project>{ef4aed83-8987-47a5-a98c-88fc5865a33e}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Client Data Model\Client Data Model.csproj">
+      <Name>Client Data Model</Name>
+      <Project>{b42cf522-8bf7-41e6-a80a-b694670fc9a3}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Client Trading Support\Client Trading Support.csproj">
+      <Name>Client Trading Support</Name>
+      <Project>{e4dcc322-91c6-4515-9d19-ff7181563f52}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Client\Client.csproj">
+      <Name>Client</Name>
+      <Project>{2ffe01c4-2f4a-437d-9a88-b95099f345ba}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Debt Blotter Viewer\Debt Blotter Viewer.csproj">
+      <Name>Debt Blotter Viewer</Name>
+      <Project>{1b536d53-ae6c-4d59-acdc-feb5fb4b07d1}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Debt Holder Blotter Viewer\Debt Holder Blotter Viewer.csproj">
+      <Name>Debt Holder Blotter Viewer</Name>
+      <Project>{f7094b6a-b056-4d7c-bedb-ad46588fb524}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Debt Holder Match Report\Debt Holder Match Report.csproj">
+      <Name>Debt Holder Match Report</Name>
+      <Project>{38f7ee52-2f2d-44f1-8478-f9fbc9e2b262}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Debt Holder Negotiation Console\Debt Holder Negotiation Console.csproj">
+      <Name>Debt Holder Negotiation Console</Name>
+      <Project>{e4bf6dc8-55e0-4030-ac26-1d1b24b45df1}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Debt Holder Settlement Report\Debt Holder Settlement Report.csproj">
+      <Name>Debt Holder Settlement Report</Name>
+      <Project>{71de0858-8087-47eb-9077-99405cb49918}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Debt Holder Working Order Report\Debt Holder Working Order Report.csproj">
+      <Name>Debt Holder Working Order Report</Name>
+      <Project>{a702338e-55da-4a6a-91e8-139ce2f1cb01}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Debt Negotiator Blotter Viewer\Debt Negotiator Blotter Viewer.csproj">
+      <Name>Debt Negotiator Blotter Viewer</Name>
+      <Project>{faecbfbc-7ec3-419d-9645-114595326e5a}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Debt Negotiator Match Report\Debt Negotiator Match Report.csproj">
+      <Name>Debt Negotiator Match Report</Name>
+      <Project>{ebceaf61-db73-4537-bd76-1a10e9ec9101}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Debt Negotiator Negotiation Console\Debt Negotiator Negotiation Console.csproj">
+      <Name>Debt Negotiator Negotiation Console</Name>
+      <Project>{1ad4f052-c75d-4da9-9226-d1d2d2c40023}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Debt Negotiator Settlement Report\Debt Negotiator Settlement Report.csproj">
+      <Name>Debt Negotiator Settlement Report</Name>
+      <Project>{0fdc7cd9-da25-4096-a3ca-cabf0839822c}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Debt Negotiator Working Order Report\Debt Negotiator Working Order Report.csproj">
+      <Name>Debt Negotiator Working Order Report</Name>
+      <Project>{38d5bf5c-1e6e-48bb-8578-376940fa9a88}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Debt Payment Reports\Debt Payment Reports.csproj">
+      <Name>Debt Payment Reports</Name>
+      <Project>{5bc2668a-499a-4502-9d05-f03fcb9bdf27}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Debt Working Order Report\Debt Working Order Report.csproj">
+      <Name>Debt Working Order Report</Name>
+      <Project>{9ae7fe46-ae2f-4adb-8603-ad05984a0871}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Destination Order Report\Destination Order Report.csproj">
+      <Name>Destination Order Report</Name>
+      <Project>{b4b11799-39f3-424c-a672-47dd6b09bc83}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Detail Reports\Detail Reports.csproj">
+      <Name>Detail Reports</Name>
+      <Project>{bc7eb234-72a8-4937-91a7-5e996db03485}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Equity Blotter Viewer\Equity Blotter Viewer.csproj">
+      <Name>Equity Blotter Viewer</Name>
+      <Project>{5570c1b3-dc10-4c5c-9307-ea7e377d2893}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Equity Working Order Report\Equity Working Order Report.csproj">
+      <Name>Equity Working Order Report</Name>
+      <Project>{56b08b89-f187-4bf8-8988-b8e903c0d96b}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Execution Report\Execution Report.csproj">
+      <Name>Execution Report</Name>
+      <Project>{72779a3b-b21b-484a-a17c-1dbdba359f48}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Folder Viewer\Folder Viewer.csproj">
+      <Name>Folder Viewer</Name>
+      <Project>{1f355da9-5cb4-4c0d-9207-895a4fd42485}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Guardian Library\Guardian Library.csproj">
+      <Name>Guardian Library</Name>
+      <Project>{efbd8c4f-d582-456f-92b2-40839952f0c4}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Guardian Windows\Guardian Windows.csproj">
+      <Name>Guardian Windows</Name>
+      <Project>{2adc9a25-845d-4e7c-9e0c-6a006809125f}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Match Report\Match Report.csproj">
+      <Name>Match Report</Name>
+      <Project>{ba09d365-3b00-48f9-baf8-0459c791c8bd}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Negotiation Console\Negotiation Console.csproj">
+      <Name>Negotiation Console</Name>
+      <Project>{e95a498f-17e1-476a-9dc5-70a58324ab91}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Negotiation Service\Negotiation Service.csproj">
+      <Name>Negotiation Service</Name>
+      <Project>{7d13f826-88fc-4be2-b01d-b60bc30d91e9}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Settlement Report\Settlement Report.csproj">
+      <Name>Settlement Report</Name>
+      <Project>{8334e336-b138-41d8-b083-b6f4cae8e1b1}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Source Order Report\Source Order Report.csproj">
+      <Name>Source Order Report</Name>
+      <Project>{3d646773-176e-4610-8306-47a1079fd1f4}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Guardian\Working Order Report\Working Order Report.csproj">
+      <Name>Working Order Report</Name>
+      <Project>{021ca870-d3f5-47e4-a418-a97ac678b10c}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Message Library\Message Library.csproj">
+      <Name>Message Library</Name>
+      <Project>{d91752cc-efba-4e86-9f71-576499101e02}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PDF Control\PDF Control.csproj">
+      <Name>PDF Control</Name>
+      <Project>{17c7c076-4f59-4881-8596-676686f7b46f}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(WixTargetsPath)" Condition=" '$(WixTargetsPath)' != '' " />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets" Condition=" '$(WixTargetsPath)' == '' AND Exists('$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets') " />
+  <Target Name="EnsureWixToolsetInstalled" Condition=" '$(WixTargetsImported)' != 'true' ">
+    <Error Text="The WiX Toolset v3.11 (or newer) build tools must be installed to build this project. To download the WiX Toolset, see http://wixtoolset.org/releases/" />
+  </Target>
+  <PropertyGroup>
+    <PreBuildEvent>powershell -NoProfile -File "$(ProjectDir)Sign.ps1</PreBuildEvent>
+  </PropertyGroup>
+  <!--
+	To modify your build process, add your task inside one of the targets below and uncomment it.
+	Other similar extension points exist, see Wix.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+</Project>

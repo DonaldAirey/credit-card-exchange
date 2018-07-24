@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="TimeInForce">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <method name="CreateTimeInForceEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="At the Market Close" />
+    <parameter name="externalId0" value="CLO" />
+    <parameter name="mnemonic" value="CLO" />
+    <parameter name="sortOrder" value="3" />
+    <parameter name="timeInForceCode" value="AtTheClose" />
+  </method>
+  <method name="CreateTimeInForceEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Day" />
+    <parameter name="externalId0" value="DAY" />
+    <parameter name="mnemonic" value="DAY" />
+    <parameter name="sortOrder" value="0" />
+    <parameter name="timeInForceCode" value="Day" />
+  </method>
+  <method name="CreateTimeInForceEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Fill or Kill" />
+    <parameter name="externalId0" value="FOK" />
+    <parameter name="mnemonic" value="FOK" />
+    <parameter name="sortOrder" value="4" />
+    <parameter name="timeInForceCode" value="FillOrKill" />
+  </method>
+  <method name="CreateTimeInForceEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Good 'til Canceled" />
+    <parameter name="externalId0" value="GTC" />
+    <parameter name="mnemonic" value="GTC" />
+    <parameter name="sortOrder" value="1" />
+    <parameter name="timeInForceCode" value="GoodTillCancel" />
+  </method>
+  <method name="CreateTimeInForceEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Immediate or Cancel" />
+    <parameter name="externalId0" value="IOC" />
+    <parameter name="mnemonic" value="IOC" />
+    <parameter name="sortOrder" value="5" />
+    <parameter name="timeInForceCode" value="ImmediateOrCancel" />
+  </method>
+  <method name="CreateTimeInForceEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="At the Market Open" />
+    <parameter name="externalId0" value="OPG" />
+    <parameter name="mnemonic" value="OPG" />
+    <parameter name="sortOrder" value="2" />
+    <parameter name="timeInForceCode" value="AtTheOpening" />
+  </method>
+</script>

@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3C025A69-82B0-4C8A-9C49-C3989DF7C40C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FluidTrade.Guardian.GCSWebServiceClient</RootNamespace>
+    <AssemblyName>FluidTrade.GCSWebServiceClient</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Public Key.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>true</DelaySign>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.IdentityModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Service References\GCSWebServiceReference\AccountsWSDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\BankAccountTypesWSDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\BankHolidaysWSDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\BanksWSDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\ClientsListWSDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\ClientsWSDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\DebitInfoWSDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\DebitsWSDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\DepositsWSDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\NotesWSDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\NsfStatusWSDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\PayeesListWSDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\PayeesWSDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\PaymentInfoWSDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\PaymentsWSDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\PolicyGroupsWSDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\StatesWSDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\TransactionsWSDS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\webservices.wsdl" />
+    <Compile Include="GuidHelper.cs" />
+    <Compile Include="PaymentDealer.cs" />
+    <Compile Include="PaymentInfo.cs" />
+    <Compile Include="PaymentsWSDS.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SavingsBalance.cs" />
+    <Compile Include="Service References\GCSWebServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Fluid Trade Library\Fluid Trade Library.csproj">
+      <Project>{734051D9-B2A3-44E9-A88B-7B4FDB90109F}</Project>
+      <Name>Fluid Trade Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Guardian Library\Guardian Library.csproj">
+      <Project>{EFBD8C4F-D582-456F-92B2-40839952F0C4}</Project>
+      <Name>Guardian Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Server Data Model\Server Data Model.csproj">
+      <Project>{DF8E8A7B-721B-4C81-AA59-1221CB001C60}</Project>
+      <Name>Server Data Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Trading Support\Trading Support.csproj">
+      <Project>{67470C76-6D65-40E7-A782-3D26ABE4F9FF}</Project>
+      <Name>Trading Support</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\GCSWebServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GCSWebServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GCSWebServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\System.Xml.XmlNode.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Public Key.snk" />
+    <None Include="Service References\GCSWebServiceReference\FluidTrade.Guardian.GCSWebServiceClient.GCSWebServiceReference.AccountsWSDS1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\FluidTrade.Guardian.GCSWebServiceClient.GCSWebServiceReference.BankAccountTypesWSDS1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\FluidTrade.Guardian.GCSWebServiceClient.GCSWebServiceReference.BankHolidaysWSDS1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\FluidTrade.Guardian.GCSWebServiceClient.GCSWebServiceReference.BanksWSDS1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\FluidTrade.Guardian.GCSWebServiceClient.GCSWebServiceReference.ClientsListWSDS1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\FluidTrade.Guardian.GCSWebServiceClient.GCSWebServiceReference.ClientsWSDS1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\FluidTrade.Guardian.GCSWebServiceClient.GCSWebServiceReference.DebitInfoWSDS1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\FluidTrade.Guardian.GCSWebServiceClient.GCSWebServiceReference.DebitsWSDS1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\FluidTrade.Guardian.GCSWebServiceClient.GCSWebServiceReference.DepositsWSDS1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\FluidTrade.Guardian.GCSWebServiceClient.GCSWebServiceReference.NotesWSDS1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\FluidTrade.Guardian.GCSWebServiceClient.GCSWebServiceReference.NsfStatusWSDS1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\FluidTrade.Guardian.GCSWebServiceClient.GCSWebServiceReference.PayeesListWSDS1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\FluidTrade.Guardian.GCSWebServiceClient.GCSWebServiceReference.PayeesWSDS1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\FluidTrade.Guardian.GCSWebServiceClient.GCSWebServiceReference.PaymentInfoWSDS1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\FluidTrade.Guardian.GCSWebServiceClient.GCSWebServiceReference.PaymentsWSDS1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\FluidTrade.Guardian.GCSWebServiceClient.GCSWebServiceReference.PolicyGroupsWSDS1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\FluidTrade.Guardian.GCSWebServiceClient.GCSWebServiceReference.StatesWSDS1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\FluidTrade.Guardian.GCSWebServiceClient.GCSWebServiceReference.TransactionsWSDS1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GCSWebServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

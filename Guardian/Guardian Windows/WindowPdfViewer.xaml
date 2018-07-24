@@ -1,0 +1,57 @@
+﻿<Window x:Class="FluidTrade.Guardian.WindowPdfViewer"
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:control="clr-namespace:FluidTrade.Core.Windows;assembly=FluidTrade.PdfControl"
+				Title="Settlement Letter Preview"
+				MinHeight="500" 
+				MinWidth="400">
+	<!--Resources-->
+	<!-- Styles -->
+	<!-- CommonStyle -->
+	<Window.Resources>
+		<Style x:Key="ImageGreyStyle" TargetType="Image">
+			<Setter Property="IsEnabled" 
+							Value="{Binding RelativeSource={RelativeSource AncestorType={x:Type Button}, AncestorLevel=1},Path=IsEnabled, Mode=TwoWay}" />
+			<Style.Triggers>
+				<Trigger Property="IsEnabled" Value="False">
+					<Setter Property="Opacity" Value="0.50"/>
+				</Trigger>
+			</Style.Triggers>
+		</Style>
+	</Window.Resources>
+	<!--Presentation-->
+	<DockPanel>
+		<ToolBarTray DockPanel.Dock="Top" >
+			<ToolBar Height="35">
+				<Button ToolBar.OverflowMode="Never" Click="PrintButton_Click">
+					<Image Source="Resources\printer2.png" />
+					<Button.ToolTip>
+						Print Document
+					</Button.ToolTip>
+				</Button>
+				<Button Click="SaveButton_Click">
+					<Image Source="Resources\disk_blue.png"/>
+					<Button.ToolTip>
+						Save Document
+					</Button.ToolTip>
+				</Button>
+				<Separator></Separator>
+				<Button Name="PreviousButton" IsEnabled="False" Click="PreviousPageButton_Click" >
+					<Image Source="Resources\arrow_up_blue.png" Style="{StaticResource ImageGreyStyle}"/>
+					<Button.ToolTip>
+						Page Up
+					</Button.ToolTip>
+				</Button>
+				<Button Name="NextButton" Click="NextPageButton_Click" >
+					<Image Source="Resources\arrow_down_blue.png" Style="{StaticResource ImageGreyStyle}"/>
+					<Button.ToolTip>
+						Page Down
+					</Button.ToolTip>
+				</Button>
+			</ToolBar>
+		</ToolBarTray>
+		<Grid>
+			<control:PdfViewer Name="pdfViewer"/>
+		</Grid>
+	</DockPanel>
+</Window>

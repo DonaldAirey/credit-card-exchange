@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Xml Schema Version: 1 -->
+<xs:schema id="DebtNegotiator" targetNamespace="http://debttrak.fluidtrade.com/DebtNegotiatorImportSchema.xsd" xmlns="http://debttrak.fluidtrade.com/DebtNegotiatorImportSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DebtNegotiator">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DebtNegotiatorRecord">
+          <xs:complexType>
+            <xs:all>
+              <!-- Debtor's Account Balance/Charge Off Balance -->
+              <xs:element name="AccountBalance" type="xs:decimal" />
+              <!-- Debt Negotiator's Unique Account Number -->
+              <xs:element name="AccountCode" type="xs:string" />
+              <!-- Debtor's Address -->
+              <xs:element name="Address1" type="xs:string" minOccurs="0" />
+              <!-- Debtor's Address -->
+              <xs:element name="Address2" type="xs:string" minOccurs="0" />
+              <!-- Debtor's Bank Account Number -->
+              <xs:element name="BankAccountNumber" type="xs:string" minOccurs="0" />
+              <!-- Debtor's Bank Routing Number -->
+              <xs:element name="BankRoutingNumber" type="xs:string" minOccurs="0" />
+              <!-- Debtor's City -->
+              <xs:element name="City" type="xs:string" minOccurs="0" />
+              <!-- Debt Negotiator unique code for a customer -->
+              <xs:element name="CustomerCode" type="xs:string" />
+              <!-- Debtor's Date of Birth -->
+              <xs:element name="DateOfBirth" type="xs:date" minOccurs="0" />
+              <!-- Credit Card Issuer Code (BofA, Citi, Citibank, etc...) -->
+              <xs:element name="DebtHolder" type="xs:string" minOccurs="0" />
+              <!-- Debtor's  First Name -->
+              <xs:element name="FirstName" type="xs:string" minOccurs="0" />
+              <!-- Debtor's Emloyment Status -->
+              <xs:element name="IsEmployed" type="xs:boolean" minOccurs="0" />
+              <!-- Debtor's Last Name -->
+              <xs:element name="LastName" type="xs:string" minOccurs="0" />
+              <!-- Debtor's Middle Name -->
+              <xs:element name="MiddleName" type="xs:string" minOccurs="0" />
+              <!-- Debtor's Original Credit Card Account Number -->
+              <xs:element name="OriginalAccountNumber" type="xs:string" />
+              <!-- Debtor's Phone Number -->
+              <xs:element name="PhoneNumber" type="xs:string" minOccurs="0" />
+              <!-- Debtor's Zip Code -->
+              <xs:element name="PostalCode" type="xs:string" minOccurs="0" />
+              <!-- Debtor's State -->
+              <xs:element name="ProvinceCode" type="xs:string" minOccurs="0" />
+							<!-- Debtor's Savings Account -->
+							<xs:element name="SavingsAccount" type="xs:string" minOccurs="0" />
+							<!-- Debtor's Savings Balance -->
+              <xs:element name="SavingsBalance" type="xs:decimal" />
+              <!-- Debtor's Savings Entity (Bank/Custodian/Self Help) -->
+              <xs:element name="SavingsEntityCode" type="xs:string" />
+              <!-- Debtor's Social Security Number -->
+              <xs:element name="SocialSecurityNumber" type="xs:string" />
+              <!-- Debtor's Suffix (Jr, Sr, III, etc...) -->
+              <xs:element name="Suffix" type="xs:string" minOccurs="0" />
+              <!-- Debtor's Saluation (for Letter: Mrs., Mr., Miss, etc...) -->
+              <xs:element name="Salutation" type="xs:string" minOccurs="0" />
+              <!-- DebtTrak-supplied code to identify your firm -->
+              <xs:element name="VendorCode" type="xs:string" minOccurs="0" />
+            </xs:all>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+			<xs:attribute name="SchemaVersion" fixed="2" type="xs:int" use="required" />
+		</xs:complexType>
+  </xs:element>
+</xs:schema>

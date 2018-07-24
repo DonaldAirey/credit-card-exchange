@@ -1,0 +1,2612 @@
+<DebtHolder xmlns="http://debttrak.fluidtrade.com/DebtHolderImportSchema.xsd">
+  <DebtHolderRecord>
+    <AccountBalance>2742.11</AccountBalance>
+    <AccountCode>101296343</AccountCode>
+    <Address1>65 Dock Street</Address1>
+    <City>Orlando</City>
+    <DateOfBirth>1974-03-19</DateOfBirth>
+    <DateOfDelinquency>2002-07-05</DateOfDelinquency>
+    <DebtHolder>First Premier Bank</DebtHolder>
+    <FirstName>Lindsay</FirstName>
+    <LastName>Goodwin-glenn</LastName>
+    <MiddleName>D</MiddleName>
+    <OriginalAccountNumber>5109532796492328</OriginalAccountNumber>
+    <PhoneNumber>(850) 284 4717</PhoneNumber>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>010-82-3164</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>1323.49</AccountBalance>
+    <AccountCode>295583100</AccountCode>
+    <Address1>135 First Avenue</Address1>
+    <City>Orlando</City>
+    <DateOfBirth>1986-06-10</DateOfBirth>
+    <DateOfDelinquency>2002-04-23</DateOfDelinquency>
+    <LastName>Kennedy</LastName>
+    <MiddleName>O</MiddleName>
+    <OriginalAccountNumber>4112935052234370</OriginalAccountNumber>
+    <PhoneNumber>(850) 293 0367</PhoneNumber>
+    <PostalCode>328392551</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>068-24-5415</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8467.43</AccountBalance>
+    <AccountCode>937765937</AccountCode>
+    <Address1>147 Second Avenue</Address1>
+    <City>Bradenton</City>
+    <DateOfBirth>1949-02-13</DateOfBirth>
+    <DateOfDelinquency>2002-07-08</DateOfDelinquency>
+    <DebtHolder>Providian Visa Mastercard</DebtHolder>
+    <FirstName>Chen</FirstName>
+    <LastName>Halligan</LastName>
+    <MiddleName>C</MiddleName>
+    <OriginalAccountNumber>5296543415962670</OriginalAccountNumber>
+    <PostalCode>342099574</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>851-59-1301</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5363.32</AccountBalance>
+    <AccountCode>851071854</AccountCode>
+    <Address1>66 North Carolina Avenue</Address1>
+    <City>Houston</City>
+    <DateOfBirth>1970-03-08</DateOfBirth>
+    <DebtHolder>First Tennessee Bank</DebtHolder>
+    <FirstName>Oreste</FirstName>
+    <LastName>Munk-kegeler</LastName>
+    <MiddleName>N</MiddleName>
+    <OriginalAccountNumber>4904564462122560</OriginalAccountNumber>
+    <PhoneNumber>(352) 639 4506</PhoneNumber>
+    <PostalCode>770444924</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>119-51-1357</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8883.31</AccountBalance>
+    <AccountCode>402044081</AccountCode>
+    <Address1>194 Mechanics Street</Address1>
+    <City>Ormond Beach</City>
+    <DateOfBirth>1977-10-24</DateOfBirth>
+    <DateOfDelinquency>2003-07-17</DateOfDelinquency>
+    <DebtHolder>Aspire</DebtHolder>
+    <FirstName>Senella</FirstName>
+    <LastName>Casserly</LastName>
+    <MiddleName>B</MiddleName>
+    <OriginalAccountNumber>4948158367708524</OriginalAccountNumber>
+    <PostalCode>321760321</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>147-09-6535</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3021.58</AccountBalance>
+    <AccountCode>274816612</AccountCode>
+    <Address1>169 Pacific Avenue</Address1>
+    <City>Cape Coral</City>
+    <DateOfBirth>1944-04-10</DateOfBirth>
+    <DebtHolder>Household DIRM</DebtHolder>
+    <LastName>Brandman</LastName>
+    <MiddleName>Y</MiddleName>
+    <OriginalAccountNumber>5279580965959410</OriginalAccountNumber>
+    <PhoneNumber>(407) 355 4310</PhoneNumber>
+    <PostalCode>339912417</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>300-51-7364</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>11052.46</AccountBalance>
+    <AccountCode>984277933</AccountCode>
+    <Address1>128 Virgina Avenue</Address1>
+    <Address2>Suite 124</Address2>
+    <City>Burleson</City>
+    <DateOfBirth>1983-02-13</DateOfBirth>
+    <DateOfDelinquency>2002-09-17</DateOfDelinquency>
+    <DebtHolder>USAA</DebtHolder>
+    <LastName>Krizmis</LastName>
+    <OriginalAccountNumber>7472936364830967</OriginalAccountNumber>
+    <PhoneNumber>(561) 252 3000</PhoneNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>426-46-1511</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3505.70</AccountBalance>
+    <AccountCode>352797408</AccountCode>
+    <Address1>77 West Fourth St.</Address1>
+    <City>Spokane</City>
+    <DateOfDelinquency>2002-01-06</DateOfDelinquency>
+    <DebtHolder>FCNB Spiegel</DebtHolder>
+    <FirstName>Jena</FirstName>
+    <LastName>Feger</LastName>
+    <MiddleName>Q</MiddleName>
+    <OriginalAccountNumber>4259078867941439</OriginalAccountNumber>
+    <PhoneNumber>(850) 293 5898</PhoneNumber>
+    <PostalCode>992023154</PostalCode>
+    <ProvinceCode>WA</ProvinceCode>
+    <SocialSecurityNumber>598-64-2438</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12791.05</AccountBalance>
+    <AccountCode>355094003</AccountCode>
+    <Address1>7 Kentucky Avenue</Address1>
+    <City>Zephyrhills</City>
+    <DateOfBirth>1975-10-01</DateOfBirth>
+    <DebtHolder>Bank Of America</DebtHolder>
+    <FirstName>Huiwei</FirstName>
+    <LastName>Cadely</LastName>
+    <OriginalAccountNumber>5415988506972523</OriginalAccountNumber>
+    <PhoneNumber>(850) 277 0571</PhoneNumber>
+    <PostalCode>33542</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>599-88-8280</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9628.75</AccountBalance>
+    <AccountCode>628326411</AccountCode>
+    <Address1>3 Third Avenue</Address1>
+    <City>Missouri City</City>
+    <DateOfBirth>1964-06-25</DateOfBirth>
+    <DateOfDelinquency>2002-09-13</DateOfDelinquency>
+    <DebtHolder>Providian First Select</DebtHolder>
+    <FirstName>Karyne</FirstName>
+    <LastName>Tegarden</LastName>
+    <OriginalAccountNumber>5889353409025816</OriginalAccountNumber>
+    <PhoneNumber>(954) 453 3567</PhoneNumber>
+    <PostalCode>774892182</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>264-11-4692</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>14191.88</AccountBalance>
+    <AccountCode>443769689</AccountCode>
+    <Address1>147 Second Avenue</Address1>
+    <City>Bradenton</City>
+    <DateOfBirth>1949-02-13</DateOfBirth>
+    <DebtHolder>Citibank</DebtHolder>
+    <FirstName>Chen</FirstName>
+    <LastName>Halligan</LastName>
+    <MiddleName>C</MiddleName>
+    <OriginalAccountNumber>4844712093610222</OriginalAccountNumber>
+    <PostalCode>342099574</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>851-59-1301</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12582.65</AccountBalance>
+    <AccountCode>072856605</AccountCode>
+    <Address1>56 Virgina Avenue</Address1>
+    <City>New York</City>
+    <DateOfBirth>1980-06-24</DateOfBirth>
+    <DateOfDelinquency>2002-05-21</DateOfDelinquency>
+    <DebtHolder>Household General Motors</DebtHolder>
+    <FirstName>Marion</FirstName>
+    <LastName>Bourdon</LastName>
+    <MiddleName>Q</MiddleName>
+    <OriginalAccountNumber>7495237380242015</OriginalAccountNumber>
+    <PostalCode>10014</PostalCode>
+    <ProvinceCode>NY</ProvinceCode>
+    <SocialSecurityNumber>755-85-4342</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>4891.38</AccountBalance>
+    <AccountCode>038560459</AccountCode>
+    <Address1>23 West Fourth St.</Address1>
+    <City>Hialeah</City>
+    <DateOfDelinquency>2002-09-05</DateOfDelinquency>
+    <DebtHolder>Columbus Bank and Trust</DebtHolder>
+    <FirstName>Waldemar</FirstName>
+    <LastName>Desilma</LastName>
+    <MiddleName>C</MiddleName>
+    <OriginalAccountNumber>4122043095350516</OriginalAccountNumber>
+    <PhoneNumber>(850) 695 8545</PhoneNumber>
+    <PostalCode>330100700</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>374-25-4684</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>14765.93</AccountBalance>
+    <AccountCode>526778556</AccountCode>
+    <Address1>102 North Carolina Avenue</Address1>
+    <City>Ocean City</City>
+    <DateOfBirth>1972-09-27</DateOfBirth>
+    <DebtHolder>MBNA</DebtHolder>
+    <FirstName>Natvarlal</FirstName>
+    <LastName>Mosley</LastName>
+    <MiddleName>B</MiddleName>
+    <OriginalAccountNumber>7418964379262674</OriginalAccountNumber>
+    <PhoneNumber>(850) 284 3464</PhoneNumber>
+    <ProvinceCode>MD</ProvinceCode>
+    <SocialSecurityNumber>886-89-3745</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12638.91</AccountBalance>
+    <AccountCode>437583121</AccountCode>
+    <Address1>173 Dock Street</Address1>
+    <Address2>Apartment 5</Address2>
+    <City>Newport</City>
+    <DateOfBirth>1940-08-14</DateOfBirth>
+    <DebtHolder>Household General Motors</DebtHolder>
+    <FirstName>Ileen</FirstName>
+    <LastName>Norrbin</LastName>
+    <OriginalAccountNumber>7080730355842026</OriginalAccountNumber>
+    <PhoneNumber>(407) 344 4412</PhoneNumber>
+    <PostalCode>99156</PostalCode>
+    <ProvinceCode>WA</ProvinceCode>
+    <SocialSecurityNumber>758-22-9603</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>676.81</AccountBalance>
+    <AccountCode>268929779</AccountCode>
+    <Address1>19 Six Avenue</Address1>
+    <City>Columbus</City>
+    <DateOfBirth>1982-08-24</DateOfBirth>
+    <DebtHolder>National City</DebtHolder>
+    <FirstName>Marivette</FirstName>
+    <LastName>Healer</LastName>
+    <MiddleName>R</MiddleName>
+    <OriginalAccountNumber>5607508603784909</OriginalAccountNumber>
+    <PhoneNumber>(813) 574 5210</PhoneNumber>
+    <PostalCode>43232</PostalCode>
+    <ProvinceCode>OH</ProvinceCode>
+    <SocialSecurityNumber>787-72-1370</SocialSecurityNumber>
+    <Suffix>Sr</Suffix>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9750.99</AccountBalance>
+    <AccountCode>351837125</AccountCode>
+    <Address1>174 Tenth Avenue</Address1>
+    <City>Philadelphia</City>
+    <DateOfBirth>1949-08-19</DateOfBirth>
+    <DateOfDelinquency>2002-07-19</DateOfDelinquency>
+    <DebtHolder>Household Orchard Bank</DebtHolder>
+    <FirstName>Mcarthur</FirstName>
+    <LastName>Schwikert</LastName>
+    <MiddleName>P</MiddleName>
+    <OriginalAccountNumber>4825132308119471</OriginalAccountNumber>
+    <PhoneNumber>(863) 557 2583</PhoneNumber>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>478-46-7245</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7415.79</AccountBalance>
+    <AccountCode>563555466</AccountCode>
+    <Address1>78 Park Place</Address1>
+    <City>Houston</City>
+    <DebtHolder>Providian First Select</DebtHolder>
+    <FirstName>Tangerine</FirstName>
+    <LastName>Pique</LastName>
+    <MiddleName>D</MiddleName>
+    <OriginalAccountNumber>4800846181756997</OriginalAccountNumber>
+    <PhoneNumber>(850) 277 9328</PhoneNumber>
+    <PostalCode>770471012</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>057-10-0826</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>1085.47</AccountBalance>
+    <AccountCode>672223259</AccountCode>
+    <Address1>104 Boardwalk</Address1>
+    <City>Columbia</City>
+    <DateOfBirth>1990-05-08</DateOfBirth>
+    <DebtHolder>Target National Bank</DebtHolder>
+    <FirstName>Cari</FirstName>
+    <LastName>Chalcraft</LastName>
+    <OriginalAccountNumber>4071443025474186</OriginalAccountNumber>
+    <PhoneNumber>(850) 292 4977</PhoneNumber>
+    <ProvinceCode>SC</ProvinceCode>
+    <SocialSecurityNumber>717-59-1015</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>4621.87</AccountBalance>
+    <AccountCode>785374819</AccountCode>
+    <Address1>83 St. James Place</Address1>
+    <City>San Francisco</City>
+    <DateOfBirth>1975-04-10</DateOfBirth>
+    <DebtHolder>Household Orchard Bank</DebtHolder>
+    <FirstName>Regino</FirstName>
+    <LastName>Dumont</LastName>
+    <OriginalAccountNumber>5291174620248003</OriginalAccountNumber>
+    <PhoneNumber>(850) 280 4710</PhoneNumber>
+    <PostalCode>94103</PostalCode>
+    <SocialSecurityNumber>487-56-6028</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>13107.99</AccountBalance>
+    <AccountCode>665260521</AccountCode>
+    <Address1>142 Beacon Street</Address1>
+    <City>Portland</City>
+    <DateOfBirth>1968-10-06</DateOfBirth>
+    <DateOfDelinquency>2002-09-09</DateOfDelinquency>
+    <DebtHolder>Union Privilege</DebtHolder>
+    <FirstName>Neel</FirstName>
+    <LastName>Northorp</LastName>
+    <MiddleName>C</MiddleName>
+    <OriginalAccountNumber>5265175386072002</OriginalAccountNumber>
+    <ProvinceCode>OR</ProvinceCode>
+    <SocialSecurityNumber>084-39-3243</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10687.43</AccountBalance>
+    <AccountCode>756729725</AccountCode>
+    <Address1>153 Copley Place</Address1>
+    <City>Orlando</City>
+    <DateOfDelinquency>2002-09-16</DateOfDelinquency>
+    <DebtHolder>Advanta</DebtHolder>
+    <FirstName>Zonglan</FirstName>
+    <LastName>Gustaff</LastName>
+    <MiddleName>A</MiddleName>
+    <OriginalAccountNumber>4958348114370919</OriginalAccountNumber>
+    <PhoneNumber>(904) 864 3169</PhoneNumber>
+    <PostalCode>328193541</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>545-29-9431</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9796.18</AccountBalance>
+    <AccountCode>238558117</AccountCode>
+    <Address1>21 Columbus Avenue</Address1>
+    <City>Salem</City>
+    <DateOfBirth>1960-09-21</DateOfBirth>
+    <DebtHolder>Chase Manhattan Bank Providian</DebtHolder>
+    <FirstName>Neida</FirstName>
+    <LastName>Sessi</LastName>
+    <MiddleName>J</MiddleName>
+    <OriginalAccountNumber>7756302991342483</OriginalAccountNumber>
+    <PhoneNumber>(850) 284 7709</PhoneNumber>
+    <ProvinceCode>MA</ProvinceCode>
+    <SocialSecurityNumber>482-63-7663</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5504.38</AccountBalance>
+    <AccountCode>563490929</AccountCode>
+    <City>Guys</City>
+    <DateOfBirth>1954-07-17</DateOfBirth>
+    <DateOfDelinquency>2001-04-13</DateOfDelinquency>
+    <DebtHolder>FCNB Newport News</DebtHolder>
+    <FirstName>Santhia</FirstName>
+    <LastName>Kurti</LastName>
+    <OriginalAccountNumber>5747740879857708</OriginalAccountNumber>
+    <PostalCode>38339</PostalCode>
+    <ProvinceCode>TN</ProvinceCode>
+    <SocialSecurityNumber>083-81-0901</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5753.78</AccountBalance>
+    <AccountCode>591719830</AccountCode>
+    <Address1>177 Main Street</Address1>
+    <City>Columbus</City>
+    <DateOfBirth>1943-05-07</DateOfBirth>
+    <DateOfDelinquency>2002-09-10</DateOfDelinquency>
+    <DebtHolder>USAA</DebtHolder>
+    <FirstName>Treina</FirstName>
+    <LastName>Peshek</LastName>
+    <MiddleName>B</MiddleName>
+    <OriginalAccountNumber>7564410432352251</OriginalAccountNumber>
+    <PhoneNumber>(954) 423 5018</PhoneNumber>
+    <PostalCode>43224</PostalCode>
+    <ProvinceCode>OH</ProvinceCode>
+    <SocialSecurityNumber>627-97-2354</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>2904.42</AccountBalance>
+    <AccountCode>185047300</AccountCode>
+    <City>Mcallen</City>
+    <DebtHolder>Household Arbor</DebtHolder>
+    <FirstName>Minnie</FirstName>
+    <LastName>Bebbington</LastName>
+    <MiddleName>R</MiddleName>
+    <OriginalAccountNumber>5006726973211910</OriginalAccountNumber>
+    <PhoneNumber>(407) 345 3535</PhoneNumber>
+    <PostalCode>785044439</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>766-46-6816</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>2007.61</AccountBalance>
+    <AccountCode>892116931</AccountCode>
+    <Address1>101 Broad Street</Address1>
+    <City>Sylmar</City>
+    <DateOfBirth>1970-09-02</DateOfBirth>
+    <DebtHolder>First USA Bank NA</DebtHolder>
+    <FirstName>Mercede</FirstName>
+    <LastName>Swilley</LastName>
+    <MiddleName>U</MiddleName>
+    <OriginalAccountNumber>5492994377421294</OriginalAccountNumber>
+    <PhoneNumber>(850) 292 2112</PhoneNumber>
+    <PostalCode>91342</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>171-85-1629</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8780.93</AccountBalance>
+    <AccountCode>890922681</AccountCode>
+    <City>Marshall</City>
+    <DateOfBirth>1965-02-26</DateOfBirth>
+    <DateOfDelinquency>2002-05-05</DateOfDelinquency>
+    <DebtHolder>Providian Visa Mastercard</DebtHolder>
+    <FirstName>Saprina</FirstName>
+    <LastName>Hutchcraft</LastName>
+    <MiddleName>A</MiddleName>
+    <OriginalAccountNumber>4700655242049914</OriginalAccountNumber>
+    <PhoneNumber>(850) 205 7511</PhoneNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>872-41-8289</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8286.59</AccountBalance>
+    <AccountCode>913620341</AccountCode>
+    <Address1>159 Connecticut Avenue</Address1>
+    <City>Dallas</City>
+    <DateOfBirth>1959-09-09</DateOfBirth>
+    <DebtHolder>First Tennessee Bank</DebtHolder>
+    <FirstName>Darrel</FirstName>
+    <LastName>Oikelome</LastName>
+    <MiddleName>R</MiddleName>
+    <OriginalAccountNumber>4600303931780830</OriginalAccountNumber>
+    <PhoneNumber>(850) 293 1142</PhoneNumber>
+    <PostalCode>752093939</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>709-67-9915</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7327.40</AccountBalance>
+    <AccountCode>122726891</AccountCode>
+    <Address1>102 North Carolina Avenue</Address1>
+    <City>Ocean City</City>
+    <DateOfBirth>1972-09-27</DateOfBirth>
+    <DateOfDelinquency>2002-09-05</DateOfDelinquency>
+    <DebtHolder>US Bank</DebtHolder>
+    <FirstName>Natvarlal</FirstName>
+    <LastName>Mosley</LastName>
+    <MiddleName>B</MiddleName>
+    <OriginalAccountNumber>4149342704646462</OriginalAccountNumber>
+    <PhoneNumber>(850) 284 3464</PhoneNumber>
+    <ProvinceCode>MD</ProvinceCode>
+    <SocialSecurityNumber>886-89-3745</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>11525.54</AccountBalance>
+    <AccountCode>002567681</AccountCode>
+    <Address1>154 Mechanics Street</Address1>
+    <City>Saint Petersbur</City>
+    <DateOfBirth>1982-06-22</DateOfBirth>
+    <DebtHolder>Household Arbor</DebtHolder>
+    <FirstName>Rozier</FirstName>
+    <LastName>Pruyn</LastName>
+    <MiddleName>T</MiddleName>
+    <OriginalAccountNumber>7452984870031715</OriginalAccountNumber>
+    <PostalCode>337094555</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>617-38-6577</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3837.37</AccountBalance>
+    <AccountCode>473985599</AccountCode>
+    <Address1>113 Park Place</Address1>
+    <City>Orlando</City>
+    <DateOfDelinquency>2001-11-11</DateOfDelinquency>
+    <DebtHolder>State Farm Bank</DebtHolder>
+    <FirstName>Walkiria</FirstName>
+    <LastName>Yang</LastName>
+    <OriginalAccountNumber>5378285326801212</OriginalAccountNumber>
+    <PostalCode>32807</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>575-47-7692</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3026.35</AccountBalance>
+    <AccountCode>120103387</AccountCode>
+    <Address1>29 Dock Street</Address1>
+    <City>Meridian</City>
+    <DebtHolder>US Bank</DebtHolder>
+    <FirstName>Genodria</FirstName>
+    <LastName>Wolfe-nobles</LastName>
+    <OriginalAccountNumber>4738554246009393</OriginalAccountNumber>
+    <PostalCode>39307</PostalCode>
+    <ProvinceCode>MS</ProvinceCode>
+    <SocialSecurityNumber>415-36-1387</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12659.59</AccountBalance>
+    <AccountCode>719212112</AccountCode>
+    <Address1>3 Copley Place</Address1>
+    <City>Philadelphia</City>
+    <DateOfBirth>1952-06-27</DateOfBirth>
+    <DateOfDelinquency>2002-12-29</DateOfDelinquency>
+    <DebtHolder>Chase Manhattan Bank Providian</DebtHolder>
+    <FirstName>Kimmy</FirstName>
+    <LastName>Huntsberger</LastName>
+    <OriginalAccountNumber>7111457399983744</OriginalAccountNumber>
+    <PhoneNumber>(813) 512 1271</PhoneNumber>
+    <PostalCode>19134</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>013-38-8223</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>1270.25</AccountBalance>
+    <AccountCode>572000919</AccountCode>
+    <Address1>32 Copley Place</Address1>
+    <City>Charlotee</City>
+    <DateOfBirth>1960-05-04</DateOfBirth>
+    <DateOfDelinquency>2001-12-03</DateOfDelinquency>
+    <DebtHolder>Discover</DebtHolder>
+    <FirstName>Tejas</FirstName>
+    <LastName>Virgilio</LastName>
+    <MiddleName>Z</MiddleName>
+    <OriginalAccountNumber>4785477290778050</OriginalAccountNumber>
+    <ProvinceCode>NC</ProvinceCode>
+    <SocialSecurityNumber>592-57-5874</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10702.86</AccountBalance>
+    <AccountCode>576777246</AccountCode>
+    <Address1>144 Copley Place</Address1>
+    <City>Houston</City>
+    <DebtHolder>Maryland National Bank</DebtHolder>
+    <FirstName>Fornethiaframina</FirstName>
+    <LastName>Winfrey</LastName>
+    <OriginalAccountNumber>5421395105223152</OriginalAccountNumber>
+    <PhoneNumber>(850) 278 0184</PhoneNumber>
+    <PostalCode>77018</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>376-55-1055</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>11179.11</AccountBalance>
+    <AccountCode>606165073</AccountCode>
+    <Address1>153 Tennesee Avenue</Address1>
+    <Address2>Ste. 125</Address2>
+    <City>Houston</City>
+    <DebtHolder>Bank Of America</DebtHolder>
+    <LastName>Marina</LastName>
+    <MiddleName>Z</MiddleName>
+    <OriginalAccountNumber>4115570884313190</OriginalAccountNumber>
+    <PhoneNumber>(386) 383 2370</PhoneNumber>
+    <PostalCode>770444924</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>325-53-0328</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>2789.11</AccountBalance>
+    <AccountCode>044049427</AccountCode>
+    <City>Denison</City>
+    <DebtHolder>Orchard Bank</DebtHolder>
+    <OriginalAccountNumber>7163520291956999</OriginalAccountNumber>
+    <PostalCode>750206365</PostalCode>
+    <SocialSecurityNumber>956-12-5779</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>2893.08</AccountBalance>
+    <AccountCode>536243108</AccountCode>
+    <Address1>32 North Carolina Avenue</Address1>
+    <City>Williamsburg</City>
+    <DebtHolder>Household</DebtHolder>
+    <FirstName>Erna</FirstName>
+    <LastName>Grau</LastName>
+    <MiddleName>N</MiddleName>
+    <OriginalAccountNumber>7685638783467579</OriginalAccountNumber>
+    <PhoneNumber>(954) 484 4280</PhoneNumber>
+    <ProvinceCode>KY</ProvinceCode>
+    <SocialSecurityNumber>458-70-2990</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8382.37</AccountBalance>
+    <AccountCode>230589225</AccountCode>
+    <Address1>180 Connecticut Avenue</Address1>
+    <City>Los Angeles</City>
+    <DateOfBirth>1974-04-24</DateOfBirth>
+    <LastName>Aulet</LastName>
+    <MiddleName>Q</MiddleName>
+    <OriginalAccountNumber>7054651057363448</OriginalAccountNumber>
+    <PostalCode>90025</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>337-35-8277</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>2053.37</AccountBalance>
+    <AccountCode>826554524</AccountCode>
+    <City>Elloree</City>
+    <DateOfBirth>1973-12-22</DateOfBirth>
+    <DebtHolder>General Motors</DebtHolder>
+    <FirstName>Nadeen</FirstName>
+    <LastName>Poorbaugh</LastName>
+    <MiddleName>Y</MiddleName>
+    <OriginalAccountNumber>7464306433941298</OriginalAccountNumber>
+    <PhoneNumber>(407) 345 5933</PhoneNumber>
+    <PostalCode>290470608</PostalCode>
+    <ProvinceCode>SC</ProvinceCode>
+    <SocialSecurityNumber>663-72-7188</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6636.35</AccountBalance>
+    <AccountCode>129569354</AccountCode>
+    <DebtHolder>Bank Of America</DebtHolder>
+    <LastName>Tsai</LastName>
+    <MiddleName>W</MiddleName>
+    <OriginalAccountNumber>5892825848969148</OriginalAccountNumber>
+    <ProvinceCode>LA</ProvinceCode>
+    <SocialSecurityNumber>725-36-8539</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7439.09</AccountBalance>
+    <AccountCode>809571667</AccountCode>
+    <Address1>48 Grove Street</Address1>
+    <City>Kannapolis</City>
+    <DebtHolder>Metabank</DebtHolder>
+    <LastName>D'ambrosio</LastName>
+    <MiddleName>N</MiddleName>
+    <OriginalAccountNumber>4918094058572087</OriginalAccountNumber>
+    <PhoneNumber>(305) 439 5636</PhoneNumber>
+    <PostalCode>28081</PostalCode>
+    <ProvinceCode>NC</ProvinceCode>
+    <SocialSecurityNumber>030-80-2399</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>1657.83</AccountBalance>
+    <AccountCode>039389694</AccountCode>
+    <Address1>130 Darthmouth Street</Address1>
+    <City>Lompoc</City>
+    <DateOfBirth>1944-05-10</DateOfBirth>
+    <DateOfDelinquency>2002-09-17</DateOfDelinquency>
+    <FirstName>Almeda</FirstName>
+    <LastName>Rodrigo</LastName>
+    <OriginalAccountNumber>5010292026806876</OriginalAccountNumber>
+    <PhoneNumber>(727) 944 6066</PhoneNumber>
+    <PostalCode>934363837</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>371-73-0403</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7766.93</AccountBalance>
+    <AccountCode>097857322</AccountCode>
+    <Address1>155 St. James Place</Address1>
+    <City>South Miami</City>
+    <DateOfBirth>1980-03-21</DateOfBirth>
+    <DebtHolder>First National Bank Of Omaha</DebtHolder>
+    <FirstName>Louanne</FirstName>
+    <LastName>Marcy</LastName>
+    <MiddleName>Y</MiddleName>
+    <OriginalAccountNumber>5627440478716750</OriginalAccountNumber>
+    <PhoneNumber>(850) 210 6333</PhoneNumber>
+    <PostalCode>331430460</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>254-50-9460</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5294.84</AccountBalance>
+    <AccountCode>095285784</AccountCode>
+    <City>Farminton</City>
+    <DateOfBirth>1968-08-12</DateOfBirth>
+    <DebtHolder>GE Money</DebtHolder>
+    <FirstName>Viccie</FirstName>
+    <LastName>Battieste</LastName>
+    <OriginalAccountNumber>5198325726476064</OriginalAccountNumber>
+    <PhoneNumber>(239) 731 7455</PhoneNumber>
+    <ProvinceCode>UT</ProvinceCode>
+    <SocialSecurityNumber>557-76-0638</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6585.06</AccountBalance>
+    <AccountCode>047067435</AccountCode>
+    <Address1>104 Fifth Avenue</Address1>
+    <Address2>APT 3</Address2>
+    <City>El Paso</City>
+    <DateOfBirth>1956-12-08</DateOfBirth>
+    <DateOfDelinquency>2002-09-05</DateOfDelinquency>
+    <FirstName>Judelais</FirstName>
+    <LastName>Fordyce</LastName>
+    <MiddleName>D</MiddleName>
+    <OriginalAccountNumber>4154939249332733</OriginalAccountNumber>
+    <PhoneNumber>(813) 512 7624</PhoneNumber>
+    <PostalCode>799251667</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>012-74-6044</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3303.05</AccountBalance>
+    <AccountCode>573581624</AccountCode>
+    <Address1>70 Marvin Gardens</Address1>
+    <City>Chesterbrook</City>
+    <DateOfBirth>1985-06-26</DateOfBirth>
+    <DateOfDelinquency>2002-12-02</DateOfDelinquency>
+    <DebtHolder>Household HSBC</DebtHolder>
+    <FirstName>Lannie</FirstName>
+    <LastName>Lupien</LastName>
+    <MiddleName>I</MiddleName>
+    <OriginalAccountNumber>7923535811758146</OriginalAccountNumber>
+    <PhoneNumber>(850) 284 7297</PhoneNumber>
+    <PostalCode>190875816</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>484-06-3094</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>14196.92</AccountBalance>
+    <AccountCode>659741092</AccountCode>
+    <Address1>112 Dock Street</Address1>
+    <City>Advance</City>
+    <DateOfBirth>1978-01-18</DateOfBirth>
+    <DebtHolder>State Farm Bank</DebtHolder>
+    <FirstName>Selaina</FirstName>
+    <LastName>Bennefield</LastName>
+    <MiddleName>V</MiddleName>
+    <OriginalAccountNumber>4738447918694242</OriginalAccountNumber>
+    <PhoneNumber>(850) 219 8347</PhoneNumber>
+    <PostalCode>27006</PostalCode>
+    <ProvinceCode>NC</ProvinceCode>
+    <SocialSecurityNumber>098-79-1923</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12765.14</AccountBalance>
+    <AccountCode>090856324</AccountCode>
+    <Address1>94 Virgina Avenue</Address1>
+    <City>La Feria</City>
+    <DateOfDelinquency>2002-09-13</DateOfDelinquency>
+    <DebtHolder>Fleet Bank</DebtHolder>
+    <FirstName>Kiosha</FirstName>
+    <LastName>Giamella</LastName>
+    <OriginalAccountNumber>7632306106213078</OriginalAccountNumber>
+    <PostalCode>78559</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>393-30-1737</SocialSecurityNumber>
+    <Suffix>Sr</Suffix>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6361.38</AccountBalance>
+    <AccountCode>478251776</AccountCode>
+    <Address1>7 Madison Avenue</Address1>
+    <City>Mathis</City>
+    <DateOfBirth>1987-04-10</DateOfBirth>
+    <DateOfDelinquency>2002-09-17</DateOfDelinquency>
+    <DebtHolder>Citibank</DebtHolder>
+    <FirstName>Hevys</FirstName>
+    <LastName>Sangineto</LastName>
+    <MiddleName>F</MiddleName>
+    <OriginalAccountNumber>7525836560076741</OriginalAccountNumber>
+    <PhoneNumber>(239) 716 2200</PhoneNumber>
+    <PostalCode>783683343</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>971-89-3224</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12905.47</AccountBalance>
+    <AccountCode>438641411</AccountCode>
+    <Address1>36 Kentucky Avenue</Address1>
+    <City>Tintah</City>
+    <DateOfBirth>1991-06-10</DateOfBirth>
+    <DebtHolder>Aspire</DebtHolder>
+    <FirstName>Mazo</FirstName>
+    <LastName>Dingler</LastName>
+    <MiddleName>W</MiddleName>
+    <OriginalAccountNumber>7751341176215284</OriginalAccountNumber>
+    <PhoneNumber>(850) 277 5916</PhoneNumber>
+    <ProvinceCode>MN</ProvinceCode>
+    <SocialSecurityNumber>743-90-4808</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7718.63</AccountBalance>
+    <AccountCode>969280252</AccountCode>
+    <Address1>129 Tenth Avenue</Address1>
+    <City>Lester</City>
+    <DateOfBirth>1944-09-07</DateOfBirth>
+    <DateOfDelinquency>2002-09-13</DateOfDelinquency>
+    <DebtHolder>Barclays</DebtHolder>
+    <FirstName>Loretha</FirstName>
+    <LastName>Laha</LastName>
+    <MiddleName>L</MiddleName>
+    <OriginalAccountNumber>7113287274924792</OriginalAccountNumber>
+    <PostalCode>19029</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>522-42-6835</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3658.26</AccountBalance>
+    <AccountCode>450030121</AccountCode>
+    <Address1>88 Park Place</Address1>
+    <City>Pembroke Pines</City>
+    <DebtHolder>General Motors</DebtHolder>
+    <FirstName>Dodie</FirstName>
+    <LastName>Sipe</LastName>
+    <OriginalAccountNumber>5681206916711627</OriginalAccountNumber>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>021-90-0777</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6428.09</AccountBalance>
+    <AccountCode>079620277</AccountCode>
+    <City>Lexington</City>
+    <DateOfBirth>1945-10-24</DateOfBirth>
+    <DateOfDelinquency>2002-06-03</DateOfDelinquency>
+    <DebtHolder>Household General Motors</DebtHolder>
+    <FirstName>Lonita</FirstName>
+    <LastName>Hepworth</LastName>
+    <OriginalAccountNumber>4999294607709413</OriginalAccountNumber>
+    <PhoneNumber>(850) 284 0233</PhoneNumber>
+    <ProvinceCode>NC</ProvinceCode>
+    <SocialSecurityNumber>585-52-7351</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>4812.08</AccountBalance>
+    <AccountCode>055344908</AccountCode>
+    <Address1>144 West Street</Address1>
+    <City>Fort Lauderdale</City>
+    <DebtHolder>Union Privilege</DebtHolder>
+    <LastName>Engleby</LastName>
+    <MiddleName>X</MiddleName>
+    <OriginalAccountNumber>7776343000786713</OriginalAccountNumber>
+    <PhoneNumber>(561) 243 1138</PhoneNumber>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>978-17-7479</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>1986.81</AccountBalance>
+    <AccountCode>439177067</AccountCode>
+    <Address1>123 Pacific Avenue</Address1>
+    <City>Bellevue</City>
+    <DateOfBirth>1949-08-23</DateOfBirth>
+    <DateOfDelinquency>2002-12-10</DateOfDelinquency>
+    <DebtHolder>Providian First Select</DebtHolder>
+    <LastName>Legg</LastName>
+    <OriginalAccountNumber>5901004484094386</OriginalAccountNumber>
+    <PhoneNumber>(904) 864 2414</PhoneNumber>
+    <ProvinceCode>WA</ProvinceCode>
+    <SocialSecurityNumber>725-80-5500</SocialSecurityNumber>
+    <Suffix>2nd</Suffix>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>11732.01</AccountBalance>
+    <AccountCode>094070099</AccountCode>
+    <Address1>148 St. Charles Avenue</Address1>
+    <City>Ventura</City>
+    <DebtHolder>General Motors</DebtHolder>
+    <FirstName>Marian</FirstName>
+    <LastName>Trachtenberg</LastName>
+    <MiddleName>F</MiddleName>
+    <OriginalAccountNumber>7269438401320539</OriginalAccountNumber>
+    <PhoneNumber>(850) 210 9286</PhoneNumber>
+    <SocialSecurityNumber>926-71-2342</SocialSecurityNumber>
+    <Suffix>2nd</Suffix>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7928.92</AccountBalance>
+    <AccountCode>536049650</AccountCode>
+    <Address2>APT 1</Address2>
+    <City>Brooklyn</City>
+    <DateOfBirth>1949-02-25</DateOfBirth>
+    <DateOfDelinquency>2001-12-11</DateOfDelinquency>
+    <DebtHolder>Fleet Bank</DebtHolder>
+    <FirstName>Herman</FirstName>
+    <LastName>Elkins</LastName>
+    <MiddleName>L</MiddleName>
+    <OriginalAccountNumber>7870556942178510</OriginalAccountNumber>
+    <PhoneNumber>(386) 840 1380</PhoneNumber>
+    <ProvinceCode>NY</ProvinceCode>
+    <SocialSecurityNumber>670-04-7316</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10911.11</AccountBalance>
+    <AccountCode>622405110</AccountCode>
+    <Address1>65 Broad Street</Address1>
+    <City>Garner</City>
+    <DateOfDelinquency>2002-03-30</DateOfDelinquency>
+    <FirstName>Tejas</FirstName>
+    <LastName>Barrett</LastName>
+    <OriginalAccountNumber>5720582163705715</OriginalAccountNumber>
+    <PostalCode>275299707</PostalCode>
+    <ProvinceCode>NC</ProvinceCode>
+    <SocialSecurityNumber>518-32-5464</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3126.26</AccountBalance>
+    <AccountCode>166250030</AccountCode>
+    <Address1>148 Broad Street</Address1>
+    <City>El Paso</City>
+    <DateOfBirth>1988-07-23</DateOfBirth>
+    <DateOfDelinquency>2002-09-22</DateOfDelinquency>
+    <DebtHolder>FCNB Newport News</DebtHolder>
+    <FirstName>Sarina</FirstName>
+    <LastName>Lorentsen</LastName>
+    <OriginalAccountNumber>5141159280079982</OriginalAccountNumber>
+    <PhoneNumber>(850) 205 6922</PhoneNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>078-84-8325</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8642.51</AccountBalance>
+    <AccountCode>639062607</AccountCode>
+    <Address1>41 Auburn Street</Address1>
+    <City>Atkins</City>
+    <DateOfBirth>1942-11-11</DateOfBirth>
+    <DebtHolder>American Pacific Bank</DebtHolder>
+    <FirstName>Browyn</FirstName>
+    <LastName>Pallares</LastName>
+    <MiddleName>Q</MiddleName>
+    <OriginalAccountNumber>4400152587174908</OriginalAccountNumber>
+    <PhoneNumber>(850) 277 6460</PhoneNumber>
+    <ProvinceCode>AR</ProvinceCode>
+    <SocialSecurityNumber>644-16-4099</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>14676.20</AccountBalance>
+    <AccountCode>528430877</AccountCode>
+    <Address1>191 Darthmouth Street</Address1>
+    <City>Stafford</City>
+    <DateOfDelinquency>2003-03-10</DateOfDelinquency>
+    <DebtHolder>Firstmerit Bank</DebtHolder>
+    <FirstName>Sofia</FirstName>
+    <LastName>Crozier</LastName>
+    <OriginalAccountNumber>7567821933107509</OriginalAccountNumber>
+    <PhoneNumber>(407) 345 6986</PhoneNumber>
+    <PostalCode>774773501</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>321-02-6709</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5067.44</AccountBalance>
+    <AccountCode>956152182</AccountCode>
+    <City>Middletown</City>
+    <DateOfBirth>1960-08-12</DateOfBirth>
+    <DebtHolder>New Millennium Bank</DebtHolder>
+    <FirstName>Elcie</FirstName>
+    <LastName>Fury</LastName>
+    <MiddleName>Z</MiddleName>
+    <OriginalAccountNumber>4213549963014322</OriginalAccountNumber>
+    <PhoneNumber>(850) 675 7740</PhoneNumber>
+    <PostalCode>450421135</PostalCode>
+    <ProvinceCode>OH</ProvinceCode>
+    <SocialSecurityNumber>639-82-9497</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8471.73</AccountBalance>
+    <AccountCode>303461390</AccountCode>
+    <Address1>143 West Street</Address1>
+    <City>Boca Raton</City>
+    <DateOfDelinquency>2002-09-04</DateOfDelinquency>
+    <DebtHolder>Providian First Select</DebtHolder>
+    <LastName>Jeroslow</LastName>
+    <MiddleName>V</MiddleName>
+    <OriginalAccountNumber>7081146125589739</OriginalAccountNumber>
+    <PhoneNumber>(850) 293 6090</PhoneNumber>
+    <PostalCode>33428</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>591-61-4218</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10576.32</AccountBalance>
+    <AccountCode>295983550</AccountCode>
+    <DebtHolder>MBNA</DebtHolder>
+    <FirstName>Kinisha</FirstName>
+    <LastName>Cleckley</LastName>
+    <OriginalAccountNumber>5346572613140851</OriginalAccountNumber>
+    <PhoneNumber>(813) 513 8782</PhoneNumber>
+    <ProvinceCode>SC</ProvinceCode>
+    <SocialSecurityNumber>589-63-3608</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>11494.59</AccountBalance>
+    <AccountCode>508994913</AccountCode>
+    <Address1>3 Grove Street</Address1>
+    <City>Amarillo</City>
+    <DateOfBirth>1942-07-26</DateOfBirth>
+    <DateOfDelinquency>2001-07-20</DateOfDelinquency>
+    <DebtHolder>Household Arbor</DebtHolder>
+    <LastName>Farrell</LastName>
+    <OriginalAccountNumber>7639984185212892</OriginalAccountNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>450-05-9684</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>2275.00</AccountBalance>
+    <AccountCode>466618435</AccountCode>
+    <Address1>6 Third Avenue</Address1>
+    <City>Lyman</City>
+    <DateOfDelinquency>2002-08-26</DateOfDelinquency>
+    <DebtHolder>Bank First</DebtHolder>
+    <FirstName>Chereka</FirstName>
+    <LastName>Oats-ducram</LastName>
+    <MiddleName>G</MiddleName>
+    <OriginalAccountNumber>4587942628869510</OriginalAccountNumber>
+    <PhoneNumber>(850) 210 1093</PhoneNumber>
+    <PostalCode>293651328</PostalCode>
+    <ProvinceCode>SC</ProvinceCode>
+    <SocialSecurityNumber>985-92-5701</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12518.10</AccountBalance>
+    <AccountCode>550439336</AccountCode>
+    <Address2>Apt. 7</Address2>
+    <City>Humacao</City>
+    <DateOfBirth>1980-06-09</DateOfBirth>
+    <DateOfDelinquency>2002-07-12</DateOfDelinquency>
+    <DebtHolder>Household Arbor</DebtHolder>
+    <FirstName>Launda</FirstName>
+    <LastName>Schlenoff</LastName>
+    <OriginalAccountNumber>5930853528943165</OriginalAccountNumber>
+    <PhoneNumber>(239) 731 2350</PhoneNumber>
+    <PostalCode>007919402</PostalCode>
+    <ProvinceCode>PR</ProvinceCode>
+    <SocialSecurityNumber>827-12-9457</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>14446.66</AccountBalance>
+    <AccountCode>228174556</AccountCode>
+    <Address2>Suite 32</Address2>
+    <City>Carmichaels</City>
+    <DateOfDelinquency>2002-05-06</DateOfDelinquency>
+    <DebtHolder>Household GE Lechmere</DebtHolder>
+    <FirstName>Alexza</FirstName>
+    <LastName>Beyer</LastName>
+    <MiddleName>X</MiddleName>
+    <OriginalAccountNumber>5880585420586223</OriginalAccountNumber>
+    <PostalCode>15320</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>817-11-0079</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9493.51</AccountBalance>
+    <AccountCode>271783529</AccountCode>
+    <Address1>65 St. Charles Avenue</Address1>
+    <City>Charlotte</City>
+    <DateOfBirth>1971-09-18</DateOfBirth>
+    <DebtHolder>BankFirst</DebtHolder>
+    <FirstName>Leeta</FirstName>
+    <LastName>Pruiett</LastName>
+    <MiddleName>P</MiddleName>
+    <OriginalAccountNumber>4772968690091857</OriginalAccountNumber>
+    <PostalCode>282702481</PostalCode>
+    <ProvinceCode>NC</ProvinceCode>
+    <SocialSecurityNumber>628-22-0618</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>1644.33</AccountBalance>
+    <AccountCode>003608541</AccountCode>
+    <City>Pensacola</City>
+    <DateOfBirth>1970-10-11</DateOfBirth>
+    <DateOfDelinquency>2002-02-26</DateOfDelinquency>
+    <DebtHolder>USAA</DebtHolder>
+    <FirstName>Mevlyn</FirstName>
+    <LastName>Kaler</LastName>
+    <MiddleName>P</MiddleName>
+    <OriginalAccountNumber>7589110035263492</OriginalAccountNumber>
+    <PhoneNumber>(941) 964 1255</PhoneNumber>
+    <PostalCode>325140325</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>094-67-8365</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9471.60</AccountBalance>
+    <AccountCode>862039833</AccountCode>
+    <Address1>141 Indiana Avenue</Address1>
+    <Address2>Suite 2</Address2>
+    <City>Brooklyn</City>
+    <DateOfBirth>1980-05-19</DateOfBirth>
+    <FirstName>Meri</FirstName>
+    <LastName>Beckman</LastName>
+    <MiddleName>M</MiddleName>
+    <OriginalAccountNumber>4044519607061984</OriginalAccountNumber>
+    <PhoneNumber>(850) 291 5580</PhoneNumber>
+    <PostalCode>11236</PostalCode>
+    <ProvinceCode>NY</ProvinceCode>
+    <SocialSecurityNumber>548-16-0226</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6488.73</AccountBalance>
+    <AccountCode>087233900</AccountCode>
+    <Address1>130 Vermont Avenue</Address1>
+    <City>Abilene</City>
+    <DebtHolder>Capital One</DebtHolder>
+    <FirstName>Emely</FirstName>
+    <LastName>Dutoit</LastName>
+    <MiddleName>S</MiddleName>
+    <OriginalAccountNumber>5329148291454381</OriginalAccountNumber>
+    <PhoneNumber>(305) 452 5656</PhoneNumber>
+    <PostalCode>79605</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>340-64-7945</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>14520.17</AccountBalance>
+    <AccountCode>286701007</AccountCode>
+    <Address1>147 Second Avenue</Address1>
+    <City>Bradenton</City>
+    <DateOfBirth>1949-02-13</DateOfBirth>
+    <DateOfDelinquency>2002-09-13</DateOfDelinquency>
+    <DebtHolder>New Millennium Bank</DebtHolder>
+    <FirstName>Chen</FirstName>
+    <LastName>Halligan</LastName>
+    <MiddleName>C</MiddleName>
+    <OriginalAccountNumber>5533608267976909</OriginalAccountNumber>
+    <PostalCode>342099574</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>851-59-1301</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12762.23</AccountBalance>
+    <AccountCode>696664049</AccountCode>
+    <Address1>158 Marvin Gardens</Address1>
+    <Address2>5th Floor</Address2>
+    <City>El Paso</City>
+    <FirstName>Kashana</FirstName>
+    <LastName>Hooks</LastName>
+    <OriginalAccountNumber>7597815717661429</OriginalAccountNumber>
+    <PostalCode>799042818</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>452-81-6209</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10957.15</AccountBalance>
+    <AccountCode>283285822</AccountCode>
+    <Address1>109 Virgina Avenue</Address1>
+    <City>Long Beach</City>
+    <DateOfBirth>1983-11-09</DateOfBirth>
+    <DebtHolder>Target National Bank</DebtHolder>
+    <FirstName>Neelkanth</FirstName>
+    <LastName>Mershon</LastName>
+    <MiddleName>E</MiddleName>
+    <OriginalAccountNumber>4478123877910056</OriginalAccountNumber>
+    <PhoneNumber>(386) 840 1202</PhoneNumber>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>703-10-6717</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>181.25</AccountBalance>
+    <AccountCode>709949862</AccountCode>
+    <City>Woodland Hills</City>
+    <DateOfBirth>1970-04-22</DateOfBirth>
+    <DateOfDelinquency>2002-09-06</DateOfDelinquency>
+    <DebtHolder>First Tennessee Bank</DebtHolder>
+    <OriginalAccountNumber>4815377869980438</OriginalAccountNumber>
+    <PostalCode>91367</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>177-75-4840</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>14668.66</AccountBalance>
+    <AccountCode>659766560</AccountCode>
+    <Address1>163 West Fourth St.</Address1>
+    <City>Newport</City>
+    <DateOfDelinquency>2002-12-05</DateOfDelinquency>
+    <DebtHolder>Household DIRM</DebtHolder>
+    <LastName>Farouk</LastName>
+    <MiddleName>E</MiddleName>
+    <OriginalAccountNumber>4230738319981261</OriginalAccountNumber>
+    <PhoneNumber>(813) 512 1862</PhoneNumber>
+    <PostalCode>99156</PostalCode>
+    <ProvinceCode>WA</ProvinceCode>
+    <SocialSecurityNumber>706-89-4805</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8987.01</AccountBalance>
+    <AccountCode>815463858</AccountCode>
+    <City>Port Arthur</City>
+    <DateOfDelinquency>2002-09-13</DateOfDelinquency>
+    <DebtHolder>M&amp;T Bank</DebtHolder>
+    <FirstName>Mimi</FirstName>
+    <LastName>Matlock</LastName>
+    <OriginalAccountNumber>5682889840643897</OriginalAccountNumber>
+    <PhoneNumber>(850) 292 1274</PhoneNumber>
+    <PostalCode>77642</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>725-25-9029</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6232.14</AccountBalance>
+    <AccountCode>554873212</AccountCode>
+    <Address2>Ste. 1-C</Address2>
+    <DebtHolder>BankFirst</DebtHolder>
+    <FirstName>Raycene</FirstName>
+    <LastName>Haagenson</LastName>
+    <MiddleName>D</MiddleName>
+    <OriginalAccountNumber>7727211251292004</OriginalAccountNumber>
+    <PhoneNumber>(850) 205 1963</PhoneNumber>
+    <PostalCode>750340014</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>218-12-4705</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>4199.92</AccountBalance>
+    <AccountCode>728655208</AccountCode>
+    <Address1>72 St. James Place</Address1>
+    <City>San Antonio</City>
+    <DateOfBirth>1977-01-19</DateOfBirth>
+    <DateOfDelinquency>2001-06-26</DateOfDelinquency>
+    <DebtHolder>General Motors</DebtHolder>
+    <FirstName>Paulinda</FirstName>
+    <LastName>Arrigo</LastName>
+    <MiddleName>N</MiddleName>
+    <OriginalAccountNumber>7012224035103435</OriginalAccountNumber>
+    <PostalCode>782391942</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>984-35-1327</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5092.24</AccountBalance>
+    <AccountCode>050020987</AccountCode>
+    <Address1>138 Indiana Avenue</Address1>
+    <City>Los Angeles</City>
+    <DateOfBirth>1991-09-27</DateOfBirth>
+    <DebtHolder>First Tennessee Bank</DebtHolder>
+    <FirstName>Myshae</FirstName>
+    <LastName>Moucha</LastName>
+    <OriginalAccountNumber>7519057986328114</OriginalAccountNumber>
+    <PhoneNumber>(850) 210 6113</PhoneNumber>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>380-10-0045</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12344.05</AccountBalance>
+    <AccountCode>913911099</AccountCode>
+    <Address1>164 Water Street</Address1>
+    <City>San Antonio</City>
+    <DateOfDelinquency>2002-03-06</DateOfDelinquency>
+    <DebtHolder>Wells Fargo</DebtHolder>
+    <FirstName>Briana</FirstName>
+    <LastName>Charon</LastName>
+    <MiddleName>L</MiddleName>
+    <OriginalAccountNumber>7810648402990731</OriginalAccountNumber>
+    <PhoneNumber>(850) 280 8462</PhoneNumber>
+    <PostalCode>78208</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>427-12-8025</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>4492.25</AccountBalance>
+    <AccountCode>168187489</AccountCode>
+    <Address1>59 Broad Street</Address1>
+    <City>Philadelphia</City>
+    <DateOfBirth>1973-06-26</DateOfBirth>
+    <DateOfDelinquency>2002-07-25</DateOfDelinquency>
+    <DebtHolder>Maryland National Bank</DebtHolder>
+    <FirstName>Raisa</FirstName>
+    <LastName>Wakefield</LastName>
+    <OriginalAccountNumber>7151512142187346</OriginalAccountNumber>
+    <PhoneNumber>(850) 696 2705</PhoneNumber>
+    <PostalCode>19124</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>082-55-4257</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7432.85</AccountBalance>
+    <AccountCode>494937852</AccountCode>
+    <Address1>97 Copley Place</Address1>
+    <City>Los Angeles</City>
+    <DateOfBirth>1968-02-07</DateOfBirth>
+    <DebtHolder>Bank One</DebtHolder>
+    <FirstName>Giovanna</FirstName>
+    <LastName>Rabone</LastName>
+    <MiddleName>F</MiddleName>
+    <OriginalAccountNumber>7882507084898514</OriginalAccountNumber>
+    <PhoneNumber>(352) 624 1483</PhoneNumber>
+    <PostalCode>900663657</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>880-97-3614</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10062.66</AccountBalance>
+    <AccountCode>565184375</AccountCode>
+    <Address1>174 Beacon Street</Address1>
+    <Address2>Apt. 5</Address2>
+    <City>Midland</City>
+    <DateOfBirth>1982-09-19</DateOfBirth>
+    <FirstName>Melodee</FirstName>
+    <LastName>Kerth</LastName>
+    <OriginalAccountNumber>4627941776264343</OriginalAccountNumber>
+    <PhoneNumber>(386) 377 2105</PhoneNumber>
+    <PostalCode>797036057</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>250-15-3262</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12843.54</AccountBalance>
+    <AccountCode>337945541</AccountCode>
+    <City>Ontario</City>
+    <DebtHolder>First North American Bank</DebtHolder>
+    <FirstName>Malvina</FirstName>
+    <LastName>Bradshaw</LastName>
+    <MiddleName>D</MiddleName>
+    <OriginalAccountNumber>7878604059455089</OriginalAccountNumber>
+    <PostalCode>91762</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>771-66-9572</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>14556.96</AccountBalance>
+    <AccountCode>122492909</AccountCode>
+    <Address1>128 Virgina Avenue</Address1>
+    <Address2>Suite 124</Address2>
+    <City>Burleson</City>
+    <DateOfBirth>1983-02-13</DateOfBirth>
+    <DateOfDelinquency>2001-08-20</DateOfDelinquency>
+    <DebtHolder>State Farm Bank</DebtHolder>
+    <LastName>Krizmis</LastName>
+    <OriginalAccountNumber>5946805168797160</OriginalAccountNumber>
+    <PhoneNumber>(561) 252 3000</PhoneNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>426-46-1511</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>11573.11</AccountBalance>
+    <AccountCode>879829771</AccountCode>
+    <Address1>70 Kentucky Avenue</Address1>
+    <City>Brockway</City>
+    <DateOfBirth>1973-11-09</DateOfBirth>
+    <DateOfDelinquency>2002-03-11</DateOfDelinquency>
+    <DebtHolder>Chase Manhattan Bank</DebtHolder>
+    <FirstName>Gwynne</FirstName>
+    <LastName>Paulchek</LastName>
+    <OriginalAccountNumber>5170429055074809</OriginalAccountNumber>
+    <PostalCode>158240000</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>557-76-5051</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>14101.82</AccountBalance>
+    <AccountCode>942717405</AccountCode>
+    <Address1>128 Six Avenue</Address1>
+    <City>Richardson</City>
+    <DateOfBirth>1948-03-25</DateOfBirth>
+    <DateOfDelinquency>2002-05-13</DateOfDelinquency>
+    <DebtHolder>Providian First Select</DebtHolder>
+    <FirstName>Tileen</FirstName>
+    <LastName>Mcalee</LastName>
+    <MiddleName>G</MiddleName>
+    <OriginalAccountNumber>5913618168299733</OriginalAccountNumber>
+    <PhoneNumber>(850) 994 0740</PhoneNumber>
+    <PostalCode>750807016</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>658-97-9408</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5561.55</AccountBalance>
+    <AccountCode>319853144</AccountCode>
+    <Address1>194 Mechanics Street</Address1>
+    <City>Ormond Beach</City>
+    <DateOfBirth>1977-10-24</DateOfBirth>
+    <DateOfDelinquency>2001-11-19</DateOfDelinquency>
+    <FirstName>Senella</FirstName>
+    <LastName>Casserly</LastName>
+    <MiddleName>B</MiddleName>
+    <OriginalAccountNumber>7166090904421895</OriginalAccountNumber>
+    <PostalCode>321760321</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>147-09-6535</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5271.78</AccountBalance>
+    <AccountCode>507232284</AccountCode>
+    <Address2>Ste. 3</Address2>
+    <City>Fontana</City>
+    <DateOfBirth>1980-04-21</DateOfBirth>
+    <DateOfDelinquency>2002-09-12</DateOfDelinquency>
+    <DebtHolder>Bank First</DebtHolder>
+    <FirstName>Jakki</FirstName>
+    <LastName>Tart</LastName>
+    <MiddleName>H</MiddleName>
+    <OriginalAccountNumber>5614284524616051</OriginalAccountNumber>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>920-44-6305</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5671.29</AccountBalance>
+    <AccountCode>708467955</AccountCode>
+    <Address1>193 Fifth Avenue</Address1>
+    <City>Laredo</City>
+    <DateOfBirth>1978-09-09</DateOfBirth>
+    <DebtHolder>American Pacific Bank</DebtHolder>
+    <FirstName>Ifedola</FirstName>
+    <LastName>Gelman</LastName>
+    <MiddleName>L</MiddleName>
+    <OriginalAccountNumber>4932263415230590</OriginalAccountNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>363-03-8042</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5467.09</AccountBalance>
+    <AccountCode>731144246</AccountCode>
+    <Address1>179 Fourth Avenue</Address1>
+    <City>Redmond</City>
+    <DateOfBirth>1949-08-06</DateOfBirth>
+    <DebtHolder>FCNB Crate &amp; Barrel</DebtHolder>
+    <OriginalAccountNumber>5295990813032556</OriginalAccountNumber>
+    <PhoneNumber>(813) 514 5889</PhoneNumber>
+    <PostalCode>97756</PostalCode>
+    <ProvinceCode>OR</ProvinceCode>
+    <SocialSecurityNumber>947-71-2161</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>11401.40</AccountBalance>
+    <AccountCode>058733884</AccountCode>
+    <Address1>185 Vermont Avenue</Address1>
+    <City>San Antonio</City>
+    <DebtHolder>Chase Manhattan Bank Visa Mastercard</DebtHolder>
+    <FirstName>Mitzie</FirstName>
+    <LastName>Bahn</LastName>
+    <MiddleName>U</MiddleName>
+    <OriginalAccountNumber>7975035945871796</OriginalAccountNumber>
+    <PhoneNumber>(407) 278 7228</PhoneNumber>
+    <PostalCode>782335515</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>583-75-7068</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6249.05</AccountBalance>
+    <AccountCode>678748103</AccountCode>
+    <Address1>182 West Street</Address1>
+    <City>Greenville</City>
+    <DateOfDelinquency>2002-09-20</DateOfDelinquency>
+    <DebtHolder>First Premier Bank</DebtHolder>
+    <FirstName>Julieth</FirstName>
+    <LastName>Asker</LastName>
+    <MiddleName>G</MiddleName>
+    <OriginalAccountNumber>5277303817250619</OriginalAccountNumber>
+    <PhoneNumber>(727) 513 3054</PhoneNumber>
+    <PostalCode>38701</PostalCode>
+    <ProvinceCode>MS</ProvinceCode>
+    <SocialSecurityNumber>837-54-2965</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9853.39</AccountBalance>
+    <AccountCode>528830579</AccountCode>
+    <Address1>146 Water Street</Address1>
+    <City>Freeport</City>
+    <DebtHolder>M&amp;T Bank</DebtHolder>
+    <FirstName>Peisha</FirstName>
+    <LastName>Dancho</LastName>
+    <MiddleName>N</MiddleName>
+    <OriginalAccountNumber>7123117692127252</OriginalAccountNumber>
+    <PhoneNumber>(813) 595 3150</PhoneNumber>
+    <PostalCode>77541</PostalCode>
+    <SocialSecurityNumber>806-91-9665</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>4184.37</AccountBalance>
+    <AccountCode>730287268</AccountCode>
+    <Address1>70 Kentucky Avenue</Address1>
+    <City>Brockway</City>
+    <DateOfBirth>1973-11-09</DateOfBirth>
+    <DebtHolder>Household General Motors</DebtHolder>
+    <FirstName>Gwynne</FirstName>
+    <LastName>Paulchek</LastName>
+    <OriginalAccountNumber>5624028558176453</OriginalAccountNumber>
+    <PostalCode>158240000</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>557-76-5051</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>11308.78</AccountBalance>
+    <AccountCode>624700620</AccountCode>
+    <Address1>99 Dock Street</Address1>
+    <City>Buffalo</City>
+    <DateOfDelinquency>2002-03-08</DateOfDelinquency>
+    <DebtHolder>Orchard Bank</DebtHolder>
+    <FirstName>Mengly</FirstName>
+    <LastName>Link</LastName>
+    <OriginalAccountNumber>7517677691520102</OriginalAccountNumber>
+    <PostalCode>142072519</PostalCode>
+    <ProvinceCode>NY</ProvinceCode>
+    <SocialSecurityNumber>216-53-0119</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10614.54</AccountBalance>
+    <AccountCode>213279811</AccountCode>
+    <Address1>28 Marvin Gardens</Address1>
+    <City>Cedar Hill</City>
+    <DateOfBirth>1940-01-15</DateOfBirth>
+    <DebtHolder>New Millennium Bank</DebtHolder>
+    <FirstName>Ricio</FirstName>
+    <LastName>Bassaline</LastName>
+    <MiddleName>J</MiddleName>
+    <OriginalAccountNumber>5540424000653082</OriginalAccountNumber>
+    <PhoneNumber>(850) 277 3344</PhoneNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>844-04-5317</SocialSecurityNumber>
+    <Suffix>III</Suffix>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6632.13</AccountBalance>
+    <AccountCode>276397846</AccountCode>
+    <City>Weymouth</City>
+    <DateOfDelinquency>2002-09-18</DateOfDelinquency>
+    <DebtHolder>Fleet Bank</DebtHolder>
+    <FirstName>Venicio</FirstName>
+    <LastName>Amargo</LastName>
+    <OriginalAccountNumber>4984051908770273</OriginalAccountNumber>
+    <PostalCode>2191</PostalCode>
+    <ProvinceCode>MA</ProvinceCode>
+    <SocialSecurityNumber>997-13-3550</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10389.72</AccountBalance>
+    <AccountCode>270791850</AccountCode>
+    <Address1>133 Kentucky Avenue</Address1>
+    <City>Zephyrhills</City>
+    <DateOfBirth>1968-09-09</DateOfBirth>
+    <DateOfDelinquency>2001-06-04</DateOfDelinquency>
+    <FirstName>Catrunda</FirstName>
+    <LastName>Pack</LastName>
+    <MiddleName>V</MiddleName>
+    <OriginalAccountNumber>4098724340468420</OriginalAccountNumber>
+    <PhoneNumber>(239) 722 1155</PhoneNumber>
+    <PostalCode>335415936</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>693-72-0010</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>1667.00</AccountBalance>
+    <AccountCode>562007187</AccountCode>
+    <Address1>44 Fourth Avenue</Address1>
+    <City>Mesquite</City>
+    <DateOfBirth>1962-04-27</DateOfBirth>
+    <DebtHolder>Advanta</DebtHolder>
+    <LastName>Brust</LastName>
+    <MiddleName>B</MiddleName>
+    <OriginalAccountNumber>5749797462678185</OriginalAccountNumber>
+    <PhoneNumber>(850) 205 9392</PhoneNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>451-29-5194</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9436.12</AccountBalance>
+    <AccountCode>382059835</AccountCode>
+    <City>Dallas</City>
+    <DateOfBirth>1941-10-22</DateOfBirth>
+    <DebtHolder>First Tennessee Bank</DebtHolder>
+    <FirstName>Bonnita</FirstName>
+    <LastName>Betten</LastName>
+    <MiddleName>P</MiddleName>
+    <OriginalAccountNumber>7527955071067752</OriginalAccountNumber>
+    <PhoneNumber>(850) 695 6589</PhoneNumber>
+    <PostalCode>752877814</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>224-09-5094</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>13548.43</AccountBalance>
+    <AccountCode>987069764</AccountCode>
+    <Address1>128 Virgina Avenue</Address1>
+    <Address2>Suite 124</Address2>
+    <City>Burleson</City>
+    <DateOfBirth>1983-02-13</DateOfBirth>
+    <DateOfDelinquency>2002-09-11</DateOfDelinquency>
+    <DebtHolder>USAA</DebtHolder>
+    <LastName>Krizmis</LastName>
+    <OriginalAccountNumber>5364237453871812</OriginalAccountNumber>
+    <PhoneNumber>(561) 252 3000</PhoneNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>426-46-1511</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>1754.54</AccountBalance>
+    <AccountCode>086829299</AccountCode>
+    <Address1>132 North Carolina Avenue</Address1>
+    <City>Milan</City>
+    <DateOfBirth>1957-10-27</DateOfBirth>
+    <DebtHolder>Household AFCA</DebtHolder>
+    <FirstName>Jullie</FirstName>
+    <LastName>Hood</LastName>
+    <OriginalAccountNumber>5623167285425142</OriginalAccountNumber>
+    <PostalCode>310600305</PostalCode>
+    <ProvinceCode>GA</ProvinceCode>
+    <SocialSecurityNumber>735-93-1488</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7076.32</AccountBalance>
+    <AccountCode>927821909</AccountCode>
+    <Address1>8 Fifth Avenue</Address1>
+    <City>Kings Mtn</City>
+    <DateOfBirth>1964-06-08</DateOfBirth>
+    <FirstName>Johanny</FirstName>
+    <LastName>Comarnitsky-papa</LastName>
+    <OriginalAccountNumber>7391884741223351</OriginalAccountNumber>
+    <PhoneNumber>(850) 291 3240</PhoneNumber>
+    <PostalCode>28086</PostalCode>
+    <ProvinceCode>NC</ProvinceCode>
+    <SocialSecurityNumber>049-02-1846</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>13146.03</AccountBalance>
+    <AccountCode>035262526</AccountCode>
+    <Address1>177 St. James Place</Address1>
+    <City>Calexico</City>
+    <DateOfBirth>1947-02-20</DateOfBirth>
+    <DebtHolder>Bank One</DebtHolder>
+    <FirstName>Lin</FirstName>
+    <LastName>Novak</LastName>
+    <OriginalAccountNumber>5555248171436021</OriginalAccountNumber>
+    <PhoneNumber>(904) 855 2430</PhoneNumber>
+    <PostalCode>92231</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>262-57-4896</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9956.20</AccountBalance>
+    <AccountCode>524197892</AccountCode>
+    <Address1>148 Virgina Avenue</Address1>
+    <Address2>Suite 2</Address2>
+    <City>Jersey Shore</City>
+    <DateOfBirth>1952-09-20</DateOfBirth>
+    <DateOfDelinquency>2001-10-03</DateOfDelinquency>
+    <DebtHolder>Firstmerit Bank</DebtHolder>
+    <FirstName>Forn</FirstName>
+    <LastName>Ziobert</LastName>
+    <MiddleName>A</MiddleName>
+    <OriginalAccountNumber>5481402376610186</OriginalAccountNumber>
+    <PhoneNumber>(850) 205 8974</PhoneNumber>
+    <PostalCode>177407246</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>676-65-2925</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>11618.08</AccountBalance>
+    <AccountCode>613395849</AccountCode>
+    <Address1>14 Pacific Avenue</Address1>
+    <City>Houston</City>
+    <DateOfDelinquency>2002-05-27</DateOfDelinquency>
+    <DebtHolder>Household HSBC</DebtHolder>
+    <FirstName>Darica</FirstName>
+    <LastName>Baab</LastName>
+    <MiddleName>Z</MiddleName>
+    <OriginalAccountNumber>4908477404451431</OriginalAccountNumber>
+    <PhoneNumber>(954) 423 2104</PhoneNumber>
+    <PostalCode>770841923</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>460-14-4513</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9516.57</AccountBalance>
+    <AccountCode>646993726</AccountCode>
+    <Address1>19 Main Street</Address1>
+    <City>Colleyville</City>
+    <DateOfBirth>1972-04-23</DateOfBirth>
+    <DebtHolder>First Consumers National Bank</DebtHolder>
+    <FirstName>Ciji</FirstName>
+    <LastName>Colaw</LastName>
+    <MiddleName>X</MiddleName>
+    <OriginalAccountNumber>4187867509894921</OriginalAccountNumber>
+    <PostalCode>760342830</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>515-28-3014</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>519.19</AccountBalance>
+    <AccountCode>683884660</AccountCode>
+    <Address1>119 Beacon Street</Address1>
+    <City>Houston</City>
+    <DateOfBirth>1968-02-11</DateOfBirth>
+    <DebtHolder>Union Privilege</DebtHolder>
+    <FirstName>Gerard</FirstName>
+    <LastName>Bavier</LastName>
+    <MiddleName>R</MiddleName>
+    <OriginalAccountNumber>5984538677308958</OriginalAccountNumber>
+    <PhoneNumber>(850) 219 7003</PhoneNumber>
+    <PostalCode>770174738</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>653-11-1194</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12858.01</AccountBalance>
+    <AccountCode>226263766</AccountCode>
+    <City>Tunkhannock</City>
+    <DateOfBirth>1975-06-21</DateOfBirth>
+    <DebtHolder>First Premier Bank</DebtHolder>
+    <LastName>Seigler</LastName>
+    <MiddleName>S</MiddleName>
+    <OriginalAccountNumber>7546016154357631</OriginalAccountNumber>
+    <PhoneNumber>(850) 293 4410</PhoneNumber>
+    <PostalCode>18657</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>107-38-1286</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7992.11</AccountBalance>
+    <AccountCode>572518092</AccountCode>
+    <Address1>120 Boardwalk</Address1>
+    <City>Altamonte Springs</City>
+    <DateOfDelinquency>2002-09-11</DateOfDelinquency>
+    <DebtHolder>Chase Manhattan Bank Providian</DebtHolder>
+    <FirstName>Elvis</FirstName>
+    <LastName>Espinal</LastName>
+    <MiddleName>P</MiddleName>
+    <OriginalAccountNumber>7362281702631767</OriginalAccountNumber>
+    <PhoneNumber>(850) 293 3633</PhoneNumber>
+    <PostalCode>327142087</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>296-82-6284</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10264.68</AccountBalance>
+    <AccountCode>679550270</AccountCode>
+    <Address1>137 Connecticut Avenue</Address1>
+    <City>Mesquite</City>
+    <DateOfDelinquency>2002-01-05</DateOfDelinquency>
+    <DebtHolder>Maryland National Bank</DebtHolder>
+    <FirstName>Del-marie</FirstName>
+    <LastName>Nejad</LastName>
+    <MiddleName>G</MiddleName>
+    <OriginalAccountNumber>7971719422144708</OriginalAccountNumber>
+    <PhoneNumber>(386) 881 7887</PhoneNumber>
+    <PostalCode>751496654</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>165-78-6886</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3002.13</AccountBalance>
+    <AccountCode>139681787</AccountCode>
+    <Address1>196 Pacific Avenue</Address1>
+    <DateOfBirth>1987-11-14</DateOfBirth>
+    <DateOfDelinquency>2002-07-26</DateOfDelinquency>
+    <DebtHolder>Chase Manhattan Bank</DebtHolder>
+    <FirstName>Machelle</FirstName>
+    <LastName>Blackburn-rodriguez</LastName>
+    <MiddleName>D</MiddleName>
+    <OriginalAccountNumber>7142262475162183</OriginalAccountNumber>
+    <PostalCode>770952271</PostalCode>
+    <SocialSecurityNumber>363-28-5104</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>13683.38</AccountBalance>
+    <AccountCode>076377810</AccountCode>
+    <Address1>151 East Street</Address1>
+    <DateOfDelinquency>2001-09-02</DateOfDelinquency>
+    <FirstName>Kelii</FirstName>
+    <OriginalAccountNumber>5622743454409935</OriginalAccountNumber>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>204-96-1516</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5644.66</AccountBalance>
+    <AccountCode>170823922</AccountCode>
+    <City>Las Vegas</City>
+    <DateOfBirth>1968-04-07</DateOfBirth>
+    <DebtHolder>State Farm Bank</DebtHolder>
+    <FirstName>Andreas</FirstName>
+    <LastName>Amihere</LastName>
+    <OriginalAccountNumber>4560480336619445</OriginalAccountNumber>
+    <PhoneNumber>(407) 342 2715</PhoneNumber>
+    <ProvinceCode>NV</ProvinceCode>
+    <SocialSecurityNumber>704-31-5720</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6131.28</AccountBalance>
+    <AccountCode>341113598</AccountCode>
+    <Address1>179 New York Avenue</Address1>
+    <City>Glendale</City>
+    <DateOfDelinquency>2001-01-16</DateOfDelinquency>
+    <FirstName>Shelina</FirstName>
+    <LastName>Cintron</LastName>
+    <OriginalAccountNumber>4430939149111837</OriginalAccountNumber>
+    <PhoneNumber>(386) 391 2324</PhoneNumber>
+    <PostalCode>912041309</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>551-83-3911</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7974.18</AccountBalance>
+    <AccountCode>528968640</AccountCode>
+    <Address1>191 New York Avenue</Address1>
+    <City>Bridgeview</City>
+    <DebtHolder>Chase Manhattan Bank Circuit City</DebtHolder>
+    <FirstName>Mojtaba</FirstName>
+    <LastName>Hanzal</LastName>
+    <OriginalAccountNumber>4233737008109761</OriginalAccountNumber>
+    <PhoneNumber>(239) 731 2530</PhoneNumber>
+    <PostalCode>60455</PostalCode>
+    <ProvinceCode>IL</ProvinceCode>
+    <SocialSecurityNumber>461-08-2556</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12659.90</AccountBalance>
+    <AccountCode>970601024</AccountCode>
+    <Address1>84 Park Place</Address1>
+    <City>Miami</City>
+    <DateOfBirth>1968-04-22</DateOfBirth>
+    <DebtHolder>HSBC</DebtHolder>
+    <FirstName>Iracema</FirstName>
+    <LastName>Vodanovich</LastName>
+    <OriginalAccountNumber>4421039611779638</OriginalAccountNumber>
+    <PhoneNumber>(850) 994 1329</PhoneNumber>
+    <PostalCode>331471417</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>155-24-1576</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9860.69</AccountBalance>
+    <AccountCode>496147009</AccountCode>
+    <Address1>155 Pacific Avenue</Address1>
+    <City>Floresville</City>
+    <DebtHolder>First Premier Bank</DebtHolder>
+    <FirstName>Gareth</FirstName>
+    <LastName>Paden</LastName>
+    <MiddleName>W</MiddleName>
+    <OriginalAccountNumber>4587536866730771</OriginalAccountNumber>
+    <PostalCode>78114</PostalCode>
+    <SocialSecurityNumber>295-52-0443</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6517.41</AccountBalance>
+    <AccountCode>187117499</AccountCode>
+    <Address1>16 New York Avenue</Address1>
+    <City>Brockway</City>
+    <DateOfDelinquency>2002-09-13</DateOfDelinquency>
+    <DebtHolder>Household</DebtHolder>
+    <FirstName>Harrel</FirstName>
+    <LastName>Nechvatal</LastName>
+    <MiddleName>H</MiddleName>
+    <OriginalAccountNumber>7143025297363648</OriginalAccountNumber>
+    <PhoneNumber>(727) 513 5383</PhoneNumber>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>430-50-6845</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12940.04</AccountBalance>
+    <AccountCode>111620818</AccountCode>
+    <Address1>117 Park Place</Address1>
+    <City>Tampa</City>
+    <DateOfBirth>1976-09-24</DateOfBirth>
+    <DebtHolder>Household AFCA</DebtHolder>
+    <FirstName>Pleshette</FirstName>
+    <LastName>Weissman</LastName>
+    <MiddleName>B</MiddleName>
+    <OriginalAccountNumber>7894138270193614</OriginalAccountNumber>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>031-74-4355</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3399.36</AccountBalance>
+    <AccountCode>733807043</AccountCode>
+    <Address1>156 Park Place</Address1>
+    <City>Anaheim</City>
+    <DateOfDelinquency>2001-11-05</DateOfDelinquency>
+    <DebtHolder>Household</DebtHolder>
+    <FirstName>Any</FirstName>
+    <LastName>Garcia-tunon</LastName>
+    <MiddleName>F</MiddleName>
+    <OriginalAccountNumber>7721517843960052</OriginalAccountNumber>
+    <PhoneNumber>(850) 284 5775</PhoneNumber>
+    <PostalCode>92802</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>432-09-9610</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5129.88</AccountBalance>
+    <AccountCode>942575543</AccountCode>
+    <City>Granbury</City>
+    <DateOfBirth>1986-12-04</DateOfBirth>
+    <DebtHolder>US Bank</DebtHolder>
+    <FirstName>Ita</FirstName>
+    <LastName>Akens</LastName>
+    <MiddleName>B</MiddleName>
+    <OriginalAccountNumber>5121510235038474</OriginalAccountNumber>
+    <PhoneNumber>(863) 515 8260</PhoneNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>602-02-3307</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>1629.19</AccountBalance>
+    <AccountCode>291671674</AccountCode>
+    <Address1>15 Bay Place</Address1>
+    <Address2>Ste. 5</Address2>
+    <City>Houston</City>
+    <DateOfBirth>1949-05-19</DateOfBirth>
+    <FirstName>Verne</FirstName>
+    <LastName>Corredor</LastName>
+    <OriginalAccountNumber>4946331487585197</OriginalAccountNumber>
+    <PhoneNumber>(305) 464 1445</PhoneNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>667-72-1300</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>310.23</AccountBalance>
+    <AccountCode>500876957</AccountCode>
+    <Address1>71 Bay Place</Address1>
+    <City>Pensacola</City>
+    <DateOfDelinquency>2002-09-13</DateOfDelinquency>
+    <DebtHolder>Barclays</DebtHolder>
+    <FirstName>Annamarie</FirstName>
+    <LastName>Bolden</LastName>
+    <MiddleName>E</MiddleName>
+    <OriginalAccountNumber>5303949277041371</OriginalAccountNumber>
+    <PhoneNumber>(561) 232 3067</PhoneNumber>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>327-07-7205</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>4980.51</AccountBalance>
+    <AccountCode>532090640</AccountCode>
+    <Address1>22 States Avenue</Address1>
+    <City>San Antonio</City>
+    <DateOfDelinquency>2002-01-04</DateOfDelinquency>
+    <FirstName>Blandine</FirstName>
+    <LastName>Aangeenbrug</LastName>
+    <MiddleName>L</MiddleName>
+    <OriginalAccountNumber>5193578978922647</OriginalAccountNumber>
+    <PhoneNumber>(850) 686 1636</PhoneNumber>
+    <PostalCode>78227</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>843-75-5418</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>13257.45</AccountBalance>
+    <AccountCode>276768517</AccountCode>
+    <Address1>40 Vermont Avenue</Address1>
+    <City>Cape Coral</City>
+    <DateOfDelinquency>2002-03-20</DateOfDelinquency>
+    <DebtHolder>Chase Manhattan Bank Visa Mastercard</DebtHolder>
+    <FirstName>Man</FirstName>
+    <LastName>Marmie</LastName>
+    <OriginalAccountNumber>7217360152663612</OriginalAccountNumber>
+    <PhoneNumber>(850) 994 6672</PhoneNumber>
+    <PostalCode>339912417</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>810-07-0886</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12308.41</AccountBalance>
+    <AccountCode>877545692</AccountCode>
+    <Address1>178 Park Place</Address1>
+    <City>San Antonio</City>
+    <DateOfBirth>1971-10-10</DateOfBirth>
+    <DebtHolder>Etrade </DebtHolder>
+    <FirstName>Patsie</FirstName>
+    <LastName>Vespie</LastName>
+    <OriginalAccountNumber>4672902195891739</OriginalAccountNumber>
+    <PhoneNumber>(850) 680 2904</PhoneNumber>
+    <PostalCode>782391942</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>070-24-4946</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>14974.70</AccountBalance>
+    <AccountCode>299129663</AccountCode>
+    <Address1>14 Pacific Avenue</Address1>
+    <City>Houston</City>
+    <DebtHolder>Aspire</DebtHolder>
+    <FirstName>Darica</FirstName>
+    <LastName>Baab</LastName>
+    <MiddleName>Z</MiddleName>
+    <OriginalAccountNumber>5731839902050509</OriginalAccountNumber>
+    <PhoneNumber>(954) 423 2104</PhoneNumber>
+    <PostalCode>770841923</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>460-14-4513</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>1418.11</AccountBalance>
+    <AccountCode>077945949</AccountCode>
+    <Address1>29 Dock Street</Address1>
+    <City>Marshall</City>
+    <DateOfDelinquency>2002-01-17</DateOfDelinquency>
+    <DebtHolder>Providian</DebtHolder>
+    <FirstName>Nicolae</FirstName>
+    <LastName>Kolentus</LastName>
+    <OriginalAccountNumber>5659653226299715</OriginalAccountNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>183-98-6382</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3400.72</AccountBalance>
+    <AccountCode>078702706</AccountCode>
+    <Address1>141 Indiana Avenue</Address1>
+    <Address2>Suite 2</Address2>
+    <City>Brooklyn</City>
+    <DateOfBirth>1980-05-19</DateOfBirth>
+    <DateOfDelinquency>2001-11-05</DateOfDelinquency>
+    <DebtHolder>First USA Bank NA</DebtHolder>
+    <FirstName>Meri</FirstName>
+    <LastName>Beckman</LastName>
+    <MiddleName>M</MiddleName>
+    <OriginalAccountNumber>5452195820290691</OriginalAccountNumber>
+    <PhoneNumber>(850) 291 5580</PhoneNumber>
+    <PostalCode>11236</PostalCode>
+    <ProvinceCode>NY</ProvinceCode>
+    <SocialSecurityNumber>548-16-0226</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3118.18</AccountBalance>
+    <AccountCode>918101264</AccountCode>
+    <Address1>100 Beacon Street</Address1>
+    <City>Falmouth</City>
+    <DateOfDelinquency>2002-06-27</DateOfDelinquency>
+    <DebtHolder>GE Money</DebtHolder>
+    <FirstName>Alexandria</FirstName>
+    <LastName>Wu</LastName>
+    <MiddleName>L</MiddleName>
+    <OriginalAccountNumber>7521405575947538</OriginalAccountNumber>
+    <PhoneNumber>(813) 514 0284</PhoneNumber>
+    <PostalCode>02541</PostalCode>
+    <ProvinceCode>MA</ProvinceCode>
+    <SocialSecurityNumber>086-18-7260</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>14672.34</AccountBalance>
+    <AccountCode>158216728</AccountCode>
+    <Address1>144 Copley Place</Address1>
+    <City>Houston</City>
+    <DebtHolder>Providian First Select</DebtHolder>
+    <FirstName>Fornethiaframina</FirstName>
+    <LastName>Winfrey</LastName>
+    <OriginalAccountNumber>4058294789434974</OriginalAccountNumber>
+    <PhoneNumber>(850) 278 0184</PhoneNumber>
+    <PostalCode>77018</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>376-55-1055</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6404.64</AccountBalance>
+    <AccountCode>017536405</AccountCode>
+    <Address2>Suite 1</Address2>
+    <City>Whiteford</City>
+    <DateOfDelinquency>2002-01-29</DateOfDelinquency>
+    <DebtHolder>Household Orchard Bank</DebtHolder>
+    <FirstName>Jamikal</FirstName>
+    <LastName>Heffley</LastName>
+    <MiddleName>F</MiddleName>
+    <OriginalAccountNumber>5046208315189913</OriginalAccountNumber>
+    <ProvinceCode>MD</ProvinceCode>
+    <SocialSecurityNumber>358-37-8009</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3528.65</AccountBalance>
+    <AccountCode>564600749</AccountCode>
+    <Address1>96 Connecticut Avenue</Address1>
+    <City>Houston</City>
+    <LastName>Paster</LastName>
+    <OriginalAccountNumber>4807975947078081</OriginalAccountNumber>
+    <PhoneNumber>(941) 549 1440</PhoneNumber>
+    <PostalCode>770453604</PostalCode>
+    <SocialSecurityNumber>847-60-5690</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>449.36</AccountBalance>
+    <AccountCode>862690033</AccountCode>
+    <Address1>139 Third Avenue</Address1>
+    <City>Plano</City>
+    <DateOfBirth>1959-03-23</DateOfBirth>
+    <DateOfDelinquency>2001-08-09</DateOfDelinquency>
+    <DebtHolder>FCNB Spiegel</DebtHolder>
+    <FirstName>Lanell</FirstName>
+    <LastName>Segundo</LastName>
+    <MiddleName>P</MiddleName>
+    <OriginalAccountNumber>7059832310832758</OriginalAccountNumber>
+    <PostalCode>75026</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>131-61-0436</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>11303.67</AccountBalance>
+    <AccountCode>012522910</AccountCode>
+    <Address1>26 Virgina Avenue</Address1>
+    <City>Tulsa</City>
+    <DateOfBirth>1971-08-20</DateOfBirth>
+    <DebtHolder>Macys</DebtHolder>
+    <FirstName>Rao</FirstName>
+    <LastName>Moyer</LastName>
+    <MiddleName>B</MiddleName>
+    <OriginalAccountNumber>5187967331092214</OriginalAccountNumber>
+    <PhoneNumber>(954) 457 5441</PhoneNumber>
+    <PostalCode>74110</PostalCode>
+    <ProvinceCode>OK</ProvinceCode>
+    <SocialSecurityNumber>603-21-2134</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8617.49</AccountBalance>
+    <AccountCode>490369221</AccountCode>
+    <Address1>65 Park Place</Address1>
+    <City>San Angelo</City>
+    <DateOfDelinquency>2001-12-19</DateOfDelinquency>
+    <DebtHolder>American Pacific Bank</DebtHolder>
+    <FirstName>Shenena</FirstName>
+    <LastName>Stump-ayotte</LastName>
+    <OriginalAccountNumber>7347832091891055</OriginalAccountNumber>
+    <PhoneNumber>(904) 864 3169</PhoneNumber>
+    <PostalCode>769047320</PostalCode>
+    <SocialSecurityNumber>175-56-7509</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>2442.75</AccountBalance>
+    <AccountCode>199868065</AccountCode>
+    <Address1>105 Indiana Avenue</Address1>
+    <City>Indio</City>
+    <DebtHolder>Bank One</DebtHolder>
+    <FirstName>Fenita</FirstName>
+    <LastName>Flournory</LastName>
+    <MiddleName>P</MiddleName>
+    <OriginalAccountNumber>7119506610719094</OriginalAccountNumber>
+    <PostalCode>922014017</PostalCode>
+    <SocialSecurityNumber>425-85-7273</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5818.88</AccountBalance>
+    <AccountCode>820916084</AccountCode>
+    <Address1>183 Copley Place</Address1>
+    <City>Houston</City>
+    <DateOfDelinquency>2002-09-19</DateOfDelinquency>
+    <DebtHolder>Fleet Bank</DebtHolder>
+    <FirstName>Jeneave</FirstName>
+    <LastName>Halladey</LastName>
+    <OriginalAccountNumber>5158378307760224</OriginalAccountNumber>
+    <PostalCode>770264059</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>373-50-1016</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6846.58</AccountBalance>
+    <AccountCode>010628804</AccountCode>
+    <City>Greenwood</City>
+    <DebtHolder>Wells Fargo</DebtHolder>
+    <FirstName>Sheronda</FirstName>
+    <LastName>Monasterios</LastName>
+    <MiddleName>R</MiddleName>
+    <OriginalAccountNumber>4015445336495381</OriginalAccountNumber>
+    <PhoneNumber>(850) 278 4973</PhoneNumber>
+    <PostalCode>296463078</PostalCode>
+    <ProvinceCode>SC</ProvinceCode>
+    <SocialSecurityNumber>151-97-9933</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>11964.01</AccountBalance>
+    <AccountCode>829141454</AccountCode>
+    <Address1>96 Columbus Avenue</Address1>
+    <Address2>Apt. 3</Address2>
+    <City>Orlando</City>
+    <DateOfBirth>1963-11-19</DateOfBirth>
+    <DateOfDelinquency>2001-10-21</DateOfDelinquency>
+    <FirstName>Pellie</FirstName>
+    <OriginalAccountNumber>7324460925106444</OriginalAccountNumber>
+    <PostalCode>32807</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>341-12-6138</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9110.55</AccountBalance>
+    <AccountCode>807165908</AccountCode>
+    <City>Laurel</City>
+    <DebtHolder>Providian</DebtHolder>
+    <FirstName>Fazlullah</FirstName>
+    <LastName>Wendenhof-bolen</LastName>
+    <MiddleName>S</MiddleName>
+    <OriginalAccountNumber>5724927574069737</OriginalAccountNumber>
+    <PhoneNumber>(850) 291 0963</PhoneNumber>
+    <PostalCode>39440</PostalCode>
+    <ProvinceCode>MS</ProvinceCode>
+    <SocialSecurityNumber>697-95-7380</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>4164.70</AccountBalance>
+    <AccountCode>787330885</AccountCode>
+    <Address1>62 New York Avenue</Address1>
+    <City>Cary</City>
+    <DateOfBirth>1990-01-17</DateOfBirth>
+    <DateOfDelinquency>2002-09-13</DateOfDelinquency>
+    <DebtHolder>Citibank</DebtHolder>
+    <FirstName>Sabra</FirstName>
+    <LastName>Gasse</LastName>
+    <MiddleName>T</MiddleName>
+    <OriginalAccountNumber>5458311887542541</OriginalAccountNumber>
+    <PhoneNumber>(352) 625 5598</PhoneNumber>
+    <PostalCode>27511</PostalCode>
+    <ProvinceCode>NC</ProvinceCode>
+    <SocialSecurityNumber>657-90-8519</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7779.56</AccountBalance>
+    <AccountCode>015183743</AccountCode>
+    <City>Bellflower</City>
+    <DateOfDelinquency>2002-06-11</DateOfDelinquency>
+    <DebtHolder>Household HSBC</DebtHolder>
+    <FirstName>Maria</FirstName>
+    <LastName>Hanchett</LastName>
+    <MiddleName>F</MiddleName>
+    <OriginalAccountNumber>4216045970700639</OriginalAccountNumber>
+    <PhoneNumber>(850) 291 4314</PhoneNumber>
+    <PostalCode>907071637</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>630-80-7613</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9137.96</AccountBalance>
+    <AccountCode>349136667</AccountCode>
+    <Address2>Apt. 7</Address2>
+    <City>Nashville</City>
+    <DateOfBirth>1963-11-23</DateOfBirth>
+    <DateOfDelinquency>2002-09-26</DateOfDelinquency>
+    <LastName>Flowers</LastName>
+    <MiddleName>Z</MiddleName>
+    <OriginalAccountNumber>4657662709038893</OriginalAccountNumber>
+    <PostalCode>37221</PostalCode>
+    <ProvinceCode>TN</ProvinceCode>
+    <SocialSecurityNumber>760-05-9716</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8389.86</AccountBalance>
+    <AccountCode>940059966</AccountCode>
+    <Address1>169 Pacific Avenue</Address1>
+    <City>Cape Coral</City>
+    <DateOfBirth>1944-04-10</DateOfBirth>
+    <DateOfDelinquency>2001-12-09</DateOfDelinquency>
+    <LastName>Brandman</LastName>
+    <MiddleName>Y</MiddleName>
+    <OriginalAccountNumber>4837413493164719</OriginalAccountNumber>
+    <PhoneNumber>(407) 355 4310</PhoneNumber>
+    <PostalCode>339912417</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>300-51-7364</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>1253.37</AccountBalance>
+    <AccountCode>933382546</AccountCode>
+    <Address1>96 Virgina Avenue</Address1>
+    <City>Travelers Rst</City>
+    <DateOfBirth>1957-06-18</DateOfBirth>
+    <DateOfDelinquency>2002-01-24</DateOfDelinquency>
+    <DebtHolder>Aspire</DebtHolder>
+    <FirstName>Terrial</FirstName>
+    <LastName>Lynd</LastName>
+    <MiddleName>L</MiddleName>
+    <OriginalAccountNumber>4864309282605746</OriginalAccountNumber>
+    <PostalCode>296908693</PostalCode>
+    <ProvinceCode>SC</ProvinceCode>
+    <SocialSecurityNumber>787-34-5102</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9768.74</AccountBalance>
+    <AccountCode>044924689</AccountCode>
+    <City>Livingston</City>
+    <DateOfBirth>1970-03-18</DateOfBirth>
+    <DateOfDelinquency>2000-06-16</DateOfDelinquency>
+    <FirstName>Tausha</FirstName>
+    <LastName>Fendrick</LastName>
+    <OriginalAccountNumber>4018122784272781</OriginalAccountNumber>
+    <PhoneNumber>(904) 855 2200</PhoneNumber>
+    <PostalCode>773519804</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>606-70-3926</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10405.66</AccountBalance>
+    <AccountCode>175492311</AccountCode>
+    <Address1>33 Marvin Gardens</Address1>
+    <City>Pacoima</City>
+    <DateOfBirth>1970-07-03</DateOfBirth>
+    <DebtHolder>Household GE Lechmere</DebtHolder>
+    <FirstName>Bill</FirstName>
+    <LastName>Valchar</LastName>
+    <OriginalAccountNumber>4535869636770985</OriginalAccountNumber>
+    <PhoneNumber>(904) 853 3320</PhoneNumber>
+    <PostalCode>91331</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>804-53-2023</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>2449.75</AccountBalance>
+    <AccountCode>792667013</AccountCode>
+    <Address1>155 West Fourth St.</Address1>
+    <DebtHolder>Chase Manhattan Bank Circuit City</DebtHolder>
+    <FirstName>Hattie</FirstName>
+    <MiddleName>K</MiddleName>
+    <OriginalAccountNumber>4916186401444582</OriginalAccountNumber>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>415-78-4156</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10635.71</AccountBalance>
+    <AccountCode>152534049</AccountCode>
+    <Address1>26 Broad Street</Address1>
+    <City>Bridgeview</City>
+    <DateOfDelinquency>2001-09-24</DateOfDelinquency>
+    <DebtHolder>Providian Visa Mastercard</DebtHolder>
+    <FirstName>Alexie</FirstName>
+    <LastName>Rosabal</LastName>
+    <MiddleName>Y</MiddleName>
+    <OriginalAccountNumber>7808678657844214</OriginalAccountNumber>
+    <PhoneNumber>(850) 293 1889</PhoneNumber>
+    <ProvinceCode>IL</ProvinceCode>
+    <SocialSecurityNumber>306-82-0806</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>13812.20</AccountBalance>
+    <AccountCode>132570391</AccountCode>
+    <Address1>182 Park Place</Address1>
+    <City>Philadelphia</City>
+    <DateOfBirth>1968-09-08</DateOfBirth>
+    <DateOfDelinquency>2002-06-20</DateOfDelinquency>
+    <DebtHolder>Chase Manhattan Bank Circuit City</DebtHolder>
+    <FirstName>Kalyani</FirstName>
+    <LastName>Hannay</LastName>
+    <MiddleName>H</MiddleName>
+    <OriginalAccountNumber>4572923557073630</OriginalAccountNumber>
+    <PhoneNumber>(305) 441 3283</PhoneNumber>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>452-30-7237</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8145.50</AccountBalance>
+    <AccountCode>596622067</AccountCode>
+    <Address1>161 Six Avenue</Address1>
+    <City>Philadelphia</City>
+    <DebtHolder>Capital One</DebtHolder>
+    <FirstName>Mariano</FirstName>
+    <LastName>Fryer</LastName>
+    <MiddleName>M</MiddleName>
+    <OriginalAccountNumber>5928898317337652</OriginalAccountNumber>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>916-20-4874</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>13519.26</AccountBalance>
+    <AccountCode>173624367</AccountCode>
+    <DateOfBirth>1988-01-09</DateOfBirth>
+    <DebtHolder>Chase Manhattan Bank</DebtHolder>
+    <FirstName>Elon</FirstName>
+    <OriginalAccountNumber>5048174626958195</OriginalAccountNumber>
+    <PhoneNumber>(850) 994 4555</PhoneNumber>
+    <PostalCode>91311</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>235-96-5908</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10079.20</AccountBalance>
+    <AccountCode>035708816</AccountCode>
+    <Address1>67 Virgina Avenue</Address1>
+    <City>Humacao</City>
+    <DebtHolder>Capital One</DebtHolder>
+    <FirstName>Saudia</FirstName>
+    <LastName>Wolin</LastName>
+    <OriginalAccountNumber>5054435227616026</OriginalAccountNumber>
+    <PhoneNumber>(850) 298 1634</PhoneNumber>
+    <PostalCode>007919402</PostalCode>
+    <ProvinceCode>PR</ProvinceCode>
+    <SocialSecurityNumber>706-21-5360</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6088.12</AccountBalance>
+    <AccountCode>484896949</AccountCode>
+    <Address1>103 Second Avenue</Address1>
+    <DebtHolder>Bank Of America</DebtHolder>
+    <FirstName>Lakiktha</FirstName>
+    <LastName>Bolte</LastName>
+    <OriginalAccountNumber>4519938365985729</OriginalAccountNumber>
+    <PhoneNumber>(305) 441 3479</PhoneNumber>
+    <PostalCode>78559</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>229-31-4020</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3067.56</AccountBalance>
+    <AccountCode>816447485</AccountCode>
+    <Address1>149 West Fourth St.</Address1>
+    <City>San Antonio</City>
+    <DebtHolder>Providian First Select</DebtHolder>
+    <FirstName>Kama</FirstName>
+    <LastName>Nobili</LastName>
+    <OriginalAccountNumber>5317099358018065</OriginalAccountNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>245-87-2242</SocialSecurityNumber>
+    <Suffix>III</Suffix>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>2104.28</AccountBalance>
+    <AccountCode>510486597</AccountCode>
+    <Address1>93 Tennesee Avenue</Address1>
+    <City>Boynton Raton</City>
+    <DateOfBirth>1972-09-02</DateOfBirth>
+    <DebtHolder>Bank First</DebtHolder>
+    <FirstName>Clove</FirstName>
+    <LastName>Ruda</LastName>
+    <OriginalAccountNumber>7584049943000095</OriginalAccountNumber>
+    <PhoneNumber>(305) 452 5971</PhoneNumber>
+    <PostalCode>33429</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>842-32-7804</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12589.44</AccountBalance>
+    <AccountCode>444334827</AccountCode>
+    <Address1>112 New York Avenue</Address1>
+    <City>Miami</City>
+    <DebtHolder>FCNB Crate &amp; Barrel</DebtHolder>
+    <LastName>Hoerz</LastName>
+    <MiddleName>O</MiddleName>
+    <OriginalAccountNumber>4535831176426604</OriginalAccountNumber>
+    <PhoneNumber>(239) 731 7760</PhoneNumber>
+    <PostalCode>33161</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>592-72-5708</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8948.52</AccountBalance>
+    <AccountCode>328193981</AccountCode>
+    <Address1>174 Tenth Avenue</Address1>
+    <City>Philadelphia</City>
+    <DateOfBirth>1949-08-19</DateOfBirth>
+    <DebtHolder>Fleet Bank</DebtHolder>
+    <FirstName>Mcarthur</FirstName>
+    <LastName>Schwikert</LastName>
+    <MiddleName>P</MiddleName>
+    <OriginalAccountNumber>7163635357975575</OriginalAccountNumber>
+    <PhoneNumber>(863) 557 2583</PhoneNumber>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>478-46-7245</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7152.56</AccountBalance>
+    <AccountCode>786877238</AccountCode>
+    <Address1>93 Connecticut Avenue</Address1>
+    <Address2>Apt. 2</Address2>
+    <City>Oakland Park</City>
+    <DateOfDelinquency>2002-02-18</DateOfDelinquency>
+    <DebtHolder>FCNB Newport News</DebtHolder>
+    <FirstName>Teisha</FirstName>
+    <LastName>Dammann</LastName>
+    <MiddleName>D</MiddleName>
+    <OriginalAccountNumber>5355775704054961</OriginalAccountNumber>
+    <PhoneNumber>(386) 881 7483</PhoneNumber>
+    <PostalCode>33334</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>121-60-3649</SocialSecurityNumber>
+    <VendorCode>Worldwide Holdings</VendorCode>
+  </DebtHolderRecord>
+</DebtHolder>

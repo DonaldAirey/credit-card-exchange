@@ -1,0 +1,1581 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="Configuration">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <!-- Default Configuration -->
+	<method name="CreateConfigurationEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default"/>
+		<parameter name="relationName" value="AccessControl"/>
+		<parameter name="indexName" value="AccessControlKey"/>
+	</method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default"/>
+		<parameter name="relationName" value="AccessRight"/>
+		<parameter name="indexName" value="AccessRightKeyExternalId0"/>
+	</method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="AssetViewerTemplate"/>
+    <parameter name="indexName" value="AssetViewerTemplateKeyExternalId0"/>
+  </method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="BlotterConfiguration"/>
+    <parameter name="indexName" value="BlotterConfigurationKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="BrokerAccount"/>
+    <parameter name="indexName" value="BrokerAccountKeyExternalId0"/>
+  </method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default"/>
+		<parameter name="relationName" value="CommissionSchedule"/>
+		<parameter name="indexName" value="CommissionScheduleKeyExternalId0"/>
+	</method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default"/>
+		<parameter name="relationName" value="CommissionTranche"/>
+		<parameter name="indexName" value="CommissionTrancheKeyExternalId0"/>
+	</method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default"/>
+		<parameter name="relationName" value="CommissionType"/>
+		<parameter name="indexName" value="CommissionTypeKeyExternalId0"/>
+	</method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default"/>
+		<parameter name="relationName" value="CommissionUnit"/>
+		<parameter name="indexName" value="CommissionUnitKeyExternalId0"/>
+	</method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="Condition"/>
+    <parameter name="indexName" value="ConditionKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="Consumer"/>
+    <parameter name="indexName" value="ConsumerKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="ConsumerDebt"/>
+    <parameter name="indexName" value="ConsumerDebtKey"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="ConsumerTrust"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="CreditCardIssuer"/>
+    <parameter name="indexName" value="CreditCardIssuerKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="Country"/>
+    <parameter name="indexName" value="CountryKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="CreditCard"/>
+    <parameter name="indexName" value="CreditCardKeyExternalId0"/>
+  </method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default"/>
+		<parameter name="relationName" value="CrossingManager"/>
+		<parameter name="indexName" value="CrossingManagerKeyExternalId0"/>
+	</method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="Destination"/>
+    <parameter name="indexName" value="DestinationKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="relationName" value="DebtClass" />
+    <parameter name="indexName" value="DebtClassKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="relationName" value="DebtHolderImportTranslation" />
+    <parameter name="indexName" value="DebtHolderImportTranslationKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="relationName" value="DebtRule" />
+    <parameter name="indexName" value="DebtRuleKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="relationName" value="DebtRuleMap" />
+    <parameter name="indexName" value="DebtRuleMapKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="Exchange"/>
+    <parameter name="indexName" value="ExchangeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="HolidayType"/>
+    <parameter name="indexName" value="HolidayTypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="LotHandling"/>
+    <parameter name="indexName" value="LotHandlingKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="Entity"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="Image"/>
+    <parameter name="indexName" value="ImageKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="EntityTree"/>
+    <parameter name="indexName" value="EntityTreeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="GroupType"/>
+    <parameter name="indexName" value="GroupTypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="GroupUsers"/>
+    <parameter name="indexName" value="GroupUsersKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="OrderType"/>
+    <parameter name="indexName" value="OrderTypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="PartyType"/>
+    <parameter name="indexName" value="PartyTypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="PaymentMethodType"/>
+    <parameter name="indexName" value="PaymentMethodTypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="PositionType"/>
+    <parameter name="indexName" value="PositionTypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="Province"/>
+    <parameter name="indexName" value="ProvinceKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="Report"/>
+    <parameter name="indexName" value="ReportKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="ReportType"/>
+    <parameter name="indexName" value="ReportTypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="Side"/>
+    <parameter name="indexName" value="SideKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="SourceOrder"/>
+    <parameter name="indexName" value="SourceOrderKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="State"/>
+    <parameter name="indexName" value="StateKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="Status"/>
+    <parameter name="indexName" value="StatusKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="Crossing"/>
+    <parameter name="indexName" value="CrossingKeyExternalId0"/>
+  </method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default"/>
+		<parameter name="relationName" value="SettlementUnit"/>
+		<parameter name="indexName" value="SettlementUnitKeyExternalId0"/>
+	</method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default"/>
+	<parameter name="relationName" value="TenantTree"/>
+	<parameter name="indexName" value="TenantTreeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="TimeInForce"/>
+    <parameter name="indexName" value="TimeInForceKeyExternalId0"/>
+  </method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default"/>
+		<parameter name="relationName" value="TimeUnit"/>
+		<parameter name="indexName" value="TimeUnitKeyExternalId0"/>
+	</method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="Type"/>
+    <parameter name="indexName" value="TypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="TypeTree"/>
+    <parameter name="indexName" value="TypeTreeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="User"/>
+    <parameter name="indexName" value="UserKey"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default"/>
+	<parameter name="relationName" value="Tenant"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="VolumeCategory"/>
+    <parameter name="indexName" value="VolumeCategoryKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="Weekend"/>
+    <parameter name="indexName" value="WeekendKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="WorkingOrder"/>
+    <parameter name="indexName" value="WorkingOrderKeyExternalId0"/>
+  </method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default"/>
+		<parameter name="relationName" value="FK_AccessRight_AccessControl"/>
+		<parameter name="indexName" value="AccessRightKeyExternalId0"/>
+	</method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Blotter_Branch"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Blotter_BlotterConfiguration"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Blotter_DebtBlotter"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Blotter_EquityBlotter"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Blotter_Source"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Blotter_SourceOrder"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Blotter_WorkingOrder"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Broker_BrokerAccount"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Broker_ClearingBroker"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default"/>
+		<parameter name="relationName" value="FK_CommissionSchedule_CommissionTranche"/>
+		<parameter name="indexName" value="CommissionScheduleKeyExternalId0"/>
+	</method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_CommissionSchedule_DebtClass"/>
+    <parameter name="indexName" value="CommissionScheduleKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default"/>
+		<parameter name="relationName" value="FK_CommissionType_CommissionTranche"/>
+		<parameter name="indexName" value="CommissionTypeKeyExternalId0"/>
+	</method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default"/>
+		<parameter name="relationName" value="FK_CommissionUnit_CommissionTranche"/>
+		<parameter name="indexName" value="CommissionUnitKeyExternalId0"/>
+	</method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Consumer_ConsumerDebt"/>
+    <parameter name="indexName" value="ConsumerKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Consumer_ConsumerTrust"/>
+    <parameter name="indexName" value="ConsumerKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Consumer_CreditCard"/>
+    <parameter name="indexName" value="ConsumerKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_CreditCard_ConsumerDebt"/>
+    <parameter name="indexName" value="CreditCardKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_CreditCardIssuer_ConsumerDebt"/>
+    <parameter name="indexName" value="CreditCardIssuerKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Country_Exchange"/>
+    <parameter name="indexName" value="CountryKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Country_Province"/>
+    <parameter name="indexName" value="CountryKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Country_Security"/>
+    <parameter name="indexName" value="CountryKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Crossing_WorkingOrder"/>
+    <parameter name="indexName" value="CrossingKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Destination_SourceOrder"/>
+    <parameter name="indexName" value="DestinationKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Entity_AccessControl"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Folder_SystemFolder"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_GroupType_Group"/>
+    <parameter name="indexName" value="GroupTypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Image_Entity"/>
+    <parameter name="indexName" value="ImageKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Image_Type"/>
+    <parameter name="indexName" value="ImageKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Entity_Blotter"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Entity_Folder"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Entity_EntityTree_ChildId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Entity_EntityTree_ParentId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Entity_Security"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>  
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Entity_RightsHolder"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_OrderType_SourceOrder"/>
+    <parameter name="indexName" value="OrderTypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_OrderType_WorkingOrder"/>
+    <parameter name="indexName" value="OrderTypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_PartyType_Blotter"/>
+    <parameter name="indexName" value="PartyTypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_PaymentMethodType_DebtRulePaymentMethod"/>
+    <parameter name="indexName" value="PaymentMethodTypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Province_Consumer"/>
+    <parameter name="indexName" value="ProvinceKeyExternalId0"/>
+  </method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default"/>
+		<parameter name="relationName" value="FK_Province_DebtClass"/>
+		<parameter name="indexName" value="ProvinceKeyExternalId0"/>
+	</method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_ReportType_AssetViewerTemplate"/>
+    <parameter name="indexName" value="ReportTypeKeyExternalId0"/>
+  </method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_ReportType_BlotterConfiguration"/>
+    <parameter name="indexName" value="ReportTypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_ReportType_Report"/>
+    <parameter name="indexName" value="ReportTypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Report_AssetViewerTemplate"/>
+    <parameter name="indexName" value="ReportKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Report_BlotterConfiguration"/>
+    <parameter name="indexName" value="ReportKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_RightsHolder_Group"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Group_GroupUsers"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_User_GroupUsers"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_RightsHolder_User"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Security_ConsumerDebt"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Security_ConsumerTrust"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Security_Currency"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Security_Price_CurrencyId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Security_Price_SecurityId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Security_SourceOrder_SecurityId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Security_SourceOrder_SettlementId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Security_WorkingOrder_SecurityId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Security_WorkingOrder_SettlementId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default"/>
+		<parameter name="relationName" value="FK_SettlementUnit_DebtRule"/>
+		<parameter name="indexName" value="SettlementUnitKeyExternalId0"/>
+	</method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Side_SourceOrder"/>
+    <parameter name="indexName" value="SideKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Side_WorkingOrder"/>
+    <parameter name="indexName" value="SideKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Source_Broker"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Source_Institution"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Status_SourceOrder"/>
+    <parameter name="indexName" value="StatusKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Status_WorkingOrder"/>
+    <parameter name="indexName" value="StatusKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_SystemFolder_User"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default"/>
+	<parameter name="relationName" value="FK_Tenant_AccessControl"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default"/>
+	<parameter name="relationName" value="FK_Tenant_ConsumerDebt"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default"/>
+	<parameter name="relationName" value="FK_Tenant_ConsumerTrust"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default"/>
+	<parameter name="relationName" value="FK_Tenant_ComplianceOfficer"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default"/>
+	<parameter name="relationName" value="FK_Tenant_Currency"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default"/>
+	<parameter name="relationName" value="FK_Tenant_CreditCard"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default"/>
+	<parameter name="relationName" value="FK_Tenant_Entity"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default"/>
+	<parameter name="relationName" value="FK_Tenant_Group"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default"/>
+	<parameter name="relationName" value="FK_Tenant_GroupUsers"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default"/>
+	<parameter name="relationName" value="FK_Tenant_Institution"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default"/>
+	<parameter name="relationName" value="FK_Tenant_Folder"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default"/>
+	<parameter name="relationName" value="FK_Tenant_Security"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default"/>
+	<parameter name="relationName" value="FK_Tenant_SystemFolder"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default"/>
+	<parameter name="relationName" value="FK_Tenant_Trader"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_TimeInForce_SourceOrder"/>
+    <parameter name="indexName" value="TimeInForceKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_TimeInForce_WorkingOrder"/>
+    <parameter name="indexName" value="TimeInForceKeyExternalId0"/>
+  </method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default"/>
+		<parameter name="relationName" value="FK_TimeUnit_DebtRule"/>
+		<parameter name="indexName" value="TimeUnitKeyExternalId0"/>
+	</method>
+	<method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Trader_BrokerAccount"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Type_AssetViewerTemplate"/>
+    <parameter name="indexName" value="TypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_RightsHolder_AccessControl"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_User_ComplianceOfficer"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_User_Trader"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Type_Entity"/>
+    <parameter name="indexName" value="TypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Type_TypeTreeChildId"/>
+    <parameter name="indexName" value="TypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_Type_TypeTreeParentId"/>
+    <parameter name="indexName" value="TypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_User_SourceOrder_CreatedUserId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_User_SourceOrder_ModifiedUserId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_User_WorkingOrder_CreatedUserId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_User_WorkingOrder_ModifiedUserId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_VolumeCategory_Security"/>
+    <parameter name="indexName" value="VolumeCategoryKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_WorkingOrder_SourceOrder"/>
+    <parameter name="indexName" value="WorkingOrderKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="relationName" value="FK_Blotter_DebtClass" />
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="relationName" value="FK_DebtClass_DebtHolder" />
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="relationName" value="FK_DebtClass_DebtRuleMap" />
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="relationName" value="FK_DebtClass_DebtNegotiator" />
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default"/>
+    <parameter name="relationName" value="FK_DebtHolderImportTranslation_DebtHolder"/>
+    <parameter name="indexName" value="DebtHolderImportTranslationKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="relationName" value="FK_DebtRule_DebtClass" />
+    <parameter name="indexName" value="DebtRuleKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="relationName" value="FK_DebtRule_DebtRuleMap" />
+    <parameter name="indexName" value="DebtRuleKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="relationName" value="FK_DebtRule_DebtRulePaymentMethod" />
+    <parameter name="indexName" value="DebtRuleKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default"/>
+	<parameter name="relationName" value="FK_Tenant_TenantTree_ChildId"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default"/>
+	<parameter name="relationName" value="FK_Tenant_TenantTree_ParentId"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default"/>
+	<parameter name="relationName" value="FK_Tenant_RightsHolderOrganizationId"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default"/>
+	<parameter name="relationName" value="FK_Tenant_User"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <!-- CA TICKER Configuration -->
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CA TICKER"/>
+    <parameter name="relationName" value="Entity"/>
+    <parameter name="indexName" value="EntityKeyExternalId1"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CA TICKER"/>
+    <parameter name="relationName" value="FK_Country_Security"/>
+    <parameter name="indexName" value="CountryKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CA TICKER"/>
+    <parameter name="relationName" value="FK_Image_Entity"/>
+    <parameter name="indexName" value="ImageKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CA TICKER"/>
+    <parameter name="relationName" value="FK_Entity_Security"/>
+    <parameter name="indexName" value="EntityKeyExternalId1"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CA TICKER"/>
+    <parameter name="relationName" value="FK_Security_Equity_EquityId"/>
+    <parameter name="indexName" value="EntityKeyExternalId1"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CA TICKER"/>
+    <parameter name="relationName" value="FK_Security_Equity_SettlementId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CA TICKER"/>
+    <parameter name="relationName" value="FK_Security_Price_CurrencyId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CA TICKER"/>
+    <parameter name="relationName" value="FK_Security_Price_SecurityId"/>
+    <parameter name="indexName" value="EntityKeyExternalId1"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="CA TICKER"/>
+	<parameter name="relationName" value="FK_Tenant_Entity"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="CA TICKER"/>
+	<parameter name="relationName" value="FK_Tenant_Institution"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="CA TICKER"/>
+	<parameter name="relationName" value="FK_Tenant_Security"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CA TICKER"/>
+    <parameter name="relationName" value="FK_Type_Entity"/>
+    <parameter name="indexName" value="TypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CA TICKER"/>
+    <parameter name="relationName" value="FK_VolumeCategory_Security"/>
+    <parameter name="indexName" value="VolumeCategoryKeyExternalId0"/>
+  </method>
+  <!-- UK TICKER Configuration -->
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="UK TICKER"/>
+    <parameter name="relationName" value="Entity"/>
+    <parameter name="indexName" value="EntityKeyExternalId2"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="UK TICKER"/>
+    <parameter name="relationName" value="FK_Country_Security"/>
+    <parameter name="indexName" value="CountryKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="UK TICKER"/>
+    <parameter name="relationName" value="FK_Image_Entity"/>
+    <parameter name="indexName" value="ImageKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="UK TICKER"/>
+    <parameter name="relationName" value="FK_Entity_Security"/>
+    <parameter name="indexName" value="EntityKeyExternalId2"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="UK TICKER"/>
+    <parameter name="relationName" value="FK_Security_Equity_EquityId"/>
+    <parameter name="indexName" value="EntityKeyExternalId2"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="UK TICKER"/>
+    <parameter name="relationName" value="FK_Security_Equity_SettlementId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="UK TICKER"/>
+    <parameter name="relationName" value="FK_Security_Price_CurrencyId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="UK TICKER"/>
+    <parameter name="relationName" value="FK_Security_Price_SecurityId"/>
+    <parameter name="indexName" value="EntityKeyExternalId2"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="UK TICKER"/>
+	<parameter name="relationName" value="FK_Tenant_Entity"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="UK TICKER"/>
+	<parameter name="relationName" value="FK_Tenant_Instition"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="UK TICKER"/>
+	<parameter name="relationName" value="FK_Tenant_Security"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="UK TICKER"/>
+    <parameter name="relationName" value="FK_Type_Entity"/>
+    <parameter name="indexName" value="TypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="UK TICKER"/>
+    <parameter name="relationName" value="FK_VolumeCategory_Security"/>
+    <parameter name="indexName" value="VolumeCategoryKeyExternalId0"/>
+  </method>
+  <!-- US TICKER Configuration -->
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="Entity"/>
+    <parameter name="indexName" value="EntityKeyExternalId3"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="DestinationOrder"/>
+    <parameter name="indexName" value="DestinationOrderKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="Execution"/>
+    <parameter name="indexName" value="ExecutionKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="SourceOrder"/>
+    <parameter name="indexName" value="SourceOrderKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="WorkingOrder"/>
+    <parameter name="indexName" value="WorkingOrderKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Blotter_SourceOrder"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Blotter_WorkingOrder"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Broker_Execution"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Country_Security"/>
+    <parameter name="indexName" value="CountryKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Crossing_WorkingOrder"/>
+    <parameter name="indexName" value="CrossingKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Destination_DestinationOrder"/>
+    <parameter name="indexName" value="DestinationKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Destination_SourceOrder"/>
+    <parameter name="indexName" value="DestinationKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_DestinationOrder_Execution"/>
+    <parameter name="indexName" value="DestinationOrderKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Exchange_Equity"/>
+    <parameter name="indexName" value="ExchangeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Image_Entity"/>
+    <parameter name="indexName" value="ImageKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_OrderType_DestinationOrder"/>
+    <parameter name="indexName" value="OrderTypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_OrderType_DestinationOrder"/>
+    <parameter name="indexName" value="OrderTypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_OrderType_SourceOrder"/>
+    <parameter name="indexName" value="OrderTypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_OrderType_WorkingOrder"/>
+    <parameter name="indexName" value="OrderTypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Entity_Security"/>
+    <parameter name="indexName" value="EntityKeyExternalId3"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Security_Equity_EquityId"/>
+    <parameter name="indexName" value="EntityKeyExternalId3"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Security_Equity_SettlementId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Security_Price_CurrencyId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Security_Price_SecurityId"/>
+    <parameter name="indexName" value="EntityKeyExternalId3"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Security_DestinationOrder_SecurityId"/>
+    <parameter name="indexName" value="EntityKeyExternalId3"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Security_DestinationOrder_SettlementId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Security_SourceOrder_SecurityId"/>
+    <parameter name="indexName" value="EntityKeyExternalId3"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Security_SourceOrder_SettlementId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Security_WorkingOrder_SecurityId"/>
+    <parameter name="indexName" value="EntityKeyExternalId3"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Security_WorkingOrder_SettlementId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Side_DestinationOrder"/>
+    <parameter name="indexName" value="SideKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Side_SourceOrder"/>
+    <parameter name="indexName" value="SideKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Side_WorkingOrder"/>
+    <parameter name="indexName" value="SideKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_State_Execution_DestinationStateCode"/>
+    <parameter name="indexName" value="StateKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_State_Execution_SourceStateCode"/>
+    <parameter name="indexName" value="StateKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_State_DestinationOrder"/>
+    <parameter name="indexName" value="StateKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Status_DestinationOrder"/>
+    <parameter name="indexName" value="StatusKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Status_SourceOrder"/>
+    <parameter name="indexName" value="StatusKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Status_WorkingOrder"/>
+    <parameter name="indexName" value="StatusKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="US TICKER"/>
+	<parameter name="relationName" value="FK_Tenant_Entity"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="US TICKER"/>
+	<parameter name="relationName" value="FK_Tenant_Instition"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="US TICKER"/>
+	<parameter name="relationName" value="FK_Tenant_Security"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_TimeInForce_DestinationOrder"/>
+    <parameter name="indexName" value="TimeInForceKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_TimeInForce_SourceOrder"/>
+    <parameter name="indexName" value="TimeInForceKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_TimeInForce_WorkingOrder"/>
+    <parameter name="indexName" value="TimeInForceKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_Type_Entity"/>
+    <parameter name="indexName" value="TypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_User_Execution_CreatedUserId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_User_Execution_ModifiedUserId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_User_DestinationOrder_CreatedUserId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_User_DestinationOrder_ModifiedUserId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_User_SourceOrder_CreatedUserId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_User_SourceOrder_ModifiedUserId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_User_WorkingOrder_CreatedUserId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_User_WorkingOrder_ModifiedUserId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_VolumeCategory_Security"/>
+    <parameter name="indexName" value="VolumeCategoryKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_WorkingOrder_DestinationOrder"/>
+    <parameter name="indexName" value="WorkingOrderKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="US TICKER"/>
+    <parameter name="relationName" value="FK_WorkingOrder_SourceOrder"/>
+    <parameter name="indexName" value="WorkingOrderKeyExternalId0"/>
+  </method>
+  <!-- CUSIP Configuration -->
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="Entity"/>
+    <parameter name="indexName" value="EntityKeyExternalId4"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="SourceOrder"/>
+    <parameter name="indexName" value="SourceOrderKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="WorkingOrder"/>
+    <parameter name="indexName" value="WorkingOrderKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Blotter_SourceOrder"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Blotter_WorkingOrder"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Country_Security"/>
+    <parameter name="indexName" value="CountryKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Crossing_WorkingOrder"/>
+    <parameter name="indexName" value="CrossingKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Destination_SourceOrder"/>
+    <parameter name="indexName" value="DestinationKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Security_Debt_DebtId"/>
+    <parameter name="indexName" value="EntityKeyExternalId4"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_DestinationOrder_Execution"/>
+    <parameter name="indexName" value="DestinationOrderKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Image_Entity"/>
+    <parameter name="indexName" value="ImageKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_OrderType_DestinationOrder"/>
+    <parameter name="indexName" value="OrderTypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_OrderType_SourceOrder"/>
+    <parameter name="indexName" value="OrderTypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_OrderType_WorkingOrder"/>
+    <parameter name="indexName" value="OrderTypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Entity_Security"/>
+    <parameter name="indexName" value="EntityKeyExternalId4"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Security_Debt_SettlementId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Security_Price_CurrencyId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Security_Price_SecurityId"/>
+    <parameter name="indexName" value="EntityKeyExternalId4"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Security_DestinationOrder_SecurityId"/>
+    <parameter name="indexName" value="EntityKeyExternalId4"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Security_DestinationOrder_SettlementId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Security_SourceOrder_SecurityId"/>
+    <parameter name="indexName" value="EntityKeyExternalId4"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Security_SourceOrder_SettlementId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Security_WorkingOrder_SecurityId"/>
+    <parameter name="indexName" value="EntityKeyExternalId4"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Security_WorkingOrder_SettlementId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Side_DestinationOrder"/>
+    <parameter name="indexName" value="SideKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Side_SourceOrder"/>
+    <parameter name="indexName" value="SideKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Side_WorkingOrder"/>
+    <parameter name="indexName" value="SideKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Status_DestinationOrder"/>
+    <parameter name="indexName" value="StatusKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Status_SourceOrder"/>
+    <parameter name="indexName" value="StatusKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Status_WorkingOrder"/>
+    <parameter name="indexName" value="StatusKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="CUSIP"/>
+	<parameter name="relationName" value="FK_Tenant_Entity"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="CUSIP"/>
+	<parameter name="relationName" value="FK_Tenant_Instition"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="CUSIP"/>
+	<parameter name="relationName" value="FK_Tenant_Security"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_TimeInForce_DestinationOrder"/>
+    <parameter name="indexName" value="TimeInForceKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_TimeInForce_SourceOrder"/>
+    <parameter name="indexName" value="TimeInForceKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_TimeInForce_WorkingOrder"/>
+    <parameter name="indexName" value="TimeInForceKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Type_Entity"/>
+    <parameter name="indexName" value="TypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_User_DestinationOrder_CreatedUserId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_User_DestinationOrder_ModifiedUserId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_User_SourceOrder_CreatedUserId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_User_SourceOrder_ModifiedUserId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_User_WorkingOrder_CreatedUserId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_User_WorkingOrder_ModifiedUserId"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_VolumeCategory_Security"/>
+    <parameter name="indexName" value="VolumeCategoryKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_Weekend_Debt"/>
+    <parameter name="indexName" value="WeekendKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_WorkingOrder_DestinationOrder"/>
+    <parameter name="indexName" value="WorkingOrderKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="CUSIP"/>
+    <parameter name="relationName" value="FK_WorkingOrder_SourceOrder"/>
+    <parameter name="indexName" value="WorkingOrderKeyExternalId0"/>
+  </method>
+  <!-- DebtHolder Configuration -->
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="DEBT HOLDER"/>
+    <parameter name="relationName" value="Consumer"/>
+    <parameter name="indexName" value="ConsumerKeyExternalId1"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="DEBT HOLDER"/>
+    <parameter name="relationName" value="CreditCard"/>
+    <parameter name="indexName" value="CreditCardKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="DEBT HOLDER"/>
+    <parameter name="relationName" value="Entity"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="DEBT HOLDER"/>
+    <parameter name="relationName" value="FK_Consumer_ConsumerDebt"/>
+    <parameter name="indexName" value="ConsumerKeyExternalId1"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="DEBT HOLDER"/>
+    <parameter name="relationName" value="FK_Consumer_CreditCard"/>
+    <parameter name="indexName" value="ConsumerKeyExternalId1"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="DEBT HOLDER"/>
+    <parameter name="relationName" value="FK_Country_Security"/>
+    <parameter name="indexName" value="CountryKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="DEBT HOLDER"/>
+    <parameter name="relationName" value="FK_CreditCard_ConsumerDebt"/>
+    <parameter name="indexName" value="CreditCardKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="DEBT HOLDER"/>
+    <parameter name="relationName" value="FK_CreditCardIssuer_CreditCard"/>
+    <parameter name="indexName" value="CreditCardIssuerKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="DEBT HOLDER"/>
+    <parameter name="relationName" value="FK_Entity_Security"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="DEBT HOLDER"/>
+    <parameter name="relationName" value="FK_Image_Entity"/>
+    <parameter name="indexName" value="ImageKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="DEBT HOLDER"/>
+    <parameter name="relationName" value="FK_Province_Consumer"/>
+    <parameter name="indexName" value="ProvinceKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="DEBT HOLDER"/>
+    <parameter name="relationName" value="FK_Security_ConsumerDebt"/>
+    <parameter name="indexName" value="EntityKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="DEBT HOLDER"/>
+	<parameter name="relationName" value="FK_Tenant_Entity"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="DEBT HOLDER"/>
+	<parameter name="relationName" value="FK_Tenant_CreditCard"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="DEBT HOLDER"/>
+	<parameter name="relationName" value="FK_Tenant_ConsumerDebt"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="DEBT HOLDER"/>
+	<parameter name="relationName" value="FK_Tenant_ConsumerTrust"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+	<parameter name="configurationId" value="DEBT HOLDER"/>
+	<parameter name="relationName" value="FK_Tenant_Security"/>
+	<parameter name="indexName" value="TenantKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="DEBT HOLDER"/>
+    <parameter name="relationName" value="FK_Type_Entity"/>
+    <parameter name="indexName" value="TypeKeyExternalId0"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="DEBT HOLDER"/>
+    <parameter name="relationName" value="FK_VolumeCategory_Security"/>
+    <parameter name="indexName" value="VolumeCategoryKeyExternalId0"/>
+  </method>
+<!-- Import configuration -->
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Import"/>
+    <parameter name="relationName" value="Entity"/>
+    <parameter name="indexName" value="EntityKeyExternalId7"/>
+  </method>
+  <method name="CreateConfigurationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Import"/>
+    <parameter name="relationName" value="CreditCard"/>
+    <parameter name="indexName" value="CreditCardKeyExternalId1"/>
+  </method>
+</script>

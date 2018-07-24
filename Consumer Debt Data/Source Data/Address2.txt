@@ -1,0 +1,7 @@
+﻿Unit
+Suite
+Ste.
+Apartment
+APT
+Apt.
+Floor

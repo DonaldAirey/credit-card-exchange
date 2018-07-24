@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="21cfc515-a530-4a35-8b49-15e23764334d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/Guardian/Admin Support?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Admin Support.xsd" MetadataType="Schema" ID="0590ffdd-5eb8-4e75-8533-caa0940f542b" SourceId="1" SourceUrl="http://localhost/Guardian/Admin Support?xsd=xsd5" />
+    <MetadataFile FileName="Admin Support1.xsd" MetadataType="Schema" ID="bb4e0263-3f47-45f7-a29c-5122540ac027" SourceId="1" SourceUrl="http://localhost/Guardian/Admin Support?xsd=xsd0" />
+    <MetadataFile FileName="Admin Support2.xsd" MetadataType="Schema" ID="3f373916-d4b6-472a-9f3e-00e144582a7d" SourceId="1" SourceUrl="http://localhost/Guardian/Admin Support?xsd=xsd2" />
+    <MetadataFile FileName="AdminSupport.wsdl" MetadataType="Wsdl" ID="f9373b86-c5f9-42c4-97eb-3a90a3b82b2e" SourceId="1" SourceUrl="http://localhost/Guardian/Admin Support?wsdl" />
+    <MetadataFile FileName="Admin Support3.xsd" MetadataType="Schema" ID="2089f089-cc9e-46ba-96e4-f7bdec009449" SourceId="1" SourceUrl="http://localhost/Guardian/Admin Support?xsd=xsd1" />
+    <MetadataFile FileName="Admin Support4.xsd" MetadataType="Schema" ID="abcfee52-7929-49cb-b5e1-b03719979122" SourceId="1" SourceUrl="http://localhost/Guardian/Admin Support?xsd=xsd4" />
+    <MetadataFile FileName="Admin Support5.xsd" MetadataType="Schema" ID="2e11de09-7629-4181-866d-04e931f566a9" SourceId="1" SourceUrl="http://localhost/Guardian/Admin Support?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

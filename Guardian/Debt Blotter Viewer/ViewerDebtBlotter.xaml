@@ -1,0 +1,153 @@
+﻿<Viewer x:Class="FluidTrade.Guardian.ViewerDebtBlotter"
+        Name="viewerDebtBlotter"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:guardian="http://schemas.fluidtrade.com/winfx/2006/xaml/guardian/presentation"
+        xmlns:src="clr-namespace:FluidTrade.Guardian" >
+  <!-- Resources -->
+  <Viewer.Resources>
+    <BitmapImage x:Key="lock"
+                 UriSource="Resources/Lock.png" />
+    <BitmapImage x:Key="unlock"
+                 UriSource="Resources/Unlock.png" />
+  </Viewer.Resources>
+  <!-- CommandBindings -->
+  <Viewer.CommandBindings>
+    <CommandBinding Command="guardian:GuardianCommands.ApplyFilledFilter"
+                    Executed="OnApplyFilledFilter" />
+    <CommandBinding Command="guardian:GuardianCommands.ApplyRunningFilter"
+                    Executed="OnApplyRunningFilter" />
+    <CommandBinding Command="FluidTradeCommands.FreezePanes"
+                    Executed="OnSetIsLayoutFrozen" />
+    <CommandBinding Command="FluidTradeCommands.FreezeHeaders"
+                    Executed="OnSetIsHeaderFrozen" />
+    <CommandBinding Command="FluidTradeCommands.SelectColumns"
+                    Executed="OnSelectColumns" />
+    <CommandBinding Command="FluidTradeCommands.SetAnimationFast"
+                    Executed="OnSetAnimationFast" />
+    <CommandBinding Command="FluidTradeCommands.SetAnimationMedium"
+                    Executed="OnSetAnimationMedium" />
+    <CommandBinding Command="FluidTradeCommands.SetAnimationSlow"
+                    Executed="OnSetAnimationSlow" />
+    <CommandBinding Command="FluidTradeCommands.SetAnimationOff"
+                    Executed="OnSetAnimationOff" />
+    <CommandBinding Command="guardian:GuardianCommands.CreateSlice"
+                    Executed="OnCreateSlice" />
+  </Viewer.CommandBindings>
+  <!-- InputBindings -->
+  <Viewer.InputBindings>
+    <KeyBinding Command="guardian:GuardianCommands.ApplyFilledFilter"
+                Gesture="Alt+F" />
+    <KeyBinding Command="guardian:GuardianCommands.ApplyRunningFilter"
+                Gesture="Alt+R" />
+  </Viewer.InputBindings>
+  <!-- Menu -->
+  <Viewer.Menu>
+    <Menu>
+      <MenuItem Header="_File"
+                x:Name="menuItemFile" >
+        <Separator />
+        <MenuItem Command="ApplicationCommands.Close"
+                  Header="E_xit"
+                  x:Name="menuItemExit" />
+      </MenuItem>
+      <MenuItem Header="_Edit"
+                x:Name="menuItemEdit">
+        <MenuItem Command="FluidTradeCommands.ResetSettings"
+									Header="Reset Settings"
+                  x:Name="menuItemResetSettings" />
+      </MenuItem>
+      <MenuItem Header="_View"
+                x:Name="menuItemView" >
+        <MenuItem Command="FluidTradeCommands.SetIsNavigationPaneVisible"
+									Header="Show Navigation Pane"
+                  IsChecked="True"
+                  x:Name="menuItemIsNavigationPaneVisible" />
+        <Separator />
+        <MenuItem Command="FluidTradeCommands.SelectColumns"
+                  CommandTarget="{Binding ElementName=viewerDebtBlotter}"
+									Header="Select Columns"
+                  x:Name="menuItemSelectColumns" />
+        <MenuItem Header="Animation"
+                  CommandTarget="{Binding ElementName=viewerDebtBlotter}"
+                  x:Name="menuItemAnimation" >
+          <MenuItem Command="FluidTradeCommands.SetAnimationSlow"
+                    CommandTarget="{Binding ElementName=viewerDebtBlotter}"
+										Header="Slow Animation"
+                    IsChecked="False"
+                    x:Name="menuItemSetAnimationSlow" />
+          <MenuItem Command="FluidTradeCommands.SetAnimationMedium"
+                    CommandTarget="{Binding ElementName=viewerDebtBlotter}"
+										Header="Medium Animation"
+                    IsChecked="False"
+                    x:Name="menuItemSetAnimationMedium"  />
+          <MenuItem Command="FluidTradeCommands.SetAnimationFast"
+                    CommandTarget="{Binding ElementName=viewerDebtBlotter}"
+										Header="Fast Animation"
+                    IsChecked="False"
+                    x:Name="menuItemSetAnimationFast" />
+          <MenuItem Command="FluidTradeCommands.SetAnimationOff"
+                    CommandTarget="{Binding ElementName=viewerDebtBlotter}"
+										Header="Animation Off"
+                    IsChecked="True"
+                    x:Name="menuItemSetAnimationOff" />
+        </MenuItem>
+      </MenuItem>
+      <MenuItem Header="_Action"
+                x:Name="menuItemAction">
+        <MenuItem Command="guardian:GuardianCommands.CreateSlice"
+                  CommandTarget="{Binding ElementName=viewerDebtBlotter}"
+                  Header="Create Slice"
+                  x:Name="menuItemCreateSlice" />
+      </MenuItem>
+    </Menu>
+  </Viewer.Menu>
+  <!-- StatusBar -->
+  <Viewer.StatusBar>
+    <guardian:BlotterStatusBar Entity="{Binding Path=Content,ElementName=viewerDebtBlotter}"
+                               Zoom="{Binding Path=Scale,ElementName=viewerDebtBlotter,Mode=TwoWay}" />
+  </Viewer.StatusBar>
+  <!-- ToolBar -->
+  <Viewer.ToolBar>
+    <ToolBar Grid.Column="0"
+             Grid.ColumnSpan="2"
+             Grid.Row="2"
+             x:Name="toolBarMain"
+             Template="{StaticResource ToolBarTemplate}">
+      <ToggleButton Focusable="False"
+                    Margin="1"
+                    x:Name="toggleButtonApplyFilledFilter">
+        <TextBlock Foreground="White"
+                   Text="Filled" />
+      </ToggleButton>
+      <TextBox AcceptsTab="False"
+               IsTabStop="False"
+               x:Name="textBoxSymbol"
+               TextChanged="OnTextBoxSymbolTextChanged"
+               Width="100" />
+      <ToggleButton Command="FluidTradeCommands.FreezeHeaders"
+                    CommandTarget="{Binding ElementName=viewerDebtBlotter}"
+                    Focusable="False"
+                    IsChecked="True"
+                    x:Name="toggleButtonIsHeaderFrozen"
+                    Margin="20,0,20,0"
+										Visibility="Collapsed">
+        <ToggleButton.Template>
+          <ControlTemplate TargetType="{x:Type ToggleButton}">
+            <Image Name="ToggleImage"
+                   Source="{StaticResource lock}"
+                   Height="24" />
+            <ControlTemplate.Triggers>
+              <Trigger Property="IsChecked"
+                       Value="false">
+                <Setter TargetName="ToggleImage"
+                        Property="Source"
+                        Value="{StaticResource unlock}" />
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </ToggleButton.Template>
+      </ToggleButton>
+    </ToolBar>
+  </Viewer.ToolBar>
+</Viewer>

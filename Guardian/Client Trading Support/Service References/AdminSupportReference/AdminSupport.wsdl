@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="AdminSupport" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="TcpAdminEndpoint_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:SslTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+            <sp:IncludeTimestamp />
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <sp:EndorsingSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:SecureConversationToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+              <wsp:Policy>
+                <sp:BootstrapPolicy>
+                  <wsp:Policy>
+                    <sp:SignedParts>
+                      <sp:Body />
+                      <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
+                      <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
+                      <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
+                      <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
+                      <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
+                      <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
+                      <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
+                    </sp:SignedParts>
+                    <sp:EncryptedParts>
+                      <sp:Body />
+                    </sp:EncryptedParts>
+                    <sp:TransportBinding>
+                      <wsp:Policy>
+                        <sp:TransportToken>
+                          <wsp:Policy>
+                            <msf:SslTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy" />
+                          </wsp:Policy>
+                        </sp:TransportToken>
+                        <sp:AlgorithmSuite>
+                          <wsp:Policy>
+                            <sp:Basic256 />
+                          </wsp:Policy>
+                        </sp:AlgorithmSuite>
+                        <sp:Layout>
+                          <wsp:Policy>
+                            <sp:Strict />
+                          </wsp:Policy>
+                        </sp:Layout>
+                        <sp:IncludeTimestamp />
+                      </wsp:Policy>
+                    </sp:TransportBinding>
+                    <sp:SignedSupportingTokens>
+                      <wsp:Policy>
+                        <sp:UsernameToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+                          <wsp:Policy>
+                            <sp:WssUsernameToken10 />
+                          </wsp:Policy>
+                        </sp:UsernameToken>
+                      </wsp:Policy>
+                    </sp:SignedSupportingTokens>
+                    <sp:Wss11>
+                      <wsp:Policy>
+                        <sp:MustSupportRefKeyIdentifier />
+                        <sp:MustSupportRefIssuerSerial />
+                        <sp:MustSupportRefThumbprint />
+                        <sp:MustSupportRefEncryptedKey />
+                      </wsp:Policy>
+                    </sp:Wss11>
+                    <sp:Trust10>
+                      <wsp:Policy>
+                        <sp:MustSupportIssuedTokens />
+                        <sp:RequireClientEntropy />
+                        <sp:RequireServerEntropy />
+                      </wsp:Policy>
+                    </sp:Trust10>
+                  </wsp:Policy>
+                </sp:BootstrapPolicy>
+              </wsp:Policy>
+            </sp:SecureConversationToken>
+            <sp:SignedParts>
+              <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
+            </sp:SignedParts>
+          </wsp:Policy>
+        </sp:EndorsingSupportingTokens>
+        <sp:Wss11 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:MustSupportRefKeyIdentifier />
+            <sp:MustSupportRefIssuerSerial />
+            <sp:MustSupportRefThumbprint />
+            <sp:MustSupportRefEncryptedKey />
+          </wsp:Policy>
+        </sp:Wss11>
+        <sp:Trust10 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:MustSupportIssuedTokens />
+            <sp:RequireClientEntropy />
+            <sp:RequireServerEntropy />
+          </wsp:Policy>
+        </sp:Trust10>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="TcpAdminEndpoint_CreateUsers_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <oletx:OleTxAssertion wsp:Optional="true" wsp1:Optional="true" xmlns:oletx="http://schemas.microsoft.com/ws/2006/02/tx/oletx" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2002/12/policy" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="TcpAdminEndpoint_CreateUser_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <oletx:OleTxAssertion wsp:Optional="true" wsp1:Optional="true" xmlns:oletx="http://schemas.microsoft.com/ws/2006/02/tx/oletx" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2002/12/policy" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="TcpAdminEndpoint_DeleteUserAccount_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <oletx:OleTxAssertion wsp:Optional="true" wsp1:Optional="true" xmlns:oletx="http://schemas.microsoft.com/ws/2006/02/tx/oletx" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2002/12/policy" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="TcpAdminEndpoint_DisableUserAccount_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <oletx:OleTxAssertion wsp:Optional="true" wsp1:Optional="true" xmlns:oletx="http://schemas.microsoft.com/ws/2006/02/tx/oletx" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2002/12/policy" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="TcpAdminEndpoint_FindUserByName_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <oletx:OleTxAssertion wsp:Optional="true" wsp1:Optional="true" xmlns:oletx="http://schemas.microsoft.com/ws/2006/02/tx/oletx" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2002/12/policy" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="TcpAdminEndpoint_GetDebtOrganizations_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <oletx:OleTxAssertion wsp:Optional="true" wsp1:Optional="true" xmlns:oletx="http://schemas.microsoft.com/ws/2006/02/tx/oletx" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2002/12/policy" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="TcpAdminEndpoint_GetAllUsers_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <oletx:OleTxAssertion wsp:Optional="true" wsp1:Optional="true" xmlns:oletx="http://schemas.microsoft.com/ws/2006/02/tx/oletx" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2002/12/policy" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="TcpAdminEndpoint_GetUserContext_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <oletx:OleTxAssertion wsp:Optional="true" wsp1:Optional="true" xmlns:oletx="http://schemas.microsoft.com/ws/2006/02/tx/oletx" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2002/12/policy" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/Guardian/Admin Support?xsd=xsd1" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/Guardian/Admin Support?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/Guardian/Admin Support?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian.Records" />
+      <xsd:import schemaLocation="http://localhost/Guardian/Admin Support?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Core" />
+      <xsd:import schemaLocation="http://localhost/Guardian/Admin Support?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian" />
+      <xsd:import schemaLocation="http://localhost/Guardian/Admin Support?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAdminSupport_AddOrganization_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrganization" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_AddOrganization_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrganizationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_AddUserToGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddUserToGroup" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_AddUserToGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddUserToGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_ChangePassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangePassword" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_ChangePassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangePasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_CreateUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUsers" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_CreateUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_CreateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUser" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_CreateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_DeleteUserAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserAccount" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_DeleteUserAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_DisableUserAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:DisableUserAccount" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_DisableUserAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DisableUserAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_FindUserByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindUserByName" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_FindUserByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindUserByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_GetDebtOrganizations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDebtOrganizations" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_GetDebtOrganizations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDebtOrganizationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_GetAllUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUsers" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_GetAllUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_GetUserContext_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserContext" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_GetUserContext_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserContextResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_MustChangePasswordOnNextLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:MustChangePasswordOnNextLogin" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_MustChangePasswordOnNextLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MustChangePasswordOnNextLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_RemoveUserFromGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveUserFromGroup" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_RemoveUserFromGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveUserFromGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_ResetPassword_InputMessage">
+    <wsdl:part name="parameters" element="tns:ResetPassword" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_ResetPassword_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResetPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_UpdateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="IAdminSupport_UpdateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAdminSupport">
+    <wsdl:operation name="AddOrganization">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdminSupport/AddOrganization" message="tns:IAdminSupport_AddOrganization_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdminSupport/AddOrganizationResponse" message="tns:IAdminSupport_AddOrganization_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUserToGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdminSupport/AddUserToGroup" message="tns:IAdminSupport_AddUserToGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdminSupport/AddUserToGroupResponse" message="tns:IAdminSupport_AddUserToGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdminSupport/ChangePassword" message="tns:IAdminSupport_ChangePassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdminSupport/ChangePasswordResponse" message="tns:IAdminSupport_ChangePassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdminSupport/CreateUsers" message="tns:IAdminSupport_CreateUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdminSupport/CreateUsersResponse" message="tns:IAdminSupport_CreateUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdminSupport/CreateUser" message="tns:IAdminSupport_CreateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdminSupport/CreateUserResponse" message="tns:IAdminSupport_CreateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdminSupport/DeleteUserAccount" message="tns:IAdminSupport_DeleteUserAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdminSupport/DeleteUserAccountResponse" message="tns:IAdminSupport_DeleteUserAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DisableUserAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdminSupport/DisableUserAccount" message="tns:IAdminSupport_DisableUserAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdminSupport/DisableUserAccountResponse" message="tns:IAdminSupport_DisableUserAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindUserByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdminSupport/FindUserByName" message="tns:IAdminSupport_FindUserByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdminSupport/FindUserByNameResponse" message="tns:IAdminSupport_FindUserByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDebtOrganizations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdminSupport/GetDebtOrganizations" message="tns:IAdminSupport_GetDebtOrganizations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdminSupport/GetDebtOrganizationsResponse" message="tns:IAdminSupport_GetDebtOrganizations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdminSupport/GetAllUsers" message="tns:IAdminSupport_GetAllUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdminSupport/GetAllUsersResponse" message="tns:IAdminSupport_GetAllUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserContext">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdminSupport/GetUserContext" message="tns:IAdminSupport_GetUserContext_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdminSupport/GetUserContextResponse" message="tns:IAdminSupport_GetUserContext_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MustChangePasswordOnNextLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdminSupport/MustChangePasswordOnNextLogin" message="tns:IAdminSupport_MustChangePasswordOnNextLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdminSupport/MustChangePasswordOnNextLoginResponse" message="tns:IAdminSupport_MustChangePasswordOnNextLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveUserFromGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdminSupport/RemoveUserFromGroup" message="tns:IAdminSupport_RemoveUserFromGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdminSupport/RemoveUserFromGroupResponse" message="tns:IAdminSupport_RemoveUserFromGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ResetPassword">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdminSupport/ResetPassword" message="tns:IAdminSupport_ResetPassword_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdminSupport/ResetPasswordResponse" message="tns:IAdminSupport_ResetPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdminSupport/UpdateUser" message="tns:IAdminSupport_UpdateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdminSupport/UpdateUserResponse" message="tns:IAdminSupport_UpdateUser_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TcpAdminEndpoint" type="tns:IAdminSupport">
+    <wsp:PolicyReference URI="#TcpAdminEndpoint_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="AddOrganization">
+      <soap12:operation soapAction="http://tempuri.org/IAdminSupport/AddOrganization" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUserToGroup">
+      <soap12:operation soapAction="http://tempuri.org/IAdminSupport/AddUserToGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassword">
+      <soap12:operation soapAction="http://tempuri.org/IAdminSupport/ChangePassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUsers">
+      <wsp:PolicyReference URI="#TcpAdminEndpoint_CreateUsers_policy" />
+      <soap12:operation soapAction="http://tempuri.org/IAdminSupport/CreateUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUser">
+      <wsp:PolicyReference URI="#TcpAdminEndpoint_CreateUser_policy" />
+      <soap12:operation soapAction="http://tempuri.org/IAdminSupport/CreateUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserAccount">
+      <wsp:PolicyReference URI="#TcpAdminEndpoint_DeleteUserAccount_policy" />
+      <soap12:operation soapAction="http://tempuri.org/IAdminSupport/DeleteUserAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisableUserAccount">
+      <wsp:PolicyReference URI="#TcpAdminEndpoint_DisableUserAccount_policy" />
+      <soap12:operation soapAction="http://tempuri.org/IAdminSupport/DisableUserAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindUserByName">
+      <wsp:PolicyReference URI="#TcpAdminEndpoint_FindUserByName_policy" />
+      <soap12:operation soapAction="http://tempuri.org/IAdminSupport/FindUserByName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDebtOrganizations">
+      <wsp:PolicyReference URI="#TcpAdminEndpoint_GetDebtOrganizations_policy" />
+      <soap12:operation soapAction="http://tempuri.org/IAdminSupport/GetDebtOrganizations" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUsers">
+      <wsp:PolicyReference URI="#TcpAdminEndpoint_GetAllUsers_policy" />
+      <soap12:operation soapAction="http://tempuri.org/IAdminSupport/GetAllUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserContext">
+      <wsp:PolicyReference URI="#TcpAdminEndpoint_GetUserContext_policy" />
+      <soap12:operation soapAction="http://tempuri.org/IAdminSupport/GetUserContext" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MustChangePasswordOnNextLogin">
+      <soap12:operation soapAction="http://tempuri.org/IAdminSupport/MustChangePasswordOnNextLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveUserFromGroup">
+      <soap12:operation soapAction="http://tempuri.org/IAdminSupport/RemoveUserFromGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResetPassword">
+      <soap12:operation soapAction="http://tempuri.org/IAdminSupport/ResetPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <soap12:operation soapAction="http://tempuri.org/IAdminSupport/UpdateUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AdminSupport">
+    <wsdl:port name="TcpAdminEndpoint" binding="tns:TcpAdminEndpoint">
+      <soap12:address location="net.tcp://localhost/Guardian/Admin%20Support" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost/Guardian/Admin%20Support</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

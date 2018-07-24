@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PrototypeView"
+           targetNamespace="urn:schemas-fluidtrade-com:guardian:consumer-debt-working-order-header"
+           xmlns:mstns="urn:schemas-fluidtrade-com:guardian:consumer-debt-working-order-header"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:r="urn:schemas-fluidtrade-com:report"
+           xmlns:dhwo="urn:schemas-fluidtrade-com:guardian:consumer-debt-working-order">
+  <xs:annotation>
+    <xs:appinfo>
+      <r:generatedCode destinationNamespace="FluidTrade.Guardian.Schema.DebtHolderWorkingOrderHeader" />
+    </xs:appinfo>
+  </xs:annotation>
+  <!-- Imports -->
+  <xs:import namespace="urn:schemas-fluidtrade-com:guardian:consumer-debt-working-order"
+             schemaLocation="..\WorkingOrder\WorkingOrder.xsd" />
+  <xs:complexType name="AccountNumber" />
+  <xs:complexType name="Address1" />
+  <xs:complexType name="Address2" />
+  <xs:complexType name="Blotter" />
+  <xs:complexType name="City" />
+  <xs:complexType name="CreatedDateTime" />
+	<xs:complexType name="DateOfBirth" />
+	<xs:complexType name="DateOfDelinquency" />
+	<xs:complexType name="FirstName" />
+  <xs:complexType name="HeatIndex" />
+  <xs:complexType name="IsEmployed" />
+  <xs:complexType name="DebtHolderName" />
+  <xs:complexType name="LastName" />
+  <xs:complexType name="PostalCode" />
+  <xs:complexType name="MiddleName" />
+  <xs:complexType name="ModifiedDateTime" />
+  <xs:complexType name="AccountBalance" />
+  <xs:complexType name="Province" />
+  <xs:complexType name="RuleId" />
+  <xs:complexType name="Salutation" />
+  <xs:complexType name="SecurityName" />
+  <xs:complexType name="SelectRow" />
+  <xs:complexType name="SocialSecurityNumber" />
+  <xs:complexType name="MatchStatus" />
+  <xs:complexType name="Suffix" />
+  <!-- Working Order Header -->
+  <xs:complexType name="WorkingOrderHeader">
+    <xs:annotation>
+      <xs:appinfo>
+        <r:constructor>
+          <r:arguments>
+            <r:argument type="System.Guid"
+                        name="guid" />
+          </r:arguments>
+          <r:setter property="key"
+                    value="guid" />
+        </r:constructor>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="AccountNumber"
+                  type="mstns:AccountNumber" />
+      <xs:element name="Address1"
+                  type="mstns:Address1" />
+      <xs:element name="Address2"
+                  type="mstns:Address2" />
+      <xs:element name="Blotter"
+                  type="mstns:Blotter" />
+      <xs:element name="City"
+                  type="mstns:City" />
+      <xs:element name="CreatedDateTime"
+                  type="mstns:CreatedDateTime" />
+			<xs:element name="DateOfBirth"
+                  type="mstns:DateOfBirth" />
+			<xs:element name="DateOfDelinquency"
+                  type="mstns:DateOfDelinquency" />
+			<xs:element name="FirstName"
+                  type="mstns:FirstName" />
+      <xs:element name="HeatIndex"
+                  type="mstns:HeatIndex" />
+      <xs:element name="IsEmployed"
+                  type="mstns:IsEmployed" />
+	  <xs:element name="DebtHolderName"
+				  type="mstns:DebtHolderName" />
+			<xs:element name="LastName"
+                  type="mstns:LastName" />
+      <xs:element name="PostalCode"
+                  type="mstns:PostalCode" />
+      <xs:element name="MiddleName"
+                  type="mstns:MiddleName" />
+      <xs:element name="ModifiedDateTime"
+                  type="mstns:ModifiedDateTime" />
+      <xs:element name="AccountBalance"
+                  type="mstns:AccountBalance" />
+      <xs:element name="Province"
+                  type="mstns:Province" />
+      <xs:element name="RuleId"
+                  type="mstns:RuleId" />
+      <xs:element name="Salutation"
+                  type="mstns:Salutation" />
+      <xs:element name="SecurityName"
+                  type="mstns:SecurityName" />
+      <xs:element name="SelectRow"
+                  type="mstns:SelectRow" />
+      <xs:element name="SocialSecurityNumber"
+                  type="mstns:SocialSecurityNumber" />
+      <xs:element name="MatchStatus"
+                  type="mstns:MatchStatus" />
+      <xs:element name="Suffix"
+                  type="mstns:Suffix" />
+      <xs:element name="WorkingOrderList"
+                  type="dhwo:WorkingOrder"
+                  minOccurs="0"
+                  maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:where predicate="Prefilter"
+                     source="DataModel.WorkingOrder"
+                     sourceType="FluidTrade.Guardian.WorkingOrderRow" />
+            <r:select selector="Selector" />
+            <r:where predicate="Filter" />
+            <r:orderBy comparer="Comparer"
+                       keySelector="dhwo:WorkingOrder.SelectSelf"
+                       keyType="dhwo:WorkingOrder" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

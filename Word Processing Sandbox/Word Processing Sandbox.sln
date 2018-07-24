@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Word Processor", "Word Processor\Word Processor.csproj", "{81F97982-AB42-4432-BD7A-7D0760FB5B56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expression Evaluation Library", "..\Fluid Trade\Expression Evaluation Library\Expression Evaluation Library.csproj", "{D40EA4B9-A379-4568-B571-44C5FB154EB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mail Merge", "..\Fluid Trade\Mail Merge\Mail Merge.csproj", "{485886E3-4BC2-4038-82AC-17C04D85D8FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fluid Trade Library", "..\Fluid Trade\Fluid Trade Library\Fluid Trade Library.csproj", "{734051D9-B2A3-44E9-A88B-7B4FDB90109F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{35E847D5-D1ED-4EC6-AB65-9E32BAB0FEF4}"
+	ProjectSection(SolutionItems) = preProject
+		VerifyOff.ps1 = VerifyOff.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://titania.fluidtrade.com:8080/
+		SccProjectUniqueName0 = ..\\Fluid\u0020Trade\\Mail\u0020Merge\\Mail\u0020Merge.csproj
+		SccProjectName0 = ../Fluid\u0020Trade/Mail\u0020Merge
+		SccLocalPath0 = ..\\Fluid\u0020Trade\\Mail\u0020Merge
+		SccProjectUniqueName1 = ..\\Fluid\u0020Trade\\Fluid\u0020Trade\u0020Library\\Fluid\u0020Trade\u0020Library.csproj
+		SccProjectName1 = ../Fluid\u0020Trade/Fluid\u0020Trade\u0020Library
+		SccLocalPath1 = ..\\Fluid\u0020Trade\\Fluid\u0020Trade\u0020Library
+		SccLocalPath2 = .
+		SccProjectUniqueName3 = ..\\Fluid\u0020Trade\\Expression\u0020Evaluation\u0020Library\\Expression\u0020Evaluation\u0020Library.csproj
+		SccProjectName3 = ../Fluid\u0020Trade/Expression\u0020Evaluation\u0020Library
+		SccLocalPath3 = ..\\Fluid\u0020Trade\\Expression\u0020Evaluation\u0020Library
+		SccProjectUniqueName4 = Word\u0020Processor\\Word\u0020Processor.csproj
+		SccProjectName4 = Word\u0020Processor
+		SccLocalPath4 = Word\u0020Processor
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81F97982-AB42-4432-BD7A-7D0760FB5B56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81F97982-AB42-4432-BD7A-7D0760FB5B56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81F97982-AB42-4432-BD7A-7D0760FB5B56}.Debug|x64.ActiveCfg = Debug|x86
+		{81F97982-AB42-4432-BD7A-7D0760FB5B56}.Debug|x86.ActiveCfg = Debug|x86
+		{81F97982-AB42-4432-BD7A-7D0760FB5B56}.Debug|x86.Build.0 = Debug|x86
+		{81F97982-AB42-4432-BD7A-7D0760FB5B56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81F97982-AB42-4432-BD7A-7D0760FB5B56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81F97982-AB42-4432-BD7A-7D0760FB5B56}.Release|x64.ActiveCfg = Release|x86
+		{81F97982-AB42-4432-BD7A-7D0760FB5B56}.Release|x86.ActiveCfg = Release|x86
+		{81F97982-AB42-4432-BD7A-7D0760FB5B56}.Release|x86.Build.0 = Release|x86
+		{D40EA4B9-A379-4568-B571-44C5FB154EB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D40EA4B9-A379-4568-B571-44C5FB154EB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D40EA4B9-A379-4568-B571-44C5FB154EB2}.Debug|x64.ActiveCfg = Debug|x86
+		{D40EA4B9-A379-4568-B571-44C5FB154EB2}.Debug|x86.ActiveCfg = Debug|x86
+		{D40EA4B9-A379-4568-B571-44C5FB154EB2}.Debug|x86.Build.0 = Debug|x86
+		{D40EA4B9-A379-4568-B571-44C5FB154EB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D40EA4B9-A379-4568-B571-44C5FB154EB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D40EA4B9-A379-4568-B571-44C5FB154EB2}.Release|x64.ActiveCfg = Release|x86
+		{D40EA4B9-A379-4568-B571-44C5FB154EB2}.Release|x86.ActiveCfg = Release|x86
+		{D40EA4B9-A379-4568-B571-44C5FB154EB2}.Release|x86.Build.0 = Release|x86
+		{485886E3-4BC2-4038-82AC-17C04D85D8FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{485886E3-4BC2-4038-82AC-17C04D85D8FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{485886E3-4BC2-4038-82AC-17C04D85D8FB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{485886E3-4BC2-4038-82AC-17C04D85D8FB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{485886E3-4BC2-4038-82AC-17C04D85D8FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{485886E3-4BC2-4038-82AC-17C04D85D8FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{485886E3-4BC2-4038-82AC-17C04D85D8FB}.Release|x64.ActiveCfg = Release|Any CPU
+		{485886E3-4BC2-4038-82AC-17C04D85D8FB}.Release|x86.ActiveCfg = Release|Any CPU
+		{734051D9-B2A3-44E9-A88B-7B4FDB90109F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{734051D9-B2A3-44E9-A88B-7B4FDB90109F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{734051D9-B2A3-44E9-A88B-7B4FDB90109F}.Debug|x64.ActiveCfg = Debug|x64
+		{734051D9-B2A3-44E9-A88B-7B4FDB90109F}.Debug|x64.Build.0 = Debug|x64
+		{734051D9-B2A3-44E9-A88B-7B4FDB90109F}.Debug|x86.ActiveCfg = Debug|x86
+		{734051D9-B2A3-44E9-A88B-7B4FDB90109F}.Debug|x86.Build.0 = Debug|x86
+		{734051D9-B2A3-44E9-A88B-7B4FDB90109F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{734051D9-B2A3-44E9-A88B-7B4FDB90109F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{734051D9-B2A3-44E9-A88B-7B4FDB90109F}.Release|x64.ActiveCfg = Release|x64
+		{734051D9-B2A3-44E9-A88B-7B4FDB90109F}.Release|x64.Build.0 = Release|x64
+		{734051D9-B2A3-44E9-A88B-7B4FDB90109F}.Release|x86.ActiveCfg = Release|x86
+		{734051D9-B2A3-44E9-A88B-7B4FDB90109F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

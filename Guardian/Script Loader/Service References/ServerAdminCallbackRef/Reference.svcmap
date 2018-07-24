@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3ec0df13-76fa-4469-9089-971f1153ec5b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/Guardian/Server Admin Callback Manager" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Server Admin Callback Manager1.xsd" MetadataType="Schema" ID="b766fc90-e35f-41df-a08d-ad7e8347d400" SourceId="1" SourceUrl="http://localhost/Guardian/Server Admin Callback Manager?xsd=xsd0" />
+    <MetadataFile FileName="ServerAdminCallbackManager.wsdl" MetadataType="Wsdl" ID="8ab5f375-8a31-42df-a4fe-81ee3ba0c1a5" SourceId="1" SourceUrl="http://localhost/Guardian/Server Admin Callback Manager?wsdl" />
+    <MetadataFile FileName="Server Admin Callback Manager.xsd" MetadataType="Schema" ID="0e48e12e-99ab-425b-891b-aba091f2ce35" SourceId="1" SourceUrl="http://localhost/Guardian/Server Admin Callback Manager?xsd=xsd2" />
+    <MetadataFile FileName="Server Admin Callback Manager.disco" MetadataType="Disco" ID="fbcb4c42-86d9-46e4-b489-ab6a35b53ca7" SourceId="1" SourceUrl="http://localhost/Guardian/Server Admin Callback Manager?disco" />
+    <MetadataFile FileName="Server Admin Callback Manager3.xsd" MetadataType="Schema" ID="787447e1-8c6d-48f0-b609-86a7383e5041" SourceId="1" SourceUrl="http://localhost/Guardian/Server Admin Callback Manager?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

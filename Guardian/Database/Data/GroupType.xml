@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="Group Type">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <method name="CreateGroupTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="FLUID TRADE ADMIN" />
+    <parameter name="groupTypeCode" value="FluidTradeAdmin" />
+    <parameter name="name" value="Fluid Trade Admin" />
+  </method>
+  <method name="CreateGroupTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="EXCHANGE ADMIN" />
+    <parameter name="groupTypeCode" value="ExchangeAdmin" />
+    <parameter name="name" value="Exchange Admin" />
+  </method>
+  <method name="CreateGroupTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="SITE ADMIN" />
+    <parameter name="groupTypeCode" value="SiteAdmin" />
+    <parameter name="name" value="Site Admin" />
+  </method>
+  <method name="CreateGroupTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="USER" />
+    <parameter name="groupTypeCode" value="User" />
+    <parameter name="name" value="User" />
+  </method>
+</script>

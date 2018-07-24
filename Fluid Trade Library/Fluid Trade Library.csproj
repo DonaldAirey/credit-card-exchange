@@ -1,0 +1,434 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{734051D9-B2A3-44E9-A88B-7B4FDB90109F}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>FluidTrade.FluidTradeLibrary</AssemblyName>
+    <AssemblyOriginatorKeyFile>Public Key.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>true</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FluidTrade.Core</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>true</SignAssembly>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.WorkflowServices">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessRight.cs" />
+    <Compile Include="AsyncMethodResponse.cs" />
+    <Compile Include="CacheDictionary.cs" />
+    <Compile Include="ClaimTypes.cs" />
+    <Compile Include="ClientChannel.cs" />
+    <Compile Include="ClientChannelResult.cs" />
+    <Compile Include="CommonConversion.cs" />
+    <Compile Include="ChannelStatus.cs" />
+    <Compile Include="ClaimsAuthorizationPolicy.cs" />
+    <Compile Include="ClaimsPrincipal.cs" />
+    <Compile Include="ClaimsPrincipalPermission.cs" />
+    <Compile Include="ClaimsPrincipalPermissionAttribute.cs" />
+    <Compile Include="ComparerItem.cs" />
+    <Compile Include="ComplexComparer.cs" />
+    <Compile Include="ComplexFilter.cs" />
+    <Compile Include="Condition.cs" />
+    <Compile Include="CompilationException.cs" />
+    <Compile Include="CertificateChannelInitializer.cs" />
+    <Compile Include="ProgressEventHandler.cs" />
+    <Compile Include="Faults\ArgumentFault.cs" />
+    <Compile Include="CommissionType.cs" />
+    <Compile Include="CommissionUnit.cs" />
+    <Compile Include="CustomServiceSecurityTokenManager.cs" />
+    <Compile Include="Faults\DeadlockFault.cs" />
+    <Compile Include="DescriptionAttribute.cs" />
+    <Compile Include="Errorcode.cs" />
+    <Compile Include="Faults\FaultBase.cs" />
+    <Compile Include="Faults\FieldRequiredFault.cs" />
+    <Compile Include="ProgressEventArgs.cs" />
+    <Compile Include="ServerErrorHandlerBehavior.cs" />
+    <Compile Include="ExtensionUtility.cs" />
+    <Compile Include="GroupType.cs" />
+    <Compile Include="IDataModelTransaction.cs" />
+    <Compile Include="IMailMerge.cs" />
+    <Compile Include="IRow.cs" />
+    <Compile Include="IRowLockingWrapper.cs" />
+    <Compile Include="ITable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Matching\ColumnFuzzyMatcher.cs" />
+    <Compile Include="Matching\FuzzyMatcherEnums.cs" />
+    <Compile Include="Matching\FuzzyMatchStorage.cs" />
+    <Compile Include="Matching\IExtendedStorageRow.cs" />
+    <Compile Include="Matching\IFuzzyMatchStorage.cs" />
+    <Compile Include="Matching\MatcherCreateArgs.cs" />
+    <Compile Include="Matching\Matchers\DateMatcher.cs" />
+    <Compile Include="Matching\Matchers\EightteenOrLessDigitOrLessMatcher.cs" />
+    <Compile Include="Matching\Matchers\NineDigitOrLessMatcher.cs" />
+    <Compile Include="Matching\Matchers\SixteenOrLessDigitOrLessMatcher.cs" />
+    <Compile Include="Matching\Matchers\StringPartDescriptor.cs" />
+    <Compile Include="Matching\Matchers\StringTo10Matcher.cs" />
+    <Compile Include="Matching\MatchInfo.cs" />
+    <Compile Include="Matching\MatchStorageCollections.cs" />
+    <Compile Include="ObjectAction.cs" />
+    <Compile Include="ObjectHandler.cs" />
+    <Compile Include="Faults\RecordExistsFault.cs">
+    </Compile>
+    <Compile Include="ScriptLoaderException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServerErrorHandler.cs" />
+    <Compile Include="SettlementUnit.cs" />
+    <Compile Include="Faults\SecurityFault.cs" />
+    <Compile Include="CryptoHelper.cs" />
+    <Compile Include="TimeUnit.cs" />
+    <Compile Include="UnhandledExceptionHelper.cs" />
+    <Compile Include="UserNameChannelInitializer.cs" />
+    <Compile Include="UserNameValidator.cs" />
+    <Compile Include="Utilities\ApplicationHelper.cs" />
+    <Compile Include="Utilities\DataRowChangedHelper.cs" />
+    <Compile Include="Utilities\SqlErrorHelper.cs" />
+    <Compile Include="Utilities\StringUtilities.cs" />
+    <Compile Include="ThreadPoolHelper.cs" />
+    <Compile Include="VoidDelegate.cs" />
+    <Compile Include="FileResolver.cs" />
+    <Compile Include="DataTableCoordinate.cs" />
+    <Compile Include="ExceptionEventHandler.cs" />
+    <Compile Include="ExceptionEventArgs.cs" />
+    <Compile Include="IContent.cs" />
+    <Compile Include="Faults\IndexNotFoundFault.cs" />
+    <Compile Include="Faults\FormatFault.cs" />
+    <Compile Include="DataIndex.cs" />
+    <Compile Include="DataIndexCollection.cs" />
+    <Compile Include="ClusteredIndex.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="NonClusteredIndex.cs" />
+    <Compile Include="ScriptLoader.cs" />
+    <Compile Include="SortOrder.cs" />
+    <Compile Include="Faults\SynchronizationLockFault.cs" />
+    <Compile Include="Faults\RecordNotFoundFault.cs" />
+    <Compile Include="Issuer.cs" />
+    <Compile Include="RecordState.cs" />
+    <Compile Include="Resource.cs" />
+    <Compile Include="ServiceInfo.cs" />
+    <Compile Include="ToolInfo.cs" />
+    <Compile Include="ToolSection.cs" />
+    <Compile Include="ToolSectionHandler.cs" />
+    <Compile Include="WindowBasic.xaml.cs">
+      <DependentUpon>WindowBasic.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IssuedToConverter.cs" />
+    <Compile Include="IssuerConverter.cs" />
+    <Compile Include="PromptedClientCredentialsElement.cs" />
+    <Compile Include="CustomSecurityTokenManager.cs" />
+    <Compile Include="BasicChannelInitializer.cs" />
+    <Compile Include="PromptedClientCredentials.cs" />
+    <Compile Include="DatasetResolver.cs" />
+    <Compile Include="DataSetRoles.Designer.cs">
+      <DependentUpon>DataSetRoles.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="HolidayType.cs" />
+    <Compile Include="IClaimsPrincipal.cs" />
+    <Compile Include="LotHandling.cs" />
+    <Compile Include="Faults\OptimisticConcurrencyFault.cs" />
+    <Compile Include="EmptyIndexException.cs" />
+    <Compile Include="CommonElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gap.cs" />
+    <Compile Include="GapProcessor.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SchemaCache.cs" />
+    <Compile Include="Side.cs" />
+    <Compile Include="PartyType.cs" />
+    <Compile Include="PositionType.cs" />
+    <Compile Include="OrderType.cs" />
+    <Compile Include="Percent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimeInForce.cs" />
+    <Compile Include="TypeSpecification.cs" />
+    <Compile Include="UserAbortException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VolumeCategory.cs" />
+    <Compile Include="WaitQueue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebServiceRoleProvider.cs" />
+    <Compile Include="Weekend.cs" />
+    <Compile Include="WindowCertificate.xaml.cs">
+      <DependentUpon>WindowCertificate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowUserName.xaml.cs">
+      <DependentUpon>WindowUserName.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DataSetRoles.xsc">
+      <DependentUpon>DataSetRoles.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetRoles.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetRoles.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetRoles.xss">
+      <DependentUpon>DataSetRoles.xsd</DependentUpon>
+    </None>
+    <None Include="Key Pair.snk" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Public Key.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="WindowBasic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WindowCertificate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WindowUserName.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Properties\Images\Warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Properties\Images\Login Banner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\login-keys.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\login-head.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

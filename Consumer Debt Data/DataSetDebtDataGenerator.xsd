@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetDebtDataGenerator" targetNamespace="http://tempuri.org/DebtDataGenerator.xsd" xmlns:mstns="http://tempuri.org/DebtDataGenerator.xsd" xmlns="http://tempuri.org/DebtDataGenerator.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetDebtDataGenerator" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSetDebtDataGenerator" msprop:Generator_DataSetName="DataSetDebtDataGenerator" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RealConsumer" msprop:Generator_UserTableName="RealConsumer" msprop:Generator_RowDeletedName="RealConsumerRowDeleted" msprop:Generator_RowChangedName="RealConsumerRowChanged" msprop:Generator_RowClassName="RealConsumerRow" msprop:Generator_RowChangingName="RealConsumerRowChanging" msprop:Generator_RowEvArgName="RealConsumerRowChangeEvent" msprop:Generator_RowEvHandlerName="RealConsumerRowChangeEventHandler" msprop:Generator_TableClassName="RealConsumerDataTable" msprop:Generator_TableVarName="tableRealConsumer" msprop:Generator_RowDeletingName="RealConsumerRowDeleting" msprop:Generator_TablePropName="RealConsumer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Address1" msprop:Generator_UserColumnName="Address1" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnAddress1" msprop:Generator_ColumnPropNameInTable="Address1Column" msprop:Generator_ColumnPropNameInRow="Address1" type="xs:string" minOccurs="0" />
+              <xs:element name="Address2" msprop:Generator_UserColumnName="Address2" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnAddress2" msprop:Generator_ColumnPropNameInTable="Address2Column" msprop:Generator_ColumnPropNameInRow="Address2" type="xs:string" minOccurs="0" />
+              <xs:element name="BankAccountNumber" msprop:Generator_UserColumnName="BankAccountNumber" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="BankAccountNumber" msprop:Generator_ColumnPropNameInTable="BankAccountNumberColumn" msprop:Generator_ColumnVarNameInTable="columnBankAccountNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="BankRoutingNumber" msprop:Generator_UserColumnName="BankRoutingNumber" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="BankRoutingNumber" msprop:Generator_ColumnPropNameInTable="BankRoutingNumberColumn" msprop:Generator_ColumnVarNameInTable="columnBankRoutingNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="City" msprop:Generator_UserColumnName="City" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnCity" msprop:Generator_ColumnPropNameInTable="CityColumn" msprop:Generator_ColumnPropNameInRow="City" type="xs:string" minOccurs="0" />
+              <xs:element name="DateOfBirth" msprop:Generator_UserColumnName="DateOfBirth" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="DateOfBirth" msprop:Generator_ColumnPropNameInTable="DateOfBirthColumn" msprop:Generator_ColumnVarNameInTable="columnDateOfBirth" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FirstName" msprop:Generator_UserColumnName="FirstName" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_ColumnPropNameInRow="FirstName" type="xs:string" minOccurs="0" />
+              <xs:element name="IsEmployed" msprop:Generator_UserColumnName="IsEmployed" msprop:Generator_ColumnVarNameInTable="columnIsEmployed" msprop:Generator_ColumnPropNameInRow="IsEmployed" msprop:Generator_ColumnPropNameInTable="IsEmployedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="LastName" msprop:Generator_UserColumnName="LastName" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_ColumnPropNameInRow="LastName" type="xs:string" minOccurs="0" />
+              <xs:element name="MiddleName" msprop:Generator_UserColumnName="MiddleName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="MiddleName" msprop:Generator_ColumnPropNameInTable="MiddleNameColumn" msprop:Generator_ColumnVarNameInTable="columnMiddleName" type="xs:string" minOccurs="0" />
+              <xs:element name="MatchCount" msprop:Generator_UserColumnName="MatchCount" msprop:Generator_ColumnVarNameInTable="columnMatchCount" msprop:Generator_ColumnPropNameInRow="MatchCount" msprop:Generator_ColumnPropNameInTable="MatchCountColumn" type="xs:int" default="0" />
+              <xs:element name="Nickname" msprop:Generator_UserColumnName="Nickname" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Nickname" msprop:Generator_ColumnPropNameInTable="NicknameColumn" msprop:Generator_ColumnVarNameInTable="columnNickname" type="xs:string" minOccurs="0" />
+              <xs:element name="PhoneNumber" msprop:Generator_UserColumnName="PhoneNumber" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnPhoneNumber" msprop:Generator_ColumnPropNameInTable="PhoneNumberColumn" msprop:Generator_ColumnPropNameInRow="PhoneNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="PostalCode" msprop:Generator_UserColumnName="PostalCode" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PostalCode" msprop:Generator_ColumnPropNameInTable="PostalCodeColumn" msprop:Generator_ColumnVarNameInTable="columnPostalCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ProvinceCode" msprop:Generator_UserColumnName="ProvinceCode" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnProvinceCode" msprop:Generator_ColumnPropNameInTable="ProvinceCodeColumn" msprop:Generator_ColumnPropNameInRow="ProvinceCode" type="xs:string" minOccurs="0" />
+              <xs:element name="RealConsumerId" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="RealConsumerId" msprop:Generator_ColumnVarNameInTable="columnRealConsumerId" msprop:Generator_ColumnPropNameInRow="RealConsumerId" msprop:Generator_ColumnPropNameInTable="RealConsumerIdColumn" type="xs:int" />
+              <xs:element name="RealCreditCardList" msprop:Generator_UserColumnName="RealCreditCardList" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="RealCreditCardList" msprop:Generator_ColumnPropNameInTable="RealCreditCardListColumn" msprop:Generator_ColumnVarNameInTable="columnRealCreditCardList" type="xs:string" minOccurs="0" />
+              <xs:element name="Salutation" msprop:Generator_UserColumnName="Salutation" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnSalutation" msprop:Generator_ColumnPropNameInTable="SalutationColumn" msprop:Generator_ColumnPropNameInRow="Salutation" type="xs:string" minOccurs="0" />
+              <xs:element name="SocialSecurityNumber" msprop:Generator_UserColumnName="SocialSecurityNumber" msprop:Generator_ColumnVarNameInTable="columnSocialSecurityNumber" msprop:Generator_ColumnPropNameInRow="SocialSecurityNumber" msprop:Generator_ColumnPropNameInTable="SocialSecurityNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Suffix" msprop:Generator_UserColumnName="Suffix" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnSuffix" msprop:Generator_ColumnPropNameInTable="SuffixColumn" msprop:Generator_ColumnPropNameInRow="Suffix" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RealCreditCard" msprop:Generator_UserTableName="RealCreditCard" msprop:Generator_RowDeletedName="RealCreditCardRowDeleted" msprop:Generator_RowChangedName="RealCreditCardRowChanged" msprop:Generator_RowClassName="RealCreditCardRow" msprop:Generator_RowChangingName="RealCreditCardRowChanging" msprop:Generator_RowEvArgName="RealCreditCardRowChangeEvent" msprop:Generator_RowEvHandlerName="RealCreditCardRowChangeEventHandler" msprop:Generator_TableClassName="RealCreditCardDataTable" msprop:Generator_TableVarName="tableRealCreditCard" msprop:Generator_RowDeletingName="RealCreditCardRowDeleting" msprop:Generator_TablePropName="RealCreditCard">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AccountCode" msprop:Generator_UserColumnName="AccountCode" msprop:Generator_ColumnVarNameInTable="columnAccountCode" msprop:Generator_ColumnPropNameInRow="AccountCode" msprop:Generator_ColumnPropNameInTable="AccountCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AccountBalance" msprop:Generator_UserColumnName="AccountBalance" msprop:Generator_ColumnVarNameInTable="columnAccountBalance" msprop:Generator_ColumnPropNameInRow="AccountBalance" msprop:Generator_ColumnPropNameInTable="AccountBalanceColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ExternalId" msprop:Generator_UserColumnName="ExternalId" msprop:Generator_ColumnVarNameInTable="columnExternalId" msprop:Generator_ColumnPropNameInRow="ExternalId" msprop:Generator_ColumnPropNameInTable="ExternalIdColumn" type="xs:string" />
+              <xs:element name="IsMatched" msprop:Generator_UserColumnName="IsMatched" msprop:Generator_ColumnVarNameInTable="columnIsMatched" msprop:Generator_ColumnPropNameInRow="IsMatched" msprop:Generator_ColumnPropNameInTable="IsMatchedColumn" type="xs:boolean" default="false" />
+              <xs:element name="OriginalAccountNumber" msprop:Generator_UserColumnName="OriginalAccountNumber" msprop:Generator_ColumnVarNameInTable="columnOriginalAccountNumber" msprop:Generator_ColumnPropNameInRow="OriginalAccountNumber" msprop:Generator_ColumnPropNameInTable="OriginalAccountNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RealConsumerId" msprop:Generator_UserColumnName="RealConsumerId" msprop:Generator_ColumnVarNameInTable="columnRealConsumerId" msprop:Generator_ColumnPropNameInRow="RealConsumerId" msprop:Generator_ColumnPropNameInTable="RealConsumerIdColumn" type="xs:int" />
+              <xs:element name="RealCreditCardId" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="RealCreditCardId" msprop:Generator_ColumnVarNameInTable="columnRealCreditCardId" msprop:Generator_ColumnPropNameInRow="RealCreditCardId" msprop:Generator_ColumnPropNameInTable="RealCreditCardIdColumn" type="xs:int" />
+              <xs:element name="RealDebtHolder" msprop:Generator_UserColumnName="RealDebtHolder" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnRealDebtHolder" msprop:Generator_ColumnPropNameInTable="RealDebtHolderColumn" msprop:Generator_ColumnPropNameInRow="RealDebtHolder" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="User" msprop:Generator_UserTableName="User" msprop:Generator_RowDeletedName="UserRowDeleted" msprop:Generator_RowChangedName="UserRowChanged" msprop:Generator_RowClassName="UserRow" msprop:Generator_RowChangingName="UserRowChanging" msprop:Generator_RowEvArgName="UserRowChangeEvent" msprop:Generator_RowEvHandlerName="UserRowChangeEventHandler" msprop:Generator_TableClassName="UserDataTable" msprop:Generator_TableVarName="tableUser" msprop:Generator_RowDeletingName="UserRowDeleting" msprop:Generator_TablePropName="User">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Email" msprop:Generator_UserColumnName="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ExternalId" msprop:Generator_UserColumnName="ExternalId" msprop:Generator_ColumnVarNameInTable="columnExternalId" msprop:Generator_ColumnPropNameInRow="ExternalId" msprop:Generator_ColumnPropNameInTable="ExternalIdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Organization" msprop:Generator_UserColumnName="Organization" msprop:Generator_ColumnVarNameInTable="columnOrganization" msprop:Generator_ColumnPropNameInRow="Organization" msprop:Generator_ColumnPropNameInTable="OrganizationColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UserId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="UserId" msprop:Generator_ColumnVarNameInTable="columnUserId" msprop:Generator_ColumnPropNameInRow="UserId" msprop:Generator_ColumnPropNameInTable="UserIdColumn" type="xs:string" />
+              <xs:element name="Password" msprop:Generator_UserColumnName="Password" msprop:Generator_ColumnVarNameInTable="columnPassword" msprop:Generator_ColumnPropNameInRow="Password" msprop:Generator_ColumnPropNameInTable="PasswordColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Organization" msprop:Generator_UserTableName="Organization" msprop:Generator_RowDeletedName="OrganizationRowDeleted" msprop:Generator_RowChangedName="OrganizationRowChanged" msprop:Generator_RowClassName="OrganizationRow" msprop:Generator_RowChangingName="OrganizationRowChanging" msprop:Generator_RowEvArgName="OrganizationRowChangeEvent" msprop:Generator_RowEvHandlerName="OrganizationRowChangeEventHandler" msprop:Generator_TableClassName="OrganizationDataTable" msprop:Generator_TableVarName="tableOrganization" msprop:Generator_RowDeletingName="OrganizationRowDeleting" msprop:Generator_TablePropName="Organization">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DebtClassList" msprop:Generator_UserColumnName="DebtClassList" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnDebtClassList" msprop:Generator_ColumnPropNameInTable="DebtClassListColumn" msprop:Generator_ColumnPropNameInRow="DebtClassList" type="xs:string" minOccurs="0" />
+              <xs:element name="EndingOrderId" msprop:Generator_UserColumnName="EndingOrderId" msprop:Generator_ColumnVarNameInTable="columnEndingOrderId" msprop:Generator_ColumnPropNameInRow="EndingOrderId" msprop:Generator_ColumnPropNameInTable="EndingOrderIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="EntityId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="EntityId" msprop:Generator_ColumnVarNameInTable="columnEntityId" msprop:Generator_ColumnPropNameInRow="EntityId" msprop:Generator_ColumnPropNameInTable="EntityIdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" />
+              <xs:element name="RepresentativeUser" msprop:Generator_UserColumnName="RepresentativeUser" msprop:Generator_ColumnPropNameInRow="RepresentativeUser" msprop:Generator_ColumnVarNameInTable="columnRepresentativeUser" msprop:Generator_ColumnPropNameInTable="RepresentativeUserColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="StartingOrderId" msprop:Generator_UserColumnName="StartingOrderId" msprop:Generator_ColumnVarNameInTable="columnStartingOrderId" msprop:Generator_ColumnPropNameInRow="StartingOrderId" msprop:Generator_ColumnPropNameInTable="StartingOrderIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TenantId" msprop:Generator_UserColumnName="TenantId" msprop:Generator_ColumnPropNameInRow="TenantId" msprop:Generator_ColumnVarNameInTable="columnTenantId" msprop:Generator_ColumnPropNameInTable="TenantIdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Type" msprop:Generator_UserColumnName="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WorkingOrderCount" msprop:Generator_UserColumnName="WorkingOrderCount" msprop:nullValue="_throw" msprop:Generator_ColumnVarNameInTable="columnWorkingOrderCount" msprop:Generator_ColumnPropNameInTable="WorkingOrderCountColumn" msprop:Generator_ColumnPropNameInRow="WorkingOrderCount" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RealCreditCardIssuer" msprop:Generator_UserTableName="RealCreditCardIssuer" msprop:Generator_RowDeletedName="RealCreditCardIssuerRowDeleted" msprop:Generator_RowChangedName="RealCreditCardIssuerRowChanged" msprop:Generator_RowClassName="RealCreditCardIssuerRow" msprop:Generator_RowChangingName="RealCreditCardIssuerRowChanging" msprop:Generator_RowEvArgName="RealCreditCardIssuerRowChangeEvent" msprop:Generator_RowEvHandlerName="RealCreditCardIssuerRowChangeEventHandler" msprop:Generator_TableClassName="RealCreditCardIssuerDataTable" msprop:Generator_TableVarName="tableRealCreditCardIssuer" msprop:Generator_RowDeletingName="RealCreditCardIssuerRowDeleting" msprop:Generator_TablePropName="RealCreditCardIssuer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ExternalId" msprop:Generator_UserColumnName="ExternalId" msprop:Generator_ColumnVarNameInTable="columnExternalId" msprop:Generator_ColumnPropNameInRow="ExternalId" msprop:Generator_ColumnPropNameInTable="ExternalIdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RealCreditCardIssuerId" msdata:AutoIncrement="true" msdata:Caption="CreditCardIssuerId" msprop:Generator_UserColumnName="RealCreditCardIssuerId" msprop:Generator_ColumnVarNameInTable="columnRealCreditCardIssuerId" msprop:Generator_ColumnPropNameInRow="RealCreditCardIssuerId" msprop:Generator_ColumnPropNameInTable="RealCreditCardIssuerIdColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TrustSideConsumer" msprop:Generator_UserTableName="TrustSideConsumer" msprop:Generator_RowDeletedName="TrustSideConsumerRowDeleted" msprop:Generator_RowChangedName="TrustSideConsumerRowChanged" msprop:Generator_RowClassName="TrustSideConsumerRow" msprop:Generator_RowChangingName="TrustSideConsumerRowChanging" msprop:Generator_RowEvArgName="TrustSideConsumerRowChangeEvent" msprop:Generator_RowEvHandlerName="TrustSideConsumerRowChangeEventHandler" msprop:Generator_TableClassName="TrustSideConsumerDataTable" msprop:Generator_TableVarName="tableTrustSideConsumer" msprop:Generator_RowDeletingName="TrustSideConsumerRowDeleting" msprop:Generator_TablePropName="TrustSideConsumer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Address1" msprop:Generator_UserColumnName="Address1" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnAddress1" msprop:Generator_ColumnPropNameInTable="Address1Column" msprop:Generator_ColumnPropNameInRow="Address1" type="xs:string" minOccurs="0" />
+              <xs:element name="Address2" msprop:Generator_UserColumnName="Address2" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnAddress2" msprop:Generator_ColumnPropNameInTable="Address2Column" msprop:Generator_ColumnPropNameInRow="Address2" type="xs:string" minOccurs="0" />
+              <xs:element name="BankAccountNumber" msprop:Generator_UserColumnName="BankAccountNumber" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="BankAccountNumber" msprop:Generator_ColumnPropNameInTable="BankAccountNumberColumn" msprop:Generator_ColumnVarNameInTable="columnBankAccountNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="BankRoutingNumber" msprop:Generator_UserColumnName="BankRoutingNumber" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="BankRoutingNumber" msprop:Generator_ColumnPropNameInTable="BankRoutingNumberColumn" msprop:Generator_ColumnVarNameInTable="columnBankRoutingNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="City" msprop:Generator_UserColumnName="City" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnCity" msprop:Generator_ColumnPropNameInTable="CityColumn" msprop:Generator_ColumnPropNameInRow="City" type="xs:string" minOccurs="0" />
+              <xs:element name="DateOfBirth" msprop:Generator_UserColumnName="DateOfBirth" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="DateOfBirth" msprop:Generator_ColumnPropNameInTable="DateOfBirthColumn" msprop:Generator_ColumnVarNameInTable="columnDateOfBirth" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ExternalId" msprop:Generator_UserColumnName="ExternalId" msprop:Generator_ColumnVarNameInTable="columnExternalId" msprop:Generator_ColumnPropNameInRow="ExternalId" msprop:Generator_ColumnPropNameInTable="ExternalIdColumn" type="xs:string" />
+              <xs:element name="FirstName" msprop:Generator_UserColumnName="FirstName" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_ColumnPropNameInRow="FirstName" type="xs:string" minOccurs="0" />
+              <xs:element name="FuzzedFields" msprop:Generator_UserColumnName="FuzzedFields" msprop:Generator_ColumnVarNameInTable="columnFuzzedFields" msprop:Generator_ColumnPropNameInRow="FuzzedFields" msprop:Generator_ColumnPropNameInTable="FuzzedFieldsColumn" type="xs:int" default="0" />
+              <xs:element name="FuzzMethod" msprop:Generator_UserColumnName="FuzzMethod" msprop:Generator_ColumnPropNameInRow="FuzzMethod" msprop:Generator_ColumnVarNameInTable="columnFuzzMethod" msprop:Generator_ColumnPropNameInTable="FuzzMethodColumn" type="xs:int" default="0" />
+              <xs:element name="IsEmployed" msprop:Generator_UserColumnName="IsEmployed" msprop:Generator_ColumnVarNameInTable="columnIsEmployed" msprop:Generator_ColumnPropNameInRow="IsEmployed" msprop:Generator_ColumnPropNameInTable="IsEmployedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="LastName" msprop:Generator_UserColumnName="LastName" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_ColumnPropNameInRow="LastName" type="xs:string" minOccurs="0" />
+              <xs:element name="MiddleName" msprop:Generator_UserColumnName="MiddleName" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnMiddleName" msprop:Generator_ColumnPropNameInTable="MiddleNameColumn" msprop:Generator_ColumnPropNameInRow="MiddleName" type="xs:string" minOccurs="0" />
+              <xs:element name="PhoneNumber" msprop:Generator_UserColumnName="PhoneNumber" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnPhoneNumber" msprop:Generator_ColumnPropNameInTable="PhoneNumberColumn" msprop:Generator_ColumnPropNameInRow="PhoneNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="PostalCode" msprop:Generator_UserColumnName="PostalCode" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PostalCode" msprop:Generator_ColumnPropNameInTable="PostalCodeColumn" msprop:Generator_ColumnVarNameInTable="columnPostalCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ProvinceCode" msprop:Generator_UserColumnName="ProvinceCode" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnProvinceCode" msprop:Generator_ColumnPropNameInTable="ProvinceCodeColumn" msprop:Generator_ColumnPropNameInRow="ProvinceCode" type="xs:string" minOccurs="0" />
+              <xs:element name="RealConsumerId" msprop:Generator_UserColumnName="RealConsumerId" msprop:Generator_ColumnVarNameInTable="columnRealConsumerId" msprop:Generator_ColumnPropNameInRow="RealConsumerId" msprop:Generator_ColumnPropNameInTable="RealConsumerIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Salutation" msprop:Generator_UserColumnName="Salutation" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnSalutation" msprop:Generator_ColumnPropNameInTable="SalutationColumn" msprop:Generator_ColumnPropNameInRow="Salutation" type="xs:string" minOccurs="0" />
+              <xs:element name="SocialSecurityNumber" msprop:Generator_UserColumnName="SocialSecurityNumber" msprop:Generator_ColumnVarNameInTable="columnSocialSecurityNumber" msprop:Generator_ColumnPropNameInRow="SocialSecurityNumber" msprop:Generator_ColumnPropNameInTable="SocialSecurityNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Suffix" msprop:Generator_UserColumnName="Suffix" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnSuffix" msprop:Generator_ColumnPropNameInTable="SuffixColumn" msprop:Generator_ColumnPropNameInRow="Suffix" type="xs:string" minOccurs="0" />
+              <xs:element name="TrustSideConsumerId" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="TrustSideConsumerId" msprop:Generator_ColumnVarNameInTable="columnTrustSideConsumerId" msprop:Generator_ColumnPropNameInRow="TrustSideConsumerId" msprop:Generator_ColumnPropNameInTable="TrustSideConsumerIdColumn" type="xs:int" />
+              <xs:element name="TrustSideCreditCardList" msprop:Generator_UserColumnName="TrustSideCreditCardList" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnTrustSideCreditCardList" msprop:Generator_ColumnPropNameInTable="TrustSideCreditCardListColumn" msprop:Generator_ColumnPropNameInRow="TrustSideCreditCardList" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TrustCreditCard" msprop:Generator_UserTableName="TrustCreditCard" msprop:Generator_RowDeletedName="TrustCreditCardRowDeleted" msprop:Generator_RowChangedName="TrustCreditCardRowChanged" msprop:Generator_RowClassName="TrustCreditCardRow" msprop:Generator_RowChangingName="TrustCreditCardRowChanging" msprop:Generator_RowEvArgName="TrustCreditCardRowChangeEvent" msprop:Generator_RowEvHandlerName="TrustCreditCardRowChangeEventHandler" msprop:Generator_TableClassName="TrustCreditCardDataTable" msprop:Generator_TableVarName="tableTrustCreditCard" msprop:Generator_RowDeletingName="TrustCreditCardRowDeleting" msprop:Generator_TablePropName="TrustCreditCard">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AccountCode" msprop:Generator_UserColumnName="AccountCode" msprop:Generator_ColumnPropNameInRow="AccountCode" msprop:Generator_ColumnVarNameInTable="columnAccountCode" msprop:Generator_ColumnPropNameInTable="AccountCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AccountBalance" msprop:Generator_UserColumnName="AccountBalance" msprop:Generator_ColumnPropNameInRow="AccountBalance" msprop:Generator_ColumnVarNameInTable="columnAccountBalance" msprop:Generator_ColumnPropNameInTable="AccountBalanceColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ExternalId" msprop:Generator_UserColumnName="ExternalId" msprop:Generator_ColumnPropNameInRow="ExternalId" msprop:Generator_ColumnVarNameInTable="columnExternalId" msprop:Generator_ColumnPropNameInTable="ExternalIdColumn" type="xs:string" />
+              <xs:element name="FuzzedFields" msprop:Generator_UserColumnName="FuzzedFields" msprop:Generator_ColumnPropNameInRow="FuzzedFields" msprop:Generator_ColumnVarNameInTable="columnFuzzedFields" msprop:Generator_ColumnPropNameInTable="FuzzedFieldsColumn" type="xs:int" default="0" />
+              <xs:element name="FuzzMethod" msprop:Generator_UserColumnName="FuzzMethod" msprop:Generator_ColumnPropNameInRow="FuzzMethod" msprop:Generator_ColumnVarNameInTable="columnFuzzMethod" msprop:Generator_ColumnPropNameInTable="FuzzMethodColumn" type="xs:int" default="0" />
+              <xs:element name="OriginalAccountNumber" msprop:Generator_UserColumnName="OriginalAccountNumber" msprop:Generator_ColumnPropNameInRow="OriginalAccountNumber" msprop:Generator_ColumnVarNameInTable="columnOriginalAccountNumber" msprop:Generator_ColumnPropNameInTable="OriginalAccountNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RealCreditCardId" msprop:Generator_UserColumnName="RealCreditCardId" msprop:Generator_ColumnPropNameInRow="RealCreditCardId" msprop:Generator_ColumnVarNameInTable="columnRealCreditCardId" msprop:Generator_ColumnPropNameInTable="RealCreditCardIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RealDebtHolder" msprop:Generator_UserColumnName="RealDebtHolder" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="RealDebtHolder" msprop:Generator_ColumnPropNameInTable="RealDebtHolderColumn" msprop:Generator_ColumnVarNameInTable="columnRealDebtHolder" type="xs:string" minOccurs="0" />
+              <xs:element name="TrustSideConsumerId" msdata:Caption="RealConsumerId" msprop:Generator_UserColumnName="TrustSideConsumerId" msprop:Generator_ColumnPropNameInRow="TrustSideConsumerId" msprop:Generator_ColumnVarNameInTable="columnTrustSideConsumerId" msprop:Generator_ColumnPropNameInTable="TrustSideConsumerIdColumn" type="xs:int" />
+              <xs:element name="TrustCreditCardId" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="TrustCreditCardId" msprop:Generator_ColumnPropNameInRow="TrustCreditCardId" msprop:Generator_ColumnVarNameInTable="columnTrustCreditCardId" msprop:Generator_ColumnPropNameInTable="TrustCreditCardIdColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ConsumerDebt" msprop:Generator_UserTableName="ConsumerDebt" msprop:Generator_RowDeletedName="ConsumerDebtRowDeleted" msprop:Generator_RowChangedName="ConsumerDebtRowChanged" msprop:Generator_RowClassName="ConsumerDebtRow" msprop:Generator_RowChangingName="ConsumerDebtRowChanging" msprop:Generator_RowEvArgName="ConsumerDebtRowChangeEvent" msprop:Generator_RowEvHandlerName="ConsumerDebtRowChangeEventHandler" msprop:Generator_TableClassName="ConsumerDebtDataTable" msprop:Generator_TableVarName="tableConsumerDebt" msprop:Generator_RowDeletingName="ConsumerDebtRowDeleting" msprop:Generator_TablePropName="ConsumerDebt">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ConsumerDebtId" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="ConsumerDebtId" msprop:Generator_ColumnPropNameInRow="ConsumerDebtId" msprop:Generator_ColumnVarNameInTable="columnConsumerDebtId" msprop:Generator_ColumnPropNameInTable="ConsumerDebtIdColumn" type="xs:int" />
+              <xs:element name="AccountCode" msprop:Generator_UserColumnName="AccountCode" msprop:Generator_ColumnPropNameInRow="AccountCode" msprop:Generator_ColumnVarNameInTable="columnAccountCode" msprop:Generator_ColumnPropNameInTable="AccountCodeColumn" type="xs:long" />
+              <xs:element name="DateOfDelinquency" msprop:Generator_UserColumnName="DateOfDelinquency" msprop:Generator_ColumnPropNameInRow="DateOfDelinquency" msprop:Generator_ColumnVarNameInTable="columnDateOfDelinquency" msprop:Generator_ColumnPropNameInTable="DateOfDelinquencyColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="VendorCode" msprop:Generator_UserColumnName="VendorCode" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="VendorCode" msprop:Generator_ColumnPropNameInTable="VendorCodeColumn" msprop:Generator_ColumnVarNameInTable="columnVendorCode" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DebtSideConsumer" msprop:Generator_UserTableName="DebtSideConsumer" msprop:Generator_RowDeletedName="DebtSideConsumerRowDeleted" msprop:Generator_RowChangedName="DebtSideConsumerRowChanged" msprop:Generator_RowClassName="DebtSideConsumerRow" msprop:Generator_RowChangingName="DebtSideConsumerRowChanging" msprop:Generator_RowEvArgName="DebtSideConsumerRowChangeEvent" msprop:Generator_RowEvHandlerName="DebtSideConsumerRowChangeEventHandler" msprop:Generator_TableClassName="DebtSideConsumerDataTable" msprop:Generator_TableVarName="tableDebtSideConsumer" msprop:Generator_RowDeletingName="DebtSideConsumerRowDeleting" msprop:Generator_TablePropName="DebtSideConsumer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Address1" msprop:Generator_UserColumnName="Address1" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Address1" msprop:Generator_ColumnPropNameInTable="Address1Column" msprop:Generator_ColumnVarNameInTable="columnAddress1" type="xs:string" minOccurs="0" />
+              <xs:element name="Address2" msprop:Generator_UserColumnName="Address2" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnAddress2" msprop:Generator_ColumnPropNameInTable="Address2Column" msprop:Generator_ColumnPropNameInRow="Address2" type="xs:string" minOccurs="0" />
+              <xs:element name="City" msprop:Generator_UserColumnName="City" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="City" msprop:Generator_ColumnPropNameInTable="CityColumn" msprop:Generator_ColumnVarNameInTable="columnCity" type="xs:string" minOccurs="0" />
+              <xs:element name="DebtSideConsumerId" msdata:AutoIncrement="true" msdata:Caption="TrustSideConsumerId" msprop:Generator_UserColumnName="DebtSideConsumerId" msprop:Generator_ColumnPropNameInRow="DebtSideConsumerId" msprop:Generator_ColumnVarNameInTable="columnDebtSideConsumerId" msprop:Generator_ColumnPropNameInTable="DebtSideConsumerIdColumn" type="xs:int" />
+              <xs:element name="DateOfBirth" msprop:Generator_UserColumnName="DateOfBirth" msprop:Generator_ColumnPropNameInRow="DateOfBirth" msprop:Generator_ColumnVarNameInTable="columnDateOfBirth" msprop:Generator_ColumnPropNameInTable="DateOfBirthColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ExternalId" msprop:Generator_UserColumnName="ExternalId" msprop:Generator_ColumnPropNameInRow="ExternalId" msprop:Generator_ColumnVarNameInTable="columnExternalId" msprop:Generator_ColumnPropNameInTable="ExternalIdColumn" type="xs:string" />
+              <xs:element name="FirstName" msprop:Generator_UserColumnName="FirstName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_ColumnVarNameInTable="columnFirstName" type="xs:string" minOccurs="0" />
+              <xs:element name="FuzzedFields" msprop:Generator_UserColumnName="FuzzedFields" msprop:Generator_ColumnPropNameInRow="FuzzedFields" msprop:Generator_ColumnVarNameInTable="columnFuzzedFields" msprop:Generator_ColumnPropNameInTable="FuzzedFieldsColumn" type="xs:int" default="0" />
+              <xs:element name="FuzzMethod" msprop:Generator_UserColumnName="FuzzMethod" msprop:Generator_ColumnPropNameInRow="FuzzMethod" msprop:Generator_ColumnVarNameInTable="columnFuzzMethod" msprop:Generator_ColumnPropNameInTable="FuzzMethodColumn" type="xs:int" default="0" />
+              <xs:element name="IsEmployed" msprop:Generator_UserColumnName="IsEmployed" msprop:Generator_ColumnPropNameInRow="IsEmployed" msprop:Generator_ColumnVarNameInTable="columnIsEmployed" msprop:Generator_ColumnPropNameInTable="IsEmployedColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="LastName" msprop:Generator_UserColumnName="LastName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_ColumnVarNameInTable="columnLastName" type="xs:string" minOccurs="0" />
+              <xs:element name="MiddleName" msprop:Generator_UserColumnName="MiddleName" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnMiddleName" msprop:Generator_ColumnPropNameInTable="MiddleNameColumn" msprop:Generator_ColumnPropNameInRow="MiddleName" type="xs:string" minOccurs="0" />
+              <xs:element name="PhoneNumber" msprop:Generator_UserColumnName="PhoneNumber" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PhoneNumber" msprop:Generator_ColumnPropNameInTable="PhoneNumberColumn" msprop:Generator_ColumnVarNameInTable="columnPhoneNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="PostalCode" msprop:Generator_UserColumnName="PostalCode" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PostalCode" msprop:Generator_ColumnPropNameInTable="PostalCodeColumn" msprop:Generator_ColumnVarNameInTable="columnPostalCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ProvinceCode" msprop:Generator_UserColumnName="ProvinceCode" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="ProvinceCode" msprop:Generator_ColumnPropNameInTable="ProvinceCodeColumn" msprop:Generator_ColumnVarNameInTable="columnProvinceCode" type="xs:string" minOccurs="0" />
+              <xs:element name="RealConsumerId" msprop:Generator_UserColumnName="RealConsumerId" msprop:Generator_ColumnPropNameInRow="RealConsumerId" msprop:Generator_ColumnVarNameInTable="columnRealConsumerId" msprop:Generator_ColumnPropNameInTable="RealConsumerIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Salutation" msprop:Generator_UserColumnName="Salutation" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnSalutation" msprop:Generator_ColumnPropNameInTable="SalutationColumn" msprop:Generator_ColumnPropNameInRow="Salutation" type="xs:string" minOccurs="0" />
+              <xs:element name="SocialSecurityNumber" msprop:Generator_UserColumnName="SocialSecurityNumber" msprop:Generator_ColumnPropNameInRow="SocialSecurityNumber" msprop:Generator_ColumnVarNameInTable="columnSocialSecurityNumber" msprop:Generator_ColumnPropNameInTable="SocialSecurityNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Suffix" msprop:Generator_UserColumnName="Suffix" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnSuffix" msprop:Generator_ColumnPropNameInTable="SuffixColumn" msprop:Generator_ColumnPropNameInRow="Suffix" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DebtCreditCard" msprop:Generator_UserTableName="DebtCreditCard" msprop:Generator_RowDeletedName="DebtCreditCardRowDeleted" msprop:Generator_RowChangedName="DebtCreditCardRowChanged" msprop:Generator_RowClassName="DebtCreditCardRow" msprop:Generator_RowChangingName="DebtCreditCardRowChanging" msprop:Generator_RowEvArgName="DebtCreditCardRowChangeEvent" msprop:Generator_RowEvHandlerName="DebtCreditCardRowChangeEventHandler" msprop:Generator_TableClassName="DebtCreditCardDataTable" msprop:Generator_TableVarName="tableDebtCreditCard" msprop:Generator_RowDeletingName="DebtCreditCardRowDeleting" msprop:Generator_TablePropName="DebtCreditCard">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AccountCode" msprop:Generator_UserColumnName="AccountCode" msprop:Generator_ColumnPropNameInRow="AccountCode" msprop:Generator_ColumnVarNameInTable="columnAccountCode" msprop:Generator_ColumnPropNameInTable="AccountCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AccountBalance" msprop:Generator_UserColumnName="AccountBalance" msprop:Generator_ColumnPropNameInRow="AccountBalance" msprop:Generator_ColumnVarNameInTable="columnAccountBalance" msprop:Generator_ColumnPropNameInTable="AccountBalanceColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DebtSideConsumerId" msprop:Generator_UserColumnName="DebtSideConsumerId" msprop:Generator_ColumnPropNameInRow="DebtSideConsumerId" msprop:Generator_ColumnVarNameInTable="columnDebtSideConsumerId" msprop:Generator_ColumnPropNameInTable="DebtSideConsumerIdColumn" type="xs:int" />
+              <xs:element name="DebtCreditCardId" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="DebtCreditCardId" msprop:Generator_ColumnPropNameInRow="DebtCreditCardId" msprop:Generator_ColumnVarNameInTable="columnDebtCreditCardId" msprop:Generator_ColumnPropNameInTable="DebtCreditCardIdColumn" type="xs:int" />
+              <xs:element name="ExternalId" msprop:Generator_UserColumnName="ExternalId" msprop:Generator_ColumnPropNameInRow="ExternalId" msprop:Generator_ColumnVarNameInTable="columnExternalId" msprop:Generator_ColumnPropNameInTable="ExternalIdColumn" type="xs:string" />
+              <xs:element name="FuzzedFields" msprop:Generator_UserColumnName="FuzzedFields" msprop:Generator_ColumnPropNameInRow="FuzzedFields" msprop:Generator_ColumnVarNameInTable="columnFuzzedFields" msprop:Generator_ColumnPropNameInTable="FuzzedFieldsColumn" type="xs:int" default="0" />
+              <xs:element name="FuzzMethod" msprop:Generator_UserColumnName="FuzzMethod" msprop:Generator_ColumnPropNameInRow="FuzzMethod" msprop:Generator_ColumnVarNameInTable="columnFuzzMethod" msprop:Generator_ColumnPropNameInTable="FuzzMethodColumn" type="xs:int" default="0" minOccurs="0" />
+              <xs:element name="OriginalAccountNumber" msprop:Generator_UserColumnName="OriginalAccountNumber" msprop:Generator_ColumnPropNameInRow="OriginalAccountNumber" msprop:Generator_ColumnVarNameInTable="columnOriginalAccountNumber" msprop:Generator_ColumnPropNameInTable="OriginalAccountNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RealCreditCardId" msprop:Generator_UserColumnName="RealCreditCardId" msprop:Generator_ColumnPropNameInRow="RealCreditCardId" msprop:Generator_ColumnVarNameInTable="columnRealCreditCardId" msprop:Generator_ColumnPropNameInTable="RealCreditCardIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RealDebtHolder" msprop:Generator_UserColumnName="RealDebtHolder" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="RealDebtHolder" msprop:Generator_ColumnPropNameInTable="RealDebtHolderColumn" msprop:Generator_ColumnVarNameInTable="columnRealDebtHolder" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ConsumerTrust" msprop:Generator_UserTableName="ConsumerTrust" msprop:Generator_RowDeletedName="ConsumerTrustRowDeleted" msprop:Generator_RowChangedName="ConsumerTrustRowChanged" msprop:Generator_RowClassName="ConsumerTrustRow" msprop:Generator_RowChangingName="ConsumerTrustRowChanging" msprop:Generator_RowEvArgName="ConsumerTrustRowChangeEvent" msprop:Generator_RowEvHandlerName="ConsumerTrustRowChangeEventHandler" msprop:Generator_TableClassName="ConsumerTrustDataTable" msprop:Generator_TableVarName="tableConsumerTrust" msprop:Generator_RowDeletingName="ConsumerTrustRowDeleting" msprop:Generator_TablePropName="ConsumerTrust">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AutoSettlement" msprop:Generator_UserColumnName="AutoSettlement" msprop:Generator_ColumnVarNameInTable="columnAutoSettlement" msprop:Generator_ColumnPropNameInRow="AutoSettlement" msprop:Generator_ColumnPropNameInTable="AutoSettlementColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ConsumerTrustId" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="ConsumerTrustId" msprop:Generator_ColumnVarNameInTable="columnConsumerTrustId" msprop:Generator_ColumnPropNameInRow="ConsumerTrustId" msprop:Generator_ColumnPropNameInTable="ConsumerTrustIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CustomerCode" msprop:Generator_UserColumnName="CustomerCode" msprop:Generator_ColumnVarNameInTable="columnCustomerCode" msprop:Generator_ColumnPropNameInRow="CustomerCode" msprop:Generator_ColumnPropNameInTable="CustomerCodeColumn" type="xs:int" />
+              <xs:element name="ExternalId" msprop:Generator_UserColumnName="ExternalId" msprop:Generator_ColumnVarNameInTable="columnExternalId" msprop:Generator_ColumnPropNameInRow="ExternalId" msprop:Generator_ColumnPropNameInTable="ExternalIdColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SavingsBalance" msprop:Generator_UserColumnName="SavingsBalance" msprop:Generator_ColumnVarNameInTable="columnSavingsBalance" msprop:Generator_ColumnPropNameInRow="SavingsBalance" msprop:Generator_ColumnPropNameInTable="SavingsBalanceColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SavingsEntityCode" msprop:Generator_UserColumnName="SavingsEntityCode" msprop:Generator_ColumnPropNameInRow="SavingsEntityCode" msprop:Generator_ColumnVarNameInTable="columnSavingsEntityCode" msprop:Generator_ColumnPropNameInTable="SavingsEntityCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VendorCode" msprop:Generator_UserColumnName="VendorCode" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="VendorCode" msprop:Generator_ColumnPropNameInTable="VendorCodeColumn" msprop:Generator_ColumnVarNameInTable="columnVendorCode" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DuplicateConsumerNames" msprop:Generator_UserTableName="DuplicateConsumerNames" msprop:Generator_RowDeletedName="DuplicateConsumerNamesRowDeleted" msprop:Generator_RowChangedName="DuplicateConsumerNamesRowChanged" msprop:Generator_RowClassName="DuplicateConsumerNamesRow" msprop:Generator_RowChangingName="DuplicateConsumerNamesRowChanging" msprop:Generator_RowEvArgName="DuplicateConsumerNamesRowChangeEvent" msprop:Generator_RowEvHandlerName="DuplicateConsumerNamesRowChangeEventHandler" msprop:Generator_TableClassName="DuplicateConsumerNamesDataTable" msprop:Generator_TableVarName="tableDuplicateConsumerNames" msprop:Generator_RowDeletingName="DuplicateConsumerNamesRowDeleting" msprop:Generator_TablePropName="DuplicateConsumerNames">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DuplicateConsumerNameId" msprop:Generator_UserColumnName="DuplicateConsumerNameId" msprop:Generator_ColumnVarNameInTable="columnDuplicateConsumerNameId" msprop:Generator_ColumnPropNameInRow="DuplicateConsumerNameId" msprop:Generator_ColumnPropNameInTable="DuplicateConsumerNameIdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RealConsumerId" msprop:Generator_UserColumnName="RealConsumerId" msprop:Generator_ColumnPropNameInRow="RealConsumerId" msprop:Generator_ColumnVarNameInTable="columnRealConsumerId" msprop:Generator_ColumnPropNameInTable="RealConsumerIdColumn" type="xs:int" />
+              <xs:element name="RealConsumerFullName" msprop:Generator_UserColumnName="RealConsumerFullName" msprop:Generator_ColumnPropNameInRow="RealConsumerFullName" msprop:Generator_ColumnVarNameInTable="columnRealConsumerFullName" msprop:Generator_ColumnPropNameInTable="RealConsumerFullNameColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Matches" msprop:Generator_UserTableName="Matches" msprop:Generator_RowDeletedName="MatchesRowDeleted" msprop:Generator_RowChangedName="MatchesRowChanged" msprop:Generator_RowClassName="MatchesRow" msprop:Generator_RowChangingName="MatchesRowChanging" msprop:Generator_RowEvArgName="MatchesRowChangeEvent" msprop:Generator_RowEvHandlerName="MatchesRowChangeEventHandler" msprop:Generator_TableClassName="MatchesDataTable" msprop:Generator_TableVarName="tableMatches" msprop:Generator_RowDeletingName="MatchesRowDeleting" msprop:Generator_TablePropName="Matches">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DebtCreditCardFuzzedFields" msprop:Generator_UserColumnName="DebtCreditCardFuzzedFields" msprop:Generator_ColumnVarNameInTable="columnDebtCreditCardFuzzedFields" msprop:Generator_ColumnPropNameInRow="DebtCreditCardFuzzedFields" msprop:Generator_ColumnPropNameInTable="DebtCreditCardFuzzedFieldsColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DebtCreditCardFuzzMethod" msprop:Generator_UserColumnName="DebtCreditCardFuzzMethod" msprop:Generator_ColumnVarNameInTable="columnDebtCreditCardFuzzMethod" msprop:Generator_ColumnPropNameInRow="DebtCreditCardFuzzMethod" msprop:Generator_ColumnPropNameInTable="DebtCreditCardFuzzMethodColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DebtCreditCardOriginalAccountNumber" msprop:Generator_UserColumnName="DebtCreditCardOriginalAccountNumber" msprop:Generator_ColumnVarNameInTable="columnDebtCreditCardOriginalAccountNumber" msprop:Generator_ColumnPropNameInRow="DebtCreditCardOriginalAccountNumber" msprop:Generator_ColumnPropNameInTable="DebtCreditCardOriginalAccountNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DebtConsumerSsn" msprop:Generator_UserColumnName="DebtConsumerSsn" msprop:Generator_ColumnVarNameInTable="columnDebtConsumerSsn" msprop:Generator_ColumnPropNameInRow="DebtConsumerSsn" msprop:Generator_ColumnPropNameInTable="DebtConsumerSsnColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DebtConsumerFirstName" msprop:Generator_UserColumnName="DebtConsumerFirstName" msprop:Generator_ColumnVarNameInTable="columnDebtConsumerFirstName" msprop:Generator_ColumnPropNameInRow="DebtConsumerFirstName" msprop:Generator_ColumnPropNameInTable="DebtConsumerFirstNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DebtConsumerFuzzedFields" msprop:Generator_UserColumnName="DebtConsumerFuzzedFields" msprop:Generator_ColumnPropNameInRow="DebtConsumerFuzzedFields" msprop:Generator_ColumnVarNameInTable="columnDebtConsumerFuzzedFields" msprop:Generator_ColumnPropNameInTable="DebtConsumerFuzzedFieldsColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DebtConsumerFuzzMethod" msprop:Generator_UserColumnName="DebtConsumerFuzzMethod" msprop:Generator_ColumnPropNameInRow="DebtConsumerFuzzMethod" msprop:Generator_ColumnVarNameInTable="columnDebtConsumerFuzzMethod" msprop:Generator_ColumnPropNameInTable="DebtConsumerFuzzMethodColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DebtConsumerLastName" msprop:Generator_UserColumnName="DebtConsumerLastName" msprop:Generator_ColumnVarNameInTable="columnDebtConsumerLastName" msprop:Generator_ColumnPropNameInRow="DebtConsumerLastName" msprop:Generator_ColumnPropNameInTable="DebtConsumerLastNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RealCreditCardOriginalAccountNumber" msprop:Generator_UserColumnName="RealCreditCardOriginalAccountNumber" msprop:Generator_ColumnVarNameInTable="columnRealCreditCardOriginalAccountNumber" msprop:Generator_ColumnPropNameInRow="RealCreditCardOriginalAccountNumber" msprop:Generator_ColumnPropNameInTable="RealCreditCardOriginalAccountNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RealConsumerSsn" msprop:Generator_UserColumnName="RealConsumerSsn" msprop:Generator_ColumnVarNameInTable="columnRealConsumerSsn" msprop:Generator_ColumnPropNameInRow="RealConsumerSsn" msprop:Generator_ColumnPropNameInTable="RealConsumerSsnColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RealConsumerFirstName" msprop:Generator_UserColumnName="RealConsumerFirstName" msprop:Generator_ColumnVarNameInTable="columnRealConsumerFirstName" msprop:Generator_ColumnPropNameInRow="RealConsumerFirstName" msprop:Generator_ColumnPropNameInTable="RealConsumerFirstNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RealConsumerLastName" msprop:Generator_UserColumnName="RealConsumerLastName" msprop:Generator_ColumnVarNameInTable="columnRealConsumerLastName" msprop:Generator_ColumnPropNameInRow="RealConsumerLastName" msprop:Generator_ColumnPropNameInTable="RealConsumerLastNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TrustCreditCardOriginalAccountNumber" msprop:Generator_UserColumnName="TrustCreditCardOriginalAccountNumber" msprop:Generator_ColumnVarNameInTable="columnTrustCreditCardOriginalAccountNumber" msprop:Generator_ColumnPropNameInRow="TrustCreditCardOriginalAccountNumber" msprop:Generator_ColumnPropNameInTable="TrustCreditCardOriginalAccountNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TrustCreditCardFuzzedFields" msprop:Generator_UserColumnName="TrustCreditCardFuzzedFields" msprop:Generator_ColumnVarNameInTable="columnTrustCreditCardFuzzedFields" msprop:Generator_ColumnPropNameInRow="TrustCreditCardFuzzedFields" msprop:Generator_ColumnPropNameInTable="TrustCreditCardFuzzedFieldsColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TrustCreditCardFuzzMethod" msprop:Generator_UserColumnName="TrustCreditCardFuzzMethod" msprop:Generator_ColumnVarNameInTable="columnTrustCreditCardFuzzMethod" msprop:Generator_ColumnPropNameInRow="TrustCreditCardFuzzMethod" msprop:Generator_ColumnPropNameInTable="TrustCreditCardFuzzMethodColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TrustConsumerSsn" msprop:Generator_UserColumnName="TrustConsumerSsn" msprop:Generator_ColumnVarNameInTable="columnTrustConsumerSsn" msprop:Generator_ColumnPropNameInRow="TrustConsumerSsn" msprop:Generator_ColumnPropNameInTable="TrustConsumerSsnColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TrustConsumerFirstName" msprop:Generator_UserColumnName="TrustConsumerFirstName" msprop:Generator_ColumnVarNameInTable="columnTrustConsumerFirstName" msprop:Generator_ColumnPropNameInRow="TrustConsumerFirstName" msprop:Generator_ColumnPropNameInTable="TrustConsumerFirstNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TrustConsumerLastName" msprop:Generator_UserColumnName="TrustConsumerLastName" msprop:Generator_ColumnVarNameInTable="columnTrustConsumerLastName" msprop:Generator_ColumnPropNameInRow="TrustConsumerLastName" msprop:Generator_ColumnPropNameInTable="TrustConsumerLastNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TrustConsumerFuzzedFields" msprop:Generator_UserColumnName="TrustConsumerFuzzedFields" msprop:Generator_ColumnPropNameInRow="TrustConsumerFuzzedFields" msprop:Generator_ColumnVarNameInTable="columnTrustConsumerFuzzedFields" msprop:Generator_ColumnPropNameInTable="TrustConsumerFuzzedFieldsColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TrustConsumerFuzzMethod" msprop:Generator_UserColumnName="TrustConsumerFuzzMethod" msprop:Generator_ColumnPropNameInRow="TrustConsumerFuzzMethod" msprop:Generator_ColumnVarNameInTable="columnTrustConsumerFuzzMethod" msprop:Generator_ColumnPropNameInTable="TrustConsumerFuzzMethodColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="ConsumerKey" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RealConsumer" />
+      <xs:field xpath="mstns:RealConsumerId" />
+    </xs:unique>
+    <xs:unique name="CreditLineKey" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RealCreditCard" />
+      <xs:field xpath="mstns:RealCreditCardId" />
+    </xs:unique>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:User" />
+      <xs:field xpath="mstns:UserId" />
+    </xs:unique>
+    <xs:unique name="Constraint2" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Organization" />
+      <xs:field xpath="mstns:Name" />
+    </xs:unique>
+    <xs:unique name="CreditCardIssuerKey" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RealCreditCardIssuer" />
+      <xs:field xpath="mstns:RealCreditCardIssuerId" />
+    </xs:unique>
+    <xs:unique name="TrustSideConsumer_ConsumerKey" msdata:ConstraintName="ConsumerKey" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TrustSideConsumer" />
+      <xs:field xpath="mstns:TrustSideConsumerId" />
+    </xs:unique>
+    <xs:unique name="TrustSideConsumer_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:TrustSideConsumer" />
+      <xs:field xpath="mstns:RealConsumerId" />
+    </xs:unique>
+    <xs:unique name="TrustCreditCard_CreditLineKey" msdata:ConstraintName="CreditLineKey" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TrustCreditCard" />
+      <xs:field xpath="mstns:TrustCreditCardId" />
+    </xs:unique>
+    <xs:unique name="TrustCreditCard_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:TrustCreditCard" />
+      <xs:field xpath="mstns:RealCreditCardId" />
+    </xs:unique>
+    <xs:unique name="ConsumerDebtKey" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ConsumerDebt" />
+      <xs:field xpath="mstns:ConsumerDebtId" />
+    </xs:unique>
+    <xs:unique name="ConsumerDebt_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:ConsumerDebt" />
+      <xs:field xpath="mstns:AccountCode" />
+    </xs:unique>
+    <xs:unique name="DebtSideConsumer_ConsumerKey" msdata:ConstraintName="ConsumerKey" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DebtSideConsumer" />
+      <xs:field xpath="mstns:DebtSideConsumerId" />
+    </xs:unique>
+    <xs:unique name="DebtCreditCard_CreditLineKey" msdata:ConstraintName="CreditLineKey">
+      <xs:selector xpath=".//mstns:DebtCreditCard" />
+      <xs:field xpath="mstns:DebtCreditCardId" />
+    </xs:unique>
+    <xs:unique name="DebtCreditCard_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:DebtCreditCard" />
+      <xs:field xpath="mstns:RealCreditCardId" />
+    </xs:unique>
+    <xs:unique name="ConsumerTrust_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:ConsumerTrust" />
+      <xs:field xpath="mstns:ConsumerTrustId" />
+    </xs:unique>
+    <xs:unique name="DuplicateConsumerNames_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:DuplicateConsumerNames" />
+      <xs:field xpath="mstns:DuplicateConsumerNameId" />
+    </xs:unique>
+    <xs:unique name="DuplicateConsumerNames_Constraint2" msdata:ConstraintName="Constraint2">
+      <xs:selector xpath=".//mstns:DuplicateConsumerNames" />
+      <xs:field xpath="mstns:RealConsumerId" />
+    </xs:unique>
+    <xs:keyref name="FK_TrustSideConsumer_ConsumerTrust" refer="TrustSideConsumer_ConsumerKey" msprop:rel_Generator_UserRelationName="FK_TrustSideConsumer_ConsumerTrust" msprop:rel_Generator_RelationVarName="relationFK_TrustSideConsumer_ConsumerTrust" msprop:rel_Generator_UserChildTable="ConsumerTrust" msprop:rel_Generator_UserParentTable="TrustSideConsumer" msprop:rel_Generator_ParentPropName="TrustSideConsumerRow" msprop:rel_Generator_ChildPropName="GetConsumerTrustRows">
+      <xs:selector xpath=".//mstns:ConsumerTrust" />
+      <xs:field xpath="mstns:CustomerCode" />
+    </xs:keyref>
+    <xs:keyref name="FK_DebtSideConsumer_DebtCreditCard" refer="DebtSideConsumer_ConsumerKey" msprop:rel_Generator_UserRelationName="FK_DebtSideConsumer_DebtCreditCard" msprop:rel_Generator_RelationVarName="relationFK_DebtSideConsumer_DebtCreditCard" msprop:rel_Generator_UserChildTable="DebtCreditCard" msprop:rel_Generator_UserParentTable="DebtSideConsumer" msprop:rel_Generator_ParentPropName="DebtSideConsumerRow" msprop:rel_Generator_ChildPropName="GetDebtCreditCardRows">
+      <xs:selector xpath=".//mstns:DebtCreditCard" />
+      <xs:field xpath="mstns:DebtSideConsumerId" />
+    </xs:keyref>
+    <xs:keyref name="FK_DebtCreditCard_ConsumerDebt" refer="DebtCreditCard_CreditLineKey" msprop:rel_Generator_UserRelationName="FK_DebtCreditCard_ConsumerDebt" msprop:rel_Generator_RelationVarName="relationFK_DebtCreditCard_ConsumerDebt" msprop:rel_Generator_UserChildTable="ConsumerDebt" msprop:rel_Generator_UserParentTable="DebtCreditCard" msprop:rel_Generator_ParentPropName="DebtCreditCardRow" msprop:rel_Generator_ChildPropName="GetConsumerDebtRows">
+      <xs:selector xpath=".//mstns:ConsumerDebt" />
+      <xs:field xpath="mstns:ConsumerDebtId" />
+    </xs:keyref>
+    <xs:keyref name="FK_TrustSideConsumer_TrustCreditCard" refer="TrustSideConsumer_ConsumerKey" msprop:rel_Generator_UserRelationName="FK_TrustSideConsumer_TrustCreditCard" msprop:rel_Generator_RelationVarName="relationFK_TrustSideConsumer_TrustCreditCard" msprop:rel_Generator_UserChildTable="TrustCreditCard" msprop:rel_Generator_UserParentTable="TrustSideConsumer" msprop:rel_Generator_ParentPropName="TrustSideConsumerRow" msprop:rel_Generator_ChildPropName="GetTrustCreditCardRows">
+      <xs:selector xpath=".//mstns:TrustCreditCard" />
+      <xs:field xpath="mstns:TrustSideConsumerId" />
+    </xs:keyref>
+    <xs:keyref name="FK_User_Organization" refer="Constraint2" msprop:rel_Generator_UserRelationName="FK_User_Organization" msprop:rel_Generator_RelationVarName="relationFK_User_Organization" msprop:rel_Generator_UserChildTable="User" msprop:rel_Generator_UserParentTable="Organization" msprop:rel_Generator_ParentPropName="OrganizationRow" msprop:rel_Generator_ChildPropName="GetUserRows">
+      <xs:selector xpath=".//mstns:User" />
+      <xs:field xpath="mstns:Organization" />
+    </xs:keyref>
+    <xs:keyref name="FK_RealConsumer_RealCreditCard" refer="ConsumerKey" msprop:rel_Generator_UserRelationName="FK_RealConsumer_RealCreditCard" msprop:rel_Generator_RelationVarName="relationFK_RealConsumer_RealCreditCard" msprop:rel_Generator_UserChildTable="RealCreditCard" msprop:rel_Generator_UserParentTable="RealConsumer" msprop:rel_Generator_ParentPropName="RealConsumerRow" msprop:rel_Generator_ChildPropName="GetRealCreditCardRows">
+      <xs:selector xpath=".//mstns:RealCreditCard" />
+      <xs:field xpath="mstns:RealConsumerId" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

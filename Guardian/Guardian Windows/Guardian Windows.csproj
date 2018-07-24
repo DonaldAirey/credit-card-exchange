@@ -1,0 +1,703 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2ADC9A25-845D-4E7C-9E0C-6A006809125F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FluidTrade.Guardian</RootNamespace>
+    <AssemblyName>FluidTrade.GuardianWindows</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Public Key.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>true</DelaySign>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\FluidTrade.GuardianWindows.XML</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\FluidTrade.GuardianWindows.XML</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\FluidTrade.GuardianWindows.XML</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\FluidTrade.GuardianWindows.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\FluidTrade.GuardianWindows.XML</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\FluidTrade.GuardianWindows.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiproSoftware.Editors.Wpf30, Version=9.1.501.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Additional Client Libraries\ActiproSoftware.Editors.Wpf30.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Gauge.Wpf30, Version=9.1.501.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Additional Client Libraries\ActiproSoftware.Gauge.Wpf30.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Navigation.Wpf30, Version=9.1.501.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Additional Client Libraries\ActiproSoftware.Navigation.Wpf30.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiproSoftware.Shared.Wpf30, Version=9.1.501.0, Culture=neutral, PublicKeyToken=36ff2196ab5654b9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Additional Client Libraries\ActiproSoftware.Shared.Wpf30.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.3930.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Additional Client Libraries\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="FluidTrade.ActiproLibrary, Version=1.3.0.0, Culture=neutral, PublicKeyToken=9e74401225b20b7d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Additional Client Libraries\FluidTrade.ActiproLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="O2S.Components.PDFRender4NET, Version=2.3.1.2, Culture=neutral, PublicKeyToken=6753860be21d84fb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Additional Client Libraries\O2S.Components.PDFRender4NET.dll</HintPath>
+    </Reference>
+    <Reference Include="O2S.Components.PDFView4NET, Version=2.3.0.1, Culture=neutral, PublicKeyToken=bdf0cc7afcc23208, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Additional Client Libraries\O2S.Components.PDFView4NET.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework.Classic">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="ReachFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Printing">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessControl.cs" />
+    <Compile Include="Account.cs" />
+    <Compile Include="AlertMessageBox.cs" />
+    <Compile Include="Blotter.cs" />
+    <Compile Include="BlotterMatchDetail.cs" />
+    <Compile Include="BlotterWorkingOrderDetail.cs" />
+    <Compile Include="Branch.cs" />
+    <Compile Include="Broker.cs" />
+    <Compile Include="Builder.cs" />
+    <Compile Include="ChangeRelationAction.cs" />
+    <Compile Include="ChangeRelationArgs.cs" />
+    <Compile Include="ClearingBroker.cs" />
+    <Compile Include="BlotterList.cs" />
+    <Compile Include="BlotterItem.cs" />
+    <Compile Include="CommissionSchedule.cs" />
+    <Compile Include="CommissionTranche.cs" />
+    <Compile Include="ConsumerDebtWorkingOrder.cs" />
+    <Compile Include="ConsumerTrustWorkingOrder.cs" />
+    <Compile Include="ControlEditDebtRule.xaml.cs">
+      <DependentUpon>ControlEditDebtRule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BlotterStatusBar.xaml.cs">
+      <DependentUpon>BlotterStatusBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BooleanComboBox.cs" />
+    <Compile Include="Controls\ChatBubble.xaml.cs">
+      <DependentUpon>ChatBubble.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlDebtRule.xaml.cs">
+      <DependentUpon>ControlDebtRule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DebtNegotiatorStatusBar.cs" />
+    <Compile Include="Controls\GroupMembersTab.xaml.cs">
+      <DependentUpon>GroupMembersTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EditSettlementTemplateControl.xaml.cs">
+      <DependentUpon>EditSettlementTemplateControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EntityStatusBar.cs" />
+    <Compile Include="Controls\EnumComboBox.cs" />
+    <Compile Include="Controls\FolderSelector.cs" />
+    <Compile Include="Controls\IndentConverter.cs" />
+    <Compile Include="Controls\MarketValueBox.cs" />
+    <Compile Include="Controls\MatchPartsUserControl.xaml.cs">
+      <DependentUpon>MatchPartsUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MoneyBox.cs" />
+    <Compile Include="Controls\CustomizeDebtClassControl.xaml.cs">
+      <DependentUpon>CustomizeDebtClassControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DebtHolderStatusBar.cs" />
+    <Compile Include="Controls\DebtRuleComboBox.cs" />
+    <Compile Include="Controls\DefaultTextBox.cs">
+    </Compile>
+    <Compile Include="Controls\FlowGrid.cs" />
+    <Compile Include="Controls\BlotterComboBox.cs" />
+    <Compile Include="ComplianceOfficer.cs" />
+    <Compile Include="Controls\FileSelector.xaml.cs">
+      <DependentUpon>FileSelector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MoneySpinner.cs" />
+    <Compile Include="Controls\MultiComboBox.cs" />
+    <Compile Include="Controls\PaymentMethodComboBox.cs" />
+    <Compile Include="Controls\PaymentScheduleControl.xaml.cs">
+      <DependentUpon>PaymentScheduleControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PercentageSpinner.cs" />
+    <Compile Include="Controls\PersistentComboBox.cs" />
+    <Compile Include="Controls\ProgressBar.xaml.cs">
+      <DependentUpon>ProgressBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SelectSingleGroup.xaml.cs">
+      <DependentUpon>SelectSingleGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\StateComboBox.cs" />
+    <Compile Include="Controls\StatusComboBox.cs" />
+    <Compile Include="Controls\TermLength.cs" />
+    <Compile Include="Controls\TermTextBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\TimeSpanBlock.cs" />
+    <Compile Include="Controls\TreeListView.cs" />
+    <Compile Include="Controls\TreeListViewItem.cs" />
+    <Compile Include="Controls\RightsHolderListBox.cs" />
+    <Compile Include="Controls\UserMembersTab.xaml.cs">
+      <DependentUpon>UserMembersTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EffectiveDebtClass.cs" />
+    <Compile Include="FolderTreeNodeAdapter.cs" />
+    <Compile Include="Group.cs" />
+    <Compile Include="GroupList.cs" />
+    <Compile Include="GuardianObject.cs" />
+    <Compile Include="IMovableObject.cs" />
+    <Compile Include="Controls\Spinner.xaml.cs">
+      <DependentUpon>Spinner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\StatusBar.cs" />
+    <Compile Include="DebtBlotter.cs" />
+    <Compile Include="DebtRule.cs" />
+    <Compile Include="DebtRuleList.cs" />
+    <Compile Include="EquityBlotter.cs" />
+    <Compile Include="DebtClass.cs" />
+    <Compile Include="DebtHolder.cs" />
+    <Compile Include="DebtNegotiator.cs" />
+    <Compile Include="Information.cs" />
+    <Compile Include="OpenObjectEventHandler.cs" />
+    <Compile Include="TenantList.cs" />
+    <Compile Include="Tenant.cs" />
+    <Compile Include="PaymentMethod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PaymentMethodTypeList.cs" />
+    <Compile Include="PaymentMethodType.cs" />
+    <Compile Include="PDFReportBase.cs" />
+    <Compile Include="Province.cs" />
+    <Compile Include="ProvinceList.cs" />
+    <Compile Include="RightsHolder.cs" />
+    <Compile Include="RightsHolderList.cs" />
+    <Compile Include="SettlementUnitItem.cs" />
+    <Compile Include="SettlementUnitList.cs" />
+    <Compile Include="TimeUnitItem.cs" />
+    <Compile Include="TimeUnitList.cs" />
+    <Compile Include="Trader.cs" />
+    <Compile Include="Folder.cs" />
+    <Compile Include="FolderTreeNode.cs" />
+    <Compile Include="FolderTreeView.xaml.cs">
+      <DependentUpon>FolderTreeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Institution.cs" />
+    <Compile Include="Match.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="Prefereces.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SideItem.cs" />
+    <Compile Include="SideList.cs" />
+    <Compile Include="StatusItem.cs" />
+    <Compile Include="StatusList.cs" />
+    <Compile Include="SystemFolder.cs" />
+    <Compile Include="TimeInForceItem.cs" />
+    <Compile Include="TimeInForceList.cs" />
+    <Compile Include="UserList.cs" />
+    <Compile Include="Utilities\DataBoundList.cs" />
+    <Compile Include="Utilities\DataImporter.cs" />
+    <Compile Include="Utilities\DebtRuleInUseException.cs" />
+    <Compile Include="Utilities\DeleteException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\ExcelImportReader.cs" />
+    <Compile Include="Utilities\GroupNotFoundException.cs" />
+    <Compile Include="Utilities\HasSettlementsException.cs" />
+    <Compile Include="Utilities\IdentityConverter.cs" />
+    <Compile Include="Utilities\IDataBoundList.cs" />
+    <Compile Include="Utilities\ImportHeaderNotFoundException.cs" />
+    <Compile Include="Utilities\ImportReader.cs" />
+    <Compile Include="Utilities\IsConverter.cs" />
+    <Compile Include="Utilities\IsSettledException.cs" />
+    <Compile Include="Utilities\LambdaComparer.cs" />
+    <Compile Include="Utilities\MergedList.cs" />
+    <Compile Include="Utilities\NetworkHelper.cs" />
+    <Compile Include="Utilities\NullableConverter.cs" />
+    <Compile Include="Utilities\SynchronizedQueue.cs" />
+    <Compile Include="Utilities\TenantUsersAndGroups.cs" />
+    <Compile Include="Utilities\TreeViewHelper.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="Utilities\UserNotFoundException.cs" />
+    <Compile Include="Utilities\ViewType.cs" />
+    <Compile Include="Utilities\Win32Interop.cs" />
+    <Compile Include="Utilities\XmlImportReader.cs" />
+    <Compile Include="WindowAddOrganization.xaml.cs">
+      <DependentUpon>WindowAddOrganization.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowAddUser.xaml.cs">
+      <DependentUpon>WindowAddUser.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WindowBlotterProperties.cs" />
+    <Compile Include="WindowDebtClassProperties.cs" />
+    <Compile Include="WindowDebtHolderProperties.cs" />
+    <Compile Include="WindowDebtRuleManager.xaml.cs">
+      <DependentUpon>WindowDebtRuleManager.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WindowDeleteSingle.xaml.cs">
+      <DependentUpon>WindowDeleteSingle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowDeleteProgress.cs" />
+    <Compile Include="WindowDeleteMultiple.xaml.cs">
+      <DependentUpon>WindowDeleteMultiple.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowEntityProperties.xaml.cs">
+      <DependentUpon>WindowEntityProperties.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowFindUser.xaml.cs">
+      <DependentUpon>WindowFindUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowFolderChooser.xaml.cs">
+      <DependentUpon>WindowFolderChooser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowGroupProperties.cs" />
+    <Compile Include="WindowIconChooser.xaml.cs">
+      <DependentUpon>WindowIconChooser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowImport.cs" />
+    <Compile Include="WindowImportReport.xaml.cs">
+      <DependentUpon>WindowImportReport.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowLinkFolder.cs" />
+    <Compile Include="WindowLogin.xaml.cs">
+      <DependentUpon>WindowLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowMove.cs" />
+    <Compile Include="WindowMoveError.xaml.cs">
+      <DependentUpon>WindowMoveError.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowMoveProgress.cs" />
+    <Compile Include="WindowPaymentSchedule.xaml.cs">
+      <DependentUpon>WindowPaymentSchedule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowPdfViewer.xaml.cs">
+      <DependentUpon>WindowPdfViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowProgress.xaml.cs">
+      <DependentUpon>WindowProgress.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowResetPassword.xaml.cs">
+      <DependentUpon>WindowResetPassword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowUnlinkFolder.cs" />
+    <Compile Include="WindowUserAccounts.xaml.cs">
+      <DependentUpon>WindowUserAccounts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowUserManager.xaml.cs">
+      <DependentUpon>WindowUserManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowBasicUserProperties.xaml.cs">
+      <DependentUpon>WindowBasicUserProperties.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowUserProperties.cs" />
+    <Compile Include="WorkingOrder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Fluid Trade Library\Fluid Trade Library.csproj">
+      <Project>{734051D9-B2A3-44E9-A88B-7B4FDB90109F}</Project>
+      <Name>Fluid Trade Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Fluid Trade Windows\Fluid Trade Windows.csproj">
+      <Project>{96E46257-35EE-4466-AD52-B4DDFB2F81D4}</Project>
+      <Name>Fluid Trade Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PDF Control\PDF Control.csproj">
+      <Project>{17C7C076-4F59-4881-8596-676686F7B46F}</Project>
+      <Name>PDF Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Client Data Model\Client Data Model.csproj">
+      <Project>{B42CF522-8BF7-41E6-A80A-B694670FC9A3}</Project>
+      <Name>Client Data Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Client Trading Support\Client Trading Support.csproj">
+      <Project>{E4DCC322-91C6-4515-9D19-FF7181563F52}</Project>
+      <Name>Client Trading Support</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Guardian Library\Guardian Library.csproj">
+      <Project>{EFBD8C4F-D582-456F-92B2-40839952F0C4}</Project>
+      <Name>Guardian Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Key Pair.snk" />
+    <None Include="Public Key.snk" />
+    <EmbeddedResource Include="Resources\DebtHolderImportSchema.xsd" />
+    <EmbeddedResource Include="Resources\DebtNegotiatorImportSchema.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ControlEditDebtRule.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\BlotterStatusBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ChatBubble.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ControlDebtRule.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\GroupMembersTab.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CustomizeDebtClassControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\EditSettlementTemplateControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\FileSelector.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\MatchPartsUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\PaymentScheduleControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ProgressBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\SelectSingleGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Spinner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\UserMembersTab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FolderTreeView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\ZoomButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\ZoomSlider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WindowAddOrganization.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WindowAddUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowDebtRuleManager.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowDeleteSingle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowDeleteMultiple.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowEntityProperties.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowFindUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowFolderChooser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowIconChooser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowImportReport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowMoveError.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowPaymentSchedule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowPdfViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowProgress.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowResetPassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowUserAccounts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowUserManager.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowBasicUserProperties.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Ribbon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Zoom In.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Zoom Out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Accept.png" />
+    <Resource Include="Resources\Cancel.png" />
+    <Resource Include="Resources\Chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Folder-Secure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ChatLeftBubble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ChatRightBubble .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\users-key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\new-user-wizard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\disk_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\printer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\arrow_down_blue.png" />
+    <Resource Include="Resources\arrow_up_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\document.png" />
+    <Resource Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\workstation_network.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\folder_closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

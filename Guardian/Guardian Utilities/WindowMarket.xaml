@@ -1,0 +1,73 @@
+﻿<Window x:Class="FluidTrade.Guardian.WindowMarket"
+        Title="Market Simulation" 
+        WindowStyle="ToolWindow"
+        ResizeMode="CanResizeWithGrip"
+        ShowInTaskbar="False"
+        SizeToContent="WidthAndHeight"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:g="http://schemas.markthreesoftware.com/winfx/2006/xaml/guardian/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <CheckBox Content="Run Broker Simulator"
+                  HorizontalAlignment="Left"
+                  IsEnabled="False"
+                  Margin="4"
+                  Name="checkBoxIsBrokerSimulatorRunning" />
+        <GroupBox Grid.Row="1"
+                  Margin="4"
+                  Name="groupBoxRunPriceSimulator">
+            <GroupBox.Header>
+                <CheckBox Content="Run Simulator"
+                          IsEnabled="False"
+                          Name="checkBoxIsPriceSimulatorRunning" />
+            </GroupBox.Header>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition MinWidth="120" />
+                </Grid.ColumnDefinitions>
+                <Label Content="Frequency:"
+                       Grid.Column="0"
+                       Grid.Row="0"
+                       HorizontalAlignment="Right"
+                       IsEnabled="False"
+                       Margin="2"
+                       Name="labelFrequency"
+                       VerticalAlignment="Center" />
+                <TextBox Grid.Column="1"
+                         Grid.Row="0"
+                         IsEnabled="False"
+                         Margin="2"
+                         Name="textBoxFrequency"
+                         VerticalAlignment="Center" />
+            </Grid>
+        </GroupBox>
+        <StackPanel Grid.Column="0"
+                    Grid.Row="2"
+                    Grid.ColumnSpan="3"
+                    Margin="48,0,24,0"
+                    Orientation="Horizontal" FlowDirection="RightToLeft">
+            <Button Click="OnCancelButtonClick"
+                    IsCancel="True"
+                    IsEnabled="True"
+                    Margin="4"
+                    Name="buttonCancel"
+                    VerticalAlignment="Center"
+                    Width="64">Canel</Button>
+            <Button Click="OnOkButtonClick"
+                    IsDefault="False"
+                    Margin="4"
+                    Name="buttonOK"
+                    VerticalAlignment="Center"
+                    Width="64">OK</Button>
+        </StackPanel>
+    </Grid>
+</Window>

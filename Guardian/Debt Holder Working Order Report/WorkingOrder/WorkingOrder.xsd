@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="urn:schemas-fluidtrade-com:guardian:consumer-debt-working-order"
+           xmlns:mstns="urn:schemas-fluidtrade-com:guardian:consumer-debt-working-order"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:r="urn:schemas-fluidtrade-com:report">
+  <xs:annotation>
+    <xs:appinfo>
+      <r:generatedCode destinationNamespace="FluidTrade.Guardian.Schema.DebtHolderWorkingOrder" />
+    </xs:appinfo>
+  </xs:annotation>
+  <!-- Account Balance -->
+  <xs:complexType name="AccountBalance">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Balance"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- AccountNumber -->
+  <xs:complexType name="AccountNumber">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Name"
+                  type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Address 1 -->
+  <xs:complexType name="Address1">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Text"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Address 2 -->
+  <xs:complexType name="Address2">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Text"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Blotter -->
+  <xs:complexType name="Blotter">
+    <xs:sequence>
+      <xs:element name="BlotterId"
+                  r:datatype="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+      <xs:element name="Name"
+                  type="xs:string" />
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- City -->
+  <xs:complexType name="City">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Text"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Created Date Time -->
+  <xs:complexType name="CreatedDateTime">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="DateTime"
+                  type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Date of Birth -->
+  <xs:complexType name="DateOfBirth">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="DateTime"
+                  r:datatype="System.Nullable&lt;System.DateTime&gt;, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Date of Delinquency -->
+  <xs:complexType name="DateOfDelinquency">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="DateTime"
+                  type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- First Name -->
+  <xs:complexType name="FirstName">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Name"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- HeatIndex -->
+  <xs:complexType name="HeatIndex">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Index"
+                  type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Is Employed -->
+  <xs:complexType name="IsEmployed">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Employed"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Debt Holder Name -->
+  <xs:complexType name="DebtHolderName">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Text"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Last Name -->
+  <xs:complexType name="LastName">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Name"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- PostalCode -->
+  <xs:complexType name="PostalCode">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Code"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Middle Name -->
+  <xs:complexType name="MiddleName">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Name"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Modified Date Time -->
+  <xs:complexType name="ModifiedDateTime">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="DateTime"
+                  type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Province (aka State) -->
+  <xs:complexType name="Province">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Text"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+      <xs:element name="ProvinceId"
+                  r:datatype="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- RuleId -->
+  <xs:complexType name="RuleId">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="ParentId"
+                  r:datatype="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+      <xs:element name="DebtRuleId"
+                  r:datatype="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Salutation -->
+  <xs:complexType name="Salutation">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Name"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- SecurityName (aka Original Account Number) -->
+  <xs:complexType name="SecurityName">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Name"
+                  type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- SelectRow -->
+  <xs:complexType name="SelectRow">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Name"
+                  type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Social Security Number -->
+  <xs:complexType name="SocialSecurityNumber">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Number"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Match Status -->
+  <xs:complexType name="MatchStatus">
+    <xs:sequence>
+      <xs:element name="Mnemonic"
+                  type="xs:string" />
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Text"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Suffix -->
+  <xs:complexType name="Suffix">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Name"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Working Order -->
+  <xs:complexType name="WorkingOrder">
+    <xs:annotation>
+      <xs:appinfo>
+        <r:constructor>
+          <r:arguments>
+            <r:argument type="FluidTrade.Guardian.WorkingOrderRow"
+                        name="workingOrderRow" />
+          </r:arguments>
+          <r:setter property="key"
+                    value="workingOrderRow" />
+					<r:snippet>ConsumerDebtRow consumerDebtRow = DataModel.ConsumerDebt.ConsumerDebtKey.Find(workingOrderRow.SecurityId); </r:snippet>
+					<r:snippet>CreditCardRow creditCardRow = consumerDebtRow == null ?  null : consumerDebtRow.CreditCardRow;</r:snippet>
+          <r:snippet>ConsumerRow consumerRow = creditCardRow == null ? null : creditCardRow.ConsumerRow;</r:snippet>
+          <r:snippet>MatchRow matchRow = null; MatchRow[] matchRows = workingOrderRow.GetMatchRows(); if (matchRows.Length != 0) matchRow = matchRows[0];</r:snippet>
+        </r:constructor>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <!-- AccountBalance -->
+      <xs:element name="AccountBalance"
+                  type="mstns:AccountBalance">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(creditCardRow, DataModel.CreditCard.AccountBalanceColumn)</r:setter>
+            <r:setter property="Balance">creditCardRow == null ? null : creditCardRow[DataModel.CreditCard.AccountBalanceColumn]</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- AccountNumber -->
+      <xs:element name="AccountNumber"
+                  type="mstns:AccountNumber">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(creditCardRow, DataModel.CreditCard.AccountNumberColumn)</r:setter>
+            <r:setter property="Name">creditCardRow == null ? null : (string)creditCardRow[DataModel.CreditCard.AccountNumberColumn]</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Address 1 -->
+      <xs:element name="Address1"
+                  type="mstns:Address1">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(consumerRow, DataModel.Consumer.Address1Column, workingOrderRow.WorkingOrderId)</r:setter>
+            <r:setter property="Text">consumerRow == null ? null : consumerRow[DataModel.Consumer.Address1Column]</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Address 2 -->
+      <xs:element name="Address2"
+                  type="mstns:Address2">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(consumerRow, DataModel.Consumer.Address2Column, workingOrderRow.WorkingOrderId)</r:setter>
+            <r:setter property="Text">consumerRow == null ? null : consumerRow[DataModel.Consumer.Address2Column]</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Blotter -->
+      <xs:element name="Blotter"
+                  type="mstns:Blotter">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="BlotterId">workingOrderRow.BlotterId</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(workingOrderRow, DataModel.WorkingOrder.BlotterIdColumn)</r:setter>
+            <r:setter property="Name">workingOrderRow.BlotterRow.EntityRow.Name</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- City -->
+      <xs:element name="City"
+                  type="mstns:City">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(consumerRow, DataModel.Consumer.CityColumn, workingOrderRow.WorkingOrderId)</r:setter>
+            <r:setter property="Text">consumerRow == null ? null : consumerRow[DataModel.Consumer.CityColumn]</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CreatedDateTime"
+                  type="mstns:CreatedDateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+						<r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(workingOrderRow, DataModel.WorkingOrder.CreatedTimeColumn)</r:setter>
+						<r:setter property="DateTime">workingOrderRow.CreatedTime.ToLocalTime()</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Date of Birth -->
+      <xs:element name="DateOfBirth"
+                  type="mstns:DateOfBirth">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(consumerRow, DataModel.Consumer.DateOfBirthColumn)</r:setter>
+						<r:setter property="DateTime">consumerRow == null ? null : consumerRow.IsDateOfBirthNull() ? (System.DateTime?)null : consumerRow.DateOfBirth</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="DateOfDelinquency"
+                  type="mstns:DateOfDelinquency">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+						<r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(consumerDebtRow, DataModel.ConsumerDebt.DateOfDelinquencyColumn)</r:setter>
+						<r:setter property="DateTime">consumerDebtRow == null ? null : consumerDebtRow.IsDateOfDelinquencyNull() ? "" : consumerDebtRow.DateOfDelinquency.ToString("MM/dd/yyyy")</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- First Name -->
+      <xs:element name="FirstName"
+                  type="mstns:FirstName">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(consumerRow, DataModel.Consumer.FirstNameColumn, workingOrderRow.WorkingOrderId)</r:setter>
+            <r:setter property="Name">consumerRow == null ? null : consumerRow[DataModel.Consumer.FirstNameColumn]</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Heat Index -->
+      <xs:element name="HeatIndex"
+                  type="mstns:HeatIndex">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Index">matchRow != null ? (decimal)((int)(matchRow.HeatIndex * 100)) / 100 : 0</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Is Employed -->
+      <xs:element name="IsEmployed"
+                  type="mstns:IsEmployed">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(consumerRow, DataModel.Consumer.IsEmployedColumn, workingOrderRow.WorkingOrderId)</r:setter>
+            <r:setter property="Employed">consumerRow == null ? null : consumerRow[DataModel.Consumer.IsEmployedColumn]</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!--DebtHolderName-->
+      <xs:element name="DebtHolderName"
+                  type="mstns:DebtHolderName">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(creditCardRow, DataModel.CreditCard.DebtHolderColumn)</r:setter>
+            <r:setter property="Text">creditCardRow == null ? null : creditCardRow[DataModel.CreditCard.DebtHolderColumn]</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Last Name -->
+      <xs:element name="LastName"
+                  type="mstns:LastName">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(consumerRow, DataModel.Consumer.LastNameColumn, workingOrderRow.WorkingOrderId)</r:setter>
+            <r:setter property="Name">consumerRow == null ? null : consumerRow[DataModel.Consumer.LastNameColumn]</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- PostalCode -->
+      <xs:element name="PostalCode"
+                  type="mstns:PostalCode">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(consumerRow, DataModel.Consumer.PostalCodeColumn, workingOrderRow.WorkingOrderId)</r:setter>
+            <r:setter property="Code">consumerRow == null ? null : consumerRow[DataModel.Consumer.PostalCodeColumn]</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Middle Name -->
+      <xs:element name="MiddleName"
+                  type="mstns:MiddleName">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(consumerRow, DataModel.Consumer.MiddleNameColumn, workingOrderRow.WorkingOrderId)</r:setter>
+            <r:setter property="Name">consumerRow == null ? null : consumerRow[DataModel.Consumer.MiddleNameColumn]</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Modified Date Time -->
+      <xs:element name="ModifiedDateTime"
+                  type="mstns:ModifiedDateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+						<r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(workingOrderRow, DataModel.WorkingOrder.ModifiedTimeColumn)</r:setter>
+						<r:setter property="DateTime">workingOrderRow.ModifiedTime.ToLocalTime()</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Province (aka State) -->
+      <xs:element name="Province"
+                  type="mstns:Province">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(consumerRow, DataModel.Consumer.ProvinceIdColumn, workingOrderRow.WorkingOrderId)</r:setter>
+            <r:setter property="ProvinceId">
+							System.Guid provinceId = System.Guid.Empty;
+							if (consumerRow != null &amp;&amp; consumerRow.ProvinceRow != null)
+							{
+								provinceId = consumerRow.ProvinceRow.ProvinceId;
+							};
+							provinceId
+						</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!--RuleId-->
+      <xs:element name="RuleId"
+                  type="mstns:RuleId">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(consumerDebtRow, DataModel.ConsumerDebt.DebtRuleIdColumn)</r:setter>
+            <r:setter property="ParentId">workingOrderRow.BlotterId</r:setter>
+            <r:setter property="DebtRuleId">
+							System.Guid debtRuleId = System.Guid.Empty;
+							if (consumerDebtRow != null &amp;&amp; consumerDebtRow.DebtRuleRow != null)
+							{
+								debtRuleId = consumerDebtRow.DebtRuleRow.DebtRuleId;
+							};
+							debtRuleId
+						</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Salutation -->
+      <xs:element name="Salutation"
+                  type="mstns:Salutation">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(consumerRow, DataModel.Consumer.SalutationColumn, workingOrderRow.WorkingOrderId)</r:setter>
+            <r:setter property="Name">consumerRow == null ? null : consumerRow[DataModel.Consumer.SalutationColumn]</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- SecurityName (aka Original Account Number) -->
+      <xs:element name="SecurityName"
+                  type="mstns:SecurityName">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(creditCardRow, DataModel.CreditCard.OriginalAccountNumberColumn)</r:setter>
+            <r:setter property="Name">creditCardRow == null ? null : creditCardRow.OriginalAccountNumber</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- SelectRow -->
+      <xs:element name="SelectRow"
+                  type="mstns:SelectRow">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- SocialSecurityNumber -->
+      <xs:element name="SocialSecurityNumber"
+                  type="mstns:SocialSecurityNumber">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(consumerRow, DataModel.Consumer.SocialSecurityNumberColumn, workingOrderRow.WorkingOrderId )</r:setter>
+            <r:setter property="Number">consumerRow == null ? null : consumerRow[DataModel.Consumer.SocialSecurityNumberColumn]</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Match Status -->
+      <xs:element name="MatchStatus"
+                  type="mstns:MatchStatus">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="Mnemonic">workingOrderRow.StatusRow.Mnemonic</r:setter>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Text">workingOrderRow.StatusRow.StatusCode.ToString()</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Suffix -->
+      <xs:element name="Suffix"
+                  type="mstns:Suffix">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(consumerRow, DataModel.Consumer.SuffixColumn , workingOrderRow.WorkingOrderId)</r:setter>
+            <r:setter property="Name">consumerRow == null ? null : consumerRow[DataModel.Consumer.SuffixColumn]</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

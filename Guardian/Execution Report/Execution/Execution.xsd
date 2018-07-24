@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+  <xs:schema targetNamespace="urn:schemas-fluidtrade-com:guardian:execution"
+					   xmlns:mstns="urn:schemas-fluidtrade-com:guardian:execution"
+					   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+					   xmlns:r="urn:schemas-fluidtrade-com:report">
+	<xs:annotation>
+	  <xs:appinfo>
+		<r:generatedCode destinationNamespace="FluidTrade.Guardian.Schema.Execution" /> 
+	  </xs:appinfo>
+	</xs:annotation>
+	<!-- Accrued Interest-->
+	<xs:complexType name="AccruedInterest">
+	  <xs:sequence>
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="BrokerAccountId">
+	  <xs:sequence>
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Commission">
+	  <xs:sequence>
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CreatedTime">
+	  <xs:sequence>
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CreatedUserId">
+	  <xs:sequence>
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DestinationOrderId">
+	  <xs:sequence>
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DestinationStateCode">
+	  <xs:sequence>
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ExecutionPrice">
+	  <xs:sequence>
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ExecutionQuantity">
+	  <xs:sequence>
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FixMessageId">
+	  <xs:sequence>
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="IsHidden">
+	  <xs:sequence>
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ModifiedTime">
+	  <xs:sequence>
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ModifiedUserId">
+	  <xs:sequence>
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="OriginalPrice">
+	  <xs:sequence>
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="OriginalQuantity">
+	  <xs:sequence>
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SourceStateCode">
+	  <xs:sequence>
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="UserFee0">
+	  <xs:sequence>
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="UserFee1">
+	  <xs:sequence>
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="UserFee2">
+	  <xs:sequence>
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="UserFee3">
+	  <xs:sequence>
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Execution -->
+	<xs:complexType name="Execution">
+	  <xs:annotation>
+		<xs:appinfo>
+		  <r:constructor>
+			<r:arguments>
+			  <r:argument type="FluidTrade.Guardian.ExecutionRow" name="ExecutionRow" />
+			</r:arguments>
+			<r:setter property="key" value="ExecutionRow" />
+		  </r:constructor>
+		</xs:appinfo>
+	  </xs:annotation>
+	  <xs:sequence>
+		<!-- Accrued Interest -->
+		<xs:element  name="AccruedInterest" type="mstns:AccruedInterest">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="Text">ExecutionRow.AccruedInterest</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element>
+		<xs:element  name="BrokerAccountId" type="mstns:BrokerAccountId">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="Text">(ExecutionRow.IsBrokerAccountIdNull()) ? System.Guid.Empty :  ExecutionRow.BrokerAccountId</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element>
+		<!--Commission-->
+		  <xs:element  name="Commission" type="mstns:Commission">
+			<xs:annotation>
+			  <xs:appinfo>
+				<r:setter property="Text">ExecutionRow.Commission</r:setter>
+			  </xs:appinfo>
+			</xs:annotation>
+		  </xs:element>
+	  	<!--CreatedTime-->
+		<xs:element  name="CreatedTime" type="mstns:CreatedTime">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="Text">ExecutionRow.CreatedTime</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element>
+		<!--CreatedUserId-->
+		<xs:element  name="CreatedUserId" type="mstns:CreatedUserId">
+		<xs:annotation>
+		  <xs:appinfo>
+			<r:setter property="Text">ExecutionRow.CreatedUserId</r:setter>
+		  </xs:appinfo>
+		</xs:annotation>
+	  </xs:element>
+	  <!--DestinationOrderId-->
+	  <xs:element  name="DestinationOrderId" type="mstns:DestinationOrderId">
+		<xs:annotation>
+		  <xs:appinfo>
+			<r:setter property="Text">ExecutionRow.DestinationOrderId</r:setter>
+		  </xs:appinfo>
+		</xs:annotation>
+	  </xs:element>
+	  <!--DestinationStateCode-->
+	  <xs:element  name="DestinationStateCode" type="mstns:DestinationStateCode">
+		<xs:annotation>
+		  <xs:appinfo>
+			<r:setter property="Text">ExecutionRow.DestinationStateCode</r:setter>
+		  </xs:appinfo>
+		</xs:annotation>
+	  </xs:element>
+	  <!--ExecutionPrice-->
+	  <xs:element  name="ExecutionPrice" type="mstns:ExecutionPrice">
+		<xs:annotation>
+		  <xs:appinfo>
+			<r:setter property="Text">ExecutionRow.ExecutionPrice</r:setter>
+		  </xs:appinfo>
+		</xs:annotation>
+	  </xs:element>
+	  <!--ExecutionQuantity-->
+	  <xs:element  name="ExecutionQuantity" type="mstns:ExecutionQuantity">
+		<xs:annotation>
+		  <xs:appinfo>
+			<r:setter property="Text">ExecutionRow.ExecutionQuantity</r:setter>
+		  </xs:appinfo>
+		</xs:annotation>
+	  </xs:element>
+	  <!--FixMessageId-->
+	  <xs:element  name="FixMessageId" type="mstns:FixMessageId">
+		<xs:annotation>
+		  <xs:appinfo>
+			<r:setter property="Text">(ExecutionRow.IsFixMessageIdNull()) ? System.Guid.Empty :  ExecutionRow.FixMessageId</r:setter>
+		  </xs:appinfo>
+		</xs:annotation>
+	  </xs:element>
+	  <!--IsHidden-->
+	  <xs:element  name="IsHidden" type="mstns:IsHidden">
+		<xs:annotation>
+		  <xs:appinfo>
+			<r:setter property="Text">ExecutionRow.IsHidden</r:setter>
+		  </xs:appinfo>
+		</xs:annotation>
+	  </xs:element>
+	  <!--ModifiedTime-->
+	  <xs:element  name="ModifiedTime" type="mstns:ModifiedTime">
+		<xs:annotation>
+		  <xs:appinfo>
+			<r:setter property="Text">ExecutionRow.ModifiedTime</r:setter>
+		  </xs:appinfo>
+		</xs:annotation>
+	  </xs:element>
+	  <!--ModifiedUserId-->
+	  <xs:element  name="ModifiedUserId" type="mstns:ModifiedUserId">
+		<xs:annotation>
+		  <xs:appinfo>
+			<r:setter property="Text">ExecutionRow.ModifiedUserId</r:setter>
+		  </xs:appinfo>
+		</xs:annotation>
+	  </xs:element>
+	  <!--OriginalPrice-->
+	  <xs:element  name="OriginalPrice" type="mstns:OriginalPrice">
+		<xs:annotation>
+		  <xs:appinfo>
+			<r:setter property="Text">(ExecutionRow.IsOriginalPriceNull()) ? 0 :  ExecutionRow.OriginalPrice</r:setter>
+		  </xs:appinfo>
+		</xs:annotation>
+	  </xs:element>
+	  <!--OriginalQuantity-->
+	  <xs:element  name="OriginalQuantity" type="mstns:OriginalQuantity">
+		<xs:annotation>
+		  <xs:appinfo>
+			<r:setter property="Text">
+			  (ExecutionRow.IsOriginalQuantityNull()) ? 0 :  ExecutionRow.OriginalQuantity</r:setter>
+		  </xs:appinfo>
+		</xs:annotation>
+	  </xs:element>
+	  <!--SourceStateCode-->
+	  <xs:element  name="SourceStateCode" type="mstns:SourceStateCode">
+		<xs:annotation>
+		  <xs:appinfo>
+			<r:setter property="Text">ExecutionRow.SourceStateCode</r:setter>
+		  </xs:appinfo>
+		</xs:annotation>
+	  </xs:element>
+	  <!--UserFee0-->
+	  <xs:element  name="UserFee0" type="mstns:UserFee0">
+		<xs:annotation>
+		  <xs:appinfo>
+			<r:setter property="Text">ExecutionRow.AccruedInterest</r:setter>
+		  </xs:appinfo>
+		</xs:annotation>
+	  </xs:element>
+	  <!--UserFee1-->
+	  <xs:element  name="UserFee1" type="mstns:UserFee1">
+		<xs:annotation>
+		  <xs:appinfo>
+			<r:setter property="Text">ExecutionRow.UserFee1</r:setter>
+		  </xs:appinfo>
+		</xs:annotation>
+	  </xs:element>
+	  <!--UserFee2-->
+	  <xs:element  name="UserFee2" type="mstns:UserFee2">
+		<xs:annotation>
+		  <xs:appinfo>
+			<r:setter property="Text">ExecutionRow.UserFee2</r:setter>
+		  </xs:appinfo>
+		</xs:annotation>
+	  </xs:element>
+		<!--UserFee3-->
+		<xs:element  name="UserFee3" type="mstns:UserFee3">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="Text">ExecutionRow.UserFee3</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element>
+	  </xs:sequence>
+	</xs:complexType>
+  </xs:schema>
+  

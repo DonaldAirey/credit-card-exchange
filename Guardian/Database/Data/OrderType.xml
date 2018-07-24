@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="OrderType">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <transaction>
+    <method name="CreateOrderTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Market" />
+      <parameter name="externalId0" value="MKT" />
+      <parameter name="mnemonic" value="MKT" />
+      <parameter name="orderTypeCode" value="Market" />
+    </method>
+    <method name="CreateOrderTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Limit" />
+      <parameter name="externalId0" value="LMT" />
+      <parameter name="mnemonic" value="LMT" />
+      <parameter name="orderTypeCode" value="Limit" />
+    </method>
+    <method name="CreateOrderTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Stop Loss" />
+      <parameter name="externalId0" value="STP" />
+      <parameter name="mnemonic" value="STP" />
+      <parameter name="orderTypeCode" value="Stop" />
+    </method>
+    <method name="CreateOrderTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Stop Limit" />
+      <parameter name="externalId0" value="STPLMT" />
+      <parameter name="mnemonic" value="STPLMT" />
+      <parameter name="orderTypeCode" value="StopLimit" />
+    </method>
+  </transaction>
+</script>

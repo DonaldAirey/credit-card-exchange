@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<script name="Global Settlements Schedule">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+	<method name="CreateCommissionScheduleEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="Global Settlements SCHEDULE" />
+		<parameter name="name" value="Global Settlements Schedule" />
+	</method>
+	<method name="CreateCommissionTrancheEx" client="DataModelClient">
+		<parameter name="commissionScheduleKey" value="Global Settlements SCHEDULE" />
+		<parameter name="commissionTypeKey" value="PERCENT" />
+		<parameter name="commissionUnitKey" value="MARKET VALUE" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="Global Settlements TRANCHE 1" />
+		<parameter name="startRange" value="0" />
+		<parameter name="value" value="0.015" />
+	</method>
+	
+  <method name="CreateCommissionScheduleEx" client="DataModelClient"> 
+    <parameter name="configurationId"  value="Default" />
+    <parameter name="externalId0" value="Global Settlements ARCHIVE SCHEDULE" />
+    <parameter name="name" value="Global Settlement Archive Schedule" />
+  </method>
+  <method name="CreateCommissionTrancheEx" client="DataModelClient">
+    <parameter name="commissionScheduleKey" value="Global Settlements ARCHIVE SCHEDULE" />
+    <parameter name="commissionTypeKey" value="PERCENT" />
+    <parameter name="commissionUnitKey" value="MARKET VALUE" />
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="Global Settlements ARCHIVE TRANCHE 1" />
+    <parameter name="startRange" value="0" />
+    <parameter name="value" value="0.045" />
+  </method>
+  <method name="CreateCommissionScheduleEx" client="DataModelClient"> 
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="Global Settlements TEMP SCHEDULE" />
+    <parameter name="name" value="Global Settlements Temp Schedule" />
+  </method>
+  <method name="CreateCommissionTrancheEx" client="DataModelClient">
+    <parameter name="commissionScheduleKey" value="Global Settlements TEMP SCHEDULE" />
+    <parameter name="commissionTypeKey" value="PERCENT" />
+    <parameter name="commissionUnitKey" value="MARKET VALUE" />
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="Global Settlements TEMP TRANCHE 1" />
+    <parameter name="startRange" value="0" />
+    <parameter name="value" value="0.025" />
+  </method>
+  <method name="CreateCommissionScheduleEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="Global Settlements WORKING SCHEDULE" />
+    <parameter name="name" value="Global Settlements Working Schedule" />
+  </method>
+  <method name="CreateCommissionTrancheEx" client="DataModelClient">
+    <parameter name="commissionScheduleKey" value="Global Settlements WORKING SCHEDULE" />
+    <parameter name="commissionTypeKey" value="PERCENT" />
+    <parameter name="commissionUnitKey" value="MARKET VALUE" />
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="Global Settlements WORKING TRANCHE 1" />
+    <parameter name="startRange" value="0" />
+    <parameter name="value" value="0.035" />
+  </method>
+</script>

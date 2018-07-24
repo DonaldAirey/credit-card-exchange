@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="FluidTrade.Actipro.DialogDatePicker"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:FluidTrade.Actipro"
+             xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Luna"
+             xmlns:shared="http://schemas.actiprosoftware.com/winfx/xaml/shared">
+  <shared:DateTimePicker Name="picker"
+                         IsEditable="true"
+                         YearSelectionEnabled="true"
+                         ValueConverterParameter="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:DialogDatePicker}}, Path=Format}"
+                         Value="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:DialogDatePicker}}, Path=DateTime, Mode=TwoWay}"
+                         HorizontalAlignment="{Binding Path=HorizontalAlignment,RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:DialogDatePicker}}}"
+                         VerticalAlignment="{Binding Path=VerticalAlignment,RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:DialogDatePicker}}}"
+                         />
+</UserControl>

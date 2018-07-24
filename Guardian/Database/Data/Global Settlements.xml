@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<script name="Global Settlements">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+   <method name="CreateTenantEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="Global Settlements ORGANIZATION" />
+		<parameter name="name" value="Global Settlements" />
+  </method>
+  <method name="CreateTenantTreeEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="Global Settlements ORGANIZATION TREE"  />
+		<parameter name="tenantKeyByChildId" value="Global Settlements ORGANIZATION" />
+		<parameter name="tenantKeyByParentId" value="FLUID TRADE" />
+  </method>
+  <method name="CreateEntityEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+		<parameter name="createdTime" value="6/18/2009 4:41:46 PM" />
+    <parameter name="externalId0" value="Global Settlements" />
+    <parameter name="externalId7" value="Global Settlements" />
+    <parameter name="hidden" value="false" />
+    <parameter name="imageKey" value="DEBT NEGOTIATOR" />
+		<parameter name="modifiedTime" value="6/18/2009 4:41:46 PM" />
+    <parameter name="name" value="Global Settlements" />
+    <parameter name="readOnly" value="false" />
+	<parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+    <parameter name="typeKey" value="DEBT NEGOTIATOR" />
+  </method>
+  <method name="CreateBlotterEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="entityKey" value="Global Settlements" />
+    <parameter name="partyTypeKey" value="USE PARENT" />
+  </method>
+  <method name="CreateDebtClassEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="blotterKey" value="Global Settlements" />
+    <parameter name="debtRuleKey" value="Global Settlements DEFAULT" />
+    <parameter name="commissionScheduleKey" value="Global Settlements SCHEDULE" />
+    <parameter name="companyName" value="Global Settlements" />
+		<parameter name="contactName" value="Karen Holden" />
+		<parameter name="address1" value="237 Park Drive" />
+		<parameter name="address2" value="Suite 13" />
+		<parameter name="bankAccountNumber" value="89000466202" />
+		<parameter name="bankRoutingNumber" value="111000025" />
+		<parameter name="city" value="Salt Lake City" />
+		<parameter name="email" value="Karen.Holden@GlobalSettlements.com" />
+		<parameter name="fax" value="555-810-2268" />
+		<parameter name="phone" value="555-810-2212" />
+		<parameter name="provinceKey" value="UT" />
+		<parameter name="postalCode" value="84121" />
+  </method>
+  <method name="CreateDebtNegotiatorEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtClassKey" value="Global Settlements" />
+  </method>
+	<method name="CreateEntityTreeEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKeyByChildId" value="Global Settlements" />
+		<parameter name="entityKeyByParentId" value="ADMINISTRATOR FOLDER" />
+		<parameter name="externalId0" value="{3124796a-aaea-454a-86c6-0ed613994fbb}" />
+	</method>
+  <method name="CreateDebtRuleMapEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+		<parameter name="debtClassKey" value="Global Settlements" />
+    <parameter name="debtRuleKey" value="Global Settlements DEFAULT" />
+    <parameter name="externalId0" value="{f2f16780-6dc0-4b95-8e53-4c1dba160f2e}" />
+  </method>
+	<!-- Global Settlements administrators group -->
+	<method name="CreateEntityEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+			<parameter name="createdTime" value="6/18/2009 4:41:46 PM" />
+		<parameter name="description" value="Administrators have complete and unrestricted access to the system" />
+		<parameter name="externalId0" value="Global Settlements ADMINISTRATORS" />
+    <parameter name="externalId7" value="Global Settlements ADMINISTRATORS" />
+		<parameter name="hidden" value="false" />
+		<parameter name="imageKey" value="GROUP" />
+		<parameter name="modifiedTime" value="6/18/2009 4:41:46 PM" />
+		<parameter name="name" value="Administrators" />
+		<parameter name="readOnly" value="false" />
+		<parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+		<parameter name="typeKey" value="GROUP" />
+	</method>
+	<method name="CreateRightsHolderEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Global Settlements ADMINISTRATORS" />
+		<parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+	<method name="CreateGroupEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="groupTypeKey" value="SITE ADMIN" />
+		<parameter name="rightsHolderKey" value="Global Settlements ADMINISTRATORS" />
+    <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+	<!-- Global Settlements users group -->
+	<method name="CreateEntityEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="createdTime" value="6/18/2009 4:41:46 PM" />
+		<parameter name="description" value="Users are prevented from making accidental or intentional system-wide changes" />
+		<parameter name="externalId0" value="Global Settlements USERS" />
+    <parameter name="externalId7" value="Global Settlements USERS" />
+		<parameter name="hidden" value="false" />
+		<parameter name="imageKey" value="GROUP" />
+		<parameter name="modifiedTime" value="6/18/2009 4:41:46 PM" />
+		<parameter name="name" value="Users" />
+		<parameter name="readOnly" value="false" />
+			<parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+			<parameter name="typeKey" value="GROUP" />
+	</method>
+	<method name="CreateRightsHolderEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Global Settlements USERS" />
+		<parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+	<method name="CreateGroupEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="groupTypeKey" value="USER" />
+		<parameter name="rightsHolderKey" value="Global Settlements USERS" />
+    <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+	<transaction>
+		<method name="CreateBlotterConfigurationEx" client="DataModelClient">
+			<parameter name="externalId0" value="Global Settlements CREDIT CARD DETAIL" />
+			<parameter name="blotterKey" value="Global Settlements" />
+			<parameter name="configurationId" value="Default" />
+			<parameter name="reportKey" value="CREDIT CARD DETAIL REPORT" />
+			<parameter name="reportTypeKey" value="CREDIT CARD DETAIL" />
+		</method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements DESTINATION ORDER" />
+      <parameter name="blotterKey" value="Global Settlements" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="DESTINATION ORDER REPORT" />
+      <parameter name="reportTypeKey" value="DESTINATION ORDER" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">   
+      <parameter name="externalId0" value="Global Settlements DESTINATION ORDER DETAIL" />
+      <parameter name="blotterKey" value="Global Settlements" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="DESTINATION ORDER DETAIL REPORT" />
+      <parameter name="reportTypeKey" value="DESTINATION ORDER DETAIL" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements EXECUTION" />
+      <parameter name="blotterKey" value="Global Settlements" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="EXECUTION REPORT" />
+      <parameter name="reportTypeKey" value="EXECUTION" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements EXECUTION DETAIL" />
+      <parameter name="blotterKey" value="Global Settlements" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="EXECUTION DETAIL REPORT" />
+      <parameter name="reportTypeKey" value="EXECUTION DETAIL" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements MATCH" />
+      <parameter name="blotterKey" value="Global Settlements" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="CONSUMER TRUST MATCH REPORT" />
+      <parameter name="reportTypeKey" value="MATCH" />
+    </method>
+	  <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+		<parameter name="externalId0" value="Global Settlements PAYMENT SUMMARY" />
+		<parameter name="blotterKey" value="Global Settlements" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="reportKey" value="PAYMENT SUMMARY REPORT" />
+		<parameter name="reportTypeKey" value="PAYMENT SUMMARY" />
+	  </method>
+	<method name="CreateBlotterConfigurationEx" client="DataModelClient">
+	  <parameter name="externalId0" value="Global Settlements SETTLEMENT" />
+	  <parameter name="blotterKey" value="Global Settlements" />
+	  <parameter name="configurationId" value="Default" />
+	  <parameter name="reportKey" value="CONSUMER TRUST SETTLEMENT REPORT" />
+	  <parameter name="reportTypeKey" value="SETTLEMENT" />
+	</method>
+	<method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements SOURCE ORDER" />
+      <parameter name="blotterKey" value="Global Settlements" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="SOURCE ORDER REPORT" />
+      <parameter name="reportTypeKey" value="SOURCE ORDER" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements SOURCE ORDER DETAIL" />
+      <parameter name="blotterKey" value="Global Settlements" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="SOURCE ORDER DETAIL REPORT" />
+      <parameter name="reportTypeKey" value="SOURCE ORDER DETAIL" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements WORKING ORDER" />
+      <parameter name="blotterKey" value="Global Settlements" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="CONSUMER TRUST WORKING ORDER REPORT" />
+      <parameter name="reportTypeKey" value="WORKING ORDER" />
+    </method>
+  </transaction>
+	<!-- Give groups default rights to the organization -->
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Global Settlements" />
+		<parameter name="rightsHolderKey" value="FLUID TRADE ADMINISTRATORS" />
+    <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Global Settlements" />
+		<parameter name="rightsHolderKey" value="Global Settlements ADMINISTRATORS" />
+    <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="READ BROWSE" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Global Settlements" />
+		<parameter name="rightsHolderKey" value="Global Settlements USERS" />
+    <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+	<!-- Give groups default rights to the groups themselves -->
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Global Settlements ADMINISTRATORS" />
+		<parameter name="rightsHolderKey" value="FLUID TRADE ADMINISTRATORS" />
+    <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Global Settlements ADMINISTRATORS" />
+		<parameter name="rightsHolderKey" value="Global Settlements ADMINISTRATORS" />
+    <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="READ BROWSE" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Global Settlements ADMINISTRATORS" />
+		<parameter name="rightsHolderKey" value="Global Settlements USERS" />
+    <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Global Settlements USERS" />
+		<parameter name="rightsHolderKey" value="FLUID TRADE ADMINISTRATORS" />
+    <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Global Settlements USERS" />
+		<parameter name="rightsHolderKey" value="Global Settlements ADMINISTRATORS" />
+    <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="READ BROWSE" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Global Settlements USERS" />
+		<parameter name="rightsHolderKey" value="Global Settlements USERS" />
+    <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+</script>

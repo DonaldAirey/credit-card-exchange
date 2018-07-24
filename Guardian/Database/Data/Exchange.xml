@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="Exchange">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="AU" />
+    <parameter name="externalId0" value="SFE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="SFE" />
+    <parameter name="name" value="Sydney Futures Exchange Ltd" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="EU" />
+    <parameter name="externalId0" value="EASDAQ" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="EASDAQ" />
+    <parameter name="name" value="NASDAQ Europe" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="CA" />
+    <parameter name="externalId0" value="TSE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="TSE" />
+    <parameter name="name" value="Toronto Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="UK" />
+    <parameter name="externalId0" value="LSE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="LSE" />
+    <parameter name="name" value="London Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="CA" />
+    <parameter name="externalId0" value="ME" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="ME" />
+    <parameter name="name" value="Montreal Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="CA" />
+    <parameter name="externalId0" value="VSE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="VSE" />
+    <parameter name="name" value="Vancouver Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="CZ" />
+    <parameter name="externalId0" value="PSE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="PSE" />
+    <parameter name="name" value="Prague Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="DE" />
+    <parameter name="externalId0" value="XETRA" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="XETRA" />
+    <parameter name="name" value="German Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="DK" />
+    <parameter name="externalId0" value="XCSE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="XCSE" />
+    <parameter name="name" value="Copenhagen Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="ES" />
+    <parameter name="externalId0" value="MEFFRV" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="MEFFRV" />
+    <parameter name="name" value="Spanish Options Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="ES" />
+    <parameter name="externalId0" value="MEFF" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="MEFF" />
+    <parameter name="name" value="Spanish Financial Futures Market" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="SE" />
+    <parameter name="externalId0" value="HSE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="HSE" />
+    <parameter name="name" value="Helsinki Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="FI" />
+    <parameter name="externalId0" value="SOM" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="SOM" />
+    <parameter name="name" value="Finnish Options Market" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="FI" />
+    <parameter name="externalId0" value="FOEX" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="FOEX" />
+    <parameter name="name" value="Finnish Option Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="GR" />
+    <parameter name="externalId0" value="ASE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="ASE" />
+    <parameter name="name" value="Athens Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="HK" />
+    <parameter name="externalId0" value="SEHK" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="SEHK" />
+    <parameter name="name" value="Hong Kong Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="HK" />
+    <parameter name="externalId0" value="HKFE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="HKFE" />
+    <parameter name="name" value="Hong Kong Futures Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="IL" />
+    <parameter name="externalId0" value="TASE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="TASE" />
+    <parameter name="name" value="Tel-Aviv Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="JP" />
+    <parameter name="externalId0" value="TSE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="TSE" />
+    <parameter name="name" value="Tokyo Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="JP" />
+    <parameter name="externalId0" value="OSE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="OSE" />
+    <parameter name="name" value="Osaka Security Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="US" />
+    <parameter name="externalId0" value="OTC" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="OTC" />
+    <parameter name="name" value="Over the Counter" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="JP" />
+    <parameter name="externalId0" value="NSE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="NSE" />
+    <parameter name="name" value="Nagoya Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="KR" />
+    <parameter name="externalId0" value="KSE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="KSE" />
+    <parameter name="name" value="Korea Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="MX" />
+    <parameter name="externalId0" value="MEX" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="MEX" />
+    <parameter name="name" value="Mexican Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="NL" />
+    <parameter name="externalId0" value="AEX" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="AEX" />
+    <parameter name="name" value="Amsterdam Exchanges" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="NO" />
+    <parameter name="externalId0" value="OSE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="OSE" />
+    <parameter name="name" value="Oslo Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="NZ" />
+    <parameter name="externalId0" value="NZSE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="NZSE" />
+    <parameter name="name" value="New Zealand Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="NZ" />
+    <parameter name="externalId0" value="NZFOE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="NZFOE" />
+    <parameter name="name" value="New Zealand Futures &amp; Options Exchange Ltd" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="PE" />
+    <parameter name="externalId0" value="BVL" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="BVL" />
+    <parameter name="name" value="Lima Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="PL" />
+    <parameter name="externalId0" value="WSE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="WSE" />
+    <parameter name="name" value="Warsaw Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="PT" />
+    <parameter name="externalId0" value="BVL" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="BVL" />
+    <parameter name="name" value="Lisbon Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="NO" />
+    <parameter name="externalId0" value="XSSE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="XSSE" />
+    <parameter name="name" value="Stockholm Stock Exchange Ltd" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="SG" />
+    <parameter name="externalId0" value="SIMEX" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="SIMEX" />
+    <parameter name="name" value="Singapore International Monetary Exchange Ltd" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="SG" />
+    <parameter name="externalId0" value="SES" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="SES" />
+    <parameter name="name" value="Stock Exchange of Singapore Ltd" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="TH" />
+    <parameter name="externalId0" value="SET" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="SET" />
+    <parameter name="name" value="The Stock Exchange of Thailand" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="TR" />
+    <parameter name="externalId0" value="ISE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="ISE" />
+    <parameter name="name" value="Istanbul Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="TW" />
+    <parameter name="externalId0" value="TSE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="TSE" />
+    <parameter name="name" value="Taiwan Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="US" />
+    <parameter name="externalId0" value="KCBT" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="KCBT" />
+    <parameter name="name" value="Kansas City Board of Trade" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="US" />
+    <parameter name="externalId0" value="CBOE" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="CBOE" />
+    <parameter name="name" value="Chicago Board Options Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="US" />
+    <parameter name="externalId0" value="CBOT" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="CBOT" />
+    <parameter name="name" value="Chicago Board of Trade" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="US" />
+    <parameter name="externalId0" value="CME" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="CME" />
+    <parameter name="name" value="Chicago Mercantile Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="US" />
+    <parameter name="externalId0" value="BSE" />
+    <parameter name="isListed" value="true" />
+    <parameter name="mnemonic" value="BSE" />
+    <parameter name="name" value="Boston Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="US" />
+    <parameter name="externalId0" value="CSE" />
+    <parameter name="isListed" value="true" />
+    <parameter name="mnemonic" value="CSE" />
+    <parameter name="name" value="Chicago Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="US" />
+    <parameter name="externalId0" value="PHLX" />
+    <parameter name="isListed" value="true" />
+    <parameter name="mnemonic" value="PHLX" />
+    <parameter name="name" value="Philadephia Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="US" />
+    <parameter name="externalId0" value="NYSE" />
+    <parameter name="isListed" value="true" />
+    <parameter name="mnemonic" value="NYSE" />
+    <parameter name="name" value="New York Stock Exchange" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="US" />
+    <parameter name="externalId0" value="NASDAQ" />
+    <parameter name="isListed" value="false" />
+    <parameter name="mnemonic" value="NASDAQ" />
+    <parameter name="name" value="The NASDAQ Stock Market" />
+  </method>
+  <method name="CreateExchangeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="countryKey" value="US" />
+    <parameter name="externalId0" value="AMEX" />
+    <parameter name="isListed" value="true" />
+    <parameter name="mnemonic" value="AMEX" />
+    <parameter name="name" value="American Stock Exchange" />
+  </method>
+</script>

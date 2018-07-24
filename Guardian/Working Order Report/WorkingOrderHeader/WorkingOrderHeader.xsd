@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PrototypeView"
+           targetNamespace="urn:schemas-fluidtrade-com:guardian:working-order-header"
+           xmlns:mstns="urn:schemas-fluidtrade-com:guardian:working-order-header"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:r="urn:schemas-fluidtrade-com:report"
+           xmlns:wo="urn:schemas-fluidtrade-com:guardian:working-order">
+  <xs:annotation>
+    <xs:appinfo>
+      <r:generatedCode destinationNamespace="FluidTrade.Guardian.Schema.ConsumerTrustWorkingOrderHeader" />
+    </xs:appinfo>
+  </xs:annotation>
+  <!-- Imports -->
+  <xs:import namespace="urn:schemas-fluidtrade-com:guardian:working-order"
+             schemaLocation="..\WorkingOrder\WorkingOrder.xsd" />
+  <xs:complexType name="SavingsBalance" />
+  <xs:complexType name="Address1" />
+  <xs:complexType name="Address2" />
+  <xs:complexType name="AskPrice" />
+  <xs:complexType name="AvailableQuantity" />
+  <xs:complexType name="BidPrice" />
+  <xs:complexType name="Blotter" />
+  <xs:complexType name="BrokerMatch" />
+  <xs:complexType name="City" />
+  <xs:complexType name="CollectionDate" />
+  <xs:complexType name="CreditCardIssuer" />
+  <xs:complexType name="OriginalAccountNumber" />
+  <xs:complexType name="Crossing" />
+  <xs:complexType name="CreatedBy" />
+  <xs:complexType name="CreatedTime" />
+  <xs:complexType name="Coupon" />
+  <xs:complexType name="DataArchiveId" />
+  <xs:complexType name="DateOfBirth" />
+  <xs:complexType name="DateOfDelinquency" />
+  <xs:complexType name="DestinationOrderQuantity" />
+  <xs:complexType name="ExecutionQuantity" />
+  <xs:complexType name="FirstName" />
+  <xs:complexType name="HedgeMatch" />
+  <xs:complexType name="InstitutionMatch" />
+  <xs:complexType name="InterestRate" />
+  <xs:complexType name="IsEmployed" />
+  <xs:complexType name="LastName" />
+  <xs:complexType name="LastPaidDate" />
+  <xs:complexType name="LastPrice" />
+  <xs:complexType name="LeavesQuantity" />
+  <xs:complexType name="PostalCode" />
+  <xs:complexType name="MarketValue" />
+  <xs:complexType name="MaturityDate" />
+  <xs:complexType name="ModifiedBy" />
+  <xs:complexType name="ModifiedTime" />
+  <xs:complexType name="OpenedDate" />
+  <xs:complexType name="OrderType" />
+  <xs:complexType name="AccountBalance" />
+  <xs:complexType name="Province" />
+  <xs:complexType name="SecurityName" />
+  <xs:complexType name="SecuritySymbol" />
+  <xs:complexType name="SellersAccountNumber" />
+  <xs:complexType name="SettlementDate" />
+  <xs:complexType name="Side" />
+  <xs:complexType name="SocialSecurityNumber" />
+  <xs:complexType name="SourceOrderQuantity" />
+  <xs:complexType name="Status" />
+  <xs:complexType name="TimeInForce" />
+  <xs:complexType name="TradeDate" />
+  <!-- Working Order Header -->
+  <xs:complexType name="WorkingOrderHeader">
+    <xs:annotation>
+      <xs:appinfo>
+        <r:constructor>
+          <r:arguments>
+            <r:argument type="System.Guid"
+                        name="guid" />
+          </r:arguments>
+          <r:setter property="key"
+                    value="guid" />
+        </r:constructor>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="SavingsBalance"
+                  type="mstns:SavingsBalance" />
+      <xs:element name="Address1"
+                  type="mstns:Address1" />
+      <xs:element name="Address2"
+                  type="mstns:Address2" />
+      <xs:element name="AskPrice"
+                  type="mstns:AskPrice" />
+      <xs:element name="AvailableQuantity"
+                  type="mstns:AvailableQuantity" />
+      <xs:element name="BidPrice"
+                  type="mstns:BidPrice" />
+      <xs:element name="Blotter"
+                  type="mstns:Blotter" />
+      <xs:element name="BrokerMatch"
+                  type="mstns:BrokerMatch" />
+      <xs:element name="City"
+                  type="mstns:City" />
+      <xs:element name="CollectionDate"
+                  type="mstns:CollectionDate" />
+      <xs:element name="Coupon"
+                  type="mstns:Coupon" />
+      <xs:element name="CreditCardIssuer"
+                  type="mstns:CreditCardIssuer" />
+      <xs:element name="OriginalAccountNumber"
+                  type="mstns:OriginalAccountNumber" />
+      <xs:element name="CreatedBy"
+                  type="mstns:CreatedBy" />
+      <xs:element name="CreatedTime"
+                  type="mstns:CreatedTime" />
+      <xs:element name="Crossing"
+                  type="mstns:Crossing" />
+      <xs:element name="DataArchiveId"
+                  type="mstns:DataArchiveId" />
+      <xs:element name="DateOfBirth"
+                  type="mstns:DateOfBirth" />
+      <xs:element name="DateOfDelinquency"
+                  type="mstns:DateOfDelinquency" />
+      <xs:element name="DestinationOrderQuantity"
+                  type="mstns:DestinationOrderQuantity" />
+      <xs:element name="ExecutionQuantity"
+                  type="mstns:ExecutionQuantity" />
+      <xs:element name="FirstName"
+                  type="mstns:FirstName" />
+      <xs:element name="HedgeMatch"
+                  type="mstns:HedgeMatch" />
+      <xs:element name="InstitutionMatch"
+                  type="mstns:InstitutionMatch" />
+      <xs:element name="InterestRate"
+                  type="mstns:InterestRate" />
+      <xs:element name="IsEmployed"
+                  type="mstns:IsEmployed" />
+      <xs:element name="LastName"
+                  type="mstns:LastName" />
+      <xs:element name="LastPaidDate"
+                  type="mstns:LastPaidDate" />
+      <xs:element name="LastPrice"
+                  type="mstns:LastPrice" />
+      <xs:element name="LeavesQuantity"
+                  type="mstns:LeavesQuantity" />
+      <xs:element name="PostalCode"
+                  type="mstns:PostalCode" />
+      <xs:element name="MarketValue"
+                  type="mstns:MarketValue" />
+      <xs:element name="MaturityDate"
+                  type="mstns:MaturityDate" />
+      <xs:element name="ModifiedBy"
+                  type="mstns:ModifiedBy" />
+      <xs:element name="ModifiedTime"
+                  type="mstns:ModifiedTime" />
+      <xs:element name="OpenedDate"
+                  type="mstns:OpenedDate" />
+      <xs:element name="OrderType"
+                  type="mstns:OrderType" />
+      <xs:element name="AccountBalance"
+                  type="mstns:AccountBalance" />
+      <xs:element name="Province"
+                  type="mstns:Province" />
+      <xs:element name="SecurityName"
+                  type="mstns:SecurityName" />
+      <xs:element name="SellersAccountNumber"
+                  type="mstns:SellersAccountNumber" />
+      <xs:element name="SecuritySymbol"
+                  type="mstns:SecuritySymbol" />
+      <xs:element name="SettlementDate"
+                  type="mstns:SettlementDate" />
+      <xs:element name="Side"
+                  type="mstns:Side" />
+      <xs:element name="SocialSecurityNumber"
+                  type="mstns:SocialSecurityNumber" />
+      <xs:element name="SourceOrderQuantity"
+                  type="mstns:SourceOrderQuantity" />
+      <xs:element name="Status"
+                  type="mstns:Status" />
+      <xs:element name="TimeInForce"
+                  type="mstns:TimeInForce" />
+      <xs:element name="TradeDate"
+                  type="mstns:TradeDate" />
+      <xs:element name="WorkingOrderList"
+                  type="wo:WorkingOrder"
+                  minOccurs="0"
+                  maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:where predicate="Prefilter"
+                     source="DataModel.WorkingOrder"
+                     sourceType="FluidTrade.Guardian.WorkingOrderRow" />
+            <r:select selector="Selector" />
+            <r:where predicate="Filter" />
+            <r:orderBy comparer="Comparer"
+                       keySelector="wo:WorkingOrder.SelectSelf"
+                       keyType="wo:WorkingOrder" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

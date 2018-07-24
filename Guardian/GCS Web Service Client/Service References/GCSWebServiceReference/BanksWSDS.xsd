@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://globalclientsolutions.com/WebServices/BanksWSDS.xsd" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns="http://globalclientsolutions.com/WebServices/BanksWSDS.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://globalclientsolutions.com/WebServices/BanksWSDS.xsd" id="BanksWSDS" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="BanksWSDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BANKS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ROUTING_NUMBER" type="xs:string" />
+              <xs:element msprop:typedName="BANK_NAME" minOccurs="0" name="CUSTOMER_NAME" type="xs:string" />
+              <xs:element minOccurs="0" name="ADDRESS" type="xs:string" />
+              <xs:element minOccurs="0" name="CITY" type="xs:string" />
+              <xs:element minOccurs="0" name="STATE" type="xs:string" />
+              <xs:element minOccurs="0" name="ZIPCODE" type="xs:string" />
+              <xs:element minOccurs="0" name="PHONE_NUMBER" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

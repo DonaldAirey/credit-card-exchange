@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<script name="Global Settlements Desk">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <transaction>
+    <method name="CreateEntityEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="createdTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="externalId0" value="Global Settlements ARCHIVE BLOTTER" />
+      <parameter name="externalId7" value="Global Settlements ARCHIVE BLOTTER" />
+      <parameter name="hidden" value="false" />
+      <parameter name="imageKey" value="BLOTTER" />
+      <parameter name="modifiedTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="name" value="Archive" />
+      <parameter name="readOnly" value="false" />
+      <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+      <parameter name="typeKey" value="DEBT NEGOTIATOR" />
+    </method>
+    <method name="CreateBlotterEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="entityKey" value="Global Settlements ARCHIVE BLOTTER" />
+      <parameter name="partyTypeKey" value="USE PARENT" />
+    </method>
+    <method name="CreateEntityTreeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="entityKeyByChildId" value="Global Settlements ARCHIVE BLOTTER" />
+      <parameter name="entityKeyByParentId" value="Global Settlements" />
+      <parameter name="externalId0" value="{ce0e606f-5fb4-49f0-a967-a384cd01ab22}" />
+    </method>
+    <method name="CreateDebtClassEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="blotterKey" value="Global Settlements ARCHIVE BLOTTER" />
+      <parameter name="debtRuleKey" value="Global Settlements ARCHIVE" />
+      <parameter name="commissionScheduleKey" value="Global Settlements ARCHIVE SCHEDULE" />
+      <parameter name="companyName" value="Global Settlements" />
+			<parameter name="department" value="Operations" />
+			<parameter name="forBenefitOf" value="" />
+			<parameter name="contactName" value="Karen Holden" />
+      <parameter name="address1" value="237 Park Drive" />
+      <parameter name="address2" value="Suite 13" />
+      <parameter name="bankAccountNumber" value="89000466202" />
+      <parameter name="bankRoutingNumber" value="111000025" />
+      <parameter name="city" value="Salt Lake City" />
+      <parameter name="email" value="Karen.Holden@GlobalSettlements.com" />
+      <parameter name="fax" value="555-810-2268" />
+      <parameter name="phone" value="555-810-2212" />
+      <parameter name="provinceKey" value="UT" />
+      <parameter name="postalCode" value="84121" />
+    </method>
+    <method name="CreateDebtNegotiatorEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="debtClassKey" value="Global Settlements ARCHIVE BLOTTER" />
+    </method>
+    <method name="CreateDebtRuleMapEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="debtClassKey" value="Global Settlements ARCHIVE BLOTTER" />
+      <parameter name="debtRuleKey" value="Global Settlements ARCHIVE" />
+      <parameter name="externalId0" value="{ef2f25c8-f648-4051-9eb5-fad7f8ae83d1}" />
+    </method>
+  </transaction>
+  <transaction>
+	<method name="CreateBlotterConfigurationEx" client="DataModelClient">
+	  <parameter name="externalId0" value="Global Settlements ARCHIVE CREDIT CARD DETAIL" />
+	  <parameter name="blotterKey" value="Global Settlements ARCHIVE BLOTTER" />
+	  <parameter name="configurationId" value="Default" />
+	  <parameter name="reportKey" value="CREDIT CARD DETAIL REPORT" />
+	  <parameter name="reportTypeKey" value="CREDIT CARD DETAIL" />
+	</method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements ARCHIVE DESTINATION ORDER" />
+      <parameter name="blotterKey" value="Global Settlements ARCHIVE BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="DESTINATION ORDER REPORT" />
+      <parameter name="reportTypeKey" value="DESTINATION ORDER" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements ARCHIVE DESTINATION ORDER DETAIL" />
+      <parameter name="blotterKey" value="Global Settlements ARCHIVE BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="DESTINATION ORDER DETAIL REPORT" />
+      <parameter name="reportTypeKey" value="DESTINATION ORDER DETAIL" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements ARCHIVE EXECUTION" />
+      <parameter name="blotterKey" value="Global Settlements ARCHIVE BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="EXECUTION REPORT" />
+      <parameter name="reportTypeKey" value="EXECUTION" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements ARCHIVE EXECUTION DETAIL" />
+      <parameter name="blotterKey" value="Global Settlements ARCHIVE BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="EXECUTION DETAIL REPORT" />
+      <parameter name="reportTypeKey" value="EXECUTION DETAIL" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements ARCHIVE MATCH" />
+      <parameter name="blotterKey" value="Global Settlements ARCHIVE BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="CONSUMER TRUST MATCH REPORT" />
+      <parameter name="reportTypeKey" value="MATCH" />
+    </method>
+	<method name="CreateBlotterConfigurationEx" client="DataModelClient">
+	  <parameter name="externalId0" value="Global Settlements ARCHIVE SETTLEMENT" />
+	  <parameter name="blotterKey" value="Global Settlements ARCHIVE BLOTTER" />
+	  <parameter name="configurationId" value="Default" />
+	  <parameter name="reportKey" value="CONSUMER TRUST SETTLEMENT REPORT" />
+	  <parameter name="reportTypeKey" value="SETTLEMENT" />
+	</method>	
+	<method name="CreateBlotterConfigurationEx" client="DataModelClient">
+	  <parameter name="externalId0" value="Global Settlements ARCHIVE PAYMENT SUMMARY" />
+	  <parameter name="blotterKey" value="Global Settlements ARCHIVE BLOTTER" />
+	  <parameter name="configurationId" value="Default" />
+	  <parameter name="reportKey" value="PAYMENT SUMMARY REPORT" />
+	  <parameter name="reportTypeKey" value="PAYMENT SUMMARY" />
+	</method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements ARCHIVE SOURCE ORDER" />
+      <parameter name="blotterKey" value="Global Settlements ARCHIVE BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="SOURCE ORDER REPORT" />
+      <parameter name="reportTypeKey" value="SOURCE ORDER" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements ARCHIVE SOURCE ORDER DETAIL" />
+      <parameter name="blotterKey" value="Global Settlements ARCHIVE BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="SOURCE ORDER DETAIL REPORT" />
+      <parameter name="reportTypeKey" value="SOURCE ORDER DETAIL" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements ARCHIVE WORKING ORDER" />
+      <parameter name="blotterKey" value="Global Settlements ARCHIVE BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="CONSUMER TRUST WORKING ORDER REPORT" />
+      <parameter name="reportTypeKey" value="WORKING ORDER" />
+    </method>
+  </transaction>
+  <transaction>
+    <method name="CreateEntityEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="createdTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="externalId0" value="Global Settlements WORKING BLOTTER" />
+      <parameter name="externalId7" value="Global Settlements WORKING BLOTTER" />
+      <parameter name="hidden" value="False" />
+      <parameter name="imageKey" value="BLOTTER" />
+      <parameter name="modifiedTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="name" value="Working" />
+      <parameter name="readOnly" value="False" />
+	  <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+      <parameter name="typeKey" value="DEBT NEGOTIATOR" />
+    </method>
+    <method name="CreateBlotterEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="entityKey" value="Global Settlements WORKING BLOTTER" />
+      <parameter name="partyTypeKey" value="USE PARENT" />
+    </method>
+    <method name="CreateEntityTreeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="entityKeyByChildId" value="Global Settlements WORKING BLOTTER" />
+      <parameter name="entityKeyByParentId" value="Global Settlements" />
+      <parameter name="externalId0" value="36f47517-84a2-4c79-8bc4-f15b8f37a16a" />
+    </method>
+    <method name="CreateDebtClassEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="blotterKey" value="Global Settlements WORKING BLOTTER" />
+      <parameter name="commissionScheduleKey" value="Global Settlements WORKING SCHEDULE" />
+      <parameter name="companyName" value="Global Settlements" />
+			<parameter name="department" value="Operations" />
+			<parameter name="forBenefitOf" value="" />
+			<parameter name="contactName" value="Karen Holden" />
+      <parameter name="address1" value="237 Park Drive" />
+      <parameter name="address2" value="Suite 13" />
+      <parameter name="bankAccountNumber" value="89000466202" />
+      <parameter name="bankRoutingNumber" value="111000025" />
+      <parameter name="city" value="Salt Lake City" />
+      <parameter name="email" value="Karen.Holden@GlobalSettlements.com" />
+      <parameter name="fax" value="555-810-2268" />
+      <parameter name="phone" value="555-810-2212" />
+      <parameter name="provinceKey" value="UT" />
+      <parameter name="postalCode" value="84121" />
+    </method>
+    <method name="CreateDebtNegotiatorEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="debtClassKey" value="Global Settlements WORKING BLOTTER" />
+    </method>
+  </transaction>
+  <transaction>
+	<method name="CreateBlotterConfigurationEx" client="DataModelClient">
+	  <parameter name="externalId0" value="Global Settlements WORKING CREDIT CARD DETAIL" />
+	  <parameter name="blotterKey" value="Global Settlements WORKING BLOTTER" />
+	  <parameter name="configurationId" value="Default" />
+	  <parameter name="reportKey" value="CREDIT CARD DETAIL REPORT" />
+	  <parameter name="reportTypeKey" value="CREDIT CARD DETAIL" />
+	</method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements WORKING DESTINATION ORDER" />
+      <parameter name="blotterKey" value="Global Settlements WORKING BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="DESTINATION ORDER REPORT" />
+      <parameter name="reportTypeKey" value="DESTINATION ORDER" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements WORKING DESTINATION ORDER DETAIL" />
+      <parameter name="blotterKey" value="Global Settlements WORKING BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="DESTINATION ORDER DETAIL REPORT" />
+      <parameter name="reportTypeKey" value="DESTINATION ORDER DETAIL" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements WORKING EXECUTION" />
+      <parameter name="blotterKey" value="Global Settlements WORKING BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="EXECUTION REPORT" />
+      <parameter name="reportTypeKey" value="EXECUTION" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements WORKING EXECUTION DETAIL" />
+      <parameter name="blotterKey" value="Global Settlements WORKING BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="EXECUTION DETAIL REPORT" />
+      <parameter name="reportTypeKey" value="EXECUTION DETAIL" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements WORKING MATCH" />
+      <parameter name="blotterKey" value="Global Settlements WORKING BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="CONSUMER TRUST MATCH REPORT" />
+      <parameter name="reportTypeKey" value="MATCH" />
+    </method>
+	<method name="CreateBlotterConfigurationEx" client="DataModelClient">
+	  <parameter name="externalId0" value="Global Settlements WORKING SETTLELEMENT" />
+	  <parameter name="blotterKey" value="Global Settlements WORKING BLOTTER" />
+	  <parameter name="configurationId" value="Default" />
+	  <parameter name="reportKey" value="CONSUMER TRUST SETTLEMENT REPORT" />
+	  <parameter name="reportTypeKey" value="SETTLEMENT" />
+	</method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements WORKING SOURCE ORDER" />
+      <parameter name="blotterKey" value="Global Settlements WORKING BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="SOURCE ORDER REPORT" />
+      <parameter name="reportTypeKey" value="SOURCE ORDER" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements WORKING SOURCE ORDER DETAIL" />
+      <parameter name="blotterKey" value="Global Settlements WORKING BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="SOURCE ORDER DETAIL REPORT" />
+      <parameter name="reportTypeKey" value="SOURCE ORDER DETAIL" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements WORKING WORKING ORDER" />
+      <parameter name="blotterKey" value="Global Settlements WORKING BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="CONSUMER TRUST WORKING ORDER REPORT" />
+      <parameter name="reportTypeKey" value="WORKING ORDER" />
+    </method>
+  </transaction>
+  <transaction>
+    <method name="CreateEntityEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="createdTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="externalId0" value="Global Settlements TEMP BLOTTER" />
+      <parameter name="externalId7" value="Global Settlements TEMP BLOTTER" />
+      <parameter name="hidden" value="false" />
+      <parameter name="imageKey" value="BLOTTER" />
+      <parameter name="modifiedTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="name" value="Temp" />
+      <parameter name="readOnly" value="false" />
+	  <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+      <parameter name="typeKey" value="DEBT NEGOTIATOR" />
+    </method>
+    <method name="CreateBlotterEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="entityKey" value="Global Settlements TEMP BLOTTER" />
+      <parameter name="partyTypeKey" value="USE PARENT" />
+    </method>
+    <method name="CreateEntityTreeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="entityKeyByChildId" value="Global Settlements TEMP BLOTTER" />
+      <parameter name="entityKeyByParentId" value="Global Settlements" />
+      <parameter name="externalId0" value="8916abc7-77ba-45b5-96e2-e7de43993320" />
+    </method>
+  <method name="CreateDebtClassEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="blotterKey" value="Global Settlements TEMP BLOTTER" />
+      <parameter name="debtRuleKey" value="Global Settlements TEMP" />
+      <parameter name="commissionScheduleKey" value="Global Settlements TEMP SCHEDULE" />
+      <parameter name="companyName" value="Global Settlements LLC" />
+			<parameter name="department" value="Operations" />
+			<parameter name="forBenefitOf" value="" />
+			<parameter name="contactName" value="Karen Holden" />
+      <parameter name="address1" value="237 Park Drive" />
+      <parameter name="address2" value="Suite 13" />
+      <parameter name="bankAccountNumber" value="89000466202" />
+      <parameter name="bankRoutingNumber" value="111000025" />
+      <parameter name="city" value="Salt Lake City" />
+      <parameter name="email" value="Karen.Holden@GlobalSettlements.com" />
+      <parameter name="fax" value="555-810-2268" />
+      <parameter name="phone" value="555-810-2212" />
+      <parameter name="provinceKey" value="UT" />
+      <parameter name="postalCode" value="84121" />
+    </method>
+    <method name="CreateDebtNegotiatorEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="debtClassKey" value="Global Settlements TEMP BLOTTER" />
+    </method>
+    <method name="CreateDebtRuleMapEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="debtClassKey" value="Global Settlements TEMP BLOTTER" />
+      <parameter name="debtRuleKey" value="Global Settlements TEMP" />
+      <parameter name="externalId0" value="{3961435c-1000-4933-8878-014c4aea5e73}" />
+    </method>
+  </transaction>
+  <transaction>
+	<method name="CreateBlotterConfigurationEx" client="DataModelClient">
+	  <parameter name="externalId0" value="Global Settlements TEMP CREDIT CARD DETAIL" />
+	  <parameter name="blotterKey" value="Global Settlements TEMP BLOTTER" />
+	  <parameter name="configurationId" value="Default" />
+	  <parameter name="reportKey" value="CREDIT CARD DETAIL REPORT" />
+	  <parameter name="reportTypeKey" value="CREDIT CARD DETAIL" />
+	</method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements TEMP DESTINATION ORDER" />
+      <parameter name="blotterKey" value="Global Settlements TEMP BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="DESTINATION ORDER REPORT" />
+      <parameter name="reportTypeKey" value="DESTINATION ORDER" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements TEMP DESTINATION ORDER DETAIL" />
+      <parameter name="blotterKey" value="Global Settlements TEMP BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="DESTINATION ORDER DETAIL REPORT" />
+      <parameter name="reportTypeKey" value="DESTINATION ORDER DETAIL" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements TEMP EXECUTION" />
+      <parameter name="blotterKey" value="Global Settlements TEMP BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="EXECUTION REPORT" />
+      <parameter name="reportTypeKey" value="EXECUTION" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements TEMP EXECUTION DETAIL" />
+      <parameter name="blotterKey" value="Global Settlements TEMP BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="EXECUTION DETAIL REPORT" />
+      <parameter name="reportTypeKey" value="EXECUTION DETAIL" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements TEMP MATCH" />
+      <parameter name="blotterKey" value="Global Settlements TEMP BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="CONSUMER TRUST MATCH REPORT" />
+      <parameter name="reportTypeKey" value="MATCH" />
+    </method>
+	<method name="CreateBlotterConfigurationEx" client="DataModelClient">
+	  <parameter name="externalId0" value="Global Settlements TEMP SETTLEMENT" />
+	  <parameter name="blotterKey" value="Global Settlements TEMP BLOTTER" />
+	  <parameter name="configurationId" value="Default" />
+	  <parameter name="reportKey" value="CONSUMER TRUST SETTLEMENT REPORT" />
+	  <parameter name="reportTypeKey" value="SETTLEMENT" />
+	</method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements TEMP SOURCE ORDER" />
+      <parameter name="blotterKey" value="Global Settlements TEMP BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="SOURCE ORDER REPORT" />
+      <parameter name="reportTypeKey" value="SOURCE ORDER" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements TEMP SOURCE ORDER DETAIL" />
+      <parameter name="blotterKey" value="Global Settlements TEMP BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="SOURCE ORDER DETAIL REPORT" />
+      <parameter name="reportTypeKey" value="SOURCE ORDER DETAIL" />
+    </method>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="Global Settlements TEMP WORKING ORDER" />
+      <parameter name="blotterKey" value="Global Settlements TEMP BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="CONSUMER TRUST WORKING ORDER REPORT" />
+      <parameter name="reportTypeKey" value="WORKING ORDER" />
+    </method>
+  </transaction>
+	<!-- Give groups default rights to the organization -->
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Global Settlements ARCHIVE BLOTTER" />
+		<parameter name="rightsHolderKey" value="FLUID TRADE ADMINISTRATORS" />
+    		<parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Global Settlements ARCHIVE BLOTTER" />
+		<parameter name="rightsHolderKey" value="Global Settlements ADMINISTRATORS" />
+    		<parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="READ WRITE BROWSE" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Global Settlements ARCHIVE BLOTTER" />
+		<parameter name="rightsHolderKey" value="Global Settlements USERS" />
+    		<parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+	<!-- Give groups default rights to the organization -->
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Global Settlements WORKING BLOTTER" />
+		<parameter name="rightsHolderKey" value="FLUID TRADE ADMINISTRATORS" />
+    		<parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Global Settlements WORKING BLOTTER" />
+		<parameter name="rightsHolderKey" value="Global Settlements ADMINISTRATORS" />
+		<parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="READ WRITE BROWSE" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Global Settlements WORKING BLOTTER" />
+		<parameter name="rightsHolderKey" value="Global Settlements USERS" />
+    		<parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+	<!-- Give groups default rights to the organization -->
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Global Settlements TEMP BLOTTER" />
+		<parameter name="rightsHolderKey" value="FLUID TRADE ADMINISTRATORS" />
+    <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Global Settlements TEMP BLOTTER" />
+		<parameter name="rightsHolderKey" value="Global Settlements ADMINISTRATORS" />
+    		<parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="READ WRITE BROWSE" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Global Settlements TEMP BLOTTER" />
+		<parameter name="rightsHolderKey" value="Global Settlements USERS" />
+    		<parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+</script>

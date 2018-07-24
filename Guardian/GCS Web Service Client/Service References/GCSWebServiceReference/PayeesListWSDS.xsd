@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/PayeesListWSDS.xsd" xmlns="http://tempuri.org/PayeesListWSDS.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/PayeesListWSDS.xsd" id="PayeesListWSDS" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="PayeesListWSDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PAYEES">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="PAYEE_ID" type="xs:decimal" />
+              <xs:element minOccurs="0" name="COMPANY_ID" type="xs:string" />
+              <xs:element minOccurs="0" name="DRC_PAYEE_ID" type="xs:string" />
+              <xs:element minOccurs="0" name="PAYEE_NAME" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

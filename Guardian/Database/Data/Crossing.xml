@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="Crossing">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <transaction>
+    <method name="CreateCrossingEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="The preference for crossing has not been set." />
+      <parameter name="externalId0" value="NONE" />
+      <parameter name="name" value="None" />
+      <parameter name="crossingCode" value="None" />
+    </method>
+    <method name="CreateCrossingEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="These orders are always in the matching box regardless of user preferences." />
+      <parameter name="externalId0" value="ALWAYS MATCH" />
+      <parameter name="name" value="Always Match" />
+      <parameter name="crossingCode" value="AlwaysMatch" />
+    </method>
+    <method name="CreateCrossingEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Defer to the user preferences for this order to decide when it is submitted to the matching box." />
+      <parameter name="externalId0" value="USE PREFERENCES" />
+      <parameter name="name" value="Use Preferences" />
+      <parameter name="crossingCode" value="UsePreferences" />
+    </method>
+    <method name="CreateCrossingEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="This order should never be placed in the matching box." />
+      <parameter name="externalId0" value="NEVER MATCH" />
+      <parameter name="name" value="Never Match" />
+      <parameter name="crossingCode" value="NeverMatch" />
+    </method>
+    <method name="CreateCrossingEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Used to modify orders when the user is away from their desk." />
+      <parameter name="externalId0" value="AWAY" />
+      <parameter name="name" value="Away" />
+      <parameter name="crossingCode" value="Away" />
+    </method>
+    <method name="CreateCrossingEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Route the order to a destination while using the matching box." />
+      <parameter name="externalId0" value="ROUTE" />
+      <parameter name="name" value="Route" />
+      <parameter name="crossingCode" value="RouteToDestination" />
+    </method>
+  </transaction>
+</script>

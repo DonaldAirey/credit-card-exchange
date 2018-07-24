@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+  <Product Codepage="1252"
+           Id="{394046DF-83D6-483E-BF51-76F9112BF1BF}"
+           Language="1033"
+           Manufacturer="Teraque Inc."
+           Name="Credit Card Exchange Web Service"
+           UpgradeCode="{8DCC6F13-D9EE-4A3D-AEA1-1F22569252CB}"
+           Version="1.0.0">
+    <Package Compressed="yes"
+             Description="Teraque's Credit Card Exchange Web Service Installer"
+             Id="*"
+             InstallScope="perMachine"
+             InstallerVersion="200"
+             Keywords="Installer"
+             Manufacturer="Teraque Inc."
+             Platform="x64"
+             SummaryCodepage='1252'/>
+    <Media Id="1"
+           Cabinet="CreditCardExchangeWebService.cab"
+           EmbedCab="yes"
+           DiskPrompt="DVD #1" />
+    <Property Id="DiskPrompt"
+              Value="Teraque Credit Card Exchange Web Service Installation [1]" />
+
+    <Icon Id="server.ico" SourceFile="Resources\Server.ico"/>
+    <Property Id="ARPPRODUCTICON" Value="server.ico" />
+    <Property Id="ARPNOMODIFY" Value="1" />
+    <PropertyRef Id="NETFRAMEWORK40FULLINSTALLROOTDIR64"/>
+
+    <!-- Target Directory Tree -->
+    <Directory Id="TARGETDIR"
+               Name="SourceDir">
+      <Directory Id="ProgramFiles64Folder">
+        <Directory Id="TeraqueFolder"
+                   Name="Teraque">
+          <Directory Id="CreditCardExchangeFolder"
+                     Name="Credit Card Exchange">
+            <Directory Id="DatabaseFolder"
+                       Name="Database">
+              <Directory Id="DataFolder"
+                         Name="Data"/>
+              <Directory Id="ReportsFolder"
+                         Name="Reports"/>
+              <Directory Id="DocumentsFolder"
+                         Name="Documents"/>
+              <Directory Id="ScriptsFolder"
+                         Name="Scripts"/>
+              <Directory Id="UnitTestFolder"
+                       Name="Unit Test"/>
+            </Directory>
+            <Directory Id="CertificateFolder"
+                       Name="Certificates"/>
+            <Directory Id="INSTALLFOLDER"
+                     Name="Web Service"/>
+          </Directory>
+        </Directory>
+      </Directory>
+      <Directory Id="NETFRAMEWORK40FULLINSTALLROOTDIR64"/>
+    </Directory>
+
+    <!-- Installation Folder -->
+    <DirectoryRef Id="INSTALLFOLDER">
+      <Component Id="EventLogComponent"
+                 Guid="{F5F30160-D2D4-436A-A961-1EB42B4F2EBD}"
+                 KeyPath="yes"
+                 Win64="yes">
+        <util:EventSource Log="Credit Card Exchange"
+                          Name="Web Service Host"
+                          EventMessageFile="[NETFRAMEWORK40FULLINSTALLROOTDIR64]EventLogMessages.dll"/>
+      </Component>
+      <Component Guid="{DA859C72-B58F-4418-AE7F-0DE10FAD8797}"
+                 Id="ScriptLoaderComponent"
+                 Win64="yes">
+        <File KeyPath="yes"
+              Name="FluidTrade.ScriptLoader.exe"
+              Source="..\..\Guardian\Script Loader\bin\$(var.Configuration)\FluidTrade.ScriptLoader.exe"/>
+        <File Name="FluidTrade.ClientDataModel.dll"
+              Source="..\..\Guardian\Script Loader\bin\$(var.Configuration)\FluidTrade.ClientDataModel.dll"/>
+        <File Name="FluidTrade.ScriptLoader.exe.config"
+              Source="..\..\Guardian\Script Loader\bin\$(var.Configuration)\FluidTrade.ScriptLoader.exe.config"/>
+      </Component>
+      <Component Id="WebServiceHostComponent"
+                 Guid="{519C16DE-1D1A-41AE-B575-24AA57546F55}"
+                 Win64="yes">
+        <File DiskId="1"
+              Id="WebServiceHost"
+              KeyPath="yes"
+              Name="Web Service Host.exe"
+              Source="..\..\Guardian\Web Service Host\bin\$(var.Configuration)\FluidTrade.WebServiceHost.exe"/>
+        <File Name="Web Service Host.exe.config"
+              Source="Web Service Host.exe.config"/>
+        <File Name="Aspose.Words.dll"
+              Source="..\..\Guardian\Web Service Host\bin\$(var.Configuration)\Aspose.Words.dll"/>
+        <File Name="FluidTrade.AdminSupport.dll"
+              Source="..\..\Guardian\Web Service Host\bin\$(var.Configuration)\FluidTrade.AdminSupport.dll"/>
+        <File Name="FluidTrade.ExpressionEvaluationLibrary.dll"
+              Source="..\..\Guardian\Web Service Host\bin\$(var.Configuration)\FluidTrade.ExpressionEvaluationLibrary.dll"/>
+        <File Name="FluidTrade.FixLibrary.dll"
+              Source="..\..\Guardian\Web Service Host\bin\$(var.Configuration)\FluidTrade.FixLibrary.dll"/>
+        <File Name="FluidTrade.FluidTradeLibrary.dll"
+              Source="..\..\Guardian\Web Service Host\bin\$(var.Configuration)\FluidTrade.FluidTradeLibrary.dll"/>
+        <File Name="FluidTrade.GuardianLibrary.dll"
+              Source="..\..\Guardian\Web Service Host\bin\$(var.Configuration)\FluidTrade.GuardianLibrary.dll"/>
+        <File Name="FluidTrade.MailMerge.dll"
+              Source="..\..\Guardian\Web Service Host\bin\$(var.Configuration)\FluidTrade.MailMerge.dll"/>
+        <File Name="FluidTrade.MessageLibrary.dll"
+              Source="..\..\Guardian\Web Service Host\bin\$(var.Configuration)\FluidTrade.MessageLibrary.dll"/>
+        <File Name="FluidTrade.ServerDataModel.dll"
+              Source="..\..\Guardian\Web Service Host\bin\$(var.Configuration)\FluidTrade.ServerDataModel.dll"/>
+        <File Name="FluidTrade.SettlementSupport.dll"
+              Source="..\..\Guardian\Web Service Host\bin\$(var.Configuration)\FluidTrade.SettlementSupport.dll"/>
+        <File Name="FluidTrade.TradingSupport.dll"
+              Source="..\..\Guardian\Web Service Host\bin\$(var.Configuration)\FluidTrade.TradingSupport.dll"/>
+        <ServiceInstall Id="ServiceInstaller"
+                        Type="ownProcess"
+                        Vital="yes"
+                        Name="GuardianWebService"
+                        DisplayName="Credit Card Exchange Web Service"
+                        Description="The Web Services for the Credit Card Exchange."
+                        Start="auto"
+                        Account="NT Authority\Network Service"
+                        ErrorControl="ignore"
+                        Interactive="no">
+        </ServiceInstall>
+        <ServiceControl Id="StartService"
+                        Start="install"
+                        Stop="both"
+                        Remove="uninstall"
+                        Name="GuardianWebService"
+                        Wait="yes" />
+      </Component>
+      <Component Id="InstallationScriptComponent"
+                 Guid="{E0F96472-16EE-415E-AD09-B9D2470CEE0D}"
+                 Win64="yes">
+        <File DiskId="1"
+              Id="ConfigureEnvironment"
+              Name="Configure Environment.ps1"
+              Source="Configure Environment.ps1"/>
+        <File DiskId="1"
+              Id="ImportCertificates"
+              Name="Import Certificates.ps1"
+              Source="Import Certificates.ps1"/>
+        <File DiskId="1"
+              Id="OpenFirewall"
+              Name="Open Firewall.ps1"
+              Source="Open Firewall.ps1"/>
+      </Component>
+    </DirectoryRef>
+
+    <!-- Certificates -->
+    <DirectoryRef Id="CertificateFolder">
+      <Component Guid="{D03DFB4E-CBD2-4ACC-B8BE-8F20AB20CE3A}"
+                 Id="CertificatesComponent"
+                 Win64="yes">
+        <File Name="Dark Bond CA.pfx"
+              Source="Certificates\Dark Bond CA.pfx"/>
+        <File Name="cce.darkbond.com.pfx"
+              Source="Certificates\cce.darkbond.com.pfx"/>
+      </Component>
+    </DirectoryRef>
+
+    <!-- Unit Test -->
+    <DirectoryRef Id="UnitTestFolder">
+      <Component Guid="{5B2B5408-0AF0-4382-9370-41530C2248BB}"
+               Id="UnitTestComponent"
+               Win64="yes">
+        <File Name="Consumer Debt.xml"
+              Source="..\..\Guardian\Database\Unit Test\Consumer Debt.xml"/>
+        <File Name="Consumer Trust.xml"
+              Source="..\..\Guardian\Database\Unit Test\Consumer Trust.xml"/>
+        <File Name="Consumer.xml"
+              Source="..\..\Guardian\Database\Unit Test\Consumer.xml"/>
+        <File Name="Credit Card.xml"
+              Source="..\..\Guardian\Database\Unit Test\Credit Card.xml"/>
+        <File Name="Global Settlements Orders.xml"
+              Source="..\..\Guardian\Database\Unit Test\Global Settlements Orders.xml"/>
+        <File Name="National Holdings Orders.xml"
+              Source="..\..\Guardian\Database\Unit Test\National Holdings Orders.xml"/>
+      </Component>
+    </DirectoryRef>
+
+    <!-- Documents -->
+    <DirectoryRef Id="DocumentsFolder">
+      <Component Guid="{05B96A51-3C2C-44A7-AAEC-1EE204122A86}"
+               Id="DocumentsComponent"
+               Win64="yes">
+        <File Name="National Holdings Settlement.docx"
+              Source="..\..\Guardian\Database\Documents\National Holdings Settlement.docx"/>
+      </Component>
+    </DirectoryRef>
+
+    <!-- Reports -->
+    <DirectoryRef Id="ReportsFolder">
+      <Component Guid="{501B8ED1-A81E-4D7B-8FFD-53E5EDB28458}"
+               Id="ReportsComponent"
+               Win64="yes">
+        <File Name="Allocation.xaml"
+              Source="..\..\Guardian\Database\Reports\Allocation.xaml"/>
+        <File Name="Alternate Debt Working Order.xaml"
+              Source="..\..\Guardian\Database\Reports\Alternate Debt Working Order.xaml"/>
+        <File Name="Classic Debt Working Order.xaml"
+              Source="..\..\Guardian\Database\Reports\Classic Debt Working Order.xaml"/>
+        <File Name="Consumer Debt Match.xaml"
+              Source="..\..\Guardian\Database\Reports\Consumer Debt Match.xaml"/>
+        <File Name="Consumer Debt Payment Summary.xaml"
+              Source="..\..\Guardian\Database\Reports\Consumer Debt Payment Summary.xaml"/>
+        <File Name="Consumer Debt Settlement.xaml"
+              Source="..\..\Guardian\Database\Reports\Consumer Debt Settlement.xaml"/>
+        <File Name="Consumer Debt Working Order.xaml"
+              Source="..\..\Guardian\Database\Reports\Consumer Debt Working Order.xaml"/>
+        <File Name="Consumer Trust Match.xaml"
+              Source="..\..\Guardian\Database\Reports\Consumer Trust Match.xaml"/>
+        <File Name="Consumer Trust Payment Summary.xaml"
+              Source="..\..\Guardian\Database\Reports\Consumer Trust Payment Summary.xaml"/>
+        <File Name="Consumer Trust Settlement.xaml"
+              Source="..\..\Guardian\Database\Reports\Consumer Trust Settlement.xaml"/>
+        <File Name="Consumer Trust Working Order.xaml"
+              Source="..\..\Guardian\Database\Reports\Consumer Trust Working Order.xaml"/>
+        <File Name="Credit Card Detail.xaml"
+              Source="..\..\Guardian\Database\Reports\Credit Card Detail.xaml"/>
+        <File Name="Debt Working Order.xaml"
+              Source="..\..\Guardian\Database\Reports\Debt Working Order.xaml"/>
+        <File Name="Destination Order Detail.xaml"
+              Source="..\..\Guardian\Database\Reports\Destination Order Detail.xaml"/>
+        <File Name="Destination Order.xaml"
+              Source="..\..\Guardian\Database\Reports\Destination Order.xaml"/>
+        <File Name="Equity Match.xaml"
+              Source="..\..\Guardian\Database\Reports\Equity Match.xaml"/>
+        <File Name="Equity Working Order.xaml"
+              Source="..\..\Guardian\Database\Reports\Equity Working Order.xaml"/>
+        <File Name="Execution Detail.xaml"
+              Source="..\..\Guardian\Database\Reports\Execution Detail.xaml"/>
+        <File Name="Execution.xaml"
+              Source="..\..\Guardian\Database\Reports\Execution.xaml"/>
+        <File Name="Quote.xaml"
+              Source="..\..\Guardian\Database\Reports\Quote.xaml"/>
+        <File Name="Settlement.xaml"
+              Source="..\..\Guardian\Database\Reports\Settlement.xaml"/>
+        <File Name="Source Order Detail.xaml"
+              Source="..\..\Guardian\Database\Reports\Source Order Detail.xaml"/>
+        <File Name="Source Order.xaml"
+              Source="..\..\Guardian\Database\Reports\Source Order.xaml"/>
+        <File Name="Working Order.xaml"
+              Source="..\..\Guardian\Database\Reports\Working Order.xaml"/>
+      </Component>
+    </DirectoryRef>
+
+    <!-- Data -->
+    <DirectoryRef Id="DataFolder">
+      <Component Guid="{273A18F2-600C-47DB-8842-A9409480BF3E}"
+                 Id="DataComponent"
+                 Win64="yes">
+        <File Name="AccessRight.xml"
+              Source="..\..\Guardian\Database\Data\AccessRight.xml"/>
+        <File Name="Administrator.xml"
+              Source="..\..\Guardian\Database\Data\Administrator.xml"/>
+        <File Name="AssetViewerTemplate.xml"
+              Source="..\..\Guardian\Database\Data\AssetViewerTemplate.xml"/>
+        <File Name="CommissionType.xml"
+              Source="..\..\Guardian\Database\Data\CommissionType.xml"/>
+        <File Name="CommissionUnit.xml"
+              Source="..\..\Guardian\Database\Data\CommissionUnit.xml"/>
+        <File Name="Condition.xml"
+              Source="..\..\Guardian\Database\Data\Condition.xml"/>
+        <File Name="Configuration.xml"
+              Source="..\..\Guardian\Database\Data\Configuration.xml"/>
+        <File Name="Country.xml"
+              Source="..\..\Guardian\Database\Data\Country.xml"/>
+        <File Name="Crossing Manager.xml"
+              Source="..\..\Guardian\Database\Data\Crossing Manager.xml"/>
+        <File Name="Crossing.xml"
+              Source="..\..\Guardian\Database\Data\Crossing.xml"/>
+        <File Name="Currency.xml"
+              Source="..\..\Guardian\Database\Data\Currency.xml"/>
+        <File Name="Exchange.xml"
+              Source="..\..\Guardian\Database\Data\Exchange.xml"/>
+        <File Name="Global Settlements Desk.xml"
+              Source="..\..\Guardian\Database\Data\Global Settlements Desk.xml"/>
+        <File Name="Global Settlements Folder.xml"
+              Source="..\..\Guardian\Database\Data\Global Settlements Folder.xml"/>
+        <File Name="Global Settlements Rule.xml"
+              Source="..\..\Guardian\Database\Data\Global Settlements Rule.xml"/>
+        <File Name="Global Settlements Schedule.xml"
+              Source="..\..\Guardian\Database\Data\Global Settlements Schedule.xml"/>
+        <File Name="Global Settlements User.xml"
+              Source="..\..\Guardian\Database\Data\Global Settlements User.xml"/>
+        <File Name="Global Settlements.xml"
+              Source="..\..\Guardian\Database\Data\Global Settlements.xml"/>
+        <File Name="GroupType.xml"
+              Source="..\..\Guardian\Database\Data\GroupType.xml"/>
+        <File Name="HolidayType.xml"
+              Source="..\..\Guardian\Database\Data\HolidayType.xml"/>
+        <File Name="Image.xml"
+              Source="..\..\Guardian\Database\Data\Image.xml"/>
+        <File Name="LotHandling.xml"
+              Source="..\..\Guardian\Database\Data\LotHandling.xml"/>
+        <File Name="National Holdings Desk.xml"
+              Source="..\..\Guardian\Database\Data\National Holdings Desk.xml"/>
+        <File Name="National Holdings Folder.xml"
+              Source="..\..\Guardian\Database\Data\National Holdings Folder.xml"/>
+        <File Name="National Holdings Rule.xml"
+              Source="..\..\Guardian\Database\Data\National Holdings Rule.xml"/>
+        <File Name="National Holdings Schedule.xml"
+              Source="..\..\Guardian\Database\Data\National Holdings Schedule.xml"/>
+        <File Name="National Holdings User.xml"
+              Source="..\..\Guardian\Database\Data\National Holdings User.xml"/>
+        <File Name="National Holdings.xml"
+              Source="..\..\Guardian\Database\Data\National Holdings.xml"/>
+        <File Name="OrderType.xml"
+              Source="..\..\Guardian\Database\Data\OrderType.xml"/>
+        <File Name="PartyType.xml"
+              Source="..\..\Guardian\Database\Data\PartyType.xml"/>
+        <File Name="PaymentMethodType.xml"
+              Source="..\..\Guardian\Database\Data\PaymentMethodType.xml"/>
+        <File Name="PositionType.xml"
+              Source="..\..\Guardian\Database\Data\PositionType.xml"/>
+        <File Name="Province.xml"
+              Source="..\..\Guardian\Database\Data\Province.xml"/>
+        <File Name="Report.xml"
+              Source="..\..\Guardian\Database\Data\Report.xml"/>
+        <File Name="ReportType.xml"
+              Source="..\..\Guardian\Database\Data\ReportType.xml"/>
+        <File Name="SettlementUnit.xml"
+              Source="..\..\Guardian\Database\Data\SettlementUnit.xml"/>
+        <File Name="Side.xml"
+              Source="..\..\Guardian\Database\Data\Side.xml"/>
+        <File Name="State.xml"
+              Source="..\..\Guardian\Database\Data\State.xml"/>
+        <File Name="Status.xml"
+              Source="..\..\Guardian\Database\Data\Status.xml"/>
+        <File Name="TimeInForce.xml"
+              Source="..\..\Guardian\Database\Data\TimeInForce.xml"/>
+        <File Name="TimeUnit.xml"
+              Source="..\..\Guardian\Database\Data\TimeUnit.xml"/>
+        <File Name="Type.xml"
+              Source="..\..\Guardian\Database\Data\Type.xml"/>
+        <File Name="TypeTree.xml"
+              Source="..\..\Guardian\Database\Data\TypeTree.xml"/>
+        <File Name="Volume Category.xml"
+              Source="..\..\Guardian\Database\Data\Volume Category.xml"/>
+        <File Name="Weekend.xml"
+              Source="..\..\Guardian\Database\Data\Weekend.xml"/>
+      </Component>
+    </DirectoryRef>
+
+    <!-- Srcipts -->
+    <DirectoryRef Id="ScriptsFolder">
+      <Component Guid="{541332FD-FFFB-4A2F-9DAA-5E2C0C237E1C}"
+               Id="ScriptsComponent"
+               Win64="yes">
+        <File Name="DataModel.sql"
+              Source="..\..\Guardian\Database\Scripts\DataModel.sql"/>
+        <File Name="Drop All.sql"
+              Source="..\..\Guardian\Database\Scripts\Drop All.sql"/>
+        <File Name="Install Data Model.ps1"
+              Source="..\..\Guardian\Database\Scripts\Install Data Model.ps1"/>
+        <File Name="Load Data Model.ps1"
+              Source="Load Data Model.ps1"/>
+      </Component>
+    </DirectoryRef>
+
+    <!-- Ensure that PowerShell is installed on the target machine and get the path. -->
+    <Property Id="POWERSHELLEXECUTABLE">
+      <RegistrySearch Id="PowerShellExecutable"
+                      Type="raw"
+                      Root="HKLM"
+                      Key="SOFTWARE\Microsoft\PowerShell\1\ShellIds\Microsoft.PowerShell"
+                      Name="Path" />
+    </Property>
+    <Condition Message="This application requires Windows PowerShell.">
+      <![CDATA[Installed OR POWERSHELLEXECUTABLE]]>
+    </Condition>
+
+    <!-- The script that will configure the environment for the server. -->
+    <SetProperty Id="InvokeConfigureEnvironment"
+                 Before="InvokeConfigureEnvironment"
+                 Sequence="execute"
+                 Value ="&quot;[POWERSHELLEXECUTABLE]&quot; -NoProfile -NonInteractive -InputFormat None -ExecutionPolicy Bypass -File &quot;[#ConfigureEnvironment]&quot;" />
+
+    <!-- This action will configure the environment for the server. -->
+    <CustomAction Id="InvokeConfigureEnvironment"
+                  BinaryKey="WixCA"
+                  DllEntry="CAQuietExec"
+                  Execute="deferred"
+                  Return="check"
+                  Impersonate="yes" />
+
+    <!-- Define when the custom actions are run. -->
+    <InstallExecuteSequence>
+      <Custom Action="InvokeConfigureEnvironment" After="InstallFiles">
+        <![CDATA[NOT Installed]]>
+      </Custom>
+    </InstallExecuteSequence>
+
+    <!-- The Complete set of features. -->
+    <Feature Id="Complete"
+             Title="Credit Card Exchange Server"
+             Description="The Multi-Tenant Web Server for the Credit Card Exchange."
+             Display="expand"
+             ConfigurableDirectory="INSTALLFOLDER"
+             Level="1">
+      <ComponentRef Id="EventLogComponent"/>
+      <ComponentRef Id="WebServiceHostComponent" />
+      <ComponentRef Id="ScriptLoaderComponent" />
+      <ComponentRef Id="InstallationScriptComponent" />
+      <ComponentRef Id="CertificatesComponent" />
+      <ComponentRef Id="UnitTestComponent" />
+      <ComponentRef Id="ReportsComponent" />
+      <ComponentRef Id="DocumentsComponent" />
+      <ComponentRef Id="DataComponent" />
+      <ComponentRef Id="ScriptsComponent" />
+    </Feature>
+
+    <WixVariable Id="WixUIBannerBmp" Value="Resources\Banner.bmp" />
+    <WixVariable Id="WixUIDialogBmp" Value="Resources\Welcome.bmp" />
+
+    <UI Id="WixUI_Minimal">
+      <TextStyle Id="WixUI_Font_Normal" FaceName="Tahoma" Size="8" />
+      <TextStyle Id="WixUI_Font_Bigger" FaceName="Tahoma" Size="12" />
+      <TextStyle Id="WixUI_Font_Title" FaceName="Tahoma" Size="9" Bold="yes" />
+
+      <Property Id="DefaultUIFont" Value="WixUI_Font_Normal" />
+      <Property Id="WixUI_Mode" Value="Minimal" />
+
+      <DialogRef Id="ErrorDlg" />
+      <DialogRef Id="FatalError" />
+      <DialogRef Id="FilesInUse" />
+      <DialogRef Id="MsiRMFilesInUse" />
+      <DialogRef Id="PrepareDlg" />
+      <DialogRef Id="ProgressDlg" />
+      <DialogRef Id="ResumeDlg" />
+      <DialogRef Id="UserExit" />
+      <DialogRef Id="WelcomeDlg" />
+
+      <Publish Dialog="WelcomeDlg" Control="Next" Event="NewDialog" Value="PrepareDlg">1</Publish>
+      <Publish Dialog="ExitDialog" Control="Finish" Event="EndDialog" Value="Return" Order="999">1</Publish>
+      <Publish Dialog="VerifyReadyDlg" Control="Back" Event="NewDialog" Value="MaintenanceTypeDlg">1</Publish>
+      <Publish Dialog="MaintenanceWelcomeDlg" Control="Next" Event="NewDialog" Value="MaintenanceTypeDlg">1</Publish>
+      <Publish Dialog="MaintenanceTypeDlg" Control="RepairButton" Event="NewDialog" Value="VerifyReadyDlg">1</Publish>
+      <Publish Dialog="MaintenanceTypeDlg" Control="RemoveButton" Event="NewDialog" Value="VerifyReadyDlg">1</Publish>
+      <Publish Dialog="MaintenanceTypeDlg" Control="Back" Event="NewDialog" Value="MaintenanceWelcomeDlg">1</Publish>
+    </UI>
+
+    <UIRef Id="WixUI_Common" />
+
+  </Product>
+
+</Wix>

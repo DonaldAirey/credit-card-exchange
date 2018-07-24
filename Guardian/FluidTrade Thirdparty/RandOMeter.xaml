@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="FluidTrade.Thirdparty.RandOMeter"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:shared="http://schemas.actiprosoftware.com/winfx/xaml/shared"
+    xmlns:gauge="http://schemas.actiprosoftware.com/winfx/xaml/gauge"
+    Height="45" Width="80"
+    Name="randOMeter">
+  <UserControl.Resources>
+    <RadialGradientBrush x:Key="capBrush" Center="0.5, 0.5">
+      <GradientStop Color="Orange" Offset="0.0"/>
+      <GradientStop Color="#9933" Offset="1.0"/>
+    </RadialGradientBrush>
+  </UserControl.Resources>
+  <gauge:CircularGauge Height="70" BackgroundType="None" RimType="None" RimBrush="{x:Null}" >
+    <gauge:CircularGauge.Scales>
+      <gauge:CircularScale Radius="27" Background="#66BB00" StartAngle="185" SweepAngle="170" ZIndex="-1" >
+        <gauge:CircularTickSet Minimum="0"
+                               Maximum="1">
+          <gauge:CircularTickSet.Pointers>
+            <gauge:CircularPointerNeedle NeedleType="PivotTeardrop" DampeningMaximumDuration="0"  Background="#AA2222" Value="{Binding Path=Percent,ElementName=randOMeter,Mode=OneWay}" />
+          </gauge:CircularTickSet.Pointers>
+        </gauge:CircularTickSet>
+      </gauge:CircularScale>
+      <gauge:CircularScale Radius="30" Background="{x:Null}" StartAngle="185" SweepAngle="165">
+        <gauge:CircularTickSet Minimum="0"
+                               Maximum="1">
+          <gauge:CircularTickSet.Ticks>
+            <gauge:CircularTickLabelCustom Value=".10"  Name="lowLabel"  Text="Less" FontSize="10" FontWeight="Bold" Foreground="Black" />
+            <gauge:CircularTickLabelCustom Value=".50"  Name="highLabel"  Text="More" FontSize="10" FontWeight="Bold" Foreground="Black" />
+            <gauge:CircularTickLabelCustom Value=".90" Name="ultraLabel"  Text="Ultra" FontSize="10" FontWeight="Bold" Foreground="Black" />
+          </gauge:CircularTickSet.Ticks>
+        </gauge:CircularTickSet>
+      </gauge:CircularScale>
+    </gauge:CircularGauge.Scales>
+    
+  </gauge:CircularGauge>
+</UserControl>

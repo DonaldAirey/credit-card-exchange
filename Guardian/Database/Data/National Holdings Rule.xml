@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<script name="National Holdings Rules">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <method name="CreateDebtRuleEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="National Holdings DEFAULT" />
+    <parameter name="isAutoSettled" value="false" />
+    <parameter name="name" value="Default" />
+    <parameter name="paymentLength" value="18" />
+		<parameter name="paymentStartDateLength" value="60" />
+		<parameter name="settlementUnitKey" value="PERCENT" />
+		<parameter name="settlementValue" value=".50" />
+		<parameter name="timeUnitKey" value="DAYS" />
+	</method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="National Holdings DEFAULT" />
+    <parameter name="paymentMethodTypeKey" value="ACH" />
+  </method>
+  <method name="CreateDebtRuleEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="National Holdings ARCHIVE" />
+    <parameter name="isAutoSettled" value="false" />
+    <parameter name="name" value="Archive" />
+    <parameter name="paymentLength" value="1" />
+    <parameter name="paymentStartDateLength" value="99" />
+		<parameter name="settlementUnitKey" value="PERCENT" />
+		<parameter name="settlementValue" value=".99" />
+		<parameter name="timeUnitKey" value="DAYS" />
+	</method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="National Holdings ARCHIVE" />
+    <parameter name="paymentMethodTypeKey" value="TRACKED" />
+  </method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="National Holdings ARCHIVE" />
+    <parameter name="paymentMethodTypeKey" value="OVERNITE CHECK" />
+  </method>
+  <method name="CreateDebtRuleEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="National Holdings WORKING" />
+    <parameter name="isAutoSettled" value="false" />
+    <parameter name="name" value="Post Charge Off" />
+    <parameter name="paymentLength" value="1" />
+    <parameter name="paymentMethod" value="0" />
+		<parameter name="paymentStartDateLength" value="5" />
+		<parameter name="settlementUnitKey" value="PERCENT" />
+		<parameter name="settlementValue" value=".50" />
+		<parameter name="timeUnitKey" value="DAYS" />
+	</method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="National Holdings WORKING" />
+    <parameter name="paymentMethodTypeKey" value="ACH" />
+  </method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="National Holdings WORKING" />
+    <parameter name="paymentMethodTypeKey" value="MANUAL CHECK" />
+  </method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="National Holdings WORKING" />
+    <parameter name="paymentMethodTypeKey" value="PHONE PAY" />
+  </method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="National Holdings WORKING" />
+    <parameter name="paymentMethodTypeKey" value="TRACKED" />
+  </method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="National Holdings WORKING" />
+    <parameter name="paymentMethodTypeKey" value="OVERNITE CHECK" />
+  </method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="National Holdings WORKING" />
+    <parameter name="paymentMethodTypeKey" value="WIRE TRANSFER" />
+  </method>  
+  
+  <method name="CreateDebtRuleEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="National Holdings TEMP" />
+    <parameter name="isAutoSettled" value="false" />
+    <parameter name="name" value="Default" />
+    <parameter name="paymentLength" value="1" />
+    <parameter name="paymentMethod" value="0" />
+		<parameter name="paymentStartDateLength" value="5" />
+		<parameter name="settlementUnitKey" value="PERCENT" />
+		<parameter name="settlementValue" value=".50" />
+		<parameter name="timeUnitKey" value="DAYS" />
+	</method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="National Holdings TEMP" />
+    <parameter name="paymentMethodTypeKey" value="ACH" />
+  </method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="National Holdings TEMP" />
+    <parameter name="paymentMethodTypeKey" value="MANUAL CHECK" />
+  </method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="National Holdings TEMP" />
+    <parameter name="paymentMethodTypeKey" value="PHONE PAY" />
+  </method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="National Holdings TEMP" />
+    <parameter name="paymentMethodTypeKey" value="TRACKED" />
+  </method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="National Holdings TEMP" />
+    <parameter name="paymentMethodTypeKey" value="OVERNITE CHECK" />
+  </method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="National Holdings TEMP" />
+    <parameter name="paymentMethodTypeKey" value="WIRE TRANSFER" />
+  </method>
+</script>

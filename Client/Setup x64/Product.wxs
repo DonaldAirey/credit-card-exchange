@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+  <Product Codepage="1252"
+           Id="{FD359363-7161-4516-B0BF-97380CB7C138}"
+           Language="1033"
+           Manufacturer="Teraque Inc."
+           Name="Credit Card Exchange Client"
+           UpgradeCode="{F3931E2A-FCED-4041-AB4E-65D8886FF696}"
+           Version="1.0.0">
+    <Package Compressed="yes"
+             Description="Teraque's Credit Card Exchange Client"
+             Id="*"
+             InstallScope="perMachine"
+             InstallerVersion="200"
+             Keywords="Installer"
+             Manufacturer="Teraque"
+             Platform="x64"
+             SummaryCodepage='1252'/>
+    <Media Id="1"
+           Cabinet="CreditCardExchangeClient.cab"
+           EmbedCab="yes"
+           DiskPrompt="DVD #1" />
+    <Property Id="DiskPrompt"
+              Value="Teraque Credit Card Exchange 1.0 Installation [1]" />
+
+    <Icon Id="creditcards.ico" SourceFile="Resources\creditcards.ico"/>
+    <Property Id="ARPPRODUCTICON" Value="creditcards.ico" />
+    <Property Id="ARPNOMODIFY" Value="1" />
+    <PropertyRef Id="NETFRAMEWORK40FULLINSTALLROOTDIR64"/>
+
+    <!-- Target Directory Tree -->
+    <Directory Id="TARGETDIR"
+               Name="SourceDir">
+      <Directory Id="DesktopFolder" Name="Desktop"/>
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ApplicationProgramsFolder" Name="Teraque Tools"/>
+      </Directory>
+      <Directory Id="ProgramFiles64Folder">
+        <Directory Id="TeraqueFolder"
+                   Name="Teraque">
+          <Directory Id="CreditCardExchangeFolder"
+                     Name="Credit Card Exchange">
+            <Directory Id="INSTALLFOLDER"
+                     Name="Client"/>
+          </Directory>
+        </Directory>
+      </Directory>
+    </Directory>
+
+    <!-- Start Menu Installation -->
+    <DirectoryRef Id="ApplicationProgramsFolder">
+      <Component Id="ApplicationShortcut" Guid="{F3931E2A-FCED-4041-AB4E-65D8886FF696}">
+        <Shortcut Id="ApplicationStartMenuShortcut"
+                  Name="Credit Card Exchange Client"
+                  Description="Credit Card Exchange Client"
+                  Target="[APPLICATIONROOTDIRECTORY]Client.exe"
+                  WorkingDirectory="APPLICATIONROOTDIRECTORY"/>
+        <RemoveFolder Id="ApplicationProgramsFolder"
+                      On="uninstall"/>
+        <RegistryValue Root="HKCU"
+                        Key="Software\Teraque\Credit Card Exchange"
+                        Name="installed"
+                        Type="integer"
+                        Value="1"
+                        KeyPath="yes"/>
+      </Component>
+    </DirectoryRef>
+
+    <!-- Installation Folder -->
+    <DirectoryRef Id="INSTALLFOLDER">
+      <Component Id="EventLogComponent"
+                 Guid="{516BE3F0-645C-427B-A238-ABBEA7256099}"
+                 KeyPath="yes"
+                 Win64="yes">
+        <util:EventSource Log="Credit Card Exchange"
+                          Name="Client"
+                          EventMessageFile="[NETFRAMEWORK40FULLINSTALLROOTDIR64]EventLogMessages.dll"/>
+      </Component>
+      <Component Id="ClientComponent"
+                 Guid="{EB60F1CA-2384-44E9-81BF-8441B7A4FC50}"
+                 Win64="yes">
+        <File KeyPath="yes"
+              Name="DebtTrak.Client.exe"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\DebtTrak.Client.exe">
+          <Shortcut Advertise="yes"
+                    Id="MyProductDesktopShortcut"
+                    Directory="DesktopFolder"
+                    Name="Credit Card Exchange"
+                    WorkingDirectory="INSTALLLOCATION"
+                    Description="Credit Card Exchange"
+                    Icon="ClientIcon.exe">
+            <Icon Id="ClientIcon.exe" SourceFile="..\..\Guardian\Client\bin\$(var.Configuration)\DebtTrak.Client.exe" />
+          </Shortcut>
+        </File>
+        <File Name="Bindings.config"
+            Source="Bindings.config"/>
+        <File Name="DebtTrak.Client.exe.config"
+            Source="DebtTrak.Client.exe.config"/>
+        <File Name="ActiproSoftware.BarCode.Wpf30.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\ActiproSoftware.BarCode.Wpf30.dll"/>
+        <File Name="ActiproSoftware.Docking.Wpf30.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\ActiproSoftware.Docking.Wpf30.dll"/>
+        <File Name="ActiproSoftware.Editors.Wpf30.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\ActiproSoftware.Editors.Wpf30.dll"/>
+        <File Name="ActiproSoftware.Gauge.Wpf30.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\ActiproSoftware.Gauge.Wpf30.dll"/>
+        <File Name="ActiproSoftware.Navigation.Wpf30.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\ActiproSoftware.Navigation.Wpf30.dll"/>
+        <File Name="ActiproSoftware.PropertyGrid.Wpf30.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\ActiproSoftware.PropertyGrid.Wpf30.dll"/>
+        <File Name="ActiproSoftware.Ribbon.Wpf30.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\ActiproSoftware.Ribbon.Wpf30.dll"/>
+        <File Name="ActiproSoftware.Shared.Wpf30.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\ActiproSoftware.Shared.Wpf30.dll"/>
+        <File Name="FluidTrade.ActiproLibrary.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.ActiproLibrary.dll"/>
+        <File Name="FluidTrade.AdditionalLibraries.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.AdditionalLibraries.dll"/>
+        <File Name="FluidTrade.BlotterDetailReport.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.BlotterDetailReport.dll"/>
+        <File Name="FluidTrade.BlotterViewer.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.BlotterViewer.dll"/>
+        <File Name="FluidTrade.ClientDataModel.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.ClientDataModel.dll"/>
+        <File Name="FluidTrade.ClientTradingSupport.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.ClientTradingSupport.dll"/>
+        <File Name="FluidTrade.DebtBlotterViewer.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.DebtBlotterViewer.dll"/>
+        <File Name="FluidTrade.DebtHolderBlotterViewer.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.DebtHolderBlotterViewer.dll"/>
+        <File Name="FluidTrade.DebtHolderMatchReport.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.DebtHolderMatchReport.dll"/>
+        <File Name="FluidTrade.DebtHolderNegotiationConsole.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.DebtHolderNegotiationConsole.dll"/>
+        <File Name="FluidTrade.DebtHolderSettlementReport.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.DebtHolderSettlementReport.dll"/>
+        <File Name="FluidTrade.DebtHolderWorkingOrderReport.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.DebtHolderWorkingOrderReport.dll"/>
+        <File Name="FluidTrade.DebtNegotiatorBlotterViewer.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.DebtNegotiatorBlotterViewer.dll"/>
+        <File Name="FluidTrade.DebtNegotiatorMatchReport.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.DebtNegotiatorMatchReport.dll"/>
+        <File Name="FluidTrade.DebtNegotiatorNegotiationConsole.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.DebtNegotiatorNegotiationConsole.dll"/>
+        <File Name="FluidTrade.DebtNegotiatorSettlementReport.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.DebtNegotiatorSettlementReport.dll"/>
+        <File Name="FluidTrade.DebtNegotiatorWorkingOrderReport.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.DebtNegotiatorWorkingOrderReport.dll"/>
+        <File Name="FluidTrade.DebtPaymentReports.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.DebtPaymentReports.dll"/>
+        <File Name="FluidTrade.DebtWorkingOrderReport.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.DebtWorkingOrderReport.dll"/>
+        <File Name="FluidTrade.DestinationOrderReport.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.DestinationOrderReport.dll"/>
+        <File Name="FluidTrade.DetailReports.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.DetailReports.dll"/>
+        <File Name="FluidTrade.EquityBlotterViewer.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.EquityBlotterViewer.dll"/>
+        <File Name="FluidTrade.EquityWorkingOrderReport.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.EquityWorkingOrderReport.dll"/>
+        <File Name="FluidTrade.ExecutionReport.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.ExecutionReport.dll"/>
+        <File Name="FluidTrade.FluidTradeLibrary.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.FluidTradeLibrary.dll"/>
+        <File Name="FluidTrade.FluidTradeWindows.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.FluidTradeWindows.dll"/>
+        <File Name="FluidTrade.FolderViewer.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.FolderViewer.dll"/>
+        <File Name="FluidTrade.GuardianLibrary.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.GuardianLibrary.dll"/>
+        <File Name="FluidTrade.GuardianWindows.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.GuardianWindows.dll"/>
+        <File Name="FluidTrade.MatchReport.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.MatchReport.dll"/>
+        <File Name="FluidTrade.MessageLibrary.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.MessageLibrary.dll"/>
+        <File Name="FluidTrade.NegotiationConsole.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.NegotiationConsole.dll"/>
+        <File Name="FluidTrade.NegotiationService.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.NegotiationService.dll"/>
+        <File Name="FluidTrade.PdfControl.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.PdfControl.dll"/>
+        <File Name="FluidTrade.SettlementReport.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.SettlementReport.dll"/>
+        <File Name="FluidTrade.SourceOrderReport.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.SourceOrderReport.dll"/>
+        <File Name="FluidTrade.Thirdparty.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.Thirdparty.dll"/>
+        <File Name="FluidTrade.WorkingOrderReport.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\FluidTrade.WorkingOrderReport.dll"/>
+        <File Name="O2S.Components.PDF4NET.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\O2S.Components.PDF4NET.dll"/>
+        <File Name="O2S.Components.PDFRender4NET.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\O2S.Components.PDFRender4NET.dll"/>
+        <File Name="O2S.Components.PDFView4NET.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\O2S.Components.PDFView4NET.dll"/>
+        <File Name="PresentationFramework.Aero.dll"
+              Source="..\..\Guardian\Client\bin\$(var.Configuration)\PresentationFramework.Aero.dll"/>
+      </Component>
+    </DirectoryRef>
+
+    <!-- The Complete set of features. -->
+    <Feature Id="Complete"
+             Title="Credit Card Exchange"
+             Description="The Client for the Credit Card Exchange."
+             Display="expand"
+             ConfigurableDirectory="INSTALLFOLDER"
+             Level="1">
+      <ComponentRef Id="ApplicationShortcut" />
+      <ComponentRef Id="EventLogComponent"/>
+      <ComponentRef Id="ClientComponent" />
+    </Feature>
+
+    <WixVariable Id="WixUIBannerBmp" Value="Resources\Banner.png" />
+    <WixVariable Id="WixUIDialogBmp" Value="Resources\Welcome.png" />
+
+    <UI Id="WixUI_Minimal">
+      <TextStyle Id="WixUI_Font_Normal" FaceName="Tahoma" Size="8" />
+      <TextStyle Id="WixUI_Font_Bigger" FaceName="Tahoma" Size="12" />
+      <TextStyle Id="WixUI_Font_Title" FaceName="Tahoma" Size="9" Bold="yes" />
+
+      <Property Id="DefaultUIFont" Value="WixUI_Font_Normal" />
+      <Property Id="WixUI_Mode" Value="Minimal" />
+
+      <DialogRef Id="ErrorDlg" />
+      <DialogRef Id="FatalError" />
+      <DialogRef Id="FilesInUse" />
+      <DialogRef Id="MsiRMFilesInUse" />
+      <DialogRef Id="PrepareDlg" />
+      <DialogRef Id="ProgressDlg" />
+      <DialogRef Id="ResumeDlg" />
+      <DialogRef Id="UserExit" />
+      <DialogRef Id="WelcomeDlg" />
+
+      <Publish Dialog="WelcomeDlg" Control="Next" Event="NewDialog" Value="PrepareDlg">1</Publish>
+      <Publish Dialog="ExitDialog" Control="Finish" Event="EndDialog" Value="Return" Order="999">1</Publish>
+      <Publish Dialog="VerifyReadyDlg" Control="Back" Event="NewDialog" Value="MaintenanceTypeDlg">1</Publish>
+      <Publish Dialog="MaintenanceWelcomeDlg" Control="Next" Event="NewDialog" Value="MaintenanceTypeDlg">1</Publish>
+      <Publish Dialog="MaintenanceTypeDlg" Control="RepairButton" Event="NewDialog" Value="VerifyReadyDlg">1</Publish>
+      <Publish Dialog="MaintenanceTypeDlg" Control="RemoveButton" Event="NewDialog" Value="VerifyReadyDlg">1</Publish>
+      <Publish Dialog="MaintenanceTypeDlg" Control="Back" Event="NewDialog" Value="MaintenanceWelcomeDlg">1</Publish>
+    </UI>
+
+    <UIRef Id="WixUI_Common" />
+
+  </Product>
+
+</Wix>

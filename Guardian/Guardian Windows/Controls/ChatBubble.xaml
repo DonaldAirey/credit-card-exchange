@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="FluidTrade.Guardian.Windows.Controls.ChatBubble"
+    Name="thisControl"         
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:FluidTrade.Guardian.Windows.Controls"
+    Height="Auto" Width="Auto" Margin="5" SizeChanged="UserControl_SizeChanged" Background="Transparent">
+
+    <UserControl.Resources>
+
+        <!-- Converters -->
+        <local:ConvertPartyToJustification
+            x:Key="partyToJustificationConverter" />
+        <local:ConvertPartyToChatParty
+            x:Key="partyConverter" />
+        
+    </UserControl.Resources>
+
+    <Grid Name="gridMain" HorizontalAlignment="{Binding ElementName=thisControl, Path=ChatObject.Source, Converter={StaticResource partyToJustificationConverter}}" ClipToBounds="True" Background="Transparent">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <local:BalloonDecorator
+														 Grid.Column="1"
+														 Margin="5"
+                                                         Width="auto" Height="auto"
+                                                         ChatParty="{Binding ElementName=thisControl, Path=ChatObject.Source, Converter={StaticResource partyConverter}}" Background="Transparent">
+            <TextBlock Margin="10,5,10,5" 
+                       Text="{Binding ElementName=thisControl, Path=ChatObject.Message}"
+                       TextWrapping="Wrap"
+                       FontWeight="Bold"
+                       MaxWidth="{Binding ElementName=thisControl, Path=LimitWidth, Mode=OneWay}"
+                       />
+        </local:BalloonDecorator>
+
+    </Grid>
+</UserControl>

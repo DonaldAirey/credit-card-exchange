@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="31c3772a-46c2-4b45-aa89-3c7506a109d1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/Guardian/Trading Support?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Trading Support.xsd" MetadataType="Schema" ID="a272ae76-1e16-4cc3-bd3c-1ecaa531753f" SourceId="1" SourceUrl="http://localhost/Guardian/Trading Support?xsd=xsd5" />
+    <MetadataFile FileName="Trading Support1.xsd" MetadataType="Schema" ID="0e200b6f-c789-4f64-9c98-22e48b30fa2b" SourceId="1" SourceUrl="http://localhost/Guardian/Trading Support?xsd=xsd0" />
+    <MetadataFile FileName="Trading Support2.xsd" MetadataType="Schema" ID="d5d88d29-eba4-4d62-8bab-ac6476117f3c" SourceId="1" SourceUrl="http://localhost/Guardian/Trading Support?xsd=xsd2" />
+    <MetadataFile FileName="Trading Support3.xsd" MetadataType="Schema" ID="b235f261-10d8-46d7-8a1e-300cb54a9071" SourceId="1" SourceUrl="http://localhost/Guardian/Trading Support?xsd=xsd1" />
+    <MetadataFile FileName="Trading Support4.xsd" MetadataType="Schema" ID="75413c91-1b2e-48a4-99b6-48aa87249848" SourceId="1" SourceUrl="http://localhost/Guardian/Trading Support?xsd=xsd4" />
+    <MetadataFile FileName="TradingSupport.wsdl" MetadataType="Wsdl" ID="8216e6b0-56bc-4b96-8491-a3d4513f9730" SourceId="1" SourceUrl="http://localhost/Guardian/Trading Support?wsdl" />
+    <MetadataFile FileName="Trading Support5.xsd" MetadataType="Schema" ID="64a6a31c-83d9-4fb3-98db-c37020d66fac" SourceId="1" SourceUrl="http://localhost/Guardian/Trading Support?xsd=xsd3" />
+    <MetadataFile FileName="Trading Support6.xsd" MetadataType="Schema" ID="83ec3dfe-e44a-4474-9bb2-2f68b1c28dff" SourceId="1" SourceUrl="http://localhost/Guardian/Trading Support?xsd=xsd6" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

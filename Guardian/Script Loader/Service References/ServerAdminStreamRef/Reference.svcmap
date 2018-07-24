@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="07b5f077-3d55-41a0-bd81-9d1eff48ea74" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/Guardian/Server Admin Stream Manager" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Server Admin Stream Manager.disco" MetadataType="Disco" ID="e21b7e03-16b8-4a77-8d44-73af7235a09a" SourceId="1" SourceUrl="http://localhost/Guardian/Server Admin Stream Manager?disco" />
+    <MetadataFile FileName="Server Admin Stream Manager2.xsd" MetadataType="Schema" ID="e8b91dfa-e9a8-4c92-8f2c-ec36ab1560e1" SourceId="1" SourceUrl="http://localhost/Guardian/Server Admin Stream Manager?xsd=xsd0" />
+    <MetadataFile FileName="Server Admin Stream Manager3.xsd" MetadataType="Schema" ID="92fce996-5e24-4abc-9040-1714c0722956" SourceId="1" SourceUrl="http://localhost/Guardian/Server Admin Stream Manager?xsd=xsd1" />
+    <MetadataFile FileName="Server Admin Stream Manager1.xsd" MetadataType="Schema" ID="caedf739-9278-4194-b421-cb25ce541890" SourceId="1" SourceUrl="http://localhost/Guardian/Server Admin Stream Manager?xsd=xsd2" />
+    <MetadataFile FileName="Server Admin Stream Manager.xsd" MetadataType="Schema" ID="1002c06d-312a-439b-89f8-f8124b42cf49" SourceId="1" SourceUrl="http://localhost/Guardian/Server Admin Stream Manager?xsd=xsd3" />
+    <MetadataFile FileName="ServerAdminStreamManager.wsdl" MetadataType="Wsdl" ID="4095a78a-59c0-4cbf-b718-919205e37a21" SourceId="1" SourceUrl="http://localhost/Guardian/Server Admin Stream Manager?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,25 @@
+﻿namespace FluidTrade.Guardian.Schema.DebtWorkingOrder
+{
+
+    using System.Collections.Generic;
+
+    /// <summary>
+	/// Compares two DebtWorkingOrder.DebtWorkingOrder records when sorting a list.
+	/// </summary>
+	public class SecurityComparer : IComparer<WorkingOrder>
+	{
+
+		/// <summary>
+		/// Compares two DebtWorkingOrder records when sorting a list.
+		/// </summary>
+		/// </param name="operand1">The first row to be compared.</param>
+		/// </param name="operand2">The second row to be compared.</param>
+		/// <returns>1 if operand1 is greater than operand2, -1 if operand1 is less than operand2, 0 if they are equal.</returns>
+		public int Compare(WorkingOrder operand1, WorkingOrder operand2)
+		{
+			return operand1.SecuritySymbol.Symbol.CompareTo(operand2.SecuritySymbol.Symbol);
+		}
+
+	}
+
+}

@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PrototypeView"
+           targetNamespace="urn:schemas-fluidtrade-com:guardian:debt-holder-settlement-header"
+           xmlns:mstns="urn:schemas-fluidtrade-com:guardian:debt-holder-settlement-header"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:r="urn:schemas-fluidtrade-com:report"
+           xmlns:m="urn:schemas-fluidtrade-com:guardian:debt-holder-settlement">
+  <xs:annotation>
+	<xs:appinfo>
+	  <r:generatedCode destinationNamespace="FluidTrade.Guardian.Schema.DebtHolderSettlementHeader" />
+	</xs:appinfo>
+  </xs:annotation>
+  <!-- Imports -->
+  <xs:import namespace="urn:schemas-fluidtrade-com:guardian:debt-holder-settlement"
+             schemaLocation="..\Settlement\Settlement.xsd" />
+  <xs:complexType name="AccountBalance" />
+  <xs:complexType name="CreatedBy" />
+  <xs:complexType name="CreatedDateTime" />
+  <xs:complexType name="DebtHolder" />
+  <xs:complexType name="DebtNegotiator" />
+  <xs:complexType name="DebtorFirstName" />
+  <xs:complexType name="DebtorMiddleName" />
+  <xs:complexType name="DebtorLastName" />
+  <xs:complexType name="DebtorAddress1" />
+  <xs:complexType name="DebtorAddress2" />
+  <xs:complexType name="DebtorCity" />
+  <xs:complexType name="DebtorSalutation" />
+  <xs:complexType name="DebtorProvince" />
+  <xs:complexType name="DebtorSuffix" />
+  <xs:complexType name="DebtorPostalCode" />
+  <xs:complexType name="DebtorAccountNumber" />
+  <xs:complexType name="DebtorBankRoutingNumber" />
+  <xs:complexType name="DebtorBankAccountNumber" />
+  <xs:complexType name="ModifiedBy" />
+  <xs:complexType name="ModifiedDateTime" />
+  <xs:complexType name="PayeeCompanyName" />
+  <xs:complexType name="PayeeDepartment" />
+  <xs:complexType name="PayeeBenefitOf" />
+  <xs:complexType name="PayeeContactName" />
+  <xs:complexType name="PayeeAddress1" />
+  <xs:complexType name="PayeeAddress2" />
+  <xs:complexType name="PayeeCity" />
+  <xs:complexType name="PayeeProvinceId" />
+  <xs:complexType name="PayeePostalCode" />
+  <xs:complexType name="PayeePhone" />
+  <xs:complexType name="PayeeFax" />
+  <xs:complexType name="PayeeEmail" />
+  <xs:complexType name="PayeeBankRoutingNumber" />
+  <xs:complexType name="PayeeBankAccountNumber" />
+  <xs:complexType name="PayTermLength" />
+  <xs:complexType name="PayTermStartDate" />
+  <xs:complexType name="PaymentMethod" />
+	<xs:complexType name="SelectRow" />
+	<xs:complexType name="SettlementAmount" />
+  <xs:complexType name="SettlementId" />
+	<xs:complexType name="Status" />
+	<xs:complexType name="SettlementHeader">
+	<xs:annotation>
+	  <xs:appinfo>
+		<r:constructor>
+		  <r:arguments>
+			<r:argument type="System.Guid"
+                        name="guid" />
+		  </r:arguments>
+		  <r:setter property="key"
+                    value="guid" />
+		</r:constructor>
+	  </xs:appinfo>
+	</xs:annotation>
+	<xs:sequence>
+	  <xs:element name="AccountBalance" 
+                  type="mstns:AccountBalance" />
+    <xs:element name="CreatedBy"
+                  type="mstns:CreatedBy" />
+    <xs:element name="CreatedDateTime"
+                  type="mstns:CreatedDateTime" />
+    <xs:element name="DebtHolder" 
+                  type="mstns:DebtHolder" />
+	  <xs:element name="DebtNegotiator" 
+                  type="mstns:DebtNegotiator" />
+	  <xs:element name="DebtorFirstName" 
+                  type="mstns:DebtorFirstName" />
+	  <xs:element name="DebtorMiddleName" 
+                  type="mstns:DebtorMiddleName" />
+	  <xs:element name="DebtorLastName" 
+                  type="mstns:DebtorLastName" />
+	  <xs:element name="DebtorAddress1" 
+                  type="mstns:DebtorAddress1" />
+	  <xs:element name="DebtorAddress2" 
+                  type="mstns:DebtorAddress2" />
+	  <xs:element name="DebtorCity" 
+                  type="mstns:DebtorCity" />
+    <xs:element name="DebtorSalutation"
+                  type="mstns:DebtorSalutation" />
+    <xs:element name="DebtorProvince" 
+                  type="mstns:DebtorProvince" />
+    <xs:element name="DebtorSuffix"
+                  type="mstns:DebtorSuffix" />
+    <xs:element name="DebtorPostalCode"
+                  type="mstns:DebtorPostalCode" />
+    <xs:element name="DebtorAccountNumber" 
+                  type="mstns:DebtorAccountNumber" />
+	  <xs:element name="DebtorBankRoutingNumber" 
+                  type="mstns:DebtorBankRoutingNumber" />
+	  <xs:element name="DebtorBankAccountNumber" 
+                  type="mstns:DebtorBankAccountNumber" />
+    <xs:element name="ModifiedBy"
+                  type="mstns:ModifiedBy" />
+    <xs:element name="ModifiedDateTime"
+                  type="mstns:ModifiedDateTime" />
+    <xs:element name="PayeeCompanyName" 
+                  type="mstns:PayeeCompanyName" />
+	  <xs:element name="PayeeDepartment" 
+                  type="mstns:PayeeDepartment" />
+	  <xs:element name="PayeeBenefitOf" 
+                  type="mstns:PayeeBenefitOf" />
+	  <xs:element name="PayeeContactName" 
+                  type="mstns:PayeeContactName" />
+	  <xs:element name="PayeeAddress1" 
+                  type="mstns:PayeeAddress1" />
+	  <xs:element name="PayeeAddress2"
+                  type="mstns:PayeeAddress2"  />
+	  <xs:element name="PayeeCity" 
+                  type="mstns:PayeeCity" />
+	  <xs:element name="PayeeProvinceId" 
+                  type="mstns:PayeeProvinceId" />
+	  <xs:element name="PayeePostalCode" 
+                  type="mstns:PayeePostalCode" />
+	  <xs:element name="PayeePhone" 
+                  type="mstns:PayeePhone" />
+	  <xs:element name="PayeeFax" 
+                  type="mstns:PayeeFax" />
+	  <xs:element name="PayeeEmail" 
+                  type="mstns:PayeeEmail" />
+	  <xs:element name="PayeeBankRoutingNumber" 
+                  type="mstns:PayeeBankRoutingNumber" />
+	  <xs:element name="PayeeBankAccountNumber" 
+                  type="mstns:PayeeBankAccountNumber" />
+	  <xs:element name="PayTermLength" 
+                  type="mstns:PayTermLength" />
+	  <xs:element name="PayTermStartDate" 
+                  type="mstns:PayTermStartDate" />
+	  <xs:element name="PaymentMethod" 
+                  type="mstns:PaymentMethod" />
+		<xs:element name="SelectRow"
+								type="mstns:SelectRow" />
+		<xs:element name="SettlementAmount" 
+                  type="mstns:SettlementAmount" />
+	  <xs:element name="SettlementId" 
+                  type="mstns:SettlementId" />
+		<xs:element name="Status"
+								type="mstns:Status" />
+		<xs:element name="SettlementList"
+                  type="m:Settlement"
+                  minOccurs="0"
+                  maxOccurs="unbounded">
+		<xs:annotation>
+		  <xs:appinfo>
+			<r:where predicate="Prefilter"
+                     source="DataModel.ConsumerDebtSettlement"
+                     sourceType="FluidTrade.Guardian.ConsumerDebtSettlementRow" />
+			<r:select selector="Selector" />
+			<r:where predicate="Filter" />
+			<r:orderBy comparer="Comparer"
+                       keySelector="m:Settlement.SelectSelf"
+                       keyType="m:Settlement" />
+		  </xs:appinfo>
+		</xs:annotation>
+	  </xs:element>
+	</xs:sequence>
+  </xs:complexType>
+</xs:schema>

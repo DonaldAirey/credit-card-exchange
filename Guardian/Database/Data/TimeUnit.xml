@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="TimeUnit">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+	<method name="CreateTimeUnitEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="SECONDS" />
+		<parameter name="inDays" value="0.000011574074074074074074074074074074" />
+		<parameter name="name" value="Seconds" />
+		<parameter name="timeUnitCode" value="Seconds" />
+	</method>
+	<method name="CreateTimeUnitEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="MINUTES" />
+		<parameter name="inDays" value="0.00069444444444444444444444444444444" />
+		<parameter name="name" value="Minutes" />
+		<parameter name="timeUnitCode" value="Minutes" />
+	</method>
+	<method name="CreateTimeUnitEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="HOURS" />
+		<parameter name="inDays" value="0.041666666666666666666666666666667" />
+		<parameter name="name" value="Hours" />
+		<parameter name="timeUnitCode" value="Hours" />
+	</method>
+	<method name="CreateTimeUnitEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="DAYS" />
+		<parameter name="inDays" value="1.0" />
+		<parameter name="name" value="Days" />
+		<parameter name="timeUnitCode" value="Days" />
+  </method>
+  <method name="CreateTimeUnitEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="WEEKS" />
+		<parameter name="inDays" value="7.0" />
+		<parameter name="name" value="Weeks" />
+		<parameter name="timeUnitCode" value="Weeks" />
+	</method>
+  <method name="CreateTimeUnitEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="MONTHS" />
+		<parameter name="inDays" value="30.0" />
+		<parameter name="name" value="Months" />
+		<parameter name="timeUnitCode" value="Months" />
+	</method>
+	<method name="CreateTimeUnitEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="YEARS" />
+		<parameter name="inDays" value="365.25" />
+		<parameter name="name" value="Years" />
+		<parameter name="timeUnitCode" value="Years" />
+	</method>
+</script>

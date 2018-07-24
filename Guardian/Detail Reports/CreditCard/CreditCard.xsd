@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema targetNamespace="urn:schemas-fluidtrade-com:guardian:credit-card"
+					 xmlns:mstns="urn:schemas-fluidtrade-com:guardian:credit-card"
+					 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+					 xmlns:r="urn:schemas-fluidtrade-com:report">
+	<xs:annotation>
+		<xs:appinfo>
+			<r:generatedCode destinationNamespace="FluidTrade.Guardian.Schema.CreditCard" />
+		</xs:appinfo>
+	</xs:annotation>
+	<!-- Accrued Interest-->
+	<xs:complexType name="AccountBalance">
+		<xs:sequence>
+			<xs:element name="Text" 
+									r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" 
+									type="xs:anyType" />
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Account Number -->
+	<xs:complexType name="AccountNumber">
+		<xs:sequence>
+			<xs:element name="Text" 
+									r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" 
+									type="xs:anyType" />
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Consumer Id -->
+	<xs:complexType name="ConsumerId">
+		<xs:sequence>
+			<xs:element name="Text" 
+									r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" 
+									type="xs:anyType" />
+		</xs:sequence>
+	</xs:complexType>
+	<!--Credit Card Id -->
+	<xs:complexType name="CreditCardId">
+		<xs:sequence>
+			<xs:element name="Text" 
+									r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" 
+									type="xs:anyType" />
+		</xs:sequence>
+	</xs:complexType>
+	<!-- HeatIndex -->
+	<xs:complexType name="HeatIndex">
+		<xs:sequence>
+			<xs:element name="IsActive" 
+									type="xs:boolean" />
+			<xs:element name="Index" 
+									type="xs:decimal" />
+		</xs:sequence>
+	</xs:complexType>
+	<!-- First Name -->
+	<xs:complexType name="FirstName">
+		<xs:sequence>
+			<xs:element name="Text" 
+									r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" 
+									type="xs:anyType" />
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Last Name -->
+	<xs:complexType name="LastName">
+		<xs:sequence>
+			<xs:element name="Text" 
+									r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" 
+									type="xs:anyType" />
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Debt Holder Name (aka CreditCardIssuerId, aka Issuer Name)-->
+	<xs:complexType name="DebtHolderName">
+	  <xs:sequence>
+		<xs:element name="Text"
+								r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+								type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!--Original Account Number-->
+	<xs:complexType name="OriginalAccountNumber">
+		<xs:sequence>
+			<xs:element name="Text" 
+									r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" 
+									type="xs:anyType" />
+		</xs:sequence>
+	</xs:complexType>
+	<!-- SelectRow -->
+	<xs:complexType name="SelectRow">
+		<xs:sequence>
+			<xs:element name="IsActive" 
+									type="xs:boolean" />
+			<xs:element name="Name" 
+									type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SocialSecurity">
+		<xs:sequence>
+			<xs:element name="Text" 
+									r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" 
+									type="xs:anyType" />
+		</xs:sequence>
+	</xs:complexType>
+	<!-- RuleId -->
+	<xs:complexType name="RuleId">
+		<xs:sequence>
+			<xs:element name="IsActive" 
+									type="xs:boolean" />
+			<xs:element name="ParentId" 
+									r:datatype="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" 
+									type="xs:anyType" />
+			<xs:element name="DebtRuleId" 
+									r:datatype="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" 
+									type="xs:anyType" />
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Credit Card -->
+	<xs:complexType name="CreditCard">
+		<xs:annotation>
+			<xs:appinfo>
+				<r:constructor>
+					<r:arguments>
+						<r:argument type="FluidTrade.Guardian.CreditCardRow" name="creditCardRow" />
+					</r:arguments>
+					<r:setter property="key" value="creditCardRow" />
+					<r:snippet>ConsumerRow consumerRow = creditCardRow.ConsumerRow</r:snippet>
+					<r:snippet>ConsumerTrustRow  consumerTrustRow = consumerRow.GetConsumerTrustRows()[0]</r:snippet>
+					<r:snippet>WorkingOrderRow workingOrderRow = consumerTrustRow.SecurityRow.GetWorkingOrderRowsByFK_Security_WorkingOrder_SecurityId()[0]</r:snippet>
+					<r:snippet>
+						MatchRow matchRow = null;
+						var matchRows = workingOrderRow.GetMatchRows();
+						if(matchRows != null &amp;&amp; matchRows.Length > 0)
+						matchRow = matchRows[0];
+					</r:snippet>
+				</r:constructor>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<!-- Account Balance -->
+			<xs:element  name="AccountBalance" type="mstns:AccountBalance">
+				<xs:annotation>
+					<xs:appinfo>
+						<r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(creditCardRow, DataModel.CreditCard.AccountBalanceColumn)</r:setter>
+						<r:setter property="Text">creditCardRow.AccountBalance</r:setter>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<!-- Account Number -->
+			<xs:element  name="AccountNumber" type="mstns:AccountNumber">
+				<xs:annotation>
+					<xs:appinfo>
+						<r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(creditCardRow, DataModel.CreditCard.AccountNumberColumn)</r:setter>
+						<r:setter property="Text">creditCardRow.AccountNumber</r:setter>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<!-- Consumer Id -->
+			<xs:element  name="ConsumerId" type="mstns:ConsumerId">
+				<xs:annotation>
+					<xs:appinfo>
+						<r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(creditCardRow, DataModel.CreditCard.ConsumerIdColumn)</r:setter>
+						<r:setter property="Text">creditCardRow.ConsumerId</r:setter>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<!--Credit Card Id -->
+			<xs:element  name="CreditCardId" type="mstns:CreditCardId">
+				<xs:annotation>
+					<xs:appinfo>
+						<r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(creditCardRow, DataModel.CreditCard.CreditCardIdColumn)</r:setter>
+						<r:setter property="Text">creditCardRow.CreditCardId</r:setter>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<!-- Heat Index -->
+			<xs:element name="HeatIndex" type="mstns:HeatIndex">
+				<xs:annotation>
+					<xs:appinfo>
+						<r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+						<r:setter property="Index">
+							decimal index = 0.0m;
+							foreach (ConsumerTrustNegotiationRow consumerTrustNegotiationRow in creditCardRow.GetConsumerTrustNegotiationRows())
+								if (creditCardRow.CreditCardId == consumerTrustNegotiationRow.CreditCardId)
+									index = consumerTrustNegotiationRow.MatchRow.HeatIndex;
+							index = (decimal)((int)(index*100))/100;
+							index
+						</r:setter>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<!-- First Name -->
+			<xs:element  name="FirstName" type="mstns:FirstName">
+				<xs:annotation>
+					<xs:appinfo>
+						<r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(consumerRow, DataModel.Consumer.FirstNameColumn, workingOrderRow.WorkingOrderId)</r:setter>
+						<r:setter property="Text">consumerRow.IsFirstNameNull() ? "" : consumerRow.FirstName</r:setter>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<!-- Last Name -->
+			<xs:element  name="LastName" type="mstns:LastName">
+				<xs:annotation>
+					<xs:appinfo>
+						<r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(consumerRow, DataModel.Consumer.LastNameColumn, workingOrderRow.WorkingOrderId)</r:setter>
+						<r:setter property="Text">consumerRow.IsLastNameNull() ? "" : consumerRow.LastName</r:setter>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<!-- Debt Holder Name (aka CreditCardIssuerId, aka Issuer Name)-->
+		  <xs:element  name="DebtHolderName" type="mstns:DebtHolderName">
+			<xs:annotation>
+			  <xs:appinfo>
+				<r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(creditCardRow, DataModel.CreditCard.DebtHolderColumn)</r:setter>
+				<r:setter property="Text">creditCardRow.IsDebtHolderNull() ? System.String.Empty : creditCardRow.DebtHolder</r:setter>
+			  </xs:appinfo>
+			</xs:annotation>
+		  </xs:element>
+			<!-- SelectRow -->
+			<xs:element name="SelectRow" type="mstns:SelectRow">
+				<xs:annotation>
+					<xs:appinfo>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<!--Security Name-->
+			<xs:element  name="SocialSecurity" type="mstns:SocialSecurity">
+				<xs:annotation>
+					<xs:appinfo>
+						<r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(consumerRow, DataModel.Consumer.SocialSecurityNumberColumn, workingOrderRow.WorkingOrderId )</r:setter>
+						<r:setter property="Text">consumerRow.SocialSecurityNumber</r:setter>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<!--Original Account Number-->
+			<xs:element  name="OriginalAccountNumber" type="mstns:OriginalAccountNumber">
+				<xs:annotation>
+					<xs:appinfo>
+						<r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(creditCardRow, DataModel.CreditCard.OriginalAccountNumberColumn)</r:setter>
+						<r:setter property="Text">creditCardRow.OriginalAccountNumber</r:setter>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+			<!--RuleId-->
+			<xs:element name="RuleId" type="mstns:RuleId">
+				<xs:annotation>
+					<xs:appinfo>
+						<r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+						<r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(creditCardRow, DataModel.CreditCard.DebtRuleIdColumn)</r:setter>
+						<r:setter property="ParentId">workingOrderRow.BlotterId</r:setter>
+						<r:setter property="DebtRuleId">
+							System.Guid debtRuleId = System.Guid.Empty;
+							if(creditCardRow.IsDebtRuleIdNull() == false)
+							debtRuleId = creditCardRow.DebtRuleId;
+							debtRuleId
+						</r:setter>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProjectName>SAK</SccProjectName>
+    <UpgradedFromDBP>True</UpgradedFromDBP>
+    <Name>dbpProjectName</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{ce98e66a-8db1-48c0-9e67-9ca6c41bb8bd}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProjectName>SAK</SccProjectName>
+    <UpgradedFromDBP>True</UpgradedFromDBP>
+    <RootNamespace>dbpProjectName</RootNamespace>
+    <PostUpgradeAddToSCC>;C:\Source\Version 1.4.1\Guardian\Database\Database.sqlproj;C:\Source\Version 1.4.1\Guardian\Database\Connections.txt</PostUpgradeAddToSCC>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProjectName>SAK</SccProjectName>
+    <UpgradedFromDBP>True</UpgradedFromDBP>
+    <AssemblyName>dbpProjectName</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data" />
+    <Folder Include="Documents" />
+    <Folder Include="Images" />
+    <Folder Include="Reports" />
+    <Folder Include="Scripts" />
+    <Folder Include="Unit Test" />
+    <Folder Include="Properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <NotInBuild Include="Scripts\DataModel.sql" />
+    <NotInBuild Include="Scripts\Drop All.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Accepted.png" />
+    <None Include="Images\Blue Flag.png" />
+    <None Include="Images\chest.png" />
+    <None Include="Images\Disabled Pause.png" />
+    <None Include="Images\Disabled Play.png" />
+    <None Include="Images\Forbidden.png" />
+    <None Include="Images\Green Flag.png" />
+    <None Include="Images\Group.png" />
+    <None Include="Images\id_card.png" />
+    <None Include="Images\MatchWithFunds.png" />
+    <None Include="Images\OfferAccepted.png" />
+    <None Include="Images\PartialMatch.png" />
+    <None Include="Images\PartiesAccepted.png" />
+    <None Include="Images\Pause.png" />
+    <None Include="Images\Pending.png" />
+    <None Include="Images\Play.png" />
+    <None Include="Images\RecievedAccepted.png" />
+    <None Include="Images\Red Flag.png" />
+    <None Include="Images\SentAccepted.png" />
+    <None Include="Images\User.png" />
+    <None Include="Images\ValidMatch.png" />
+    <None Include="Images\ValidMatchFunds.png" />
+    <None Include="Reports\Allocation.xaml" />
+    <None Include="Reports\Alternate Debt Working Order.xaml" />
+    <None Include="Reports\Classic Debt Working Order.xaml" />
+    <None Include="Reports\Consumer Debt Match.xaml" />
+    <None Include="Reports\Consumer Debt Payment Summary.xaml" />
+    <None Include="Reports\Consumer Debt Settlement.xaml" />
+    <None Include="Reports\Consumer Debt Working Order.xaml" />
+    <None Include="Reports\Consumer Trust Match.xaml" />
+    <None Include="Reports\Consumer Trust Payment Summary.xaml" />
+    <None Include="Reports\Consumer Trust Settlement.xaml" />
+    <None Include="Reports\Consumer Trust Working Order.xaml" />
+    <None Include="Reports\Credit Card Detail.xaml" />
+    <None Include="Reports\Debt Working Order.xaml" />
+    <None Include="Reports\Destination Order Detail.xaml" />
+    <None Include="Reports\Destination Order.xaml" />
+    <None Include="Reports\Equity Match.xaml" />
+    <None Include="Reports\Equity Working Order.xaml" />
+    <None Include="Reports\Execution Detail.xaml" />
+    <None Include="Reports\Execution.xaml" />
+    <None Include="Reports\Quote.xaml" />
+    <None Include="Reports\Settlement.xaml" />
+    <None Include="Reports\Source Order Detail.xaml" />
+    <None Include="Reports\Source Order.xaml" />
+    <None Include="Reports\Working Order.xaml" />
+    <None Include="Scripts\Install Data Model.ps1" />
+    <None Include="Scripts\Load Data Model.ps1" />
+    <None Include="Documents\National Holdings Settlement.docx" />
+    <None Include="Unit Test\Consumer Debt.xml" />
+    <None Include="Unit Test\Consumer Trust.xml" />
+    <None Include="Unit Test\Consumer.xml" />
+    <None Include="Unit Test\Credit Card.xml" />
+    <None Include="Unit Test\Global Settlements Orders.xml" />
+    <None Include="Unit Test\National Holdings Orders.xml" />
+    <None Include="Data\Configuration.xml" />
+    <None Include="Data\AccessRight.xml" />
+    <None Include="Data\CommissionType.xml" />
+    <None Include="Data\CommissionUnit.xml" />
+    <None Include="Data\Condition.xml" />
+    <None Include="Data\HolidayType.xml" />
+    <None Include="Data\LotHandling.xml" />
+    <None Include="Data\OrderType.xml" />
+    <None Include="Data\PartyType.xml" />
+    <None Include="Data\PaymentMethodType.xml" />
+    <None Include="Data\PositionType.xml" />
+    <None Include="Data\ReportType.xml" />
+    <None Include="Data\GroupType.xml" />
+    <None Include="Data\SettlementUnit.xml" />
+    <None Include="Data\State.xml" />
+    <None Include="Data\Status.xml" />
+    <None Include="Data\Side.xml" />
+    <None Include="Data\Crossing.xml" />
+    <None Include="Data\TimeInForce.xml" />
+    <None Include="Data\TimeUnit.xml" />
+    <None Include="Data\Volume Category.xml" />
+    <None Include="Data\Weekend.xml" />
+    <None Include="Data\Image.xml" />
+    <None Include="Data\Type.xml" />
+    <None Include="Data\Crossing Manager.xml" />
+    <None Include="Data\TypeTree.xml" />
+    <None Include="Data\Country.xml" />
+    <None Include="Data\Province.xml" />
+    <None Include="Data\Exchange.xml" />
+    <None Include="Data\Administrator.xml" />
+    <None Include="Data\Report.xml" />
+    <None Include="Data\AssetViewerTemplate.xml" />
+    <None Include="Data\Global Settlements Desk.xml" />
+    <None Include="Data\Global Settlements Folder.xml" />
+    <None Include="Data\Global Settlements Rule.xml" />
+    <None Include="Data\Global Settlements Schedule.xml" />
+    <None Include="Data\Global Settlements User.xml" />
+    <None Include="Data\Global Settlements.xml" />
+    <None Include="Data\National Holdings Desk.xml" />
+    <None Include="Data\National Holdings Folder.xml" />
+    <None Include="Data\National Holdings Rule.xml" />
+    <None Include="Data\National Holdings Schedule.xml" />
+    <None Include="Data\National Holdings.xml" />
+    <None Include="Data\National Holdings User.xml" />
+    <None Include="Data\Currency.xml" />
+  </ItemGroup>
+</Project>

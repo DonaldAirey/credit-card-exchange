@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema targetNamespace="urn:schemas-fluidtrade-com:guardian:debt-working-order"
+					 xmlns:mstns="urn:schemas-fluidtrade-com:guardian:debt-working-order"
+					 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+					 xmlns:r="urn:schemas-fluidtrade-com:report">
+  <xs:annotation>
+    <xs:appinfo>
+      <r:generatedCode destinationNamespace="FluidTrade.Guardian.Schema.DebtWorkingOrder" />
+    </xs:appinfo>
+  </xs:annotation>
+  <!-- Ask Price -->
+  <xs:complexType name="AskPrice">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="Price" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Available Quantity -->
+  <xs:complexType name="AvailableQuantity">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="Quantity" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Bid Price -->
+  <xs:complexType name="BidPrice">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="Price" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Blotter -->
+  <xs:complexType name="Blotter">
+    <xs:sequence>
+      <xs:element name="BlotterId" r:datatype="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="IsActive" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Broker Match -->
+  <xs:complexType name="BrokerMatch">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="IsMatch" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Coupon -->
+  <xs:complexType name="Coupon">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="Rate" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Created By -->
+  <xs:complexType name="CreatedBy">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="UserId" r:datatype="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Created Time -->
+  <xs:complexType name="CreatedTime">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="Time" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Crossing -->
+  <xs:complexType name="Crossing">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="IsCrossing" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Destination Order Quantity -->
+  <xs:complexType name="DestinationOrderQuantity">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="Quantity" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Execution Quantity -->
+  <xs:complexType name="ExecutionQuantity">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="Quantity" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Hedge Match -->
+  <xs:complexType name="HedgeMatch">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="IsMatch" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Institution Match -->
+  <xs:complexType name="InstitutionMatch">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="IsMatch" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Last Price -->
+  <xs:complexType name="LastPrice">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="Price" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Leaves Quantity -->
+  <xs:complexType name="LeavesQuantity">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="Quantity" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Market Value -->
+  <xs:complexType name="MarketValue">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="Value" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Maturity Date -->
+  <xs:complexType name="MaturityDate">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="Date" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Modified By -->
+  <xs:complexType name="ModifiedBy">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="Name" type="xs:string" />
+      <xs:element name="UserId" r:datatype="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Modified Time -->
+  <xs:complexType name="ModifiedTime">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="Time" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Order Type -->
+  <xs:complexType name="OrderType">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="LimitPrice" type="xs:decimal" />
+      <xs:element name="Mnemonic" type="xs:string" />
+      <xs:element name="OrderTypeCode" r:datatype="FluidTrade.Core.OrderType, FluidTrade.FluidTradeLibrary, Version=1.3.0.0, Culture=neutral, PublicKeyToken=b200e265aff2c6ac" type="xs:anyType" />
+      <xs:element name="StopPrice" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+	<!-- SecurityName -->
+  <xs:complexType name="SecurityName">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="Name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- SecuritySymbol -->
+  <xs:complexType name="SecuritySymbol">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="Symbol" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Settlement Date -->
+  <xs:complexType name="SettlementDate">
+    <xs:sequence>
+      <xs:element name="Date" type="xs:dateTime" />
+      <xs:element name="IsActive" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Side -->
+  <xs:complexType name="Side">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="Mnemonic" type="xs:string" />
+      <xs:element name="Description" type="xs:string" />
+      <xs:element name="SideCode" r:datatype="FluidTrade.Core.Side, FluidTrade.FluidTradeLibrary, Version=1.3.0.0, Culture=neutral, PublicKeyToken=b200e265aff2c6ac" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Source Order Quantity -->
+  <xs:complexType name="SourceOrderQuantity">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="Quantity" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Status -->
+  <xs:complexType name="Status">
+    <xs:sequence>
+      <xs:element name="Mnemonic" type="xs:string" />
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="StatusCode" r:datatype="FluidTrade.Guardian.Status, FluidTrade.GuardianLibrary, Version=1.3.0.0, Culture=neutral, PublicKeyToken=11995def4fd5595d" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Time In Force -->
+  <xs:complexType name="TimeInForce">
+    <xs:sequence>
+      <xs:element name="IsActive" type="xs:boolean" />
+      <xs:element name="TimeInForceCode" r:datatype="FluidTrade.Core.TimeInForce, FluidTrade.GuardianLibrary, Version=1.3.0.0, Culture=neutral, PublicKeyToken=11995def4fd5595d" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Trade Date -->
+  <xs:complexType name="TradeDate">
+    <xs:sequence>
+      <xs:element name="Date" type="xs:dateTime" />
+      <xs:element name="IsActive" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Working Order -->
+  <xs:complexType name="WorkingOrder">
+    <xs:annotation>
+      <xs:appinfo>
+        <r:constructor>
+          <r:arguments>
+            <r:argument type="FluidTrade.Guardian.WorkingOrderRow" name="workingOrderRow" />
+          </r:arguments>
+          <r:setter property="key" value="workingOrderRow" />
+          <r:snippet>PriceRow priceRow = DataModel.Price.PriceKey.Find(workingOrderRow.SecurityRowByFK_Security_WorkingOrder_SecurityId.SecurityId, workingOrderRow.SecurityRowByFK_Security_WorkingOrder_SettlementId.SecurityId);</r:snippet>
+          <r:snippet>decimal priceFactor = workingOrderRow.SecurityRowByFK_Security_WorkingOrder_SecurityId.PriceFactor;</r:snippet>
+          <r:snippet>decimal quantityFactor = workingOrderRow.SecurityRowByFK_Security_WorkingOrder_SecurityId.QuantityFactor;</r:snippet>
+        </r:constructor>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <!-- Ask Price -->
+      <xs:element name="AskPrice" type="mstns:AskPrice">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Price">priceRow == null ? 0.0M : priceRow.AskPrice</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Bid Price -->
+      <xs:element name="BidPrice" type="mstns:BidPrice">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Price">priceRow == null ? 0.0M : priceRow.BidPrice</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Blotter -->
+      <xs:element name="Blotter" type="mstns:Blotter">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="BlotterId">workingOrderRow.BlotterId</r:setter>
+            <r:setter property="Name">workingOrderRow.BlotterRow.EntityRow.Name</r:setter>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Broker Match -->
+      <xs:element name="BrokerMatch" type="mstns:BrokerMatch">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(workingOrderRow, DataModel.WorkingOrder.IsBrokerMatchColumn)</r:setter>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="IsMatch">workingOrderRow.IsBrokerMatch</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Coupon -->
+      <xs:element name="Coupon" type="mstns:Coupon">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Rate">
+              DebtRow debtRow0 = DataModel.Debt.DebtKey.Find(workingOrderRow.SecurityId);
+              debtRow0 == null ? 0.0M : debtRow0.Coupon
+            </r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Created By -->
+      <xs:element name="CreatedBy" type="mstns:CreatedBy">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="Name">workingOrderRow.UserRow.RightsHolderRow.EntityRow.Name</r:setter>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="UserId">workingOrderRow.CreatedUserId</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Created Time -->
+      <xs:element name="CreatedTime" type="mstns:CreatedTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Time">workingOrderRow.CreatedTime.ToLocalTime()</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Crossing -->
+      <xs:element name="Crossing" type="mstns:Crossing">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(workingOrderRow, DataModel.WorkingOrder.CrossingIdColumn)</r:setter>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="IsCrossing">workingOrderRow.CrossingRow.CrossingCode == FluidTrade.Guardian.Crossing.AlwaysMatch</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Destination Order Quantity -->
+      <xs:element name="DestinationOrderQuantity" type="mstns:DestinationOrderQuantity">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Quantity">
+              decimal destinationOrderQuantity = 0.0m;
+              foreach (DestinationOrderRow destinationOrderRow in workingOrderRow.GetDestinationOrderRows())
+              destinationOrderQuantity += destinationOrderRow.OrderedQuantity;
+              destinationOrderQuantity / quantityFactor
+            </r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Execution Quantity -->
+      <xs:element name="ExecutionQuantity" type="mstns:ExecutionQuantity">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Quantity">
+              decimal executionQuantity = 0.0m;
+              foreach (DestinationOrderRow destinationOrderRow in workingOrderRow.GetDestinationOrderRows())
+              foreach (ExecutionRow executionRow in destinationOrderRow.GetExecutionRows())
+              executionQuantity += executionRow.ExecutionQuantity;
+              executionQuantity / quantityFactor
+            </r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Hedge Match -->
+      <xs:element name="HedgeMatch" type="mstns:HedgeMatch">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(workingOrderRow, DataModel.WorkingOrder.IsHedgeMatchColumn)</r:setter>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="IsMatch">workingOrderRow.IsHedgeMatch</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Institution Match -->
+      <xs:element name="InstitutionMatch" type="mstns:InstitutionMatch">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(workingOrderRow, DataModel.WorkingOrder.IsInstitutionMatchColumn)</r:setter>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="IsMatch">workingOrderRow.IsInstitutionMatch</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Last Price -->
+      <xs:element name="LastPrice" type="mstns:LastPrice">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Price">priceRow == null ? 0.0M : priceRow.LastPrice</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Maturity Date -->
+      <xs:element name="MaturityDate" type="mstns:MaturityDate">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Date">
+              DebtRow debtRow1 = DataModel.Debt.DebtKey.Find(workingOrderRow.SecurityId);
+              debtRow1 == null ? System.DateTime.MinValue : debtRow1.MaturityDate
+            </r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Modified By -->
+      <xs:element name="ModifiedBy" type="mstns:ModifiedBy">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Name">""</r:setter>
+            <r:setter property="UserId">workingOrderRow.ModifiedUserId</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Modified Time -->
+      <xs:element name="ModifiedTime" type="mstns:ModifiedTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Time">workingOrderRow.ModifiedTime.ToLocalTime()</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Order Type -->
+      <xs:element name="OrderType" type="mstns:OrderType">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="LimitPrice">workingOrderRow.IsLimitPriceNull() ? 0.0M : workingOrderRow.LimitPrice</r:setter>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Mnemonic">workingOrderRow.OrderTypeRow.Mnemonic</r:setter>
+            <r:setter property="OrderTypeCode">workingOrderRow.OrderTypeRow.OrderTypeCode</r:setter>
+            <r:setter property="StopPrice">workingOrderRow.IsStopPriceNull() ? 0.0M : workingOrderRow.StopPrice</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+			<!-- SecurityName -->
+      <xs:element name="SecurityName" type="mstns:SecurityName">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Name">workingOrderRow.SecurityRowByFK_Security_WorkingOrder_SecurityId.EntityRow.Name</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- SecuritySymbol -->
+      <xs:element name="SecuritySymbol" type="mstns:SecuritySymbol">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Symbol">workingOrderRow.SecurityRowByFK_Security_WorkingOrder_SecurityId.Symbol</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Settlement Date -->
+      <xs:element name="SettlementDate" type="mstns:SettlementDate">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Date">workingOrderRow.SettlementDate</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Side -->
+      <xs:element name="Side" type="mstns:Side">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(workingOrderRow, DataModel.WorkingOrder.SideIdColumn)</r:setter>
+            <r:setter property="Description">workingOrderRow.SideRow.Description</r:setter>
+            <r:setter property="Mnemonic">workingOrderRow.SideRow.Mnemonic</r:setter>
+            <r:setter property="SideCode">workingOrderRow.SideRow.SideCode</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Source Order Quantity -->
+      <xs:element name="SourceOrderQuantity" type="mstns:SourceOrderQuantity">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Quantity">
+              decimal sourceOrderQuantity = 0.0m;
+              foreach (SourceOrderRow sourceOrderRow in workingOrderRow.GetSourceOrderRows())
+              sourceOrderQuantity += sourceOrderRow.OrderedQuantity;
+              sourceOrderQuantity / quantityFactor
+            </r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Status -->
+      <xs:element name="Status" type="mstns:Status">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="Mnemonic">workingOrderRow.StatusRow.Mnemonic</r:setter>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="StatusCode">workingOrderRow.StatusRow.StatusCode</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Time In Force -->
+      <xs:element name="TimeInForce" type="mstns:TimeInForce">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(workingOrderRow, DataModel.WorkingOrder.TimeInForceIdColumn)</r:setter>
+            <r:setter property="TimeInForceCode">workingOrderRow.TimeInForceRow.TimeInForceCode</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Trade Date -->
+      <xs:element name="TradeDate" type="mstns:TradeDate">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Date">workingOrderRow.TradeDate</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Derived Fields must be calculated after the indpendent fields. -->
+      <!-- Available Quantity -->
+      <xs:element name="AvailableQuantity" type="mstns:AvailableQuantity">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Quantity">this.SourceOrderQuantity.Quantity - this.DestinationOrderQuantity.Quantity</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Leaves Quantity -->
+      <xs:element name="LeavesQuantity" type="mstns:LeavesQuantity">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Quantity">this.DestinationOrderQuantity.Quantity - this.ExecutionQuantity.Quantity</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Market Value -->
+      <xs:element name="MarketValue" type="mstns:MarketValue">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">workingOrderRow.StatusRow.StatusCode != FluidTrade.Guardian.Status.Filled</r:setter>
+            <r:setter property="Value">priceRow == null ? 0.0M : this.SourceOrderQuantity.Quantity * quantityFactor * priceRow.LastPrice</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

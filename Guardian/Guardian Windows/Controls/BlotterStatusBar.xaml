@@ -1,0 +1,37 @@
+﻿<guardian:EntityStatusBar x:Class="FluidTrade.Guardian.Windows.Controls.BlotterStatusBar"
+                    x:Name="statusBar"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:guardian="clr-namespace:FluidTrade.Guardian.Windows.Controls">
+  <guardian:EntityStatusBar.CommandBindings>
+    <CommandBinding Command="NavigationCommands.IncreaseZoom"
+                    Executed="OnIncreaseZoom"
+                    CanExecute="OnCanIncreaseZoom" />
+    <CommandBinding Command="NavigationCommands.DecreaseZoom"
+                    Executed="OnDecreaseZoom"
+                    CanExecute="OnCanDecreaseZoom" />
+  </guardian:EntityStatusBar.CommandBindings>
+
+  <guardian:EntityStatusBar.Extra>
+    <StackPanel HorizontalAlignment="Right"
+                Margin="0,0,50,0"
+                Orientation="Horizontal">
+      <Button Command="NavigationCommands.DecreaseZoom"
+              CommandTarget="{Binding ElementName=statusBar}"
+              Style="{StaticResource ZoomButtonStyle}" />
+      <Slider LargeChange="0.10"
+              Maximum="2.00"
+              Minimum="0.80"
+              Name="sliderScale"
+              Style="{StaticResource ZoomSlider}"
+              SmallChange="0.10"
+              VerticalAlignment="Center"
+              Value="{Binding Path=Zoom,ElementName=statusBar,Mode=TwoWay}"
+              Width="100" />
+      <Button Command="NavigationCommands.IncreaseZoom"
+              CommandTarget="{Binding ElementName=statusBar}"
+              Style="{StaticResource ZoomButtonStyle}" />
+    </StackPanel>
+  </guardian:EntityStatusBar.Extra>
+
+</guardian:EntityStatusBar>

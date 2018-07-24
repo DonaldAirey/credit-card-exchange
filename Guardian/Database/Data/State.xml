@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="State">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <method name="CreateStateEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Initial" />
+    <parameter name="externalId0" value="NEW" />
+    <parameter name="mnemonic" value="Initial" />
+    <parameter name="stateCode" value="Initial" />
+  </method>
+  <method name="CreateStateEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Sent" />
+    <parameter name="externalId0" value="SENT" />
+    <parameter name="mnemonic" value="Sent" />
+    <parameter name="stateCode" value="Sent" />
+  </method>
+  <method name="CreateStateEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Acknowledged" />
+    <parameter name="externalId0" value="ACKNOWLEDGED" />
+    <parameter name="mnemonic" value="Acknowledged" />
+    <parameter name="stateCode" value="Acknowledged" />
+  </method>
+  <method name="CreateStateEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Rejected" />
+    <parameter name="externalId0" value="REJECTED" />
+    <parameter name="mnemonic" value="Rejected" />
+    <parameter name="stateCode" value="Rejected" />
+  </method>
+  <method name="CreateStateEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Cancel Pending" />
+    <parameter name="externalId0" value="CANCEL PENDING" />
+    <parameter name="mnemonic" value="Cancel Pending" />
+    <parameter name="stateCode" value="CancelPending" />
+  </method>
+  <method name="CreateStateEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Cancel Acknowledged" />
+    <parameter name="externalId0" value="CANCEL ACKNOWLEDGED" />
+    <parameter name="mnemonic" value="Cancel Ack" />
+    <parameter name="stateCode" value="CancelAcknowledged" />
+  </method>
+  <method name="CreateStateEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Cancel Rejected" />
+    <parameter name="externalId0" value="CANCEL REJECTED" />
+    <parameter name="mnemonic" value="Cancel Rejected" />
+    <parameter name="stateCode" value="CancelRejected" />
+  </method>
+  <method name="CreateStateEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Cancelled" />
+    <parameter name="externalId0" value="CANCELLED" />
+    <parameter name="mnemonic" value="Cancelled" />
+    <parameter name="stateCode" value="Cancelled" />
+  </method>
+  <method name="CreateStateEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Replace Pending" />
+    <parameter name="externalId0" value="REPLACE PENDING" />
+    <parameter name="mnemonic" value="Replace Pending" />
+    <parameter name="stateCode" value="ReplacePending" />
+  </method>
+  <method name="CreateStateEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Replace Acknowledged" />
+    <parameter name="externalId0" value="REPLACE ACKNOWLEDGED" />
+    <parameter name="mnemonic" value="Replace Ack" />
+    <parameter name="stateCode" value="ReplaceAcknowledged" />
+  </method>
+  <method name="CreateStateEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Replace Rejected" />
+    <parameter name="externalId0" value="REPLACE REJECTED" />
+    <parameter name="mnemonic" value="Replace Rejected" />
+    <parameter name="stateCode" value="ReplaceRejected" />
+  </method>
+  <method name="CreateStateEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Replaced" />
+    <parameter name="externalId0" value="REPLACED" />
+    <parameter name="mnemonic" value="Replaced" />
+    <parameter name="stateCode" value="Replaced" />
+  </method>
+  <method name="CreateStateEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Done For Day" />
+    <parameter name="externalId0" value="DONE FOR DAY" />
+    <parameter name="mnemonic" value="Done For Day" />
+    <parameter name="stateCode" value="DoneForDay" />
+  </method>
+  <method name="CreateStateEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Stopped" />
+    <parameter name="externalId0" value="STOPPED" />
+    <parameter name="mnemonic" value="Stopped" />
+    <parameter name="stateCode" value="Stopped" />
+  </method>
+  <method name="CreateStateEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Error" />
+    <parameter name="externalId0" value="ERROR" />
+    <parameter name="mnemonic" value="Error" />
+    <parameter name="stateCode" value="Error" />
+  </method>
+</script>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<script name="Global Settlements Rules">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <method name="CreateDebtRuleEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="Global Settlements DEFAULT" />
+    <parameter name="isAutoSettled" value="false" />
+    <parameter name="name" value="Global Default" />
+    <parameter name="paymentLength" value="18" />
+    <parameter name="paymentStartDateLength" value="90" />
+		<parameter name="settlementUnitKey" value="PERCENT" />
+		<parameter name="settlementValue" value=".45" />
+		<parameter name="timeUnitKey" value="DAYS" />
+	</method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="Global Settlements DEFAULT" />
+    <parameter name="paymentMethodTypeKey" value="ACH" />
+  </method>
+  <method name="CreateDebtRuleEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="Global Settlements WORKING" />
+    <parameter name="isAutoSettled" value="false" />
+    <parameter name="name" value="Working" />
+    <parameter name="paymentLength" value="24" />
+    <parameter name="paymentStartDateLength" value="60" />
+		<parameter name="settlementUnitKey" value="PERCENT" />
+		<parameter name="settlementValue" value=".50" />
+		<parameter name="timeUnitKey" value="DAYS" />
+	</method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="Global Settlements WORKING" />
+    <parameter name="paymentMethodTypeKey" value="TRACKED" />
+  </method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="Global Settlements WORKING" />
+    <parameter name="paymentMethodTypeKey" value="OVERNITE CHECK" />
+  </method>
+#
+  <method name="CreateDebtRuleEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="Global Settlements TEMP" />
+    <parameter name="isAutoSettled" value="false" />
+    <parameter name="name" value="Temp" />
+    <parameter name="paymentLength" value="24" />
+    <parameter name="paymentStartDateLength" value="60" />
+		<parameter name="settlementUnitKey" value="PERCENT" />
+		<parameter name="settlementValue" value=".50" />
+		<parameter name="timeUnitKey" value="DAYS" />
+	</method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="Global Settlements TEMP" />
+    <parameter name="paymentMethodTypeKey" value="TRACKED" />
+  </method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="Global Settlements TEMP" />
+    <parameter name="paymentMethodTypeKey" value="OVERNITE CHECK" />
+  </method>
+#
+  <method name="CreateDebtRuleEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="Global Settlements ARCHIVE" />
+    <parameter name="isAutoSettled" value="false" />
+    <parameter name="name" value="Archive" />
+    <parameter name="paymentLength" value="12" />
+    <parameter name="paymentMethod" value="0" />
+		<parameter name="paymentStartDateLength" value="90" />
+		<parameter name="settlementUnitKey" value="PERCENT" />
+		<parameter name="settlementValue" value=".40" />
+		<parameter name="timeUnitKey" value="DAYS" />
+	</method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="Global Settlements ARCHIVE" />
+    <parameter name="paymentMethodTypeKey" value="ACH" />
+  </method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="Global Settlements ARCHIVE" />
+    <parameter name="paymentMethodTypeKey" value="MANUAL CHECK" />
+  </method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="Global Settlements ARCHIVE" />
+    <parameter name="paymentMethodTypeKey" value="PHONE PAY" />
+  </method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="Global Settlements ARCHIVE" />
+    <parameter name="paymentMethodTypeKey" value="TRACKED" />
+  </method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="Global Settlements ARCHIVE" />
+    <parameter name="paymentMethodTypeKey" value="OVERNITE CHECK" />
+  </method>
+  <method name="CreateDebtRulePaymentMethodEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtRuleKey" value="Global Settlements ARCHIVE" />
+    <parameter name="paymentMethodTypeKey" value="WIRE TRANSFER" />
+  </method>
+</script>

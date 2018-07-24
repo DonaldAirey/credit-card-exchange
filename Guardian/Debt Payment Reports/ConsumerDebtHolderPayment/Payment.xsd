@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="urn:schemas-fluidtrade-com:guardian:debt-holder-payment-summary"
+           xmlns:mstns="urn:schemas-fluidtrade-com:guardian:debt-holder-payment-summary"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:r="urn:schemas-fluidtrade-com:report">
+  <xs:annotation>
+    <xs:appinfo>
+      <r:generatedCode destinationNamespace="FluidTrade.Guardian.Schema.DebtHolderPaymentSummary" />
+    </xs:appinfo>
+  </xs:annotation>
+  <!-- ActiveFlag -->
+  <xs:complexType name="ActiveFlag">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Active"
+                  r:datatype="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- ActualPaymentDate -->
+  <xs:complexType name="ActualPaymentDate">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Text"
+                  type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- ActualPaymentValue -->
+  <xs:complexType name="ActualPaymentValue">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Text"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- CheckId -->
+  <xs:complexType name="CheckId">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Text"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- ClearedDate -->
+  <xs:complexType name="ClearedDate">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Text"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- CreatedDateTime -->
+  <xs:complexType name="CreatedDateTime">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Text"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- CreatedUserId -->
+  <xs:complexType name="CreatedUserId">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Text"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+      <xs:element name="Name"
+                  type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- EffectivePaymentDate -->
+  <xs:complexType name="EffectivePaymentDate">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Text"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- EffectivePaymentValue -->
+  <xs:complexType name="EffectivePaymentValue">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Text"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Fee0 -->
+  <xs:complexType name="Fee0">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Text"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- IsCleared -->
+  <xs:complexType name="IsCleared">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Cleared"
+                  r:datatype="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Memo0 -->
+  <xs:complexType name="Memo0">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Text"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Memo1 -->
+  <xs:complexType name="Memo1">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Text"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Memo2 -->
+  <xs:complexType name="Memo2">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Text"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- ModifiedDateTimeTime -->
+  <xs:complexType name="ModifiedDateTime">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Text"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- ModifiedUserId -->
+  <xs:complexType name="ModifiedUserId">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Name"
+                  type="xs:string" />
+      <xs:element name="Text"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- SelectRow -->
+  <xs:complexType name="SelectRow">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Name"
+                  type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- StatusId -->
+  <xs:complexType name="StatusId">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="StatusIdEnum"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+      <xs:element name="Mnemonic"
+                  type="xs:string" />
+      <xs:element name="StatusSortOrder"
+                  type="xs:string" />
+      <xs:element name="StatusCode"
+                  r:datatype="FluidTrade.Guardian.Status, FluidTrade.GuardianLibrary, Version=1.3.0.0, Culture=neutral, PublicKeyToken=11995def4fd5595d"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- TrackingNumber -->
+  <xs:complexType name="TrackingNumber">
+    <xs:sequence>
+      <xs:element name="IsActive"
+                  type="xs:boolean" />
+      <xs:element name="Text"
+                  r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                  type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Payment Summary -->
+  <xs:complexType name="PaymentSummary">
+    <xs:annotation>
+      <xs:appinfo>
+        <r:constructor>
+          <r:arguments>
+            <r:argument type="FluidTrade.Guardian.ConsumerDebtPaymentRow"
+                        name="paymentRow" />
+          </r:arguments>
+          <r:setter property="key"
+                    value="paymentRow" />
+        </r:constructor>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <!-- ActiveFlag -->
+      <xs:element name="ActiveFlag"
+                  type="mstns:ActiveFlag">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(paymentRow, DataModel.ConsumerDebtPayment.IsActiveColumn)</r:setter>
+            <r:setter property="IsActive">!paymentRow.IsActive</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- ActualPaymentDate -->
+      <xs:element name="ActualPaymentDate"
+                  type="mstns:ActualPaymentDate">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">!paymentRow.IsActive</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(paymentRow, DataModel.ConsumerDebtPayment.ActualPaymentDateColumn)</r:setter>
+            <r:setter property="Text">paymentRow.IsActualPaymentDateNull() ? "" : paymentRow.ActualPaymentDate.ToString("d")</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- ActualPaymentValue -->
+      <xs:element name="ActualPaymentValue"
+                  type="mstns:ActualPaymentValue">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">!paymentRow.IsActive</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(paymentRow, DataModel.ConsumerDebtPayment.ActualPaymentValueColumn)</r:setter>
+            <r:setter property="Text">paymentRow.IsActualPaymentValueNull() ? 0.0m :paymentRow.ActualPaymentValue</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- CheckId -->
+      <xs:element name="CheckId"
+                  type="mstns:CheckId">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">!paymentRow.IsActive</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(paymentRow, DataModel.ConsumerDebtPayment.CheckIdColumn)</r:setter>
+            <r:setter property="Text">paymentRow.IsCheckIdNull() ? "" : paymentRow.CheckId</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- ClearedDate -->
+      <xs:element name="ClearedDate"
+                  type="mstns:ClearedDate">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">!paymentRow.IsActive</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(paymentRow, DataModel.ConsumerDebtPayment.ClearedDateColumn)</r:setter>
+            <r:setter property="Text">paymentRow.ClearedDate</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- CreatedDateTime -->
+      <xs:element name="CreatedDateTime"
+                  type="mstns:CreatedDateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">!paymentRow.IsActive</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(paymentRow, DataModel.ConsumerDebtPayment.CreatedTimeColumn)</r:setter>
+            <r:setter property="Text">paymentRow.CreatedTime.ToLocalTime()</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- CreatedUserId -->
+      <xs:element name="CreatedUserId"
+                  type="mstns:CreatedUserId">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">!paymentRow.IsActive</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(paymentRow, DataModel.ConsumerDebtPayment.CreatedUserIdColumn)</r:setter>
+						<r:setter property="Name">DataModel.Entity.EntityKey.Find(paymentRow.CreatedUserId).Name</r:setter>
+            <r:setter property="Text">paymentRow.CreatedUserId</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- EffectivePaymentDate -->
+      <xs:element name="EffectivePaymentDate"
+                  type="mstns:EffectivePaymentDate">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">!paymentRow.IsActive</r:setter>
+            <!--<r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(paymentRow, DataModel.ConsumerDebtPayment.EffectivePaymentDateColumn)</r:setter>-->
+            <r:setter property="Text">paymentRow.EffectivePaymentDate.ToLocalTime()</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- EffectivePaymentValue -->
+      <xs:element name="EffectivePaymentValue"
+                  type="mstns:EffectivePaymentValue">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">!paymentRow.IsActive</r:setter>
+            <!--<r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(paymentRow, DataModel.ConsumerDebtPayment.EffectivePaymentValueColumn)</r:setter>-->
+            <r:setter property="Text">paymentRow.EffectivePaymentValue</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Fee0 -->
+      <xs:element name="Fee0"
+                  type="mstns:Fee0">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">!paymentRow.IsActive</r:setter>
+            <!--<r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(paymentRow, DataModel.ConsumerDebtPayment.Fee0Column)</r:setter>-->
+            <r:setter property="Text">paymentRow.IsFee0Null() ? 0.0m : paymentRow.Fee0</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- IsCleared -->
+      <xs:element name="IsCleared"
+                  type="mstns:IsCleared">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">!paymentRow.IsActive</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(paymentRow, DataModel.ConsumerDebtPayment.IsClearedColumn)</r:setter>
+            <r:setter property="Cleared">paymentRow.IsCleared</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Memo0 -->
+      <xs:element name="Memo0"
+                  type="mstns:Memo0">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">!paymentRow.IsActive</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(paymentRow, DataModel.ConsumerDebtPayment.Memo0Column)</r:setter>
+            <r:setter property="Text">paymentRow.IsMemo0Null() ? "" : paymentRow.Memo0</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Memo1 -->
+      <xs:element name="Memo1"
+                  type="mstns:Memo1">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">!paymentRow.IsActive</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(paymentRow, DataModel.ConsumerDebtPayment.Memo1Column)</r:setter>
+            <r:setter property="Text">paymentRow.IsMemo1Null() ? "" : paymentRow.Memo1</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- Memo2 -->
+      <xs:element name="Memo2"
+                  type="mstns:Memo2">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">!paymentRow.IsActive</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(paymentRow, DataModel.ConsumerDebtPayment.Memo2Column)</r:setter>
+            <r:setter property="Text">paymentRow.IsMemo2Null() ? "" : paymentRow.Memo2</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- ModifiedDateTime -->
+      <xs:element name="ModifiedDateTime"
+                  type="mstns:ModifiedDateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">!paymentRow.IsActive</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(paymentRow, DataModel.ConsumerDebtPayment.ModifiedTimeColumn)</r:setter>
+            <r:setter property="Text">paymentRow.ModifiedTime.ToLocalTime()</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- ModifiedUserId -->
+      <xs:element name="ModifiedUserId"
+                  type="mstns:ModifiedUserId">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">!paymentRow.IsActive</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(paymentRow, DataModel.ConsumerDebtPayment.ModifiedUserIdColumn)</r:setter>
+            <r:setter property="Name">DataModel.Entity.EntityKey.Find(paymentRow.ModifiedUserId).Name</r:setter>
+            <r:setter property="Text">paymentRow.ModifiedUserId</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- SelectRow -->
+      <xs:element name="SelectRow"
+                  type="mstns:SelectRow">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">!paymentRow.IsActive</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- StatusId -->
+      <xs:element name="StatusId"
+                  type="mstns:StatusId">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">!paymentRow.IsActive</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(paymentRow, DataModel.ConsumerDebtPayment.StatusIdColumn)</r:setter>
+            <r:setter property="Mnemonic">paymentRow.StatusRow.Mnemonic</r:setter>
+            <r:setter property="StatusSortOrder">paymentRow.StatusRow.SortOrder.ToString()</r:setter>
+            <r:setter property="StatusCode">paymentRow.StatusRow.StatusCode</r:setter>
+            <r:setter property="StatusIdEnum">paymentRow.StatusId</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <!-- TrackingNumber -->
+      <xs:element name="TrackingNumber"
+                  type="mstns:TrackingNumber">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:setter property="IsActive">!paymentRow.IsActive</r:setter>
+            <r:setter property="Key">new FluidTrade.Core.DataTableCoordinate(paymentRow, DataModel.ConsumerDebtPayment.TrackingNumberColumn)</r:setter>
+            <r:setter property="Text">paymentRow.IsTrackingNumberNull() ? "" : paymentRow.TrackingNumber</r:setter>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

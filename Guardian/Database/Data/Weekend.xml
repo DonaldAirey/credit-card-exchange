@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="Weekend">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <transaction>
+    <method name="CreateWeekendEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="SATSUN" />
+      <parameter name="weekendCode" value="SaturdaySunday" />
+    </method>
+    <method name="CreateWeekendEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="FRISAT" />
+      <parameter name="weekendCode" value="FridaySaturday" />
+    </method>
+    <method name="CreateWeekendEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="THURSFRI" />
+      <parameter name="weekendCode" value="ThursdayFriday" />
+    </method>
+  </transaction>
+</script>

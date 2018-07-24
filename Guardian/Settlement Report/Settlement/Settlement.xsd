@@ -1,0 +1,581 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+  <xs:schema targetNamespace="urn:schemas-fluidtrade-com:guardian:settlement"
+					   xmlns:mstns="urn:schemas-fluidtrade-com:guardian:settlement"
+					   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+					   xmlns:r="urn:schemas-fluidtrade-com:report">
+	<xs:annotation>
+	  <xs:appinfo>
+		<r:generatedCode destinationNamespace="FluidTrade.Guardian.Schema.Settlement" /> 
+	  </xs:appinfo>
+	</xs:annotation>
+	<!-- Accoun Balance -->
+	<xs:complexType name="AccountBalance">
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Debt Holder -->
+	<xs:complexType name="DebtHolder">
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Debt Negotiator -->
+	<xs:complexType name="DebtNegotiator">
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Id" r:datatype="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Debtor First Name -->
+	<xs:complexType name="DebtorFirstName" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Debtor Middle Name -->  
+	<xs:complexType name="DebtorMiddleName" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Debtor Last Name -->
+	<xs:complexType name="DebtorLastName" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Debtor Address1 -->
+	<xs:complexType name="DebtorAddress1" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Debtor Address2 -->
+	<xs:complexType name="DebtorAddress2" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Debtor City -->
+	<xs:complexType name="DebtorCity">
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Debtor Province -->
+	<xs:complexType name="DebtorProvince">
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Debtor PostalCode -->
+	<xs:complexType name="DebtorPostalCode" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Accoun Number -->
+	<xs:complexType name="DebtorAccountNumber" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Debtor Bank Routing Number -->
+	<xs:complexType name="DebtorBankRoutingNumber" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Debtor Bank Account Number -->
+	<xs:complexType name="DebtorBankAccountNumber" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Payee Company Name-->
+	<xs:complexType name="PayeeCompanyName" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Payee Department -->
+	<xs:complexType name="PayeeDepartment" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Payee Benefit Of -->
+	<xs:complexType name="PayeeBenefitOf" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Payee Contact Name -->
+	<xs:complexType name="PayeeContactName" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Payee Address1 -->
+	<xs:complexType name="PayeeAddress1" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Payee Address2 -->
+	<xs:complexType name="PayeeAddress2" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Payee City -->
+	<xs:complexType name="PayeeCity" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Payee Province -->
+	<xs:complexType name="PayeeProvinceId" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Payee PostalCode -->
+	<xs:complexType name="PayeePostalCode">
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Payee Phone -->
+	<xs:complexType name="PayeePhone" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Payee Fax -->
+	<xs:complexType name="PayeeFax" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Payee Email -->
+	<xs:complexType name="PayeeEmail" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Payee Bank Routing Number -->
+	<xs:complexType name="PayeeBankRoutingNumber" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Payee Bank Account Number -->
+	<xs:complexType name="PayeeBankAccountNumber">
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Pay Term Length -->
+	<xs:complexType name="PayTermLength" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Pay Term Start Date -->
+	<xs:complexType name="PayTermStartDate">
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Payment Method -->
+	<xs:complexType name="PaymentMethod" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Settlement Amount -->
+	<xs:complexType name="SettlementAmount" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Settlement Id -->
+	<xs:complexType name="SettlementId" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Read Status -->
+	<xs:complexType name="ReadStatus" >
+	  <xs:sequence>
+		<xs:element name="IsActive" type="xs:boolean" />
+		<xs:element name="Text" r:datatype="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:anyType" />
+	  </xs:sequence>
+	</xs:complexType>
+	<!-- Settlement -->
+	<xs:complexType name="Settlement">
+	  <xs:annotation>
+		<xs:appinfo>
+		  <r:constructor>
+			<r:arguments>
+			  <r:argument type="FluidTrade.Guardian.ConsumerDebtSettlementRow" name="settlementRow" />
+			</r:arguments>
+			<r:setter property="key" value="settlementRow" />
+			<r:snippet>
+			  ConsumerDebtNegotiationRow consumerDebtTrustNegotiationRow =			  
+			  DataModel.ConsumerDebtNegotiation.ConsumerDebtNegotiationKey.Find(settlementRow.ConsumerDebtNegotiationId);</r:snippet>			
+			<r:snippet>
+			  MatchRow matchRow = (consumerDebtTrustNegotiationRow != null) ? DataModel.Match.MatchKey.Find(consumerDebtTrustNegotiationRow.MatchId)
+			  : null;
+			</r:snippet>
+			<r:snippet>StatusRow statusRow = DataModel.Status.StatusKey.Find(settlementRow.StatusId);</r:snippet>
+		  </r:constructor>
+		</xs:appinfo>
+	  </xs:annotation>
+	  <xs:sequence>
+		<!-- Accoun Balance -->
+		<xs:element  name="AccountBalance" type="mstns:AccountBalance">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">settlementRow.AccountBalance</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element>
+		<!-- Debt Holder -->
+		<xs:element  name="DebtHolder" type="mstns:DebtHolder">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">global::System.Guid.NewGuid()</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element>
+		<!-- Debt Negotiator -->
+		<xs:element name="DebtNegotiator" type="mstns:DebtNegotiator">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Id">settlementRow.ConsumerDebtNegotiationId</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Debtor First Name -->
+		<xs:element  name="DebtorFirstName" type="mstns:DebtorFirstName">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">settlementRow.DebtorFirstName</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Debtor Middle Name -->
+		<xs:element  name="DebtorMiddleName" type="mstns:DebtorMiddleName">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">(settlementRow.IsDebtorMiddleNameNull() == false) ? settlementRow.DebtorMiddleName : ""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Debtor Last Name -->
+		<xs:element  name="DebtorLastName" type="mstns:DebtorLastName">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">settlementRow.DebtorLastName</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Debtor Address1 -->
+		<xs:element  name="DebtorAddress1" type="mstns:DebtorAddress1">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">settlementRow.DebtorAddress1</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Debtor Address2 -->
+		<xs:element  name="DebtorAddress2" type="mstns:DebtorAddress2">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">(settlementRow.IsDebtorAddress2Null() == false) ? settlementRow.DebtorAddress2 : ""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Debtor City -->
+		<xs:element  name="DebtorCity" type="mstns:DebtorCity">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">settlementRow.DebtorCity</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Debtor Province -->
+		<xs:element  name="DebtorProvince" type="mstns:DebtorProvince">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <!--<r:setter property="Text">(settlementRow.IsDebtorProvinceIdNull() == false) ? settlementRow.DebtorProvinceId : global::System.Guid.Empty</r:setter>-->
+			  <r:setter property="Text">""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Debtor PostalCode -->
+		<xs:element  name="DebtorPostalCode" type="mstns:DebtorPostalCode">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">(settlementRow.IsDebtorPostalCodeNull() == false) ? settlementRow.DebtorPostalCode : ""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Accoun Number -->
+		<xs:element  name="DebtorAccountNumber" type="mstns:DebtorAccountNumber">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">(settlementRow.IsDebtorAccountNumberNull() == false) ? settlementRow.DebtorAccountNumber : ""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Debtor Bank Routing Number -->
+		<xs:element  name="DebtorBankRoutingNumber" type="mstns:DebtorBankRoutingNumber">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">(settlementRow.IsDebtorBankRoutingNumberNull() == false) ? settlementRow.DebtorBankRoutingNumber : ""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Debtor Bank Account Number -->
+		<xs:element  name="DebtorBankAccountNumber" type="mstns:DebtorBankAccountNumber">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">(settlementRow.IsDebtorBankAccountNumberNull() == false) ? settlementRow.DebtorBankAccountNumber : ""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Payee Company Name-->
+		<xs:element  name="PayeeCompanyName" type="mstns:PayeeCompanyName">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">(settlementRow.IsPayeeCompanyNameNull() == false) ? settlementRow.PayeeCompanyName : ""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Payee Department -->
+		<xs:element  name="PayeeDepartment" type="mstns:PayeeDepartment">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">(settlementRow.IsPayeeCompanyNameNull() == false) ? settlementRow.PayeeCompanyName : ""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Payee Benefit Of -->
+		<xs:element  name="PayeeBenefitOf" type="mstns:PayeeBenefitOf">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">(settlementRow.IsPayeeForBenefitOfNull() == false) ? settlementRow.PayeeForBenefitOf : ""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Payee Contact Name -->
+		<xs:element  name="PayeeContactName" type="mstns:PayeeContactName">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">(settlementRow.IsPayeeContactNameNull() == false) ? settlementRow.PayeeContactName : ""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Payee Address1 -->
+		<xs:element  name="PayeeAddress1" type="mstns:PayeeAddress1">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">(settlementRow.IsPayeeAddress1Null() == false) ? settlementRow.PayeeAddress1 : ""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Payee Address2 -->
+		<xs:element  name="PayeeAddress2" type="mstns:PayeeAddress2">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">(settlementRow.IsPayeeAddress2Null() == false) ? settlementRow.PayeeAddress2 : ""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Payee City -->
+		<xs:element  name="PayeeCity" type="mstns:PayeeCity">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">(settlementRow.IsPayeeCityNull() == false) ? settlementRow.PayeeCity : ""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Payee Province -->
+		<xs:element  name="PayeeProvinceId" type="mstns:PayeeProvinceId">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <!--<r:setter property="Text">(settlementRow.IsPayeeProvinceIdNull() == false) ? settlementRow.PayeeProvinceId : ""</r:setter>-->
+			  <r:setter property="Text">""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Payee PostalCode -->
+		<xs:element  name="PayeePostalCode" type="mstns:PayeePostalCode">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">(settlementRow.IsPayeePostalCodeNull() == false) ? settlementRow.PayeePostalCode : ""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Payee Phone -->
+		<xs:element  name="PayeePhone" type="mstns:PayeePhone">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">(settlementRow.IsPayeePhoneNull() == false) ? settlementRow.PayeePhone : ""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Payee Fax -->
+		<xs:element  name="PayeeFax" type="mstns:PayeeFax">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">(settlementRow.IsPayeeFaxNull() == false) ? settlementRow.PayeeFax : ""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Payee Email -->
+		<xs:element  name="PayeeEmail" type="mstns:PayeeEmail">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">(settlementRow.IsPayeeEmailNull() == false) ? settlementRow.PayeeEmail : ""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Payee Bank Routing Number -->
+		<xs:element  name="PayeeBankRoutingNumber" type="mstns:PayeeBankRoutingNumber">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">(settlementRow.IsPayeeBankRoutingNumberNull() == false) ? settlementRow.PayeeBankRoutingNumber : ""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Payee Bank Account Number -->
+		<xs:element  name="PayeeBankAccountNumber" type="mstns:PayeeBankAccountNumber">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">(settlementRow.IsPayeeBankAccountNumberNull() == false) ? settlementRow.PayeeBankAccountNumber : ""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Pay Term Length -->
+		<xs:element  name="PayTermLength" type="mstns:PayTermLength">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">settlementRow.PaymentLength</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Pay Term Start Date -->
+		<xs:element  name="PayTermStartDate" type="mstns:PayTermStartDate">
+			<xs:annotation>
+			  <xs:appinfo>
+				<r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+				<r:setter property="Text">settlementRow.PaymentStartDate</r:setter>
+			  </xs:appinfo>
+			</xs:annotation>
+		</xs:element >
+		<!-- Payment Method -->
+		<xs:element  name="PaymentMethod" type="mstns:PaymentMethod">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">""</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Settlement Amount -->
+		<xs:element  name="SettlementAmount" type="mstns:SettlementAmount">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">settlementRow.SettlementAmount</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Settlement Id -->
+		<xs:element  name="SettlementId" type="mstns:SettlementId">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">settlementRow.ConsumerDebtSettlementId</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+		<!-- Read Status -->
+		<xs:element  name="ReadStatus" type="mstns:ReadStatus">
+		  <xs:annotation>
+			<xs:appinfo>
+			  <r:setter property="IsActive">statusRow.StatusCode != FluidTrade.Guardian.Status.Pending</r:setter>
+			  <r:setter property="Text">statusRow.StatusCode.ToString()</r:setter>
+			</xs:appinfo>
+		  </xs:annotation>
+		</xs:element >
+	  </xs:sequence>
+	</xs:complexType>
+  </xs:schema>
+  

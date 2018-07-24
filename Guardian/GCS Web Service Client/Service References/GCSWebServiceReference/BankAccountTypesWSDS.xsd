@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://globalclientsolutions.com/WebServices/BankAccountTypesWSDS.xsd" xmlns="http://globalclientsolutions.com/WebServices/BankAccountTypesWSDS.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://globalclientsolutions.com/WebServices/BankAccountTypesWSDS.xsd" id="BankAccountTypesWSDS" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="BankAccountTypesWSDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BANK_ACCOUNT_TYPES">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="BANK_ACCOUNT_TYPE" type="xs:string" />
+              <xs:element minOccurs="0" name="BANK_ACCOUNT_TYPE_DESC" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

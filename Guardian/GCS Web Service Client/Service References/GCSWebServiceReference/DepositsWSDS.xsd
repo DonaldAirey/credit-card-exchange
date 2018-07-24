@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="https://websvc.globalclientsolutions.com/DepositsWSDS.xsd" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns="https://websvc.globalclientsolutions.com/DepositsWSDS.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="https://websvc.globalclientsolutions.com/DepositsWSDS.xsd" id="DepositsWSDS" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="DepositsWSDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DEPOSITS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msprop:typedName="DEPOSIT_ID" minOccurs="0" name="DEPOSIT_ID" type="xs:decimal" />
+              <xs:element minOccurs="0" name="ACCOUNT_ID" type="xs:string" />
+              <xs:element minOccurs="0" name="DEPOSIT_TYPE" type="xs:string" />
+              <xs:element minOccurs="0" name="CHECK_DATE" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="CHECK_NUMBER" type="xs:decimal" />
+              <xs:element minOccurs="0" name="DEPOSIT_AMOUNT" type="xs:decimal" />
+              <xs:element minOccurs="0" name="DEPOSIT_STATUS" type="xs:string" />
+              <xs:element minOccurs="0" name="NSF_CODE" type="xs:string" />
+              <xs:element minOccurs="0" name="NSF_REASON" type="xs:string" />
+              <xs:element minOccurs="0" name="NSF_DATE" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="NSF_ENTERED_DATE" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="CREATION_DATE" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="MODIFIED_DATE" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="MODIFIED_BY" type="xs:string" />
+              <xs:element minOccurs="0" name="EST_POST_DATE" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ERRORS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ERROR_ID" type="xs:decimal" />
+              <xs:element minOccurs="0" name="TABLE_NAME" type="xs:string" />
+              <xs:element minOccurs="0" name="TABLE_ID" type="xs:string" />
+              <xs:element minOccurs="0" name="ROW_ID" type="xs:decimal" />
+              <xs:element minOccurs="0" name="COLUMN_ID" type="xs:string" />
+              <xs:element minOccurs="0" name="ERROR_TYPE" type="xs:string" />
+              <xs:element minOccurs="0" name="ERROR_CODE" type="xs:string" />
+              <xs:element minOccurs="0" name="ERROR_TEXT" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="META_INFO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="INFO_CLASS" type="xs:string" />
+              <xs:element minOccurs="0" name="INFO_TYPE" type="xs:string" />
+              <xs:element minOccurs="0" name="INFO_CODE" type="xs:string" />
+              <xs:element minOccurs="0" name="VALUE" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

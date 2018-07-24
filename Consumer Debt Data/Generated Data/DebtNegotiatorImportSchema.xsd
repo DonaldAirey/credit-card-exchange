@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DebtNegotiator" targetNamespace="http://debttrak.fluidtrade.com/DebtNegotiatorImportSchema.xsd" xmlns:mstns="http://debttrak.fluidtrade.com/DebtNegotiatorImportSchema.xsd" xmlns="http://debttrak.fluidtrade.com/DebtNegotiatorImportSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DebtNegotiator" msdata:IsDataSet="true" msdata:MainDataTable="http_x003A__x002F__x002F_debttrak.fluidtrade.com_x002F_DebtNegotiatorImportSchema.xsd_x003A_DebtNegotiatorRecord" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DebtNegotiatorRecord">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AccountBalance" type="xs:decimal" />
+              <xs:element name="AccountCode" type="xs:string" />
+              <xs:element name="Address1" type="xs:string" minOccurs="0" />
+              <xs:element name="Address2" type="xs:string" minOccurs="0" />
+              <xs:element name="BankAccountNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="BankRoutingNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="City" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerCode" type="xs:string" />
+              <xs:element name="DateOfBirth" type="xs:string" minOccurs="0" />
+              <xs:element name="DebtClassCode" type="xs:string" minOccurs="0" />
+              <xs:element name="DebtHolder" type="xs:string" minOccurs="0" />
+              <xs:element name="FirstName" type="xs:string" minOccurs="0" />
+              <xs:element name="IsEmployed" type="xs:boolean" minOccurs="0" />
+              <xs:element name="LastName" type="xs:string" minOccurs="0" />
+              <xs:element name="MiddleName" type="xs:string" minOccurs="0" />
+              <xs:element name="OriginalAccountNumber" type="xs:string" />
+              <xs:element name="PhoneNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="PostalCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ProvinceCode" type="xs:string" minOccurs="0" />
+              <xs:element name="SavingsBalance" type="xs:decimal" />
+              <xs:element name="SavingsEntityCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Salutation" type="xs:string" minOccurs="0" />
+              <xs:element name="SocialSecurityNumber" type="xs:string" />
+              <xs:element name="Suffix" type="xs:string" minOccurs="0" />
+              <xs:element name="VendorCode" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

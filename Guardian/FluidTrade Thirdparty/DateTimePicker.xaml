@@ -1,0 +1,113 @@
+﻿<UserControl x:Class="FluidTrade.Thirdparty.DateTimePicker"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:FluidTrade.Thirdparty"
+             xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Luna"
+             xmlns:shared="http://schemas.actiprosoftware.com/winfx/xaml/shared">
+
+    <UserControl.Resources>
+      <Style x:Key="ComboBoxEditableTextBox" TargetType="{x:Type TextBox}">
+        <Setter Property="AllowDrop" Value="true"/>
+        <Setter Property="Focusable" Value="true"/>
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="{x:Type TextBox}">
+              <ScrollViewer x:Name="PART_ContentHost"
+                            Focusable="True"
+                            HorizontalScrollBarVisibility="Hidden"
+                            VerticalScrollBarVisibility="Hidden"
+                            Background="Transparent"/>
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+      </Style>
+
+      <Style x:Key="ComboBoxTransparentButtonStyle" TargetType="{x:Type ToggleButton}">
+        <Setter Property="Focusable" Value="false"/>
+        <Setter Property="ClickMode" Value="Press"/>
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="{x:Type ToggleButton}">
+              <ContentPresenter Margin="{TemplateBinding Control.Padding}"
+                                HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}"
+                                VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}"
+                                SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}"
+                                ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}"
+                                RecognizesAccessKey="True"
+                                Content="{TemplateBinding ContentControl.Content}" />
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+      </Style>
+
+      <!-- shared:DateTimePicker -->
+      <Style x:Key="{x:Type shared:DateTimePicker}" TargetType="{x:Type shared:DateTimePicker}">
+        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"/>
+        <Setter Property="Background" Value="{x:Null}"/>
+
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="{x:Type shared:DateTimePicker}">
+              <Grid>
+                <ToggleButton x:Name="DropDownButton" Grid.Column="1"
+                              Style="{StaticResource ComboBoxTransparentButtonStyle}"
+                              IsChecked="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=IsDropDownOpen, Mode=TwoWay}"
+                              Width="{Binding Path=Width,RelativeSource={RelativeSource TemplatedParent}}"
+                              VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}"
+                              HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}">
+                  <Grid>
+                    <ContentPresenter x:Name="NonEditableContent"
+                                      Content="{Binding ElementName=PART_EditableTextBox, Path=Text}"
+                                      SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                      VerticalAlignment="Stretch"
+                                      HorizontalAlignment="Stretch"/>
+                    <TextBox x:Name="PART_EditableTextBox"
+                             Style="{StaticResource ComboBoxEditableTextBox}"
+                             Background="{x:Null}"
+                             IsReadOnly="False"
+                             Visibility="Collapsed"
+                             VerticalAlignment="Stretch"
+                             HorizontalAlignment="Stretch"/>
+                  </Grid>
+                </ToggleButton>
+
+                <Popup Name="PART_Popup"
+                       AllowsTransparency="true"
+                       Placement="Bottom"
+                       IsOpen="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=IsDropDownOpen}"
+                       Focusable="false"
+                       PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}">
+                  <theme:SystemDropShadowChrome Name="DropShadow"
+                                                Color="Transparent"
+                                                MinWidth="{TemplateBinding ActualWidth}">
+                    <Border x:Name="DropDownBorder"
+                        Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"
+                        BorderThickness="0"
+                        BorderBrush="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}">
+                      <ScrollViewer>
+                        <shared:MonthCalendar x:Name="PART_MonthCalendar"
+		                        MaxDate="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Maximum}"
+		                        MinDate="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Minimum}"
+		                        Style="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MonthCalendarStyle}" />
+                      </ScrollViewer>
+                    </Border>
+                  </theme:SystemDropShadowChrome>
+                </Popup>
+              </Grid>
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+      </Style>
+
+    </UserControl.Resources>
+
+    <Grid>
+      <shared:DateTimePicker Name="picker"
+                             ValueConverterParameter="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:DateTimePicker}}, Path=Format}"
+                             Value="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:DateTimePicker}}, Path=DateTime }"
+                             HorizontalAlignment="{Binding Path=HorizontalAlignment,RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:DateTimePicker}}}"
+                             VerticalAlignment="{Binding Path=VerticalAlignment,RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:DateTimePicker}}}"
+                             HorizontalContentAlignment="Stretch"
+                             VerticalContentAlignment="Stretch"/>
+    </Grid>
+</UserControl>

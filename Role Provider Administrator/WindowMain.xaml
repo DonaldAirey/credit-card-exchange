@@ -1,0 +1,58 @@
+﻿<Window x:Class="FluidTrade.Guardian.WindowMain"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:src="clr-namespace:FluidTrade.Guardian"
+    Title="Role Provider Administrator" Height="300" Width="1140">
+    <Window.Resources>
+        <ContextMenu x:Key="ContextMenu" x:Shared="true">
+            <MenuItem Command="ApplicationCommands.Cut" />
+            <MenuItem Command="ApplicationCommands.Copy" />
+            <MenuItem Command="ApplicationCommands.Paste" />
+            <Separator/>
+            <MenuItem Header="Add..." Command="ApplicationCommands.New" />
+            <MenuItem Command="ApplicationCommands.Delete" />
+            <MenuItem Command="ApplicationCommands.Open" />
+        </ContextMenu>
+        <HierarchicalDataTemplate DataType="{x:Type src:Root}" ItemsSource="{Binding Path=Roles}">
+            <DockPanel Height="24">
+                <Image Source="Images\Address Book.png"/>
+                <TextBlock Margin="6,0,0,0" Text="{Binding Path=Name}" VerticalAlignment="Center"/>
+      </DockPanel>
+        </HierarchicalDataTemplate>
+        <HierarchicalDataTemplate DataType="{x:Type src:Role}" ItemsSource="{Binding Path=Users}">
+            <DockPanel Height="24">
+                <Image Source="Images\Group.png"/>
+                <TextBlock Margin="6,0,0,0" Text="{Binding Path=Name}" VerticalAlignment="Center"/>
+      </DockPanel>
+        </HierarchicalDataTemplate>
+        <DataTemplate DataType="{x:Type src:User}">
+            <DockPanel Height="24">
+                <Image Source="Images\User.png"/>
+                <TextBlock Margin="6,0,0,0" Text="{Binding Path=Name}" VerticalAlignment="Center"/>
+      </DockPanel>
+        </DataTemplate>
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Cut" Executed="ExecuteCut" CanExecute="CanExecuteCut"/>
+        <CommandBinding Command="ApplicationCommands.Copy" Executed="ExecuteCopy" CanExecute="CanExecuteCopy"/>
+        <CommandBinding Command="ApplicationCommands.Paste" Executed="ExecutePaste" CanExecute="CanExecutePaste"/>
+        <CommandBinding Command="ApplicationCommands.New" Executed="ExecuteNew" CanExecute="CanExecuteNew"/>
+        <CommandBinding Command="ApplicationCommands.Delete" Executed="ExecuteDelete" CanExecute="CanExecuteDelete"/>
+        <CommandBinding Command="ApplicationCommands.Open" Executed="ExecuteOpen" CanExecute="CanExecuteOpen"/>
+    </Window.CommandBindings>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" Name="mainMenu" Height="23">
+            <MenuItem Header="File" />
+            <MenuItem Header="Edit">
+                <MenuItem Command="ApplicationCommands.Cut" />
+                <MenuItem Command="ApplicationCommands.Copy" />
+                <MenuItem Command="ApplicationCommands.Paste" />
+                <Separator/>
+                <MenuItem Header="Add..." Command="ApplicationCommands.New" />
+                <MenuItem Command="ApplicationCommands.Delete" />
+                <MenuItem Command="ApplicationCommands.Open" />
+            </MenuItem>
+        </Menu>
+        <TreeView ContextMenu="{DynamicResource ContextMenu}" Name="treeView"/>
+    </DockPanel>
+</Window>

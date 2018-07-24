@@ -1,0 +1,324 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{67470C76-6D65-40E7-A782-3D26ABE4F9FF}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>FluidTrade.TradingSupport</AssemblyName>
+    <AssemblyOriginatorKeyFile>Public Key.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>true</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FluidTrade.Guardian</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>true</SignAssembly>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\FluidTrade.TradingSupport.XML</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\FluidTrade.TradingSupport.XML</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>bin\Debug\FluidTrade.TradingSupport.XML</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>bin\Release\FluidTrade.TradingSupport.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>bin\Debug\FluidTrade.TradingSupport.XML</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>bin\Release\FluidTrade.TradingSupport.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.configuration">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.IdentityModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <ProjectReference Include="..\..\Fluid Trade Library\Fluid Trade Library.csproj">
+      <Project>{734051D9-B2A3-44E9-A88B-7B4FDB90109F}</Project>
+      <Name>Fluid Trade Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Guardian Library\Guardian Library.csproj">
+      <Project>{EFBD8C4F-D582-456F-92B2-40839952F0C4}</Project>
+      <Name>Guardian Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Server Data Model\Server Data Model.csproj">
+      <Project>{DF8E8A7B-721B-4C81-AA59-1221CB001C60}</Project>
+      <Name>Server Data Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessControlHelper.cs" />
+    <Compile Include="AccessRightMap.cs" />
+    <Compile Include="BusinessRules.cs" />
+    <Compile Include="CardSocialLastNameFuzzyMatcher.cs" />
+    <Compile Include="CommissionSchedulePersistence.cs" />
+    <Compile Include="ConsumerCross.cs" />
+    <Compile Include="ConsumerCrossTrust.cs" />
+    <Compile Include="ConsumerDebtHelper.cs" />
+    <Compile Include="ConsumerDebtMatchInfo.cs" />
+    <Compile Include="ConsumerDebtNegotiationHelper.cs" />
+    <Compile Include="ConsumerDebtPaymentPersistence.cs" />
+    <Compile Include="ConsumerMatchInfo.cs" />
+    <Compile Include="ChatManager.cs" />
+    <Compile Include="ConsumerTrustMatchInfo.cs" />
+    <Compile Include="ConsumerTrustHelper.cs" />
+    <Compile Include="ConsumerTrustPaymentPersistence.cs" />
+    <Compile Include="ConsumerTrustPersistence.cs" />
+    <Compile Include="ConsumerDebtPersistence.cs" />
+    <Compile Include="ConsumerPersistence.cs" />
+    <Compile Include="ConsumerTrustNegotiationHelper.cs" />
+    <Compile Include="ConsumerCrossDebt.cs" />
+    <Compile Include="DebtHolderImportTranslationPersistence.cs" />
+    <Compile Include="DebtClassPersistence.cs" />
+    <Compile Include="DebtNegotiatorPersistence.cs" />
+    <Compile Include="DebtRulePersistence.cs" />
+    <Compile Include="EntityTreePersistence.cs" />
+    <Compile Include="GroupPersistence.cs" />
+    <Compile Include="GroupTypeMap.cs" />
+    <Compile Include="PartyTypeMap.cs" />
+    <Compile Include="CrossingMap.cs" />
+    <Compile Include="Records\Blotter.cs" />
+    <Compile Include="Records\CommissionSchedule.cs" />
+    <Compile Include="Records\CommissionTranche.cs" />
+    <Compile Include="Records\ConsumerDebtNegotiationIsReadInfo.cs" />
+    <Compile Include="Records\ConsumerDebtPayment.cs" />
+    <Compile Include="Records\ConsumerTrustNegotiationIsReadInfo.cs" />
+    <Compile Include="Records\ConsumerDebtSettlementAcceptInfo.cs" />
+    <Compile Include="Records\ChatInfo.cs" />
+    <Compile Include="Records\ConsumerTrustPayment.cs" />
+    <Compile Include="Records\DebtClass.cs" />
+    <Compile Include="Records\DebtHolderImportTranslation.cs" />
+    <Compile Include="Records\DebtRule.cs" />
+    <Compile Include="Records\EntityTree.cs" />
+    <Compile Include="Records\Group.cs" />
+    <Compile Include="Records\Report.cs" />
+    <Compile Include="Records\RightsHolder.cs" />
+    <Compile Include="ReportPersistence.cs" />
+    <Compile Include="TimeInForceMap.cs" />
+    <Compile Include="OrderTypeMap.cs" />
+    <Compile Include="TimeUnitMap.cs" />
+    <Compile Include="StateMap.cs" />
+    <Compile Include="SideMap.cs" />
+    <Compile Include="DebtCross.cs" />
+    <Compile Include="IExchange.cs" />
+    <Compile Include="MatchPersistence.cs" />
+    <Compile Include="NegotiationPersistence.cs" />
+    <Compile Include="PersistenceHelper.cs" />
+    <Compile Include="Records\ConsumerDebtNegotiationInfo.cs" />
+    <Compile Include="Records\ConsumerTrustNegotiationInfo.cs" />
+    <Compile Include="Records\Match.cs" />
+    <Compile Include="DebtHolderRecordPersistence.cs" />
+    <Compile Include="DebtNegotiatorRecordPersistence.cs" />
+    <Compile Include="Records\DebtHolderRecord.cs" />
+    <Compile Include="Records\DebtNegotiatorRecord.cs" />
+    <Compile Include="Records\Negotiation.cs" />
+    <Compile Include="StatusMap.cs" />
+    <Compile Include="TradingSupport.cs" />
+    <Compile Include="VolumeCategoryMap.cs" />
+    <Compile Include="WorkingOrderPersistence.cs" />
+    <Compile Include="SecurityPersistence.cs" />
+    <Compile Include="ProvincePersistence.cs" />
+    <Compile Include="EntityPersistence.cs" />
+    <Compile Include="CreditCardPersistence.cs" />
+    <Compile Include="Records\BaseRecord.cs" />
+    <Compile Include="Records\ConsumerDebt.cs" />
+    <Compile Include="Records\Security.cs" />
+    <Compile Include="Records\Province.cs" />
+    <Compile Include="Records\Entity.cs" />
+    <Compile Include="Records\DebtNegotiator.cs" />
+    <Compile Include="Records\Consumer.cs" />
+    <Compile Include="Records\ConsumerTrust.cs" />
+    <Compile Include="Records\DebtHolder.cs" />
+    <Compile Include="Records\CreditCard.cs" />
+    <Compile Include="Records\MethodResponse.cs" />
+    <Compile Include="Records\WorkingOrderRecord.cs" />
+    <Compile Include="DataModelPersistence.cs" />
+    <Compile Include="DebtHolderPersistence.cs" />
+    <Compile Include="DestinationOrder.cs" />
+    <Compile Include="EquityCross.cs" />
+    <Compile Include="Execution.cs" />
+    <Compile Include="CrossingManager.cs">
+    </Compile>
+    <Compile Include="Match.cs" />
+    <Compile Include="Negotiation.cs" />
+    <Compile Include="OperationManager.cs">
+    </Compile>
+    <Compile Include="DestinationOrderHelper.cs" />
+    <Compile Include="ITradingSupport.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SourceOrder.cs" />
+    <Compile Include="WorkingOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="Public Key.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SimulatedPrices.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

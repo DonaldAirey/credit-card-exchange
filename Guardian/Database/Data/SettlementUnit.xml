@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="SettlementUnit">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <transaction>
+		<method name="CreateSettlementUnitEx" client="DataModelClient">
+			<parameter name="configurationId" value="Default" />
+			<parameter name="description" value="The settlement is applied in basis points." />
+			<parameter name="externalId0" value="BASISPOINT" />
+			<parameter name="name" value="BasisPoint" />
+			<parameter name="settlementUnitCode" value="BasisPoint" />
+		</method>
+		<method name="CreateSettlementUnitEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Undefined settlement type." />
+      <parameter name="externalId0" value="EMPTY" />
+			<parameter name="name" value="Empty" />
+			<parameter name="settlementUnitCode" value="Empty" />
+    </method>
+    <method name="CreateSettlementUnitEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="The settlement is applied as a market value." />
+      <parameter name="externalId0" value="MARKET VALUE" />
+			<parameter name="name" value="Market Value" />
+			<parameter name="settlementUnitCode" value="MarketValue" />
+    </method>
+    <method name="CreateSettlementUnitEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="The settlement is applied as a percent." />
+      <parameter name="externalId0" value="PERCENT" />
+			<parameter name="name" value="Percent" />
+			<parameter name="settlementUnitCode" value="Percent" />
+    </method>
+	</transaction>
+</script>

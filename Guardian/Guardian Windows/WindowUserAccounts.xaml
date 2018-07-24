@@ -1,0 +1,377 @@
+﻿<Window x:Class="FluidTrade.Guardian.Windows.WindowUserAccounts"
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:library="http://schemas.fluidtrade.com/winfx/2006/xaml/guardian/presentation"
+				xmlns:guardian="clr-namespace:FluidTrade.Guardian.Windows"
+				xmlns:controls="clr-namespace:FluidTrade.Guardian.Windows.Controls"
+				Name="manager"
+				Title="User Accounts"
+				ResizeMode="NoResize"
+				Height="503"
+				Width="468"
+				SnapsToDevicePixels="true">
+	<Window.CommandBindings>
+		<CommandBinding Command="library:GuardianCommands.Advanced"
+										Executed="OnAdvanced" />
+		<CommandBinding Command="FluidTradeCommands.Apply"
+										CanExecute="CanApply"
+										Executed="OnApply" />
+		<CommandBinding Command="FluidTradeCommands.Cancel"
+										Executed="OnCancel" />
+		<CommandBinding Command="ApplicationCommands.Delete"
+										CanExecute="CanUpdateUser"
+										Executed="OnDelete" />
+		<CommandBinding Command="ApplicationCommands.New"
+										Executed="OnNew" />
+		<CommandBinding Command="FluidTradeCommands.OK"
+										Executed="OnOkay" />
+		<CommandBinding Command="library:GuardianCommands.Properties"
+										CanExecute="CanUpdateUser"
+										Executed="OnProperties" />
+		<CommandBinding Command="library:GuardianCommands.ResetPassword"
+										Executed="OnResetPassword" />
+		<CommandBinding Command="{x:Static library:GuardianCommands.CreateOrganization}"
+										Executed="OnCreateOrganization" />
+	</Window.CommandBindings>
+	<Window.Resources>
+		<guardian:IndentConverter x:Key="indentConverter" />
+		<guardian:IsConverter x:Key="isConverter" />
+
+		<Style x:Key="expandCollapseToggleStyle" TargetType="{x:Type ToggleButton}">
+			<Setter Property="Focusable" Value="False"/>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type ToggleButton}">
+						<Grid Width="16" Height="16" Margin="1" Background="Transparent">
+							<Path x:Name="ExpandPath"
+															HorizontalAlignment="Left"
+															Stroke="#A5A5A5"
+															StrokeThickness="1"
+															VerticalAlignment="Center"
+															Data="M 4,0 L 8,4 L 4,8 Z" />
+						</Grid>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsChecked" Value="True">
+								<Setter Property="Data" TargetName="ExpandPath" Value="M 2,8 L 8,2 L 8,8 Z" />
+								<Setter Property="Stroke" TargetName="ExpandPath" Value="Black" />
+								<Setter Property="Fill" TargetName="ExpandPath"	Value="#595959" />
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+		<HierarchicalDataTemplate DataType="{x:Type guardian:Tenant}" ItemsSource="{Binding OrganizationsAndUsers}">
+			<StackPanel Orientation="Horizontal">
+				<Image Margin="3,0,0,0" Height="16" Width="16" Source="pack://application:,,,/FluidTrade.GuardianWindows;component/Resources/workstation_network.png" />
+				<TextBlock Text="{Binding Path=Name}" />
+			</StackPanel>
+		</HierarchicalDataTemplate>
+
+		<DataTemplate DataType="{x:Type guardian:User}">
+			<StackPanel Orientation="Horizontal">
+				<Image Margin="3,0,0,0" Height="16" Width="16" Source="{Binding ImageSource}" />
+				<TextBlock Text="{Binding Path=Name}" />
+			</StackPanel>
+		</DataTemplate>
+	</Window.Resources>
+	<Grid Margin="7">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+
+		<TabControl Grid.Row="0">
+			<TabItem Header="Users">
+				<Grid Margin="11,5,10,10">
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="161" />
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
+					</Grid.RowDefinitions>
+					<DockPanel>
+						<Image Height="32"
+								 Width="32"
+								 Source="Resources/users-key.png"
+								 Margin="0,0,20,20"
+								 HorizontalAlignment="Center"
+								 VerticalAlignment="Center"/>
+						<TextBlock Text="Use the list below to grant or deny users access, and to change passwords and other settings."
+										 DockPanel.Dock="right"
+										 TextWrapping="Wrap" />
+					</DockPanel>
+
+					<Label Content="_Users for this organization:" Target="{Binding ElementName=users}" Grid.Row="1"/>
+
+					<controls:TreeListView x:Name="users" BorderThickness="1"  Grid.Row="2" SelectedItemChanged="OnUsersSelectionChanged">
+						<controls:TreeListView.View>
+							<GridView AllowsColumnReorder="False">
+								<GridView.ColumnHeaderContainerStyle>
+									<Style TargetType="GridViewColumnHeader" BasedOn="{StaticResource {x:Type GridViewColumnHeader}}">
+										<Setter Property="HorizontalContentAlignment" Value="Left"/>
+										<Setter Property="Padding" Value="6,2,6,2"/>
+									</Style>
+								</GridView.ColumnHeaderContainerStyle>
+								<GridView.ColumnHeaderTemplate>
+									<DataTemplate>
+										<TextBlock Text="{Binding}" TextAlignment="Left" />
+									</DataTemplate>
+								</GridView.ColumnHeaderTemplate>
+
+								<GridViewColumn Width="155" Header="User Name">
+									<GridViewColumn.CellTemplate>
+										<DataTemplate>
+											<StackPanel Orientation="Horizontal">
+												<ToggleButton x:Name="Expander"
+																			Width="19"
+																			Height="13"
+																			Style="{StaticResource expandCollapseToggleStyle}"
+																			Margin="{Binding Level, Converter={StaticResource indentConverter}, RelativeSource={RelativeSource AncestorType={x:Type controls:TreeListViewItem}}}"
+																			IsChecked="{Binding Path=IsExpanded,RelativeSource={RelativeSource AncestorType={x:Type controls:TreeListViewItem}}}"
+																			ClickMode="Press"/>
+												<ContentPresenter Content="{Binding}" />
+											</StackPanel>
+											<DataTemplate.Triggers>
+												<DataTrigger Binding="{Binding Path=HasItems, RelativeSource={RelativeSource AncestorType={x:Type controls:TreeListViewItem}}}"
+																		 Value="False">
+													<Setter TargetName="Expander" Property="Visibility" Value="Hidden"/>
+												</DataTrigger>
+											</DataTemplate.Triggers>
+										</DataTemplate>
+									</GridViewColumn.CellTemplate>
+								</GridViewColumn>
+
+								<GridViewColumn Width="125" Header="Organization">
+									<!-- Display a User's tenant's name. Be careful not to show anything if the current item is, in fact, a Tenant -->
+									<GridViewColumn.CellTemplate>
+										<DataTemplate>
+											<TextBlock Name="text" />
+											<DataTemplate.Triggers>
+												<DataTrigger Binding="{Binding Converter={StaticResource isConverter},ConverterParameter={x:Type guardian:User}}"
+																		 Value="true">
+													<Setter TargetName="text" Property="Text" Value="{Binding Tenant}" />
+												</DataTrigger>
+											</DataTemplate.Triggers>
+										</DataTemplate>
+									</GridViewColumn.CellTemplate>
+								</GridViewColumn>
+
+								<!-- Display a User's default group. Be careful not to show anything if the current item is a Tenant -->
+								<GridViewColumn Width="125" Header="Group">
+									<GridViewColumn.CellTemplate>
+										<DataTemplate>
+											<TextBlock Name="text" />
+											<DataTemplate.Triggers>
+												<DataTrigger Binding="{Binding Converter={StaticResource isConverter},ConverterParameter={x:Type guardian:User}}"
+																		 Value="true">
+													<Setter TargetName="text" Property="Text" Value="{Binding DefaultGroup}" />
+												</DataTrigger>
+											</DataTemplate.Triggers>
+										</DataTemplate>
+									</GridViewColumn.CellTemplate>
+								</GridViewColumn>
+							</GridView>
+						</controls:TreeListView.View>
+						<controls:TreeListView.Resources>
+							<Style TargetType="{x:Type controls:TreeListViewItem}">
+								<Style.Triggers>
+									<DataTrigger Binding="{Binding Deleted}" Value="true">
+										<Setter Property="Visibility" Value="Collapsed" />
+									</DataTrigger>
+									<MultiDataTrigger>
+										<MultiDataTrigger.Conditions>
+											<Condition Binding="{Binding Converter={StaticResource isConverter},ConverterParameter={x:Type guardian:User}}" Value="true"/>
+											<Condition Binding="{Binding Path=IsRemoved,FallbackValue=false}" Value="true"/>
+										</MultiDataTrigger.Conditions>											
+										<Setter Property="Visibility" Value="Collapsed" />
+									</MultiDataTrigger>
+								</Style.Triggers>
+							</Style>
+						</controls:TreeListView.Resources>
+					</controls:TreeListView>
+
+					<StackPanel FlowDirection="RightToLeft"
+										Grid.Row="3"
+										Margin="0,7,0,10"
+										Orientation="Horizontal"
+										VerticalAlignment="Bottom">
+						<Button Content="Pr_operties"
+									Command="library:GuardianCommands.Properties"
+									MinHeight="24"
+									MinWidth="96" />
+						<Button Content="_Remove"
+									Command="ApplicationCommands.Delete"
+									MinHeight="26"
+									Margin="10,0,10,0"
+									MinWidth="94" />
+						<Button Content="...A_dd"
+									MinHeight="24"
+									MinWidth="96"
+									Command="ApplicationCommands.New" />
+					</StackPanel>
+
+					<GroupBox Name="password"
+										BorderThickness="1"
+										Padding="10"
+										Margin="0,0,0,0"
+										Grid.Row="4">
+						<GroupBox.IsEnabled>
+							<Binding ConverterParameter="{x:Type guardian:User}">
+								<Binding.Converter>
+									<guardian:IsConverter />
+								</Binding.Converter>
+							</Binding>
+						</GroupBox.IsEnabled>
+						<GroupBox.Header>
+							<Binding StringFormat="Password for {0}" />
+						</GroupBox.Header>
+						<StackPanel>
+							<DockPanel>
+								<Image Name="userIcon"
+											 Source="{Binding ImageSource}"
+											 Height="32"
+											 Width="32"
+											 Margin="0,0,20,2"
+											 HorizontalAlignment="Center"
+											 VerticalAlignment="Center"/>
+								<TextBlock DockPanel.Dock="right"
+													 TextWrapping="Wrap"
+													 ClipToBounds="true">
+									<TextBlock.Text>
+										<Binding StringFormat="To change the password for {0}, click Reset Password." />
+									</TextBlock.Text>
+									<TextBlock.Style>
+										<Style TargetType="{x:Type TextBlock}">
+											<Style.Triggers>
+												<Trigger Property="IsEnabled" Value="false">
+													<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+												</Trigger>
+											</Style.Triggers>
+										</Style>
+									</TextBlock.Style>
+								</TextBlock>
+							</DockPanel>
+
+							<Button Content="Reset _Password..."
+										Command="library:GuardianCommands.ResetPassword"
+										MinHeight="26"
+										MinWidth="155"
+										HorizontalAlignment="Right"/>
+						</StackPanel>
+						
+						<GroupBox.Style>
+							<Style TargetType="{x:Type GroupBox}" BasedOn="{StaticResource {x:Type GroupBox}}">
+								<Style.Triggers>
+									<DataTrigger Value="false">
+										<DataTrigger.Binding>
+											<Binding ConverterParameter="{x:Type guardian:User}">
+												<Binding.Converter>
+													<guardian:IsConverter />
+												</Binding.Converter>
+											</Binding>
+										</DataTrigger.Binding>
+										
+										<Setter Property="Visibility" Value="Hidden" />
+									</DataTrigger>
+								</Style.Triggers>
+							</Style>
+						</GroupBox.Style>
+					</GroupBox>
+				</Grid>
+			</TabItem>
+			<TabItem Header="Advanced">
+				<StackPanel>
+					<GroupBox Header="Advanced user management"
+											BorderThickness="1"
+											Padding="10"
+											Margin="10,10,10,0">
+						<StackPanel>
+							<DockPanel>
+								<Image Source="Resources\users-key.png"
+											 Height="32"
+											 Width="32"
+											 Margin="0,0,20,2"
+											 HorizontalAlignment="Center"
+											 VerticalAlignment="Center"/>
+								<TextBlock DockPanel.Dock="right"
+													 TextWrapping="Wrap"
+													 Text="Local Users and Groups can be used to perform advanced user management tasks."
+													 ClipToBounds="true" />
+							</DockPanel>
+
+							<Button Content="Ad_vanced"
+											Command="{x:Static library:GuardianCommands.Advanced}"
+											MinHeight="26"
+											MinWidth="96"
+											HorizontalAlignment="Right"/>
+						</StackPanel>
+					</GroupBox>
+					<GroupBox Header="Add an organization"
+										Name="addOrganization"
+										BorderThickness="1"
+										Padding="10"
+										Margin="10,10,10,0">
+						<StackPanel>
+							<DockPanel>
+								<Image Source="Resources\home.png"
+											 Height="32"
+											 Width="32"
+											 Margin="0,0,20,2"
+											 HorizontalAlignment="Center"
+											 VerticalAlignment="Center"/>
+								<TextBlock DockPanel.Dock="right"
+													 TextWrapping="Wrap"
+													 Text="An organization represents a physical company or organization within the exchange."
+													 ClipToBounds="true" />
+							</DockPanel>
+
+							<Button Content="Add organization"
+											Padding="3,0,3,0"
+											Command="{x:Static library:GuardianCommands.CreateOrganization}"
+											MinHeight="26"
+											MinWidth="96"
+											HorizontalAlignment="Right"/>
+						</StackPanel>
+
+						<GroupBox.Style>
+							<Style TargetType="{x:Type GroupBox}" BasedOn="{StaticResource {x:Type GroupBox}}">
+								<Style.Triggers>
+									<DataTrigger Binding="{Binding Path=IsExchangeAdmin,Mode=OneWay}" Value="false">
+										<Setter Property="Visibility" Value="Collapsed" />
+									</DataTrigger>
+								</Style.Triggers>
+							</Style>
+						</GroupBox.Style>
+					</GroupBox>
+				</StackPanel>
+			</TabItem>
+		</TabControl>
+
+		<StackPanel FlowDirection="RightToLeft"
+								Grid.Row="1"
+								Orientation="Horizontal"
+								Margin="0,2,-4,-2"
+								VerticalAlignment="Bottom">
+			<Button Content="_Apply"
+							Command="FluidTradeCommands.Apply"
+							MinHeight="20"
+							Margin="4"
+							MinWidth="73" />
+			<Button Content="Cancel"
+							Command="FluidTradeCommands.Cancel"
+							MinHeight="20"
+							Margin="4"
+							MinWidth="73"
+							IsCancel="True" />
+			<Button Content="OK"
+							Command="FluidTradeCommands.OK"
+							MinHeight="20"
+							Margin="4"
+							MinWidth="73"
+							IsDefault="True" />
+		</StackPanel>
+	</Grid>
+</Window>

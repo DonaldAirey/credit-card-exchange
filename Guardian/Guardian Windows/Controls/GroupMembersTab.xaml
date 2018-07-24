@@ -1,0 +1,55 @@
+﻿<TabItem x:Class="FluidTrade.Guardian.Windows.Controls.GroupMembersTab"
+				 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				 xmlns:controls="clr-namespace:FluidTrade.Guardian.Windows.Controls"
+				 Header="Members"
+				 Name="tab">
+	<TabItem.CommandBindings>
+		<CommandBinding Command="ApplicationCommands.New"
+										Executed="OnNew" />
+		<CommandBinding Command="ApplicationCommands.Delete"
+										Executed="OnDelete" />
+	</TabItem.CommandBindings>
+	<Grid Margin="7" DataContext="{Binding Path=Group,ElementName=tab}">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+		
+		<Label Content="_Members:" Target="{Binding ElementName=users}" Grid.Row="0" />
+		
+		<controls:RightsHolderListBox x:Name="users" ItemsSource="{Binding Users}" Grid.Row="1" />
+		
+		<Grid Grid.Row="2">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition Width="*" />
+			</Grid.ColumnDefinitions>
+
+			<Button Content="A_dd..."
+							IsEnabled="false"
+							Margin="0,0,4,0"
+							MinWidth="73"
+							MinHeight="23"
+							Grid.Column="0"
+							VerticalAlignment="Center"
+							HorizontalAlignment="Center"
+							Command="ApplicationCommands.New"/>
+			<Button Content="Remove"
+							IsEnabled="false"
+							Margin="4,0,4,0"
+							MinWidth="73"
+							MinHeight="23"
+							Grid.Column="1"
+							VerticalAlignment="Center"
+							HorizontalAlignment="Center"
+							Command="ApplicationCommands.Delete"/>
+			<TextBlock Margin="4"
+								 Grid.Column="2"
+								 TextWrapping="Wrap"
+								 Text="Changes to a user's group membership will be effective momentarily." />
+		</Grid>
+	</Grid>
+</TabItem>

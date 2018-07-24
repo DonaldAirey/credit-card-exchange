@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/PaymentInfoWSDS.xsd" xmlns="http://tempuri.org/PaymentInfoWSDS.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/PaymentInfoWSDS.xsd" id="PaymentInfoWSDS" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="PaymentInfoWSDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PAYMENT_CLASS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="PAYMENT_CLASS" type="xs:string" />
+              <xs:element minOccurs="0" name="PAYMENT_CLASS_DESC" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PAYMENT_STATUS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="PAYMENT_STATUS" type="xs:string" />
+              <xs:element minOccurs="0" name="PAYMENT_STATUS_DESC" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PAYMENT_TYPES">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="PAYMENT_CLASS" type="xs:string" />
+              <xs:element minOccurs="0" name="PAYMENT_TYPE" type="xs:string" />
+              <xs:element minOccurs="0" name="PAYMENT_TYPE_DESC" type="xs:string" />
+              <xs:element minOccurs="0" name="POLICY_GROUP_ID" type="xs:decimal" />
+              <xs:element minOccurs="0" name="ACTIVE_FLAG" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

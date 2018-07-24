@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="PartyType">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <transaction>
+    <method name="CreatePartyTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="The Desk of a Agency Broker" />
+      <parameter name="externalId0" value="AGENCY" />
+      <parameter name="mnemonic" value="Agency" />
+      <parameter name="partyTypeCode" value="Agency" />
+    </method>
+    <method name="CreatePartyTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="The Desk of a Broker/Dealer" />
+      <parameter name="externalId0" value="BROKER" />
+      <parameter name="mnemonic" value="Broker" />
+      <parameter name="partyTypeCode" value="Broker" />
+    </method>
+    <method name="CreatePartyTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="A container for consumer debt" />
+      <parameter name="externalId0" value="DEBT CLASS" />
+      <parameter name="mnemonic" value="DebtClass" />
+      <parameter name="partyTypeCode" value="DebtClass" />
+    </method>
+    <method name="CreatePartyTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="A consumer debt negotiator" />
+      <parameter name="externalId0" value="DEBT NEGOTIATOR" />
+      <parameter name="mnemonic" value="DebtNegotiator" />
+      <parameter name="partyTypeCode" value="DebtNegotiator" />
+    </method>
+    <method name="CreatePartyTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="A holder of consumer debt" />
+      <parameter name="externalId0" value="DEBT HOLDER" />
+      <parameter name="mnemonic" value="DebtHolder" />
+      <parameter name="partyTypeCode" value="DebtHolder" />
+    </method>
+    <method name="CreatePartyTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Hedge Fund" />
+      <parameter name="externalId0" value="HEDGE FUND" />
+      <parameter name="mnemonic" value="Hedge" />
+      <parameter name="partyTypeCode" value="Hedge" />
+    </method>
+    <method name="CreatePartyTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Traditional Mutual Fund or Money Manager" />
+      <parameter name="externalId0" value="INSTITUTION" />
+      <parameter name="mnemonic" value="Institution" />
+      <parameter name="partyTypeCode" value="Instutition" />
+    </method>
+    <method name="CreatePartyTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Use the parent setting" />
+      <parameter name="externalId0" value="USE PARENT" />
+      <parameter name="mnemonic" value="Use Parent" />
+      <parameter name="partyTypeCode" value="UseParent" />
+    </method>
+    <method name="CreatePartyTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Not a valid counter party" />
+      <parameter name="externalId0" value="NOT VALID" />
+      <parameter name="mnemonic" value="Not Valid" />
+      <parameter name="partyTypeCode" value="NotValid" />
+    </method>
+  </transaction>
+</script>

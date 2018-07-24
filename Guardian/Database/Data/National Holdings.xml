@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<script name="National Holdings">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <transaction>
+     <method name="CreateTenantEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="National Holdings ORGANIZATION" />
+		<parameter name="name" value="National Holdings" />
+  </method>
+  <method name="CreateTenantTreeEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="National Holdings ORGANIZATION TREE"  />
+		<parameter name="tenantKeyByChildId" value="National Holdings ORGANIZATION" />
+		<parameter name="tenantKeyByParentId" value="FLUID TRADE" />
+  </method>
+  <method name="CreateEntityEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+			<parameter name="createdTime" value="6/18/2009 4:41:46 PM" />
+    <parameter name="externalId0" value="National Holdings" />
+      <parameter name="externalId7" value="National Holdings ORGANIZATION" />
+    <parameter name="hidden" value="false" />
+    <parameter name="imageKey" value="DEBT HOLDER" />
+			<parameter name="modifiedTime" value="6/18/2009 4:41:46 PM" />
+    <parameter name="name" value="National Holdings" />
+    <parameter name="readOnly" value="false" />
+	<parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+    <parameter name="typeKey" value="DEBT HOLDER" />
+  </method>
+  <method name="CreateBlotterEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="entityKey" value="National Holdings" />
+      <parameter name="partyTypeKey" value="BROKER" />
+  </method>
+  <method name="CreateDebtClassEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="blotterKey" value="National Holdings" />
+    <parameter name="debtRuleKey" value="National Holdings DEFAULT" />
+    <parameter name="commissionScheduleKey" value="National Holdings SCHEDULE" />
+		<parameter name="companyName" value="National Holdings LLC" />
+		<parameter name="department" value="Support" />
+		<parameter name="forBenefitOf" value="" />
+		<parameter name="contactName" value="Kai Hitori" />
+		<parameter name="address1" value="4712 Dupont Hwy" />
+		<parameter name="address2" value="4th Floor" />
+		<parameter name="bankAccountNumber" value="34108991043" />
+		<parameter name="bankRoutingNumber" value="333123599" />
+		<parameter name="city" value="Wilmington" />
+		<parameter name="email" value="Kai.Hitori@NationalHoldings.com" />
+		<parameter name="fax" value="555-142-2711" />
+		<parameter name="phone" value="555-142-2700" />
+		<parameter name="provinceKey" value="DE" />
+		<parameter name="postalCode" value="19805" />
+		<parameter name="settlementTemplate">
+      <load path="../Documents/National Holdings Settlement.docx"/>
+    </parameter>
+  </method>
+  <method name="CreateDebtHolderImportTranslationEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="accountBalance" value="data_bal_total" />
+    <parameter name="accountCode" value="National Holdings ID" />
+    <parameter name="address1" value="pri_add1" />
+    <parameter name="address2" value="pri_add2" />
+    <parameter name="city" value="pri_city" />
+    <parameter name="debtHolder" value="originator" />
+    <parameter name="dateOfBirth" value="pri_dob" />
+    <parameter name="externalId0" value="National Holdings TRANSLATION" />
+    <parameter name="firstName" value="pri_first" />
+    <parameter name="lastName" value="pri_last" />
+    <parameter name="originalAccountNumber" value="pri_acctno" />
+    <parameter name="phoneNumber" value="pri_hphone" />
+    <parameter name="postalCode" value="pri_zip" />
+    <parameter name="provinceCode" value="pri_state" />
+    <parameter name="socialSecurityNumber" value="pri_ssn" />
+  </method>
+  <method name="CreateDebtHolderEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="debtClassKey" value="National Holdings" />
+    <parameter name="debtHolderImportTranslationKey" value="National Holdings TRANSLATION" />
+  </method>
+		<method name="CreateEntityTreeEx" client="DataModelClient">
+			<parameter name="configurationId" value="Default" />
+			<parameter name="entityKeyByChildId" value="National Holdings" />
+			<parameter name="entityKeyByParentId" value="ADMINISTRATOR FOLDER" />
+			<parameter name="externalId0" value="{f8af6a05-0747-4006-861e-59d33b30c3b6}" />
+		</method>
+  <method name="CreateDebtRuleMapEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+		<parameter name="debtClassKey" value="National Holdings" />
+    <parameter name="debtRuleKey" value="National Holdings DEFAULT" />
+    <parameter name="externalId0" value="{3975a97e-3dce-4819-9c99-cc8839a547ca}" />
+  </method>
+	<!-- National Holdings administrators group -->
+	<method name="CreateEntityEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="createdTime" value="6/18/2009 4:41:46 PM" />
+		<parameter name="description" value="Administrators have complete and unrestricted access to the system" />
+		<parameter name="externalId0" value="National Holdings ADMINISTRATORS" />
+      <parameter name="externalId7" value="National Holdings ADMINISTRATORS" />
+		<parameter name="hidden" value="false" />
+			<parameter name="modifiedTime" value="6/18/2009 4:41:46 PM" />
+		<parameter name="imageKey" value="GROUP" />
+		<parameter name="name" value="Administrators" />
+		<parameter name="readOnly" value="false" />
+		<parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+		<parameter name="typeKey" value="GROUP" />
+	</method>
+	<method name="CreateRightsHolderEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="National Holdings ADMINISTRATORS" />
+		<parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+	</method>
+	<method name="CreateGroupEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="groupTypeKey" value="SITE ADMIN" />
+		<parameter name="rightsHolderKey" value="National Holdings ADMINISTRATORS" />
+      <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+	</method>
+	<!-- National Holdings users group -->
+	<method name="CreateEntityEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+			<parameter name="createdTime" value="6/18/2009 4:41:46 PM" />
+		<parameter name="description" value="Users are prevented from making accidental or intentional system-wide changes" />
+		<parameter name="externalId0" value="National Holdings USERS" />
+      <parameter name="externalId7" value="National Holdings USERS" />
+		<parameter name="hidden" value="false" />
+			<parameter name="modifiedTime" value="6/18/2009 4:41:46 PM" />
+		<parameter name="imageKey" value="GROUP" />
+		<parameter name="name" value="Users" />
+		<parameter name="readOnly" value="false" />
+		<parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+		 <parameter name="typeKey" value="GROUP" />
+	</method>
+	<method name="CreateRightsHolderEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="National Holdings USERS" />
+		<parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+	</method>
+	<method name="CreateGroupEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="groupTypeKey" value="USER" />
+		<parameter name="rightsHolderKey" value="National Holdings USERS" />
+      <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+	</method>
+  </transaction>
+	<transaction>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="National Holdings DESTINATION ORDER" />
+      <parameter name="blotterKey" value="National Holdings" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="DESTINATION ORDER REPORT" />
+      <parameter name="reportTypeKey" value="DESTINATION ORDER" />
+    </method>
+  </transaction>
+  <transaction>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="National Holdings DESTINATION ORDER DETAIL" />
+      <parameter name="blotterKey" value="National Holdings" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="DESTINATION ORDER DETAIL REPORT" />
+      <parameter name="reportTypeKey" value="DESTINATION ORDER DETAIL" />
+    </method>
+  </transaction>
+  <transaction>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="National Holdings EXECUTION" />
+      <parameter name="blotterKey" value="National Holdings" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="EXECUTION REPORT" />
+      <parameter name="reportTypeKey" value="EXECUTION" />
+    </method>
+  </transaction>
+  <transaction>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="National Holdings EXECUTION DETAIL" />
+      <parameter name="blotterKey" value="National Holdings" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="EXECUTION DETAIL REPORT" />
+      <parameter name="reportTypeKey" value="EXECUTION DETAIL" />
+    </method>
+  </transaction>
+  <transaction>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="National Holdings MATCH" />
+      <parameter name="blotterKey" value="National Holdings" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="CONSUMER DEBT MATCH REPORT" />
+      <parameter name="reportTypeKey" value="MATCH" />
+    </method>
+  </transaction>
+  <transaction>
+	<method name="CreateBlotterConfigurationEx" client="DataModelClient">
+	  <parameter name="externalId0" value="National Holdings PAYMENT SUMMARY" />
+	  <parameter name="blotterKey" value="National Holdings" />
+	  <parameter name="configurationId" value="Default" />
+	  <parameter name="reportKey" value="CONSUMER DEBT PAYMENT SUMMARY REPORT" />
+	  <parameter name="reportTypeKey" value="PAYMENT SUMMARY" />
+	</method>
+	<method name="CreateBlotterConfigurationEx" client="DataModelClient">
+	  <parameter name="externalId0" value="National Holdings SETTLEMENT" />
+	  <parameter name="blotterKey" value="National Holdings" />
+	  <parameter name="configurationId" value="Default" />
+	  <parameter name="reportKey" value="CONSUMER DEBT SETTLEMENT REPORT" />
+	  <parameter name="reportTypeKey" value="SETTLEMENT" />
+	</method>
+  </transaction>
+  <transaction>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="National Holdings SOURCE ORDER" />
+      <parameter name="blotterKey" value="National Holdings" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="SOURCE ORDER REPORT" />
+      <parameter name="reportTypeKey" value="SOURCE ORDER" />
+    </method>
+  </transaction>
+  <transaction>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="National Holdings SOURCE ORDER DETAIL" />
+      <parameter name="blotterKey" value="National Holdings" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="SOURCE ORDER DETAIL REPORT" />
+      <parameter name="reportTypeKey" value="SOURCE ORDER DETAIL" />
+    </method>
+  </transaction>
+  <transaction>
+    <method name="CreateBlotterConfigurationEx" client="DataModelClient">
+      <parameter name="externalId0" value="National Holdings WORKING ORDER" />
+      <parameter name="blotterKey" value="National Holdings" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="reportKey" value="CONSUMER DEBT WORKING ORDER REPORT" />
+      <parameter name="reportTypeKey" value="WORKING ORDER" />
+    </method>
+  </transaction>
+  <!-- Give groups default rights to the organization -->
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="National Holdings" />
+		<parameter name="rightsHolderKey" value="FLUID TRADE ADMINISTRATORS" />
+    <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="National Holdings" />
+		<parameter name="rightsHolderKey" value="National Holdings ADMINISTRATORS" />
+    <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="READ BROWSE" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="National Holdings" />
+		<parameter name="rightsHolderKey" value="National Holdings USERS" />
+    <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+	</method>
+	<!-- Give groups default rights to the groups themselves -->
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="National Holdings ADMINISTRATORS" />
+		<parameter name="rightsHolderKey" value="FLUID TRADE ADMINISTRATORS" />
+    <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="National Holdings ADMINISTRATORS" />
+		<parameter name="rightsHolderKey" value="National Holdings ADMINISTRATORS" />
+    <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="READ BROWSE" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="National Holdings ADMINISTRATORS" />
+		<parameter name="rightsHolderKey" value="National Holdings USERS" />
+    <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+	</method>
+
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="National Holdings USERS" />
+		<parameter name="rightsHolderKey" value="FLUID TRADE ADMINISTRATORS" />
+    <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="National Holdings USERS" />
+		<parameter name="rightsHolderKey" value="National Holdings ADMINISTRATORS" />
+    <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="READ BROWSE" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="National Holdings USERS" />
+		<parameter name="rightsHolderKey" value="National Holdings USERS" />
+    <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+	</method>
+</script>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PrototypeView"
+           targetNamespace="urn:schemas-fluidtrade-com:guardian:credit-card-header"
+           xmlns:mstns="urn:schemas-fluidtrade-com:guardian:credit-card-header"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:r="urn:schemas-fluidtrade-com:report"
+           xmlns:m="urn:schemas-fluidtrade-com:guardian:credit-card">
+  <xs:annotation>
+	<xs:appinfo>
+	  <r:generatedCode destinationNamespace="FluidTrade.Guardian.Schema.CreditCardHeader" />
+	</xs:appinfo>
+  </xs:annotation>
+  <!-- Imports -->
+  <xs:import namespace="urn:schemas-fluidtrade-com:guardian:credit-card"
+             schemaLocation="CreditCard.xsd" />  
+  <xs:complexType name="AccountBalance" />
+  <xs:complexType name="AccountNumber" />
+  <xs:complexType name="ConsumerId" />
+  <xs:complexType name="CreditCardId" />
+  <xs:complexType name="HeatIndex" />
+  <xs:complexType name="FirstName" />
+  <xs:complexType name="LastName" />
+  <xs:complexType name="DebtHolderName" />
+  <xs:complexType name="OriginalAccountNumber" />
+  <xs:complexType name="RuleId" />
+  <xs:complexType name="SelectRow" />
+  <xs:complexType name="SocialSecurity" />
+  <xs:complexType name="CreditCardHeader">
+	<xs:annotation>
+	  <xs:appinfo>
+		<r:constructor>
+		  <r:arguments>
+			<r:argument type="System.Guid"
+                        name="guid" />
+		  </r:arguments>
+		  <r:setter property="key"
+                    value="guid" />
+		</r:constructor>
+	  </xs:appinfo>
+	</xs:annotation>
+	<xs:sequence>
+	  <xs:element name="AccountBalance" 
+                  type="mstns:AccountBalance" />
+	  <xs:element name="AccountNumber" 
+                  type="mstns:AccountNumber " />
+	<xs:element name="CreditCardId" 
+                  type="mstns:CreditCardId" />
+	<xs:element name="ConsumerId" 
+                  type="mstns:ConsumerId" />
+    <xs:element name="HeatIndex"
+                type="mstns:HeatIndex" />
+    <xs:element name="FirstName"
+                  type="mstns:FirstName" />
+	  <xs:element name="LastName"
+                  type="mstns:LastName" />
+	  <xs:element name="DebtHolderName"
+				 type="mstns:DebtHolderName" />
+	<xs:element name="OriginalAccountNumber" 
+                  type="mstns:OriginalAccountNumber" />
+	  <xs:element name="RuleId"
+				type="mstns:RuleId" />
+    <xs:element name="SelectRow"
+                type="mstns:SelectRow" />
+    <xs:element name="SocialSecurity"
+                  type="mstns:SocialSecurity" />
+	  <xs:element name="CreditCardList"
+                  type="m:CreditCard"
+                  minOccurs="0"
+                  maxOccurs="unbounded">
+		<xs:annotation>
+		  <xs:appinfo>
+			<r:where predicate="Prefilter"
+                     source="DataModel.CreditCard"
+                     sourceType="FluidTrade.Guardian.CreditCardRow" />
+			<r:select selector="Selector" />
+			<r:where predicate="Filter" />
+			<r:orderBy comparer="Comparer"
+                       keySelector="m:CreditCard.SelectSelf"
+                       keyType="m:CreditCard" />
+		  </xs:appinfo>
+		</xs:annotation>
+	  </xs:element>
+	</xs:sequence>
+  </xs:complexType>
+</xs:schema>

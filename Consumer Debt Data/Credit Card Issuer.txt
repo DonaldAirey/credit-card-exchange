@@ -1,0 +1,44 @@
+HOUSEHOLD DIRM	Household DIRM
+FIRSTMERIT BANK	Firstmerit Bank
+WELLS FARGO	Wells Fargo
+HOUSEHOLD	Household
+HOUSEHOLD ORCHARD BANK	Household Orchard Bank
+PROVIDIAN VISA MASTERCARD	Providian Visa Mastercard
+CHASE MANHATTAN BANK PROVIDIAN	Chase Manhattan Bank Providian
+CHASE MANHATTAN BANK CIRCUIT CITY	Chase Manhattan Bank Circuit City
+FIRST NORTH AMERICAN BANK	First North American Bank
+BANK OF AMERICA	Bank Of America
+ASPIRE	Aspire
+PROVIDIAN	Providian
+SEARS	Sears
+DIRECT MERCHANTS BANK	Direct Merchants Bank
+UNION PRIVILEGE	Union Privilege
+FIRST CONSUMERS NATIONAL BANK	First Consumers National Bank
+FCNB SPIEGEL	FCNB Spiegel
+HOUSEHOLD ARBOR	Household Arbor
+MBNA	MBNA
+MARYLAND NATIONAL BANK	Maryland National Bank
+FIRST NATIONAL BANK OF OMAHA	First National Bank Of Omaha
+HOUSEHOLD UNION PRIVILAGE	Household Union Privilage
+ADVANTA	Advanta
+FIRST USA	First USA
+BANKFIRST	BankFirst
+CHASE MANHATTAN BANK	Chase Manhattan Bank
+HOUSEHOLD AFCA	Household AFCA
+FCNB CRATE BARREL	FCNB Crate & Barrel
+DISCOVER	Discover
+BANK ONE	Bank One
+FLEET BANK	Fleet Bank
+NATIONAL CITY	National City
+HOUSEHOLD GENERAL MOTORS	Household General Motors
+ORCHARD BANK	Orchard Bank
+CHASE MANHATTAN BANK VISA MASTERCARD	Chase Manhattan Bank Visa Mastercard
+CITIBANK	Citibank
+FIRST TENNESSEE BANK	First Tennessee Bank
+BANK FIRST	Bank First
+HOUSEHOLD GE LECHMERE	Household GE Lechmere
+GENERAL MOTORS	General Motors
+PROVIDIAN FIRST SELECT	Providian First Select
+HOUSEHOLD HSBC	Household HSBC
+FIFTH THIRD BANK	Fifth Third Bank
+FCNB NEWPORT NEWS	FCNB Newport News

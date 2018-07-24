@@ -1,0 +1,519 @@
+﻿ <Window x:Class="FluidTrade.Guardian.Windows.WindowUserManager"
+				 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				 xmlns:sys="clr-namespace:System.Collections;assembly=mscorelib"
+				 xmlns:local="clr-namespace:FluidTrade.Guardian.Windows"
+				 xmlns:library="clr-namespace:FluidTrade.Guardian"
+				 xmlns:guardian="http://schemas.fluidtrade.com/winfx/2006/xaml/guardian/presentation"
+				 Name="lusrmgr"
+				 SnapsToDevicePixels="true"
+				 Width="550"
+				 Height="500">
+	<Window.Title>
+		<Binding Path="Path" ElementName="lusrmgr" TargetNullValue="lusrmgr">
+			<Binding.StringFormat>
+				lusrmgr - [{0}]
+			</Binding.StringFormat>
+		</Binding>
+	</Window.Title>
+	<Window.CommandBindings>
+		<CommandBinding Command="guardian:GuardianCommands.View"
+										Executed="OnView" />
+		<CommandBinding Command="guardian:GuardianCommands.Properties"
+										Executed="OnProperties" />
+	</Window.CommandBindings>
+	<Window.Resources>
+		<local:IsConverter x:Key="isConverter" />
+		
+		<ContextMenu x:Key="basicMenu">
+			<MenuItem Header="Export List..." Command="ApplicationCommands.SaveAs" />
+			<Separator />
+			<MenuItem Header="View">
+				<MenuItem Header="Large Icons"
+									Command="guardian:GuardianCommands.View"
+									CommandParameter="{x:Static library:ViewType.LargeIcons}" />
+				<MenuItem Header="Small Icons"
+									Command="guardian:GuardianCommands.View"
+									CommandParameter="{x:Static library:ViewType.SmallIcons}" />
+				<MenuItem Header="List"
+									Command="guardian:GuardianCommands.View"
+									CommandParameter="{x:Static library:ViewType.List}" />
+				<MenuItem Header="Detail"
+									Command="guardian:GuardianCommands.View"
+									CommandParameter="{x:Static library:ViewType.Detail}" />
+			</MenuItem>
+		</ContextMenu>
+
+		<ContextMenu x:Key="userListMenu">
+			<MenuItem Header="New User..."
+								Command="ApplicationCommands.New" />
+			<Separator />
+			<MenuItem Header="Export List..." Command="ApplicationCommands.SaveAs" />
+			<Separator />
+			<MenuItem Header="View">
+				<MenuItem Header="Large Icons"
+									Command="guardian:GuardianCommands.View"
+									CommandParameter="{x:Static library:ViewType.LargeIcons}" />
+				<MenuItem Header="Small Icons"
+									Command="guardian:GuardianCommands.View"
+									CommandParameter="{x:Static library:ViewType.SmallIcons}" />
+				<MenuItem Header="List"
+									Command="guardian:GuardianCommands.View"
+									CommandParameter="{x:Static library:ViewType.List}" />
+				<MenuItem Header="Detail"
+									Command="guardian:GuardianCommands.View"
+									CommandParameter="{x:Static library:ViewType.Detail}" />
+			</MenuItem>
+		</ContextMenu>
+
+		<ContextMenu x:Key="groupListMenu">
+			<MenuItem Header="New Group..."
+								Command="ApplicationCommands.New" />
+			<Separator />
+			<MenuItem Header="Export List..." Command="ApplicationCommands.SaveAs" />
+			<Separator />
+			<MenuItem Header="View">
+				<MenuItem Header="Large Icons"
+									Command="guardian:GuardianCommands.View"
+									CommandParameter="{x:Static library:ViewType.LargeIcons}" />
+				<MenuItem Header="Small Icons"
+									Command="guardian:GuardianCommands.View"
+									CommandParameter="{x:Static library:ViewType.SmallIcons}" />
+				<MenuItem Header="List"
+									Command="guardian:GuardianCommands.View"
+									CommandParameter="{x:Static library:ViewType.List}" />
+				<MenuItem Header="Detail"
+									Command="guardian:GuardianCommands.View"
+									CommandParameter="{x:Static library:ViewType.Detail}" />
+			</MenuItem>
+		</ContextMenu>
+
+		<DataTemplate DataType="{x:Type local:Tenant}">
+			<DockPanel ContextMenu="{StaticResource basicMenu}">
+				<Image Source="Resources\workstation_network.png" Width="16" Height="16" DockPanel.Dock="Left" />
+				<TextBlock Text="{Binding Name}" TextTrimming="CharacterEllipsis" DockPanel.Dock="Right" />
+			</DockPanel>
+		</DataTemplate>
+
+		<DataTemplate DataType="{x:Type local:UserList}">
+			<DockPanel ContextMenu="{StaticResource userListMenu}">
+				<Image Source="Resources\folder_closed.png" Width="16" Height="16" DockPanel.Dock="Left" />
+				<TextBlock Text="Users" TextTrimming="CharacterEllipsis" DockPanel.Dock="Right" />
+			</DockPanel>
+		</DataTemplate>
+
+		<DataTemplate DataType="{x:Type local:GroupList}">
+			<DockPanel ContextMenu="{StaticResource groupListMenu}">
+				<Image Source="Resources\folder_closed.png" Width="16" Height="16" DockPanel.Dock="Left" />
+				<TextBlock Text="Groups" TextTrimming="CharacterEllipsis" DockPanel.Dock="Right" />
+			</DockPanel>
+		</DataTemplate>
+
+		<Style x:Key="iconStyle" TargetType="{x:Type Image}">
+			<Setter Property="Source" Value="{Binding ImageSource}" />
+			<Setter Property="Width" Value="16" />
+			<Setter Property="Height" Value="16" />
+			<Setter Property="DockPanel.Dock" Value="Left" />
+			<Style.Triggers>
+				<DataTrigger Binding="{Binding Path=ViewType,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:WindowUserManager}}" Value="LargeIcons">
+					<Setter Property="Width" Value="32" />
+					<Setter Property="Height" Value="32" />
+					<Setter Property="DockPanel.Dock" Value="Top" />
+					<Setter Property="HorizontalAlignment" Value="Center" />
+				</DataTrigger>
+			</Style.Triggers>
+		</Style>
+		
+		<Style x:Key="nameStyle" TargetType="{x:Type TextBlock}">
+			<Setter Property="Text" Value="{Binding Name}" />
+			<Setter Property="TextTrimming" Value="CharacterEllipsis" />
+			<Setter Property="DockPanel.Dock" Value="Right" />
+			<Style.Triggers>
+				<DataTrigger Binding="{Binding Path=ViewType,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=local:WindowUserManager}}" Value="LargeIcons">
+					<Setter Property="DockPanel.Dock" Value="Bottom" />
+					<Setter Property="HorizontalAlignment" Value="Stretch" />
+					<Setter Property="TextAlignment" Value="Center" />
+				</DataTrigger>
+			</Style.Triggers>
+		</Style>
+
+		<DataTemplate DataType="{x:Type local:User}">
+			<DockPanel>
+				<DockPanel.ContextMenu>
+					<ContextMenu>
+						<MenuItem Header="Set Password..."
+											Command="guardian:GuardianCommands.ResetPassword" />
+						<MenuItem Header="Delete"
+											Command="ApplicationCommands.Delete" />
+						<MenuItem Header="Rename"
+											Command="guardian:GuardianCommands.Rename" />
+						<Separator />
+						<MenuItem Header="Properties"
+											FontWeight="Bold"
+											CommandParameter="{Binding}"
+											Command="guardian:GuardianCommands.Properties" />
+					</ContextMenu>
+				</DockPanel.ContextMenu>
+
+				<Image Name="image" Style="{StaticResource iconStyle}" />
+				<TextBlock Name="text" Style="{StaticResource nameStyle}" />
+				
+			</DockPanel>
+		</DataTemplate>
+
+		<DataTemplate DataType="{x:Type local:Group}">
+			<DockPanel>
+				<DockPanel.ContextMenu>
+					<ContextMenu>
+						<MenuItem Header="Add to Group..." />
+						<MenuItem Header="Delete"
+											Command="ApplicationCommands.Delete" />
+						<MenuItem Header="Rename"
+											Command="guardian:GuardianCommands.Rename" />
+						<Separator />
+						<MenuItem Header="Properties"
+											FontWeight="Bold"
+											CommandParameter="{Binding}"
+											Command="guardian:GuardianCommands.Properties" />
+					</ContextMenu>
+				</DockPanel.ContextMenu>
+
+				<Image Name="image" Style="{StaticResource iconStyle}" />
+				<TextBlock Name="text" Style="{StaticResource nameStyle}" />
+			</DockPanel>
+		</DataTemplate>
+
+		<Style TargetType="{x:Type TreeViewItem}">
+			<Setter Property="Background" Value="Transparent" />
+			<Setter Property="BorderThickness" Value="1" />
+			<Setter Property="FocusVisualStyle">
+				<Setter.Value>
+					<Style>
+						<Setter Property="Control.Template">
+							<Setter.Value>
+								<ControlTemplate>
+									<Border>
+										<Rectangle Margin="0,0,0,0" StrokeThickness="5" Stroke="Black" StrokeDashArray="1 2" Opacity="0" />
+									</Border>
+								</ControlTemplate>
+							</Setter.Value>
+						</Setter>
+					</Style>
+				</Setter.Value>
+			</Setter>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type TreeViewItem}">
+						<DockPanel Margin="1">
+							<Grid DockPanel.Dock="Top"  Grid.ColumnSpan="2" Grid.Row="0" x:Name="gridItem">
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="Auto" />
+									<ColumnDefinition Width="*" />
+								</Grid.ColumnDefinitions>
+								<Border Background="Transparent"
+															BorderBrush="Transparent"
+															BorderThickness="{TemplateBinding BorderThickness}"
+															CornerRadius="2"
+															Grid.Column="1"
+															Grid.Row ="0"
+															x:Name="borderItem"
+															SnapsToDevicePixels="True">
+									<Grid>
+										<Rectangle Fill="Transparent"
+																		 x:Name="rectangleBackground" />
+										<Rectangle Fill="Transparent"
+																		 x:Name="rectangleOutline"
+																		 Stroke="Transparent"
+																		 StrokeThickness="1" />
+										<ContentPresenter ContentSource="Header"
+																						HorizontalAlignment="Left"
+																						x:Name="ContentHost" />
+									</Grid>
+								</Border>
+								<UserControl Grid.Column="2"
+																	 Grid.Row="0"
+																	 Background="Transparent" />
+							</Grid>
+							<ItemsPresenter DockPanel.Dock="Bottom"
+															Margin="19,0,0,0"
+															x:Name="ItemsHost" />
+						</DockPanel>
+						<ControlTemplate.Resources>
+							<LinearGradientBrush x:Key="ItemAreaSelectedMouseBrush" StartPoint="0.5, 0" EndPoint="0.5, 1">
+								<GradientStop Color="#E8F6FD" Offset="0" />
+								<GradientStop Color="#C4E8FA" Offset="1" />
+							</LinearGradientBrush>
+							<LinearGradientBrush x:Key="ItemAreaSelectedBrush" StartPoint="0.5, 0" EndPoint="0.5, 1">
+								<GradientStop Color="#F8F8F8" Offset="0" />
+								<GradientStop Color="#E5E5E5" Offset="1" />
+							</LinearGradientBrush>
+							<LinearGradientBrush x:Key="ItemAreaMouseOverBrush" StartPoint="0.5, 0" EndPoint="0.5, 1">
+								<GradientStop Color="#F5FAFD" Offset="0" />
+								<GradientStop Color="#E8F5FD" Offset="1" />
+							</LinearGradientBrush>
+							<LinearGradientBrush x:Key="ItemAreaDragOverBrush" StartPoint="0.5, 0" EndPoint="0.5, 1">
+								<GradientStop Color="#F1F8FD" Offset="0" />
+								<GradientStop Color="#D5EFFC" Offset="1" />
+							</LinearGradientBrush>
+						</ControlTemplate.Resources>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsExpanded" Value="false">
+								<Setter TargetName="ItemsHost" Property="Visibility" Value="Collapsed" />
+							</Trigger>
+							<MultiTrigger>
+								<MultiTrigger.Conditions>
+									<Condition Property="HasHeader"
+																	 Value="false" />
+									<Condition Property="Width"
+																	 Value="Auto" />
+								</MultiTrigger.Conditions>
+								<Setter TargetName="ContentHost"
+															Property="MinWidth"
+															Value="75" />
+							</MultiTrigger>
+							<MultiTrigger>
+								<MultiTrigger.Conditions>
+									<Condition Property="HasHeader"
+																	 Value="false" />
+									<Condition Property="Height"
+																	 Value="Auto" />
+								</MultiTrigger.Conditions>
+								<Setter TargetName="ContentHost"
+															Property="MinHeight"
+															Value="19" />
+							</MultiTrigger>
+							<Trigger Property="IsMouseOver"
+														 SourceName="borderItem"
+														 Value="true">
+								<Setter TargetName="borderItem"
+															Property="BorderBrush"
+															Value="#D8F0FA" />
+								<Setter TargetName="rectangleOutline"
+															Property="Stroke"
+															Value="#6AFFFFFF" />
+								<Setter TargetName="rectangleBackground"
+															Property="Fill"
+															Value="{StaticResource ItemAreaMouseOverBrush}" />
+							</Trigger>
+							<Trigger Property="IsSelected"
+														 Value="true">
+								<Setter TargetName="borderItem"
+															Property="BorderBrush"
+															Value="#99DEFD" />
+								<Setter TargetName="rectangleOutline"
+															Property="Stroke"
+															Value="#6AFFFFFF" />
+								<Setter TargetName="rectangleBackground"
+															Property="Fill"
+															Value="{StaticResource ItemAreaDragOverBrush}" />
+							</Trigger>
+							<Trigger Property="DragDropHelper.IsDragOver"
+														 SourceName="gridItem"
+														 Value="true">
+								<Setter TargetName="borderItem"
+															Property="BorderBrush"
+															Value="#99DEFD" />
+								<Setter TargetName="rectangleOutline"
+															Property="Stroke"
+															Value="#6AFFFFFF" />
+								<Setter TargetName="rectangleBackground"
+															Property="Fill"
+															Value="{StaticResource ItemAreaDragOverBrush}" />
+							</Trigger>
+							<MultiTrigger>
+								<MultiTrigger.Conditions>
+									<Condition Property="IsSelected"
+																	 Value="True" />
+									<Condition Property="IsMouseOver"
+																	 SourceName="borderItem"
+																	 Value="True" />
+								</MultiTrigger.Conditions>
+								<Setter TargetName="borderItem"
+															Property="BorderBrush"
+															Value="#B6E6FB" />
+								<Setter TargetName="rectangleOutline"
+															Property="Stroke"
+															Value="#6AFFFFFF" />
+								<Setter TargetName="rectangleBackground"
+															Property="Fill"
+															Value="{StaticResource ItemAreaSelectedMouseBrush}" />
+							</MultiTrigger>
+							<Trigger Property="IsEnabled"
+														 Value="false">
+								<Setter Property="Foreground"
+															Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+							</Trigger>
+							<MultiTrigger>
+								<MultiTrigger.Conditions>
+									<Condition Property="IsSelected"
+																	 Value="True" />
+									<Condition Property="IsSelectionActive"
+																	 Value="False" />
+								</MultiTrigger.Conditions>
+								<Setter TargetName="borderItem"
+															Property="BorderBrush"
+															Value="#D9D9D9" />
+								<Setter TargetName="rectangleOutline"
+															Property="Stroke"
+															Value="#6AFFFFFF" />
+								<Setter TargetName="rectangleBackground"
+															Property="Fill"
+															Value="{StaticResource ItemAreaSelectedBrush}" />
+							</MultiTrigger>
+							<Trigger Property="IsEnabled"
+														 Value="false">
+								<Setter Property="Foreground"
+															Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		
+		<DataTemplate x:Key="itemLargeIcons">
+			<UserControl>
+				<UserControl.Template>
+					<ControlTemplate>
+						<ContentPresenter Width="72" Margin="0,2,0,0" Content="{Binding}" />
+					</ControlTemplate>
+				</UserControl.Template>
+			</UserControl>
+		</DataTemplate>
+		
+		<DataTemplate x:Key="itemSmallIcons">
+			<UserControl>
+				<UserControl.Template>
+					<ControlTemplate>
+						<ContentPresenter Margin="0,2,10,0" Content="{Binding}" />
+					</ControlTemplate>
+				</UserControl.Template>
+			</UserControl>
+		</DataTemplate>
+
+		<ControlTemplate x:Key="listIcons" TargetType="{x:Type ListView}">
+			<Border Name="border" 
+							BorderBrush="{TemplateBinding BorderBrush}"
+							BorderThickness="{TemplateBinding BorderThickness}"
+							Background="{TemplateBinding Background}" Margin="{TemplateBinding Margin}">
+				<ScrollViewer Margin="{TemplateBinding Padding}">
+					<WrapPanel IsItemsHost="True"
+										 Width="{Binding ActualWidth,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=ScrollContentPresenter}}" />
+				</ScrollViewer>
+			</Border>
+		</ControlTemplate>
+
+		<GridView x:Key="tenantGridView">
+			<GridView.Columns>
+				<GridViewColumn Header="Name">
+					<GridViewColumn.CellTemplate>
+						<DataTemplate>
+							<ContentPresenter Content="{Binding}" /> 
+						</DataTemplate>
+					</GridViewColumn.CellTemplate>
+				</GridViewColumn>
+			</GridView.Columns>
+		</GridView>
+
+		<GridView x:Key="userGridView">
+			<GridView.Columns>
+				<GridViewColumn Header="Name">
+					<GridViewColumn.CellTemplate>
+						<DataTemplate>
+							<ContentPresenter Margin="0,2,10,0" Content="{Binding}" />
+						</DataTemplate>
+					</GridViewColumn.CellTemplate>
+				</GridViewColumn>
+				<GridViewColumn Header="Login Name" DisplayMemberBinding="{Binding IdentityName}" />
+				<GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}" />
+			</GridView.Columns>
+		</GridView>
+
+		<GridView x:Key="groupGridView">
+			<GridView.Columns>
+				<GridViewColumn Header="Name">
+					<GridViewColumn.CellTemplate>
+						<DataTemplate>
+							<ContentPresenter Margin="0,2,10,0" Content="{Binding}" />
+						</DataTemplate>
+					</GridViewColumn.CellTemplate>
+				</GridViewColumn>
+				<GridViewColumn Header="Description" DisplayMemberBinding="{Binding Description}" />
+			</GridView.Columns>
+		</GridView>
+	</Window.Resources>
+	
+	<Grid DataContext="{Binding ElementName=lusrmgr}"
+				Margin="0,5,0,25">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="200" />
+			<ColumnDefinition Width="3" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+	
+		<TreeView Name="tree" Grid.Column="0" ContextMenu="{StaticResource basicMenu}"  SelectedItemChanged="OnSelectedTreeItemChanged" />
+		
+		<GridSplitter ResizeDirection="Columns" Grid.Column="1" />
+	
+		<ListView Name="list" ItemsSource="{Binding SelectedItem}" ContextMenu="{StaticResource basicMenu}" Grid.Column="2">
+			<ListView.Style>
+				<Style TargetType="{x:Type ListView}">
+					<Style.Triggers>
+						<!-- Switch between the basic "iconic" views -->
+						<DataTrigger Binding="{Binding ViewType}" Value="{x:Static library:ViewType.LargeIcons}">
+							<Setter Property="ItemTemplate" Value="{StaticResource itemLargeIcons}" />
+							<Setter Property="Template" Value="{StaticResource listIcons}" />
+							<Setter Property="View" Value="{x:Null}" />
+						</DataTrigger>
+						<DataTrigger Binding="{Binding ViewType}" Value="{x:Static library:ViewType.SmallIcons}">
+							<Setter Property="ItemTemplate" Value="{StaticResource itemSmallIcons}" />
+							<Setter Property="Template" Value="{StaticResource listIcons}" />
+							<Setter Property="View" Value="{x:Null}" />
+						</DataTrigger>
+						<DataTrigger Binding="{Binding ViewType}" Value="{x:Static library:ViewType.List}">
+							<Setter Property="ItemTemplate" Value="{StaticResource itemSmallIcons}" />
+							<Setter Property="View" Value="{x:Null}" />
+						</DataTrigger>
+						
+						<!-- Change the context menu based on... context -->
+						<DataTrigger Binding="{Binding Path=SelectedItem,Converter={StaticResource isConverter},ConverterParameter={x:Type local:UserList}}"
+												 Value="true">
+							<Setter Property="ContextMenu" Value="{StaticResource userListMenu}" />
+						</DataTrigger>
+						<DataTrigger Binding="{Binding Path=SelectedItem,Converter={StaticResource isConverter},ConverterParameter={x:Type local:GroupList}}"
+												 Value="true">
+							<Setter Property="ContextMenu" Value="{StaticResource groupListMenu}" />
+						</DataTrigger>
+
+						<!-- Since the columns for "folders", users, and groups are all different, the Details view is broken into parts -->
+						<!-- Apparently, ListView balks at having its View property set from a Setter, so we actually do this in the code behind.
+						<MultiDataTrigger>
+							<MultiDataTrigger.Conditions>
+								<Condition Binding="{Binding ViewType}" Value="{x:Static library:ViewType.Detail}" />
+								<Condition Binding="{Binding Path=SelectedItem,Converter={StaticResource isConverter},ConverterParameter={x:Type library:TenantUsersAndGroups}}"
+													 Value="true}" />
+							</MultiDataTrigger.Conditions>
+							<Setter Property="View" Value="{StaticResource tenantGridView}" />
+						</MultiDataTrigger>
+						<MultiDataTrigger>
+							<MultiDataTrigger.Conditions>
+								<Condition Binding="{Binding ViewType}" Value="{x:Static library:ViewType.Detail}" />
+								<Condition Binding="{Binding Path=SelectedItem,Converter={StaticResource isConverter},ConverterParameter={x:Type local:UserList}}"
+													 Value="true}" />
+							</MultiDataTrigger.Conditions>
+							<Setter Property="View" Value="{StaticResource userGridView}" />
+						</MultiDataTrigger>
+						<MultiDataTrigger>
+							<MultiDataTrigger.Conditions>
+								<Condition Binding="{Binding ViewType}" Value="{x:Static library:ViewType.Detail}" />
+								<Condition Binding="{Binding Path=SelectedItem,Converter={StaticResource isConverter},ConverterParameter={x:Type local:GroupList}}"
+													 Value="true}" />
+							</MultiDataTrigger.Conditions>
+							<Setter Property="View" Value="{StaticResource groupGridView}" />
+						</MultiDataTrigger>
+						-->
+					</Style.Triggers>
+				</Style>
+			</ListView.Style>
+		</ListView>
+	</Grid>
+</Window>

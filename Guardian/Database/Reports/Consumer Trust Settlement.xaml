@@ -1,0 +1,1778 @@
+﻿<ReportGrid Split="20,37"
+	    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	    xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero"
+	    xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase"
+	    xmlns:guardian="http://schemas.fluidtrade.com/winfx/2006/xaml/guardian/presentation"
+	    xmlns:mh="urn:schemas-fluidtrade-com:guardian:debt-negotiator-settlement-header"
+	    xmlns:m="urn:schemas-fluidtrade-com:guardian:debt-negotiator-settlement"
+	    xmlns:fluidtrade="http://schemas.fluidtrade.com/winfx/2006/xaml/fluidtrade/presentation">
+	<!-- Resources -->
+	<ReportGrid.Resources>
+		<!-- Bitmaps -->
+		<BitmapString x:Key="StatusImage"
+		  Source="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" />
+		<!-- Brushes -->
+		<!-- Body Mouse Hover Brush -->
+		<LinearGradientBrush EndPoint="0,1"
+			 x:Key="BodyMouseHoverBrush"
+			 StartPoint="0,0">
+			<LinearGradientBrush.GradientStops>
+				<GradientStop Color="#E6F5FD"
+		      Offset="0" />
+				<GradientStop Color="#D9F0FC"
+		      Offset="0.5" />
+				<GradientStop Color="#BEE6FD"
+		      Offset="0.5" />
+				<GradientStop Color="#BEE6FD"
+		      Offset="1" />
+			</LinearGradientBrush.GradientStops>
+		</LinearGradientBrush>
+		<!-- HeaderMouseHoverBrush -->
+		<LinearGradientBrush EndPoint="0,1"
+			 x:Key="HeaderMouseHoverBrush"
+			 StartPoint="0,0">
+			<LinearGradientBrush.GradientStops>
+				<GradientStop Color="#DFE2E4"
+		      Offset="0" />
+				<GradientStop Color="#BCC5D2"
+		      Offset="1" />
+			</LinearGradientBrush.GradientStops>
+		</LinearGradientBrush>
+		<!-- ChangeUpBrush -->
+		<LinearGradientBrush EndPoint="0,1"
+			 x:Key="ChangeUpBrush"
+			 StartPoint="0,0">
+			<LinearGradientBrush.GradientStops>
+				<GradientStop Color="#00FF00"
+		      Offset="0" />
+				<GradientStop Color="#00C000"
+		      Offset="1" />
+			</LinearGradientBrush.GradientStops>
+		</LinearGradientBrush>
+		<!-- ChangeDownBrush -->
+		<LinearGradientBrush EndPoint="0,1"
+			 x:Key="ChangeDownBrush"
+			 StartPoint="0,0">
+			<LinearGradientBrush.GradientStops>
+				<GradientStop Color="#FF0000"
+		      Offset="0" />
+				<GradientStop Color="#C00000"
+		      Offset="1" />
+			</LinearGradientBrush.GradientStops>
+		</LinearGradientBrush>
+		<!-- Selected Brush -->
+		<SolidColorBrush Color="#59C2CBE5"
+		     x:Key="SelectedBrush" />
+		<!-- Styles -->
+		<!-- CommonStyle -->
+		<Style x:Key="CommonStyle">
+			<Setter Property="TextElement.FontFamily"
+	      Value="Segoe UI" />
+			<Setter Property="TextElement.FontSize"
+	      Value="12" />
+			<Style.Triggers>
+				<Trigger Property="DynamicReport.IsActive"
+		 Value="false">
+					<Setter Property="TextElement.Foreground"
+		  Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+				</Trigger>
+			</Style.Triggers>
+		</Style>
+		<!-- CellStyle -->
+		<Style BasedOn="{StaticResource CommonStyle}"
+	   x:Key="CellStyle">
+			<Setter Property="Control.IsTabStop"
+	      Value="false" />
+			<Setter Property="Control.BorderThickness"
+	      Value="0,0,1,1" />
+			<Setter Property="Control.BorderBrush"
+	      Value="#D0D7E5" />
+			<Setter Property="Control.Padding"
+	      Value="10,1,10,1" />
+		</Style>
+		<!-- BodyCellStyle -->
+		<Style BasedOn="{StaticResource CellStyle}"
+	   x:Key="BodyCellStyle">
+			<Setter Property="Control.Background"
+	      Value="White" />
+			<Style.Triggers>
+				<Trigger Property="DynamicReport.IsEven"
+		 Value="true">
+					<Setter Property="Control.Background"
+		  Value="Beige" />
+				</Trigger>
+			</Style.Triggers>
+		</Style>
+		<!-- ComboBoxStyle -->
+		<Style BasedOn="{StaticResource BodyCellStyle}"
+       x:Key="ComboBoxStyle"
+       TargetType="ComboBox">
+			<Setter Property="IsSynchronizedWithCurrentItem" Value="False" />
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type ComboBox}">
+						<UserControl Background="{TemplateBinding Background}"
+		     BorderBrush="{TemplateBinding BorderBrush}"
+		     BorderThickness="{TemplateBinding BorderThickness}"
+		     Focusable="False"
+		     Name="Frame">
+							<Grid>
+								<UserControl Background="{StaticResource SelectedBrush}"
+			 Focusable="False"
+			 Name="SelectedMask"
+			 Opacity="0.0" />
+								<UserControl Background="{StaticResource BodyMouseHoverBrush}"
+			 Focusable="False"
+			 Name="InputMask"
+			 Opacity="0.0" />
+								<UserControl Focusable="False"
+			 Padding="{TemplateBinding Padding}">
+									<ContentPresenter Content="{TemplateBinding SelectionBoxItem}"
+				ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+				ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"
+				HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+				IsHitTestVisible="false"
+				SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+				VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+								</UserControl>
+								<ToggleButton ClickMode="Press"
+			  Focusable="True"
+			  FocusVisualStyle="{x:Null}"
+			  IsChecked="{Binding Path=IsDropDownOpen,Mode=TwoWay,RelativeSource={RelativeSource TemplatedParent}}"
+			  IsTabStop="false">
+									<ToggleButton.Template>
+										<ControlTemplate TargetType="{x:Type ToggleButton}">
+											<Grid Background="Transparent" />
+										</ControlTemplate>
+									</ToggleButton.Template>
+								</ToggleButton>
+								<Popup AllowsTransparency="true"
+		   Grid.ColumnSpan="3"
+		   Margin="1"
+		   Name="PART_Popup"
+		   IsOpen="{Binding Path=IsDropDownOpen, RelativeSource={RelativeSource TemplatedParent}}"
+		   Placement="Bottom"
+		   PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}">
+									<theme:SystemDropShadowChrome Name="DropShadow"
+					    Color="Transparent"
+					    MinWidth="{Binding ElementName=Frame,Path=ActualWidth}"
+					    MaxHeight="{TemplateBinding MaxDropDownHeight}">
+										<Border Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"
+			BorderBrush="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}"
+			BorderThickness="1"
+			Name="DropDownBorder">
+											<ItemsPresenter KeyboardNavigation.DirectionalNavigation="Contained"
+				  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+										</Border>
+									</theme:SystemDropShadowChrome>
+								</Popup>
+							</Grid>
+						</UserControl>
+						<ControlTemplate.Triggers>
+							<MultiTrigger>
+								<MultiTrigger.Conditions>
+									<Condition Property="DynamicReport.IsSelected"
+			 Value="True" />
+									<Condition Property="UIElement.IsKeyboardFocusWithin"
+			 Value="False" />
+								</MultiTrigger.Conditions>
+								<Setter TargetName="SelectedMask"
+		    Property="Opacity"
+		    Value="1.0" />
+							</MultiTrigger>
+							<Trigger Property="IsMouseOver"
+		   Value="True">
+								<Trigger.EnterActions>
+									<BeginStoryboard>
+										<Storyboard>
+											<DoubleAnimation Duration="0:0:0.1"
+				   Storyboard.TargetName="InputMask"
+				   Storyboard.TargetProperty="Opacity"
+				   To="1" />
+										</Storyboard>
+									</BeginStoryboard>
+								</Trigger.EnterActions>
+								<Trigger.ExitActions>
+									<BeginStoryboard>
+										<Storyboard>
+											<DoubleAnimation Duration="0:0:0.1"
+				   Storyboard.TargetName="InputMask"
+				   Storyboard.TargetProperty="Opacity"
+				   To="0.0" />
+										</Storyboard>
+									</BeginStoryboard>
+								</Trigger.ExitActions>
+							</Trigger>
+							<Trigger Property="Popup.HasDropShadow"
+		   SourceName="PART_Popup"
+		   Value="true">
+								<Setter Property="Margin"
+		    TargetName="DropShadow"
+		    Value="0,0,5,5" />
+								<Setter Property="Color"
+		    TargetName="DropShadow"
+		    Value="#71000000" />
+							</Trigger>
+							<Trigger Property="HasItems"
+		   Value="false">
+								<Setter Property="Height"
+		    TargetName="DropDownBorder"
+		    Value="95" />
+							</Trigger>
+							<Trigger Property="DynamicReport.IsActive"
+		   Value="false">
+								<Setter Property="Foreground"
+		    Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+		<!-- template for MultiComboBox the list box -->
+		<ControlTemplate x:Key="multiComboBoxListBoxTemplate" TargetType="ListBox">
+			<Border BorderThickness="{TemplateBinding Border.BorderThickness}" Padding="1,1,1,1" BorderBrush="{TemplateBinding Border.BorderBrush}" Background="{TemplateBinding Panel.Background}" Name="Bd" SnapsToDevicePixels="True">
+				<ScrollViewer Padding="{TemplateBinding Control.Padding}" Focusable="False">
+					<ItemsPresenter SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+				</ScrollViewer>
+			</Border>
+			<ControlTemplate.Triggers>
+				<Trigger Property="ItemsControl.IsGrouping" Value="true">
+					<Setter Property="ScrollViewer.CanContentScroll" Value="false" />
+				</Trigger>
+			</ControlTemplate.Triggers>
+		</ControlTemplate>
+
+		<!-- template for MultiComboBox check boxes -->
+		<ControlTemplate x:Key="multiComboBoxCheckBoxTemplate" TargetType="CheckBox">
+			<BulletDecorator Background="#00FFFFFF" SnapsToDevicePixels="True">
+				<BulletDecorator.Bullet>
+					<theme:BulletChrome Background="{TemplateBinding Panel.Background}" BorderBrush="{TemplateBinding Border.BorderBrush}" RenderMouseOver="{TemplateBinding UIElement.IsMouseOver}" RenderPressed="{TemplateBinding ButtonBase.IsPressed}" IsChecked="{TemplateBinding ToggleButton.IsChecked}" />
+				</BulletDecorator.Bullet>
+				<ContentPresenter RecognizesAccessKey="True" Content="{TemplateBinding ContentControl.Content}" ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}" ContentStringFormat="{TemplateBinding ContentControl.ContentStringFormat}" Margin="{TemplateBinding Control.Padding}" HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}" SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+			</BulletDecorator>
+			<ControlTemplate.Triggers>
+				<Trigger Property="ContentControl.HasContent" Value="true">
+					<Setter Property="FrameworkElement.FocusVisualStyle">
+						<Setter.Value>
+							<Style TargetType="IFrameworkInputElement">
+								<Style.Resources>
+									<ResourceDictionary />
+								</Style.Resources>
+								<Setter Property="Control.Template">
+									<Setter.Value>
+										<ControlTemplate>
+											<Rectangle Stroke="#FF000000" StrokeThickness="1" StrokeDashArray="1 2" Margin="14,0,0,0" SnapsToDevicePixels="True" />
+										</ControlTemplate>
+									</Setter.Value>
+								</Setter>
+							</Style>
+						</Setter.Value>
+					</Setter>
+					<Setter Property="Control.Padding">
+						<Setter.Value>
+							<Thickness>4,0,0,0</Thickness>
+						</Setter.Value>
+					</Setter>
+				</Trigger>
+			</ControlTemplate.Triggers>
+		</ControlTemplate>
+
+		<ControlTemplate x:Key="MultiComBoxTemplate"  TargetType="{x:Type guardian:MultiComboBox}">
+			<Grid Height="Auto" Width="Auto">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="0"/>
+				</Grid.ColumnDefinitions>
+				<Popup Name="Popup"
+						 Placement="Bottom"
+						 IsOpen="{TemplateBinding IsDropDownOpen}"
+						 AllowsTransparency="True" 
+						 Focusable="False"
+						 PopupAnimation="Slide">
+					<Grid Name="DropDown"
+							MinWidth="{TemplateBinding ActualWidth}"
+							MaxHeight="{TemplateBinding MaxDropDownHeight}">
+						<Border x:Name="DropDownBorder">
+							<ScrollViewer>
+								<ListBox x:Name="PART_ListBox"
+											 KeyboardNavigation.DirectionalNavigation="Contained"
+											 SelectionMode="Multiple"
+											 ItemsSource="{TemplateBinding ItemsSource}"
+											 SelectedValuePath="{TemplateBinding SelectedValuePath}"
+											 HorizontalContentAlignment="Stretch"
+											 Template="{StaticResource multiComboBoxListBoxTemplate}">
+									<ListBox.Resources>
+										<Style TargetType="{x:Type ListBoxItem}">
+											<Setter Property="Template">
+												<Setter.Value>
+													<!-- The only differences between this template and the stock is the lack of selected-item highlighting, and the addition of mouse-over
+																	 highlighting -->
+													<ControlTemplate TargetType="{x:Type ListBoxItem}">
+														<Border BorderThickness="{TemplateBinding Border.BorderThickness}"
+																	Padding="{TemplateBinding Control.Padding}"
+																	BorderBrush="{TemplateBinding Border.BorderBrush}"
+																	Background="{TemplateBinding Panel.Background}"
+																	Name="Bd"
+																	SnapsToDevicePixels="True">
+															<ContentPresenter Content="{TemplateBinding ContentControl.Content}"
+																							ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}"
+																							ContentStringFormat="{TemplateBinding ContentControl.ContentStringFormat}"
+																							SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+														</Border>
+														<ControlTemplate.Triggers>
+															<Trigger Property="UIElement.IsEnabled" Value="false">
+																<Setter Property="TextElement.Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+															</Trigger>
+															<Trigger Property="IsMouseOver" Value="True">
+																<Setter Property="Panel.Background" TargetName="Bd" Value="#88DDFF"></Setter>
+																<Setter Property="TextElement.Foreground" Value="{x:Static SystemColors.HighlightTextBrush}"></Setter>
+															</Trigger>
+														</ControlTemplate.Triggers>
+													</ControlTemplate>
+												</Setter.Value>
+											</Setter>
+										</Style>
+									</ListBox.Resources>
+
+									<ListBox.ItemTemplate>
+										<HierarchicalDataTemplate>
+											<CheckBox x:Name="checkBox"
+															Margin="0"
+															DataContext="{Binding}"
+															Content="{Binding}"
+															Command="guardian:MultiComboBox.SelectCommand"
+															CommandParameter="{Binding Content, RelativeSource={RelativeSource Self}}"
+															HorizontalAlignment="Stretch"
+															Template="{StaticResource multiComboBoxCheckBoxTemplate}">
+												<CheckBox.ContentTemplate>
+													<HierarchicalDataTemplate>
+														<TextBlock Text="{Binding}" Margin="0" />
+													</HierarchicalDataTemplate>
+												</CheckBox.ContentTemplate>
+												<CheckBox.Style>
+													<Style TargetType="{x:Type CheckBox}">
+														<Setter Property="OverridesDefaultStyle" Value="true" />
+														<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}" />
+														<Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" />
+													</Style>
+												</CheckBox.Style>
+											</CheckBox>
+										</HierarchicalDataTemplate>
+									</ListBox.ItemTemplate>
+
+									<ListBox.Style>
+										<Style TargetType="{x:Type ListBox}">
+											<Setter Property="OverridesDefaultStyle" Value="true" />
+											<Style.Triggers>
+												<DataTrigger Binding="{Binding IsReadOnly,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=ComboBox}}" Value="true">
+													<Setter Property="IsEnabled" Value="false" />
+													<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}" />
+													<Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" />
+												</DataTrigger>
+											</Style.Triggers>
+										</Style>
+									</ListBox.Style>
+								</ListBox>
+							</ScrollViewer>
+						</Border>
+					</Grid>
+				</Popup>
+				<ToggleButton Background="{TemplateBinding Background}"
+										x:Name="button"
+										BorderBrush="{TemplateBinding BorderBrush}"
+										Grid.ColumnSpan="2"
+										HorizontalContentAlignment="Stretch"
+										IsTabStop="false"
+										IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}">
+					<Grid IsHitTestVisible="true">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="*"/>
+							<ColumnDefinition Width="12" />
+						</Grid.ColumnDefinitions>
+						<Path x:Name="Arrow"
+								Grid.Column="1"
+								Fill="{Binding Path=Foreground,ElementName=button}"
+								VerticalAlignment="Center"
+								HorizontalAlignment="Center"
+								SnapsToDevicePixels="true"
+								Data="M 0 0 L 3.5 4 L 7 0 Z"/>
+						<ContentPresenter x:Name="Presenter"
+														Grid.ColumnSpan="2"
+														IsHitTestVisible="true" 
+														Margin="{TemplateBinding Padding}"
+														VerticalAlignment="Center"
+														HorizontalAlignment="Stretch">
+							<ContentPresenter.Content>
+								<TextBlock TextTrimming="CharacterEllipsis"
+												 Name="MultiComboBoxTextBox"
+												 IsHitTestVisible="true"
+												 Padding="0,0,15,0"
+												 Text="{TemplateBinding Text}"
+												 FontSize="{TemplateBinding FontSize}"
+												 FontFamily="{TemplateBinding FontFamily}">
+								<TextBlock.Style>
+									<Style TargetType="{x:Type TextBlock}">
+										<Style.Triggers>
+											<Trigger Property="IsEnabled" Value="true">
+												<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" />
+											</Trigger>
+											<Trigger Property="IsEnabled" Value="false">
+												<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+											</Trigger>
+											<DataTrigger Binding="{Binding IsEditable,RelativeSource={RelativeSource TemplatedParent}}" Value="true">
+												<Setter Property="Visibility" Value="Hidden" />
+											</DataTrigger>
+										</Style.Triggers>
+									</Style>
+								</TextBlock.Style>
+								</TextBlock>
+							</ContentPresenter.Content>
+						</ContentPresenter>
+						<TextBox Text="{TemplateBinding Text}"
+									 IsReadOnly="{TemplateBinding IsReadOnly}"
+									 Padding="{TemplateBinding Padding}"
+									 VerticalContentAlignment="Center"
+									 HorizontalContentAlignment="Left"
+									 VerticalAlignment="Center"
+									 HorizontalAlignment="Stretch">
+							<TextBox.Template>
+								<ControlTemplate TargetType="TextBox">
+									<ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" Background="#00FFFFFF" Name="PART_ContentHost" Focusable="False" />
+								</ControlTemplate>
+							</TextBox.Template>
+							<TextBox.Style>
+								<Style TargetType="{x:Type TextBox}">
+									<Style.Triggers>
+										<Trigger Property="IsEnabled" Value="true">
+											<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" />
+										</Trigger>
+										<Trigger Property="IsEnabled" Value="false">
+											<Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+										</Trigger>
+										<DataTrigger Binding="{Binding IsEditable,RelativeSource={RelativeSource TemplatedParent}}" Value="false">
+											<Setter Property="Visibility" Value="Hidden" />
+										</DataTrigger>
+									</Style.Triggers>
+								</Style>
+							</TextBox.Style>
+						</TextBox>
+					</Grid>
+				</ToggleButton>
+			</Grid>
+		</ControlTemplate>
+		<!-- MultiComboBoxStyle -->
+		<Style BasedOn="{StaticResource {x:Type guardian:MultiComboBox}}"
+					 x:Key="MultiComboBoxStyle"
+					 TargetType="guardian:MultiComboBox">
+			<Setter Property="HorizontalContentAlignment" Value="Left" />
+			<Setter Property="VerticalContentAlignment" Value="Center" />
+			<!--<Setter Property="IsEditable" Value="true" />-->
+			<Setter Property="IsReadOnly" Value="true" />
+			<Setter Property="TextElement.FontFamily"
+	      Value="Segoe UI" />
+			<Setter Property="TextElement.FontSize"
+	      Value="12" />
+			<Setter Property="Control.Background"
+	      Value="White" />
+			<Setter Property="Control.SnapsToDevicePixels"
+	      Value="true" />
+			<Setter Property="Template"
+							Value="{StaticResource MultiComBoxTemplate}" />
+			<Style.Triggers>
+				<Trigger Property="DynamicReport.IsActive"
+		 Value="false">
+					<Setter Property="TextElement.Foreground"
+		  Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+				</Trigger>
+				<Trigger Property="DynamicReport.IsEven" Value="true">
+					<Setter Property="Control.Background" Value="Beige" />
+				</Trigger>
+			</Style.Triggers>
+			<Style.Resources>
+			</Style.Resources>
+		</Style>
+		<!-- BodyValueStyle -->
+		<Style BasedOn="{StaticResource BodyCellStyle}"
+	   x:Key="BodyValueStyle"
+	   TargetType="{x:Type ValueBlock}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type ValueBlock}">
+						<UserControl Background="{TemplateBinding Background}"
+			 BorderBrush="{TemplateBinding BorderBrush}"
+			 BorderThickness="{TemplateBinding BorderThickness}"
+			 x:Name="Frame">
+							<Grid>
+								<UserControl Background="{StaticResource SelectedBrush}"
+			     x:Name="SelectedMask"
+			     Opacity="0.0" />
+								<UserControl Padding="{TemplateBinding Padding}">
+									<TextBlock x:Name="TextBlock"
+			     Text="{TemplateBinding Text}"
+			     TextAlignment="{TemplateBinding TextAlignment}"
+			     VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+								</UserControl>
+							</Grid>
+						</UserControl>
+						<ControlTemplate.Triggers>
+							<MultiTrigger>
+								<MultiTrigger.Conditions>
+									<Condition Property="DynamicReport.IsSelected"
+			     Value="True" />
+									<Condition Property="UIElement.IsKeyboardFocusWithin"
+			     Value="False" />
+								</MultiTrigger.Conditions>
+								<Setter TargetName="SelectedMask"
+			Property="Opacity"
+			Value="1.0" />
+							</MultiTrigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<!-- HeaderCellStyle -->
+		<Style BasedOn="{StaticResource CellStyle}"
+	   x:Key="HeaderCellStyle"
+	   TargetType="{x:Type UserControl}">
+			<Setter Property="Background">
+				<Setter.Value>
+					<LinearGradientBrush EndPoint="0.5,1"
+			       StartPoint="0.5,0">
+						<LinearGradientBrush.GradientStops>
+							<GradientStop Color="#F9FCFD"
+			    Offset="0" />
+							<GradientStop Color="#D3DBE9"
+			    Offset="1" />
+						</LinearGradientBrush.GradientStops>
+					</LinearGradientBrush>
+				</Setter.Value>
+			</Setter>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type UserControl}">
+						<UserControl Background="{TemplateBinding Background}"
+			 BorderBrush="{TemplateBinding BorderBrush}"
+			 BorderThickness="{TemplateBinding BorderThickness}"
+			 Name="Frame">
+							<Grid>
+								<UserControl Background="{StaticResource SelectedBrush}"
+			     Name="SelectedMask"
+			     Opacity="0.0" />
+								<UserControl Background="{StaticResource HeaderMouseHoverBrush}"
+			     Name="InputMask"
+			     Opacity="0.0" />
+								<UserControl Padding="{TemplateBinding Padding}">
+									<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+				    VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+								</UserControl>
+							</Grid>
+						</UserControl>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsMouseOver"
+		       Value="True">
+								<Trigger.EnterActions>
+									<BeginStoryboard>
+										<Storyboard>
+											<DoubleAnimation Duration="0:0:0.1"
+				       Storyboard.TargetName="InputMask"
+				       Storyboard.TargetProperty="Opacity"
+				       To="1" />
+										</Storyboard>
+									</BeginStoryboard>
+								</Trigger.EnterActions>
+								<Trigger.ExitActions>
+									<BeginStoryboard>
+										<Storyboard>
+											<DoubleAnimation Duration="0:0:0.1"
+				       Storyboard.TargetName="InputMask"
+				       Storyboard.TargetProperty="Opacity"
+				       To="0.0" />
+										</Storyboard>
+									</BeginStoryboard>
+								</Trigger.ExitActions>
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+			<Style.Triggers>
+				<Trigger Property="DynamicReport.IsSelected"
+		 Value="true">
+					<Setter Property="BorderBrush"
+		  Value="White" />
+					<Setter Property="Background"
+		  Value="#F4CB7B" />
+				</Trigger>
+				<Trigger Property="DynamicReport.IsPopup"
+		 Value="true">
+					<Setter Property="Foreground"
+		  Value="White" />
+					<Setter Property="Background"
+		  Value="Black" />
+				</Trigger>
+			</Style.Triggers>
+		</Style>
+		<!-- ItemSelectorStyle -->
+		<Style BasedOn="{StaticResource BodyCellStyle}"
+	   x:Key="ItemSelectorStyle"
+	   TargetType="ItemSelector">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type ItemSelector}">
+						<UserControl Background="{TemplateBinding Background}"
+			 BorderBrush="{TemplateBinding BorderBrush}"
+			 BorderThickness="{TemplateBinding BorderThickness}"
+			 Name="Frame">
+							<Grid>
+								<UserControl Background="{StaticResource SelectedBrush}"
+			     Name="SelectedMask"
+			     Opacity="0.0" />
+								<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+				  IsHitTestVisible="false"
+				  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+				  VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+							</Grid>
+						</UserControl>
+						<ControlTemplate.Triggers>
+							<MultiTrigger>
+								<MultiTrigger.Conditions>
+									<Condition Property="DynamicReport.IsSelected"
+			     Value="True" />
+									<Condition Property="UIElement.IsKeyboardFocusWithin"
+			     Value="False" />
+								</MultiTrigger.Conditions>
+								<Setter TargetName="SelectedMask"
+			Property="Opacity"
+			Value="1.0" />
+							</MultiTrigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<!-- StatusStyle -->
+		<Style BasedOn="{StaticResource ItemSelectorStyle}"
+	   x:Key="StatusStyle"
+	   TargetType="ItemSelector">
+			<Setter Property="HorizontalContentAlignment" Value="Center" />
+			<Setter Property="ItemsSource" Value="{x:Static guardian:StatusList.Default}" />
+			<Setter Property="VerticalContentAlignment" Value="Center" />
+		</Style>
+		<!-- LeftTextStyle -->
+		<Style BasedOn="{StaticResource BodyValueStyle}"
+	   x:Key="LeftTextStyle"
+	   TargetType="{x:Type ValueBlock}">
+			<Setter Property="Format" Value="{}{0}" />
+			<Setter Property="HorizontalContentAlignment" Value="Left" />
+			<Setter Property="VerticalContentAlignment" Value="Center" />
+		</Style>
+		<Style BasedOn="{StaticResource BodyCellStyle}"
+	   x:Key="PriceStyle"
+	   TargetType="{x:Type ValueBlock}">
+			<Setter Property="HorizontalContentAlignment" Value="Right" />
+			<Setter Property="Format" Value="{}{0:#,##0.00;-#,##0.00;}" />
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type ValueBlock}">
+						<UserControl Background="{TemplateBinding Background}"
+			 BorderBrush="{TemplateBinding BorderBrush}"
+			 BorderThickness="{TemplateBinding BorderThickness}"
+			 x:Name="Frame">
+							<Grid>
+								<UserControl Background="{StaticResource SelectedBrush}"
+			     x:Name="SelectedMask"
+			     Opacity="0.0" />
+								<UserControl x:Name="ChangeMask"
+			     Opacity="0.0" />
+								<UserControl Padding="{TemplateBinding Padding}">
+									<TextBlock x:Name="TextBlock"
+			     Foreground="Black"
+			     Text="{TemplateBinding Text}"
+			     TextAlignment="{TemplateBinding TextAlignment}"
+			     VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+								</UserControl>
+							</Grid>
+						</UserControl>
+						<ControlTemplate.Triggers>
+							<Trigger Property="DynamicReport.IsActive"
+		       Value="false">
+								<Setter TargetName="TextBlock"
+			Property="Foreground"
+			Value="Gray" />
+							</Trigger>
+							<MultiTrigger>
+								<MultiTrigger.Conditions>
+									<Condition Property="DynamicReport.IsSelected"
+			     Value="True" />
+									<Condition Property="UIElement.IsKeyboardFocusWithin"
+			     Value="False" />
+								</MultiTrigger.Conditions>
+								<Setter TargetName="SelectedMask"
+			Property="Opacity"
+			Value="1.0" />
+							</MultiTrigger>
+							<Trigger Property="IsUp"
+		       Value="true">
+								<Setter TargetName="ChangeMask"
+			Property="Background"
+			Value="{StaticResource ChangeUpBrush}" />
+							</Trigger>
+							<Trigger Property="IsDown"
+		       Value="true">
+								<Setter TargetName="ChangeMask"
+			Property="Background"
+			Value="{StaticResource ChangeDownBrush}" />
+							</Trigger>
+							<EventTrigger RoutedEvent="ValueBlock.Increase">
+								<BeginStoryboard>
+									<Storyboard Timeline.DesiredFrameRate="10">
+										<DoubleAnimation Duration="0:0:10.0"
+				     Storyboard.TargetName="ChangeMask"
+				     Storyboard.TargetProperty="Opacity"
+				     From="0.60" />
+										<ColorAnimation Duration="0:0:01.0"
+				    Storyboard.TargetName="TextBlock"
+				    Storyboard.TargetProperty="Foreground.(SolidColorBrush.Color)"
+				    From="White" />
+									</Storyboard>
+								</BeginStoryboard>
+							</EventTrigger>
+							<EventTrigger RoutedEvent="ValueBlock.Decrease">
+								<BeginStoryboard>
+									<Storyboard Timeline.DesiredFrameRate="10">
+										<DoubleAnimation Duration="0:0:10.0"
+				     Storyboard.TargetName="ChangeMask"
+				     Storyboard.TargetProperty="Opacity"
+				     From="0.60" />
+										<ColorAnimation Duration="0:0:01.0"
+				    Storyboard.TargetName="TextBlock"
+				    Storyboard.TargetProperty="Foreground.(SolidColorBrush.Color)"
+				    From="White" />
+									</Storyboard>
+								</BeginStoryboard>
+							</EventTrigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+			<Setter Property="VerticalContentAlignment" Value="Center" />
+		</Style>
+		<!-- QuantityStyle -->
+		<Style BasedOn="{StaticResource BodyValueStyle}"
+	   x:Key="QuantityStyle"
+	   TargetType="{x:Type ValueBlock}">
+			<Setter Property="Format" Value="{}{0:#,##0}" />
+			<Setter Property="HorizontalContentAlignment" Value="Right" />
+			<Setter Property="VerticalContentAlignment" Value="Center" />
+		</Style>
+		<!-- DateTimeStyle -->
+		<Style BasedOn="{StaticResource BodyValueStyle}"
+	   x:Key="DateTimeStyle"
+	   TargetType="{x:Type ValueBlock}">
+			<Setter Property="Format" Value="{}{0:MM/dd/yyyy hh:mm tt}" />
+			<Setter Property="HorizontalContentAlignment" Value="Right" />
+			<Setter Property="VerticalContentAlignment" Value="Center" />
+		</Style>
+		<!-- DateFullStyle -->
+		<Style BasedOn="{StaticResource BodyValueStyle}"
+									 x:Key="DateFullStyle"
+									 TargetType="{x:Type ValueBlock}">
+			<Setter Property="Format" Value="{}{0:MM/dd/yyyy}" />
+			<Setter Property="HorizontalContentAlignment" Value="Right" />
+			<Setter Property="VerticalContentAlignment" Value="Center" />
+		</Style>
+		<!-- Data Templates -->
+		<!-- Account Balance Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:AccountBalance}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	       TextAlignment="Right"
+	       VerticalAlignment="Top">
+					Account<LineBreak/>Balance
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Account Balance Data Template -->
+		<DataTemplate DataType="{x:Type m:AccountBalance}">
+			<ValueBlock Content="{Binding Path=Text}"
+	      DynamicReport.IsActive="{Binding Path=IsActive}"
+	      Style="{StaticResource PriceStyle}" />
+		</DataTemplate>
+		<!-- CreatedBy Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:CreatedBy}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	       TextAlignment="Left"
+	       VerticalAlignment="Top">
+      Created <LineBreak />By
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- CreatedBy Data Template -->
+		<DataTemplate DataType="{x:Type m:CreatedBy}">
+			<ValueBlock Content="{Binding Path=Name}"
+	      DynamicReport.IsActive="{Binding Path=IsActive}"
+	      Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- CreatedDateTime Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:CreatedDateTime}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	       TextAlignment="Right"
+	       VerticalAlignment="Top">
+      Created
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- CreatedDateTime Data Template -->
+		<DataTemplate DataType="{x:Type m:CreatedDateTime}">
+			<ValueBlock Content="{Binding Path=DateTime}"
+	      DynamicReport.IsActive="{Binding Path=IsActive}"
+	      Style="{StaticResource DateTimeStyle}" />
+		</DataTemplate>
+		<!-- Debt Holder Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:DebtHolder}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	       TextAlignment="Left"
+	       VerticalAlignment="Top">
+					Debt Holder<LineBreak/>Record Id
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Debt Holder Data Template -->
+		<DataTemplate DataType="{x:Type m:DebtHolder}">
+			<ValueBlock Content="{Binding Path=Id}"
+	      DynamicReport.IsActive="{Binding Path=IsActive}"
+	      Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Debt Negotiator Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:DebtNegotiator}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	       TextAlignment="Left"
+	       VerticalAlignment="Top">
+					Debt Negotiator<LineBreak/>Record Id
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Debt Negotiator Data Template -->
+		<DataTemplate DataType="{x:Type m:DebtNegotiator}">
+			<ValueBlock Content="{Binding Path=Id}"
+	      DynamicReport.IsActive="{Binding Path=IsActive}"
+	      Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Debtor First Name Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:DebtorFirstName}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	       TextAlignment="Left"
+	       VerticalAlignment="Top">
+					Debtor<LineBreak/>First Name
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Debtor First Name Data Template -->
+		<DataTemplate DataType="{x:Type m:DebtorFirstName}">
+			<ValueBlock Content="{Binding Path=Text}"
+	      DynamicReport.IsActive="{Binding Path=IsActive}"
+	      Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Debtor Middle Name Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:DebtorMiddleName}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	       TextAlignment="Left"
+	       VerticalAlignment="Top">
+					Debtor<LineBreak/>Middle Name
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Debtor Middle Name Data Template -->
+		<DataTemplate DataType="{x:Type m:DebtorMiddleName}">
+			<ValueBlock Content="{Binding Path=Text}"
+	      DynamicReport.IsActive="{Binding Path=IsActive}"
+	      Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Debtor Last Name Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:DebtorLastName}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	       TextAlignment="Left"
+	       VerticalAlignment="Top">
+					Debtor<LineBreak/>Last Name
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Debtor Last Name Data Template -->
+		<DataTemplate DataType="{x:Type m:DebtorLastName}">
+			<ValueBlock Content="{Binding Path=Text}"
+	      DynamicReport.IsActive="{Binding Path=IsActive}"
+	      Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Debtor Address1 Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:DebtorAddress1}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	       TextAlignment="Left"
+	       VerticalAlignment="Top">
+					Debtor<LineBreak/>Address 1
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Debto Address1 Data Template -->
+		<DataTemplate DataType="{x:Type m:DebtorAddress1}">
+			<ValueBlock Content="{Binding Path=Text}"
+	      DynamicReport.IsActive="{Binding Path=IsActive}"
+	      Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Debtor Address2 Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:DebtorAddress2}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	       TextAlignment="Left"
+	       VerticalAlignment="Top">
+					Debtor<LineBreak/>Address 2
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Debtor Address2 Data Template -->
+		<DataTemplate DataType="{x:Type m:DebtorAddress2}">
+			<ValueBlock Content="{Binding Path=Text}"
+	      DynamicReport.IsActive="{Binding Path=IsActive}"
+	      Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Debtor City Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:DebtorCity}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	       TextAlignment="Left"
+	       VerticalAlignment="Top">
+					Debtor<LineBreak/>City
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Debtor City Data Template -->
+		<DataTemplate DataType="{x:Type m:DebtorCity}">
+			<ValueBlock Content="{Binding Path=Text}"
+	      DynamicReport.IsActive="{Binding Path=IsActive}"
+	      Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Debtor Salutation Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:DebtorSalutation}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+       TextAlignment="Left"
+       VerticalAlignment="Top">
+			Debtor<LineBreak/>Salutation
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Debtor Salutation Data Template -->
+		<DataTemplate DataType="{x:Type m:DebtorSalutation}">
+			<ValueBlock Content="{Binding Path=Text}"
+      DynamicReport.IsActive="{Binding Path=IsActive}"
+      Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Debtor Province Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:DebtorProvince}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	       TextAlignment="Left"
+	       VerticalAlignment="Top">
+					Debtor<LineBreak/>State
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Debtor Province Data Template -->
+		<DataTemplate DataType="{x:Type m:DebtorProvince}">
+			<ValueBlock Content="{Binding Path=Text}"
+	      DynamicReport.IsActive="{Binding Path=IsActive}"
+	      Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Debtor Suffix Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:DebtorSuffix}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	   TextAlignment="Left"
+	   VerticalAlignment="Top">
+				Debtor<LineBreak/>Suffix
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Debtor Suffix Data Template -->
+		<DataTemplate DataType="{x:Type m:DebtorSuffix}">
+			<ValueBlock Content="{Binding Path=Text}"
+	  DynamicReport.IsActive="{Binding Path=IsActive}"
+	  Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Debtor PostalCode Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:DebtorPostalCode}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	   TextAlignment="Left"
+	   VerticalAlignment="Top">
+				Debtor<LineBreak/>Postal Code
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Debtor PostalCode Data Template -->
+		<DataTemplate DataType="{x:Type m:DebtorPostalCode}">
+			<ValueBlock Content="{Binding Path=Text}"
+	  DynamicReport.IsActive="{Binding Path=IsActive}"
+	  Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Debtor Account Number Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:DebtorAccountNumber}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+		   TextAlignment="Left"
+		   VerticalAlignment="Top">
+				Debtor<LineBreak/>Account Number
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Debtor Account Number Data Template -->
+		<DataTemplate DataType="{x:Type m:DebtorAccountNumber}">
+			<ValueBlock Content="{Binding Path=Text}"
+      DynamicReport.IsActive="{Binding Path=IsActive}"
+      Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Debtor Bank Routing Number Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:DebtorBankRoutingNumber}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+			TextAlignment="Left"
+			VerticalAlignment="Top">
+		Debtor Bank<LineBreak/>Routing Number
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Debtor Bank Routing Number Data Template -->
+		<DataTemplate DataType="{x:Type m:DebtorBankRoutingNumber}">
+			<ValueBlock Content="{Binding Path=Text}"
+		 DynamicReport.IsActive="{Binding Path=IsActive}"
+		Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Debtor Bank Account Number Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:DebtorBankAccountNumber}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+		TextAlignment="Left"
+		VerticalAlignment="Top">
+	Debtor Bank<LineBreak/>Account Number
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Debtor Bank Account Number Data Template -->
+		<DataTemplate DataType="{x:Type m:DebtorBankAccountNumber}">
+			<ValueBlock Content="{Binding Path=Text}"
+	 DynamicReport.IsActive="{Binding Path=IsActive}"
+	Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- ModifiedBy Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:ModifiedBy}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	       TextAlignment="Left"
+	       VerticalAlignment="Top">
+      Modified<LineBreak />By
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- ModifiedBy Data Template -->
+		<DataTemplate DataType="{x:Type m:ModifiedBy}">
+			<ValueBlock Content="{Binding Path=Name}"
+	      DynamicReport.IsActive="{Binding Path=IsActive}"
+	      Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- ModifiedDateTime Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:ModifiedDateTime}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	       TextAlignment="Right"
+	       VerticalAlignment="Top">
+      Modified
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- ModifiedDateTime Data Template -->
+		<DataTemplate DataType="{x:Type m:ModifiedDateTime}">
+			<ValueBlock Content="{Binding Path=DateTime}"
+	      DynamicReport.IsActive="{Binding Path=IsActive}"
+	      Style="{StaticResource DateTimeStyle}" />
+		</DataTemplate>
+		<!-- Payee Company NameHeader Data Template -->
+		<DataTemplate DataType="{x:Type mh:PayeeCompanyName}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	       TextAlignment="Left"
+	       VerticalAlignment="Top">
+					Payee<LineBreak/>Company Name
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Payee Company Name Data Template -->
+		<DataTemplate DataType="{x:Type m:PayeeCompanyName}">
+			<ValueBlock Content="{Binding Path=Text}"
+	      DynamicReport.IsActive="{Binding Path=IsActive}"
+	      Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Payee Department Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:PayeeDepartment}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	   TextAlignment="Left"
+	   VerticalAlignment="Top">
+				Payee<LineBreak/>Department
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Payee Department Data Template -->
+		<DataTemplate DataType="{x:Type m:PayeeDepartment}">
+			<ValueBlock Content="{Binding Path=Text}"
+	  DynamicReport.IsActive="{Binding Path=IsActive}"
+	  Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Payee Benefit of Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:PayeeBenefitOf}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+       TextAlignment="Left"
+       VerticalAlignment="Top">
+			Payee<LineBreak/>Benefit Of
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Payee Benefit of Data Template -->
+		<DataTemplate DataType="{x:Type m:PayeeBenefitOf}">
+			<ValueBlock Content="{Binding Path=Text}"
+      DynamicReport.IsActive="{Binding Path=IsActive}"
+      Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Payee Contact Name Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:PayeeContactName}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+		 TextAlignment="Left"
+		 VerticalAlignment="Top">
+			Payee<LineBreak/>Contact Name
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Payee Contact Name Data Template -->
+		<DataTemplate DataType="{x:Type m:PayeeContactName}">
+			<ValueBlock Content="{Binding Path=Text}"
+		DynamicReport.IsActive="{Binding Path=IsActive}"
+		Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Payee Address1 Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:PayeeAddress1}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+		 TextAlignment="Left"
+		VerticalAlignment="Top">
+	Payee<LineBreak/>Address 1
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Payee Address1 Data Template -->
+		<DataTemplate DataType="{x:Type m:PayeeAddress1}">
+			<ValueBlock Content="{Binding Path=Text}"
+		DynamicReport.IsActive="{Binding Path=IsActive}"
+		Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Payee Address2 Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:PayeeAddress2}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+			TextAlignment="Left"
+			VerticalAlignment="Top">
+		Payee<LineBreak/>Address 2
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Payee Address2 Data Template -->
+		<DataTemplate DataType="{x:Type m:PayeeAddress2}">
+			<ValueBlock Content="{Binding Path=Text}"
+		DynamicReport.IsActive="{Binding Path=IsActive}"
+		Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Payee City Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:PayeeCity}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+			TextAlignment="Left"
+			VerticalAlignment="Top">
+		Payee<LineBreak/>City
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Payee City Data Template -->
+		<DataTemplate DataType="{x:Type m:PayeeCity}">
+			<ValueBlock Content="{Binding Path=Text}"
+		DynamicReport.IsActive="{Binding Path=IsActive}"
+		Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Payee Province Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:PayeeProvinceId}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+			TextAlignment="Left"
+			VerticalAlignment="Top">
+		Payee<LineBreak/>State
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Payee Province Data Template -->
+		<DataTemplate DataType="{x:Type m:PayeeProvinceId}">
+			<ValueBlock Content="{Binding Path=Text}"
+		DynamicReport.IsActive="{Binding Path=IsActive}"
+		Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Payee PostalCode Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:PayeePostalCode}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+		TextAlignment="Left"
+		VerticalAlignment="Top">
+	Payee<LineBreak/>Postal Code
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Payee PostalCode Data Template -->
+		<DataTemplate DataType="{x:Type m:PayeePostalCode}">
+			<ValueBlock Content="{Binding Path=Text}"
+	DynamicReport.IsActive="{Binding Path=IsActive}"
+	Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Payee Phone Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:PayeePhone}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+			TextAlignment="Left"
+			VerticalAlignment="Top">
+		Payee<LineBreak/>Phone
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Payee Phone Data Template -->
+		<DataTemplate DataType="{x:Type m:PayeePhone}">
+			<ValueBlock Content="{Binding Path=Text}"
+		DynamicReport.IsActive="{Binding Path=IsActive}"
+		Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Payee Fax Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:PayeeFax}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+			TextAlignment="Left"
+			VerticalAlignment="Top">
+		Payee<LineBreak/>Fax
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Payee Fax Data Template -->
+		<DataTemplate DataType="{x:Type m:PayeeFax}">
+			<ValueBlock Content="{Binding Path=Text}"
+		DynamicReport.IsActive="{Binding Path=IsActive}"
+		Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Payee Email Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:PayeeEmail}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+			TextAlignment="Left"
+			VerticalAlignment="Top">
+		Payee<LineBreak/>Email
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Payee Email Data Template -->
+		<DataTemplate DataType="{x:Type m:PayeeEmail}">
+			<ValueBlock Content="{Binding Path=Text}"
+		DynamicReport.IsActive="{Binding Path=IsActive}"
+		Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Payee Banking Routing Number Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:PayeeBankRoutingNumber}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+			TextAlignment="Left"
+			VerticalAlignment="Top">
+		Payee Bank<LineBreak/>Routing Number
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Payee Banking Routing Data Template -->
+		<DataTemplate DataType="{x:Type m:PayeeBankRoutingNumber}">
+			<ValueBlock Content="{Binding Path=Text}"
+		DynamicReport.IsActive="{Binding Path=IsActive}"
+		Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Payee Banking Account Number Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:PayeeBankAccountNumber}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+			TextAlignment="Left"
+			VerticalAlignment="Top">
+		Payee Bank<LineBreak/>Account Number
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Payee Bacnking Account Data Template -->
+		<DataTemplate DataType="{x:Type m:PayeeBankAccountNumber}">
+			<ValueBlock Content="{Binding Path=Text}"
+		DynamicReport.IsActive="{Binding Path=IsActive}"
+		Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Pay Term Length Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:PayTermLength}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	       TextAlignment="Right"
+	       VerticalAlignment="Top">
+				Payment Term<LineBreak/>Length
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Pay Term  Data Template -->
+		<DataTemplate DataType="{x:Type m:PayTermLength}">
+			<ValueBlock Content="{Binding Path=Text}"
+	      DynamicReport.IsActive="{Binding Path=IsActive}"
+	      Style="{StaticResource QuantityStyle}" />
+		</DataTemplate>
+		<!-- PayTerm Start Date Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:PayTermStartDate}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	       TextAlignment="Right"
+	       VerticalAlignment="Top">
+				Payment Term<LineBreak/>Start Date
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- PayTerm Start Date Data Template -->
+		<DataTemplate DataType="{x:Type m:PayTermStartDate}">
+			<ValueBlock Content="{Binding Path=DateTime}"
+	      DynamicReport.IsActive="{Binding Path=IsActive}"
+	      Style="{StaticResource DateFullStyle}" />
+		</DataTemplate>
+		<!-- Payment Method Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:PaymentMethod}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	       TextAlignment="Left"
+	       VerticalAlignment="Top">
+				Payment<LineBreak/>Method
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Payment Method Data Template -->
+		<!--<DataTemplate DataType="{x:Type m:PaymentMethod}">
+		<ValueBlock Content="{Binding Path=Text}"
+	      DynamicReport.IsActive="{Binding Path=IsActive}"
+	      Style="{StaticResource LeftTextStyle}" />
+	</DataTemplate>-->
+		<!-- Payment Method Data Template -->
+		<DataTemplate DataType="{x:Type m:PaymentMethod}">
+			<guardian:MultiComboBox Name="paymentMethodItemList"
+															DynamicReport.IsActive="{Binding Path=IsActive}"
+															SelectedValuePath="PaymentMethodTypeId"
+															SelectedValues="{Binding Path=PaymentMethodTypeIds}"
+															Separator=", "
+															DisplayMemberPath="Name"
+															ItemsSource = "{x:Static guardian:PaymentMethodTypeList.Default}"
+															Margin="0"
+															Padding="0"
+															Style="{StaticResource MultiComboBoxStyle}">
+				<guardian:MultiComboBox.Resources>
+					<ResourceDictionary>
+						<Style TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource BodyCellStyle}">
+							<Setter Property="Template">
+								<Setter.Value>
+									<ControlTemplate TargetType="{x:Type ToggleButton}">
+										<Border BorderThickness="0,0,1,1" Padding="0" BorderBrush="#D0D7E5" Background="{Binding Background,ElementName=paymentMethodItemList}">
+											<ContentPresenter RecognizesAccessKey="True" Content="{TemplateBinding ContentControl.Content}" ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}" ContentStringFormat="{TemplateBinding ContentControl.ContentStringFormat}" Margin="{TemplateBinding Control.Padding}" HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}" SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+										</Border>
+									</ControlTemplate>
+								</Setter.Value>
+							</Setter>
+						</Style>
+					</ResourceDictionary>
+				</guardian:MultiComboBox.Resources>
+			</guardian:MultiComboBox>
+		</DataTemplate>
+		<!-- SelectRow Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:SelectRow}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	       TextAlignment="Left"
+	       VerticalAlignment="Top">
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- SelectRow Data Template -->
+		<DataTemplate DataType="{x:Type m:SelectRow}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock>
+	<TextBlock.Style>
+	    <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource CommonStyle}">
+	    </Style>
+	</TextBlock.Style>
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Settlement Amount Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:SettlementAmount}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	       TextAlignment="Right"
+	       VerticalAlignment="Top">
+			Settlement<LineBreak/>Amount
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Settlement Amount Data Template -->
+		<DataTemplate DataType="{x:Type m:SettlementAmount}">
+			<ValueBlock Content="{Binding Path=Text}"
+	      DynamicReport.IsActive="{Binding Path=IsActive}"
+	      Style="{StaticResource PriceStyle}" />
+		</DataTemplate>
+		<!-- Settlement Id Header Data Template -->
+		<DataTemplate DataType="{x:Type mh:SettlementId}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<TextBlock Style="{StaticResource CommonStyle}"
+	       TextAlignment="Left"
+	       VerticalAlignment="Top">
+				Settletment<LineBreak/>Id
+				</TextBlock>
+			</UserControl>
+		</DataTemplate>
+		<!-- Settlement Id Data Template -->
+		<DataTemplate DataType="{x:Type m:SettlementId}">
+			<ValueBlock Content="{Binding Path=Text}"
+	      DynamicReport.IsActive="{Binding Path=IsActive}"
+	      Style="{StaticResource LeftTextStyle}" />
+		</DataTemplate>
+		<!-- Settlement Status Data Header Template -->
+		<DataTemplate DataType="{x:Type mh:Status}">
+			<UserControl Style="{StaticResource HeaderCellStyle}">
+				<Image HorizontalAlignment="Center"
+	     Source="{StaticResource StatusImage}"
+	     SnapsToDevicePixels="true"
+	     Style="{StaticResource CommonStyle}"
+	     VerticalAlignment="Center" />
+			</UserControl>
+		</DataTemplate>
+		<!--Settlement Status Data Template -->
+		<DataTemplate DataType="{x:Type m:Status}">
+			<ItemSelector DynamicReport.IsActive="{Binding Path=IsActive}"
+									SelectedValue="{Binding Path=StatusCode}"
+									SelectedValuePath="StatusCode"
+									Style="{StaticResource StatusStyle}" />
+		</DataTemplate>
+		<!-- Settlement StatusItem Data Template -->
+		<DataTemplate DataType="{x:Type guardian:StatusItem}">
+			<Image Name="Image"
+	   SnapsToDevicePixels="true"
+	   Source="{Binding Path=EnabledImageSource}" />
+		</DataTemplate>
+	</ReportGrid.Resources>
+	<!-- Fields -->
+	<ReportGrid.Fields>
+		<ReportField ColumnId="AccountBalanceColumn"
+		 Description="Account Balance"
+		 Width="90">
+			<x:Type TypeName="mh:AccountBalance" />
+			<x:Type TypeName="m:AccountBalance" />
+		</ReportField>
+		<ReportField ColumnId="CreatedByColumn"
+		 Description="Created By"
+		 Width="100">
+			<x:Type TypeName="mh:CreatedBy" />
+			<x:Type TypeName="m:CreatedBy" />
+		</ReportField>
+		<ReportField ColumnId="CreatedDateTimeColumn"
+		 Description="Created"
+		 Width="140">
+			<x:Type TypeName="mh:CreatedDateTime" />
+			<x:Type TypeName="m:CreatedDateTime" />
+		</ReportField>
+		<ReportField ColumnId="DebtHolderIdColumn"
+		 Description="Debt Holder Record Id"
+		 Width="100">
+			<x:Type TypeName="mh:DebtHolder" />
+			<x:Type TypeName="m:DebtHolder" />
+		</ReportField>
+		<ReportField ColumnId="DebtNegotiatorIdColumn"
+		 Description="Debt Negotiator Record Id"
+		 Width="240">
+			<x:Type TypeName="mh:DebtNegotiator" />
+			<x:Type TypeName="m:DebtNegotiator" />
+		</ReportField>
+		<ReportField ColumnId="DebtorFirstNameColumn"
+		 Description="Debtor First Name"
+		 Width="100">
+			<x:Type TypeName="mh:DebtorFirstName" />
+			<x:Type TypeName="m:DebtorFirstName" />
+		</ReportField>
+		<ReportField ColumnId="DebtorMiddleNameColumn"
+		 Description="Debtor Middle Name"
+		 Width="95">
+			<x:Type TypeName="mh:DebtorMiddleName" />
+			<x:Type TypeName="m:DebtorMiddleName" />
+		</ReportField>
+		<ReportField ColumnId="DebtorLastNameColumn"
+		 Description="Debtor Last Name"
+		 Width="100">
+			<x:Type TypeName="mh:DebtorLastName" />
+			<x:Type TypeName="m:DebtorLastName" />
+		</ReportField>
+		<ReportField ColumnId="DebtorAddress1Column"
+		 Description="Debtor Address 1"
+		 Width="180">
+			<x:Type TypeName="mh:DebtorAddress1" />
+			<x:Type TypeName="m:DebtorAddress1" />
+		</ReportField>
+		<ReportField ColumnId="DebtorAddress2Column"
+		 Description="Debtor Address 2"
+		 Width="180">
+			<x:Type TypeName="mh:DebtorAddress2" />
+			<x:Type TypeName="m:DebtorAddress2" />
+		</ReportField>
+		<ReportField ColumnId="DebtorCityColumn"
+		 Description="Debtor City"
+		 Width="130">
+			<x:Type TypeName="mh:DebtorCity" />
+			<x:Type TypeName="m:DebtorCity" />
+		</ReportField>
+		<ReportField ColumnId="DebtorSalutationColumn"
+		 Description="Debtor Salutation"
+		 Width="80">
+			<x:Type TypeName="mh:DebtorSalutation" />
+			<x:Type TypeName="m:DebtorSalutation" />
+		</ReportField>
+		<ReportField ColumnId="DebtorProvinceColumn"
+		 Description="Debtor State"
+		 Width="80">
+			<x:Type TypeName="mh:DebtorProvince" />
+			<x:Type TypeName="m:DebtorProvince" />
+		</ReportField>
+		<ReportField ColumnId="DebtorSuffixColumn"
+		 Description="Debtor Suffix"
+		 Width="70">
+			<x:Type TypeName="mh:DebtorSuffix" />
+			<x:Type TypeName="m:DebtorSuffix" />
+		</ReportField>
+		<ReportField ColumnId="DebtorPostalCodeColumn"
+		 Description="Debtor Postal Code"
+		 Width="110">
+			<x:Type TypeName="mh:DebtorPostalCode"/>
+			<x:Type TypeName="m:DebtorPostalCode" />
+		</ReportField>
+		<ReportField ColumnId="DebtorAccountNumberColumn"
+		 Description="Debtor Account Number"
+		 Width="160">
+			<x:Type TypeName="mh:DebtorAccountNumber" />
+			<x:Type TypeName="m:DebtorAccountNumber" />
+		</ReportField>
+		<ReportField ColumnId="DebtorBankRoutingNumberColumn"
+		 Description="Debtor Bank Routing Number"
+		 Width="110">
+			<x:Type TypeName="mh:DebtorBankRoutingNumber" />
+			<x:Type TypeName="m:DebtorBankRoutingNumber" />
+		</ReportField>
+		<ReportField ColumnId="DebtorBankAccountNumberColumn"
+		 Description="Debtor Bank Account Number"
+		 Width="145">
+			<x:Type TypeName="mh:DebtorBankAccountNumber" />
+			<x:Type TypeName="m:DebtorBankAccountNumber" />
+		</ReportField>
+		<ReportField ColumnId="ModifiedByColumn"
+		 Description="Modified By"
+		 Width="100">
+			<x:Type TypeName="mh:ModifiedBy" />
+			<x:Type TypeName="m:ModifiedBy" />
+		</ReportField>
+		<ReportField ColumnId="ModifiedDateTimeColumn"
+		 Description="Modified"
+		 Width="140">
+			<x:Type TypeName="mh:ModifiedDateTime" />
+			<x:Type TypeName="m:ModifiedDateTime" />
+		</ReportField>
+		<ReportField ColumnId="PayeeCompanyNameColumn"
+		 Description="Payee Company Name"
+		 Width="120">
+			<x:Type TypeName="mh:PayeeCompanyName" />
+			<x:Type TypeName="m:PayeeCompanyName" />
+		</ReportField>
+		<ReportField ColumnId="PayeeDepartmentColumn"
+		 Description="Payee Department"
+		 Width="180">
+			<x:Type TypeName="mh:PayeeDepartment" />
+			<x:Type TypeName="m:PayeeDepartment" />
+		</ReportField>
+		<ReportField ColumnId="PayeeBenefitOfColumn"
+		 Description="Payee Benefit Of"
+		 Width="180">
+			<x:Type TypeName="mh:PayeeBenefitOf" />
+			<x:Type TypeName="m:PayeeBenefitOf" />
+		</ReportField>
+		<ReportField ColumnId="PayeeContactNameColumn"
+		 Description="Payee Contact Name"
+		 Width="140">
+			<x:Type TypeName="mh:PayeeContactName" />
+			<x:Type TypeName="m:PayeeContactName" />
+		</ReportField>
+		<ReportField ColumnId="PayeeAddress1Column"
+		 Description="Payee Address 1"
+		 Width="180">
+			<x:Type TypeName="mh:PayeeAddress1" />
+			<x:Type TypeName="m:PayeeAddress1" />
+		</ReportField>
+		<ReportField ColumnId="PayeeAddress2Column"
+		 Description="Payee Address 2"
+		 Width="180">
+			<x:Type TypeName="mh:PayeeAddress2" />
+			<x:Type TypeName="m:PayeeAddress2" />
+		</ReportField>
+		<ReportField ColumnId="PayeeCityColumn"
+		 Description="Payee City"
+		 Width="130">
+			<x:Type TypeName="mh:PayeeCity" />
+			<x:Type TypeName="m:PayeeCity" />
+		</ReportField>
+		<ReportField ColumnId="PayeeProvinceIdColumn"
+		 Description="Payee State"
+		 Width="60">
+			<x:Type TypeName="mh:PayeeProvinceId" />
+			<x:Type TypeName="m:PayeeProvinceId" />
+		</ReportField>
+		<ReportField ColumnId="PayeePostalCodeColumn"
+		 Description="Payee Postal Code"
+		 Width="90">
+			<x:Type TypeName="mh:PayeePostalCode" />
+			<x:Type TypeName="m:PayeePostalCode" />
+		</ReportField>
+		<ReportField ColumnId="PayeePhoneColumn"
+		 Description="Payee Phone"
+		 Width="110">
+			<x:Type TypeName="mh:PayeePhone" />
+			<x:Type TypeName="m:PayeePhone" />
+		</ReportField>
+		<ReportField ColumnId="PayeeFaxColumn"
+		 Description="Payee Fax"
+		 Width="110">
+			<x:Type TypeName="mh:PayeeFax" />
+			<x:Type TypeName="m:PayeeFax" />
+		</ReportField>
+		<ReportField ColumnId="PayeeEmailColumn"
+		 Description="Payee Email"
+		 Width="190">
+			<x:Type TypeName="mh:PayeeEmail" />
+			<x:Type TypeName="m:PayeeEmail" />
+		</ReportField>
+		<ReportField ColumnId="PayeeBankRoutingNumberColumn"
+		 Description="Payee Bank Routing Number"
+		 Width="110">
+			<x:Type TypeName="mh:PayeeBankRoutingNumber" />
+			<x:Type TypeName="m:PayeeBankRoutingNumber" />
+		</ReportField>
+		<ReportField ColumnId="PayeeBankAccountNumberColumn"
+		 Description="Payee Bank Account Number"
+		 Width="130">
+			<x:Type TypeName="mh:PayeeBankAccountNumber" />
+			<x:Type TypeName="m:PayeeBankAccountNumber" />
+		</ReportField>
+		<ReportField ColumnId="PayTermLengthColumn"
+		 Description="Payment Term Length"
+		 Width="100">
+			<x:Type TypeName="mh:PayTermLength" />
+			<x:Type TypeName="m:PayTermLength" />
+		</ReportField>
+		<ReportField ColumnId="PayTermStartDateColumn"
+		 Description="Payment Term Start Date"
+		 Width="140">
+			<x:Type TypeName="mh:PayTermStartDate" />
+			<x:Type TypeName="m:PayTermStartDate" />
+		</ReportField>
+		<ReportField ColumnId="PaymentMethodColumn"
+		 Description="Payment Method"
+		 Width="130">
+			<x:Type TypeName="mh:PaymentMethod" />
+			<x:Type TypeName="m:PaymentMethod" />
+		</ReportField>
+		<ReportField ColumnId="SelectRowColumn"
+		 Description="SelectRow"
+		 Width="20">
+			<x:Type TypeName="mh:SelectRow" />
+			<x:Type TypeName="m:SelectRow" />
+		</ReportField>
+		<ReportField ColumnId="SettlementAmountColumn"
+		 Description="Settlement Amount"
+		 Width="90">
+			<x:Type TypeName="mh:SettlementAmount" />
+			<x:Type TypeName="m:SettlementAmount" />
+		</ReportField>
+		<ReportField ColumnId="SettlementIdColumn"
+		 Description="Settlement Id"
+		 Width="250">
+			<x:Type TypeName="mh:SettlementId" />
+			<x:Type TypeName="m:SettlementId" />
+		</ReportField>
+		<ReportField ColumnId="SettlementStatusColumn"
+		 Description="Settlement Status"
+		 Width="40">
+			<x:Type TypeName="mh:Status" />
+			<x:Type TypeName="m:Status" />
+		</ReportField>
+	</ReportGrid.Fields>
+	<!-- Visible Columns -->
+	<ReportGrid.Columns>
+		<ReportColumn ColumnId="SelectRowColumn" />
+		<ReportColumn ColumnId="SettlementStatusColumn" />
+		<ReportColumn ColumnId="AccountBalanceColumn" />
+		<ReportColumn ColumnId="SettlementAmountColumn" />
+		<ReportColumn ColumnId="PaymentMethodColumn" />
+		<ReportColumn ColumnId="PayTermLengthColumn" />
+		<ReportColumn ColumnId="PayTermStartDateColumn" />
+		<ReportColumn ColumnId="DebtorFirstNameColumn" />
+		<ReportColumn ColumnId="DebtorMiddleNameColumn" />
+		<ReportColumn ColumnId="DebtorLastNameColumn" />
+		<ReportColumn ColumnId="DebtorAddress1Column" />
+		<ReportColumn ColumnId="DebtorAddress2Column" />
+		<ReportColumn ColumnId="DebtorCityColumn" />
+		<ReportColumn ColumnId="DebtorProvinceColumn" />
+		<ReportColumn ColumnId="DebtorPostalCodeColumn" />
+		<ReportColumn ColumnId="DebtorAccountNumberColumn" />
+		<ReportColumn ColumnId="DebtorBankRoutingNumberColumn" />
+		<ReportColumn ColumnId="DebtorBankAccountNumberColumn" />
+		<ReportColumn ColumnId="PayeeCompanyNameColumn" />
+		<ReportColumn ColumnId="PayeeDepartmentColumn" />
+		<ReportColumn ColumnId="PayeeBenefitOfColumn" />
+		<ReportColumn ColumnId="PayeeContactNameColumn" />
+		<ReportColumn ColumnId="PayeeAddress1Column" />
+		<ReportColumn ColumnId="PayeeAddress2Column" />
+		<ReportColumn ColumnId="PayeeCityColumn" />
+		<ReportColumn ColumnId="PayeeProvinceIdColumn" />
+		<ReportColumn ColumnId="PayeePostalCodeColumn" />
+		<ReportColumn ColumnId="PayeePhoneColumn" />
+		<ReportColumn ColumnId="PayeeFaxColumn" />
+		<ReportColumn ColumnId="PayeeEmailColumn" />
+		<ReportColumn ColumnId="PayeeBankRoutingNumberColumn" />
+		<ReportColumn ColumnId="PayeeBankAccountNumberColumn" />
+		<ReportColumn ColumnId="ModifiedDateTimeColumn" />
+	</ReportGrid.Columns>
+	<!-- Rows Templates -->
+	<ReportGrid.RowTemplates>
+		<RowTemplate Height="37">
+			<RowTemplate Height="20"
+		   Path="SettlementList" />
+		</RowTemplate>
+	</ReportGrid.RowTemplates>
+</ReportGrid>

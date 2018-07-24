@@ -1,0 +1,6 @@
+sn -q -Vr "C:\Build\Projects\Fluid Trade\Main\Client Generator\bin\Debug\FluidTrade.ClientGenerator.dll"
+sn -q -Vr "C:\Build\Projects\Fluid Trade\Main\Code Generator\bin\Debug\FluidTrade.CodeGenerator.dll"
+sn -q -Vr "C:\Build\Projects\Fluid Trade\Main\Data Model Schema\bin\Debug\FluidTrade.DataModelSchema.dll"
+sn -q -Vr "C:\Build\Projects\Fluid Trade\Main\Fluid Trade Library\bin\Debug\FluidTrade.FluidTradeLibrary.dll"
+sn -q -Vr "C:\Build\Projects\Fluid Trade\Main\Middle Tier Generator\bin\Debug\FluidTrade.MiddleTierGenerator.dll"
+sn -q -Vr "C:\Build\Projects\Fluid Trade\Main\Presentation Generator\bin\Debug\FluidTrade.PresentationGenerator.dll"

@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="FluidTrade.Thirdparty.HeatIndexControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:FluidTrade.Thirdparty"
+    xmlns:shared="http://schemas.actiprosoftware.com/winfx/xaml/shared"
+    xmlns:gauge="http://schemas.actiprosoftware.com/winfx/xaml/gauge">
+
+    <UserControl.Resources>        
+		<local:PercentageStringConverter x:Key="PercentageStringConverter" />
+        
+        <LinearGradientBrush x:Key="LowCertaintityBrush" StartPoint="0,0.5" EndPoint="1,0.5">
+            <GradientStop Color="LightGray" Offset="0.0" />
+            <GradientStop Color="Gray" Offset="0.25" />            
+        </LinearGradientBrush>
+        
+        <LinearGradientBrush x:Key="MidCertaintityBrush" StartPoint="0,0.5" EndPoint="1,0.5">
+            <GradientStop Color="LightGray" Offset="0.0" />
+            <GradientStop Color="Gray" Offset="0.25" />
+            <GradientStop Color="DarkGray" Offset="1.0" />            
+        </LinearGradientBrush>
+        
+        <LinearGradientBrush x:Key="HighCertaintityBrush" StartPoint="0,0.5" EndPoint="1,0.5">
+            <GradientStop Color="White" Offset="0" />
+            <GradientStop Color="LightGray" Offset="0.6" />
+			<GradientStop Color="Gray" Offset="0.9" />
+            <GradientStop Color="DarkGray" Offset="1.0" />
+        </LinearGradientBrush>
+    </UserControl.Resources>    
+	
+	<Grid Margin="0,1,0,1" Background="{x:Null}" Focusable="True" Name="mainGrid">
+    <gauge:LinearGauge x:Name="gauge"  Orientation="Horizontal"
+					 FrameType="None">                
+        <gauge:LinearGauge.Scales>
+            <gauge:LinearScale IsBarVisible="False" Background="{x:Null}" >
+                <gauge:LinearScale.TickSets>
+                    <gauge:LinearTickSet Minimum=".5" Maximum="1" MajorInterval="1">                       
+                        <gauge:LinearTickSet.Pointers>
+                            <gauge:LinearPointerBar BarType="Rectangle"  BorderWidth="0" DampeningMaximumDuration="0"
+                                                    HasDropShadow="False" ScalePlacement="Overlay" PointerAscent="17" 
+													Background="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:HeatIndexControl}}, Path=BarBackground}"
+                                                    Value="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:HeatIndexControl}}, Path=Percent }" />                                                            
+                        </gauge:LinearTickSet.Pointers>
+                    </gauge:LinearTickSet>
+                </gauge:LinearScale.TickSets>
+            </gauge:LinearScale>
+       </gauge:LinearGauge.Scales>   		
+	</gauge:LinearGauge>
+	<TextBlock VerticalAlignment="Center"
+			HorizontalAlignment="Center"
+		Text="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:HeatIndexControl}}, Path=Percent, Converter={StaticResource PercentageStringConverter} }">
+	</TextBlock>
+	</Grid>	
+</UserControl>
+
+       
+    

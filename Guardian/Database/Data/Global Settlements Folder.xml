@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<script name="Global Settlements Folders">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <transaction>
+    <method name="CreateEntityEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+			<parameter name="createdTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="description" value="Person Folder of Karen Holden" />
+      <parameter name="externalId0" value="Karen Holden FOLDER" />
+      <parameter name="externalId7" value="Karen Holden FOLDER" />
+      <parameter name="hidden" value="false" />
+      <parameter name="imageKey" value="FOLDER" />
+			<parameter name="modifiedTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="name" value="Karen Holden" />
+      <parameter name="readOnly" value="false" />
+	  	<parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+      <parameter name="typeKey" value="SYSTEM FOLDER" />
+    </method>
+    <method name="CreateFolderEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="entityKey" value="Karen Holden FOLDER" />
+      <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+    </method>
+    <method name="CreateSystemFolderEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="folderKey" value="Karen Holden FOLDER" />
+      <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+    </method>
+  </transaction>
+  
+ <!--################### BREAK ############################### -->
+  
+ <method name="CreateEntityTreeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="entityKeyByChildId" value="Karen Holden FOLDER" />
+    <parameter name="entityKeyByParentId" value="Karen Holden" />
+    <parameter name="externalId0" value="{181dca38-50fb-4080-9cef-318db1801dd4}" />
+  </method>
+  <method name="CreateEntityTreeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="entityKeyByChildId" value="Global Settlements" />
+    <parameter name="entityKeyByParentId" value="Karen Holden FOLDER" />
+    <parameter name="externalId0" value="{38e944f5-b3a9-4259-a1a5-38e3562e56fb}" />
+  </method>
+
+  <method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Karen Holden FOLDER" />
+		<parameter name="rightsHolderKey" value="FLUID TRADE ADMINISTRATORS" />
+    <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+  </method>  
+  <method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Karen Holden FOLDER" />
+		<parameter name="rightsHolderKey" value="Global Settlements ADMINISTRATORS" />
+    <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+  </method>  
+  <method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Karen Holden FOLDER" />
+		<parameter name="rightsHolderKey" value="Karen Holden" />
+    <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+  </method>
+</script>

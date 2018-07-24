@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="CommissionUnit">
+	<client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+	<transaction>
+		<method name="CreateCommissionUnitEx" client="DataModelClient">
+			<parameter name="configurationId" value="Default" />
+			<parameter name="description" value="The range isn't specified." />
+			<parameter name="externalId0" value="EMPTY" />
+			<parameter name="name" value="Empty" />
+			<parameter name="commissionUnitCode" value="Empty" />
+		</method>
+		<method name="CreateCommissionUnitEx" client="DataModelClient">
+			<parameter name="configurationId" value="Default" />
+			<parameter name="description" value="The range is specified in share units." />
+			<parameter name="externalId0" value="SHARES" />
+			<parameter name="name" value="Shares" />
+			<parameter name="commissionUnitCode" value="Shares" />
+		</method>
+		<method name="CreateCommissionUnitEx" client="DataModelClient">
+			<parameter name="configurationId" value="Default" />
+			<parameter name="description" value="The range is specified in face value." />
+			<parameter name="externalId0" value="FACE" />
+			<parameter name="name" value="Face" />
+			<parameter name="commissionUnitCode" value="Face" />
+		</method>
+		<method name="CreateCommissionUnitEx" client="DataModelClient">
+			<parameter name="configurationId" value="Default" />
+			<parameter name="description" value="The range is specified in market value." />
+			<parameter name="externalId0" value="MARKET VALUE" />
+			<parameter name="name" value="Market Value" />
+			<parameter name="commissionUnitCode" value="MarketValue" />
+		</method>
+	</transaction>
+</script>

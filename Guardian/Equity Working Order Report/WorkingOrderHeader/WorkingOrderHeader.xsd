@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PrototypeView"
+           targetNamespace="urn:schemas-fluidtrade-com:guardian:equity-working-order-header"
+           xmlns:mstns="urn:schemas-fluidtrade-com:guardian:equity-working-order-header"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:r="urn:schemas-fluidtrade-com:report"
+           xmlns:ewo="urn:schemas-fluidtrade-com:guardian:equity-working-order">
+  <xs:annotation>
+    <xs:appinfo>
+      <r:generatedCode destinationNamespace="FluidTrade.Guardian.Schema.EquityWorkingOrderHeader" />
+    </xs:appinfo>
+  </xs:annotation>
+  <!-- Imports -->
+  <xs:import namespace="urn:schemas-fluidtrade-com:guardian:equity-working-order"
+             schemaLocation="..\WorkingOrder\WorkingOrder.xsd" />
+  <xs:complexType name="AskPrice" />
+  <xs:complexType name="AvailableQuantity" />
+  <xs:complexType name="BidPrice" />
+  <xs:complexType name="Blotter" />
+  <xs:complexType name="BrokerMatch" />
+  <xs:complexType name="Crossing" />
+  <xs:complexType name="CreatedBy" />
+  <xs:complexType name="CreatedTime" />
+  <xs:complexType name="DestinationOrderQuantity" />
+  <xs:complexType name="ExecutionQuantity" />
+  <xs:complexType name="HedgeMatch" />
+  <xs:complexType name="InstitutionMatch" />
+  <xs:complexType name="LastPrice" />
+  <xs:complexType name="LeavesQuantity" />
+  <xs:complexType name="MarketValue" />
+  <xs:complexType name="ModifiedBy" />
+  <xs:complexType name="ModifiedTime" />
+  <xs:complexType name="OrderType" />
+  <xs:complexType name="SecurityName" />
+  <xs:complexType name="SecuritySymbol" />
+  <xs:complexType name="SettlementDate" />
+  <xs:complexType name="Side" />
+  <xs:complexType name="SourceOrderQuantity" />
+  <xs:complexType name="Status" />
+  <xs:complexType name="TimeInForce" />
+  <xs:complexType name="TradeDate" />
+  <!-- Working Order Header -->
+  <xs:complexType name="WorkingOrderHeader">
+    <xs:annotation>
+      <xs:appinfo>
+        <r:constructor>
+          <r:arguments>
+            <r:argument type="System.Guid"
+                        name="guid" />
+          </r:arguments>
+          <r:setter property="key"
+                    value="guid" />
+        </r:constructor>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="AskPrice"
+                  type="mstns:AskPrice" />
+      <xs:element name="AvailableQuantity"
+                  type="mstns:AvailableQuantity" />
+      <xs:element name="BidPrice"
+                  type="mstns:BidPrice" />
+      <xs:element name="Blotter"
+                  type="mstns:Blotter" />
+      <xs:element name="BrokerMatch"
+                  type="mstns:BrokerMatch" />
+      <xs:element name="CreatedBy"
+                  type="mstns:CreatedBy" />
+      <xs:element name="CreatedTime"
+                  type="mstns:CreatedTime" />
+      <xs:element name="Crossing"
+                  type="mstns:Crossing" />
+      <xs:element name="DestinationOrderQuantity"
+                  type="mstns:DestinationOrderQuantity" />
+      <xs:element name="ExecutionQuantity"
+                  type="mstns:ExecutionQuantity" />
+      <xs:element name="HedgeMatch"
+                  type="mstns:HedgeMatch" />
+      <xs:element name="InstitutionMatch"
+                  type="mstns:InstitutionMatch" />
+      <xs:element name="LastPrice"
+                  type="mstns:LastPrice" />
+      <xs:element name="LeavesQuantity"
+                  type="mstns:LeavesQuantity" />
+      <xs:element name="MarketValue"
+                  type="mstns:MarketValue" />
+      <xs:element name="ModifiedBy"
+                  type="mstns:ModifiedBy" />
+      <xs:element name="ModifiedTime"
+                  type="mstns:ModifiedTime" />
+      <xs:element name="OrderType"
+                  type="mstns:OrderType" />
+      <xs:element name="SecurityName"
+                  type="mstns:SecurityName" />
+      <xs:element name="SecuritySymbol"
+                  type="mstns:SecuritySymbol" />
+      <xs:element name="SettlementDate"
+                  type="mstns:SettlementDate" />
+      <xs:element name="Side"
+                  type="mstns:Side" />
+      <xs:element name="SourceOrderQuantity"
+                  type="mstns:SourceOrderQuantity" />
+      <xs:element name="Status"
+                  type="mstns:Status" />
+      <xs:element name="TimeInForce"
+                  type="mstns:TimeInForce" />
+      <xs:element name="TradeDate"
+                  type="mstns:TradeDate" />
+      <xs:element name="WorkingOrderList"
+                  type="ewo:WorkingOrder"
+                  minOccurs="0"
+                  maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:appinfo>
+            <r:where predicate="Prefilter"
+                     source="DataModel.WorkingOrder"
+                     sourceType="FluidTrade.Guardian.WorkingOrderRow" />
+            <r:select selector="Selector" />
+            <r:where predicate="Filter" />
+            <r:orderBy comparer="Comparer"
+                       keySelector="ewo:WorkingOrder.SelectSelf"
+                       keyType="ewo:WorkingOrder" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

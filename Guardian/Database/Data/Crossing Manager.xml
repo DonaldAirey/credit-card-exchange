@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="Crossing Manager">
+	<client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+	<method name="CreateCrossingManagerEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="CONSUMER DEBT CROSS" />
+    <parameter name="crossingType" value="FluidTrade.Guardian.ConsumerCrossDebt, FluidTrade.TradingSupport, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+  </method>
+  <method name="CreateCrossingManagerEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="CONSUMER TRUST CROSS" />
+    <parameter name="crossingType" value="FluidTrade.Guardian.ConsumerCrossTrust, FluidTrade.TradingSupport, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+  </method>
+  <method name="CreateCrossingManagerEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="DEBT CROSS" />
+    <parameter name="crossingType" value="FluidTrade.Guardian.DebtCross, FluidTrade.TradingSupport, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />    
+  </method>
+  <method name="CreateCrossingManagerEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="EQUITY CROSS" />
+    <parameter name="crossingType" value="FluidTrade.Guardian.EquityCross, FluidTrade.TradingSupport, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />    
+  </method>
+  <method name="CreateCrossingManagerEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default" />
+	<parameter name="externalId0" value="EQUITY CROSS" />
+	<parameter name="crossingType" value="FluidTrade.Guardian.EquityCross, FluidTrade.TradingSupport, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+  </method>
+  <!--<method name="CreateCrossingManagerEx" client="DataModelDlient">
+	<parameter name="configurationId" value="Default" />
+	<parameter name="externalId0" value="GCS SAVINGS BALANCE" />
+	<parameter name="crossingType" value="FluidTrade.Guardian.SavingsBalance, FluidTrade.GcsWebServiceClient, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+  </method>
+  <method name="CreateCrossingManagerEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default" />
+	<parameter name="externalId0" value="GCS PAYMENT DEALER" />
+	<parameter name="crossingType" value="FluidTrade.Guardian.PaymentDealer, FluidTrade.GcsWebServiceClient, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+  </method>-->
+</script>

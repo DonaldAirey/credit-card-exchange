@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="TypeTree">
+	<method name="CreateTypeTreeEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="{89B708B8-AE83-49c2-900B-1FD333C4BCEA}" />
+		<parameter name="typeKeyByParentId" value="DEBT NEGOTIATOR" />
+		<parameter name="typeKeyByChildId" value="DEBT NEGOTIATOR" />
+	</method>
+	<method name="CreateTypeTreeEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="{005F9074-EFBD-4ea7-9E19-54D5FD5A45D7}" />
+		<parameter name="typeKeyByParentId" value="DEBT HOLDER" />
+		<parameter name="typeKeyByChildId" value="DEBT HOLDER" />
+	</method>
+</script>

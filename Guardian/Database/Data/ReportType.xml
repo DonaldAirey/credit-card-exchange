@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="ReportType">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <transaction>
+	<method name="CreateReportTypeEx" client="DataModelClient">
+	  <parameter name="configurationId" value="Default" />
+	  <parameter name="description" value="Document used to view credit card details." />
+	  <parameter name="externalId0" value="CREDIT CARD DETAIL" />
+	  <parameter name="name" value="Credit Card Detail" />
+	  <parameter name="reportTypeCode" value="CreditCardDetail" />
+	</method>
+    <method name="CreateReportTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Document used to view aggregate orders on a blotter." />
+      <parameter name="externalId0" value="WORKING ORDER" />
+      <parameter name="name" value="Working Order View" />
+      <parameter name="reportTypeCode" value="WorkingOrder" />
+    </method>
+    <method name="CreateReportTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Document used to manage orders that have been sent to a broker or ECN." />
+      <parameter name="externalId0" value="DESTINATION ORDER" />
+      <parameter name="name" value="Destination Order" />
+      <parameter name="reportTypeCode" value="DestinationOrder" />
+    </method>
+    <method name="CreateReportTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Document used to manage orders that have been sent to a broker or ECN." />
+      <parameter name="externalId0" value="DESTINATION ORDER DETAIL" />
+      <parameter name="name" value="Destination Order Detail" />
+      <parameter name="reportTypeCode" value="DestinationOrderDetail" />
+    </method>
+    <method name="CreateReportTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Document used to manage order Execution" />
+      <parameter name="externalId0" value="EXECUTION" />
+      <parameter name="name" value="Execution" />
+      <parameter name="reportTypeCode" value="Execution" />
+    </method>
+    <method name="CreateReportTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Document used to manage order Execution" />
+      <parameter name="externalId0" value="EXECUTION DETAIL" />
+      <parameter name="name" value="Execution Detail" />
+      <parameter name="reportTypeCode" value="ExecutionDetail" />
+    </method>
+    <method name="CreateReportTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Document used to manage orders that have been sent to a broker or ECN." />
+      <parameter name="externalId0" value="SOURCE ORDER" />
+      <parameter name="name" value="Source Order" />
+      <parameter name="reportTypeCode" value="SourceOrder" />
+    </method>
+    <method name="CreateReportTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Document used to manage orders that have been sent to a broker or ECN." />
+      <parameter name="externalId0" value="SOURCE ORDER DETAIL" />
+      <parameter name="name" value="Source Order Detail" />
+      <parameter name="reportTypeCode" value="SourceOrderDetail" />
+    </method>
+    <method name="CreateReportTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Document used to view matching orders and negotiate a trade." />
+      <parameter name="externalId0" value="MATCH" />
+      <parameter name="name" value="Equity Match Report" />
+      <parameter name="reportTypeCode" value="Match" />
+    </method>
+	<method name="CreateReportTypeEx" client="DataModelClient">
+	  <parameter name="configurationId" value="Default" />
+	  <parameter name="description" value="Document used to view credit card details." />
+	  <parameter name="externalId0" value="PAYMENT SUMMARY" />
+	  <parameter name="name" value="Payment Summary" />
+	  <parameter name="reportTypeCode" value="PaymentSummary" />
+	</method>
+    <method name="CreateReportTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Document used to view the quotes in the match tab." />
+      <parameter name="externalId0" value="QUOTE" />
+      <parameter name="name" value="Quote View" />
+      <parameter name="reportTypeCode" value="Quote" />  
+    </method>
+	<method name="CreateReportTypeEx" client="DataModelClient">
+	  <parameter name="configurationId" value="Default" />
+	  <parameter name="description" value="Document used to view trade settlement." />
+	  <parameter name="externalId0" value="SETTLEMENT" />
+	  <parameter name="name" value="Settlement Report" />
+	  <parameter name="reportTypeCode" value="Settlement" />
+	</method>
+    <method name="CreateReportTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Non updating prinitable Reports." />
+      <parameter name="externalId0" value="STATICREPORT" />
+      <parameter name="name" value="Report" />
+      <parameter name="reportTypeCode" value="StaticReport" />
+    </method>
+  </transaction>
+</script>

@@ -1,0 +1,411 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2FFE01C4-2F4A-437D-9A88-B95099F345BA}</ProjectGuid>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <RootNamespace>FluidTrade.Client</RootNamespace>
+    <AssemblyName>DebtTrak.Client</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <OutputType>winexe</OutputType>
+    <ApplicationIcon>Resources\Application.ico</ApplicationIcon>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>
+    </NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluidTrade.ActiproLibrary, Version=1.3.0.0, Culture=neutral, PublicKeyToken=9e74401225b20b7d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Additional Client Libraries\FluidTrade.ActiproLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework.Classic">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\NewZoomSlider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\ZoomButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\ZoomSlider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WindowMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WindowMain.xaml.cs">
+      <DependentUpon>WindowMain.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InstallerEventLog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InstallerCertificateAuthority.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InstallerCertificateAuthority.Designer.cs">
+      <DependentUpon>InstallerCertificateAuthority.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Bindings.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="app.config" />
+    <None Include="Tat.config" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Additional Client Libraries\Additional Client Libraries.csproj">
+      <Project>{dada5295-0d66-4cca-950f-ce3c207a8d2d}</Project>
+      <Name>Additional Client Libraries</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Fluid Trade Library\Fluid Trade Library.csproj">
+      <Project>{734051D9-B2A3-44E9-A88B-7B4FDB90109F}</Project>
+      <Name>Fluid Trade Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Fluid Trade Windows\Fluid Trade Windows.csproj">
+      <Project>{96E46257-35EE-4466-AD52-B4DDFB2F81D4}</Project>
+      <Name>Fluid Trade Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Message Library\Message Library.csproj">
+      <Project>{D91752CC-EFBA-4E86-9F71-576499101E02}</Project>
+      <Name>Message Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PDF Control\PDF Control.csproj">
+      <Project>{17c7c076-4f59-4881-8596-676686f7b46f}</Project>
+      <Name>PDF Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blotter Detail Report\Blotter Detail Report.csproj">
+      <Project>{fdff870b-8922-49e4-9ad8-ab41cf28a559}</Project>
+      <Name>Blotter Detail Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blotter Viewer\Blotter Viewer.csproj">
+      <Project>{ef4aed83-8987-47a5-a98c-88fc5865a33e}</Project>
+      <Name>Blotter Viewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Client Data Model\Client Data Model.csproj">
+      <Project>{B42CF522-8BF7-41E6-A80A-B694670FC9A3}</Project>
+      <Name>Client Data Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Client Trading Support\Client Trading Support.csproj">
+      <Project>{E4DCC322-91C6-4515-9D19-FF7181563F52}</Project>
+      <Name>Client Trading Support</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Debt Blotter Viewer\Debt Blotter Viewer.csproj">
+      <Project>{1b536d53-ae6c-4d59-acdc-feb5fb4b07d1}</Project>
+      <Name>Debt Blotter Viewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Debt Holder Blotter Viewer\Debt Holder Blotter Viewer.csproj">
+      <Project>{f7094b6a-b056-4d7c-bedb-ad46588fb524}</Project>
+      <Name>Debt Holder Blotter Viewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Debt Holder Match Report\Debt Holder Match Report.csproj">
+      <Project>{38f7ee52-2f2d-44f1-8478-f9fbc9e2b262}</Project>
+      <Name>Debt Holder Match Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Debt Holder Negotiation Console\Debt Holder Negotiation Console.csproj">
+      <Project>{e4bf6dc8-55e0-4030-ac26-1d1b24b45df1}</Project>
+      <Name>Debt Holder Negotiation Console</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Debt Holder Settlement Report\Debt Holder Settlement Report.csproj">
+      <Project>{71de0858-8087-47eb-9077-99405cb49918}</Project>
+      <Name>Debt Holder Settlement Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Debt Holder Working Order Report\Debt Holder Working Order Report.csproj">
+      <Project>{a702338e-55da-4a6a-91e8-139ce2f1cb01}</Project>
+      <Name>Debt Holder Working Order Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Debt Negotiator Blotter Viewer\Debt Negotiator Blotter Viewer.csproj">
+      <Project>{faecbfbc-7ec3-419d-9645-114595326e5a}</Project>
+      <Name>Debt Negotiator Blotter Viewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Debt Negotiator Match Report\Debt Negotiator Match Report.csproj">
+      <Project>{ebceaf61-db73-4537-bd76-1a10e9ec9101}</Project>
+      <Name>Debt Negotiator Match Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Debt Negotiator Negotiation Console\Debt Negotiator Negotiation Console.csproj">
+      <Project>{1ad4f052-c75d-4da9-9226-d1d2d2c40023}</Project>
+      <Name>Debt Negotiator Negotiation Console</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Debt Negotiator Settlement Report\Debt Negotiator Settlement Report.csproj">
+      <Project>{0fdc7cd9-da25-4096-a3ca-cabf0839822c}</Project>
+      <Name>Debt Negotiator Settlement Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Debt Negotiator Working Order Report\Debt Negotiator Working Order Report.csproj">
+      <Project>{38d5bf5c-1e6e-48bb-8578-376940fa9a88}</Project>
+      <Name>Debt Negotiator Working Order Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Debt Payment Reports\Debt Payment Reports.csproj">
+      <Project>{5bc2668a-499a-4502-9d05-f03fcb9bdf27}</Project>
+      <Name>Debt Payment Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Debt Working Order Report\Debt Working Order Report.csproj">
+      <Project>{9ae7fe46-ae2f-4adb-8603-ad05984a0871}</Project>
+      <Name>Debt Working Order Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Destination Order Report\Destination Order Report.csproj">
+      <Project>{b4b11799-39f3-424c-a672-47dd6b09bc83}</Project>
+      <Name>Destination Order Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Detail Reports\Detail Reports.csproj">
+      <Project>{bc7eb234-72a8-4937-91a7-5e996db03485}</Project>
+      <Name>Detail Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Equity Blotter Viewer\Equity Blotter Viewer.csproj">
+      <Project>{5570c1b3-dc10-4c5c-9307-ea7e377d2893}</Project>
+      <Name>Equity Blotter Viewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Equity Working Order Report\Equity Working Order Report.csproj">
+      <Project>{56b08b89-f187-4bf8-8988-b8e903c0d96b}</Project>
+      <Name>Equity Working Order Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Execution Report\Execution Report.csproj">
+      <Project>{72779a3b-b21b-484a-a17c-1dbdba359f48}</Project>
+      <Name>Execution Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Folder Viewer\Folder Viewer.csproj">
+      <Project>{1F355DA9-5CB4-4C0D-9207-895A4FD42485}</Project>
+      <Name>Folder Viewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Guardian Library\Guardian Library.csproj">
+      <Project>{EFBD8C4F-D582-456F-92B2-40839952F0C4}</Project>
+      <Name>Guardian Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Guardian Windows\Guardian Windows.csproj">
+      <Project>{2ADC9A25-845D-4E7C-9E0C-6A006809125F}</Project>
+      <Name>Guardian Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Match Report\Match Report.csproj">
+      <Project>{ba09d365-3b00-48f9-baf8-0459c791c8bd}</Project>
+      <Name>Match Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negotiation Console\Negotiation Console.csproj">
+      <Project>{e95a498f-17e1-476a-9dc5-70a58324ab91}</Project>
+      <Name>Negotiation Console</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negotiation Service\Negotiation Service.csproj">
+      <Project>{7D13F826-88FC-4BE2-B01D-B60BC30D91E9}</Project>
+      <Name>Negotiation Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Settlement Report\Settlement Report.csproj">
+      <Project>{8334e336-b138-41d8-b083-b6f4cae8e1b1}</Project>
+      <Name>Settlement Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Source Order Report\Source Order Report.csproj">
+      <Project>{3d646773-176e-4610-8306-47a1079fd1f4}</Project>
+      <Name>Source Order Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Working Order Report\Working Order Report.csproj">
+      <Project>{021ca870-d3f5-47e4-a418-a97ac678b10c}</Project>
+      <Name>Working Order Report</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Zoom In.png" />
+    <Resource Include="Resources\Zoom Out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Ribbon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Application Banner.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Refresh16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <SplashScreen Include="SplashScreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Application.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

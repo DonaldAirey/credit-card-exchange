@@ -1,0 +1,11 @@
+﻿<guardian:PDFReportBase x:Class="FluidTrade.Guardian.PDFReport"
+                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                        xmlns:guardian="http://schemas.fluidtrade.com/winfx/2006/xaml/guardian/presentation"
+                        xmlns:control="clr-namespace:FluidTrade.Core.Windows;assembly=FluidTrade.PdfControl"
+                        Height="auto"
+                        Width="auto">
+  <Grid>
+    <control:PdfViewer Name="pdfViewer" />
+  </Grid>
+</guardian:PDFReportBase>

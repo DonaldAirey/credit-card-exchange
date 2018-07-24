@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="Type">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="A Collection of Securities" />
+    <parameter name="externalId0" value="ACCOUNT" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.Account, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="FluidTrade.Guardian.PageAccount, Account Page" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="A Collection of Accounts" />
+    <parameter name="externalId0" value="ACCOUNT GROUP" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.AccountGroup, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="FluidTrade.Guardian.PageAccount, Account Page" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="The work surface for a trader" />
+    <parameter name="externalId0" value="BLOTTER" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.Blotter, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="FluidTrade.Guardian.ViewerBlotter, FluidTrade.BlotterViewer, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Trades Securities for itself and clients" />
+    <parameter name="externalId0" value="BROKER" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.Broker, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="FluidTrade.Guardian.ViewerBlotter, FluidTrade.BlotterViewer, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="A localized group of users" />
+    <parameter name="externalId0" value="BRANCH" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.Branch, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="FluidTrade.Guardian.ViewerBlotter, FluidTrade.BlotterViewer, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Broker Service that clears trades." />
+    <parameter name="externalId0" value="CLEARING BROKER" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.ClearingBroker, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="FluidTrade.Guardian.ViewerBlotter, FluidTrade.BlotterViewer, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="A person who enforces trading rules" />
+    <parameter name="externalId0" value="COMPLIANCE OFFICER" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.ComplianceOfficer, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="FluidTrade.Guardian.ViewerBlotter, FluidTrade.BlotterViewer, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Consumer Debt" />
+    <parameter name="externalId0" value="CONSUMER DEBT" />
+		<parameter name="notifyingType" value="FluidTrade.Guardian.ConsumerDebtNotification, FluidTrade.NegotiationService, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+		<parameter name="type" value="FluidTrade.Guardian.Windows.ConsumerDebt, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Consumer Trust" />
+    <parameter name="externalId0" value="CONSUMER TRUST" />
+		<parameter name="notifyingType" value="FluidTrade.Guardian.ConsumerTrustNotification, FluidTrade.NegotiationService, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+		<parameter name="type" value="FluidTrade.Guardian.Windows.ConsumerTrust, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Circulation as a medium of exchange" />
+    <parameter name="externalId0" value="CURRENCY" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.Currency, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="An obligation made binding by a money forfeit" />
+    <parameter name="externalId0" value="DEBT" />
+		<parameter name="notifyingType" value="FluidTrade.Guardian.DebtNotification, FluidTrade.NegotiationService, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.Debt, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Debt Class" />
+    <parameter name="externalId0" value="DEBT CLASS" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.DebtClass, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="FluidTrade.Guardian.ViewerBlotter, FluidTrade.BlotterViewer, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="The work surface for an Debt Trader" />
+    <parameter name="externalId0" value="DEBT BLOTTER" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.DebtBlotter, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="FluidTrade.Guardian.ViewerDebtBlotter, FluidTrade.DebtBlotterViewer, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Holder Debt Class" />
+    <parameter name="externalId0" value="DEBT HOLDER" />
+		<parameter name="imageKey" value="BLOTTER" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.DebtHolder, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="FluidTrade.Guardian.ViewerDebtHolderBlotter, FluidTrade.DebtHolderBlotterViewer, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Negotiator Debt Class" />
+    <parameter name="externalId0" value="DEBT NEGOTIATOR" />
+		<parameter name="imageKey" value="BLOTTER" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.DebtNegotiator, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="FluidTrade.Guardian.ViewerDebtNegotiatorBlotter, FluidTrade.DebtNegotiatorBlotterViewer, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="The common stock of a corporation" />
+    <parameter name="externalId0" value="EQUITY" />
+	<parameter name="notifyingType" value="FluidTrade.Guardian.EquityNotification, FluidTrade.NegotiationService, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.Equity, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="The work surface for an Equity Trader" />
+    <parameter name="externalId0" value="EQUITY BLOTTER" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.EquityBlotter, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="FluidTrade.Guardian.ViewerEquityBlotter, FluidTrade.EquityBlotterViewer, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Object folder" />
+    <parameter name="externalId0" value="FOLDER" />
+		<parameter name="imageKey" value="FOLDER" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.Folder, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="FluidTrade.Guardian.FolderViewer, FluidTrade.FolderViewer" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="User Group" />
+    <parameter name="externalId0" value="GROUP" />
+		<parameter name="imageKey" value="GROUP" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.Group, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Manages Security Assets" />
+    <parameter name="externalId0" value="INSTITUTION" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.Institution, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="FluidTrade.Guardian.ViewerBlotter, FluidTrade.BlotterViewer, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="An entity that issues debt (Bonds, Notes, Bills, etc.)" />
+    <parameter name="externalId0" value="ISSUER" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.Issuer, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="Anything that can be traded for another thing" />
+    <parameter name="externalId0" value="SECURITY" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.Security, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="User folder" />
+    <parameter name="externalId0" value="SYSTEM FOLDER" />
+		<parameter name="imageKey" value="FOLDER" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.SystemFolder, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="FluidTrade.Guardian.ViewerFolder, FluidTrade.FolderViewer, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="A business that handles the details of exchanging securities" />
+    <parameter name="externalId0" value="TRADER" />
+		<parameter name="imageKey" value="USER" />
+		<parameter name="type" value="FluidTrade.Guardian.Windows.Trader, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="" />
+  </method>
+  <method name="CreateTypeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="description" value="A User of the Guardian Electronic Execution Network" />
+    <parameter name="externalId0" value="USER" />
+		<parameter name="imageKey" value="USER" />
+    <parameter name="type" value="FluidTrade.Guardian.Windows.User, FluidTrade.GuardianWindows, Version=1.3.0.0, PublicKeyToken=b200e265aff2c6ac, Culture=neutral" />
+    <parameter name="viewerType" value="" />
+  </method>
+</script>

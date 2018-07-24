@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="AccessRight">
+	<client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+	<method name="CreateAccessRightEx" client="DataModelClient">
+		<parameter name="accessRightCode" value="None" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="NONE" />
+		<parameter name="name" value="None" />
+	</method>
+	<method name="CreateAccessRightEx" client="DataModelClient">
+		<parameter name="accessRightCode" value="Browse" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="BROWSE" />
+		<parameter name="name" value="Browse" />
+	</method>
+	<method name="CreateAccessRightEx" client="DataModelClient">
+		<parameter name="accessRightCode" value="Execute" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="EXECUTE" />
+		<parameter name="name" value="Execute" />
+	</method>
+	<method name="CreateAccessRightEx" client="DataModelClient">
+		<parameter name="accessRightCode" value="FullControl" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="FULL CONTROL" />
+		<parameter name="name" value="Full Control" />
+	</method>
+	<method name="CreateAccessRightEx" client="DataModelClient">
+		<parameter name="accessRightCode" value="Read" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="READ" />
+		<parameter name="name" value="Read" />
+	</method>
+	<method name="CreateAccessRightEx" client="DataModelClient">
+		<parameter name="accessRightCode" value="Write" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="WRITE" />
+		<parameter name="name" value="Write" />
+	</method>
+
+	<!-- The following a here to accomodate foreign keys on the AccessRightId -->
+	<method name="CreateAccessRightEx" client="DataModelClient">
+		<parameter name="accessRightCode" value="ExecuteBrowse" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="EXECUTE BROWSE" />
+		<parameter name="name" value="Execute Browse" />
+	</method>
+	<method name="CreateAccessRightEx" client="DataModelClient">
+		<parameter name="accessRightCode" value="ReadBrowse" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="READ BROWSE" />
+		<parameter name="name" value="Read Browse" />
+	</method>
+	<method name="CreateAccessRightEx" client="DataModelClient">
+		<parameter name="accessRightCode" value="ReadExecute" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="READ EXECUTE" />
+		<parameter name="name" value="Read Execute" />
+	</method>
+	<method name="CreateAccessRightEx" client="DataModelClient">
+		<parameter name="accessRightCode" value="ReadExecuteBrowse" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="READ EXECUTE BROWSE" />
+		<parameter name="name" value="Read Execute Browse" />
+	</method>
+	<method name="CreateAccessRightEx" client="DataModelClient">
+		<parameter name="accessRightCode" value="WriteBrowse" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="WRITE BROWSE" />
+		<parameter name="name" value="Write Browse" />
+	</method>
+	<method name="CreateAccessRightEx" client="DataModelClient">
+		<parameter name="accessRightCode" value="WriteExecute" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="WRITE EXECUTE" />
+		<parameter name="name" value="Write Execute" />
+	</method>
+	<method name="CreateAccessRightEx" client="DataModelClient">
+		<parameter name="accessRightCode" value="WriteExecuteBrowse" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="WRITE EXECUTE BROWSE" />
+		<parameter name="name" value="Write Execute Browse" />
+	</method>
+	<method name="CreateAccessRightEx" client="DataModelClient">
+		<parameter name="accessRightCode" value="ReadWrite" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="READ WRITE" />
+		<parameter name="name" value="Read Write" />
+	</method>
+	<method name="CreateAccessRightEx" client="DataModelClient">
+		<parameter name="accessRightCode" value="ReadWriteBrowse" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="READ WRITE BROWSE" />
+		<parameter name="name" value="Read Write Browse" />
+	</method>
+	<method name="CreateAccessRightEx" client="DataModelClient">
+		<parameter name="accessRightCode" value="ReadWriteExecute" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="READ WRITE EXECUTE" />
+		<parameter name="name" value="Read Write Execute" />
+	</method>
+</script>

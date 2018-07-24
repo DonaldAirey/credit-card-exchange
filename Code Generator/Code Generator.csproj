@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D0267087-ADD8-41B8-A030-215D40A68FE5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FluidTrade.Core</RootNamespace>
+    <AssemblyName>FluidTrade.CodeGenerator</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Public Key.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>true</DelaySign>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChangeEventArgsClass\ChangeEventArgsClass.cs" />
+    <Compile Include="ChangeEventArgsClass\DataActionField.cs" />
+    <Compile Include="ChangeEventArgsClass\DataActionProperty.cs" />
+    <Compile Include="ChangeEventArgsClass\RowField.cs" />
+    <Compile Include="ChangeEventArgsClass\RowProperty.cs" />
+    <Compile Include="ChangeEventArgsClass\VoidConstructor.cs" />
+    <Compile Include="CodeColumnExpressionCollection.cs" />
+    <Compile Include="CodeConvert.cs" />
+    <Compile Include="CodeGeneratedCodeAttribute.cs" />
+    <Compile Include="CodeGlobalTypeReference.cs" />
+    <Compile Include="CodeGlobalTypeReferenceExpression.cs" />
+    <Compile Include="CodeKeyCreateExpression.cs" />
+    <Compile Include="CodeRandomVariableReferenceExpression.cs" />
+    <Compile Include="RandomVariableName.cs" />
+    <Compile Include="CreateParameterMatrix.cs" />
+    <Compile Include="DestroyParameterMatrix.cs" />
+    <Compile Include="ForeignKeyVariableItem.cs" />
+    <Compile Include="ProgressIndicator.cs" />
+    <Compile Include="SimpleParameterItem.cs" />
+    <Compile Include="TargetInterface\ReconcileMethod.cs" />
+    <Compile Include="UniqueConstraintParameterItem.cs" />
+    <Compile Include="UpdateParameterMatrix.cs" />
+    <Compile Include="TargetInterface\DestroyExMethod.cs" />
+    <Compile Include="TargetInterface\UpdateExMethod.cs" />
+    <Compile Include="DestroyExParameterMatrix.cs" />
+    <Compile Include="UpdateExParameterMatrix.cs" />
+    <Compile Include="InternalParameterItem.cs" />
+    <Compile Include="CodeCustomAttributesForProperties.cs" />
+    <Compile Include="TargetClass\CodeForeignKeyConstraint.cs" />
+    <Compile Include="TargetClass\CodeDataRelation.cs" />
+    <Compile Include="CodeCustomAttributesForMethods.cs" />
+    <Compile Include="TargetClass\RelationField.cs" />
+    <Compile Include="TargetInterface\CreateExMethod.cs" />
+    <Compile Include="TargetInterface\CreateMethod.cs" />
+    <Compile Include="TargetInterface\DataSetInterface.cs" />
+    <Compile Include="TargetInterface\DestroyMethod.cs" />
+    <Compile Include="TargetInterface\ReadMethod.cs" />
+    <Compile Include="TargetInterface\UpdateMethod.cs" />
+    <Compile Include="ForeignKeyConstraintParameterItem.cs" />
+    <Compile Include="IndexInterface\FindByKeyMethod.cs" />
+    <Compile Include="IndexInterface\IndexInterface.cs" />
+    <Compile Include="ExternalParameterItem.cs" />
+    <Compile Include="CreateExParameterMatrix.cs" />
+    <Compile Include="RowChangeDelegate.cs" />
+    <Compile Include="TargetClass\TableField.cs" />
+    <Compile Include="TargetClass\TableProperty.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RowClass\TableField.cs" />
+    <Compile Include="TableClass\ChildRelationField.cs" />
+    <Compile Include="TableClass\ChildRelationProperty.cs" />
+    <Compile Include="TableClass\CodeCustomAttributesForMethods.cs" />
+    <Compile Include="TableClass\ColumnField.cs" />
+    <Compile Include="TableClass\ColumnProperty.cs" />
+    <Compile Include="TableClass\DataIndexField.cs" />
+    <Compile Include="TableClass\DataIndexProperty.cs" />
+    <Compile Include="TableClass\DataIndicesField.cs" />
+    <Compile Include="TableClass\IndicesProperty.cs" />
+    <Compile Include="TableClass\GetRowTypeMethod.cs" />
+    <Compile Include="TableClass\InitializeRelationsMethod.cs" />
+    <Compile Include="TableClass\NewRowFromBuilderMethod.cs" />
+    <Compile Include="TableClass\OnRowChangedMethod.cs" />
+    <Compile Include="TableClass\OnRowChangingMethod.cs" />
+    <Compile Include="TableClass\OnRowDeletedMethod.cs" />
+    <Compile Include="TableClass\OnRowDeletingMethod.cs" />
+    <Compile Include="TableClass\ParentRelationField.cs" />
+    <Compile Include="TableClass\ParentRelationProperty.cs" />
+    <Compile Include="TableClass\RowChangedEvent.cs" />
+    <Compile Include="TableClass\RowChangingEvent.cs" />
+    <Compile Include="TableClass\RowDeletedEvent.cs" />
+    <Compile Include="TableClass\RowDeletingEvent.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Public Key.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Data Model Schema\Data Model Schema.csproj">
+      <Project>{11AD479E-B83C-4611-AA96-0AF71289119D}</Project>
+      <Name>Data Model Schema</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fluid Trade Library\Fluid Trade Library.csproj">
+      <Project>{734051D9-B2A3-44E9-A88B-7B4FDB90109F}</Project>
+      <Name>Fluid Trade Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

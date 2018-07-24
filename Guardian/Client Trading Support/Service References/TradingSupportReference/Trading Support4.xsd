@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/FluidTrade.Core" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/FluidTrade.Core" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/Guardian/Trading Support?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://localhost/Guardian/Trading Support?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:simpleType name="ErrorCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Success" />
+      <xs:enumeration value="NoJoy" />
+      <xs:enumeration value="GeneralProtectionFault">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RecordExists">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RecordNotFound">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IncompatibleTypes">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">6</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SqlError">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">7</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Deadlock" />
+      <xs:enumeration value="ArgumentError" />
+      <xs:enumeration value="FieldRequired" />
+      <xs:enumeration value="BadPassword">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">52</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AccessDenied">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PasswordExpired">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">532</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AccountDisabled">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">533</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Fatal">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">666</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AccountExpired">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">701</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UserMustResetPassword">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">773</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UserAccountLocked">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">775</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UserNotFound">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2030</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ErrorCode" nillable="true" type="tns:ErrorCode" />
+  <xs:complexType name="RecordNotFoundFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:FaultBase">
+        <xs:sequence>
+          <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Key" nillable="true" type="q1:ArrayOfanyType" />
+          <xs:element minOccurs="0" name="TableName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RecordNotFoundFault" nillable="true" type="tns:RecordNotFoundFault" />
+  <xs:complexType name="FaultBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FaultBase" nillable="true" type="tns:FaultBase" />
+  <xs:complexType name="OptimisticConcurrencyFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:FaultBase">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Key" nillable="true" type="q2:ArrayOfanyType" />
+          <xs:element minOccurs="0" name="TableName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OptimisticConcurrencyFault" nillable="true" type="tns:OptimisticConcurrencyFault" />
+  <xs:complexType name="SecurityFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:FaultBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="FaultCode" type="tns:ErrorCode" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SecurityFault" nillable="true" type="tns:SecurityFault" />
+  <xs:simpleType name="TimeInForce">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Day" />
+      <xs:enumeration value="GoodTillCancel" />
+      <xs:enumeration value="AtTheOpening" />
+      <xs:enumeration value="ImmediateOrCancel" />
+      <xs:enumeration value="FillOrKill" />
+      <xs:enumeration value="GoodTillCrossing" />
+      <xs:enumeration value="GoodTillDate" />
+      <xs:enumeration value="AtTheClose" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TimeInForce" nillable="true" type="tns:TimeInForce" />
+  <xs:simpleType name="Side">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Buy" />
+      <xs:enumeration value="Sell" />
+      <xs:enumeration value="BuyMinus" />
+      <xs:enumeration value="BuyCover" />
+      <xs:enumeration value="SellPlus" />
+      <xs:enumeration value="SellShort" />
+      <xs:enumeration value="SellShortExempt" />
+      <xs:enumeration value="Undisclosed" />
+      <xs:enumeration value="Cross" />
+      <xs:enumeration value="CrossShort" />
+      <xs:enumeration value="CrossShortExempt" />
+      <xs:enumeration value="AsDefined" />
+      <xs:enumeration value="Opposite" />
+      <xs:enumeration value="Subscribe" />
+      <xs:enumeration value="Redeem" />
+      <xs:enumeration value="Lend" />
+      <xs:enumeration value="Borrow" />
+      <xs:enumeration value="Deposit" />
+      <xs:enumeration value="Withdraw" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Side" nillable="true" type="tns:Side" />
+  <xs:simpleType name="OrderType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Market" />
+      <xs:enumeration value="Limit" />
+      <xs:enumeration value="Stop" />
+      <xs:enumeration value="StopLimit" />
+      <xs:enumeration value="MarketOnClose" />
+      <xs:enumeration value="WithOrWithout" />
+      <xs:enumeration value="LimitOrBetter" />
+      <xs:enumeration value="LimitWithOrWithout" />
+      <xs:enumeration value="OnBasis" />
+      <xs:enumeration value="OnClose" />
+      <xs:enumeration value="LimitOnClose" />
+      <xs:enumeration value="PreviouslyQuoted" />
+      <xs:enumeration value="PreviouslyIndicated" />
+      <xs:enumeration value="ForexLimit" />
+      <xs:enumeration value="ForexSwap" />
+      <xs:enumeration value="ForexPreviouslyIndicated" />
+      <xs:enumeration value="Funarii" />
+      <xs:enumeration value="MarketIfTouched" />
+      <xs:enumeration value="MarketWithLeftoverAsLimit" />
+      <xs:enumeration value="PreviousFundValuationPoint" />
+      <xs:enumeration value="NextFundValuationPoint" />
+      <xs:enumeration value="Pegged" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OrderType" nillable="true" type="tns:OrderType" />
+  <xs:complexType name="ArgumentFault">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:FaultBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ArgumentFault" nillable="true" type="tns:ArgumentFault" />
+  <xs:complexType name="PaymentMethodFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaymentMethodFault" nillable="true" type="tns:PaymentMethodFault" />
+</xs:schema>

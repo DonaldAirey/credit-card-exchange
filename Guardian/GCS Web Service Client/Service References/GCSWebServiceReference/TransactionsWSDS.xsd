@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/TransactionsWSDS.xsd" xmlns="http://tempuri.org/TransactionsWSDS.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/TransactionsWSDS.xsd" id="TransactionsWSDS" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="TransactionsWSDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TRANSACTIONS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TRANSACTION_ID" type="xs:decimal" />
+              <xs:element minOccurs="0" name="ACCOUNT_ID" type="xs:string" />
+              <xs:element minOccurs="0" name="TRANSACTION_DATE" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="DEBIT_DATE" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="POST_DATE" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="DAY_OF_MONTH" type="xs:decimal" />
+              <xs:element minOccurs="0" name="TRANSACTION_CLASS" type="xs:string" />
+              <xs:element minOccurs="0" name="TRANSACTION_CLASS_DESCRIPTION" type="xs:string" />
+              <xs:element minOccurs="0" name="TRANSACTION_TYPE" type="xs:string" />
+              <xs:element minOccurs="0" name="TRANSACTION_TYPE_DESCRIPTION" type="xs:string" />
+              <xs:element minOccurs="0" name="TRANSACTION_STATUS" type="xs:string" />
+              <xs:element minOccurs="0" name="TRANSACTION_STATUS_DESCRIPTION" type="xs:string" />
+              <xs:element minOccurs="0" name="TRANSACTION_AMOUNT" type="xs:decimal" />
+              <xs:element minOccurs="0" name="EVALUCHECK_ID" type="xs:decimal" />
+              <xs:element minOccurs="0" name="REFERENCE_ID" type="xs:decimal" />
+              <xs:element minOccurs="0" name="FROM_ACCOUNT" type="xs:string" />
+              <xs:element minOccurs="0" name="TO_ACCOUNT" type="xs:string" />
+              <xs:element minOccurs="0" name="MEMO" type="xs:string" />
+              <xs:element minOccurs="0" name="CREATION_DATE" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="MODIFIED_DATE" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="MODIFIED_BY" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ERRORS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ERROR_ID" type="xs:decimal" />
+              <xs:element minOccurs="0" name="TABLE_NAME" type="xs:string" />
+              <xs:element minOccurs="0" name="TABLE_ID" type="xs:string" />
+              <xs:element minOccurs="0" name="ROW_ID" type="xs:decimal" />
+              <xs:element minOccurs="0" name="COLUMN_ID" type="xs:string" />
+              <xs:element minOccurs="0" name="ERROR_TYPE" type="xs:string" />
+              <xs:element minOccurs="0" name="ERROR_CODE" type="xs:string" />
+              <xs:element minOccurs="0" name="ERROR_TEXT" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="META_INFO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="INFO_CLASS" type="xs:string" />
+              <xs:element minOccurs="0" name="INFO_TYPE" type="xs:string" />
+              <xs:element minOccurs="0" name="INFO_CODE" type="xs:string" />
+              <xs:element minOccurs="0" name="VALUE" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique msdata:PrimaryKey="true" name="TransactionsDSKey1">
+      <xs:selector xpath=".//mstns:TRANSACTIONS" />
+      <xs:field xpath="mstns:TRANSACTION_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,39 @@
+﻿Main Street
+First Avenue
+Second Avenue
+Third Avenue
+Fourth Avenue
+Fifth Avenue
+Six Avenue
+Tenth Avenue
+Mechanics Street
+West Street
+East Street
+Grove Street
+Madison Avenue
+Broad Street
+Columbus Avenue
+Water Street
+Dock Street
+Beacon Street
+Darthmouth Street
+Copley Place
+Auburn Street
+St. James Place
+Bay Place
+Park Place
+Boardwalk
+States Avenue
+Virgina Avenue
+St. Charles Avenue
+Tennesee Avenue
+New York Avenue
+Kentucky Avenue
+Indiana Avenue
+West Fourth St.
+Atlantic Avenue
+Marvin Gardens
+Pacific Avenue
+North Carolina Avenue
+Vermont Avenue
+Connecticut Avenue

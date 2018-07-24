@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<License>
+  <Data>
+    <LicensedTo>Fluid Trade, Inc.</LicensedTo>
+    <LicenseType>Developer OEM Subscription</LicenseType>
+    <LicenseNote>Limited to 1 developer.</LicenseNote>
+    <OrderID>090706090931</OrderID>
+    <OEM>This is a redistributable license</OEM>
+    <Products>
+      <Product>Aspose.Words</Product>
+    </Products>
+    <EditionType>Enterprise</EditionType>
+    <SerialNumber>293086c7-47c4-4e36-a080-2e8c19aae32d</SerialNumber>
+    <SubscriptionExpiry>20100706</SubscriptionExpiry>
+    <LicenseVersion>2.2</LicenseVersion>
+  </Data>
+  <Signature>bsk3+50a1cx5BWRf6+mS2PTdUsD0maZUxQO8yKwXiECRctssqVKn1/92N/ur2xiPQ3CtsQJZtkTPvMUDofYJWoMDe3NA/2SMyqOtge8twxTbFI3DJjC5DNqZ9wPA9kvXUrz9lbT6eOopw7ORG1QX1ozXHh7iDH7JCCa4/jioh/0=</Signature>
+</License>

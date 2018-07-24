@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/Guardian/Trading Support?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfDestinationOrderInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DestinationOrderInfo" nillable="true" type="tns:DestinationOrderInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDestinationOrderInfo" nillable="true" type="tns:ArrayOfDestinationOrderInfo" />
+  <xs:complexType name="DestinationOrderInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BlotterId" type="ser:guid" />
+      <xs:element minOccurs="0" name="DestinationId" type="ser:guid" />
+      <xs:element minOccurs="0" name="OrderTypeId" type="ser:guid" />
+      <xs:element minOccurs="0" name="OrderedQuantity" type="xs:decimal" />
+      <xs:element minOccurs="0" name="SecurityId" type="ser:guid" />
+      <xs:element minOccurs="0" name="SettlementId" type="ser:guid" />
+      <xs:element minOccurs="0" name="SideCodeId" type="ser:guid" />
+      <xs:element minOccurs="0" name="TimeInForceCodeId" type="ser:guid" />
+      <xs:element minOccurs="0" name="WorkingOrderId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DestinationOrderInfo" nillable="true" type="tns:DestinationOrderInfo" />
+  <xs:complexType name="ArrayOfDestinationOrderReference">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DestinationOrderReference" nillable="true" type="tns:DestinationOrderReference" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDestinationOrderReference" nillable="true" type="tns:ArrayOfDestinationOrderReference" />
+  <xs:complexType name="DestinationOrderReference">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DestinationId" type="ser:guid" />
+      <xs:element minOccurs="0" name="RowVersion" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DestinationOrderReference" nillable="true" type="tns:DestinationOrderReference" />
+  <xs:complexType name="SimulationParameters">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Frequency" type="xs:double" />
+      <xs:element minOccurs="0" name="IsBrokerSimulationRunning" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsPriceSimulationRunning" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SimulationParameters" nillable="true" type="tns:SimulationParameters" />
+  <xs:simpleType name="Crossing">
+    <xs:list>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="None">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">0</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="AlwaysMatch">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="UsePreferences">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="NeverMatch">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="Away">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">8</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="RouteToDestination">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">16</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:list>
+  </xs:simpleType>
+  <xs:element name="Crossing" nillable="true" type="tns:Crossing" />
+</xs:schema>

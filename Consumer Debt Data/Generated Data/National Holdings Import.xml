@@ -1,0 +1,2618 @@
+<DebtHolder xmlns="http://debttrak.fluidtrade.com/DebtHolderImportSchema.xsd">
+  <DebtHolderRecord>
+    <AccountBalance>7884.10</AccountBalance>
+    <AccountCode>258212961</AccountCode>
+    <Address1>77 Park Place</Address1>
+    <City>Gilford</City>
+    <DateOfBirth>1985-09-15</DateOfBirth>
+    <DateOfDelinquency>2002-12-11</DateOfDelinquency>
+    <FirstName>Ping</FirstName>
+    <LastName>Alayon</LastName>
+    <MiddleName>M</MiddleName>
+    <OriginalAccountNumber>7687053789221209</OriginalAccountNumber>
+    <PostalCode>03249</PostalCode>
+    <ProvinceCode>NH</ProvinceCode>
+    <SocialSecurityNumber>142-89-1845</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5056.83</AccountBalance>
+    <AccountCode>215175522</AccountCode>
+    <Address1>130 Vermont Avenue</Address1>
+    <City>Abilene</City>
+    <DateOfDelinquency>2001-09-12</DateOfDelinquency>
+    <FirstName>Emely</FirstName>
+    <LastName>Dutoit</LastName>
+    <MiddleName>S</MiddleName>
+    <OriginalAccountNumber>4319035621599479</OriginalAccountNumber>
+    <PhoneNumber>(305) 452 5656</PhoneNumber>
+    <PostalCode>79605</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>340-64-7945</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>14933.44</AccountBalance>
+    <AccountCode>877849798</AccountCode>
+    <Address1>8 St. Charles Avenue</Address1>
+    <City>Altamonte Springs</City>
+    <DateOfDelinquency>2001-10-05</DateOfDelinquency>
+    <DebtHolder>First North American Bank</DebtHolder>
+    <FirstName>Marria</FirstName>
+    <LastName>Quattrocchi</LastName>
+    <MiddleName>V</MiddleName>
+    <OriginalAccountNumber>4613970514786989</OriginalAccountNumber>
+    <PhoneNumber>(850) 229 7213</PhoneNumber>
+    <PostalCode>327142087</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>696-96-1417</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>968.19</AccountBalance>
+    <AccountCode>171035601</AccountCode>
+    <Address1>148 Tenth Avenue</Address1>
+    <City>Santa Barbara</City>
+    <DebtHolder>GE Money</DebtHolder>
+    <FirstName>Angril</FirstName>
+    <LastName>Dowds</LastName>
+    <OriginalAccountNumber>5072748176873832</OriginalAccountNumber>
+    <PhoneNumber>(386) 377 5932</PhoneNumber>
+    <PostalCode>93107</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>670-07-9818</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8568.73</AccountBalance>
+    <AccountCode>945058124</AccountCode>
+    <Address1>119 States Avenue</Address1>
+    <Address2>6th Floor</Address2>
+    <City>Orlando</City>
+    <DateOfBirth>1956-05-20</DateOfBirth>
+    <DebtHolder>New Millennium Bank</DebtHolder>
+    <LastName>Durjan</LastName>
+    <OriginalAccountNumber>7307311248978856</OriginalAccountNumber>
+    <PostalCode>328110268</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>706-05-6279</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>4554.36</AccountBalance>
+    <AccountCode>148178954</AccountCode>
+    <Address1>4 Indiana Avenue</Address1>
+    <City>Odessa</City>
+    <DateOfDelinquency>2002-03-19</DateOfDelinquency>
+    <DebtHolder>Household Arbor</DebtHolder>
+    <FirstName>Obie</FirstName>
+    <LastName>Pagano</LastName>
+    <OriginalAccountNumber>7317114058533712</OriginalAccountNumber>
+    <PostalCode>14869</PostalCode>
+    <ProvinceCode>NY</ProvinceCode>
+    <SocialSecurityNumber>966-77-3614</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3635.99</AccountBalance>
+    <AccountCode>225650319</AccountCode>
+    <Address2>Apt. 7</Address2>
+    <City>Humacao</City>
+    <DateOfBirth>1980-06-09</DateOfBirth>
+    <DateOfDelinquency>2001-12-16</DateOfDelinquency>
+    <DebtHolder>General Motors</DebtHolder>
+    <FirstName>Launda</FirstName>
+    <LastName>Schlenoff</LastName>
+    <OriginalAccountNumber>5668806867523347</OriginalAccountNumber>
+    <PhoneNumber>(239) 731 2350</PhoneNumber>
+    <PostalCode>007919402</PostalCode>
+    <ProvinceCode>PR</ProvinceCode>
+    <SocialSecurityNumber>827-12-9457</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7759.07</AccountBalance>
+    <AccountCode>065336338</AccountCode>
+    <Address1>103 New York Avenue</Address1>
+    <City>Gonzales</City>
+    <DateOfBirth>1943-05-01</DateOfBirth>
+    <DateOfDelinquency>2002-12-11</DateOfDelinquency>
+    <FirstName>Melanye</FirstName>
+    <LastName>Loebig</LastName>
+    <MiddleName>I</MiddleName>
+    <OriginalAccountNumber>7144316983295526</OriginalAccountNumber>
+    <PhoneNumber>(850) 277 9970</PhoneNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>120-24-0779</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3963.66</AccountBalance>
+    <AccountCode>705736553</AccountCode>
+    <City>Washington</City>
+    <DateOfBirth>1941-11-14</DateOfBirth>
+    <FirstName>Hyland</FirstName>
+    <LastName>Mudd</LastName>
+    <MiddleName>Z</MiddleName>
+    <OriginalAccountNumber>7943067137978511</OriginalAccountNumber>
+    <PhoneNumber>(407) 342 2725</PhoneNumber>
+    <PostalCode>20011</PostalCode>
+    <ProvinceCode>DC</ProvinceCode>
+    <SocialSecurityNumber>603-27-1270</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3968.03</AccountBalance>
+    <AccountCode>020700286</AccountCode>
+    <Address2>Apt. 7</Address2>
+    <City>Hurst</City>
+    <FirstName>Peggy</FirstName>
+    <LastName>Mcabee</LastName>
+    <MiddleName>X</MiddleName>
+    <OriginalAccountNumber>5626015399661529</OriginalAccountNumber>
+    <PhoneNumber>(407) 345 3884</PhoneNumber>
+    <PostalCode>76053</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>135-24-7791</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9995.71</AccountBalance>
+    <AccountCode>154653835</AccountCode>
+    <Address1>93 West Street</Address1>
+    <City>Covina</City>
+    <DateOfDelinquency>2002-07-09</DateOfDelinquency>
+    <DebtHolder>Household DIRM</DebtHolder>
+    <FirstName>Huating</FirstName>
+    <LastName>Cedent</LastName>
+    <OriginalAccountNumber>5750556183022034</OriginalAccountNumber>
+    <PhoneNumber>(941) 516 1982</PhoneNumber>
+    <PostalCode>917233534</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>716-59-9392</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>2249.93</AccountBalance>
+    <AccountCode>691640224</AccountCode>
+    <Address1>104 Fifth Avenue</Address1>
+    <Address2>APT 3</Address2>
+    <City>El Paso</City>
+    <DateOfBirth>1956-12-08</DateOfBirth>
+    <DateOfDelinquency>2002-03-29</DateOfDelinquency>
+    <DebtHolder>Household Arbor</DebtHolder>
+    <FirstName>Judelais</FirstName>
+    <LastName>Fordyce</LastName>
+    <MiddleName>D</MiddleName>
+    <OriginalAccountNumber>5362992103272881</OriginalAccountNumber>
+    <PhoneNumber>(813) 512 7624</PhoneNumber>
+    <PostalCode>799251667</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>012-74-6044</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12927.57</AccountBalance>
+    <AccountCode>057447599</AccountCode>
+    <Address1>193 Boardwalk</Address1>
+    <Address2>3rd Floor</Address2>
+    <City>Charlotte</City>
+    <DateOfBirth>1979-10-03</DateOfBirth>
+    <DateOfDelinquency>2002-08-10</DateOfDelinquency>
+    <DebtHolder>Household General Motors</DebtHolder>
+    <LastName>Schell</LastName>
+    <OriginalAccountNumber>5900855057438686</OriginalAccountNumber>
+    <PhoneNumber>(850) 680 2195</PhoneNumber>
+    <PostalCode>28212</PostalCode>
+    <ProvinceCode>NC</ProvinceCode>
+    <SocialSecurityNumber>354-36-3916</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3141.63</AccountBalance>
+    <AccountCode>560218222</AccountCode>
+    <Address1>190 Third Avenue</Address1>
+    <City>Arlington</City>
+    <DateOfBirth>1946-10-16</DateOfBirth>
+    <DebtHolder>Metabank</DebtHolder>
+    <FirstName>Tana</FirstName>
+    <LastName>Cindy</LastName>
+    <MiddleName>F</MiddleName>
+    <OriginalAccountNumber>7867897333895918</OriginalAccountNumber>
+    <PostalCode>760151039</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>636-44-6096</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>11724.59</AccountBalance>
+    <AccountCode>391776441</AccountCode>
+    <City>Philadelphia</City>
+    <DateOfBirth>1982-11-11</DateOfBirth>
+    <DateOfDelinquency>2002-10-29</DateOfDelinquency>
+    <DebtHolder>Barclays</DebtHolder>
+    <FirstName>Reesa</FirstName>
+    <LastName>Daughterty</LastName>
+    <MiddleName>L</MiddleName>
+    <OriginalAccountNumber>4166675424736669</OriginalAccountNumber>
+    <PhoneNumber>(904) 865 7312</PhoneNumber>
+    <PostalCode>19132</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>690-82-5457</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>1920.90</AccountBalance>
+    <AccountCode>329185598</AccountCode>
+    <Address1>1 States Avenue</Address1>
+    <City>Philadelphia</City>
+    <DateOfDelinquency>2002-07-09</DateOfDelinquency>
+    <DebtHolder>FCNB Spiegel</DebtHolder>
+    <FirstName>Menee</FirstName>
+    <LastName>Nyland</LastName>
+    <MiddleName>B</MiddleName>
+    <OriginalAccountNumber>7520801856020319</OriginalAccountNumber>
+    <PhoneNumber>(850) 293 2637</PhoneNumber>
+    <PostalCode>191313107</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>471-90-3700</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7516.40</AccountBalance>
+    <AccountCode>851802512</AccountCode>
+    <Address1>172 Tennesee Avenue</Address1>
+    <City>Tulsa</City>
+    <DateOfDelinquency>2001-12-18</DateOfDelinquency>
+    <DebtHolder>Household Arbor</DebtHolder>
+    <FirstName>Lucina</FirstName>
+    <LastName>Jean-francois</LastName>
+    <MiddleName>E</MiddleName>
+    <OriginalAccountNumber>7959423445427114</OriginalAccountNumber>
+    <ProvinceCode>OK</ProvinceCode>
+    <SocialSecurityNumber>673-46-4197</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9633.99</AccountBalance>
+    <AccountCode>772185528</AccountCode>
+    <Address1>48 Tennesee Avenue</Address1>
+    <Address2>Unit 6</Address2>
+    <City>San Antonio</City>
+    <DebtHolder>Household Arbor</DebtHolder>
+    <FirstName>Zuleica</FirstName>
+    <LastName>Etters</LastName>
+    <MiddleName>K</MiddleName>
+    <OriginalAccountNumber>7169620424284800</OriginalAccountNumber>
+    <PostalCode>782042027</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>066-29-1463</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>13623.08</AccountBalance>
+    <AccountCode>063791159</AccountCode>
+    <Address1>164 Indiana Avenue</Address1>
+    <City>Dallas</City>
+    <DateOfBirth>1970-09-03</DateOfBirth>
+    <DateOfDelinquency>2002-06-13</DateOfDelinquency>
+    <FirstName>Taura</FirstName>
+    <LastName>Edwards-walker</LastName>
+    <MiddleName>Z</MiddleName>
+    <OriginalAccountNumber>4261221445450850</OriginalAccountNumber>
+    <PostalCode>752124460</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>338-78-0710</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8613.83</AccountBalance>
+    <AccountCode>443562842</AccountCode>
+    <Address1>57 Bay Place</Address1>
+    <City>Columbia</City>
+    <DateOfBirth>1989-07-07</DateOfBirth>
+    <DebtHolder>Fifth Third Bank</DebtHolder>
+    <FirstName>Arup</FirstName>
+    <LastName>Grygiel</LastName>
+    <MiddleName>S</MiddleName>
+    <OriginalAccountNumber>4933659865123519</OriginalAccountNumber>
+    <PhoneNumber>(954) 436 4062</PhoneNumber>
+    <PostalCode>292303956</PostalCode>
+    <SocialSecurityNumber>611-80-7887</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5262.05</AccountBalance>
+    <AccountCode>763994253</AccountCode>
+    <City>simms</City>
+    <DateOfBirth>1975-06-16</DateOfBirth>
+    <DebtHolder>First Tennessee Bank</DebtHolder>
+    <FirstName>Farrah</FirstName>
+    <LastName>Strawser</LastName>
+    <MiddleName>J</MiddleName>
+    <OriginalAccountNumber>5911382229503360</OriginalAccountNumber>
+    <PhoneNumber>(407) 226 3728</PhoneNumber>
+    <PostalCode>75574</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>835-97-5864</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>1995.90</AccountBalance>
+    <AccountCode>687054459</AccountCode>
+    <Address1>93 Boardwalk</Address1>
+    <City>Clairton</City>
+    <DebtHolder>Metabank</DebtHolder>
+    <FirstName>Leroyce</FirstName>
+    <LastName>Wojtowicz</LastName>
+    <OriginalAccountNumber>7185753906114523</OriginalAccountNumber>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>032-62-5198</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>4112.17</AccountBalance>
+    <AccountCode>888285865</AccountCode>
+    <Address1>78 Park Place</Address1>
+    <City>Tampa</City>
+    <DateOfDelinquency>2002-01-16</DateOfDelinquency>
+    <DebtHolder>General Motors</DebtHolder>
+    <FirstName>Willola</FirstName>
+    <LastName>Boggs</LastName>
+    <MiddleName>G</MiddleName>
+    <OriginalAccountNumber>7487034952496928</OriginalAccountNumber>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>088-78-7095</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9830.19</AccountBalance>
+    <AccountCode>652939338</AccountCode>
+    <Address1>86 St. James Place</Address1>
+    <City>Texas City</City>
+    <DateOfBirth>1947-06-24</DateOfBirth>
+    <DateOfDelinquency>2001-11-05</DateOfDelinquency>
+    <DebtHolder>First North American Bank</DebtHolder>
+    <FirstName>Carina</FirstName>
+    <MiddleName>X</MiddleName>
+    <OriginalAccountNumber>7412379273880762</OriginalAccountNumber>
+    <PhoneNumber>(407) 355 3261</PhoneNumber>
+    <PostalCode>77592</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>476-27-6782</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>13837.52</AccountBalance>
+    <AccountCode>085081196</AccountCode>
+    <Address1>26 Broad Street</Address1>
+    <City>Bridgeview</City>
+    <FirstName>Alexie</FirstName>
+    <LastName>Rosabal</LastName>
+    <MiddleName>Y</MiddleName>
+    <OriginalAccountNumber>7780229548289878</OriginalAccountNumber>
+    <PhoneNumber>(850) 293 1889</PhoneNumber>
+    <ProvinceCode>IL</ProvinceCode>
+    <SocialSecurityNumber>306-82-0806</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>4384.21</AccountBalance>
+    <AccountCode>659124779</AccountCode>
+    <Address1>180 Vermont Avenue</Address1>
+    <City>Clinton</City>
+    <DateOfDelinquency>2002-09-20</DateOfDelinquency>
+    <DebtHolder>Providian First Select</DebtHolder>
+    <LastName>Coyner</LastName>
+    <MiddleName>W</MiddleName>
+    <OriginalAccountNumber>4962873769822294</OriginalAccountNumber>
+    <PhoneNumber>(305) 439 5795</PhoneNumber>
+    <PostalCode>390562233</PostalCode>
+    <SocialSecurityNumber>965-81-9453</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8329.49</AccountBalance>
+    <AccountCode>838721560</AccountCode>
+    <Address1>65 Virgina Avenue</Address1>
+    <City>Port Charlotte</City>
+    <DateOfDelinquency>2002-01-09</DateOfDelinquency>
+    <DebtHolder>Discover</DebtHolder>
+    <FirstName>Angerline</FirstName>
+    <LastName>Casimir</LastName>
+    <MiddleName>X</MiddleName>
+    <OriginalAccountNumber>5835353020837005</OriginalAccountNumber>
+    <PhoneNumber>(850) 284 6765</PhoneNumber>
+    <PostalCode>33952</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>819-54-8660</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12681.15</AccountBalance>
+    <AccountCode>870046359</AccountCode>
+    <Address1>94 Fifth Avenue</Address1>
+    <DateOfDelinquency>2002-02-04</DateOfDelinquency>
+    <DebtHolder>Aspire</DebtHolder>
+    <FirstName>Piccola</FirstName>
+    <LastName>Upson</LastName>
+    <MiddleName>K</MiddleName>
+    <OriginalAccountNumber>5006230151590226</OriginalAccountNumber>
+    <PhoneNumber>(813) 543 7137</PhoneNumber>
+    <PostalCode>752482211</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>950-76-8071</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5734.07</AccountBalance>
+    <AccountCode>378472271</AccountCode>
+    <Address1>90 Water Street</Address1>
+    <Address2>Ste. 2</Address2>
+    <City>Waveland</City>
+    <DateOfBirth>1941-09-13</DateOfBirth>
+    <DateOfDelinquency>2001-11-04</DateOfDelinquency>
+    <FirstName>Eumelia</FirstName>
+    <LastName>Egusquiza</LastName>
+    <MiddleName>C</MiddleName>
+    <OriginalAccountNumber>5309878328058095</OriginalAccountNumber>
+    <PhoneNumber>(850) 290 7513</PhoneNumber>
+    <PostalCode>395763035</PostalCode>
+    <ProvinceCode>MS</ProvinceCode>
+    <SocialSecurityNumber>194-63-8008</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>1399.72</AccountBalance>
+    <AccountCode>211210605</AccountCode>
+    <Address1>104 Boardwalk</Address1>
+    <City>Columbia</City>
+    <DateOfBirth>1990-05-08</DateOfBirth>
+    <DebtHolder>Providian First Select</DebtHolder>
+    <FirstName>Cari</FirstName>
+    <LastName>Chalcraft</LastName>
+    <OriginalAccountNumber>5749734463720832</OriginalAccountNumber>
+    <PhoneNumber>(850) 292 4977</PhoneNumber>
+    <ProvinceCode>SC</ProvinceCode>
+    <SocialSecurityNumber>717-59-1015</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>2108.19</AccountBalance>
+    <AccountCode>062516670</AccountCode>
+    <Address1>29 First Avenue</Address1>
+    <Address2>7th Floor</Address2>
+    <City>Conway</City>
+    <DateOfDelinquency>2002-09-26</DateOfDelinquency>
+    <DebtHolder>Advanta</DebtHolder>
+    <FirstName>Griselda</FirstName>
+    <LastName>Bristol</LastName>
+    <MiddleName>C</MiddleName>
+    <OriginalAccountNumber>5211832086941513</OriginalAccountNumber>
+    <PhoneNumber>(904) 885 1515</PhoneNumber>
+    <PostalCode>29527</PostalCode>
+    <ProvinceCode>SC</ProvinceCode>
+    <SocialSecurityNumber>195-68-3543</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3166.76</AccountBalance>
+    <AccountCode>457277167</AccountCode>
+    <Address1>89 Fifth Avenue</Address1>
+    <City>Prairie View</City>
+    <DateOfBirth>1964-02-16</DateOfBirth>
+    <DebtHolder>Providian First Select</DebtHolder>
+    <FirstName>Ikema</FirstName>
+    <LastName>Lombard-villa</LastName>
+    <OriginalAccountNumber>7243087162904146</OriginalAccountNumber>
+    <PhoneNumber>(239) 731 7482</PhoneNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>104-71-0539</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>13930.94</AccountBalance>
+    <AccountCode>674422368</AccountCode>
+    <Address1>176 Broad Street</Address1>
+    <City>Wichita Falls</City>
+    <FirstName>Fresler</FirstName>
+    <MiddleName>V</MiddleName>
+    <OriginalAccountNumber>4472411756908497</OriginalAccountNumber>
+    <PhoneNumber>(305) 473 2479</PhoneNumber>
+    <PostalCode>763103950</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>868-09-0909</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>14609.89</AccountBalance>
+    <AccountCode>633551513</AccountCode>
+    <City>Yuma</City>
+    <DateOfBirth>1979-07-20</DateOfBirth>
+    <DateOfDelinquency>2002-01-27</DateOfDelinquency>
+    <DebtHolder>FCNB Crate &amp; Barrel</DebtHolder>
+    <FirstName>Birgitt</FirstName>
+    <LastName>Tax</LastName>
+    <OriginalAccountNumber>7778930041927914</OriginalAccountNumber>
+    <PhoneNumber>(813) 512 7701</PhoneNumber>
+    <PostalCode>85364</PostalCode>
+    <ProvinceCode>AZ</ProvinceCode>
+    <SocialSecurityNumber>873-70-4391</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6661.07</AccountBalance>
+    <AccountCode>838618128</AccountCode>
+    <Address1>103 Atlantic Avenue</Address1>
+    <City>Raleigh</City>
+    <DateOfDelinquency>2001-09-03</DateOfDelinquency>
+    <DebtHolder>Providian</DebtHolder>
+    <FirstName>Paolo</FirstName>
+    <LastName>Pietanza</LastName>
+    <OriginalAccountNumber>5386671461868354</OriginalAccountNumber>
+    <PhoneNumber>(352) 625 2585</PhoneNumber>
+    <ProvinceCode>NC</ProvinceCode>
+    <SocialSecurityNumber>294-45-9039</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>2701.15</AccountBalance>
+    <AccountCode>117921269</AccountCode>
+    <Address1>15 Boardwalk</Address1>
+    <City>Boca Raton</City>
+    <DateOfBirth>1968-11-02</DateOfBirth>
+    <DateOfDelinquency>2002-05-03</DateOfDelinquency>
+    <DebtHolder>Household AFCA</DebtHolder>
+    <FirstName>Marti</FirstName>
+    <LastName>Mijatovic</LastName>
+    <MiddleName>U</MiddleName>
+    <OriginalAccountNumber>5365409654815054</OriginalAccountNumber>
+    <PostalCode>33433</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>439-08-0923</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>14502.79</AccountBalance>
+    <AccountCode>742373033</AccountCode>
+    <Address1>81 Madison Avenue</Address1>
+    <City>Miami</City>
+    <DateOfBirth>1967-01-19</DateOfBirth>
+    <DateOfDelinquency>2002-09-12</DateOfDelinquency>
+    <DebtHolder>Etrade </DebtHolder>
+    <FirstName>Talisa</FirstName>
+    <LastName>Lincicome</LastName>
+    <MiddleName>Q</MiddleName>
+    <OriginalAccountNumber>5215545373388933</OriginalAccountNumber>
+    <PhoneNumber>(850) 292 3887</PhoneNumber>
+    <PostalCode>331336312</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>721-74-5802</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10767.55</AccountBalance>
+    <AccountCode>201608914</AccountCode>
+    <Address1>100 First Avenue</Address1>
+    <City>Philadelphia</City>
+    <DateOfBirth>1954-12-24</DateOfBirth>
+    <DebtHolder>Wells Fargo</DebtHolder>
+    <FirstName>Willin</FirstName>
+    <LastName>Schouest</LastName>
+    <MiddleName>Q</MiddleName>
+    <OriginalAccountNumber>4008671750467360</OriginalAccountNumber>
+    <PhoneNumber>(850) 293 1187</PhoneNumber>
+    <PostalCode>191606224</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>744-55-4257</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>14586.02</AccountBalance>
+    <AccountCode>031567297</AccountCode>
+    <Address1>188 Broad Street</Address1>
+    <City>Forest Hill</City>
+    <DateOfDelinquency>2002-08-19</DateOfDelinquency>
+    <DebtHolder>General Motors</DebtHolder>
+    <FirstName>Dominick</FirstName>
+    <LastName>Brabham</LastName>
+    <OriginalAccountNumber>7164098832995172</OriginalAccountNumber>
+    <PhoneNumber>(904) 835 1547</PhoneNumber>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>561-99-6837</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3884.28</AccountBalance>
+    <AccountCode>613699277</AccountCode>
+    <Address1>163 West Fourth St.</Address1>
+    <City>Newport</City>
+    <DebtHolder>Discover</DebtHolder>
+    <LastName>Farouk</LastName>
+    <MiddleName>E</MiddleName>
+    <OriginalAccountNumber>7757859342659305</OriginalAccountNumber>
+    <PhoneNumber>(813) 512 1862</PhoneNumber>
+    <PostalCode>99156</PostalCode>
+    <ProvinceCode>WA</ProvinceCode>
+    <SocialSecurityNumber>706-89-4805</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9948.88</AccountBalance>
+    <AccountCode>881378988</AccountCode>
+    <City>San Angelo</City>
+    <DateOfBirth>1975-06-12</DateOfBirth>
+    <DateOfDelinquency>2002-03-03</DateOfDelinquency>
+    <DebtHolder>M&amp;T Bank</DebtHolder>
+    <FirstName>Perless</FirstName>
+    <LastName>Rubi-arriola</LastName>
+    <OriginalAccountNumber>7862922449508682</OriginalAccountNumber>
+    <PhoneNumber>(305) 441 3672</PhoneNumber>
+    <PostalCode>769047320</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>697-85-6220</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3125.04</AccountBalance>
+    <AccountCode>908806502</AccountCode>
+    <Address1>149 West Fourth St.</Address1>
+    <City>San Antonio</City>
+    <DebtHolder>Fifth Third Bank</DebtHolder>
+    <FirstName>Kama</FirstName>
+    <LastName>Nobili</LastName>
+    <OriginalAccountNumber>7779590047429109</OriginalAccountNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>245-87-2242</SocialSecurityNumber>
+    <Suffix>III</Suffix>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12642.62</AccountBalance>
+    <AccountCode>674923814</AccountCode>
+    <Address1>96 Mechanics Street</Address1>
+    <City>College Station</City>
+    <DateOfDelinquency>2002-09-23</DateOfDelinquency>
+    <FirstName>Idalberto</FirstName>
+    <LastName>Caskey</LastName>
+    <OriginalAccountNumber>4953466897035963</OriginalAccountNumber>
+    <PostalCode>77477</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>179-95-0617</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6657.77</AccountBalance>
+    <AccountCode>219376566</AccountCode>
+    <Address1>171 Indiana Avenue</Address1>
+    <DateOfBirth>1988-10-02</DateOfBirth>
+    <DateOfDelinquency>2002-04-05</DateOfDelinquency>
+    <DebtHolder>General Motors</DebtHolder>
+    <FirstName>Merton</FirstName>
+    <LastName>Anrecio</LastName>
+    <MiddleName>F</MiddleName>
+    <OriginalAccountNumber>5704896309814529</OriginalAccountNumber>
+    <PhoneNumber>(850) 205 8833</PhoneNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>295-53-3933</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5788.89</AccountBalance>
+    <AccountCode>934387237</AccountCode>
+    <Address1>43 Pacific Avenue</Address1>
+    <City>Laredo</City>
+    <DateOfBirth>1944-07-25</DateOfBirth>
+    <DateOfDelinquency>2001-08-27</DateOfDelinquency>
+    <DebtHolder>HSBC</DebtHolder>
+    <FirstName>Charla</FirstName>
+    <LastName>Loredo</LastName>
+    <OriginalAccountNumber>5590605320352389</OriginalAccountNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>135-56-5812</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>11168.30</AccountBalance>
+    <AccountCode>688115414</AccountCode>
+    <Address1>38 Second Avenue</Address1>
+    <City>Big Spring</City>
+    <DateOfBirth>1989-07-19</DateOfBirth>
+    <DateOfDelinquency>2001-12-05</DateOfDelinquency>
+    <DebtHolder>Capital One</DebtHolder>
+    <FirstName>Lashona</FirstName>
+    <LastName>Allende</LastName>
+    <MiddleName>X</MiddleName>
+    <OriginalAccountNumber>4133677599759819</OriginalAccountNumber>
+    <PostalCode>79720</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>464-43-0380</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7590.05</AccountBalance>
+    <AccountCode>347610831</AccountCode>
+    <Address1>92 West Street</Address1>
+    <City>Enoch</City>
+    <DateOfDelinquency>2003-02-23</DateOfDelinquency>
+    <DebtHolder>State Farm Bank</DebtHolder>
+    <FirstName>Marleina</FirstName>
+    <LastName>Cordero-iglesias</LastName>
+    <OriginalAccountNumber>7726441369760386</OriginalAccountNumber>
+    <PhoneNumber>(386) 881 7853</PhoneNumber>
+    <ProvinceCode>UT</ProvinceCode>
+    <SocialSecurityNumber>143-69-4357</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>17.07</AccountBalance>
+    <AccountCode>075586600</AccountCode>
+    <Address1>149 Water Street</Address1>
+    <City>Mc Kees Rocks</City>
+    <DateOfDelinquency>2002-10-02</DateOfDelinquency>
+    <DebtHolder>First North American Bank</DebtHolder>
+    <FirstName>Tyesha</FirstName>
+    <LastName>Alvarez-garrandes</LastName>
+    <MiddleName>U</MiddleName>
+    <OriginalAccountNumber>5288646307113416</OriginalAccountNumber>
+    <PhoneNumber>(850) 994 6732</PhoneNumber>
+    <PostalCode>151363300</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>221-35-3084</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9162.98</AccountBalance>
+    <AccountCode>819043153</AccountCode>
+    <Address1>34 St. Charles Avenue</Address1>
+    <City>Ontario</City>
+    <DebtHolder>First North American Bank</DebtHolder>
+    <FirstName>Vera</FirstName>
+    <LastName>Laurente</LastName>
+    <OriginalAccountNumber>4765112201498196</OriginalAccountNumber>
+    <PostalCode>91762</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>330-38-2649</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6138.94</AccountBalance>
+    <AccountCode>275251120</AccountCode>
+    <Address1>171 Broad Street</Address1>
+    <City>Fort Worth</City>
+    <DateOfBirth>1943-11-12</DateOfBirth>
+    <DateOfDelinquency>2002-09-04</DateOfDelinquency>
+    <DebtHolder>Household HSBC</DebtHolder>
+    <FirstName>Wynna</FirstName>
+    <LastName>Walters-chapman</LastName>
+    <MiddleName>V</MiddleName>
+    <OriginalAccountNumber>4980173868758178</OriginalAccountNumber>
+    <PhoneNumber>(850) 210 1418</PhoneNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>565-39-2439</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>2876.57</AccountBalance>
+    <AccountCode>670313021</AccountCode>
+    <Address1>138 Indiana Avenue</Address1>
+    <City>Los Angeles</City>
+    <DateOfBirth>1991-09-27</DateOfBirth>
+    <DateOfDelinquency>2001-10-17</DateOfDelinquency>
+    <DebtHolder>M&amp;T Bank</DebtHolder>
+    <FirstName>Myshae</FirstName>
+    <LastName>Moucha</LastName>
+    <OriginalAccountNumber>4387144033030167</OriginalAccountNumber>
+    <PhoneNumber>(850) 210 6113</PhoneNumber>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>380-10-0045</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6987.28</AccountBalance>
+    <AccountCode>074731946</AccountCode>
+    <Address1>100 States Avenue</Address1>
+    <City>Rochester</City>
+    <DateOfBirth>1969-12-09</DateOfBirth>
+    <DateOfDelinquency>2002-09-13</DateOfDelinquency>
+    <DebtHolder>Bank Of America</DebtHolder>
+    <FirstName>Tinica</FirstName>
+    <LastName>Suleski</LastName>
+    <MiddleName>Q</MiddleName>
+    <OriginalAccountNumber>4733972652269946</OriginalAccountNumber>
+    <PhoneNumber>(407) 351 3890</PhoneNumber>
+    <PostalCode>146171714</PostalCode>
+    <ProvinceCode>NY</ProvinceCode>
+    <SocialSecurityNumber>663-61-5648</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>2378.58</AccountBalance>
+    <AccountCode>532242320</AccountCode>
+    <Address1>137 St. James Place</Address1>
+    <City>Las Vegas</City>
+    <DebtHolder>Direct Merchants Bank</DebtHolder>
+    <FirstName>Bj</FirstName>
+    <LastName>Ortiz</LastName>
+    <MiddleName>D</MiddleName>
+    <OriginalAccountNumber>4030326725926859</OriginalAccountNumber>
+    <PhoneNumber>(850) 205 9851</PhoneNumber>
+    <PostalCode>89123</PostalCode>
+    <ProvinceCode>NV</ProvinceCode>
+    <SocialSecurityNumber>127-81-1728</SocialSecurityNumber>
+    <Suffix>2nd</Suffix>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8059.09</AccountBalance>
+    <AccountCode>769928594</AccountCode>
+    <Address1>76 West Street</Address1>
+    <City>New Providence</City>
+    <DateOfDelinquency>2002-05-28</DateOfDelinquency>
+    <DebtHolder>Macys</DebtHolder>
+    <FirstName>Carmelle</FirstName>
+    <LastName>Korpi</LastName>
+    <OriginalAccountNumber>5231243698044412</OriginalAccountNumber>
+    <PostalCode>175600025</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>060-68-1087</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5580.71</AccountBalance>
+    <AccountCode>215187548</AccountCode>
+    <Address1>154 Mechanics Street</Address1>
+    <City>Saint Petersbur</City>
+    <DateOfBirth>1982-06-22</DateOfBirth>
+    <DateOfDelinquency>2002-09-24</DateOfDelinquency>
+    <DebtHolder>Providian First Select</DebtHolder>
+    <FirstName>Rozier</FirstName>
+    <LastName>Pruyn</LastName>
+    <MiddleName>T</MiddleName>
+    <OriginalAccountNumber>5923844331734396</OriginalAccountNumber>
+    <PostalCode>337094555</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>617-38-6577</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>11459.78</AccountBalance>
+    <AccountCode>227266670</AccountCode>
+    <Address1>190 Third Avenue</Address1>
+    <City>Arlington</City>
+    <DateOfBirth>1946-10-16</DateOfBirth>
+    <DateOfDelinquency>2002-02-13</DateOfDelinquency>
+    <DebtHolder>Direct Merchants Bank</DebtHolder>
+    <FirstName>Tana</FirstName>
+    <LastName>Cindy</LastName>
+    <MiddleName>F</MiddleName>
+    <OriginalAccountNumber>7952964799382493</OriginalAccountNumber>
+    <PostalCode>760151039</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>636-44-6096</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>13158.96</AccountBalance>
+    <AccountCode>047095211</AccountCode>
+    <Address1>77 Pacific Avenue</Address1>
+    <City>Homer City</City>
+    <DateOfDelinquency>2001-12-27</DateOfDelinquency>
+    <DebtHolder>Household</DebtHolder>
+    <LastName>Melfi</LastName>
+    <OriginalAccountNumber>5846921210346455</OriginalAccountNumber>
+    <PhoneNumber>(813) 574 4051</PhoneNumber>
+    <PostalCode>157481521</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>706-16-0958</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>2945.22</AccountBalance>
+    <AccountCode>562692152</AccountCode>
+    <Address1>141 Indiana Avenue</Address1>
+    <Address2>Suite 2</Address2>
+    <City>Brooklyn</City>
+    <DateOfBirth>1980-05-19</DateOfBirth>
+    <DateOfDelinquency>2002-07-09</DateOfDelinquency>
+    <DebtHolder>FCNB Crate &amp; Barrel</DebtHolder>
+    <FirstName>Meri</FirstName>
+    <LastName>Beckman</LastName>
+    <MiddleName>M</MiddleName>
+    <OriginalAccountNumber>5637128655487093</OriginalAccountNumber>
+    <PhoneNumber>(850) 291 5580</PhoneNumber>
+    <PostalCode>11236</PostalCode>
+    <ProvinceCode>NY</ProvinceCode>
+    <SocialSecurityNumber>548-16-0226</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10444.56</AccountBalance>
+    <AccountCode>042609885</AccountCode>
+    <City>Clermont</City>
+    <DateOfDelinquency>2001-06-24</DateOfDelinquency>
+    <DebtHolder>Metabank</DebtHolder>
+    <FirstName>Iranna</FirstName>
+    <LastName>Galvano</LastName>
+    <OriginalAccountNumber>5715799110745198</OriginalAccountNumber>
+    <PostalCode>347115136</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>363-93-9241</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>13202.56</AccountBalance>
+    <AccountCode>582815748</AccountCode>
+    <Address1>65 Broad Street</Address1>
+    <City>Garner</City>
+    <DateOfDelinquency>2002-09-24</DateOfDelinquency>
+    <DebtHolder>GE Money</DebtHolder>
+    <FirstName>Tejas</FirstName>
+    <LastName>Barrett</LastName>
+    <OriginalAccountNumber>5395648949100020</OriginalAccountNumber>
+    <PostalCode>275299707</PostalCode>
+    <ProvinceCode>NC</ProvinceCode>
+    <SocialSecurityNumber>518-32-5464</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12676.69</AccountBalance>
+    <AccountCode>077768951</AccountCode>
+    <Address1>180 St. James Place</Address1>
+    <City>Brooklyn</City>
+    <DateOfDelinquency>2002-05-12</DateOfDelinquency>
+    <DebtHolder>Chase Manhattan Bank</DebtHolder>
+    <FirstName>Dewana</FirstName>
+    <LastName>Semeniuk</LastName>
+    <MiddleName>Y</MiddleName>
+    <OriginalAccountNumber>7601206040831105</OriginalAccountNumber>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>045-63-4028</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>14689.86</AccountBalance>
+    <AccountCode>882650578</AccountCode>
+    <Address1>74 West Street</Address1>
+    <City>Raleigh</City>
+    <DebtHolder>Household Union Privilage</DebtHolder>
+    <FirstName>Dominga</FirstName>
+    <OriginalAccountNumber>7404555819973939</OriginalAccountNumber>
+    <PostalCode>276101726</PostalCode>
+    <SocialSecurityNumber>114-22-0106</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>11094.11</AccountBalance>
+    <AccountCode>364436883</AccountCode>
+    <Address1>96 Virgina Avenue</Address1>
+    <City>Travelers Rst</City>
+    <DateOfBirth>1957-06-18</DateOfBirth>
+    <DateOfDelinquency>2002-05-11</DateOfDelinquency>
+    <FirstName>Terrial</FirstName>
+    <LastName>Lynd</LastName>
+    <MiddleName>L</MiddleName>
+    <OriginalAccountNumber>7157847347106280</OriginalAccountNumber>
+    <PostalCode>296908693</PostalCode>
+    <ProvinceCode>SC</ProvinceCode>
+    <SocialSecurityNumber>787-34-5102</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12122.73</AccountBalance>
+    <AccountCode>906275877</AccountCode>
+    <Address1>88 Darthmouth Street</Address1>
+    <City>Dundalk</City>
+    <DateOfBirth>1958-11-24</DateOfBirth>
+    <FirstName>Nikea</FirstName>
+    <LastName>Tercier</LastName>
+    <MiddleName>W</MiddleName>
+    <OriginalAccountNumber>4963099071451175</OriginalAccountNumber>
+    <PostalCode>21222</PostalCode>
+    <ProvinceCode>MD</ProvinceCode>
+    <SocialSecurityNumber>332-29-8505</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9049.17</AccountBalance>
+    <AccountCode>424091136</AccountCode>
+    <Address1>90 St. James Place</Address1>
+    <City>Houston</City>
+    <DebtHolder>Orchard Bank</DebtHolder>
+    <FirstName>Charlyne</FirstName>
+    <LastName>Little</LastName>
+    <MiddleName>Q</MiddleName>
+    <OriginalAccountNumber>5103432589893736</OriginalAccountNumber>
+    <PostalCode>770444924</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>835-50-2121</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7206.91</AccountBalance>
+    <AccountCode>498714690</AccountCode>
+    <Address1>89 Vermont Avenue</Address1>
+    <City>Brooklyn</City>
+    <FirstName>Lucittia</FirstName>
+    <LastName>Curth</LastName>
+    <MiddleName>D</MiddleName>
+    <OriginalAccountNumber>7209262114035918</OriginalAccountNumber>
+    <PhoneNumber>(321) 360 5210</PhoneNumber>
+    <PostalCode>112242259</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>900-43-9417</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8759.49</AccountBalance>
+    <AccountCode>346978027</AccountCode>
+    <Address1>93 West Street</Address1>
+    <City>Covina</City>
+    <FirstName>Huating</FirstName>
+    <LastName>Cedent</LastName>
+    <OriginalAccountNumber>7862117585120339</OriginalAccountNumber>
+    <PhoneNumber>(941) 516 1982</PhoneNumber>
+    <PostalCode>917233534</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>716-59-9392</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>602.84</AccountBalance>
+    <AccountCode>193502619</AccountCode>
+    <Address1>96 Third Avenue</Address1>
+    <DateOfBirth>1976-11-16</DateOfBirth>
+    <DebtHolder>Household Arbor</DebtHolder>
+    <FirstName>Cragin</FirstName>
+    <LastName>Lingis</LastName>
+    <OriginalAccountNumber>5024364711157374</OriginalAccountNumber>
+    <PhoneNumber>(850) 278 2270</PhoneNumber>
+    <PostalCode>33055</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>294-32-2178</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12564.78</AccountBalance>
+    <AccountCode>807648809</AccountCode>
+    <Address1>178 Park Place</Address1>
+    <City>San Antonio</City>
+    <DateOfBirth>1971-10-10</DateOfBirth>
+    <DebtHolder>Bank Of America</DebtHolder>
+    <FirstName>Patsie</FirstName>
+    <LastName>Vespie</LastName>
+    <OriginalAccountNumber>7490186122012078</OriginalAccountNumber>
+    <PhoneNumber>(850) 680 2904</PhoneNumber>
+    <PostalCode>782391942</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>070-24-4946</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5927.84</AccountBalance>
+    <AccountCode>317607486</AccountCode>
+    <Address1>154 Mechanics Street</Address1>
+    <City>Saint Petersbur</City>
+    <DateOfBirth>1982-06-22</DateOfBirth>
+    <DateOfDelinquency>2002-05-23</DateOfDelinquency>
+    <DebtHolder>Direct Merchants Bank</DebtHolder>
+    <FirstName>Rozier</FirstName>
+    <LastName>Pruyn</LastName>
+    <MiddleName>T</MiddleName>
+    <OriginalAccountNumber>5174418719676503</OriginalAccountNumber>
+    <PostalCode>337094555</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>617-38-6577</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>11363.40</AccountBalance>
+    <AccountCode>681997920</AccountCode>
+    <Address1>9 Water Street</Address1>
+    <City>Hermosa Beach</City>
+    <DateOfBirth>1985-06-24</DateOfBirth>
+    <DebtHolder>GE Money</DebtHolder>
+    <LastName>Ballgae</LastName>
+    <MiddleName>S</MiddleName>
+    <OriginalAccountNumber>5431111938514395</OriginalAccountNumber>
+    <PhoneNumber>(904) 864 3263</PhoneNumber>
+    <PostalCode>90254</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>279-45-3063</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>13556.88</AccountBalance>
+    <AccountCode>388155437</AccountCode>
+    <Address1>152 Darthmouth Street</Address1>
+    <City>Austin</City>
+    <DateOfDelinquency>2001-09-05</DateOfDelinquency>
+    <DebtHolder>Providian First Select</DebtHolder>
+    <FirstName>Rex</FirstName>
+    <LastName>Sereno</LastName>
+    <MiddleName>X</MiddleName>
+    <OriginalAccountNumber>4355317635363489</OriginalAccountNumber>
+    <PhoneNumber>(850) 219 8144</PhoneNumber>
+    <PostalCode>78753</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>898-81-3699</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>1914.48</AccountBalance>
+    <AccountCode>874964382</AccountCode>
+    <Address1>104 First Avenue</Address1>
+    <City>Odessa</City>
+    <DateOfBirth>1990-02-03</DateOfBirth>
+    <DateOfDelinquency>2002-11-25</DateOfDelinquency>
+    <DebtHolder>Household Orchard Bank</DebtHolder>
+    <FirstName>Theona</FirstName>
+    <LastName>Mathewson</LastName>
+    <OriginalAccountNumber>7191028222924784</OriginalAccountNumber>
+    <PhoneNumber>(941) 560 4234</PhoneNumber>
+    <SocialSecurityNumber>947-61-6339</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>1553.76</AccountBalance>
+    <AccountCode>623762642</AccountCode>
+    <Address1>65 Broad Street</Address1>
+    <City>Garner</City>
+    <DateOfDelinquency>2002-08-19</DateOfDelinquency>
+    <DebtHolder>Wells Fargo</DebtHolder>
+    <FirstName>Tejas</FirstName>
+    <LastName>Barrett</LastName>
+    <OriginalAccountNumber>5627760344938347</OriginalAccountNumber>
+    <PostalCode>275299707</PostalCode>
+    <ProvinceCode>NC</ProvinceCode>
+    <SocialSecurityNumber>518-32-5464</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>13349.07</AccountBalance>
+    <AccountCode>350105269</AccountCode>
+    <Address1>193 Boardwalk</Address1>
+    <Address2>Apartment 3</Address2>
+    <City>Vidor</City>
+    <DateOfBirth>1966-11-01</DateOfBirth>
+    <DebtHolder>Household GE Lechmere</DebtHolder>
+    <FirstName>Darrold</FirstName>
+    <LastName>Bob-manuel</LastName>
+    <OriginalAccountNumber>4030713438726934</OriginalAccountNumber>
+    <PhoneNumber>(561) 232 3044</PhoneNumber>
+    <PostalCode>776623744</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>993-55-7655</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8192.37</AccountBalance>
+    <AccountCode>998179319</AccountCode>
+    <Address1>88 Darthmouth Street</Address1>
+    <City>Dundalk</City>
+    <DateOfBirth>1958-11-24</DateOfBirth>
+    <DateOfDelinquency>2002-02-22</DateOfDelinquency>
+    <DebtHolder>Fifth Third Bank</DebtHolder>
+    <FirstName>Nikea</FirstName>
+    <LastName>Tercier</LastName>
+    <MiddleName>W</MiddleName>
+    <OriginalAccountNumber>7404357902707008</OriginalAccountNumber>
+    <PostalCode>21222</PostalCode>
+    <ProvinceCode>MD</ProvinceCode>
+    <SocialSecurityNumber>332-29-8505</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7407.58</AccountBalance>
+    <AccountCode>342051058</AccountCode>
+    <City>San Jose</City>
+    <DateOfBirth>1965-10-09</DateOfBirth>
+    <DateOfDelinquency>2002-06-09</DateOfDelinquency>
+    <DebtHolder>Etrade </DebtHolder>
+    <FirstName>Shebella</FirstName>
+    <LastName>Zinge</LastName>
+    <MiddleName>C</MiddleName>
+    <OriginalAccountNumber>7782741425380497</OriginalAccountNumber>
+    <PhoneNumber>(850) 286 3379</PhoneNumber>
+    <PostalCode>951264417</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>647-08-3767</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9728.82</AccountBalance>
+    <AccountCode>607140513</AccountCode>
+    <Address1>37 Fourth Avenue</Address1>
+    <City>Ephrata</City>
+    <DateOfDelinquency>2002-01-11</DateOfDelinquency>
+    <FirstName>Jeannie</FirstName>
+    <LastName>Abler</LastName>
+    <OriginalAccountNumber>7248737253971315</OriginalAccountNumber>
+    <PhoneNumber>(727) 513 3149</PhoneNumber>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>049-99-6774</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5441.26</AccountBalance>
+    <AccountCode>936922412</AccountCode>
+    <Address1>62 New York Avenue</Address1>
+    <City>Cary</City>
+    <DateOfBirth>1990-01-17</DateOfBirth>
+    <DateOfDelinquency>2001-10-16</DateOfDelinquency>
+    <DebtHolder>General Motors</DebtHolder>
+    <FirstName>Sabra</FirstName>
+    <LastName>Gasse</LastName>
+    <MiddleName>T</MiddleName>
+    <OriginalAccountNumber>4636565283471950</OriginalAccountNumber>
+    <PhoneNumber>(352) 625 5598</PhoneNumber>
+    <PostalCode>27511</PostalCode>
+    <ProvinceCode>NC</ProvinceCode>
+    <SocialSecurityNumber>657-90-8519</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10568.14</AccountBalance>
+    <AccountCode>026035424</AccountCode>
+    <Address1>138 North Carolina Avenue</Address1>
+    <City>Round Rock</City>
+    <DateOfBirth>1945-12-22</DateOfBirth>
+    <DebtHolder>Discover</DebtHolder>
+    <FirstName>Hugh</FirstName>
+    <LastName>Kinneer</LastName>
+    <MiddleName>N</MiddleName>
+    <OriginalAccountNumber>4851801210458055</OriginalAccountNumber>
+    <PhoneNumber>(850) 278 6159</PhoneNumber>
+    <PostalCode>786816926</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>685-73-9102</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5700.07</AccountBalance>
+    <AccountCode>640307375</AccountCode>
+    <Address1>154 Connecticut Avenue</Address1>
+    <City>Lancaster</City>
+    <DateOfDelinquency>2002-06-25</DateOfDelinquency>
+    <DebtHolder>National City</DebtHolder>
+    <FirstName>Ranita</FirstName>
+    <LastName>Dolloff</LastName>
+    <MiddleName>U</MiddleName>
+    <OriginalAccountNumber>5224833896460113</OriginalAccountNumber>
+    <PhoneNumber>(850) 277 2784</PhoneNumber>
+    <PostalCode>176024948</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>251-91-4944</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8936.82</AccountBalance>
+    <AccountCode>049053650</AccountCode>
+    <Address1>62 Boardwalk</Address1>
+    <City>Houston</City>
+    <DateOfBirth>1961-02-05</DateOfBirth>
+    <DebtHolder>FCNB Newport News</DebtHolder>
+    <FirstName>Francheska</FirstName>
+    <LastName>Scurlock</LastName>
+    <OriginalAccountNumber>5913614204044436</OriginalAccountNumber>
+    <PhoneNumber>(850) 205 8751</PhoneNumber>
+    <PostalCode>770531103</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>646-25-7283</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10020.77</AccountBalance>
+    <AccountCode>905800610</AccountCode>
+    <Address1>195 West Street</Address1>
+    <City>Hope Mills</City>
+    <DateOfBirth>1987-12-26</DateOfBirth>
+    <FirstName>Ileene</FirstName>
+    <LastName>Dickens</LastName>
+    <MiddleName>O</MiddleName>
+    <OriginalAccountNumber>7985643628455857</OriginalAccountNumber>
+    <PostalCode>28348</PostalCode>
+    <ProvinceCode>NC</ProvinceCode>
+    <SocialSecurityNumber>555-29-5755</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>2898.66</AccountBalance>
+    <AccountCode>390888609</AccountCode>
+    <Address1>53 Mechanics Street</Address1>
+    <City>Starkville</City>
+    <DateOfDelinquency>2001-11-09</DateOfDelinquency>
+    <DebtHolder>Household AFCA</DebtHolder>
+    <FirstName>Toccara</FirstName>
+    <LastName>Berenguer</LastName>
+    <MiddleName>Q</MiddleName>
+    <OriginalAccountNumber>5595781620964220</OriginalAccountNumber>
+    <PhoneNumber>(850) 293 8525</PhoneNumber>
+    <PostalCode>39759</PostalCode>
+    <ProvinceCode>MS</ProvinceCode>
+    <SocialSecurityNumber>486-44-5558</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>1573.09</AccountBalance>
+    <AccountCode>920861215</AccountCode>
+    <Address1>14 Indiana Avenue</Address1>
+    <City>Philadelphia</City>
+    <DateOfBirth>1973-03-22</DateOfBirth>
+    <FirstName>Keishia</FirstName>
+    <LastName>Sonoda</LastName>
+    <OriginalAccountNumber>7902907311092458</OriginalAccountNumber>
+    <PhoneNumber>(850) 291 8168</PhoneNumber>
+    <PostalCode>191502006</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>498-37-1548</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>1865.34</AccountBalance>
+    <AccountCode>926919168</AccountCode>
+    <Address1>163 Fourth Avenue</Address1>
+    <City>Wilkes Barre</City>
+    <DateOfBirth>1968-12-02</DateOfBirth>
+    <DebtHolder>Sears</DebtHolder>
+    <FirstName>Young</FirstName>
+    <LastName>Tanzosch</LastName>
+    <OriginalAccountNumber>4196110072697549</OriginalAccountNumber>
+    <PostalCode>187025020</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>038-30-0184</SocialSecurityNumber>
+    <Suffix>II</Suffix>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10413.94</AccountBalance>
+    <AccountCode>599823489</AccountCode>
+    <Address1>153 Mechanics Street</Address1>
+    <City>Hercules</City>
+    <DateOfBirth>1952-05-17</DateOfBirth>
+    <DebtHolder>American Express</DebtHolder>
+    <FirstName>Lutricia</FirstName>
+    <LastName>Raid</LastName>
+    <MiddleName>C</MiddleName>
+    <OriginalAccountNumber>5574899019582724</OriginalAccountNumber>
+    <PhoneNumber>(386) 372 3212</PhoneNumber>
+    <PostalCode>945473592</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>163-20-9302</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>14798.79</AccountBalance>
+    <AccountCode>236488974</AccountCode>
+    <Address1>118 West Street</Address1>
+    <City>Harrisburg</City>
+    <DebtHolder>State Farm Bank</DebtHolder>
+    <LastName>Avedisian-miller</LastName>
+    <MiddleName>O</MiddleName>
+    <OriginalAccountNumber>4324397146026091</OriginalAccountNumber>
+    <PostalCode>171113312</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>304-55-5577</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>11497.75</AccountBalance>
+    <AccountCode>846407791</AccountCode>
+    <Address1>103 New York Avenue</Address1>
+    <City>Gonzales</City>
+    <DateOfBirth>1943-05-01</DateOfBirth>
+    <DateOfDelinquency>2002-06-20</DateOfDelinquency>
+    <DebtHolder>Advanta</DebtHolder>
+    <FirstName>Melanye</FirstName>
+    <LastName>Loebig</LastName>
+    <MiddleName>I</MiddleName>
+    <OriginalAccountNumber>4209447536857694</OriginalAccountNumber>
+    <PhoneNumber>(850) 277 9970</PhoneNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>120-24-0779</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10288.78</AccountBalance>
+    <AccountCode>300996620</AccountCode>
+    <Address1>10 Indiana Avenue</Address1>
+    <City>Hermosa Beach</City>
+    <DateOfDelinquency>2002-09-23</DateOfDelinquency>
+    <FirstName>Haylan</FirstName>
+    <LastName>Vacchio</LastName>
+    <MiddleName>D</MiddleName>
+    <OriginalAccountNumber>5973771619245907</OriginalAccountNumber>
+    <PostalCode>90254</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>999-95-8314</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12813.18</AccountBalance>
+    <AccountCode>591749945</AccountCode>
+    <Address1>142 Beacon Street</Address1>
+    <City>Portland</City>
+    <DateOfBirth>1968-10-06</DateOfBirth>
+    <DebtHolder>MBNA</DebtHolder>
+    <FirstName>Neel</FirstName>
+    <LastName>Northorp</LastName>
+    <MiddleName>C</MiddleName>
+    <OriginalAccountNumber>7125161017353048</OriginalAccountNumber>
+    <ProvinceCode>OR</ProvinceCode>
+    <SocialSecurityNumber>084-39-3243</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12562.16</AccountBalance>
+    <AccountCode>877488622</AccountCode>
+    <Address1>148 Virgina Avenue</Address1>
+    <Address2>Suite 2</Address2>
+    <City>Jersey Shore</City>
+    <DateOfBirth>1952-09-20</DateOfBirth>
+    <DateOfDelinquency>2002-10-06</DateOfDelinquency>
+    <FirstName>Forn</FirstName>
+    <LastName>Ziobert</LastName>
+    <MiddleName>A</MiddleName>
+    <OriginalAccountNumber>4727750711566390</OriginalAccountNumber>
+    <PhoneNumber>(850) 205 8974</PhoneNumber>
+    <PostalCode>177407246</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>676-65-2925</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5026.77</AccountBalance>
+    <AccountCode>060310694</AccountCode>
+    <Address1>7 Madison Avenue</Address1>
+    <City>Houston</City>
+    <DateOfBirth>1980-03-23</DateOfBirth>
+    <DateOfDelinquency>2002-05-13</DateOfDelinquency>
+    <DebtHolder>Columbus Bank and Trust</DebtHolder>
+    <FirstName>Sanita</FirstName>
+    <LastName>Handrahan</LastName>
+    <MiddleName>X</MiddleName>
+    <OriginalAccountNumber>5872258894143084</OriginalAccountNumber>
+    <PhoneNumber>(850) 284 8460</PhoneNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>287-32-0539</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12324.61</AccountBalance>
+    <AccountCode>061737371</AccountCode>
+    <Address1>29 Dock Street</Address1>
+    <City>Meridian</City>
+    <DebtHolder>Household</DebtHolder>
+    <FirstName>Genodria</FirstName>
+    <LastName>Wolfe-nobles</LastName>
+    <OriginalAccountNumber>5105757343660613</OriginalAccountNumber>
+    <PostalCode>39307</PostalCode>
+    <ProvinceCode>MS</ProvinceCode>
+    <SocialSecurityNumber>415-36-1387</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5220.82</AccountBalance>
+    <AccountCode>701876535</AccountCode>
+    <Address1>119 Beacon Street</Address1>
+    <City>Houston</City>
+    <DateOfBirth>1968-02-11</DateOfBirth>
+    <DateOfDelinquency>2002-11-05</DateOfDelinquency>
+    <DebtHolder>US Bank</DebtHolder>
+    <FirstName>Gerard</FirstName>
+    <LastName>Bavier</LastName>
+    <MiddleName>R</MiddleName>
+    <OriginalAccountNumber>7690747264648862</OriginalAccountNumber>
+    <PhoneNumber>(850) 219 7003</PhoneNumber>
+    <PostalCode>770174738</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>653-11-1194</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9061.57</AccountBalance>
+    <AccountCode>752736278</AccountCode>
+    <Address1>59 Broad Street</Address1>
+    <City>Philadelphia</City>
+    <DateOfBirth>1973-06-26</DateOfBirth>
+    <DateOfDelinquency>2002-09-06</DateOfDelinquency>
+    <DebtHolder>USAA</DebtHolder>
+    <FirstName>Raisa</FirstName>
+    <LastName>Wakefield</LastName>
+    <OriginalAccountNumber>5191790585787518</OriginalAccountNumber>
+    <PhoneNumber>(850) 696 2705</PhoneNumber>
+    <PostalCode>19124</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>082-55-4257</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>4790.25</AccountBalance>
+    <AccountCode>691940782</AccountCode>
+    <Address1>163 Bay Place</Address1>
+    <City>San Antonio</City>
+    <DateOfBirth>1977-09-26</DateOfBirth>
+    <DebtHolder>National City</DebtHolder>
+    <FirstName>Boubker</FirstName>
+    <LastName>Enger</LastName>
+    <OriginalAccountNumber>5450852213991519</OriginalAccountNumber>
+    <PhoneNumber>(850) 205 6445</PhoneNumber>
+    <PostalCode>782121508</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>018-66-3251</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>11870.25</AccountBalance>
+    <AccountCode>590624578</AccountCode>
+    <City>Seattle</City>
+    <DateOfBirth>1954-01-11</DateOfBirth>
+    <DateOfDelinquency>2001-12-26</DateOfDelinquency>
+    <DebtHolder>Bank Of America</DebtHolder>
+    <FirstName>Scheila</FirstName>
+    <LastName>Essex</LastName>
+    <MiddleName>G</MiddleName>
+    <OriginalAccountNumber>7693958587058847</OriginalAccountNumber>
+    <PhoneNumber>(904) 986 2564</PhoneNumber>
+    <PostalCode>981220224</PostalCode>
+    <ProvinceCode>WA</ProvinceCode>
+    <SocialSecurityNumber>004-35-6954</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8763.73</AccountBalance>
+    <AccountCode>733091125</AccountCode>
+    <Address1>29 Dock Street</Address1>
+    <City>Marshall</City>
+    <DebtHolder>Columbus Bank and Trust</DebtHolder>
+    <FirstName>Nicolae</FirstName>
+    <LastName>Kolentus</LastName>
+    <OriginalAccountNumber>7346768267876709</OriginalAccountNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>183-98-6382</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>14962.78</AccountBalance>
+    <AccountCode>096038978</AccountCode>
+    <Address1>166 Copley Place</Address1>
+    <Address2>7th Floor</Address2>
+    <City>Harlingen</City>
+    <DateOfDelinquency>2002-09-13</DateOfDelinquency>
+    <DebtHolder>Capital One</DebtHolder>
+    <FirstName>Gay</FirstName>
+    <LastName>Challoner</LastName>
+    <MiddleName>A</MiddleName>
+    <OriginalAccountNumber>4852638591411288</OriginalAccountNumber>
+    <PhoneNumber>(352) 652 7178</PhoneNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>087-58-1340</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>4055.82</AccountBalance>
+    <AccountCode>325645243</AccountCode>
+    <Address1>98 Tennesee Avenue</Address1>
+    <City>Murrieta</City>
+    <DebtHolder>USAA</DebtHolder>
+    <FirstName>Dilaila</FirstName>
+    <LastName>Alessandri</LastName>
+    <MiddleName>U</MiddleName>
+    <OriginalAccountNumber>4499783374322374</OriginalAccountNumber>
+    <PhoneNumber>(850) 783 1138</PhoneNumber>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>043-05-9736</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8932.35</AccountBalance>
+    <AccountCode>228149339</AccountCode>
+    <Address1>84 St. Charles Avenue</Address1>
+    <City>Monterey</City>
+    <DebtHolder>Household Orchard Bank</DebtHolder>
+    <FirstName>Zaundra</FirstName>
+    <LastName>Sondrini</LastName>
+    <OriginalAccountNumber>4044413462264028</OriginalAccountNumber>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>886-56-0010</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6350.76</AccountBalance>
+    <AccountCode>216140207</AccountCode>
+    <Address1>97 Copley Place</Address1>
+    <City>Los Angeles</City>
+    <DateOfBirth>1968-02-07</DateOfBirth>
+    <DebtHolder>First Premier Bank</DebtHolder>
+    <FirstName>Giovanna</FirstName>
+    <LastName>Rabone</LastName>
+    <MiddleName>F</MiddleName>
+    <OriginalAccountNumber>7981889792446699</OriginalAccountNumber>
+    <PhoneNumber>(352) 624 1483</PhoneNumber>
+    <PostalCode>900663657</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>880-97-3614</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9225.45</AccountBalance>
+    <AccountCode>959371186</AccountCode>
+    <Address1>2 Park Place</Address1>
+    <City>Houston</City>
+    <DebtHolder>HSBC</DebtHolder>
+    <LastName>Mcloughlin</LastName>
+    <OriginalAccountNumber>7037026070539594</OriginalAccountNumber>
+    <PhoneNumber>(850) 293 7087</PhoneNumber>
+    <PostalCode>770531103</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>198-38-6817</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9402.94</AccountBalance>
+    <AccountCode>867562348</AccountCode>
+    <Address2>Ste. 3</Address2>
+    <City>Fontana</City>
+    <DateOfBirth>1980-04-21</DateOfBirth>
+    <DateOfDelinquency>2001-12-07</DateOfDelinquency>
+    <DebtHolder>Bank First</DebtHolder>
+    <FirstName>Jakki</FirstName>
+    <LastName>Tart</LastName>
+    <MiddleName>H</MiddleName>
+    <OriginalAccountNumber>7471778561968375</OriginalAccountNumber>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>920-44-6305</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3575.98</AccountBalance>
+    <AccountCode>381519499</AccountCode>
+    <Address1>191 Pacific Avenue</Address1>
+    <Address2>4th Floor</Address2>
+    <City>Sylva</City>
+    <DateOfBirth>1979-01-09</DateOfBirth>
+    <DebtHolder>MBNA</DebtHolder>
+    <LastName>Umholtz</LastName>
+    <MiddleName>W</MiddleName>
+    <OriginalAccountNumber>5519169564659809</OriginalAccountNumber>
+    <PhoneNumber>(352) 667 3092</PhoneNumber>
+    <PostalCode>287797136</PostalCode>
+    <ProvinceCode>NC</ProvinceCode>
+    <SocialSecurityNumber>789-34-2418</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>4440.90</AccountBalance>
+    <AccountCode>553264498</AccountCode>
+    <Address1>41 Auburn Street</Address1>
+    <City>Atkins</City>
+    <DateOfBirth>1942-11-11</DateOfBirth>
+    <DateOfDelinquency>2002-09-23</DateOfDelinquency>
+    <DebtHolder>FCNB Newport News</DebtHolder>
+    <FirstName>Browyn</FirstName>
+    <LastName>Pallares</LastName>
+    <MiddleName>Q</MiddleName>
+    <OriginalAccountNumber>4589750287650207</OriginalAccountNumber>
+    <PhoneNumber>(850) 277 6460</PhoneNumber>
+    <ProvinceCode>AR</ProvinceCode>
+    <SocialSecurityNumber>644-16-4099</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>14042.95</AccountBalance>
+    <AccountCode>038292747</AccountCode>
+    <City>Ridge Manok</City>
+    <DebtHolder>Household Union Privilage</DebtHolder>
+    <FirstName>Euzera</FirstName>
+    <LastName>Isler</LastName>
+    <MiddleName>M</MiddleName>
+    <OriginalAccountNumber>4968942206830422</OriginalAccountNumber>
+    <PhoneNumber>(850) 292 7185</PhoneNumber>
+    <PostalCode>33523</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>738-45-2109</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3644.01</AccountBalance>
+    <AccountCode>824143212</AccountCode>
+    <Address1>59 Broad Street</Address1>
+    <City>Philadelphia</City>
+    <DateOfBirth>1973-06-26</DateOfBirth>
+    <DebtHolder>Providian First Select</DebtHolder>
+    <FirstName>Raisa</FirstName>
+    <LastName>Wakefield</LastName>
+    <OriginalAccountNumber>4345730601831944</OriginalAccountNumber>
+    <PhoneNumber>(850) 696 2705</PhoneNumber>
+    <PostalCode>19124</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>082-55-4257</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6244.66</AccountBalance>
+    <AccountCode>052786848</AccountCode>
+    <Address1>38 Second Avenue</Address1>
+    <City>Big Spring</City>
+    <DateOfBirth>1989-07-19</DateOfBirth>
+    <DebtHolder>American Express</DebtHolder>
+    <FirstName>Lashona</FirstName>
+    <LastName>Allende</LastName>
+    <MiddleName>X</MiddleName>
+    <OriginalAccountNumber>5771318875170215</OriginalAccountNumber>
+    <PostalCode>79720</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>464-43-0380</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9093.20</AccountBalance>
+    <AccountCode>903276784</AccountCode>
+    <Address1>136 North Carolina Avenue</Address1>
+    <Address2>APT 5</Address2>
+    <DateOfBirth>1988-03-17</DateOfBirth>
+    <FirstName>Munir</FirstName>
+    <LastName>Halada</LastName>
+    <MiddleName>E</MiddleName>
+    <OriginalAccountNumber>5139645330207067</OriginalAccountNumber>
+    <PhoneNumber>(239) 743 1617</PhoneNumber>
+    <PostalCode>925090780</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>330-87-5677</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>4909.09</AccountBalance>
+    <AccountCode>761757844</AccountCode>
+    <Address1>123 Copley Place</Address1>
+    <City>La Feria</City>
+    <DateOfBirth>1976-07-25</DateOfBirth>
+    <DebtHolder>First Premier Bank</DebtHolder>
+    <FirstName>Britton</FirstName>
+    <LastName>Trimpe</LastName>
+    <MiddleName>A</MiddleName>
+    <OriginalAccountNumber>5553053830035022</OriginalAccountNumber>
+    <PhoneNumber>(850) 291 4949</PhoneNumber>
+    <PostalCode>78559</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>499-17-5872</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6979.58</AccountBalance>
+    <AccountCode>829390372</AccountCode>
+    <Address1>74 West Fourth St.</Address1>
+    <City>Hanover</City>
+    <DateOfDelinquency>2002-01-19</DateOfDelinquency>
+    <DebtHolder>Providian First Select</DebtHolder>
+    <FirstName>Georgietta</FirstName>
+    <LastName>Cappie</LastName>
+    <MiddleName>C</MiddleName>
+    <OriginalAccountNumber>4269132050379663</OriginalAccountNumber>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>497-76-8880</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12225.53</AccountBalance>
+    <AccountCode>891004135</AccountCode>
+    <City>Mabank</City>
+    <DateOfBirth>1989-06-21</DateOfBirth>
+    <DebtHolder>Providian First Select</DebtHolder>
+    <FirstName>Janyne</FirstName>
+    <LastName>Pouncey</LastName>
+    <MiddleName>X</MiddleName>
+    <OriginalAccountNumber>7718844713206288</OriginalAccountNumber>
+    <PhoneNumber>(321) 771 2135</PhoneNumber>
+    <PostalCode>751566655</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>422-59-0526</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9170.38</AccountBalance>
+    <AccountCode>365123502</AccountCode>
+    <Address1>79 North Carolina Avenue</Address1>
+    <DateOfBirth>1987-09-23</DateOfBirth>
+    <FirstName>Harriet</FirstName>
+    <LastName>Castro-feinberg</LastName>
+    <MiddleName>Y</MiddleName>
+    <OriginalAccountNumber>5247012346567607</OriginalAccountNumber>
+    <PhoneNumber>(850) 377 8119</PhoneNumber>
+    <PostalCode>900084161</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>912-67-8318</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5830.73</AccountBalance>
+    <AccountCode>985684858</AccountCode>
+    <Address1>37 Marvin Gardens</Address1>
+    <City>Gladewater</City>
+    <DateOfBirth>1989-12-09</DateOfBirth>
+    <DateOfDelinquency>2002-09-09</DateOfDelinquency>
+    <FirstName>Amr</FirstName>
+    <LastName>Foytik</LastName>
+    <MiddleName>B</MiddleName>
+    <OriginalAccountNumber>4237291950414312</OriginalAccountNumber>
+    <PhoneNumber>(850) 280 3889</PhoneNumber>
+    <PostalCode>75647</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>516-58-9366</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>13119.82</AccountBalance>
+    <AccountCode>816289027</AccountCode>
+    <Address1>59 Auburn Street</Address1>
+    <DateOfDelinquency>2002-06-10</DateOfDelinquency>
+    <DebtHolder>GE Money</DebtHolder>
+    <FirstName>Berrie</FirstName>
+    <LastName>Cothran</LastName>
+    <OriginalAccountNumber>5619264568695358</OriginalAccountNumber>
+    <PhoneNumber>(904) 863 1563</PhoneNumber>
+    <PostalCode>335637155</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>384-73-6220</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7260.88</AccountBalance>
+    <AccountCode>548715057</AccountCode>
+    <City>Mountain View</City>
+    <DateOfDelinquency>2002-03-29</DateOfDelinquency>
+    <FirstName>Dianna</FirstName>
+    <LastName>Couts</LastName>
+    <OriginalAccountNumber>7934369152097306</OriginalAccountNumber>
+    <PhoneNumber>(561) 277 4469</PhoneNumber>
+    <PostalCode>940390081</PostalCode>
+    <SocialSecurityNumber>573-30-1535</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6745.49</AccountBalance>
+    <AccountCode>304127721</AccountCode>
+    <Address1>135 First Avenue</Address1>
+    <City>Orlando</City>
+    <DateOfBirth>1986-06-10</DateOfBirth>
+    <DateOfDelinquency>2002-10-28</DateOfDelinquency>
+    <DebtHolder>Orchard Bank</DebtHolder>
+    <LastName>Kennedy</LastName>
+    <MiddleName>O</MiddleName>
+    <OriginalAccountNumber>4711939235037442</OriginalAccountNumber>
+    <PhoneNumber>(850) 293 0367</PhoneNumber>
+    <PostalCode>328392551</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>068-24-5415</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6128.22</AccountBalance>
+    <AccountCode>048974359</AccountCode>
+    <Address1>181 St. James Place</Address1>
+    <City>Pooler</City>
+    <DateOfBirth>1956-03-13</DateOfBirth>
+    <DateOfDelinquency>2001-11-12</DateOfDelinquency>
+    <DebtHolder>Bank One</DebtHolder>
+    <LastName>Domagalski</LastName>
+    <MiddleName>C</MiddleName>
+    <OriginalAccountNumber>4423399535233759</OriginalAccountNumber>
+    <PhoneNumber>(321) 362 3257</PhoneNumber>
+    <PostalCode>313222523</PostalCode>
+    <ProvinceCode>GA</ProvinceCode>
+    <SocialSecurityNumber>524-85-2413</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>14974.46</AccountBalance>
+    <AccountCode>605900972</AccountCode>
+    <Address1>87 Fourth Avenue</Address1>
+    <City>Lester</City>
+    <DateOfDelinquency>2003-03-19</DateOfDelinquency>
+    <DebtHolder>Household Arbor</DebtHolder>
+    <FirstName>Nelida</FirstName>
+    <LastName>Shoup</LastName>
+    <OriginalAccountNumber>7616785244690782</OriginalAccountNumber>
+    <PhoneNumber>(386) 881 7544</PhoneNumber>
+    <PostalCode>19029</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>145-94-4188</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7859.35</AccountBalance>
+    <AccountCode>171764789</AccountCode>
+    <Address1>3 First Avenue</Address1>
+    <City>Houston</City>
+    <FirstName>Lerola</FirstName>
+    <LastName>Fantozzi</LastName>
+    <MiddleName>O</MiddleName>
+    <OriginalAccountNumber>7585675963890615</OriginalAccountNumber>
+    <PostalCode>77020</PostalCode>
+    <SocialSecurityNumber>008-97-7768</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3868.80</AccountBalance>
+    <AccountCode>564199728</AccountCode>
+    <Address1>29 Pacific Avenue</Address1>
+    <City>San Jose</City>
+    <DebtHolder>Bank One</DebtHolder>
+    <FirstName>Tyson</FirstName>
+    <LastName>Mazanek</LastName>
+    <MiddleName>Q</MiddleName>
+    <OriginalAccountNumber>4696214568939906</OriginalAccountNumber>
+    <PhoneNumber>(352) 625 5780</PhoneNumber>
+    <PostalCode>951264417</PostalCode>
+    <SocialSecurityNumber>460-52-5546</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10919.59</AccountBalance>
+    <AccountCode>709045332</AccountCode>
+    <Address1>32 East Street</Address1>
+    <City>Howey In The Hills</City>
+    <DebtHolder>Wells Fargo</DebtHolder>
+    <FirstName>Jamillah</FirstName>
+    <LastName>Vespie</LastName>
+    <MiddleName>T</MiddleName>
+    <OriginalAccountNumber>5213340307622513</OriginalAccountNumber>
+    <PhoneNumber>(850) 277 9981</PhoneNumber>
+    <PostalCode>34737</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>992-58-7685</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9555.10</AccountBalance>
+    <AccountCode>941840511</AccountCode>
+    <City>Greenwood</City>
+    <DateOfDelinquency>2001-09-17</DateOfDelinquency>
+    <DebtHolder>HSBC</DebtHolder>
+    <FirstName>Sheronda</FirstName>
+    <LastName>Monasterios</LastName>
+    <MiddleName>R</MiddleName>
+    <OriginalAccountNumber>7594499179687500</OriginalAccountNumber>
+    <PhoneNumber>(850) 278 4973</PhoneNumber>
+    <PostalCode>296463078</PostalCode>
+    <ProvinceCode>SC</ProvinceCode>
+    <SocialSecurityNumber>151-97-9933</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3262.21</AccountBalance>
+    <AccountCode>729680270</AccountCode>
+    <Address1>191 Darthmouth Street</Address1>
+    <City>Stafford</City>
+    <DateOfDelinquency>2002-09-06</DateOfDelinquency>
+    <DebtHolder>State Farm Bank</DebtHolder>
+    <FirstName>Sofia</FirstName>
+    <LastName>Crozier</LastName>
+    <OriginalAccountNumber>5428286725298560</OriginalAccountNumber>
+    <PhoneNumber>(407) 345 6986</PhoneNumber>
+    <PostalCode>774773501</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>321-02-6709</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>11018.86</AccountBalance>
+    <AccountCode>647250740</AccountCode>
+    <Address2>Ste. 3</Address2>
+    <City>Redmond</City>
+    <DateOfBirth>1989-05-22</DateOfBirth>
+    <DateOfDelinquency>2002-05-05</DateOfDelinquency>
+    <DebtHolder>Household GE Lechmere</DebtHolder>
+    <FirstName>Imani</FirstName>
+    <LastName>Baughman</LastName>
+    <OriginalAccountNumber>5025272643264852</OriginalAccountNumber>
+    <PhoneNumber>(352) 625 5000</PhoneNumber>
+    <ProvinceCode>OR</ProvinceCode>
+    <SocialSecurityNumber>785-10-9802</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3562.99</AccountBalance>
+    <AccountCode>528482099</AccountCode>
+    <Address1>141 St. Charles Avenue</Address1>
+    <City>Pt Jefferson St</City>
+    <DateOfDelinquency>2002-06-25</DateOfDelinquency>
+    <DebtHolder>Macys</DebtHolder>
+    <LastName>Armstrong</LastName>
+    <MiddleName>I</MiddleName>
+    <OriginalAccountNumber>7331343756718012</OriginalAccountNumber>
+    <PhoneNumber>(407) 353 2106</PhoneNumber>
+    <ProvinceCode>NY</ProvinceCode>
+    <SocialSecurityNumber>337-81-5894</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6956.04</AccountBalance>
+    <AccountCode>509139311</AccountCode>
+    <Address1>180 Vermont Avenue</Address1>
+    <City>Clinton</City>
+    <DebtHolder>American Pacific Bank</DebtHolder>
+    <LastName>Coyner</LastName>
+    <MiddleName>W</MiddleName>
+    <OriginalAccountNumber>4608109913127594</OriginalAccountNumber>
+    <PhoneNumber>(305) 439 5795</PhoneNumber>
+    <PostalCode>390562233</PostalCode>
+    <SocialSecurityNumber>965-81-9453</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8835.45</AccountBalance>
+    <AccountCode>143326697</AccountCode>
+    <Address1>172 Tennesee Avenue</Address1>
+    <City>Tulsa</City>
+    <DebtHolder>Providian Visa Mastercard</DebtHolder>
+    <FirstName>Lucina</FirstName>
+    <LastName>Jean-francois</LastName>
+    <MiddleName>E</MiddleName>
+    <OriginalAccountNumber>5901650061687936</OriginalAccountNumber>
+    <ProvinceCode>OK</ProvinceCode>
+    <SocialSecurityNumber>673-46-4197</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5966.05</AccountBalance>
+    <AccountCode>299676104</AccountCode>
+    <City>Dallas</City>
+    <DateOfDelinquency>2002-09-04</DateOfDelinquency>
+    <FirstName>Jevetta</FirstName>
+    <LastName>Mccain</LastName>
+    <OriginalAccountNumber>4195107174242054</OriginalAccountNumber>
+    <PhoneNumber>(813) 514 4701</PhoneNumber>
+    <PostalCode>752180722</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>575-98-9152</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5433.40</AccountBalance>
+    <AccountCode>107014174</AccountCode>
+    <Address1>161 Virgina Avenue</Address1>
+    <City>Huntington Pk</City>
+    <DateOfDelinquency>2002-08-19</DateOfDelinquency>
+    <DebtHolder>Household GE Lechmere</DebtHolder>
+    <FirstName>Yanisa</FirstName>
+    <LastName>Cappe</LastName>
+    <OriginalAccountNumber>7594057149188351</OriginalAccountNumber>
+    <PhoneNumber>(863) 515 2251</PhoneNumber>
+    <PostalCode>90255</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>501-50-3986</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>13.56</AccountBalance>
+    <AccountCode>467746563</AccountCode>
+    <City>Gastonia</City>
+    <DateOfBirth>1959-06-26</DateOfBirth>
+    <DebtHolder>First USA Bank NA</DebtHolder>
+    <FirstName>Maxwell</FirstName>
+    <LastName>Ruland</LastName>
+    <MiddleName>I</MiddleName>
+    <OriginalAccountNumber>4135745977076512</OriginalAccountNumber>
+    <PhoneNumber>(904) 864 6791</PhoneNumber>
+    <ProvinceCode>NC</ProvinceCode>
+    <SocialSecurityNumber>105-94-4121</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>1866.62</AccountBalance>
+    <AccountCode>232708570</AccountCode>
+    <Address1>58 Marvin Gardens</Address1>
+    <City>Columbia</City>
+    <DateOfBirth>1951-12-22</DateOfBirth>
+    <DebtHolder>Columbus Bank and Trust</DebtHolder>
+    <FirstName>Hiep</FirstName>
+    <LastName>Funderburk</LastName>
+    <MiddleName>N</MiddleName>
+    <OriginalAccountNumber>5023575649582261</OriginalAccountNumber>
+    <PhoneNumber>(850) 278 0604</PhoneNumber>
+    <ProvinceCode>SC</ProvinceCode>
+    <SocialSecurityNumber>942-00-6752</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>361.56</AccountBalance>
+    <AccountCode>217535875</AccountCode>
+    <Address1>145 Fourth Avenue</Address1>
+    <City>Orlando</City>
+    <DateOfDelinquency>2002-09-18</DateOfDelinquency>
+    <DebtHolder>First North American Bank</DebtHolder>
+    <FirstName>Ashbel</FirstName>
+    <LastName>Swarm</LastName>
+    <MiddleName>R</MiddleName>
+    <OriginalAccountNumber>7916866834447233</OriginalAccountNumber>
+    <PostalCode>328120582</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>011-70-8398</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9565.62</AccountBalance>
+    <AccountCode>735922706</AccountCode>
+    <Address1>38 Beacon Street</Address1>
+    <City>Houston</City>
+    <DateOfDelinquency>2002-06-07</DateOfDelinquency>
+    <LastName>Shultz</LastName>
+    <OriginalAccountNumber>4484747810643729</OriginalAccountNumber>
+    <PhoneNumber>(904) 853 3254</PhoneNumber>
+    <PostalCode>770072525</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>573-53-5048</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12240.08</AccountBalance>
+    <AccountCode>130212412</AccountCode>
+    <Address1>97 Darthmouth Street</Address1>
+    <City>Decatur</City>
+    <DateOfDelinquency>2002-12-27</DateOfDelinquency>
+    <DebtHolder>Providian First Select</DebtHolder>
+    <FirstName>Gerolyn</FirstName>
+    <LastName>Ehrenkranz</LastName>
+    <MiddleName>B</MiddleName>
+    <OriginalAccountNumber>5277024616184498</OriginalAccountNumber>
+    <PhoneNumber>(305) 441 3775</PhoneNumber>
+    <PostalCode>30032</PostalCode>
+    <ProvinceCode>GA</ProvinceCode>
+    <SocialSecurityNumber>885-74-1290</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5774.22</AccountBalance>
+    <AccountCode>196071813</AccountCode>
+    <Address1>178 Second Avenue</Address1>
+    <City>Newport</City>
+    <FirstName>Sequita</FirstName>
+    <LastName>Tempel</LastName>
+    <OriginalAccountNumber>5944038472259112</OriginalAccountNumber>
+    <PhoneNumber>(850) 205 1034</PhoneNumber>
+    <SocialSecurityNumber>879-55-9101</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8866.28</AccountBalance>
+    <AccountCode>410046296</AccountCode>
+    <Address1>109 Copley Place</Address1>
+    <Address2>Suite 1</Address2>
+    <City>Waynesville</City>
+    <DateOfDelinquency>2002-07-22</DateOfDelinquency>
+    <DebtHolder>FCNB Spiegel</DebtHolder>
+    <FirstName>Fernand</FirstName>
+    <LastName>Rubinas</LastName>
+    <MiddleName>A</MiddleName>
+    <OriginalAccountNumber>7477570399901407</OriginalAccountNumber>
+    <PhoneNumber>(386) 381 4418</PhoneNumber>
+    <PostalCode>28786</PostalCode>
+    <ProvinceCode>NC</ProvinceCode>
+    <SocialSecurityNumber>175-86-5172</SocialSecurityNumber>
+    <Suffix>IV</Suffix>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7384.45</AccountBalance>
+    <AccountCode>218659291</AccountCode>
+    <Address1>134 Virgina Avenue</Address1>
+    <DateOfDelinquency>2001-06-10</DateOfDelinquency>
+    <DebtHolder>Household Arbor</DebtHolder>
+    <FirstName>Vicentita</FirstName>
+    <LastName>Gihring</LastName>
+    <MiddleName>K</MiddleName>
+    <OriginalAccountNumber>5113823148298106</OriginalAccountNumber>
+    <PhoneNumber>(813) 512 8370</PhoneNumber>
+    <PostalCode>700752436</PostalCode>
+    <ProvinceCode>LA</ProvinceCode>
+    <SocialSecurityNumber>456-12-9052</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>14575.95</AccountBalance>
+    <AccountCode>745111447</AccountCode>
+    <Address1>54 St. Charles Avenue</Address1>
+    <City>San Francisco</City>
+    <DateOfDelinquency>2001-07-27</DateOfDelinquency>
+    <DebtHolder>Providian Visa Mastercard</DebtHolder>
+    <FirstName>Jenice</FirstName>
+    <LastName>Darsan</LastName>
+    <MiddleName>R</MiddleName>
+    <OriginalAccountNumber>4153960394517600</OriginalAccountNumber>
+    <PostalCode>941242176</PostalCode>
+    <SocialSecurityNumber>859-23-4369</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10638.94</AccountBalance>
+    <AccountCode>431957467</AccountCode>
+    <Address1>19 Grove Street</Address1>
+    <City>San Antonio</City>
+    <DateOfBirth>1950-09-19</DateOfBirth>
+    <DebtHolder>Bank Of America</DebtHolder>
+    <FirstName>Nora-eve</FirstName>
+    <LastName>Swallow</LastName>
+    <OriginalAccountNumber>4187540273921415</OriginalAccountNumber>
+    <PhoneNumber>(850) 284 4539</PhoneNumber>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>378-13-3906</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>92.96</AccountBalance>
+    <AccountCode>249252279</AccountCode>
+    <Address1>19 Madison Avenue</Address1>
+    <City>Sherman Oaks</City>
+    <DateOfBirth>1948-05-19</DateOfBirth>
+    <DebtHolder>Wells Fargo</DebtHolder>
+    <FirstName>Lonn</FirstName>
+    <LastName>Filloon</LastName>
+    <MiddleName>B</MiddleName>
+    <OriginalAccountNumber>5518004107430101</OriginalAccountNumber>
+    <PostalCode>914033911</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>383-73-3010</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10614.86</AccountBalance>
+    <AccountCode>297146677</AccountCode>
+    <City>Hollywood</City>
+    <DebtHolder>Household Union Privilage</DebtHolder>
+    <FirstName>Ahsanuddin</FirstName>
+    <LastName>Wykle</LastName>
+    <OriginalAccountNumber>4875263315735459</OriginalAccountNumber>
+    <PhoneNumber>(904) 864 6758</PhoneNumber>
+    <PostalCode>330245821</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>336-75-8431</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>10464.50</AccountBalance>
+    <AccountCode>478933224</AccountCode>
+    <Address1>69 Grove Street</Address1>
+    <City>Phoenix</City>
+    <DateOfBirth>1977-11-23</DateOfBirth>
+    <DateOfDelinquency>2002-09-06</DateOfDelinquency>
+    <DebtHolder>Chase Manhattan Bank Circuit City</DebtHolder>
+    <FirstName>Tamala</FirstName>
+    <LastName>Maggaro</LastName>
+    <OriginalAccountNumber>7988481511269038</OriginalAccountNumber>
+    <PhoneNumber>(941) 537 7312</PhoneNumber>
+    <ProvinceCode>MD</ProvinceCode>
+    <SocialSecurityNumber>671-29-5257</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>5014.53</AccountBalance>
+    <AccountCode>232054218</AccountCode>
+    <Address2>APT 1</Address2>
+    <City>Los Angeles</City>
+    <DateOfBirth>1964-12-03</DateOfBirth>
+    <DebtHolder>Direct Merchants Bank</DebtHolder>
+    <FirstName>Fredrica</FirstName>
+    <LastName>Pilon</LastName>
+    <MiddleName>F</MiddleName>
+    <OriginalAccountNumber>4191655184119948</OriginalAccountNumber>
+    <PhoneNumber>(850) 994 7007</PhoneNumber>
+    <PostalCode>90061</PostalCode>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>470-81-7653</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>773.80</AccountBalance>
+    <AccountCode>752315207</AccountCode>
+    <Address1>180 Vermont Avenue</Address1>
+    <City>Clinton</City>
+    <DateOfDelinquency>2002-05-23</DateOfDelinquency>
+    <DebtHolder>Household General Motors</DebtHolder>
+    <LastName>Coyner</LastName>
+    <MiddleName>W</MiddleName>
+    <OriginalAccountNumber>4517094133281946</OriginalAccountNumber>
+    <PhoneNumber>(305) 439 5795</PhoneNumber>
+    <PostalCode>390562233</PostalCode>
+    <SocialSecurityNumber>965-81-9453</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7713.24</AccountBalance>
+    <AccountCode>737941878</AccountCode>
+    <Address1>112 Grove Street</Address1>
+    <DebtHolder>Wells Fargo</DebtHolder>
+    <FirstName>Nerisha</FirstName>
+    <LastName>Dicpetris</LastName>
+    <OriginalAccountNumber>4766270782593769</OriginalAccountNumber>
+    <PhoneNumber>(352) 605 7977</PhoneNumber>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>796-68-5862</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>1765.68</AccountBalance>
+    <AccountCode>577780084</AccountCode>
+    <Address1>71 North Carolina Avenue</Address1>
+    <City>Baltimore</City>
+    <DebtHolder>Barclays</DebtHolder>
+    <FirstName>Viviene</FirstName>
+    <LastName>Brinker</LastName>
+    <MiddleName>R</MiddleName>
+    <OriginalAccountNumber>7238877798738478</OriginalAccountNumber>
+    <PostalCode>21218</PostalCode>
+    <ProvinceCode>MD</ProvinceCode>
+    <SocialSecurityNumber>024-72-8539</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>8841.23</AccountBalance>
+    <AccountCode>276726149</AccountCode>
+    <Address1>174 West Fourth St.</Address1>
+    <Address2>3rd Floor</Address2>
+    <City>Moulton</City>
+    <FirstName>Uneeda</FirstName>
+    <LastName>Fabiani</LastName>
+    <MiddleName>F</MiddleName>
+    <OriginalAccountNumber>5876833902767219</OriginalAccountNumber>
+    <PhoneNumber>(386) 881 3798</PhoneNumber>
+    <PostalCode>35650</PostalCode>
+    <SocialSecurityNumber>368-79-2679</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12597.26</AccountBalance>
+    <AccountCode>648119341</AccountCode>
+    <Address1>38 Beacon Street</Address1>
+    <City>Houston</City>
+    <DebtHolder>Household DIRM</DebtHolder>
+    <LastName>Shultz</LastName>
+    <OriginalAccountNumber>4318497488355178</OriginalAccountNumber>
+    <PhoneNumber>(904) 853 3254</PhoneNumber>
+    <PostalCode>770072525</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>573-53-5048</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9644.81</AccountBalance>
+    <AccountCode>991114591</AccountCode>
+    <Address1>156 Tenth Avenue</Address1>
+    <City>Arlington</City>
+    <DateOfBirth>1973-08-21</DateOfBirth>
+    <DebtHolder>Wells Fargo</DebtHolder>
+    <FirstName>Tolisa</FirstName>
+    <LastName>Wai</LastName>
+    <MiddleName>N</MiddleName>
+    <OriginalAccountNumber>5140734688722832</OriginalAccountNumber>
+    <PhoneNumber>(561) 243 1134</PhoneNumber>
+    <PostalCode>760125401</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>541-98-4620</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12844.26</AccountBalance>
+    <AccountCode>723343500</AccountCode>
+    <Address1>113 Atlantic Avenue</Address1>
+    <City>Palm Bay</City>
+    <DateOfBirth>1953-07-07</DateOfBirth>
+    <DateOfDelinquency>2002-09-13</DateOfDelinquency>
+    <DebtHolder>Etrade </DebtHolder>
+    <FirstName>Dwaine</FirstName>
+    <LastName>Mcelyea</LastName>
+    <MiddleName>S</MiddleName>
+    <OriginalAccountNumber>5643336010271377</OriginalAccountNumber>
+    <PhoneNumber>(850) 280 5243</PhoneNumber>
+    <PostalCode>32907</PostalCode>
+    <ProvinceCode>FL</ProvinceCode>
+    <SocialSecurityNumber>339-88-7458</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>13071.27</AccountBalance>
+    <AccountCode>855619048</AccountCode>
+    <Address1>87 Pacific Avenue</Address1>
+    <City>Humacao</City>
+    <DateOfBirth>1943-02-05</DateOfBirth>
+    <DebtHolder>State Farm Bank</DebtHolder>
+    <FirstName>Ilene</FirstName>
+    <LastName>Jordahl</LastName>
+    <MiddleName>K</MiddleName>
+    <OriginalAccountNumber>7012727964075408</OriginalAccountNumber>
+    <PhoneNumber>(727) 944 4800</PhoneNumber>
+    <PostalCode>007919402</PostalCode>
+    <ProvinceCode>PR</ProvinceCode>
+    <SocialSecurityNumber>637-09-8538</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>169.89</AccountBalance>
+    <AccountCode>150927340</AccountCode>
+    <Address1>22 Fifth Avenue</Address1>
+    <City>Morrisville</City>
+    <DateOfBirth>1951-01-07</DateOfBirth>
+    <DateOfDelinquency>2001-12-19</DateOfDelinquency>
+    <DebtHolder>Etrade </DebtHolder>
+    <FirstName>Thawanda</FirstName>
+    <LastName>Bounds</LastName>
+    <MiddleName>K</MiddleName>
+    <OriginalAccountNumber>5469740212847745</OriginalAccountNumber>
+    <PostalCode>28117</PostalCode>
+    <ProvinceCode>NC</ProvinceCode>
+    <SocialSecurityNumber>899-14-7726</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3844.28</AccountBalance>
+    <AccountCode>137549645</AccountCode>
+    <Address1>174 West Fourth St.</Address1>
+    <Address2>3rd Floor</Address2>
+    <City>Moulton</City>
+    <DebtHolder>BankFirst</DebtHolder>
+    <FirstName>Uneeda</FirstName>
+    <LastName>Fabiani</LastName>
+    <MiddleName>F</MiddleName>
+    <OriginalAccountNumber>4692701857685352</OriginalAccountNumber>
+    <PhoneNumber>(386) 881 3798</PhoneNumber>
+    <PostalCode>35650</PostalCode>
+    <SocialSecurityNumber>368-79-2679</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9787.09</AccountBalance>
+    <AccountCode>409028647</AccountCode>
+    <City>Richardson</City>
+    <DateOfBirth>1979-05-02</DateOfBirth>
+    <DebtHolder>First Premier Bank</DebtHolder>
+    <LastName>Mcelveen</LastName>
+    <OriginalAccountNumber>4840684871050917</OriginalAccountNumber>
+    <PhoneNumber>(407) 344 4421</PhoneNumber>
+    <PostalCode>750804841</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>408-24-7038</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>6212.33</AccountBalance>
+    <AccountCode>193075420</AccountCode>
+    <Address1>49 West Fourth St.</Address1>
+    <City>Gonzales</City>
+    <DateOfDelinquency>2002-07-14</DateOfDelinquency>
+    <DebtHolder>FCNB Newport News</DebtHolder>
+    <FirstName>Leeisa</FirstName>
+    <LastName>Baguidy</LastName>
+    <MiddleName>Q</MiddleName>
+    <OriginalAccountNumber>7973480407274348</OriginalAccountNumber>
+    <PostalCode>78629</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>281-93-6089</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>9972.49</AccountBalance>
+    <AccountCode>347106143</AccountCode>
+    <Address1>128 Tenth Avenue</Address1>
+    <City>Frisco</City>
+    <DateOfBirth>1961-04-04</DateOfBirth>
+    <DebtHolder>First National Bank Of Omaha</DebtHolder>
+    <FirstName>Mariluz</FirstName>
+    <MiddleName>L</MiddleName>
+    <OriginalAccountNumber>4538924703337579</OriginalAccountNumber>
+    <PhoneNumber>(850) 210 6424</PhoneNumber>
+    <PostalCode>750340014</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>766-09-7328</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>4834.37</AccountBalance>
+    <AccountCode>823450832</AccountCode>
+    <City>Dallas</City>
+    <DateOfBirth>1949-10-16</DateOfBirth>
+    <DebtHolder>Sears</DebtHolder>
+    <FirstName>Gottfried</FirstName>
+    <LastName>Cladd</LastName>
+    <OriginalAccountNumber>5574490700869134</OriginalAccountNumber>
+    <PhoneNumber>(305) 439 5958</PhoneNumber>
+    <PostalCode>752491417</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>177-60-7897</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>11783.71</AccountBalance>
+    <AccountCode>928948544</AccountCode>
+    <Address1>196 Pacific Avenue</Address1>
+    <DateOfBirth>1987-11-14</DateOfBirth>
+    <DebtHolder>Advanta</DebtHolder>
+    <FirstName>Machelle</FirstName>
+    <LastName>Blackburn-rodriguez</LastName>
+    <MiddleName>D</MiddleName>
+    <OriginalAccountNumber>4338571947915814</OriginalAccountNumber>
+    <PostalCode>770952271</PostalCode>
+    <SocialSecurityNumber>363-28-5104</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>462.42</AccountBalance>
+    <AccountCode>599011274</AccountCode>
+    <Address1>95 North Carolina Avenue</Address1>
+    <City>Los Angeles</City>
+    <DateOfDelinquency>2001-10-21</DateOfDelinquency>
+    <DebtHolder>New Millennium Bank</DebtHolder>
+    <FirstName>Agatha</FirstName>
+    <LastName>Nnadi</LastName>
+    <OriginalAccountNumber>4951968204503506</OriginalAccountNumber>
+    <PhoneNumber>(813) 514 5132</PhoneNumber>
+    <ProvinceCode>CA</ProvinceCode>
+    <SocialSecurityNumber>068-34-9511</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>7565.24</AccountBalance>
+    <AccountCode>041280201</AccountCode>
+    <Address1>169 North Carolina Avenue</Address1>
+    <City>Harrisburg</City>
+    <DateOfBirth>1972-02-06</DateOfBirth>
+    <DateOfDelinquency>2002-09-08</DateOfDelinquency>
+    <DebtHolder>Providian</DebtHolder>
+    <FirstName>Eleonor</FirstName>
+    <LastName>Stiegler</LastName>
+    <MiddleName>H</MiddleName>
+    <OriginalAccountNumber>7993155814185797</OriginalAccountNumber>
+    <PhoneNumber>(904) 861 2624</PhoneNumber>
+    <PostalCode>171102607</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>949-33-3114</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3797.97</AccountBalance>
+    <AccountCode>592051519</AccountCode>
+    <Address1>83 Fifth Avenue</Address1>
+    <City>Philadelphia</City>
+    <DateOfDelinquency>2002-09-27</DateOfDelinquency>
+    <DebtHolder>Aspire</DebtHolder>
+    <FirstName>Tamyia</FirstName>
+    <LastName>Mcelyea</LastName>
+    <OriginalAccountNumber>7598878608613631</OriginalAccountNumber>
+    <PostalCode>19124</PostalCode>
+    <ProvinceCode>PA</ProvinceCode>
+    <SocialSecurityNumber>700-30-2260</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>12793.67</AccountBalance>
+    <AccountCode>478879216</AccountCode>
+    <Address1>158 Main Street</Address1>
+    <Address2>Apartment 107</Address2>
+    <City>Gonzales</City>
+    <DateOfDelinquency>2002-04-11</DateOfDelinquency>
+    <FirstName>Juanetta</FirstName>
+    <LastName>Chiullan</LastName>
+    <MiddleName>V</MiddleName>
+    <OriginalAccountNumber>7085647939840230</OriginalAccountNumber>
+    <PhoneNumber>(813) 514 5636</PhoneNumber>
+    <PostalCode>78629</PostalCode>
+    <ProvinceCode>TX</ProvinceCode>
+    <SocialSecurityNumber>980-45-7230</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+  <DebtHolderRecord>
+    <AccountBalance>3936.69</AccountBalance>
+    <AccountCode>860152744</AccountCode>
+    <Address1>75 Columbus Avenue</Address1>
+    <City>Wyandanch</City>
+    <DebtHolder>First USA Bank NA</DebtHolder>
+    <FirstName>Valdrica</FirstName>
+    <LastName>Ratti</LastName>
+    <MiddleName>Q</MiddleName>
+    <OriginalAccountNumber>4796904511086563</OriginalAccountNumber>
+    <PhoneNumber>(305) 441 2467</PhoneNumber>
+    <PostalCode>117983031</PostalCode>
+    <ProvinceCode>NY</ProvinceCode>
+    <SocialSecurityNumber>968-25-0003</SocialSecurityNumber>
+    <VendorCode>National Holdings</VendorCode>
+  </DebtHolderRecord>
+</DebtHolder>

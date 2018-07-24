@@ -1,0 +1,62 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+					xmlns:system="clr-namespace:System;assembly=mscorlib"
+					xmlns:guardian="http://schemas.fluidtrade.com/winfx/2006/xaml/guardian/presentation">
+	<system:String x:Key="AcceptString">
+		Accept
+	</system:String>
+	<system:String x:Key="AcceptToolTipString">
+		Accept the terms offered.
+	</system:String>
+	<system:String x:Key="AreYouSureString">
+		Do you want to accept these settlement terms?
+	</system:String>
+	<system:String x:Key="ChargeOffString">
+		Charge-Off:
+	</system:String>
+	<system:String x:Key="HolderString">
+		Holder
+	</system:String>
+	<system:String x:Key="NegotiateGroupString">
+		Negotiate
+	</system:String>
+	<system:String x:Key="NegotiatorString">
+		Negotiator
+	</system:String>
+	<system:String x:Key="OfferString">
+		Offer
+	</system:String>
+	<system:String x:Key="OfferToolTipString">
+		Offer new settlement conditions.
+	</system:String>
+	<system:String x:Key="PaymentMethodString">
+		Payment Method:
+	</system:String>
+	<system:String x:Key="PaymentsString">
+		Payments:
+	</system:String>
+	<system:String x:Key="RejectString">
+		Reject
+	</system:String>
+	<system:String x:Key="RejectToolTipString">
+		Reject an settlement offer from the counter party.
+	</system:String>
+	<system:String x:Key="SettlementString">
+		Settlement:
+	</system:String>
+	<system:String x:Key="SettlementPreviewTitleString">
+		Settlement Confirmation
+	</system:String>
+	<system:String x:Key="SendButtonString">
+		Send
+	</system:String>
+	<system:String x:Key="SendButtonToolTipString">
+		Sends the message to the counter party.
+	</system:String>
+	<system:String x:Key="StartDateString">
+		Start Date:
+	</system:String>
+	<system:String x:Key="ChatMessageString">
+		&lt;Enter chat message here&gt;
+	</system:String>
+</ResourceDictionary>

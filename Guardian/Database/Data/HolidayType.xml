@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="HolidayType">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <transaction>
+    <method name="CreateHolidayTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Both Trading and Settlement Holiday" />
+      <parameter name="externalId0" value="BOTH" />
+      <parameter name="holidayTypeCode" value="Both" />
+    </method>
+    <method name="CreateHolidayTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Trading Holiday" />
+      <parameter name="externalId0" value="TRADE" />
+      <parameter name="holidayTypeCode" value="Trading" />
+    </method>
+    <method name="CreateHolidayTypeEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Settlements Holiday" />
+      <parameter name="externalId0" value="SETTLE" />
+      <parameter name="holidayTypeCode" value="Settlement" />
+    </method>
+  </transaction>
+</script>

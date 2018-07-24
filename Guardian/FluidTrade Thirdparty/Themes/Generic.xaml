@@ -1,0 +1,358 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+										xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+										xmlns:editors="http://schemas.actiprosoftware.com/winfx/xaml/editors"
+										xmlns:mwt="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero"
+										xmlns:s="clr-namespace:System;assembly=mscorlib"
+										xmlns:local="clr-namespace:FluidTrade.Thirdparty"
+										xmlns:shared="http://schemas.actiprosoftware.com/winfx/xaml/shared">
+	<Style TargetType="{x:Type local:MoneyTextBox}" BasedOn="{StaticResource {x:Type editors:MaskedTextBox}}">
+		<Setter Property="Control.Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type local:MoneyTextBox}">
+					<mwt:ListBoxChrome Background="{TemplateBinding Panel.Background}" BorderBrush="{TemplateBinding Border.BorderBrush}" BorderThickness="{TemplateBinding Border.BorderThickness}" RenderMouseOver="{TemplateBinding UIElement.IsMouseOver}" RenderFocused="{TemplateBinding UIElement.IsKeyboardFocusWithin}" SnapsToDevicePixels="True">
+						<ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Disabled" Name="PART_ScrollViewer" Focusable="False">
+							<Grid Margin="{TemplateBinding Control.Padding}" Cursor="IBeam">
+								<!-- Editors.TextBoxBase doesn't have a TextAlignment property, so we'll fake it with an expanding column -->
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="*" />
+									<ColumnDefinition Width="Auto" />
+								</Grid.ColumnDefinitions>
+								<editors:SelectionLayer Grid.Column="1" SelectionFirstIndex="{TemplateBinding editors:SelectionLayer.SelectionFirstIndex}" SelectionLength="{TemplateBinding editors:SelectionLayer.SelectionLength}" TextView="{TemplateBinding editors:TextBoxBase.TextView}" Visibility="Visible" />
+								<editors:CaretLayer Grid.Column="1" CaretIndex="{TemplateBinding editors:CaretLayer.CaretIndex}" TextView="{TemplateBinding editors:TextBoxBase.TextView}" Name="caretLayer" />
+								<editors:TextViewLayer Grid.Column="1" TextView="{TemplateBinding editors:TextBoxBase.TextView}" Name="PART_TextViewLayer" />
+							</Grid>
+						</ScrollViewer>
+					</mwt:ListBoxChrome>
+					<ControlTemplate.Triggers>
+						<Trigger Property="UIElement.IsEnabled">
+							<Setter Property="Panel.Background">
+								<Setter.Value>
+									<DynamicResource ResourceKey="{ComponentResourceKey TypeInTargetAssembly=editors:PartEditBox, ResourceId=BackgroundDisabledBrush}" />
+								</Setter.Value>
+							</Setter>
+							<Setter Property="Border.BorderBrush">
+								<Setter.Value>
+									<DynamicResource ResourceKey="{ComponentResourceKey TypeInTargetAssembly=editors:PartEditBox, ResourceId=BorderDisabledBrush}" />
+								</Setter.Value>
+							</Setter>
+							<Setter Property="TextElement.Foreground">
+								<Setter.Value>
+									<DynamicResource ResourceKey="{ComponentResourceKey TypeInTargetAssembly=editors:PartEditBox, ResourceId=ForegroundDisabledBrush}" />
+								</Setter.Value>
+							</Setter>
+							<Trigger.Value>
+								<s:Boolean>False</s:Boolean>
+							</Trigger.Value>
+						</Trigger>
+						<Trigger Property="editors:TextBoxBase.IsCaretVisible">
+							<Setter Property="UIElement.Visibility" TargetName="caretLayer">
+								<Setter.Value>
+									<x:Static Member="Visibility.Hidden" />
+								</Setter.Value>
+							</Setter>
+							<Trigger.Value>
+								<s:Boolean>False</s:Boolean>
+							</Trigger.Value>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	
+	<Style TargetType="{x:Type local:EnumTextBox}" BasedOn="{StaticResource {x:Type editors:MaskedTextBox}}">
+		<Setter Property="Control.Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type local:EnumTextBox}">
+					<mwt:ListBoxChrome Background="{TemplateBinding Panel.Background}" BorderBrush="{TemplateBinding Border.BorderBrush}" BorderThickness="{TemplateBinding Border.BorderThickness}" RenderMouseOver="{TemplateBinding UIElement.IsMouseOver}" RenderFocused="{TemplateBinding UIElement.IsKeyboardFocusWithin}" SnapsToDevicePixels="True">
+						<ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Disabled" Name="PART_ScrollViewer" Focusable="False">
+							<Grid Margin="{TemplateBinding Control.Padding}" Cursor="IBeam">
+								<!-- Editors.TextBoxBase doesn't have a TextAlignment property, so we'll fake it with an expanding column -->
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="*" />
+									<ColumnDefinition Width="Auto" />
+								</Grid.ColumnDefinitions>
+								<editors:SelectionLayer Grid.Column="1" SelectionFirstIndex="{TemplateBinding editors:SelectionLayer.SelectionFirstIndex}" SelectionLength="{TemplateBinding editors:SelectionLayer.SelectionLength}" TextView="{TemplateBinding editors:TextBoxBase.TextView}" Visibility="Visible" />
+								<editors:CaretLayer Grid.Column="1" CaretIndex="{TemplateBinding editors:CaretLayer.CaretIndex}" TextView="{TemplateBinding editors:TextBoxBase.TextView}" Name="caretLayer" />
+								<editors:TextViewLayer Grid.Column="1" TextView="{TemplateBinding editors:TextBoxBase.TextView}" Name="PART_TextViewLayer" />
+							</Grid>
+						</ScrollViewer>
+					</mwt:ListBoxChrome>
+					<ControlTemplate.Triggers>
+						<Trigger Property="UIElement.IsEnabled">
+							<Setter Property="Panel.Background">
+								<Setter.Value>
+									<DynamicResource ResourceKey="{ComponentResourceKey TypeInTargetAssembly=editors:PartEditBox, ResourceId=BackgroundDisabledBrush}" />
+								</Setter.Value>
+							</Setter>
+							<Setter Property="Border.BorderBrush">
+								<Setter.Value>
+									<DynamicResource ResourceKey="{ComponentResourceKey TypeInTargetAssembly=editors:PartEditBox, ResourceId=BorderDisabledBrush}" />
+								</Setter.Value>
+							</Setter>
+							<Setter Property="TextElement.Foreground">
+								<Setter.Value>
+									<DynamicResource ResourceKey="{ComponentResourceKey TypeInTargetAssembly=editors:PartEditBox, ResourceId=ForegroundDisabledBrush}" />
+								</Setter.Value>
+							</Setter>
+							<Trigger.Value>
+								<s:Boolean>False</s:Boolean>
+							</Trigger.Value>
+						</Trigger>
+						<Trigger Property="editors:TextBoxBase.IsCaretVisible">
+							<Setter Property="UIElement.Visibility" TargetName="caretLayer">
+								<Setter.Value>
+									<x:Static Member="Visibility.Hidden" />
+								</Setter.Value>
+							</Setter>
+							<Trigger.Value>
+								<s:Boolean>False</s:Boolean>
+							</Trigger.Value>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	
+	<Style TargetType="{x:Type local:DecimalTextBox}" BasedOn="{StaticResource {x:Type editors:PartEditBox}}">
+		<Setter Property="Control.Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type local:DecimalTextBox}">
+					<Grid Name="grid" SnapsToDevicePixels="True">
+						<Popup IsOpen="False" Placement="Bottom" StaysOpen="True" PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}" AllowsTransparency="True" Name="PART_Popup" Focusable="False" TextElement.FontStyle="Normal" TextElement.FontWeight="Normal">
+							<mwt:SystemDropShadowChrome Color="#00FFFFFF" Name="dropShadow" MinWidth="{TemplateBinding editors:PartEditBox.MinDropDownWidth}" MaxWidth="{TemplateBinding editors:PartEditBox.MaxDropDownWidth}" MinHeight="{TemplateBinding editors:PartEditBox.MinDropDownHeight}" MaxHeight="{TemplateBinding editors:PartEditBox.MaxDropDownHeight}">
+								<Border BorderThickness="1,1,1,1" BorderBrush="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" Name="dropDownBorder">
+									<ContentPresenter Content="{TemplateBinding editors:PartEditBox.DropDownContent}" ContentTemplate="{TemplateBinding editors:PartEditBox.DropDownContentTemplate}" />
+								</Border>
+							</mwt:SystemDropShadowChrome>
+						</Popup>
+						<mwt:ListBoxChrome Background="{TemplateBinding Panel.Background}" BorderBrush="{TemplateBinding Border.BorderBrush}" BorderThickness="{TemplateBinding Border.BorderThickness}" RenderMouseOver="{TemplateBinding UIElement.IsMouseOver}" RenderFocused="{TemplateBinding UIElement.IsKeyboardFocusWithin}" Name="chrome" SnapsToDevicePixels="True">
+							<Grid Margin="{TemplateBinding Control.Padding}">
+								<!-- Editors.PartEditBox doesn't have a TextAlignment property, so we'll fake it with an expanding column -->
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="*" />
+									<ColumnDefinition Width="Auto" />
+								</Grid.ColumnDefinitions>
+								<editors:SlottedItemsPresenter Grid.Column="1" Name="PART_ItemsPresenter" />
+							</Grid>
+						</mwt:ListBoxChrome>
+					</Grid>
+					<ControlTemplate.Triggers>
+						<Trigger Property="UIElement.IsEnabled">
+							<Setter Property="Panel.Background">
+								<Setter.Value>
+									<DynamicResource ResourceKey="{ComponentResourceKey TypeInTargetAssembly=editors:PartEditBox, ResourceId=BackgroundDisabledBrush}" />
+								</Setter.Value>
+							</Setter>
+							<Setter Property="Border.BorderBrush">
+								<Setter.Value>
+									<DynamicResource ResourceKey="{ComponentResourceKey TypeInTargetAssembly=editors:PartEditBox, ResourceId=BorderDisabledBrush}" />
+								</Setter.Value>
+							</Setter>
+							<Setter Property="TextElement.Foreground">
+								<Setter.Value>
+									<DynamicResource ResourceKey="{ComponentResourceKey TypeInTargetAssembly=editors:PartEditBox, ResourceId=ForegroundDisabledBrush}" />
+								</Setter.Value>
+							</Setter>
+							<Trigger.Value>
+								<s:Boolean>False</s:Boolean>
+							</Trigger.Value>
+						</Trigger>
+						<Trigger Property="editors:PartEditBox.IsDropDownOpen">
+							<Setter Property="mwt:ListBoxChrome.RenderFocused" TargetName="chrome">
+								<Setter.Value>
+									<s:Boolean>True</s:Boolean>
+								</Setter.Value>
+							</Setter>
+							<Trigger.Value>
+								<s:Boolean>True</s:Boolean>
+							</Trigger.Value>
+						</Trigger>
+						<Trigger Property="editors:PartEditBox.MinDropDownWidth">
+							<Setter Property="FrameworkElement.MinWidth" TargetName="dropShadow">
+								<Setter.Value>
+									<Binding Path="ActualWidth" ElementName="grid" />
+								</Setter.Value>
+							</Setter>
+							<Trigger.Value>
+								<s:Double>NaN</s:Double>
+							</Trigger.Value>
+						</Trigger>
+						<Trigger Property="editors:PartEditBox.HasDropDownContent">
+							<Setter Property="FrameworkElement.Height" TargetName="dropDownBorder">
+								<Setter.Value>
+									<s:Double>95</s:Double>
+								</Setter.Value>
+							</Setter>
+							<Trigger.Value>
+								<s:Boolean>False</s:Boolean>
+							</Trigger.Value>
+						</Trigger>
+						<Trigger Property="Popup.HasDropShadow" SourceName="PART_Popup">
+							<Setter Property="FrameworkElement.Margin" TargetName="dropShadow">
+								<Setter.Value>
+									<Thickness>0,0,5,5</Thickness>
+								</Setter.Value>
+							</Setter>
+							<Setter Property="mwt:SystemDropShadowChrome.Color" TargetName="dropShadow">
+								<Setter.Value>
+									<Color>#71000000</Color>
+								</Setter.Value>
+							</Setter>
+							<Trigger.Value>
+								<s:Boolean>True</s:Boolean>
+							</Trigger.Value>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style TargetType="{x:Type local:PercentageTextBox}" BasedOn="{StaticResource {x:Type editors:PartEditBox}}">
+		<Setter Property="Control.Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type local:PercentageTextBox}">
+					<Grid Name="grid" SnapsToDevicePixels="True">
+						<Popup IsOpen="False" Placement="Bottom" StaysOpen="True" PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}" AllowsTransparency="True" Name="PART_Popup" Focusable="False" TextElement.FontStyle="Normal" TextElement.FontWeight="Normal">
+							<mwt:SystemDropShadowChrome Color="#00FFFFFF" Name="dropShadow" MinWidth="{TemplateBinding editors:PartEditBox.MinDropDownWidth}" MaxWidth="{TemplateBinding editors:PartEditBox.MaxDropDownWidth}" MinHeight="{TemplateBinding editors:PartEditBox.MinDropDownHeight}" MaxHeight="{TemplateBinding editors:PartEditBox.MaxDropDownHeight}">
+								<Border BorderThickness="1,1,1,1" BorderBrush="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" Name="dropDownBorder">
+									<ContentPresenter Content="{TemplateBinding editors:PartEditBox.DropDownContent}" ContentTemplate="{TemplateBinding editors:PartEditBox.DropDownContentTemplate}" />
+								</Border>
+							</mwt:SystemDropShadowChrome>
+						</Popup>
+						<mwt:ListBoxChrome Background="{TemplateBinding Panel.Background}" BorderBrush="{TemplateBinding Border.BorderBrush}" BorderThickness="{TemplateBinding Border.BorderThickness}" RenderMouseOver="{TemplateBinding UIElement.IsMouseOver}" RenderFocused="{TemplateBinding UIElement.IsKeyboardFocusWithin}" Name="chrome" SnapsToDevicePixels="True">
+							<Grid Margin="{TemplateBinding Control.Padding}">
+								<!-- Editors.PartEditBox doesn't have a TextAlignment property, so we'll fake it with an expanding column -->
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="*" />
+									<ColumnDefinition Width="Auto" />
+								</Grid.ColumnDefinitions>
+								<editors:SlottedItemsPresenter Grid.Column="1" Name="PART_ItemsPresenter" />
+							</Grid>
+						</mwt:ListBoxChrome>
+					</Grid>
+					<ControlTemplate.Triggers>
+						<Trigger Property="UIElement.IsEnabled">
+							<Setter Property="Panel.Background">
+								<Setter.Value>
+									<DynamicResource ResourceKey="{ComponentResourceKey TypeInTargetAssembly=editors:PartEditBox, ResourceId=BackgroundDisabledBrush}" />
+								</Setter.Value>
+							</Setter>
+							<Setter Property="Border.BorderBrush">
+								<Setter.Value>
+									<DynamicResource ResourceKey="{ComponentResourceKey TypeInTargetAssembly=editors:PartEditBox, ResourceId=BorderDisabledBrush}" />
+								</Setter.Value>
+							</Setter>
+							<Setter Property="TextElement.Foreground">
+								<Setter.Value>
+									<DynamicResource ResourceKey="{ComponentResourceKey TypeInTargetAssembly=editors:PartEditBox, ResourceId=ForegroundDisabledBrush}" />
+								</Setter.Value>
+							</Setter>
+							<Trigger.Value>
+								<s:Boolean>False</s:Boolean>
+							</Trigger.Value>
+						</Trigger>
+						<Trigger Property="editors:PartEditBox.IsDropDownOpen">
+							<Setter Property="mwt:ListBoxChrome.RenderFocused" TargetName="chrome">
+								<Setter.Value>
+									<s:Boolean>True</s:Boolean>
+								</Setter.Value>
+							</Setter>
+							<Trigger.Value>
+								<s:Boolean>True</s:Boolean>
+							</Trigger.Value>
+						</Trigger>
+						<Trigger Property="editors:PartEditBox.MinDropDownWidth">
+							<Setter Property="FrameworkElement.MinWidth" TargetName="dropShadow">
+								<Setter.Value>
+									<Binding Path="ActualWidth" ElementName="grid" />
+								</Setter.Value>
+							</Setter>
+							<Trigger.Value>
+								<s:Double>NaN</s:Double>
+							</Trigger.Value>
+						</Trigger>
+						<Trigger Property="editors:PartEditBox.HasDropDownContent">
+							<Setter Property="FrameworkElement.Height" TargetName="dropDownBorder">
+								<Setter.Value>
+									<s:Double>95</s:Double>
+								</Setter.Value>
+							</Setter>
+							<Trigger.Value>
+								<s:Boolean>False</s:Boolean>
+							</Trigger.Value>
+						</Trigger>
+						<Trigger Property="Popup.HasDropShadow" SourceName="PART_Popup">
+							<Setter Property="FrameworkElement.Margin" TargetName="dropShadow">
+								<Setter.Value>
+									<Thickness>0,0,5,5</Thickness>
+								</Setter.Value>
+							</Setter>
+							<Setter Property="mwt:SystemDropShadowChrome.Color" TargetName="dropShadow">
+								<Setter.Value>
+									<Color>#71000000</Color>
+								</Setter.Value>
+							</Setter>
+							<Trigger.Value>
+								<s:Boolean>True</s:Boolean>
+							</Trigger.Value>
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style x:Key="PartMaskedTextBoxStyle" TargetType="{x:Type editors:MaskedTextBox}">
+		<Setter Property="Background" Value="Transparent" />
+		<Setter Property="BorderThickness" Value="0" />
+		<Setter Property="ClipToBounds" Value="False" />
+		<Setter Property="Focusable" Value="{Binding IsEditable, RelativeSource={RelativeSource TemplatedParent}}" />
+		<Setter Property="Foreground" Value="{Binding Foreground, RelativeSource={RelativeSource TemplatedParent}}" />
+		<Setter Property="IsAutoSelectAllEnabled" Value="True" />
+		<Setter Property="Margin" Value="0" />
+		<Setter Property="Padding" Value="0" />
+		<Setter Property="PromptIndicatorVisibility" Value="Always" />
+	</Style>
+	
+	<Style x:Key="percentagePartGroup" TargetType="{x:Type local:DecimalPartGroup}"
+			BasedOn="{StaticResource {x:Type editors:PartGroup}}">
+		<Setter Property="SpinBehavior"
+				Value="{Binding SpinBehaviour, RelativeSource={RelativeSource AncestorType={x:Type local:PercentageTextBox}}}" />
+	</Style>
+
+	<Style x:Key="{x:Type local:DecimalPartGroup}" TargetType="{x:Type local:DecimalPartGroup}"
+			BasedOn="{StaticResource {x:Type editors:PartGroup}}">
+		<Setter Property="SpinBehavior"
+				Value="{Binding SpinBehaviour, RelativeSource={RelativeSource AncestorType={x:Type local:DecimalTextBox}}}" />
+	</Style>
+
+	<Style x:Key="{x:Type local:DecimalPart}" TargetType="{x:Type local:DecimalPart}"
+				 BasedOn="{StaticResource {x:Type editors:Part}}">
+
+		<!-- Inheirted properties -->
+		<Setter Property="IsInitialValueAutoUpdated"
+				Value="{Binding IsInitialValueAutoUpdated, RelativeSource={RelativeSource AncestorType={x:Type local:DecimalPartGroup}}}" />
+		<Setter Property="IsNullAllowed"
+				Value="{Binding IsNullAllowed, RelativeSource={RelativeSource AncestorType={x:Type local:DecimalPartGroup}}}" />
+		<Setter Property="SpinBehavior"
+				Value="{Binding SpinBehaviour, RelativeSource={RelativeSource AncestorType={x:Type local:DecimalPartGroup}}}" />
+
+		<!-- Control template -->
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type local:DecimalPart}">
+					<Border Padding="{TemplateBinding Padding}" Background="{TemplateBinding Background}"
+							BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+						<editors:MaskedTextBox x:Name="PART_MaskedTextBox" Style="{StaticResource PartMaskedTextBoxStyle}"
+								Mask="{Binding Mask, RelativeSource={RelativeSource TemplatedParent}}"
+								Text="{editors:SyncBinding StringValue, RelativeSource={RelativeSource TemplatedParent}, UpdateSourceTrigger=PropertyChanged}" />
+					</Border>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	
+</ResourceDictionary>

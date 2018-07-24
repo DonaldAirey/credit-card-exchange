@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" />
+                            <xsd:attribute name="type" type="xsd:string" />
+                            <xsd:attribute name="mimetype" type="xsd:string" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="ResMimeType">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="Version">
+        <value>1.0.0.0</value>
+    </resheader>
+    <resheader name="Reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="Writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="guardianError">
+        <value>Guardian Error</value>
+    </data>
+    <data name="invalidQuantity">
+        <value>You must enter a quantity for the destinationOrder</value>
+    </data>
+    <data name="negativeQuantity">
+        <value>Share quantities must be positivie</value>
+    </data>
+    <data name="invalidBrokerSymbol">
+        <value>You must enter a valid broker symbol</value>
+    </data>
+    <data name="invalidTimeInForceMnemonic">
+        <value>You must enter a valid Time-In-Force instruction (DAY, OPG, GTC, etc.)</value>
+    </data>
+    <data name="invalidOrderTypeMnemonic">
+        <value>You must enter a valid pricing instruction (MKT, LMT, STP, STPLMT)</value>
+    </data>
+    <data name="invalidMarketPrice1">
+        <value>Market Orders must not have a limit or stop loss price</value>
+    </data>
+    <data name="invalidMarketPrice2">
+        <value>Market Orders must not have a stop limit price</value>
+    </data>
+    <data name="missingLimitPrice1">
+        <value>Limit Orders must have a limit price</value>
+    </data>
+    <data name="invalidLimitPrice2">
+        <value>Limit Orders must not have a stop limit price</value>
+    </data>
+    <data name="missingStopLossPrice1">
+        <value>Stop Loss Orders must have a stop price</value>
+    </data>
+    <data name="invalidStopLossPrice2">
+        <value>Stop Loss Orders must not have a stop limit price</value>
+    </data>
+    <data name="missingStopLimitPrice1">
+        <value>Stop Limit Orders must have a stop loss price</value>
+    </data>
+    <data name="missingStopLimitPrice2">
+        <value>Stop Limit Orders must have a stop limit price</value>
+    </data>
+    <data name="incorrectFormat">
+        <value>Input string was not in a correct format.</value>
+    </data>
+    <data name="localDestinationOrderNotFound">
+        <value>Local DestinationOrder {0} not found.</value>
+    </data>
+    <data name="blotterNotFound">
+        <value>Blotter {0} not found.</value>
+    </data>
+    <data name="missingDestinationOrderReport">
+        <value>Blotter {0} has no DestinationOrder Report</value>
+    </data>
+</root>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://globalclientsolutions.com/WebServices/DebitInfoWSDS.xsd" xmlns="http://globalclientsolutions.com/WebServices/DebitInfoWSDS.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://globalclientsolutions.com/WebServices/DebitInfoWSDS.xsd" id="DebitInfoWSDS" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="DebitInfoWSDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DEBIT_TYPES">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="DEBIT_TYPE" type="xs:string" />
+              <xs:element minOccurs="0" name="DEBIT_TYPE_DESCRIPTION" type="xs:string" />
+              <xs:element minOccurs="0" name="POLICY_GROUP_ID" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

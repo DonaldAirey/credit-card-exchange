@@ -1,0 +1,55 @@
+﻿<Window x:Class="FluidTrade.Guardian.Windows.WindowLogin"
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		    xmlns:guardian="clr-namespace:FluidTrade.Guardian.Windows"
+				MinHeight="268"
+				MinWidth="342">
+	<Window.CommandBindings>
+		<CommandBinding Command="FluidTradeCommands.Cancel"
+										Executed="OnCancel" />
+		<CommandBinding Command="FluidTradeCommands.OK"
+										Executed="OnOkay" />
+	</Window.CommandBindings>
+	<StackPanel>
+		<Image Height="60" />
+		
+		<StackPanel Orientation="Horizontal" Margin="10,17,0,0">
+			<TextBlock Text="Connecting to " />
+			<TextBlock Name="serverName" />
+		</StackPanel>
+		<Grid Margin="10,15">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="105" />
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="Auto" />
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+			</Grid.RowDefinitions>
+			
+			<TextBlock Text="E-mail address:" Grid.Row="0" Grid.Column="0" />
+			<TextBox Name="userName" Grid.Row="0" Grid.Column="1" />
+
+			<TextBlock Text="Password:" Grid.Row="1" Grid.Column="0" />
+			<PasswordBox Name="password" Grid.Row="1" Grid.Column="1" />
+		</Grid>
+
+		<StackPanel FlowDirection="RightToLeft"
+								Margin="10,28,6,0"
+								Orientation="Horizontal">
+			<Button Content="Cancel"
+							Height="21"
+							Margin="4"
+							Width="73"
+							Command="FluidTradeCommands.Cancel"
+							IsCancel="True"/>
+			<Button Content="OK"
+							Height="21"
+							Margin="4"
+							Width="73" 
+							Command="FluidTradeCommands.OK"
+							IsDefault="True"/>
+		</StackPanel>
+	</StackPanel>
+</Window>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/PayeesWSDS.xsd" xmlns="http://tempuri.org/PayeesWSDS.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/PayeesWSDS.xsd" id="PayeesWSDS" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="PayeesWSDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PAYEES">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PAYEE_ID" type="xs:decimal" />
+              <xs:element minOccurs="0" name="COMPANY_ID" type="xs:string" />
+              <xs:element minOccurs="0" name="DRC_PAYEE_ID" type="xs:string" />
+              <xs:element minOccurs="0" name="PAYEE_NAME" type="xs:string" />
+              <xs:element minOccurs="0" name="ACTIVE_FLAG" type="xs:string" />
+              <xs:element minOccurs="0" name="CREATION_DATE" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="MODIFIED_DATE" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="MODIFIED_BY" type="xs:string" />
+              <xs:element minOccurs="0" name="ORIGINAL_ID" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ADDRESSES">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PAYEE_ADDRESS_ID" type="xs:decimal" />
+              <xs:element minOccurs="0" name="PAYEE_ID" type="xs:decimal" />
+              <xs:element minOccurs="0" name="ADDRESS1" type="xs:string" />
+              <xs:element minOccurs="0" name="ADDRESS2" type="xs:string" />
+              <xs:element minOccurs="0" name="CITY" type="xs:string" />
+              <xs:element minOccurs="0" name="STATE" type="xs:string" />
+              <xs:element minOccurs="0" name="COUNTRY" type="xs:string" />
+              <xs:element minOccurs="0" name="ZIPCODE" type="xs:string" />
+              <xs:element minOccurs="0" name="ACTIVE_FLAG" type="xs:string" />
+              <xs:element minOccurs="0" name="MODIFIED_DATE" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="CREATION_DATE" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="MODIFIED_BY" type="xs:string" />
+              <xs:element minOccurs="0" name="ORIGINAL_ID" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BANKS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PAYEE_BANK_ID" type="xs:decimal" />
+              <xs:element minOccurs="0" name="PAYEE_ID" type="xs:decimal" />
+              <xs:element minOccurs="0" name="BANK_ROUTING_NUM" type="xs:string" />
+              <xs:element minOccurs="0" name="BANK_ACCOUNT_NUM" type="xs:string" />
+              <xs:element minOccurs="0" name="BANK_ACCOUNT_TYPE" type="xs:string" />
+              <xs:element minOccurs="0" name="ACTIVE_FLAG" type="xs:string" />
+              <xs:element minOccurs="0" name="MODIFIED_DATE" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="CREATION_DATE" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="MODIFIED_BY" type="xs:string" />
+              <xs:element minOccurs="0" name="BANK_TYPE" type="xs:string" />
+              <xs:element minOccurs="0" name="ORIGINAL_ID" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CONTACTS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PAYEE_CONTACT_ID" type="xs:decimal" />
+              <xs:element minOccurs="0" name="PAYEE_ID" type="xs:decimal" />
+              <xs:element minOccurs="0" name="NAME" type="xs:string" />
+              <xs:element minOccurs="0" name="PHONE_NUMBER" type="xs:string" />
+              <xs:element minOccurs="0" name="EMAIL_ADDRESS" type="xs:string" />
+              <xs:element minOccurs="0" name="ACTIVE_FLAG" type="xs:string" />
+              <xs:element minOccurs="0" name="CREATION_DATE" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="MODIFIED_DATE" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="MODIFIED_BY" type="xs:string" />
+              <xs:element minOccurs="0" name="ORIGINAL_ID" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ERRORS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ERROR_ID" type="xs:decimal" />
+              <xs:element minOccurs="0" name="TABLE_NAME" type="xs:string" />
+              <xs:element minOccurs="0" name="TABLE_ID" type="xs:string" />
+              <xs:element minOccurs="0" name="ROW_ID" type="xs:decimal" />
+              <xs:element minOccurs="0" name="COLUMN_ID" type="xs:string" />
+              <xs:element minOccurs="0" name="ERROR_TYPE" type="xs:string" />
+              <xs:element minOccurs="0" name="ERROR_CODE" type="xs:string" />
+              <xs:element minOccurs="0" name="ERROR_TEXT" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="META_INFO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="INFO_CLASS" type="xs:string" />
+              <xs:element minOccurs="0" name="INFO_TYPE" type="xs:string" />
+              <xs:element minOccurs="0" name="INFO_CODE" type="xs:string" />
+              <xs:element minOccurs="0" name="VALUE" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique msdata:PrimaryKey="true" name="PayeesWSDSKey1">
+      <xs:selector xpath=".//mstns:PAYEES" />
+      <xs:field xpath="mstns:PAYEE_ID" />
+    </xs:unique>
+    <xs:unique msdata:PrimaryKey="true" name="PayeesWSDSKey2">
+      <xs:selector xpath=".//mstns:ADDRESSES" />
+      <xs:field xpath="mstns:PAYEE_ADDRESS_ID" />
+    </xs:unique>
+    <xs:unique msdata:PrimaryKey="true" name="PayeesWSDSKey3">
+      <xs:selector xpath=".//mstns:BANKS" />
+      <xs:field xpath="mstns:PAYEE_BANK_ID" />
+    </xs:unique>
+    <xs:unique msdata:PrimaryKey="true" name="PayeesWSDSKey4">
+      <xs:selector xpath=".//mstns:CONTACTS" />
+      <xs:field xpath="mstns:PAYEE_CONTACT_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

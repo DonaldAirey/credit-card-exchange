@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian.Records" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian.Records" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/Guardian/Trading Support?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://localhost/Guardian/Trading Support?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Core" />
+  <xs:import schemaLocation="http://localhost/Guardian/Trading Support?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="EntityTree">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ChildId" type="ser:guid" />
+          <xs:element minOccurs="0" name="ParentId" type="ser:guid" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityTree" nillable="true" type="tns:EntityTree" />
+  <xs:complexType name="BaseRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ConfigurationId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RowId" type="ser:guid" />
+      <xs:element minOccurs="0" name="RowVersion" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseRecord" nillable="true" type="tns:BaseRecord" />
+  <xs:complexType name="Entity">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BlotterId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ExternalId0" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ExternalId1" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ExternalId2" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ExternalId3" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ExternalId4" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ExternalId5" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ExternalId6" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ExternalId7" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ImageId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="IsHidden" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="IsReadOnly" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ParentId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="TenantId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="TypeId" nillable="true" type="ser:guid" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Entity" nillable="true" type="tns:Entity" />
+  <xs:complexType name="ArrayOfEntityTree">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EntityTree" nillable="true" type="tns:EntityTree" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEntityTree" nillable="true" type="tns:ArrayOfEntityTree" />
+  <xs:complexType name="MethodResponseErrorCode">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="MethodResponse{0}" Namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian.Records" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ErrorCode" Namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Core" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Errors" nillable="true" type="tns:ArrayOfErrorInfo" />
+      <xs:element minOccurs="0" name="IsSuccessful" type="xs:boolean" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/FluidTrade.Core" minOccurs="0" name="Result" type="q1:ErrorCode" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MethodResponseErrorCode" nillable="true" type="tns:MethodResponseErrorCode" />
+  <xs:complexType name="ArrayOfErrorInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ErrorInfo" nillable="true" type="tns:ErrorInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfErrorInfo" nillable="true" type="tns:ArrayOfErrorInfo" />
+  <xs:complexType name="ErrorInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BulkIndex" type="xs:int" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/FluidTrade.Core" minOccurs="0" name="ErrorCode" type="q2:ErrorCode" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ErrorInfo" nillable="true" type="tns:ErrorInfo" />
+  <xs:complexType name="MethodResponseguid">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="MethodResponse{0}" Namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian.Records" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="guid" Namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Errors" nillable="true" type="tns:ArrayOfErrorInfo" />
+      <xs:element minOccurs="0" name="IsSuccessful" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Result" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MethodResponseguid" nillable="true" type="tns:MethodResponseguid" />
+  <xs:complexType name="CreditCard">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountBalance" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="AccountNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConsumerId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="DebtHolder" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DebtRuleId" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="OriginalAccountNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CreditCard" nillable="true" type="tns:CreditCard" />
+  <xs:complexType name="ArrayOfCreditCard">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CreditCard" nillable="true" type="tns:CreditCard" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCreditCard" nillable="true" type="tns:ArrayOfCreditCard" />
+  <xs:complexType name="MethodResponseArrayOfguid">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="MethodResponse{0}" Namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian.Records" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfguid" Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Errors" nillable="true" type="tns:ArrayOfErrorInfo" />
+      <xs:element minOccurs="0" name="IsSuccessful" type="xs:boolean" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Result" nillable="true" type="q3:ArrayOfguid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MethodResponseArrayOfguid" nillable="true" type="tns:MethodResponseArrayOfguid" />
+  <xs:complexType name="MethodResponseArrayOfCreditCard">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="MethodResponse{0}" Namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian.Records" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfCreditCard" Namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian.Records" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Errors" nillable="true" type="tns:ArrayOfErrorInfo" />
+      <xs:element minOccurs="0" name="IsSuccessful" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:ArrayOfCreditCard" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MethodResponseArrayOfCreditCard" nillable="true" type="tns:MethodResponseArrayOfCreditCard" />
+  <xs:complexType name="ConsumerDebtPayment">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActualPaymentDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ActualPaymentValue" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="CheckId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ClearedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Fee0" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsCleared" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Memo0" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Memo1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Memo2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Memo3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StatusId" type="ser:guid" />
+          <xs:element minOccurs="0" name="TrackingNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ConsumerDebtPayment" nillable="true" type="tns:ConsumerDebtPayment" />
+  <xs:complexType name="ArrayOfConsumerDebtPayment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConsumerDebtPayment" nillable="true" type="tns:ConsumerDebtPayment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConsumerDebtPayment" nillable="true" type="tns:ArrayOfConsumerDebtPayment" />
+  <xs:complexType name="ConsumerTrustPayment">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ActualPaymentDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ActualPaymentValue" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="CheckId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ClearedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Fee0" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsCleared" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Memo0" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Memo1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Memo2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Memo3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StatusId" type="ser:guid" />
+          <xs:element minOccurs="0" name="TrackingNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ConsumerTrustPayment" nillable="true" type="tns:ConsumerTrustPayment" />
+  <xs:complexType name="ArrayOfConsumerTrustPayment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConsumerTrustPayment" nillable="true" type="tns:ConsumerTrustPayment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConsumerTrustPayment" nillable="true" type="tns:ArrayOfConsumerTrustPayment" />
+  <xs:complexType name="Negotiation">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BlotterId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="ExecutionId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="IsRead" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="MatchId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="Quantity" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="StatusCodeId" nillable="true" type="ser:guid" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Negotiation" nillable="true" type="tns:Negotiation" />
+  <xs:complexType name="ArrayOfNegotiation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Negotiation" nillable="true" type="tns:Negotiation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNegotiation" nillable="true" type="tns:ArrayOfNegotiation" />
+  <xs:complexType name="Province">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Abbreviation" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="CountryId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="ExternalId0" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ExternalId1" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ProvinceId" nillable="true" type="xs:anyType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Province" nillable="true" type="tns:Province" />
+  <xs:complexType name="ArrayOfProvince">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Province" nillable="true" type="tns:Province" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProvince" nillable="true" type="tns:ArrayOfProvince" />
+  <xs:complexType name="Report">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ExternalId0" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsArchived" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsDeleted" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReportId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="ReportTypeId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="Xaml" nillable="true" type="xs:anyType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Report" nillable="true" type="tns:Report" />
+  <xs:complexType name="ArrayOfReport">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Report" nillable="true" type="tns:Report" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfReport" nillable="true" type="tns:ArrayOfReport" />
+  <xs:complexType name="Security">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AverageDailyVolume" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="CountryId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="Logo" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="MarketCapitalization" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="MinimumQuantity" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="PriceFactor" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="QuantityFactor" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="SecurityId" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="Symbol" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="TenantId" type="ser:guid" />
+          <xs:element minOccurs="0" name="VolumeCategoryId" type="ser:guid" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Security" nillable="true" type="tns:Security" />
+  <xs:complexType name="ArrayOfSecurity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Security" nillable="true" type="tns:Security" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSecurity" nillable="true" type="tns:ArrayOfSecurity" />
+  <xs:complexType name="MethodResponseArrayOfSecurity">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="MethodResponse{0}" Namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian.Records" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfSecurity" Namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian.Records" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Errors" nillable="true" type="tns:ArrayOfErrorInfo" />
+      <xs:element minOccurs="0" name="IsSuccessful" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:ArrayOfSecurity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MethodResponseArrayOfSecurity" nillable="true" type="tns:MethodResponseArrayOfSecurity" />
+  <xs:complexType name="WorkingOrderRecord">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AutomaticQuantity" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="BlotterId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="CrossingCode" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="DestinationId" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ExternalId0" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="IsAutomatic" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="IsAwake" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="IsBrokerMatch" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsHedgeFundMatch" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsInstitutionMatch" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LimitPrice" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="OrderTypeCode" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="SecurityId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="SettlementDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="SettlementId" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="SideId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="StartUTCTime" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="StatusCodeId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="StopPrice" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="StopUTCTime" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="SubmittedQuantity" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="SubmittedUTCTime" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="TimeInForceId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="TradeDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="UploadedUTCTime" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="WorkingOrderId" nillable="true" type="xs:anyType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WorkingOrderRecord" nillable="true" type="tns:WorkingOrderRecord" />
+  <xs:complexType name="ArrayOfWorkingOrderRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WorkingOrderRecord" nillable="true" type="tns:WorkingOrderRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWorkingOrderRecord" nillable="true" type="tns:ArrayOfWorkingOrderRecord" />
+  <xs:complexType name="MethodResponseArrayOfWorkingOrderRecord">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="MethodResponse{0}" Namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian.Records" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfWorkingOrderRecord" Namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian.Records" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Errors" nillable="true" type="tns:ArrayOfErrorInfo" />
+      <xs:element minOccurs="0" name="IsSuccessful" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:ArrayOfWorkingOrderRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MethodResponseArrayOfWorkingOrderRecord" nillable="true" type="tns:MethodResponseArrayOfWorkingOrderRecord" />
+  <xs:complexType name="CommissionSchedule">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CommissionTranches" nillable="true" type="tns:ArrayOfCommissionTranche" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CommissionSchedule" nillable="true" type="tns:CommissionSchedule" />
+  <xs:complexType name="ArrayOfCommissionTranche">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CommissionTranche" nillable="true" type="tns:CommissionTranche" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCommissionTranche" nillable="true" type="tns:ArrayOfCommissionTranche" />
+  <xs:complexType name="CommissionTranche">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CommissionType" type="ser:guid" />
+          <xs:element minOccurs="0" name="CommissionUnit" type="ser:guid" />
+          <xs:element minOccurs="0" name="EndRange" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="StartRange" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Value" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CommissionTranche" nillable="true" type="tns:CommissionTranche" />
+  <xs:complexType name="ArrayOfCommissionSchedule">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CommissionSchedule" nillable="true" type="tns:CommissionSchedule" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCommissionSchedule" nillable="true" type="tns:ArrayOfCommissionSchedule" />
+  <xs:complexType name="DebtRule">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IsAutoSettled" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Owner" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="PaymentLength" nillable="true" type="xs:decimal" />
+          <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PaymentMethod" nillable="true" type="q4:ArrayOfguid" />
+          <xs:element minOccurs="0" name="PaymentStartDateLength" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="PaymentStartDateUnitId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="SettlementUnitId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="SettlementValue" nillable="true" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DebtRule" nillable="true" type="tns:DebtRule" />
+  <xs:complexType name="ArrayOfDebtRule">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DebtRule" nillable="true" type="tns:DebtRule" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDebtRule" nillable="true" type="tns:ArrayOfDebtRule" />
+  <xs:complexType name="Blotter">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Entity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CommissionSchedule" nillable="true" type="tns:CommissionSchedule" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Blotter" nillable="true" type="tns:Blotter" />
+  <xs:complexType name="MethodResponseArrayOfBlotter">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="MethodResponse{0}" Namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian.Records" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfBlotter" Namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian.Records" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Errors" nillable="true" type="tns:ArrayOfErrorInfo" />
+      <xs:element minOccurs="0" name="IsSuccessful" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:ArrayOfBlotter" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MethodResponseArrayOfBlotter" nillable="true" type="tns:MethodResponseArrayOfBlotter" />
+  <xs:complexType name="ArrayOfBlotter">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Blotter" nillable="true" type="tns:Blotter" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBlotter" nillable="true" type="tns:ArrayOfBlotter" />
+  <xs:complexType name="ArrayOfEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Entity" nillable="true" type="tns:Entity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEntity" nillable="true" type="tns:ArrayOfEntity" />
+  <xs:complexType name="Consumer">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Address1" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="Address2" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="DateOfBirth" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ExternalId0" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ExternalId1" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="IsEmployed" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="MatchId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProvinceId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="Salutation" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="SocialSecurityNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Suffix" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="WorkingOrderId" nillable="true" type="ser:guid" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Consumer" nillable="true" type="tns:Consumer" />
+  <xs:complexType name="ArrayOfConsumer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Consumer" nillable="true" type="tns:Consumer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConsumer" nillable="true" type="tns:ArrayOfConsumer" />
+  <xs:complexType name="DebtHolderImportTranslation">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountBalance" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AccountCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Address1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Address2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DateOfBirth" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DateOfDelinquency" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DebtHolder" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ExternalId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OriginalAccountNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProvinceCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SocialSecurityNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Suffix" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VendorCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DebtHolderImportTranslation" nillable="true" type="tns:DebtHolderImportTranslation" />
+  <xs:complexType name="ArrayOfDebtHolderImportTranslation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DebtHolderImportTranslation" nillable="true" type="tns:DebtHolderImportTranslation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDebtHolderImportTranslation" nillable="true" type="tns:ArrayOfDebtHolderImportTranslation" />
+  <xs:complexType name="MethodResponseArrayOfConsumer">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="MethodResponse{0}" Namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian.Records" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfConsumer" Namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian.Records" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Errors" nillable="true" type="tns:ArrayOfErrorInfo" />
+      <xs:element minOccurs="0" name="IsSuccessful" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:ArrayOfConsumer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MethodResponseArrayOfConsumer" nillable="true" type="tns:MethodResponseArrayOfConsumer" />
+  <xs:complexType name="ConsumerDebt">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CollectionDate" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ConsumerDebtId" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ConsumerId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="CreditCardId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="DateOfDelinquency" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="DebtRuleId" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ExternalId0" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="Representative" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="Tag" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="TenantId" type="ser:guid" />
+          <xs:element minOccurs="0" name="VendorCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ConsumerDebt" nillable="true" type="tns:ConsumerDebt" />
+  <xs:complexType name="ArrayOfConsumerDebt">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConsumerDebt" nillable="true" type="tns:ConsumerDebt" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConsumerDebt" nillable="true" type="tns:ArrayOfConsumerDebt" />
+  <xs:complexType name="ArrayOfBaseRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BaseRecord" nillable="true" type="tns:BaseRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBaseRecord" nillable="true" type="tns:ArrayOfBaseRecord" />
+  <xs:complexType name="ConsumerDebtNegotiationInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ConsumerDebtNegotiationId" type="ser:guid" />
+      <xs:element minOccurs="0" name="PaymentLength" type="xs:decimal" />
+      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PaymentMethodTypes" nillable="true" type="q5:ArrayOfguid" />
+      <xs:element minOccurs="0" name="PaymentStartDateLength" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PaymentStartDateUnitId" type="ser:guid" />
+      <xs:element minOccurs="0" name="RowVersion" type="xs:long" />
+      <xs:element minOccurs="0" name="SettlementUnitId" type="ser:guid" />
+      <xs:element minOccurs="0" name="SettlementValue" type="xs:decimal" />
+      <xs:element name="StatusId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConsumerDebtNegotiationInfo" nillable="true" type="tns:ConsumerDebtNegotiationInfo" />
+  <xs:complexType name="ArrayOfConsumerDebtNegotiationInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConsumerDebtNegotiationInfo" nillable="true" type="tns:ConsumerDebtNegotiationInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConsumerDebtNegotiationInfo" nillable="true" type="tns:ArrayOfConsumerDebtNegotiationInfo" />
+  <xs:complexType name="MethodResponseArrayOfConsumerDebtNegotiationInfo">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="MethodResponse{0}" Namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian.Records" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfConsumerDebtNegotiationInfo" Namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian.Records" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Errors" nillable="true" type="tns:ArrayOfErrorInfo" />
+      <xs:element minOccurs="0" name="IsSuccessful" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:ArrayOfConsumerDebtNegotiationInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MethodResponseArrayOfConsumerDebtNegotiationInfo" nillable="true" type="tns:MethodResponseArrayOfConsumerDebtNegotiationInfo" />
+  <xs:complexType name="DebtHolderRecord">
+    <xs:sequence>
+      <xs:element name="AccountBalance" type="xs:decimal" />
+      <xs:element name="AccountCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address2" nillable="true" type="xs:string" />
+      <xs:element name="Blotter" type="ser:guid" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CollectionDate" nillable="true" type="xs:dateTime" />
+      <xs:element name="ConfigurationId" nillable="true" type="xs:string" />
+      <xs:element name="CountryCode" nillable="true" type="xs:string" />
+      <xs:element name="Currency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateOfBirth" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateOfDelinquency" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DebtHolder" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+      <xs:element name="OriginalAccountNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProvinceCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Representative" nillable="true" type="xs:string" />
+      <xs:element name="SocialSecurityNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Suffix" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tag" nillable="true" type="xs:string" />
+      <xs:element name="VendorCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DebtHolderRecord" nillable="true" type="tns:DebtHolderRecord" />
+  <xs:complexType name="ArrayOfDebtHolderRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DebtHolderRecord" nillable="true" type="tns:DebtHolderRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDebtHolderRecord" nillable="true" type="tns:ArrayOfDebtHolderRecord" />
+  <xs:complexType name="ArrayOfDebtNegotiatorRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DebtNegotiatorRecord" nillable="true" type="tns:DebtNegotiatorRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDebtNegotiatorRecord" nillable="true" type="tns:ArrayOfDebtNegotiatorRecord" />
+  <xs:complexType name="DebtNegotiatorRecord">
+    <xs:sequence>
+      <xs:element name="AccountBalance" type="xs:decimal" />
+      <xs:element name="AccountCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankAccountNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankRoutingNumber" nillable="true" type="xs:string" />
+      <xs:element name="Blotter" type="ser:guid" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element name="ConfigurationId" nillable="true" type="xs:string" />
+      <xs:element name="CountryCode" nillable="true" type="xs:string" />
+      <xs:element name="Currency" nillable="true" type="xs:string" />
+      <xs:element name="CustomerCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateOfBirth" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DebtHolder" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsEmployed" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+      <xs:element name="OriginalAccountNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProvinceCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Salutation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SavingsAccount" nillable="true" type="xs:string" />
+      <xs:element name="SavingsBalance" type="xs:decimal" />
+      <xs:element name="SavingsEntityCode" nillable="true" type="xs:string" />
+      <xs:element name="SocialSecurityNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Suffix" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tag" nillable="true" type="xs:string" />
+      <xs:element name="VendorCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DebtNegotiatorRecord" nillable="true" type="tns:DebtNegotiatorRecord" />
+  <xs:complexType name="DebtHolder">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DebtClass">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DebtHolder" nillable="true" type="tns:DebtHolder" />
+  <xs:complexType name="DebtClass">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Blotter">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Address1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Address2" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="BankAccountNumber" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="BankRoutingNumber" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContactName" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="DebtRuleId" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="Department" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ForBenefitOf" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Province" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="SettlementTemplate" nillable="true" type="xs:anyType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DebtClass" nillable="true" type="tns:DebtClass" />
+  <xs:complexType name="ArrayOfDebtHolder">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DebtHolder" nillable="true" type="tns:DebtHolder" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDebtHolder" nillable="true" type="tns:ArrayOfDebtHolder" />
+  <xs:complexType name="ChatInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ChatId" type="ser:guid" />
+      <xs:element minOccurs="0" name="MatchId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChatInfo" nillable="true" type="tns:ChatInfo" />
+  <xs:complexType name="ArrayOfChatInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ChatInfo" nillable="true" type="tns:ChatInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfChatInfo" nillable="true" type="tns:ArrayOfChatInfo" />
+  <xs:complexType name="DebtNegotiator">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DebtClass">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DebtNegotiator" nillable="true" type="tns:DebtNegotiator" />
+  <xs:complexType name="ArrayOfDebtNegotiator">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DebtNegotiator" nillable="true" type="tns:DebtNegotiator" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDebtNegotiator" nillable="true" type="tns:ArrayOfDebtNegotiator" />
+  <xs:complexType name="ConsumerTrustNegotiationInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ConsumerTrustNegotiationId" type="ser:guid" />
+      <xs:element minOccurs="0" name="PaymentLength" type="xs:decimal" />
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PaymentMethodTypes" nillable="true" type="q6:ArrayOfguid" />
+      <xs:element minOccurs="0" name="PaymentStartDateLength" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PaymentStartDateUnitId" type="ser:guid" />
+      <xs:element minOccurs="0" name="RowVersion" type="xs:long" />
+      <xs:element minOccurs="0" name="SettlementUnitId" type="ser:guid" />
+      <xs:element minOccurs="0" name="SettlementValue" type="xs:decimal" />
+      <xs:element minOccurs="0" name="StatusId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConsumerTrustNegotiationInfo" nillable="true" type="tns:ConsumerTrustNegotiationInfo" />
+  <xs:complexType name="ArrayOfConsumerDebtSettlementAcceptInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConsumerDebtSettlementAcceptInfo" nillable="true" type="tns:ConsumerDebtSettlementAcceptInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConsumerDebtSettlementAcceptInfo" nillable="true" type="tns:ArrayOfConsumerDebtSettlementAcceptInfo" />
+  <xs:complexType name="ConsumerDebtSettlementAcceptInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ConsumerDebtSettlementId" type="ser:guid" />
+      <xs:element minOccurs="0" name="RowVersion" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConsumerDebtSettlementAcceptInfo" nillable="true" type="tns:ConsumerDebtSettlementAcceptInfo" />
+  <xs:complexType name="ConsumerTrust">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseRecord">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ConsumerId" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="ConsumerTrustId" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="DebtRuleId" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="ExternalId0" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="SavingsAccount" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="SavingsBalance" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="Tag" nillable="true" type="xs:anyType" />
+          <xs:element minOccurs="0" name="TenantId" type="ser:guid" />
+          <xs:element minOccurs="0" name="VendorCode" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ConsumerTrust" nillable="true" type="tns:ConsumerTrust" />
+  <xs:complexType name="ArrayOfConsumerTrust">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConsumerTrust" nillable="true" type="tns:ConsumerTrust" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConsumerTrust" nillable="true" type="tns:ArrayOfConsumerTrust" />
+  <xs:complexType name="ArrayOfConsumerDebtNegotiationIsReadInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConsumerDebtNegotiationIsReadInfo" nillable="true" type="tns:ConsumerDebtNegotiationIsReadInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConsumerDebtNegotiationIsReadInfo" nillable="true" type="tns:ArrayOfConsumerDebtNegotiationIsReadInfo" />
+  <xs:complexType name="ConsumerDebtNegotiationIsReadInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ConsumerDebtNegotiationId" type="ser:guid" />
+      <xs:element minOccurs="0" name="IsRead" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="RowVersion" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConsumerDebtNegotiationIsReadInfo" nillable="true" type="tns:ConsumerDebtNegotiationIsReadInfo" />
+  <xs:complexType name="ArrayOfConsumerTrustNegotiationInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConsumerTrustNegotiationInfo" nillable="true" type="tns:ConsumerTrustNegotiationInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConsumerTrustNegotiationInfo" nillable="true" type="tns:ArrayOfConsumerTrustNegotiationInfo" />
+  <xs:complexType name="ArrayOfConsumerTrustNegotiationIsReadInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConsumerTrustNegotiationIsReadInfo" nillable="true" type="tns:ConsumerTrustNegotiationIsReadInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConsumerTrustNegotiationIsReadInfo" nillable="true" type="tns:ArrayOfConsumerTrustNegotiationIsReadInfo" />
+  <xs:complexType name="ConsumerTrustNegotiationIsReadInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ConsumerTrustNegotiationId" type="ser:guid" />
+      <xs:element minOccurs="0" name="IsRead" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="RowVersion" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConsumerTrustNegotiationIsReadInfo" nillable="true" type="tns:ConsumerTrustNegotiationIsReadInfo" />
+</xs:schema>

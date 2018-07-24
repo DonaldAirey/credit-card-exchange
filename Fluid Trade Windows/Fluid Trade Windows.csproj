@@ -1,0 +1,287 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96E46257-35EE-4466-AD52-B4DDFB2F81D4}</ProjectGuid>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <RootNamespace>Fluid_Trade_Windows</RootNamespace>
+    <AssemblyName>FluidTrade.FluidTradeWindows</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <OutputType>library</OutputType>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Public Key.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>true</DelaySign>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\GetViewportDelegate.cs" />
+    <Compile Include="Controls\MaskTextBox.cs" />
+    <Compile Include="Controls\Validation\LengthInRangeRule.cs" />
+    <Compile Include="Controls\Validation\NumericOnlyValidationRule.cs" />
+    <Compile Include="Controls\Viewer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\WatermarkAdorner.cs" />
+    <Compile Include="Controls\WatermarkService.cs" />
+    <Compile Include="DragDropHelper.cs" />
+    <Compile Include="DraggedAdorner.cs" />
+    <Compile Include="DropAction.cs" />
+    <Compile Include="FluidTradeCommands.cs" />
+    <Compile Include="CollectionChangedEventArgs.cs" />
+    <Compile Include="CommandArgumentPair.cs" />
+    <Compile Include="Controls\BitmapString.cs" />
+    <Compile Include="Controls\BodyCanvas.cs" />
+    <Compile Include="Controls\ReportCell.cs" />
+    <Compile Include="Controls\CellTemplate.cs" />
+    <Compile Include="Controls\ColumnChangedEventArgs.cs" />
+    <Compile Include="Controls\ItemSelector.cs" />
+    <Compile Include="Controls\ReportColumn.cs" />
+    <Compile Include="Controls\ReportColumnCollection.cs" />
+    <Compile Include="Controls\ColumnDefinitionElement.cs" />
+    <Compile Include="Controls\ColumnDefinitionsEventArgs.cs" />
+    <Compile Include="Controls\ColumnDefinitionsEventHandler.cs" />
+    <Compile Include="Controls\ColumnHeaderCanvas.cs" />
+    <Compile Include="Controls\ColumnSelector.xaml.cs">
+      <DependentUpon>ColumnSelector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ColumnWidthPopup.cs" />
+    <Compile Include="Controls\DefaultDocument.cs" />
+    <Compile Include="Controls\DestinationPopup.cs" />
+    <Compile Include="Controls\ReportField.cs" />
+    <Compile Include="Controls\FieldDefinitionCollection.cs" />
+    <Compile Include="Controls\FieldDefinitionElement.cs" />
+    <Compile Include="Controls\GetColumnDefinitionDelegate.cs" />
+    <Compile Include="Controls\HeaderPopup.cs" />
+    <Compile Include="Controls\IsRowVisibleDelegate.cs" />
+    <Compile Include="Controls\DynamicReport.cs" />
+    <Compile Include="Controls\ReportCanvas.cs" />
+    <Compile Include="Controls\ReportGrid.cs" />
+    <Compile Include="Controls\ReportParserContext.cs" />
+    <Compile Include="Controls\ReportSourceChangedEventArgs.cs" />
+    <Compile Include="Controls\ReportSourceChangedEventHandler.cs" />
+    <Compile Include="Controls\ReportGridUndo.cs" />
+    <Compile Include="Controls\ResizeColumnEventArgs.cs" />
+    <Compile Include="Controls\ResizeColumnHandler.cs" />
+    <Compile Include="Controls\ResizeRowEventArgs.cs" />
+    <Compile Include="Controls\ResizeRowHandler.cs" />
+    <Compile Include="Controls\ReportRow.cs" />
+    <Compile Include="Controls\ReportRowCollection.cs" />
+    <Compile Include="Controls\RowDefinitionsEventArgs.cs" />
+    <Compile Include="Controls\RowDefinitionsEventHandler.cs" />
+    <Compile Include="Controls\RowHeaderCanvas.cs" />
+    <Compile Include="Controls\RowHeightPopup.cs" />
+    <Compile Include="Controls\RowTemplate.cs" />
+    <Compile Include="Controls\RowTemplateCollection.cs" />
+    <Compile Include="Controls\SideImage.cs" />
+    <Compile Include="Controls\SizeChangedEventArgs.cs" />
+    <Compile Include="Controls\SizeChangedEventHandler.cs" />
+    <Compile Include="Controls\SortEventArgs.cs" />
+    <Compile Include="Controls\SortHandler.cs" />
+    <Compile Include="Controls\SortItem.cs" />
+    <Compile Include="Controls\StringStream.cs" />
+    <Compile Include="Controls\TimeInForceSource.cs" />
+    <Compile Include="Controls\UndoPropertyChangedEventArgs.cs" />
+    <Compile Include="Controls\ValueBlock.cs" />
+    <Compile Include="Controls\OrderTypeBlock.cs" />
+    <Compile Include="FrameCommandArgs.cs" />
+    <Compile Include="MaskTextFormatter.cs" />
+    <Compile Include="MessageDelegate.cs" />
+    <Compile Include="MouseAction.cs" />
+    <Compile Include="OrderTypeConverter.cs" />
+    <Compile Include="FormattingConverter.cs" />
+    <Compile Include="InputHelper.cs" />
+    <Compile Include="ObjectOpenEventHandler.cs" />
+    <Compile Include="ReportCellPropertyChangedEventArgs.cs" />
+    <Compile Include="ReportCellPropertyChangedEventHandler.cs" />
+    <Compile Include="Storyline.cs" />
+    <Compile Include="NullTimeline.cs" />
+    <Compile Include="Controls\FocusableTextbox.cs">
+    </Compile>
+    <Compile Include="TimelineSegment.cs" />
+    <Compile Include="GenericEventArgs.cs" />
+    <Compile Include="GenericEventHandlers.cs" />
+    <Compile Include="IUndo.cs" />
+    <Compile Include="StorylineQueue.cs" />
+    <Compile Include="RichTextBoxUndo.cs" />
+    <Compile Include="TextBoxUndo.cs" />
+    <Compile Include="ToggleButtonUndo.cs" />
+    <Compile Include="FocusUndo.cs" />
+    <Compile Include="SelectorUndo.cs" />
+    <Compile Include="Controls\ReportGridtToolTipEventArgs.cs" />
+    <Compile Include="UndoBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TextBoxBaseUndo.cs" />
+    <Compile Include="UndoManager.cs" />
+    <Compile Include="UndoObject.cs" />
+    <Compile Include="FluidTradeWindows.cs" />
+    <Compile Include="Utilities\DispatcherHelper.cs" />
+    <Compile Include="Utilities\EventBehaviourFactory .cs" />
+    <Compile Include="Utilities\LibraryHelper.cs" />
+    <Compile Include="Utilities\ObservableCollectionHelper.cs" />
+    <Compile Include="Utilities\UIHelper.cs" />
+    <Compile Include="Utilities\VeryObservableCollection.cs" />
+    <EmbeddedResource Include="Controls\Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Key Pair.snk" />
+    <None Include="Public Key.snk" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Fluid Trade Library\Fluid Trade Library.csproj">
+      <Project>{734051D9-B2A3-44E9-A88B-7B4FDB90109F}</Project>
+      <Name>Fluid Trade Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\ColumnSelector.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Resources\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Controls\Resources\BigEx.cur" />
+    <Resource Include="Controls\Resources\Cross.cur" />
+    <Resource Include="Controls\Resources\HorizontalSplit.cur" />
+    <Resource Include="Controls\Resources\SelectColumn.cur" />
+    <Resource Include="Controls\Resources\SelectRow.cur" />
+    <Resource Include="Controls\Resources\VerticalSplit.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

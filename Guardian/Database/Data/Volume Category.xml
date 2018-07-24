@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="Volume Categories">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <transaction>
+    <method name="CreateVolumeCategoryEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Less than 1 Million" />
+      <parameter name="externalId0" value="LOW" />
+      <parameter name="highVolumeRange" value="1000000" />
+      <parameter name="lowVolumeRange" value="0" />
+      <parameter name="mnemonic" value="Low" />
+      <parameter name="volumeCategoryCode" value="Low" />
+    </method>
+    <method name="CreateVolumeCategoryEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="1 to 5 Million" />
+      <parameter name="externalId0" value="MEDIUM" />
+      <parameter name="highVolumeRange" value="5000000" />
+      <parameter name="lowVolumeRange" value="1000000" />
+      <parameter name="mnemonic" value="Mid" />
+      <parameter name="volumeCategoryCode" value="Medium" />
+    </method>
+    <method name="CreateVolumeCategoryEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Above 5 Million" />
+      <parameter name="externalId0" value="HIGH" />
+      <parameter name="lowVolumeRange" value="5000000" />
+      <parameter name="mnemonic" value="High" />
+      <parameter name="volumeCategoryCode" value="High" />
+    </method>
+    <method name="CreateVolumeCategoryEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Not known" />
+      <parameter name="externalId0" value="UNKNOWN" />
+      <parameter name="mnemonic" value="Unk" />
+      <parameter name="volumeCategoryCode" value="Unknown" />
+    </method>
+  </transaction>
+</script>

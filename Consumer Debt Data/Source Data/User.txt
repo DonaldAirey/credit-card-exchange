@@ -1,0 +1,8 @@
+﻿Richard Scary, password, Worldwide Holdings, rscary@wwholdings.com
+Zuzu Petals, password, Consolidated Settlements, z.petals@consolidatedsettlements.com
+Theodore Cleaver, password, Federated Holdings, theo.cleaver@federatedholdings.com
+Marion Cunningham, password, Cunningham Settlements, marian@cunninghamsettlements.com
+
+#Kai Hitori, password, National Holdings, Kai.Hitori@NationalHoldings.com
+#Ingrid Yeoh, password, National Holdings, Ingrid.Yeoh@NationalHoldings.com
+#Karen Holden, password, Global Settlements, Karen.Holden@GlobalSettlements.com

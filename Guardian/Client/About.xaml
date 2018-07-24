@@ -1,0 +1,122 @@
+﻿<Window x:Class="FluidTrade.Guardian.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Icon="Resources\Application.ico"
+    Title= "About" Height="410" Width="375">
+	<Window.Resources>
+		<Style x:Key="FooterButtonStyle" TargetType="{x:Type Button}">
+			<Setter Property="Width" Value="100" />
+			<Setter Property="Height" Value="28" />
+			<Setter Property="Margin" Value="8,0,4,-10" />
+		</Style>
+		<!-- Default Textbox Style-->
+		<Style TargetType="{x:Type TextBox}">
+			<Setter Property="IsReadOnly" Value="True" />
+			<Setter Property="BorderBrush" Value="Transparent" />
+			<Setter Property="Background" Value="{x:Null}" />
+			<Setter Property="VerticalContentAlignment" Value="Center" />
+		</Style>
+
+		<Style  x:Key="UnfocusableTextBox" TargetType="{x:Type TextBox}">
+			<Setter Property="Focusable" Value="False" />
+			<Setter Property="IsReadOnly" Value="True" />
+			<Setter Property="IsHitTestVisible" Value="False" />
+			<Setter Property="BorderBrush" Value="Transparent" />
+			<Setter Property="Background" Value="{x:Null}" />
+			<Setter Property="VerticalContentAlignment" Value="Center" />
+		</Style>
+		<Style TargetType="{x:Type ListBoxItem}">
+			<!--<Setter Property="IsHitTestVisible" Value="False" />-->
+			<Setter Property="Background" Value="{x:Null}" />
+		</Style>
+		<Style TargetType="{x:Type Label}">
+			<Setter Property="IsHitTestVisible" Value="False" />
+			<Setter Property="Background" Value="{x:Null}" />
+		</Style>
+		<Style x:Key="FooterPanelStyle" TargetType="{x:Type UniformGrid}">
+			<Style.Resources>
+				<Style TargetType="{x:Type Button}" BasedOn="{StaticResource FooterButtonStyle}" />
+			</Style.Resources>
+			<Setter Property="Rows" Value="1" />
+			<Setter Property="HorizontalAlignment" Value="Right" />
+		</Style>
+	</Window.Resources>
+	<Window.Background>
+		<LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+			<GradientStop Color="White" Offset="0"/>
+			<GradientStop Color="White" Offset="0.207"/>
+		</LinearGradientBrush>
+	</Window.Background>
+	<DockPanel >
+		<!-- Footer -->
+		<UniformGrid DockPanel.Dock="Bottom"
+					 Style="{StaticResource FooterPanelStyle}"></UniformGrid>
+
+		<!-- Main Content -->
+		<Grid Height="364" Width="353" DockPanel.Dock="Top" >
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" MinHeight="60" />
+				<RowDefinition Height="Auto" MinHeight="238" />
+			</Grid.RowDefinitions>
+
+			<Image Source="Resources\Application Banner.bmp" Margin="-6,0,6,0" VerticalAlignment="Top"  Height="63" Grid.RowSpan="2" />
+
+			<StackPanel Grid.Row="1" Width="330" Margin="10" HorizontalAlignment="Left">
+				<TextBlock>Product details:</TextBlock>
+				<ListBox Background="{x:Null}">
+					<ListBoxItem>
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="85"/>
+								<ColumnDefinition/>
+							</Grid.ColumnDefinitions>
+							<Label Content="Server:" Target="{Binding ElementName=serverName}" HorizontalAlignment="Left"  />
+							<TextBox x:Name="serverName" Grid.Column="1" Style="{StaticResource UnfocusableTextBox}"/>
+						</Grid>
+					</ListBoxItem>
+					<ListBoxItem>
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="85"/>
+								<ColumnDefinition/>
+							</Grid.ColumnDefinitions>
+							<Label Content="Client Version:" Target="{Binding ElementName=clientVersion}" />
+							<TextBox x:Name="clientVersion" Grid.Column="1" />
+						</Grid>
+					</ListBoxItem>
+					<ListBoxItem>
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="85"/>
+								<ColumnDefinition/>
+							</Grid.ColumnDefinitions>
+							<Label Content="Server Version:" Target="{Binding ElementName=serverVersion}" />
+							<TextBox x:Name="serverVersion" Grid.Column="1"/>
+						</Grid>
+					</ListBoxItem>
+				</ListBox>
+				<Image Height="20" />
+				<TextBlock>This product is licensed to:</TextBlock>
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition/>
+						<RowDefinition/>
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="85"/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>
+					<Label Content="_User name:" Target="{Binding ElementName=userName}" HorizontalAlignment="Left"  />
+					<TextBox  x:Name="userName" Grid.Column="1"  Style="{StaticResource UnfocusableTextBox}"/>
+					<Label Content="Ping:"  Grid.Row="1" Target="{Binding ElementName=latentcy}" HorizontalAlignment="Left"  />
+					<TextBox  x:Name="latency" Grid.Row="1" Grid.Column="1" Style="{StaticResource UnfocusableTextBox}"/>
+				</Grid>
+				<Image Height="20" />
+				<TextBox Style="{StaticResource UnfocusableTextBox}"
+				TextWrapping="Wrap">WARNING: This computer program is protected by copyright law and international treaties.</TextBox>
+			</StackPanel>
+			<Button IsCancel="True" Height="28" HorizontalAlignment="Right"  Grid.Row="1" VerticalAlignment="Bottom" Width="58" Margin="0,0,13,-28">_OK</Button>
+		</Grid>
+	</DockPanel>
+
+</Window>

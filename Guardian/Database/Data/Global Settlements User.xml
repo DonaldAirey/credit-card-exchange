@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<script name="Global Settlements Users">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <transaction>
+    <method name="CreateEntityEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+			<parameter name="createdTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="externalId0" value="Karen Holden" />
+      <parameter name="externalId7" value="Karen Holden" />
+      <parameter name="hidden" value="false" />
+      <parameter name="imageKey" value="USER" />
+			<parameter name="modifiedTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="name" value="Karen Holden" />
+      <parameter name="readOnly" value="false" />
+	  <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+      <parameter name="typeKey" value="TRADER" />
+    </method>
+    <method name="CreateRightsHolderEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="entityKey" value="Karen Holden" />
+      <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+    </method>
+    <method name="CreateUserEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="rightsHolderKey" value="Karen Holden" />
+      <parameter name="identityName" value="karen.holden@globalsettlements.com" />
+	    <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+    </method>
+    <method name="CreateTraderEx" client="DataModelClient">
+      <parameter name="blotterIdDefault" value="Global Settlements Karen Holden BLOTTER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="isAgencyMatch" value="true" />
+      <parameter name="isBrokerMatch" value="true" />
+      <parameter name="isCommissionChangeAllowed" value="false" />
+      <parameter name="isEditExecutionsAllowed" value="true" />
+      <parameter name="isHedgeMatch" value="true" />
+      <parameter name="isHeld" value="true" />
+      <parameter name="isInstitutionMatch" value="true" />
+      <parameter name="lotSizeDefault" value="100" />
+      <parameter name="marketSleep" value="10" />
+      <parameter name="reviewWindow" value="0" />
+      <parameter name="submissionTypeCode" value="AlwaysMatch" />
+      <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+      <parameter name="userKey" value="Karen Holden" />
+    </method>
+    <method name="CreateGroupUsersEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="{a139a561-f34f-4eed-83bc-84a6d3e28634}" />
+      <parameter name="groupKey" value="Global Settlements ADMINISTRATORS" />
+      <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+      <parameter name="userKey" value="Karen Holden" />
+    </method>
+  </transaction>
+  <method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Karen Holden" />
+		<parameter name="rightsHolderKey" value="FLUID TRADE ADMINISTRATORS" />
+    <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Karen Holden" />
+		<parameter name="rightsHolderKey" value="Global Settlements ADMINISTRATORS" />
+    <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="READ BROWSE" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="Karen Holden" />
+		<parameter name="rightsHolderKey" value="Global Settlements USERS" />
+    <parameter name="tenantKey" value="Global Settlements ORGANIZATION" />
+	</method>
+</script>

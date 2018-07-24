@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b9136a72-6fae-4d14-9742-5152c2730c88" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://websvctest.globalclientsolutions.com/v3.0/webservices.asmx?WSDL" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ClientsListWSDS.xsd" MetadataType="Schema" ID="a6f5dd02-76ec-436f-bf4a-154a44e84b7e" SourceId="1" SourceUrl="https://websvctest.globalclientsolutions.com/v3.0/webservices.asmx?schema=ClientsListWSDS" />
+    <MetadataFile FileName="BanksWSDS.xsd" MetadataType="Schema" ID="52048864-77de-475f-8d4a-9e4b16be1f8e" SourceId="1" SourceUrl="https://websvctest.globalclientsolutions.com/v3.0/webservices.asmx?schema=BanksWSDS" />
+    <MetadataFile FileName="PolicyGroupsWSDS.xsd" MetadataType="Schema" ID="35e8b30c-d264-424c-9be3-a02a50b8319d" SourceId="1" SourceUrl="https://websvctest.globalclientsolutions.com/v3.0/webservices.asmx?schema=PolicyGroupsWSDS" />
+    <MetadataFile FileName="PayeesListWSDS.xsd" MetadataType="Schema" ID="ff978f62-3c3b-4932-970d-9a59d9f83778" SourceId="1" SourceUrl="https://websvctest.globalclientsolutions.com/v3.0/webservices.asmx?schema=PayeesListWSDS" />
+    <MetadataFile FileName="webservices.wsdl" MetadataType="Wsdl" ID="38b1e9a7-b81d-4101-b08c-3d588870bf68" SourceId="1" SourceUrl="https://websvctest.globalclientsolutions.com/v3.0/webservices.asmx?WSDL" />
+    <MetadataFile FileName="ClientsWSDS.xsd" MetadataType="Schema" ID="0562bf3b-74cb-4372-bcb6-ce6cd190d8ee" SourceId="1" SourceUrl="https://websvctest.globalclientsolutions.com/v3.0/webservices.asmx?schema=ClientsWSDS" />
+    <MetadataFile FileName="DebitInfoWSDS.xsd" MetadataType="Schema" ID="4c0122d0-7d4d-4173-b172-51b73ecdfa96" SourceId="1" SourceUrl="https://websvctest.globalclientsolutions.com/v3.0/webservices.asmx?schema=DebitInfoWSDS" />
+    <MetadataFile FileName="DepositsWSDS.xsd" MetadataType="Schema" ID="16660aa8-6e08-4b77-86a4-4a1fc222ea7b" SourceId="1" SourceUrl="https://websvctest.globalclientsolutions.com/v3.0/webservices.asmx?schema=DepositsWSDS" />
+    <MetadataFile FileName="PaymentsWSDS.xsd" MetadataType="Schema" ID="51daa7c7-e110-4857-966f-533c0950b868" SourceId="1" SourceUrl="https://websvctest.globalclientsolutions.com/v3.0/webservices.asmx?schema=PaymentsWSDS" />
+    <MetadataFile FileName="AccountsWSDS.xsd" MetadataType="Schema" ID="2541b444-fc51-4776-bca0-65f9986a4991" SourceId="1" SourceUrl="https://websvctest.globalclientsolutions.com/v3.0/webservices.asmx?schema=AccountsWSDS" />
+    <MetadataFile FileName="NsfStatusWSDS.xsd" MetadataType="Schema" ID="a46e0cfd-cacd-452d-b0c9-475256b6fc27" SourceId="1" SourceUrl="https://websvctest.globalclientsolutions.com/v3.0/webservices.asmx?schema=NsfStatusWSDS" />
+    <MetadataFile FileName="PaymentInfoWSDS.xsd" MetadataType="Schema" ID="f0fbb0f9-756a-4653-99db-fb0092e529f4" SourceId="1" SourceUrl="https://websvctest.globalclientsolutions.com/v3.0/webservices.asmx?schema=PaymentInfoWSDS" />
+    <MetadataFile FileName="DebitsWSDS.xsd" MetadataType="Schema" ID="4ec461f9-2340-4432-8e5c-b8a7cc60af6f" SourceId="1" SourceUrl="https://websvctest.globalclientsolutions.com/v3.0/webservices.asmx?schema=DebitsWSDS" />
+    <MetadataFile FileName="TransactionsWSDS.xsd" MetadataType="Schema" ID="d04ae17f-1a8f-4de3-895b-f9cb504093f3" SourceId="1" SourceUrl="https://websvctest.globalclientsolutions.com/v3.0/webservices.asmx?schema=TransactionsWSDS" />
+    <MetadataFile FileName="NotesWSDS.xsd" MetadataType="Schema" ID="ea279cd8-9953-4fe8-94e9-d9e8cecc8c6c" SourceId="1" SourceUrl="https://websvctest.globalclientsolutions.com/v3.0/webservices.asmx?schema=NotesWSDS" />
+    <MetadataFile FileName="BankAccountTypesWSDS.xsd" MetadataType="Schema" ID="2619214c-ab2e-432a-9b1a-ca10626e1ca9" SourceId="1" SourceUrl="https://websvctest.globalclientsolutions.com/v3.0/webservices.asmx?schema=BankAccountTypesWSDS" />
+    <MetadataFile FileName="StatesWSDS.xsd" MetadataType="Schema" ID="5396ad70-f3a6-4fda-9484-cf1fb66b816d" SourceId="1" SourceUrl="https://websvctest.globalclientsolutions.com/v3.0/webservices.asmx?schema=StatesWSDS" />
+    <MetadataFile FileName="BankHolidaysWSDS.xsd" MetadataType="Schema" ID="6f6a7f49-b33f-4e5c-8067-2faa62dea184" SourceId="1" SourceUrl="https://websvctest.globalclientsolutions.com/v3.0/webservices.asmx?schema=BankHolidaysWSDS" />
+    <MetadataFile FileName="PayeesWSDS.xsd" MetadataType="Schema" ID="f5a8ee68-357f-4c85-aa3a-c87226d6e766" SourceId="1" SourceUrl="https://websvctest.globalclientsolutions.com/v3.0/webservices.asmx?schema=PayeesWSDS" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

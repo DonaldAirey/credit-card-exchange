@@ -1,0 +1,166 @@
+﻿<UserControl x:Class="FluidTrade.Guardian.Windows.Controls.PaymentScheduleControl"
+						 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+						 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+						 xmlns:sys="clr-namespace:System;assembly=mscorlib"
+						 xmlns:ft="http://schemas.fluidtrade.com/winfx/2006/xaml/fluidtrade/presentation"
+						 xmlns:core="clr-namespace:FluidTrade.Core;assembly=FluidTrade.FluidTradeLibrary"
+						 Name="paymentScheduleControl">
+	<!-- HACK: Disable this until we have time for more refined permissioning -->
+
+	<UserControl.Resources>
+		<Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
+			<Setter Property="VerticalAlignment" Value="Center" />
+			<Setter Property="HorizontalAlignment" Value="Left" />
+			<Setter Property="Margin" Value="0,5,2,5" />
+		</Style>
+		<Style TargetType="{x:Type ft:DecimalTextBox}" BasedOn="{StaticResource {x:Type ft:DecimalTextBox}}">
+			<Setter Property="VerticalAlignment" Value="Center" />
+			<Setter Property="HorizontalAlignment" Value="Stretch" />
+			<Setter Property="Minimum" Value="0" />
+			<Setter Property="Margin" Value="0,0,-10,0" />
+		</Style>
+		<Style TargetType="{x:Type ComboBox}" BasedOn="{StaticResource {x:Type ComboBox}}">
+			<Setter Property="VerticalAlignment" Value="Center" />
+			<Setter Property="HorizontalAlignment" Value="Stretch" />
+			<Setter Property="Margin" Value="0,0,-10,0" />
+			<Style.Triggers>
+				<DataTrigger Binding="{Binding Path=Inherits,ElementName=paymentScheduleControl}" Value="true">
+					<Setter Property="Visibility" Value="Collapsed" />
+				</DataTrigger>
+			</Style.Triggers>
+		</Style>
+		<Style x:Key="selectableLabel" TargetType="{x:Type TextBox}">
+			<Setter Property="IsReadOnly" Value="true" />
+			<Setter Property="IsTabStop" Value="false" />
+			<Setter Property="Foreground" Value="{x:Static SystemColors.ControlTextBrush}" />
+			<Setter Property="Visibility" Value="Collapsed" />
+			<Setter Property="Margin" Value="0,0,-11,0" />
+			<Style.Triggers>
+				<DataTrigger Binding="{Binding Path=Inherits,ElementName=paymentScheduleControl}" Value="true">
+					<Setter Property="Visibility" Value="Visible" />
+				</DataTrigger>
+			</Style.Triggers>
+		</Style>
+
+		<ObjectDataProvider MethodName="GetValues"
+                        ObjectType="{x:Type sys:Enum}"
+                        x:Key="types">
+			<ObjectDataProvider.MethodParameters>
+				<x:Type TypeName="core:CommissionType" />
+			</ObjectDataProvider.MethodParameters>
+		</ObjectDataProvider>
+		
+		<ObjectDataProvider MethodName="GetValues"
+                        ObjectType="{x:Type sys:Enum}"
+                        x:Key="units">
+			<ObjectDataProvider.MethodParameters>
+				<x:Type TypeName="core:CommissionUnit" />
+			</ObjectDataProvider.MethodParameters>
+		</ObjectDataProvider>
+	</UserControl.Resources>
+	
+	<UserControl.CommandBindings>
+		<CommandBinding Command="ApplicationCommands.New"
+										Executed="OnNew"
+										CanExecute="CanNew" />
+		<CommandBinding Command="ApplicationCommands.Delete"
+										Executed="OnDelete"
+										CanExecute="CanNew" />
+	</UserControl.CommandBindings>
+	
+	<Grid Name="content">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="10" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+		<CheckBox Name="inherit"
+							Margin="0,0,0,5"
+							Content="Inherits commission schedule from parent"
+							IsChecked="{Binding Path=Inherits,ElementName=paymentScheduleControl}" />
+		<Grid Grid.Row="3">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition Width="Auto" />
+			</Grid.ColumnDefinitions>
+			<TextBlock Text="Tranches:"  Grid.Column="0" Margin="0,0,0,5" VerticalAlignment="Center" />
+			<Button Content="New Tranche" Padding="5,2,5,2" Margin="0,0,2,5" Command="ApplicationCommands.New" VerticalAlignment="Center" Grid.Column="1" />
+			<Button Content="Delete Tranche" Padding="5,2,5,2" Margin="0,0,2,5" Command="ApplicationCommands.Delete" VerticalAlignment="Center" Grid.Column="2" />
+		</Grid>
+		<ListView Name="tranches" ItemsSource="{Binding CommissionTranches}" Grid.Row="4">
+			<ListView.ItemContainerStyle>
+				<Style TargetType="ListViewItem">
+					<Setter Property="HorizontalContentAlignment" Value="Stretch" />
+					<Setter Property="VerticalContentAlignment" Value="Stretch" />
+					<Setter Property="Padding" Value="0,0,0,0" />
+					<Setter Property="Margin" Value="-6,0,0,0" />
+					<EventSetter Event="GotKeyboardFocus" Handler="OnTrancheGotKeyboardFocus" />
+				</Style>
+			</ListView.ItemContainerStyle>
+			<ListView.View>
+				<GridView>
+					<GridView.Columns>
+						<!-- range start -->
+						<GridViewColumn Header="Start Range" Width="80">
+							<GridViewColumn.CellTemplate>
+								<DataTemplate>
+									<ft:DecimalTextBox Value="{Binding StartRange,Mode=TwoWay}"
+																		 IsReadOnly="{Binding Path=Inherits,ElementName=paymentScheduleControl}"
+																		 HorizontalAlignment="Stretch"
+																		 VerticalAlignment="Center" />
+								</DataTemplate>
+							</GridViewColumn.CellTemplate>
+						</GridViewColumn>
+						<!-- range end -->
+						<GridViewColumn Header="End Range" Width="80">
+							<GridViewColumn.CellTemplate>
+								<DataTemplate>
+									<ft:DecimalTextBox Value="{Binding EndRange,Mode=TwoWay}"
+																		 IsReadOnly="{Binding Path=Inherits,ElementName=paymentScheduleControl}"
+																		 HorizontalAlignment="Stretch"
+																		 VerticalAlignment="Center" />
+								</DataTemplate>
+							</GridViewColumn.CellTemplate>
+						</GridViewColumn>
+						<!-- commission type -->
+						<GridViewColumn Header="Type" Width="80">
+							<GridViewColumn.CellTemplate>
+								<DataTemplate>
+									<Grid>
+										<ComboBox ItemsSource="{Binding Source={StaticResource types}}" IsReadOnly="true" IsEditable="true" SelectedItem="{Binding CommissionType}" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+										<TextBox Style="{StaticResource selectableLabel}" IsReadOnly="true" Text="{Binding CommissionType}" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+									</Grid>
+								</DataTemplate>
+							</GridViewColumn.CellTemplate>
+						</GridViewColumn>
+						<!-- value -->
+						<GridViewColumn Header="Settlement Value" Width="80">
+							<GridViewColumn.CellTemplate>
+								<DataTemplate>
+									<ft:DecimalTextBox Value="{Binding Value,Mode=TwoWay}"
+																		 IsReadOnly="{Binding Path=Inherits,ElementName=paymentScheduleControl}"
+																		 HorizontalAlignment="Stretch"
+																		 VerticalAlignment="Center" />
+								</DataTemplate>
+							</GridViewColumn.CellTemplate>
+						</GridViewColumn>
+						<!-- commission units -->
+						<GridViewColumn Header="Unit" Width="80">
+							<GridViewColumn.CellTemplate>
+								<DataTemplate>
+									<Grid>
+										<ComboBox ItemsSource="{Binding Source={StaticResource units}}" IsReadOnly="true" IsEditable="true" SelectedItem="{Binding CommissionUnit}" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+										<TextBox Style="{StaticResource selectableLabel}" IsReadOnly="true" Text="{Binding CommissionType}" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+									</Grid>
+								</DataTemplate>
+							</GridViewColumn.CellTemplate>
+						</GridViewColumn>
+					</GridView.Columns>
+				</GridView>
+			</ListView.View>
+		</ListView>
+	</Grid>
+</UserControl>

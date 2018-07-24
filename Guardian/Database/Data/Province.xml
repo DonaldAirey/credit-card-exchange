@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="Province">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <transaction>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="AL" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="ALABAMA" />
+      <parameter name="externalId0" value="AL" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="AK" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="ALASKA" />
+      <parameter name="externalId0" value="AK" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="AS" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="AMERICAN SAMOA" />
+      <parameter name="externalId0" value="AS" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="AZ" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="ARIZONA" />
+      <parameter name="externalId0" value="AZ" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="AR" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="ARKANSAS" />
+      <parameter name="externalId0" value="AR" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="CA" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="CALIFORNIA" />
+      <parameter name="externalId0" value="CA" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="CO" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="COLORADO" />
+      <parameter name="externalId0" value="CO" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="CT" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="CONNECTICUT" />
+      <parameter name="externalId0" value="CT" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="DE" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="DELAWARE" />
+      <parameter name="externalId0" value="DE" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="DC" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="DISTRICT OF COLUMBIA" />
+      <parameter name="externalId0" value="DC" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="FM" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="FEDERATED STATES OF MICRONESIA" />
+      <parameter name="externalId0" value="FM" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="FL" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="FLORIDA" />
+      <parameter name="externalId0" value="FL" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="GA" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="GEORGIA" />
+      <parameter name="externalId0" value="GA" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="GU" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="GUAM" />
+      <parameter name="externalId0" value="GU" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="HI" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="HAWAII" />
+      <parameter name="externalId0" value="HI" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="ID" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="IDAHO" />
+      <parameter name="externalId0" value="ID" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="IL" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="ILLINOIS" />
+      <parameter name="externalId0" value="IL" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="IN" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="INDIANA" />
+      <parameter name="externalId0" value="IN" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="IA" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="IOWA" />
+      <parameter name="externalId0" value="IA" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="KS" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="KANSAS" />
+      <parameter name="externalId0" value="KS" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="KY" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="KENTUCKY" />
+      <parameter name="externalId0" value="KY" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="LA" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="LOUISIANA" />
+      <parameter name="externalId0" value="LA" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="ME" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="MAINE" />
+      <parameter name="externalId0" value="ME" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MH" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="MARSHALL ISLANDS" />
+      <parameter name="externalId0" value="MH" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MD" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="MARYLAND" />
+      <parameter name="externalId0" value="MD" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MA" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="MASSACHUSETTS" />
+      <parameter name="externalId0" value="MA" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MI" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="MICHIGAN" />
+      <parameter name="externalId0" value="MI" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MN" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="MINNESOTA" />
+      <parameter name="externalId0" value="MN" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MS" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="MISSISSIPPI" />
+      <parameter name="externalId0" value="MS" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MO" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="MISSOURI" />
+      <parameter name="externalId0" value="MO" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MT" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="MONTANA" />
+      <parameter name="externalId0" value="MT" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="NE" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="NEBRASKA" />
+      <parameter name="externalId0" value="NE" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="NV" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="NEVADA" />
+      <parameter name="externalId0" value="NV" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="NH" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="NEW HAMPSHIRE" />
+      <parameter name="externalId0" value="NH" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="NJ" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="NEW JERSEY" />
+      <parameter name="externalId0" value="NJ" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="NM" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="NEW MEXICO" />
+      <parameter name="externalId0" value="NM" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="NY" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="NEW YORK" />
+      <parameter name="externalId0" value="NY" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="NC" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="NORTH CAROLINA" />
+      <parameter name="externalId0" value="NC" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="ND" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="NORTH DAKOTA" />
+      <parameter name="externalId0" value="ND" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MP" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="NORTHERN MARIANA ISLANDS" />
+      <parameter name="externalId0" value="MP" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="OH" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="OHIO" />
+      <parameter name="externalId0" value="OH" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="OK" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="OKLAHOMA" />
+      <parameter name="externalId0" value="OK" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="OR" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="OREGON" />
+      <parameter name="externalId0" value="OR" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="PW" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="PALAU" />
+      <parameter name="externalId0" value="PW" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="PA" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="PENNSYLVANIA" />
+      <parameter name="externalId0" value="PA" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="PR" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="PUERTO RICO" />
+      <parameter name="externalId0" value="PR" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="RI" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="RHODE ISLAND" />
+      <parameter name="externalId0" value="RI" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="SC" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="SOUTH CAROLINA" />
+      <parameter name="externalId0" value="SC" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="SD" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="SOUTH DAKOTA" />
+      <parameter name="externalId0" value="SD" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="TN" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="TENNESSEE" />
+      <parameter name="externalId0" value="TN" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="TX" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="TEXAS" />
+      <parameter name="externalId0" value="TX" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="UT" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="UTAH" />
+      <parameter name="externalId0" value="UT" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="VT" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="VERMONT" />
+      <parameter name="externalId0" value="VT" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="VI" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="VIRGIN ISLANDS" />
+      <parameter name="externalId0" value="VI" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="VA" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="VIRGINIA" />
+      <parameter name="externalId0" value="VA" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="WA" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="WASHINGTON" />
+      <parameter name="externalId0" value="WA" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="WV" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="WEST VIRGINIA" />
+      <parameter name="externalId0" value="WV" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="WI" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="WISCONSIN" />
+      <parameter name="externalId0" value="WI" />
+    </method>
+    <method name="CreateProvinceEx" client="DataModelClient">
+      <parameter name="abbreviation" value="WY" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="countryKey" value="US" />
+      <parameter name="name" value="WYOMING" />
+      <parameter name="externalId0" value="WY" />
+    </method>
+  </transaction>
+</script>

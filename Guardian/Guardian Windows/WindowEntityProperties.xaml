@@ -1,0 +1,393 @@
+﻿<Window x:Class="FluidTrade.Guardian.Windows.WindowEntityProperties"
+        SizeToContent="Height"
+        ResizeMode="NoResize"
+        Width="367"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:mwt="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero"				
+				xmlns:guardian="clr-namespace:FluidTrade.Guardian.Windows"
+ 				xmlns:controls="clr-namespace:FluidTrade.Guardian.Windows.Controls"
+				Name="properties">
+	<Window.Title>
+		<Binding Path="Name">
+			<Binding.StringFormat>{0} Properties</Binding.StringFormat>
+		</Binding> 
+	</Window.Title>
+	<Window.CommandBindings>
+		<CommandBinding Command="FluidTradeCommands.Cancel"
+                      Executed="OnCancel" />
+		<CommandBinding Command="FluidTradeCommands.OK"
+                      Executed="OnOkay" />
+		<CommandBinding Command="FluidTradeCommands.Apply"
+                      Executed="OnApply" />
+		<CommandBinding Command="guardian:WindowEntityProperties.AddPermissionsGroup"
+                      Executed="OnAddPermissionGroup" />
+		<CommandBinding Command="guardian:WindowEntityProperties.RemovePermissionsGroup"
+                      Executed="OnRemovePermissionGroup" />
+	</Window.CommandBindings>
+	<Window.Resources>
+    <Style x:Key="SelectableLabel" TargetType="{x:Type TextBox}">
+      <Setter Property="IsReadOnly" Value="True" />
+      <Setter Property="IsEnabled" Value="True" />
+      <Setter Property="IsTabStop" Value="False" />
+      <Setter Property="BorderThickness" Value="0" />
+      <Setter Property="Background" Value="{x:Null}" />
+      <Setter Property="Foreground" Value="{x:Static SystemColors.ControlTextBrush}" />
+    </Style>
+		
+		<guardian:IdentityConverter x:Key="entityIdentity" />
+  </Window.Resources>
+  <UserControl Padding="6,7,6,2">
+    <Grid>
+      <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" MinHeight="36" />
+      </Grid.RowDefinitions>
+      <Grid.Style>
+        <Style>
+        <Style.Triggers>
+          <DataTrigger Binding="{Binding Path=Cursor,ElementName=properties}" Value="{x:Static Cursors.Wait}">
+            <Setter Property="Grid.IsEnabled" Value="false" /> 
+          </DataTrigger>
+        </Style.Triggers>
+        </Style>
+      </Grid.Style>
+
+      <TabControl Grid.Row="0"
+                  FontSize="11"
+                  Name="tabControl">
+        <TabItem Header="General" Name="generalTab">
+          <UserControl Padding="7">
+            <Grid>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="73" />
+                <ColumnDefinition Width="*" />
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="7" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="Auto" />
+								<RowDefinition Height="Auto" />
+								<RowDefinition Height="Auto" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="Auto" />
+								<RowDefinition Height="Auto" />
+								<RowDefinition Height="10" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition MinHeight="80" />
+              </Grid.RowDefinitions>
+              <Image Grid.Column="0"
+										 Grid.Row="0"
+										 Height="32"
+										 HorizontalAlignment="Left"
+										 Name="imageEntity"
+										 Source="{Binding ImageSource}"
+										 Width="32" />
+              <TextBox Grid.Column="1"
+											 Grid.Row="0"
+											 VerticalAlignment="Center"
+											 Name="FolderName"
+											 Text="{Binding Path=Name,UpdateSourceTrigger=PropertyChanged}" />
+              <Separator Grid.Column="0"
+												 Grid.ColumnSpan="2"
+												 Grid.Row="1"/>
+
+              <TextBlock Text="Type:"
+												 Grid.Column="0"
+												 Grid.Row="2"
+												 HorizontalAlignment="Left"
+												 VerticalAlignment="Center"
+												 Margin="0,7"/>
+              <TextBox Style="{StaticResource SelectableLabel}"
+											 Grid.Column="1"
+											 Grid.Row="2"
+											 HorizontalAlignment="Left"
+											 Name="labelType"
+											 VerticalAlignment="Center" />
+              <TextBlock Text="Description:"
+												 Grid.Column="0"
+												 Grid.Row="3"
+												 HorizontalAlignment="Left"
+												 VerticalAlignment="Center"
+												 Margin="0,7" />
+              <TextBox Grid.Column="1"
+											 Grid.Row="3"
+											 Name="description"
+											 Text="{Binding Path=Description,UpdateSourceTrigger=PropertyChanged}"
+											 VerticalAlignment="Center" />
+              <Separator Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="4" VerticalAlignment="Center" />
+
+              <TextBlock Text="Location:"
+												 Grid.Column="0"
+												 Grid.Row="5"
+												 HorizontalAlignment="Left"
+												 VerticalAlignment="Center"
+												 Margin="0,6" />
+              <TextBox Style="{StaticResource SelectableLabel}" Grid.Column="1"
+											 Grid.Row="5"
+											 HorizontalAlignment="Left"
+											 Name="labelLocation"
+											 VerticalAlignment="Center" />
+
+              <TextBlock Text="Size:"
+												 Grid.Column="0"
+												 Grid.Row="6"
+												 HorizontalAlignment="Left"
+												 VerticalAlignment="Center"
+												 Margin="0,5" />
+              <TextBox Style="{StaticResource SelectableLabel}" Grid.Column="1"
+											 Grid.Row="6"
+											 HorizontalAlignment="Left"
+											 Name="labelSize"
+											 VerticalAlignment="Center" />
+              <TextBlock Text="Contains:"
+												 Grid.Column="0"
+												 Grid.Row="7"
+												 HorizontalAlignment="Left"
+												 VerticalAlignment="Center"
+												 Margin="0,6" />
+              <TextBox Style="{StaticResource SelectableLabel}"
+											 Grid.Column="1"
+											 Grid.Row="7"
+											 HorizontalAlignment="Left"
+                       Name="labelContains"
+											 VerticalAlignment="Center" />
+              <Separator Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="8" VerticalAlignment="Center" />
+
+              <TextBlock Text="Created:"
+												 Grid.Column="0"
+												 Grid.Row="9"
+												 HorizontalAlignment="Left"
+												 VerticalAlignment="Center"
+												 Margin="0,6" />
+              <TextBox Style="{StaticResource SelectableLabel}"
+											 Text="{Binding Path=CreatedTime,Mode=OneWay}"
+											 Grid.Column="1"
+											 Grid.Row="9"
+											 HorizontalAlignment="Left"
+											 VerticalAlignment="Center" />
+							<TextBlock Text="Modified:"
+												 Grid.Column="0"
+												 Grid.Row="10"
+												 HorizontalAlignment="Left"
+												 VerticalAlignment="Center"
+												 Margin="0,6" />
+							<TextBox Style="{StaticResource SelectableLabel}"
+											 Text="{Binding Path=ModifiedTime,Mode=OneWay}"
+											 Grid.Column="1"
+											 Grid.Row="10"
+											 HorizontalAlignment="Left"
+											 VerticalAlignment="Center" />
+							<Separator Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="11" VerticalAlignment="Center" />
+
+              <TextBlock Text="Attributes:"
+												 Grid.Column="0"
+												 Grid.Row="12"
+												 HorizontalAlignment="Left"
+												 VerticalAlignment="Center"
+												 Margin="0,6" />
+              <CheckBox Grid.Column="1"
+												Grid.Row="12"
+												Content="_Read-only"
+												HorizontalAlignment="Left"
+												Name="checkBoxReadOnly"
+												IsChecked="{Binding IsReadOnly}"
+												VerticalAlignment="Center" />
+              <CheckBox Grid.Column="1"
+												Grid.Row="13"
+												Content="_Hidden"
+												HorizontalAlignment="Left"
+												Name="checkBoxHidden"
+												IsChecked="{Binding IsHidden}"
+												VerticalAlignment="Center" />
+              <Button Content="A_dvanced..."
+											Grid.Column="1"
+											Grid.Row="13"
+											VerticalAlignment="Center"
+											HorizontalAlignment="Right"
+											MinWidth="103"
+											Margin="0,3"/>
+            </Grid>
+          </UserControl>
+        </TabItem>
+        <TabItem Header="Sharing" />
+        <TabItem Header="Security">
+          <UserControl Padding="7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Grid>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="100*" />
+                <RowDefinition Height="Auto" MinHeight="30" />
+                <RowDefinition Height="5" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+              </Grid.RowDefinitions>
+              <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,7" Width="120">Object name:</TextBlock>
+              <TextBox Style="{StaticResource SelectableLabel}" VerticalAlignment="Center" Margin="89,0,0,7" Name="ObjectName"/>
+              <Label Target="{Binding ElementName=RolesAndUsers}" Grid.Row="1" VerticalAlignment="Center" Margin="0,7,0,2">_Group or user names:</Label>
+
+							<ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto" >
+								<controls:RightsHolderListBox x:Name="RolesAndUsers" SelectionChanged="OnPermissionsRoleSelected" />
+							</ScrollViewer>
+
+							<Button HorizontalAlignment="Right" Grid.Row="3" Width="85" Margin="80,6,92,1" Command="guardian:WindowEntityProperties.AddPermissionsGroup">Add...</Button>
+              <Button HorizontalAlignment="Right" Grid.Row="3" Width="85" Margin="0,6,0,1" Command="guardian:WindowEntityProperties.RemovePermissionsGroup">Remove</Button>
+						
+						  <!-- "Permissions for:" line -->
+							<Grid Grid.Row="5">
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="Auto" />
+									<ColumnDefinition Width="Auto"/>
+									<ColumnDefinition Width="*" />
+								</Grid.ColumnDefinitions>
+								<StackPanel Orientation="Horizontal"  Grid.Column="0">
+									<Label Target="{Binding ElementName=Permissions}" HorizontalAlignment="Left" VerticalAlignment="Center" Content="_Permissions" />
+									<TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,7">
+										<TextBlock.Text>
+											<Binding Path="SelectedValue" ElementName="RolesAndUsers" StringFormat=" for {0}" />
+										</TextBlock.Text>
+									</TextBlock>
+								</StackPanel>
+								<TextBlock Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10,7">Allow</TextBlock>
+							</Grid>
+            
+							<!-- Permissions box -->
+						  <ScrollViewer Grid.Row="6" VerticalScrollBarVisibility="Auto">
+								<ListBox Name="Permissions" Grid.IsSharedSizeScope="true" HorizontalContentAlignment="Stretch">
+									<ListBox.Resources>
+										<Style TargetType="{x:Type ListBoxItem}" BasedOn="{StaticResource {x:Type ListBoxItem}}">
+											<Setter Property="HorizontalAlignment" Value="Stretch" />
+											<Setter Property="HorizontalContentAlignment" Value="Stretch" />
+										</Style>
+										<Style TargetType="{x:Type CheckBox}" BasedOn="{StaticResource {x:Type CheckBox}}">
+											<Setter Property="HorizontalAlignment" Value="Stretch" />
+											<Setter Property="VerticalAlignment" Value="Center" />
+											<Setter Property="Template">
+												<Setter.Value>
+													<ControlTemplate TargetType="{x:Type CheckBox}">
+																<Grid HorizontalAlignment="Stretch" Margin="7,2,15,2">
+																	<Grid.ColumnDefinitions>
+																		<ColumnDefinition Width="*" />
+																		<ColumnDefinition Width="Auto" />
+																	</Grid.ColumnDefinitions>
+																	<ContentPresenter VerticalAlignment="Center"  HorizontalAlignment="Stretch" Grid.Column="0" RecognizesAccessKey="True" Content="{TemplateBinding ContentControl.Content}" ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}" ContentStringFormat="{TemplateBinding ContentControl.ContentStringFormat}" Margin="{TemplateBinding Control.Padding}" SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+																	<mwt:BulletChrome Grid.Column="1" Background="{TemplateBinding Panel.Background}" BorderBrush="{TemplateBinding Border.BorderBrush}" RenderMouseOver="{TemplateBinding UIElement.IsMouseOver}" RenderPressed="{TemplateBinding ButtonBase.IsPressed}" IsChecked="{TemplateBinding ToggleButton.IsChecked}" />
+																</Grid>
+														<ControlTemplate.Triggers>
+															<Trigger Property="ContentControl.HasContent" Value="true">
+																<Setter Property="FrameworkElement.FocusVisualStyle">
+																	<Setter.Value>
+																		<Style TargetType="IFrameworkInputElement">
+																			<Style.Resources>
+																				<ResourceDictionary />
+																			</Style.Resources>
+																			<Setter Property="Control.Template">
+																				<Setter.Value>
+																					<ControlTemplate>
+																						<Rectangle Stroke="#FF000000" StrokeThickness="1" StrokeDashArray="1 2" Margin="14,0,0,0" SnapsToDevicePixels="True" />
+																					</ControlTemplate>
+																				</Setter.Value>
+																			</Setter>
+																		</Style>
+																	</Setter.Value>
+																</Setter>
+																<Setter Property="Control.Padding">
+																	<Setter.Value>
+																		<Thickness>4,0,0,0</Thickness>
+																	</Setter.Value>
+																</Setter>
+															</Trigger>
+															<Trigger Property="UIElement.IsEnabled" Value="false">
+																<Setter Property="TextElement.Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+															</Trigger>
+														</ControlTemplate.Triggers>
+													</ControlTemplate>
+												</Setter.Value>
+											</Setter>
+										</Style>
+									</ListBox.Resources>
+									<ListBox.Items>
+										<CheckBox Content="Full control" Name="FullPermission" Checked="OnFullPermissionClicked" Unchecked="OnFullPermissionClicked" />
+										<CheckBox Content="Browse" Name="BrowsePermission" Checked="OnBrowsePermissionClicked" Unchecked="OnBrowsePermissionClicked" />
+										<CheckBox Content="Execute" Name="ExecutePermission" Checked="OnExecutePermissionClicked" Unchecked="OnExecutePermissionClicked" />
+										<CheckBox Content="Read" Name="ReadPermission" Checked="OnReadPermissionClicked" Unchecked="OnReadPermissionClicked" />
+										<CheckBox Content="Write" Name="WritePermission" Checked="OnWritePermissionClicked" Unchecked="OnWritePermissionClicked" />
+									</ListBox.Items>
+								</ListBox>
+							</ScrollViewer>
+            </Grid>
+          </UserControl>
+        </TabItem>
+        <TabItem Header="Previous Versions" />
+        <TabItem Header="Customize" Name="customizeTab">
+					<TabItem.Resources>
+						<ResourceDictionary>
+							<Style TargetType="GroupBox">
+								<Setter Property="Padding" Value="5" />
+								<Setter Property="MinHeight" Value="54" />
+							</Style>
+							<Style TargetType="Button">
+								<Setter Property="Content" Value="{Binding Path=Command.Text,RelativeSource={RelativeSource Self}}" />
+								<Setter Property="VerticalAlignment" Value="Center" />
+								<Setter Property="MinHeight" Value="23" />
+								<Setter Property="MinWidth" Value="85" />
+								<Setter Property="Padding" Value="2,0,2,0" />
+							</Style>
+						</ResourceDictionary>
+					</TabItem.Resources>
+          <UserControl Padding="7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <StackPanel Name="customizePanel">
+              <GroupBox Name="customizeIcon" Header="Icon">
+                <Grid>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                  </Grid.ColumnDefinitions>
+
+                  <Button Name="changeIconButton"
+													Content="Change Icon..."
+													HorizontalAlignment="Center"
+													Grid.Column="0"
+													Click="OnChangeIconButtonClick" />
+                  <Image Name="changeIconImage"
+												 Source="{Binding ImageSource}"
+												 Height="32"
+												 Width = "32"
+												 Grid.Column="1" />
+                </Grid>
+              </GroupBox>
+            </StackPanel>
+          </UserControl>
+        </TabItem>
+      </TabControl>
+      <StackPanel FlowDirection="RightToLeft"
+                  Grid.Row="1"
+                  VerticalAlignment="Center"
+                  Orientation="Horizontal" >
+        <Button Content="Apply"
+                Margin="0,4,4,4"
+                MinWidth="73"
+								Command="FluidTradeCommands.Apply"
+                IsEnabled="{Binding Path=CanApply,ElementName=properties}"/>
+        <Button Content="Cancel"
+                Margin="4"
+                MinWidth="73"
+								Command="FluidTradeCommands.Cancel"
+                IsCancel="true" />
+        <Button Content="OK"
+                Margin="4"
+                MinWidth="73"
+								Command="FluidTradeCommands.OK"
+                IsDefault="true" />
+      </StackPanel>
+    </Grid>
+  </UserControl>
+</Window>

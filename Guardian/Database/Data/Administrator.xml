@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="Administrator">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <transaction>
+    <method name="CreateTenantEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="entityKeyByOrganizationId" value="FLUID TRADE" />
+      <parameter name="externalId0" value="FLUID TRADE" />
+      <parameter name="isPublic" value="true" />
+      <parameter name="name" value="Fluid Trade" />
+    </method>
+    <method name="CreateEntityEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="createdTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="externalId0" value="FLUID TRADE ADMINISTRATORS" />
+      <parameter name="externalId7" value="Default FLUID TRADE ADMINISTRATORS" />
+      <parameter name="hidden" value="false" />
+      <parameter name="imageKey" value="GROUP" />
+      <parameter name="modifiedTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="name" value="Fluid Trade Administrators" />
+      <parameter name="readOnly" value="false" />
+      <parameter name="tenantKey" value="FLUID TRADE" />
+      <parameter name="typeKey" value="GROUP" />
+    </method>
+    <method name="CreateRightsHolderEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="entityKey" value="FLUID TRADE ADMINISTRATORS" />
+      <parameter name="tenantKey" value="FLUID TRADE" />
+    </method>
+    <method name="CreateGroupEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="groupTypeKey" value="FLUID TRADE ADMIN" />
+      <parameter name="rightsHolderKey" value="FLUID TRADE ADMINISTRATORS" />
+      <parameter name="tenantKey" value="FLUID TRADE" />
+    </method>
+		<method name="CreateEntityEx" client="DataModelClient">
+			<parameter name="configurationId" value="Default" />
+			<parameter name="createdTime" value="6/18/2009 4:41:46 PM" />
+			<parameter name="externalId0" value="FLUID TRADE USERS" />
+			<parameter name="externalId7" value="Default FLUID TRADE USERS" />
+			<parameter name="hidden" value="false" />
+			<parameter name="imageKey" value="GROUP" />
+			<parameter name="modifiedTime" value="6/18/2009 4:41:46 PM" />
+			<parameter name="name" value="Fluid Trade Users" />
+			<parameter name="readOnly" value="false" />
+			<parameter name="tenantKey" value="FLUID TRADE" />
+			<parameter name="typeKey" value="GROUP" />
+		</method>
+		<method name="CreateRightsHolderEx" client="DataModelClient">
+			<parameter name="configurationId" value="Default" />
+			<parameter name="entityKey" value="FLUID TRADE USERS" />
+			<parameter name="tenantKey" value="FLUID TRADE" />
+		</method>
+		<method name="CreateGroupEx" client="DataModelClient">
+			<parameter name="configurationId" value="Default" />
+			<parameter name="groupTypeKey" value="USER" />
+			<parameter name="rightsHolderKey" value="FLUID TRADE USERS" />
+			<parameter name="tenantKey" value="FLUID TRADE" />
+		</method>
+		<method name="CreateEntityEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="createdTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="externalId0" value="ADMINISTRATOR" />
+      <parameter name="externalId7" value="Default ADMINISTRATOR" />
+      <parameter name="hidden" value="false" />
+      <parameter name="imageKey" value="USER" />
+      <parameter name="modifiedTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="name" value="Administrator" />
+      <parameter name="readOnly" value="false" />
+      <parameter name="tenantKey" value="FLUID TRADE" />
+      <parameter name="typeKey" value="TRADER" />
+    </method>
+    <method name="CreateRightsHolderEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="entityKey" value="ADMINISTRATOR" />
+      <parameter name="tenantKey" value="FLUID TRADE" />
+    </method>
+    <method name="CreateUserEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="rightsHolderKey" value="ADMINISTRATOR" />
+      <parameter name="identityName" value="superuser@fluidtrade.com" />
+      <parameter name="tenantKey" value="FLUID TRADE" />
+    </method>
+    <method name="CreateEntityEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="createdTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="externalId0" value="Daemon User" />
+      <parameter name="externalId7" value="Default Daemon User" />
+      <parameter name="hidden" value="false" />4
+	  <parameter name="imageKey" value="USER" />
+	  <parameter name="modifiedTime" value="6/18/2009 4:41:46 PM" />
+	  <parameter name="name" value="Daemon User" />
+	  <parameter name="readOnly" value="false" />
+	  <parameter name="tenantKey" value="FLUID TRADE" />
+	  <parameter name="typeKey" value="TRADER" />
+	</method>
+    
+	<method name="CreateRightsHolderEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="entityKey" value="Daemon User" />
+      <parameter name="tenantKey" value="FLUID TRADE" />
+    </method>
+    <method name="CreateUserEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="rightsHolderKey" value="Daemon User" />
+      <parameter name="identityName" value="nt authority\network service" />
+      <parameter name="tenantKey" value="FLUID TRADE" />
+    </method>
+    <method name="CreateTraderEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="isAgencyMatch" value="true" />
+      <parameter name="isBrokerMatch" value="true" />
+      <parameter name="isCommissionChangeAllowed" value="true" />
+      <parameter name="isEditExecutionsAllowed" value="true" />
+      <parameter name="isHedgeMatch" value="true" />
+      <parameter name="isHeld" value="true" />
+      <parameter name="isInstitutionMatch" value="true" />
+      <parameter name="lotSizeDefault" value="100" />
+      <parameter name="marketSleep" value="10" />
+      <parameter name="reviewWindow" value="0" />
+      <parameter name="submissionTypeCode" value="AlwaysMatch" />
+      <parameter name="tenantKey" value="FLUID TRADE" />
+      <parameter name="userKey" value="ADMINISTRATOR" />
+    </method>
+    <method name="CreateGroupUsersEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="{7FA4F392-ACE7-413a-BB3B-4DD3B47A17F5}" />
+      <parameter name="groupKey" value="FLUID TRADE ADMINISTRATORS" />
+      <parameter name="tenantKey" value="FLUID TRADE" />
+      <parameter name="userKey" value="ADMINISTRATOR" />
+    </method>
+  </transaction>
+  <transaction>
+    <method name="CreateEntityEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="createdTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="description" value="Person Folder of Administrator" />
+      <parameter name="externalId0" value="ADMINISTRATOR FOLDER" />
+      <parameter name="externalId7" value="Default ADMINISTRATOR FOLDER" />
+      <parameter name="hidden" value="false" />
+      <parameter name="imageKey" value="FOLDER" />
+      <parameter name="modifiedTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="name" value="Administrator" />
+      <parameter name="readOnly" value="false" />
+      <parameter name="tenantKey" value="FLUID TRADE" />
+      <parameter name="typeKey" value="SYSTEM FOLDER" />
+    </method>
+    <method name="CreateFolderEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="entityKey" value="ADMINISTRATOR FOLDER" />
+      <parameter name="tenantKey" value="FLUID TRADE" />
+    </method>
+    <method name="CreateSystemFolderEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="folderKey" value="ADMINISTRATOR FOLDER" />
+      <parameter name="tenantKey" value="FLUID TRADE" />
+    </method>
+  </transaction>
+  <method name="CreateEntityTreeEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="entityKeyByChildId" value="ADMINISTRATOR FOLDER" />
+    <parameter name="entityKeyByParentId" value="ADMINISTRATOR" />
+    <parameter name="externalId0" value="{9F55A2B6-88C9-411a-9E49-63B295A67444}" />
+  </method>
+  <method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="FLUID TRADE ADMINISTRATORS" />
+		<parameter name="rightsHolderKey" value="FLUID TRADE ADMINISTRATORS" />
+		<parameter name="tenantKey" value="FLUID TRADE" />
+  </method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="FULL CONTROL" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="FLUID TRADE USERS" />
+		<parameter name="rightsHolderKey" value="FLUID TRADE ADMINISTRATORS" />
+		<parameter name="tenantKey" value="FLUID TRADE" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+    <parameter name="accessRightKey" value="FULL CONTROL" />
+    <parameter name="configurationId" value="Default" />
+    <parameter name="entityKey" value="ADMINISTRATOR" />
+    <parameter name="rightsHolderKey" value="FLUID TRADE ADMINISTRATORS" />
+    <parameter name="tenantKey" value="FLUID TRADE" />
+  </method>
+  <method name="CreateAccessControlEx" client="DataModelClient">
+    <parameter name="accessRightKey" value="FULL CONTROL" />
+    <parameter name="configurationId" value="Default" />
+    <parameter name="entityKey" value="ADMINISTRATOR FOLDER" />
+    <parameter name="rightsHolderKey" value="FLUID TRADE ADMINISTRATORS" />
+    <parameter name="tenantKey" value="FLUID TRADE" />
+  </method>
+	
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="READ BROWSE" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="FLUID TRADE ADMINISTRATORS" />
+		<parameter name="rightsHolderKey" value="FLUID TRADE USERS" />
+		<parameter name="tenantKey" value="FLUID TRADE" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="READ BROWSE" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="FLUID TRADE USERS" />
+		<parameter name="rightsHolderKey" value="FLUID TRADE USERS" />
+		<parameter name="tenantKey" value="FLUID TRADE" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="READ BROWSE" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="ADMINISTRATOR" />
+		<parameter name="rightsHolderKey" value="FLUID TRADE USERS" />
+		<parameter name="tenantKey" value="FLUID TRADE" />
+	</method>
+	<method name="CreateAccessControlEx" client="DataModelClient">
+		<parameter name="accessRightKey" value="READ WRITE BROWSE" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="entityKey" value="ADMINISTRATOR FOLDER" />
+		<parameter name="rightsHolderKey" value="FLUID TRADE USERS" />
+		<parameter name="tenantKey" value="FLUID TRADE" />
+	</method>
+</script>

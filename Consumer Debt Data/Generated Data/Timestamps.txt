@@ -1,0 +1,17 @@
+9/18/2009 11:08:09 AM: Start
+9/18/2009 11:08:10 AM: 0.009 Min: Build Consumer Table
+9/18/2009 11:08:10 AM: 0.008 Min: Build Consumer Trust Table
+9/18/2009 11:08:11 AM: 0.008 Min: Build Consumer Debt Table
+9/18/2009 11:08:11 AM: 0.004 Min: Fuzz Trust
+9/18/2009 11:08:11 AM: 0.000 Min: Shuffle the Debt and Trust ID lists
+9/18/2009 11:08:12 AM: 0.000 Min: Write Script Loader Table XML Files
+9/18/2009 11:08:12 AM: 0.002 Min: Global Settlements xml dump
+9/18/2009 11:08:12 AM: 0.001 Min: Consolidated Settlements xml dump
+9/18/2009 11:08:12 AM: 0.001 Min: Cunningham Settlements xml dump
+9/18/2009 11:08:13 AM: 0.000 Min: National Holdings xml dump
+9/18/2009 11:08:13 AM: 0.000 Min: Worldwide Holdings xml dump
+9/18/2009 11:08:13 AM: 0.000 Min: Federated Holdings xml dump
+9/18/2009 11:08:22 AM: 0.000 Min: Write Flat Input Files
+9/18/2009 11:08:22 AM: 0.001 Min: Dump the Match Data
+9/18/2009 11:08:23 AM: 0.000 Min: Dump the miscelaneous Count data
+9/18/2009 11:08:23 AM: End

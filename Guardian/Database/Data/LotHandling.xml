@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="LotHandling">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <transaction>
+    <method name="CreateLotHandlingEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="First In/First Out" />
+      <parameter name="externalId0" value="FIFO" />
+      <parameter name="lotHandlingCode" value="LIFO" />
+      <parameter name="mnemonic" value="FIFO" />
+    </method>
+    <method name="CreateLotHandlingEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Last In/First Out" />
+      <parameter name="externalId0" value="LIFO" />
+      <parameter name="lotHandlingCode" value="FIFO" />
+      <parameter name="mnemonic" value="LIFO" />
+    </method>
+    <method name="CreateLotHandlingEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="description" value="Minimum Tax" />
+      <parameter name="externalId0" value="MINTAX" />
+      <parameter name="lotHandlingCode" value="MINTAX" />
+      <parameter name="mnemonic" value="MINTAX" />
+    </method>
+  </transaction>
+</script>

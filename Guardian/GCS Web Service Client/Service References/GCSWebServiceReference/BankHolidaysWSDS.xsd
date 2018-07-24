@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://globalclientsolutions.com/WebServices/BankHolidaysWSDS.xsd" xmlns="http://globalclientsolutions.com/WebServices/BankHolidaysWSDS.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://globalclientsolutions.com/WebServices/BankHolidaysWSDS.xsd" id="BankHolidaysWSDS" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="BankHolidaysWSDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="HOLIDAYS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="HOLIDAY_DATE" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="HOLIDAY_DESCRIPTION" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

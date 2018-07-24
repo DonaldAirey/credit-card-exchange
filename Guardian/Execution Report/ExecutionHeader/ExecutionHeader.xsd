@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PrototypeView"
+           targetNamespace="urn:schemas-fluidtrade-com:guardian:execution-header"
+           xmlns:mstns="urn:schemas-fluidtrade-com:guardian:execution-header"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:r="urn:schemas-fluidtrade-com:report"
+           xmlns:m="urn:schemas-fluidtrade-com:guardian:execution">
+  <xs:annotation>
+	<xs:appinfo>
+	  <r:generatedCode destinationNamespace="FluidTrade.Guardian.Schema.ExecutionHeader" />
+	</xs:appinfo>
+  </xs:annotation>
+  <!-- Imports -->
+  <xs:import namespace="urn:schemas-fluidtrade-com:guardian:execution"
+             schemaLocation="..\Execution\Execution.xsd" />
+  <xs:complexType name="AccruedInterest" />
+  <xs:complexType name="BrokerAccountId" />
+  <xs:complexType name="Commission" />
+  <xs:complexType name="CreatedTime" />
+  <xs:complexType name="CreatedUserId" />
+  <xs:complexType name="DestinationOrderId" />
+  <xs:complexType name="DestinationStateCode" />
+  <xs:complexType name="ExecutionPrice" />
+  <xs:complexType name="ExecutionQuantity" />
+  <xs:complexType name="FixMessageId" />
+  <xs:complexType name="IsHidden" />
+  <xs:complexType name="ModifiedTime" />
+  <xs:complexType name="ModifiedUserId" />
+  <xs:complexType name="OriginalPrice" />
+  <xs:complexType name="OriginalQuantity" />
+  <xs:complexType name="SourceStateCode" />
+  <xs:complexType name="UserFee0" />
+  <xs:complexType name="UserFee1" />
+  <xs:complexType name="UserFee2" />
+  <xs:complexType name="UserFee3" />
+  <xs:complexType name="ExecutionHeader">
+	<xs:annotation>
+	  <xs:appinfo>
+		<r:constructor>
+		  <r:arguments>
+			<r:argument type="System.Guid"
+                        name="guid" />
+		  </r:arguments>
+		  <r:setter property="key"
+                    value="guid" />
+		</r:constructor>
+	  </xs:appinfo>
+	</xs:annotation>
+	<xs:sequence>
+	  <xs:element name="AccruedInterest" 
+                  type="mstns:AccruedInterest" />
+	  <xs:element name="BrokerAccountId" 
+                  type="mstns:BrokerAccountId " />
+	<xs:element name="Commission" 
+                  type="mstns:Commission" />
+	<xs:element name="CreatedTime" 
+                  type="mstns:CreatedTime" />
+	<xs:element name="CreatedUserId" 
+                  type="mstns:CreatedUserId" />
+	<xs:element name="DestinationOrderId" 
+                  type="mstns:DestinationOrderId" />
+	<xs:element name="DestinationStateCode" 
+                  type="mstns:DestinationStateCode" />
+	<xs:element name="ExecutionPrice" 
+                  type="mstns:ExecutionPrice" />
+<xs:element name="ExecutionQuantity" 
+                  type="mstns:ExecutionQuantity" />
+<xs:element name="FixMessageId" 
+                  type="mstns:FixMessageId" />
+<xs:element name="IsHidden" 
+                  type="mstns:IsHidden" />
+<xs:element name="ModifiedTime" 
+                  type="mstns:ModifiedTime" />
+<xs:element name="ModifiedUserId" 
+                  type="mstns:ModifiedUserId" />
+<xs:element name="OriginalPrice" 
+                  type="mstns:OriginalPrice" />
+<xs:element name="OriginalQuantity" 
+                  type="mstns:OriginalQuantity" />
+<xs:element name="SourceStateCode" 
+                  type="mstns:SourceStateCode" />
+<xs:element name="UserFee0" 
+                  type="mstns:UserFee0" />
+<xs:element name="UserFee1" 
+                  type="mstns:UserFee1" />
+<xs:element name="UserFee2" 
+                  type="mstns:UserFee2" />
+<xs:element name="UserFee3" 
+                  type="mstns:UserFee3" />
+	<xs:element name="ExecutionList"
+                  type="m:Execution"
+                  minOccurs="0"
+                  maxOccurs="unbounded">
+		<xs:annotation>
+		  <xs:appinfo>
+			<r:where predicate="Prefilter"
+                     source="DataModel.Execution"
+                     sourceType="FluidTrade.Guardian.ExecutionRow" />
+			<r:select selector="Selector" />
+			<r:where predicate="Filter" />
+			<r:orderBy comparer="Comparer"
+                       keySelector="m:Execution.SelectSelf"
+                       keyType="m:Execution" />
+		  </xs:appinfo>
+		</xs:annotation>
+	  </xs:element>
+	</xs:sequence>
+  </xs:complexType>
+</xs:schema>

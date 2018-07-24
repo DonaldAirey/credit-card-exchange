@@ -1,0 +1,420 @@
+﻿<TreeView Background="#FCFCFC"
+          x:Class="FluidTrade.Guardian.Windows.FolderTreeView"
+          BorderThickness="0"
+          DragDropHelper.IsDragSource="true"
+          DragDropHelper.IsDropTarget="true"
+          SelectedValuePath="Entity"
+          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+					xmlns:collections="clr-namespace:System.Collections;assembly=mscorlib"
+          xmlns:library="http://schemas.fluidtrade.com/winfx/2006/xaml/guardian/presentation"
+          xmlns:guardian="clr-namespace:FluidTrade.Guardian.Windows">
+  <!-- Command Bindings -->
+  <TreeView.CommandBindings>
+    <CommandBinding Command="library:GuardianCommands.Collapse"
+                    Executed="OnCollapse" />
+		<CommandBinding Command="library:GuardianCommands.Delete"
+                    Executed="OnDelete" />
+		<CommandBinding Command="library:GuardianCommands.Expand"
+                    Executed="OnExpand" />
+    <CommandBinding Command="library:GuardianCommands.Explore"
+                    Executed="OnExplore" />
+		<CommandBinding Command="library:GuardianCommands.GoUp"
+                    Executed="OnGoUp" />
+		<CommandBinding Command="library:GuardianCommands.LinkEntity"
+                    Executed="OnLinkEntity" />
+		<CommandBinding Command="ComponentCommands.MoveToEnd"
+                    Executed="OnGoBottom" />
+    <CommandBinding Command="ComponentCommands.MoveToHome"
+                    Executed="OnGoTop" />
+    <CommandBinding Command="library:GuardianCommands.New"
+                    Executed="OnNew" />
+		<CommandBinding Command="library:GuardianCommands.Properties"
+                    Executed="OnProperties" />
+		<CommandBinding Command="library:GuardianCommands.Rename"
+                    Executed="OnRename" />
+		<CommandBinding Command="library:GuardianCommands.UnlinkEntity"
+                    Executed="OnUnlinkEntity" />
+	</TreeView.CommandBindings>
+  <!-- The Items Source -->
+  <TreeView.ItemsSource>
+    <Binding>
+      <Binding.Source>
+        <ObjectDataProvider ObjectType="guardian:FolderTreeNode" />
+      </Binding.Source>
+    </Binding>
+  </TreeView.ItemsSource>
+  <!-- Resources -->
+  <TreeView.Resources>
+		<!-- This template is used to expand the parent/child relationships -->
+    <HierarchicalDataTemplate DataType="{x:Type guardian:FolderTreeNode}"
+                              ItemsSource="{Binding Path=Children}">
+      <DockPanel x:Name="dockPanel">
+				<DockPanel.InputBindings>
+					<KeyBinding Command="ApplicationCommands.ContextMenu"
+											Gesture="Apps" />
+				</DockPanel.InputBindings>
+        <Image Height="16"
+               Margin="1,0,0,0"
+               Source="{Binding Path=Entity.ImageSource}"
+               Width="16" />
+        <TextBlock Margin="0,0,0,1" Padding="4,0,0,0"
+                   Text="{Binding Path=Entity.Name}" />
+				<DockPanel.Style>
+					<Style TargetType="{x:Type DockPanel}">
+						<EventSetter Event="PreviewMouseLeftButtonDown" Handler="OnTreeViewItemMouseDown" />
+						<EventSetter Event="MouseUp" Handler="OnTreeViewItemMouseUp" />
+					</Style>
+				</DockPanel.Style>
+				<DockPanel.ContextMenu>
+					<!-- The Content Menu -->
+					<ContextMenu Background="#F0F0F0" Name="contextMenu" Opened="OnContextMenuOpen">
+						<MenuItem Command="{DynamicResource expandCollapseCommand}"
+											Header="{Binding Path=Command.Text,RelativeSource={RelativeSource Self}}"
+											Name="menuItemCollapse"
+											IsEnabled="{DynamicResource hasItems}">
+							<MenuItem.Style>
+								<Style TargetType="{x:Type MenuItem}" BasedOn="{StaticResource {x:Type MenuItem}}">
+									<Style.Triggers>
+										<Trigger Property="IsEnabled" Value="true">
+											<Setter Property="FontWeight" Value="Bold" />
+										</Trigger>
+									</Style.Triggers>
+								</Style>
+							</MenuItem.Style>
+						</MenuItem>
+						<Separator />
+						<MenuItem Command="library:GuardianCommands.Explore"
+											Header="Explore"
+											IsEnabled="true"
+											FontWeight="{DynamicResource exploreFontWeight}"
+											Name="menuItemExplore" />
+						<MenuItem Command="library:GuardianCommands.Open"
+											Header="Open"
+											IsEnabled="false"
+											Name="menuItemOpen" />
+						<Separator />
+						<MenuItem Header="Share..."
+											IsEnabled="false"
+											Name="menuItemShare" />
+						<MenuItem Command="library:GuardianCommands.RestorePreviousVersions"
+											Header="Restore Previous Versions"
+											Name="menuItemRestorePreviousVersions" />
+						<Separator Name="menuCustomization" />
+						
+						<MenuItem Header="Move To"
+											IsEnabled="false"
+											Name="menuItemSendTo" />
+						<Separator />
+						<MenuItem Command="library:GuardianCommands.Cut"
+											Header="Cut"
+											IsEnabled="false"
+											Name="menuItemCut" />
+						<MenuItem Command="library:GuardianCommands.Copy"
+											Header="Copy"
+											IsEnabled="false"
+											Name="menuItemCopy" />
+						<Separator />
+						<MenuItem Command="library:GuardianCommands.Delete"
+											Header="Delete"
+											IsEnabled="true"
+											Name="menuItemDelete" />
+						<MenuItem Command="library:GuardianCommands.Rename"
+											Header="Rename"
+											IsEnabled="true"
+											Name="menuItemRename" />
+						<Separator />
+						<MenuItem
+											Header="New"
+											IsEnabled="{Binding Path=HasItems,RelativeSource={RelativeSource Self}}"
+											Name="menuItemNew"
+											ItemsSource="{DynamicResource newItems}" />
+						<Separator />
+						<MenuItem Command="library:GuardianCommands.Properties"
+											Header="Properties"
+											Name="menuItemProperties" />
+					</ContextMenu>
+				</DockPanel.ContextMenu>
+      </DockPanel>
+    </HierarchicalDataTemplate>
+    <!-- Brush used to paint the glyphs -->
+    <SolidColorBrush x:Key="UncheckedGlyphStrokeBrush" Color="#A5A5A5" />
+    <SolidColorBrush x:Key="CheckedGlyphFillBrush" Color="#595959" />
+    <SolidColorBrush x:Key="CheckedGlyphStrokeBrush" Color="Black" />
+    <LinearGradientBrush x:Key="ItemAreaSelectedMouseBrush" StartPoint="0.5, 0" EndPoint="0.5, 1">
+      <GradientStop Color="#E8F6FD" Offset="0" />
+      <GradientStop Color="#C4E8FA" Offset="1" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ItemAreaSelectedBrush" StartPoint="0.5, 0" EndPoint="0.5, 1">
+      <GradientStop Color="#F8F8F8" Offset="0" />
+      <GradientStop Color="#E5E5E5" Offset="1" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ItemAreaMouseOverBrush" StartPoint="0.5, 0" EndPoint="0.5, 1">
+      <GradientStop Color="#F5FAFD" Offset="0" />
+      <GradientStop Color="#E8F5FD" Offset="1" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="ItemAreaDragOverBrush" StartPoint="0.5, 0" EndPoint="0.5, 1">
+      <GradientStop Color="#F1F8FD" Offset="0" />
+      <GradientStop Color="#D5EFFC" Offset="1" />
+    </LinearGradientBrush>
+    <DropShadowBitmapEffect x:Key="DropShadowEffect" />
+    <!-- Style used for the toggle button used to expand and collapse an item. -->
+    <Style x:Key="ExpandCollapseToggleStyle" TargetType="ToggleButton">
+      <Setter Property="Focusable" Value="False" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="ToggleButton">
+            <Grid Width="16" Height="16" Margin="1" Background="Transparent">
+              <Path x:Name="ExpandPath"
+                HorizontalAlignment="Left"
+                Stroke="{StaticResource UncheckedGlyphStrokeBrush}"
+                StrokeThickness="1"
+                VerticalAlignment="Center"
+                Data="M 4,0 L 8,4 L 4,8 Z" />
+            </Grid>
+            <ControlTemplate.Triggers>
+              <Trigger Property="IsChecked" Value="True">
+                <Setter Property="Data" TargetName="ExpandPath" Value="M 2,8 L 8,2 L 8,8 Z" />
+                <Setter Property="Stroke" TargetName="ExpandPath" Value="{StaticResource CheckedGlyphStrokeBrush}" />
+                <Setter Property="Fill" TargetName="ExpandPath"	Value="{StaticResource CheckedGlyphFillBrush}" />
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+    <!-- This defines the look of the item when it has the focus. -->
+    <Style x:Key="TreeViewItemFocusVisual">
+      <Setter Property="Control.Template">
+        <Setter.Value>
+          <ControlTemplate>
+            <Border>
+              <Rectangle Margin="0,0,0,0" StrokeThickness="5" Stroke="Black" StrokeDashArray="1 2" Opacity="0" />
+            </Border>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+		</Style>
+    <!-- This style describes how the item is displayed. -->
+    <Style TargetType="{x:Type TreeViewItem}">
+			<Setter Property="Background" Value="Transparent" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="AllowDrop" Value="True" />
+      <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" />
+      <Setter Property="FocusVisualStyle" Value="{StaticResource TreeViewItemFocusVisual}" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type TreeViewItem}">
+            <Grid>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="19" Width="Auto" />
+                <ColumnDefinition Width="*" />
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+              </Grid.RowDefinitions>
+              <Grid Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Grid.Row="0"
+                    x:Name="gridItem"
+                    PreviewDragEnter="OnFolderTreeItemPreviewDragEnter"
+                    PreviewDragLeave="OnFolderTreeItemPreviewDragLeave"
+                    PreviewDrop="OnFolderTreeItemPreviewDrop">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition MinWidth="19" Width="Auto" />
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <ToggleButton ClickMode="Press"
+                              Grid.Column="0"
+                              Grid.Row ="0"
+                              IsChecked="{Binding Path=IsExpanded, RelativeSource={RelativeSource TemplatedParent}}"
+                              x:Name="Expander"
+                              Style="{StaticResource ExpandCollapseToggleStyle}" />
+                <Border Background="Transparent"
+                        BorderBrush="Transparent"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="2"
+                        Grid.Column="1"
+                        Grid.Row ="0"
+                        x:Name="borderItem"
+                        SnapsToDevicePixels="True">
+                  <Grid>
+                    <Rectangle Fill="Transparent"
+                               x:Name="rectangleBackground" />
+                    <Rectangle Fill="Transparent"
+                               x:Name="rectangleOutline"
+                               Stroke="Transparent"
+                               StrokeThickness="1" />
+                    <ContentPresenter ContentSource="Header"
+                                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                      x:Name="ContentHost" />
+										<!--<TextBox Text="{Binding Entity.Name}"
+														 HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+														 Visibility="Hidden"
+														 x:Name="EditableContent" />-->
+                  </Grid>
+                </Border>
+              </Grid>
+              <ItemsPresenter Grid.Column="1"
+                              Grid.ColumnSpan="2"
+                              Grid.Row="1"
+                              x:Name="ItemsHost" />
+            </Grid>
+            <ControlTemplate.Triggers>
+							<DataTrigger Binding="{Binding Path=Entity.FinishedLoading}" Value="false">
+								<Setter Property="Visibility" Value="Collapsed" />
+							</DataTrigger>
+
+							<Trigger Property="IsExpanded"
+                       Value="false">
+                <Setter TargetName="ItemsHost"
+                        Property="Visibility"
+                        Value="Collapsed" />
+              </Trigger>
+              <Trigger Property="HasItems"
+                       Value="false">
+                <Setter TargetName="Expander"
+                        Property="Visibility"
+                        Value="Hidden" />
+              </Trigger>
+              <MultiTrigger>
+                <MultiTrigger.Conditions>
+                  <Condition Property="HasHeader"
+                             Value="false" />
+                  <Condition Property="Width"
+                             Value="Auto" />
+                </MultiTrigger.Conditions>
+                <Setter TargetName="ContentHost"
+                        Property="MinWidth"
+                        Value="75" />
+              </MultiTrigger>
+              <MultiTrigger>
+                <MultiTrigger.Conditions>
+                  <Condition Property="HasHeader"
+                             Value="false" />
+                  <Condition Property="Height"
+                             Value="Auto" />
+                </MultiTrigger.Conditions>
+                <Setter TargetName="ContentHost"
+                        Property="MinHeight"
+                        Value="19" />
+              </MultiTrigger>
+              <Trigger Property="IsMouseOver"
+                       SourceName="borderItem"
+                       Value="true">
+                <Setter TargetName="borderItem"
+                        Property="BorderBrush"
+                        Value="#D8F0FA" />
+                <Setter TargetName="rectangleOutline"
+                        Property="Stroke"
+                        Value="#6AFFFFFF" />
+                <Setter TargetName="rectangleBackground"
+                        Property="Fill"
+                        Value="{StaticResource ItemAreaMouseOverBrush}" />
+              </Trigger>
+              <Trigger Property="IsSelected"
+                       Value="true">
+                <Setter TargetName="borderItem"
+                        Property="BorderBrush"
+                        Value="#99DEFD" />
+                <Setter TargetName="rectangleOutline"
+                        Property="Stroke"
+                        Value="#6AFFFFFF" />
+                <Setter TargetName="rectangleBackground"
+                        Property="Fill"
+                        Value="{StaticResource ItemAreaDragOverBrush}" />
+              </Trigger>
+              <Trigger Property="DragDropHelper.IsDragOver"
+                       SourceName="gridItem"
+                       Value="true">
+                <Setter TargetName="borderItem"
+                        Property="BorderBrush"
+                        Value="#99DEFD" />
+                <Setter TargetName="rectangleOutline"
+                        Property="Stroke"
+                        Value="#6AFFFFFF" />
+                <Setter TargetName="rectangleBackground"
+                        Property="Fill"
+                        Value="{StaticResource ItemAreaDragOverBrush}" />
+              </Trigger>
+              <MultiTrigger>
+                <MultiTrigger.Conditions>
+                  <Condition Property="IsSelected"
+                             Value="True" />
+                  <Condition Property="IsMouseOver"
+                             SourceName="borderItem"
+                             Value="True" />
+                </MultiTrigger.Conditions>
+                <Setter TargetName="borderItem"
+                        Property="BorderBrush"
+                        Value="#B6E6FB" />
+                <Setter TargetName="rectangleOutline"
+                        Property="Stroke"
+                        Value="#6AFFFFFF" />
+                <Setter TargetName="rectangleBackground"
+                        Property="Fill"
+                        Value="{StaticResource ItemAreaSelectedMouseBrush}" />
+              </MultiTrigger>
+              <Trigger Property="IsEnabled"
+                       Value="false">
+                <Setter Property="Foreground"
+                        Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+              </Trigger>
+              <MultiTrigger>
+                <MultiTrigger.Conditions>
+                  <Condition Property="IsSelected"
+                             Value="True" />
+                  <Condition Property="IsSelectionActive"
+                             Value="False" />
+                </MultiTrigger.Conditions>
+                <Setter TargetName="borderItem"
+                        Property="BorderBrush"
+                        Value="#D9D9D9" />
+                <Setter TargetName="rectangleOutline"
+                        Property="Stroke"
+                        Value="#6AFFFFFF" />
+                <Setter TargetName="rectangleBackground"
+                        Property="Fill"
+                        Value="{StaticResource ItemAreaSelectedBrush}" />
+              </MultiTrigger>
+              <Trigger Property="IsEnabled"
+                       Value="false">
+                <Setter Property="Foreground"
+                        Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+  </TreeView.Resources>
+  <DragDropHelper.DragDropTemplate>
+    <DataTemplate>
+      <Border BorderBrush="#6A99DDFC"
+              BorderThickness="1"
+              CornerRadius="2"
+              Height="104"
+              Width="104"
+              SnapsToDevicePixels="True">
+        <Border.Background>
+          <LinearGradientBrush EndPoint="0.5,1.0"
+                               StartPoint="0.5,0.0">
+            <GradientBrush.GradientStops>
+              <GradientStopCollection>
+                <GradientStop Color="#6ADFF3FC" Offset="0.0"/>
+                <GradientStop Color="#6AACDFF9" Offset="1.00"/>
+              </GradientStopCollection>
+            </GradientBrush.GradientStops>
+          </LinearGradientBrush>
+        </Border.Background>
+        <Border BorderBrush="#6AFFFFFF"
+                BorderThickness="1"
+                Padding="1">
+          <Image Source="{Binding Path=Entity.ImageSource}" />
+        </Border>
+      </Border>
+    </DataTemplate>
+  </DragDropHelper.DragDropTemplate>
+</TreeView>

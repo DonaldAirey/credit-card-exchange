@@ -1,0 +1,67 @@
+﻿<Window x:Class="Control_Sandbox.Window1"
+		Title="Control Sandbox"
+		Background="LightGray"
+		Height="300"
+		Width="400"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:fluidtrade="http://schemas.fluidtrade.com/winfx/2006/xaml/fluidtrade/presentation"
+		xmlns:guardian="http://schemas.fluidtrade.com/winfx/2006/xaml/guardian/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Canvas>
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition />
+				<ColumnDefinition />
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition />
+				<RowDefinition />
+				<RowDefinition />
+				<RowDefinition />
+			</Grid.RowDefinitions>
+			<Label Content="Market Value:"
+				   Grid.Column="0"
+				   Grid.Row="0"
+				   Margin="2,4"
+				   VerticalAlignment="Center" />
+			<fluidtrade:MoneyTextBox Grid.Column="1"
+									 Grid.Row="0"
+									 Margin="2,4"
+									 MinWidth="100"
+									 Name="marketValue" />
+			<Label Content="Market Value (Read Only):"
+				   Grid.Column="0"
+				   Grid.Row="1"
+				   Margin="2,4"
+				   VerticalAlignment="Center" />
+			<fluidtrade:MoneyTextBox Grid.Column="1"
+									 Grid.Row="1"
+									 IsReadOnly="True"
+									 Margin="2,4"
+									 MinWidth="100"
+									 Name="readOnlyMarketValue" />
+			<Label Content="Percent:"
+				   Grid.Column="0"
+				   Grid.Row="2"
+				   Margin="2,4"
+				   VerticalAlignment="Center" />
+			<fluidtrade:PercentageTextBox Grid.Column="1"
+										  Grid.Row="2"
+										  Margin="2,4"
+										  MinWidth="100"
+										  Name="percent"
+										  SpinnerVisibility="Visible" />
+			<Label Content="Percent (Read Only):"
+				   Grid.Column="0"
+				   Grid.Row="3"
+				   Margin="2,4"
+				   VerticalAlignment="Center" />
+			<fluidtrade:PercentageTextBox Grid.Column="1"
+										  Grid.Row="3"
+										  IsReadOnly="True"
+										  Margin="2,4"
+										  MinWidth="100"
+										  Name="readOnlyPercent"/>
+		</Grid>
+	</Canvas>
+</Window>

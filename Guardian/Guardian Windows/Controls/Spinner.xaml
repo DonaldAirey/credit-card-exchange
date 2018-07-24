@@ -1,0 +1,98 @@
+﻿<UserControl x:Class="FluidTrade.Guardian.Windows.Controls.Spinner"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:guardian="clr-namespace:FluidTrade.Guardian.Windows.Controls"
+             Name="spinner">
+  <UserControl.CommandBindings>
+    <CommandBinding Command="guardian:Spinner.IncreaseCommand"
+                    Executed="OnIncrease" />
+    <CommandBinding Command="guardian:Spinner.DecreaseCommand"
+                    Executed="OnDecrease" />
+  </UserControl.CommandBindings>
+	<UserControl.Resources>
+		<Style x:Key="spinStyle" TargetType="{x:Type RepeatButton}" BasedOn="{StaticResource {x:Type RepeatButton}}">
+			<Setter Property="Width" Value="15" />
+			<Setter Property="IsTabStop" Value="false" />
+			<Style.Triggers>
+				<DataTrigger Value="False" Binding="{Binding Path=IsEnabled,ElementName=spinner}">
+					<Setter Value="False" Property="IsEnabled" />
+				</DataTrigger>
+				<DataTrigger Value="True" Binding="{Binding Path=IsReadOnly,ElementName=spinner}">
+					<Setter Value="Collapsed" Property="Visibility" />
+					<Setter Value="False" Property="IsEnabled" />
+				</DataTrigger>
+			</Style.Triggers>
+		</Style>
+	</UserControl.Resources>
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="Auto" />
+    </Grid.ColumnDefinitions>
+
+    <TextBox Grid.Column="0"
+             VerticalAlignment="Stretch"
+             HorizontalAlignment="Stretch"
+             TextChanged="OnTextChanged"
+             DataObject.Pasting="OnPaste"
+             IsEnabled="{Binding Path=IsEnabled,ElementName=spinner,Mode=TwoWay}"
+						 IsReadOnly="{Binding Path=IsReadOnly,ElementName=spinner,Mode=TwoWay}"
+						 TextAlignment="{Binding Path=TextAlignment,ElementName=spinner,Mode=TwoWay}"
+             Name="textBox"/>
+    <Grid Grid.Column="1">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+      <Grid.Resources>
+        <SolidColorBrush x:Key="brush" Color="#000000" />
+      </Grid.Resources>
+      <RepeatButton Grid.Row="0" Command="{x:Static guardian:Spinner.IncreaseCommand}">
+        <Canvas HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="-4,-4,0,0">
+          <Polygon HorizontalAlignment="Stretch"
+                   VerticalAlignment="Stretch"
+                   Fill="{Binding Path=Foreground,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=RepeatButton},Mode=TwoWay}">
+            <Polygon.Points>
+              <Point X="0" Y="6"/>
+              <Point X="8" Y="6"/>
+              <Point X="4" Y="2"/>
+            </Polygon.Points>
+          </Polygon>
+        </Canvas>
+      
+        <RepeatButton.Style>
+          <Style TargetType="{x:Type RepeatButton}" BasedOn="{StaticResource spinStyle}">
+            <Style.Triggers>
+              <DataTrigger Value="True" Binding="{Binding Path=IsMaxValue,ElementName=spinner}">
+                <Setter Value="False" Property="IsEnabled" />
+              </DataTrigger>
+            </Style.Triggers>
+          </Style>
+        </RepeatButton.Style>
+      </RepeatButton>
+      <RepeatButton Grid.Row="1" Command="guardian:Spinner.DecreaseCommand">
+        <Canvas HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="-4,-4,0,0">
+          <Polygon HorizontalAlignment="Stretch"
+                   VerticalAlignment="Stretch"
+                   Fill="{Binding Path=Foreground,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=RepeatButton},Mode=TwoWay}">
+              <Polygon.Points>
+                <Point X="0" Y="2"/>
+                <Point X="8" Y="2"/>
+                <Point X="4" Y="6"/>
+              </Polygon.Points>
+          </Polygon>
+        </Canvas>
+      
+        <RepeatButton.Style>
+          <Style TargetType="{x:Type RepeatButton}" BasedOn="{StaticResource spinStyle}">
+            <Style.Triggers>
+              <DataTrigger Value="True" Binding="{Binding Path=IsMinValue,ElementName=spinner}">
+                <Setter Value="False" Property="IsEnabled" />
+              </DataTrigger>
+            </Style.Triggers>
+          </Style>
+        </RepeatButton.Style>
+      </RepeatButton>
+    </Grid>
+  </Grid>
+</UserControl>

@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FluidTest.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DataInputLocation" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Source Data\</Value>
+    </Setting>
+    <Setting Name="LocationInput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Location.txt</Value>
+    </Setting>
+    <Setting Name="StreetInput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Street.txt</Value>
+    </Setting>
+    <Setting Name="ConsumerDebtInput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Consumer Debt.txt</Value>
+    </Setting>
+    <Setting Name="UserInput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">User.txt</Value>
+    </Setting>
+    <Setting Name="NickNameInput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ShortenedFirstNames.txt</Value>
+    </Setting>
+    <Setting Name="OrganizationInput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Organization.txt</Value>
+    </Setting>
+    <Setting Name="Address2Input" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Address2.txt</Value>
+    </Setting>
+    <Setting Name="MaleSalutationInput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">MaleSalutations.txt</Value>
+    </Setting>
+    <Setting Name="ConsumerInput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">consumer.txt</Value>
+    </Setting>
+    <Setting Name="MaleNamesInput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">MaleNames.txt</Value>
+    </Setting>
+    <Setting Name="FemaleNamesInput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FemaleNames.txt</Value>
+    </Setting>
+    <Setting Name="MaleSuffixInput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">MaleSuffix.txt</Value>
+    </Setting>
+    <Setting Name="LastNameInput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">LastNames.txt</Value>
+    </Setting>
+    <Setting Name="PhoneNumberInput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PhoneNumbers.txt</Value>
+    </Setting>
+    <Setting Name="FemaleSalutationInput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FemaleSalutations.txt</Value>
+    </Setting>
+    <Setting Name="CreditCardIssuerInput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Credit Card Issuer.txt</Value>
+    </Setting>
+    <Setting Name="DataOutputLocation" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Generated Data\</Value>
+    </Setting>
+    <Setting Name="ConsumerDebtOutput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Consumer Debt.xml</Value>
+    </Setting>
+    <Setting Name="ConsumerOutput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Consumer.xml</Value>
+    </Setting>
+    <Setting Name="TimestampFileOutput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Timestamps.txt</Value>
+    </Setting>
+    <Setting Name="ConsumerTrustOutput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Consumer Trust.xml</Value>
+    </Setting>
+    <Setting Name="UserOutput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">User.xml</Value>
+    </Setting>
+    <Setting Name="CreditCardOutput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Credit Card.xml</Value>
+    </Setting>
+    <Setting Name="OrganizationOutput" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Organization.xml</Value>
+    </Setting>
+    <Setting Name="DumpDataSetToXml" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DumpDataSetToBinary" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DumpMiscDataGenStats" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DumpMatchDataToTable" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DumpMatchDataToCsv" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="CsvMatchDumpFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">GeneratedTestData_MatchDump.csv</Value>
+    </Setting>
+    <Setting Name="IncludeHeadersInCsvOutput" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SplitUpOrganizationWorkingOrders" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="NumberOfWorkingOrderFilesPerOrganization" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="NumberOfImportFilesPerOrganization" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="PercentageOfConsumerRecordsWithDateOfBirth" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="PercentageOfCreditCardRecordsWithIssuerData" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">85</Value>
+    </Setting>
+    <Setting Name="PercentageOfConsumerRecordsWithFirstNames" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">90</Value>
+    </Setting>
+    <Setting Name="PercentageOfConsumerRecordsWithLastNames" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">95</Value>
+    </Setting>
+    <Setting Name="PercentageOfConsumerRecordsWithPhoneNumber" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">70</Value>
+    </Setting>
+    <Setting Name="PercentageOfConsumerRecordsWithMiddleNames" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">65</Value>
+    </Setting>
+    <Setting Name="PercentageOfConsumerRecordsWithSuffixes" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="PercentageOfConsumerRecordsWithAddress1" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">85</Value>
+    </Setting>
+    <Setting Name="PercentageOfConsumerRecordsWithAddress2" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">18</Value>
+    </Setting>
+    <Setting Name="PercentageOfConsumerRecordsWithBankAccountData" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">33</Value>
+    </Setting>
+    <Setting Name="PercentageOfConsumerRecordsWithCity" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">95</Value>
+    </Setting>
+    <Setting Name="PercentageOfConsumersWithKnownEmployeeStatus" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="PercentageOfConsumerRecordsWithSalutations" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">90</Value>
+    </Setting>
+    <Setting Name="PercentageOfConsumerRecordsWithPostalCode" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">75</Value>
+    </Setting>
+    <Setting Name="PercentageOfConsumerRecordsWithProvinceCode" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">90</Value>
+    </Setting>
+    <Setting Name="PercentageOfUnemployment" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">9</Value>
+    </Setting>
+    <Setting Name="UseTimeBasedRandomSeed" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="RandomNumberGeneratorSeed" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="NumberOfCreditCardsPerConsumer" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="RandomCreditCardsPerConsumerMax" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">14</Value>
+    </Setting>
+    <Setting Name="OneConsumerCreditCardPerDebtHolderOrganization" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DebtSideFuzzCount" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CommonFuzzCount" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="DebtSideFuzzNicknamePercentage" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="DebtHolderAccountNumberStartValue" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">152515115</Value>
+    </Setting>
+    <Setting Name="NumberOfConsumerRecords" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="NumberOfTrustRecords" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">620</Value>
+    </Setting>
+    <Setting Name="NumberOfDebtRecords" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
+    <Setting Name="NumberOfMatches" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">251</Value>
+    </Setting>
+    <Setting Name="TrustSideFuzzCount" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">101</Value>
+    </Setting>
+    <Setting Name="TrustSideFuzzNicknamePercentage" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

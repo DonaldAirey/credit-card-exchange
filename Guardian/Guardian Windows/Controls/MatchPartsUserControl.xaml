@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="FluidTrade.Guardian.Windows.Controls.MatchPartsUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="152" Width="258" BorderThickness="2" BorderBrush="Black">
+        <Grid Margin="0" Name="grid1" Height="148" VerticalAlignment="Top" Width="254">
+            <Grid.RowDefinitions>
+                <RowDefinition Name="headerRow" IsEnabled="False" />
+                <RowDefinition Name="accountNumberRow" />
+                <RowDefinition Name="socialSecurityRow" />
+                <RowDefinition Name="lastNameRow" />
+                <RowDefinition Name="firstNameRow" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35" Name="percentOfTotalColumn" />
+                <ColumnDefinition Width="110" Name="componentNameColumn" />
+                <ColumnDefinition Name="strengthColumn" Width="90*" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="1" Grid.Row="1" Name="accountNumberLabel" BorderBrush="LightGray" BorderThickness="1">Account Number</Label>
+            <Label Grid.Column="1" Grid.Row="2" Name="socialSecurityLabel" BorderBrush="LightGray" BorderThickness="1">Social Security</Label>
+            <Label Grid.Column="1" Grid.Row="3" Name="lastNameLabel" BorderBrush="LightGray" BorderThickness="1">LastName</Label>
+            <Label Grid.Column="1" Grid.Row="4" Name="firstNameLabel" BorderBrush="LightGray" BorderThickness="1">First Name</Label>
+            <Label Grid.Column="1" Grid.Row="0" Name="componentHeader" Background="LightGray" HorizontalContentAlignment="Center" BorderBrush="White" BorderThickness="1,0,1,0">Match Part</Label>
+            <Label Grid.Column="0" Grid.Row="1" Name="accountNumberPercentLabel" HorizontalContentAlignment="Right" IsEnabled="True" BorderBrush="LightGray" BorderThickness="1">40</Label>
+            <Label Grid.Column="0" Grid.Row="2" Name="socialSecurityPercentLabel" HorizontalContentAlignment="Right" IsEnabled="True" BorderBrush="LightGray" BorderThickness="1">40</Label>
+            <Label Grid.Column="0" Grid.Row="3" Name="lastNamePercentLabel" HorizontalContentAlignment="Right" IsEnabled="True" BorderBrush="LightGray" BorderThickness="1">15</Label>
+            <Label Grid.Column="0" Grid.Row="4" Name="firstNamePercentLabel" HorizontalContentAlignment="Right" IsEnabled="True" BorderBrush="LightGray" BorderThickness="1">5</Label>
+            <Label Grid.Column="0" Grid.Row="0" Name="totalPercentHeader" Background="LightGray" HorizontalContentAlignment="Center" BorderBrush="White" >%</Label>
+            <Label Grid.Column="2" Grid.Row="0" Name="matchStrengthLabel" Background="LightGray" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" BorderBrush="White" >Part Strength</Label>
+            <Border Grid.Column="2" Grid.Row="1" Name="accountNumberContentControl"  BorderBrush="LightGray" BorderThickness="1"/>
+            <Border Grid.Column="2" Grid.Row="2" Name="socialSecurityContentControl"  BorderBrush="LightGray" BorderThickness="1"/>
+            <Border Grid.Column="2" Grid.Row="3" Name="lastNameContentControl"  BorderBrush="LightGray" BorderThickness="1"/>
+            <Border Grid.Column="2" Grid.Row="4" Name="firstNameContentControl"  BorderBrush="LightGray" BorderThickness="1"/>
+        </Grid>
+</UserControl>

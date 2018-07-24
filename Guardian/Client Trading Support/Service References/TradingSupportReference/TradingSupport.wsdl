@@ -1,0 +1,2168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="TradingSupport" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="TcpSupportEndpoint_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:SslTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+            <sp:IncludeTimestamp />
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <sp:EndorsingSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:SecureConversationToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+              <wsp:Policy>
+                <sp:BootstrapPolicy>
+                  <wsp:Policy>
+                    <sp:SignedParts>
+                      <sp:Body />
+                      <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
+                      <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
+                      <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
+                      <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
+                      <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
+                      <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
+                      <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
+                    </sp:SignedParts>
+                    <sp:EncryptedParts>
+                      <sp:Body />
+                    </sp:EncryptedParts>
+                    <sp:TransportBinding>
+                      <wsp:Policy>
+                        <sp:TransportToken>
+                          <wsp:Policy>
+                            <msf:SslTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy" />
+                          </wsp:Policy>
+                        </sp:TransportToken>
+                        <sp:AlgorithmSuite>
+                          <wsp:Policy>
+                            <sp:Basic256 />
+                          </wsp:Policy>
+                        </sp:AlgorithmSuite>
+                        <sp:Layout>
+                          <wsp:Policy>
+                            <sp:Strict />
+                          </wsp:Policy>
+                        </sp:Layout>
+                        <sp:IncludeTimestamp />
+                      </wsp:Policy>
+                    </sp:TransportBinding>
+                    <sp:SignedSupportingTokens>
+                      <wsp:Policy>
+                        <sp:UsernameToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+                          <wsp:Policy>
+                            <sp:WssUsernameToken10 />
+                          </wsp:Policy>
+                        </sp:UsernameToken>
+                      </wsp:Policy>
+                    </sp:SignedSupportingTokens>
+                    <sp:Wss11>
+                      <wsp:Policy>
+                        <sp:MustSupportRefKeyIdentifier />
+                        <sp:MustSupportRefIssuerSerial />
+                        <sp:MustSupportRefThumbprint />
+                        <sp:MustSupportRefEncryptedKey />
+                      </wsp:Policy>
+                    </sp:Wss11>
+                    <sp:Trust10>
+                      <wsp:Policy>
+                        <sp:MustSupportIssuedTokens />
+                        <sp:RequireClientEntropy />
+                        <sp:RequireServerEntropy />
+                      </wsp:Policy>
+                    </sp:Trust10>
+                  </wsp:Policy>
+                </sp:BootstrapPolicy>
+              </wsp:Policy>
+            </sp:SecureConversationToken>
+            <sp:SignedParts>
+              <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
+            </sp:SignedParts>
+          </wsp:Policy>
+        </sp:EndorsingSupportingTokens>
+        <sp:Wss11 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:MustSupportRefKeyIdentifier />
+            <sp:MustSupportRefIssuerSerial />
+            <sp:MustSupportRefThumbprint />
+            <sp:MustSupportRefEncryptedKey />
+          </wsp:Policy>
+        </sp:Wss11>
+        <sp:Trust10 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:MustSupportIssuedTokens />
+            <sp:RequireClientEntropy />
+            <sp:RequireServerEntropy />
+          </wsp:Policy>
+        </sp:Trust10>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="TcpSupportEndpoint_GetUserId_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <oletx:OleTxAssertion wsp:Optional="true" wsp1:Optional="true" xmlns:oletx="http://schemas.microsoft.com/ws/2006/02/tx/oletx" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2002/12/policy" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="TcpSupportEndpoint_AcceptConsumerDebtSettlement_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <oletx:OleTxAssertion wsp:Optional="true" wsp1:Optional="true" xmlns:oletx="http://schemas.microsoft.com/ws/2006/02/tx/oletx" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2002/12/policy" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="TcpSupportEndpoint_CreateConsumerDebtSettlement_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <oletx:OleTxAssertion wsp:Optional="true" wsp1:Optional="true" xmlns:oletx="http://schemas.microsoft.com/ws/2006/02/tx/oletx" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2002/12/policy" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="TcpSupportEndpoint_CreateConsumerTrustSettlement_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <oletx:OleTxAssertion wsp:Optional="true" wsp1:Optional="true" xmlns:oletx="http://schemas.microsoft.com/ws/2006/02/tx/oletx" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2002/12/policy" />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/Guardian/Trading Support?xsd=xsd3" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/Guardian/Trading Support?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/Guardian/Trading Support?xsd=xsd1" namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian.Records" />
+      <xsd:import schemaLocation="http://localhost/Guardian/Trading Support?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System" />
+      <xsd:import schemaLocation="http://localhost/Guardian/Trading Support?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Core" />
+      <xsd:import schemaLocation="http://localhost/Guardian/Trading Support?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost/Guardian/Trading Support?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITradingSupport_UpdateEntityTree_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEntityTree" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateEntityTree_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEntityTreeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteEntityTree_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEntityTree" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteEntityTree_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEntityTreeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GrantAccess_InputMessage">
+    <wsdl:part name="parameters" element="tns:GrantAccess" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GrantAccess_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GrantAccessResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_RevokeAccess_InputMessage">
+    <wsdl:part name="parameters" element="tns:RevokeAccess" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_RevokeAccess_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RevokeAccessResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateCreditCard_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateCreditCard" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateCreditCard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateCreditCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateCreditCard_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q1:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateCreditCard_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCreditCard" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateCreditCard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCreditCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateCreditCard_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q2:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteCreditCard_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCreditCard" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteCreditCard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCreditCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteCreditCard_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q3:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetCreditCard_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCreditCard" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetCreditCard_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCreditCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetCreditCard_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q4:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerDebtPayment_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConsumerDebtPayment" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerDebtPayment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConsumerDebtPaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerDebtPayment_OptimisticConcurrencyFaultFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q5:OptimisticConcurrencyFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerDebtPayment_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q6:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerDebtPayment_SecurityFaultFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q7:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerTrustPayment_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConsumerTrustPayment" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerTrustPayment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConsumerTrustPaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerTrustPayment_OptimisticConcurrencyFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q8:OptimisticConcurrencyFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerTrustPayment_SecurityFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q9:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerTrustPayment_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q10:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateDestinationOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDestinationOrders" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateDestinationOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDestinationOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DestroyDestinationOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:DestroyDestinationOrders" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DestroyDestinationOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DestroyDestinationOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeclineMatch_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeclineMatch" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeclineMatch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeclineMatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateNegotiation_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNegotiation" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateNegotiation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNegotiationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateNegotiation_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q11:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateNegotiation_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNegotiation" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateNegotiation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNegotiationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateNegotiation_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q12:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeclineNegotiation_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeclineNegotiation" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeclineNegotiation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeclineNegotiationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_OfferNegotiation_InputMessage">
+    <wsdl:part name="parameters" element="tns:OfferNegotiation" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_OfferNegotiation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OfferNegotiationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateProvince_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateProvince" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateProvince_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateProvinceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateProvince_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q13="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q13:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateProvince_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProvince" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateProvince_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProvinceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateProvince_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q14:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateReport" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateReport_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q15:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateReport_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateReport" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateReport_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateReport_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q16:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateSecurity_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateSecurity" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateSecurity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateSecurityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateSecurity_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q17="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q17:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteSecurity_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSecurity" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteSecurity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSecurityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteSecurity_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q18:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetSecurity_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSecurity" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetSecurity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSecurityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetSecurity_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q19="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q19:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateSecurity_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSecurity" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateSecurity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSecurityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateSecurity_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q20="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q20:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetServerMetadata_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetServerMetadata" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetServerMetadata_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetServerMetadataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetSimulationParameters_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSimulationParameters" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetSimulationParameters_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSimulationParametersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_SetSimulationParameters_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetSimulationParameters" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_SetSimulationParameters_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetSimulationParametersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserId" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetUserId_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q21:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateWorkingOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateWorkingOrder" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateWorkingOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateWorkingOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateWorkingOrder_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q22="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q22:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateWorkingOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWorkingOrder" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateWorkingOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateWorkingOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateWorkingOrder_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q23="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q23:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteWorkingOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWorkingOrder" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteWorkingOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteWorkingOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteWorkingOrder_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q24:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetWorkingOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkingOrder" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetWorkingOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWorkingOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetWorkingOrder_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q25="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q25:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateCommissionSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateCommissionSchedule" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateCommissionSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateCommissionScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateDebtRule_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDebtRule" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateDebtRule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDebtRuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteDebtRule_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDebtRule" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteDebtRule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDebtRuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateDebtRule_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDebtRule" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateDebtRule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDebtRuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetBlotter_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBlotter" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetBlotter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBlotterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetBlotter_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q26="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q26:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEntity" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateEntityTree_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateEntityTree" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateEntityTree_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateEntityTreeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_AcceptMatch_InputMessage">
+    <wsdl:part name="parameters" element="tns:AcceptMatch" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_AcceptMatch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AcceptMatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_ClearDestinationOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearDestinationOrders" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_ClearDestinationOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearDestinationOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateConsumer_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateConsumer" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateConsumer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateConsumerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateConsumer_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q27="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q27:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateDebtHolderImportTranslation_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDebtHolderImportTranslation" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateDebtHolderImportTranslation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDebtHolderImportTranslationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateDebtHolderImportTranslation_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q28="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q28:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteConsumer_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteConsumer" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteConsumer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteConsumerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteConsumer_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q29="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q29:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumer_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConsumer" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConsumerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumer_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q30="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q30:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetConsumer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConsumer" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetConsumer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConsumerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetConsumer_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q31="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q31:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateConsumerDebt_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateConsumerDebt" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateConsumerDebt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateConsumerDebtResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateConsumerDebt_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q32="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q32:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerDebt_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConsumerDebt" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerDebt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConsumerDebtResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerDebt_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q33="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q33:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteConsumerDebt_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteConsumerDebt" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteConsumerDebt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteConsumerDebtResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteConsumerDebt_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q34="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q34:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetConsumerDebt_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConsumerDebt" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetConsumerDebt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConsumerDebtResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetConsumerDebt_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q35="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q35:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_MoveConsumerDebtToBlotter_InputMessage">
+    <wsdl:part name="parameters" element="tns:MoveConsumerDebtToBlotter" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_MoveConsumerDebtToBlotter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MoveConsumerDebtToBlotterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_MoveConsumerDebtToBlotter_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q36="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q36:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteConsumerDebtNegotiation_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteConsumerDebtNegotiation" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteConsumerDebtNegotiation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteConsumerDebtNegotiationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteConsumerDebtNegotiation_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q37="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q37:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetConsumerDebtNegotiation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConsumerDebtNegotiation" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetConsumerDebtNegotiation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConsumerDebtNegotiationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetConsumerDebtNegotiation_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q38="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q38:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_ImportDebtHolderRecords_InputMessage">
+    <wsdl:part name="parameters" element="tns:ImportDebtHolderRecords" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_ImportDebtHolderRecords_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ImportDebtHolderRecordsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_ImportDebtHolderRecords_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q39="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q39:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_ImportDebtNegotiatorRecords_InputMessage">
+    <wsdl:part name="parameters" element="tns:ImportDebtNegotiatorRecords" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_ImportDebtNegotiatorRecords_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ImportDebtNegotiatorRecordsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_ImportDebtNegotiatorRecords_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q40="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q40:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateDebtHolder_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDebtHolder" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateDebtHolder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDebtHolderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateChat_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateChat" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateChat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateChatResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateChat_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q41="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q41:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateDebtHolder_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDebtHolder" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateDebtHolder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDebtHolderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateDebtHolder_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q42="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q42:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteDebtHolder_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDebtHolder" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteDebtHolder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDebtHolderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateDebtNegotiator_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDebtNegotiator" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateDebtNegotiator_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDebtNegotiatorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateDebtNegotiator_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDebtNegotiator" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateDebtNegotiator_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDebtNegotiatorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateDebtNegotiator_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q43="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q43:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteDebtNegotiator_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDebtNegotiator" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_DeleteDebtNegotiator_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDebtNegotiatorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_AcceptConsumerDebtSettlement_InputMessage">
+    <wsdl:part name="parameters" element="tns:AcceptConsumerDebtSettlement" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_AcceptConsumerDebtSettlement_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AcceptConsumerDebtSettlementResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_AcceptConsumerDebtSettlement_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q44="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q44:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_AcceptConsumerDebtSettlement_SecurityFaultFault_FaultMessage">
+    <wsdl:part xmlns:q45="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q45:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_AcceptConsumerDebtSettlement_ArgumentFaultFault_FaultMessage">
+    <wsdl:part xmlns:q46="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q46:ArgumentFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateConsumerDebtSettlement_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateConsumerDebtSettlement" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateConsumerDebtSettlement_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateConsumerDebtSettlementResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateConsumerDebtSettlement_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q47="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q47:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateConsumerDebtSettlement_ArgumentFaultFault_FaultMessage">
+    <wsdl:part xmlns:q48="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q48:ArgumentFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateConsumerDebtSettlement_PaymentMethodFaultFault_FaultMessage">
+    <wsdl:part xmlns:q49="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q49:PaymentMethodFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateConsumerDebtSettlement_SecurityFaultFault_FaultMessage">
+    <wsdl:part xmlns:q50="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q50:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_RejectConsumerDebtNegotiation_InputMessage">
+    <wsdl:part name="parameters" element="tns:RejectConsumerDebtNegotiation" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_RejectConsumerDebtNegotiation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RejectConsumerDebtNegotiationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_RejectConsumerDebtNegotiation_SecurityFaultFault_FaultMessage">
+    <wsdl:part xmlns:q51="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q51:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_RejectConsumerDebtNegotiation_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q52="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q52:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_RejectConsumerDebtNegotiation_OptimisticConcurrencyFaultFault_FaultMessage">
+    <wsdl:part xmlns:q53="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q53:OptimisticConcurrencyFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_ResetConsumerDebtSettlement_InputMessage">
+    <wsdl:part name="parameters" element="tns:ResetConsumerDebtSettlement" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_ResetConsumerDebtSettlement_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResetConsumerDebtSettlementResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_ResetConsumerDebtSettlement_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q54="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q54:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_ResetConsumerDebtSettlement_SecurityFaultFault_FaultMessage">
+    <wsdl:part xmlns:q55="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q55:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_ResetConsumerDebtSettlement_ArgumentFaultFault_FaultMessage">
+    <wsdl:part xmlns:q56="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q56:ArgumentFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_MoveConsumerTrustToBlotter_InputMessage">
+    <wsdl:part name="parameters" element="tns:MoveConsumerTrustToBlotter" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_MoveConsumerTrustToBlotter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MoveConsumerTrustToBlotterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_MoveConsumerTrustToBlotter_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q57="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q57:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerTrust_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConsumerTrust" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerTrust_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConsumerTrustResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerTrust_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q58="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q58:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetConsumerTrust_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConsumerTrust" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetConsumerTrust_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConsumerTrustResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_GetConsumerTrust_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q59="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q59:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerDebtNegotiation_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConsumerDebtNegotiation" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerDebtNegotiation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConsumerDebtNegotiationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerDebtNegotiation_OptimisticConcurrencyFaultFault_FaultMessage">
+    <wsdl:part xmlns:q60="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q60:OptimisticConcurrencyFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerDebtNegotiation_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q61="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q61:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerDebtNegotiation_SecurityFaultFault_FaultMessage">
+    <wsdl:part xmlns:q62="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q62:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerDebtNegotiationIsRead_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConsumerDebtNegotiationIsRead" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerDebtNegotiationIsRead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConsumerDebtNegotiationIsReadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerDebtNegotiationIsRead_OptimisticConcurrencyFaultFault_FaultMessage">
+    <wsdl:part xmlns:q63="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q63:OptimisticConcurrencyFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerDebtNegotiationIsRead_SecurityFaultFault_FaultMessage">
+    <wsdl:part xmlns:q64="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q64:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerDebtNegotiationIsRead_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q65="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q65:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_RejectConsumerTrustNegotiation_InputMessage">
+    <wsdl:part name="parameters" element="tns:RejectConsumerTrustNegotiation" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_RejectConsumerTrustNegotiation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RejectConsumerTrustNegotiationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_RejectConsumerTrustNegotiation_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q66="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q66:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_RejectConsumerTrustNegotiation_SecurityFaultFault_FaultMessage">
+    <wsdl:part xmlns:q67="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q67:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_RejectConsumerTrustNegotiation_OptimisticConcurrencyFaultFault_FaultMessage">
+    <wsdl:part xmlns:q68="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q68:OptimisticConcurrencyFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerTrustNegotiation_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConsumerTrustNegotiation" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerTrustNegotiation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConsumerTrustNegotiationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerTrustNegotiation_SecurityFaultFault_FaultMessage">
+    <wsdl:part xmlns:q69="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q69:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerTrustNegotiation_OptimisticConcurrencyFaultFault_FaultMessage">
+    <wsdl:part xmlns:q70="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q70:OptimisticConcurrencyFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerTrustNegotiation_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q71="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q71:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerTrustNegotiationIsRead_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConsumerTrustNegotiationIsRead" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerTrustNegotiationIsRead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConsumerTrustNegotiationIsReadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerTrustNegotiationIsRead_SecurityFaultFault_FaultMessage">
+    <wsdl:part xmlns:q72="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q72:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerTrustNegotiationIsRead_OptimisticConcurrencyFaultFault_FaultMessage">
+    <wsdl:part xmlns:q73="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q73:OptimisticConcurrencyFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_UpdateConsumerTrustNegotiationIsRead_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q74="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q74:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateConsumerTrustSettlement_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateConsumerTrustSettlement" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateConsumerTrustSettlement_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateConsumerTrustSettlementResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateConsumerTrustSettlement_RecordNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q75="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q75:RecordNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateConsumerTrustSettlement_PaymentMethodFaultFault_FaultMessage">
+    <wsdl:part xmlns:q76="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q76:PaymentMethodFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateConsumerTrustSettlement_SecurityFaultFault_FaultMessage">
+    <wsdl:part xmlns:q77="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q77:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="ITradingSupport_CreateConsumerTrustSettlement_ArgumentFaultFault_FaultMessage">
+    <wsdl:part xmlns:q78="http://schemas.datacontract.org/2004/07/FluidTrade.Core" name="detail" element="q78:ArgumentFault" />
+  </wsdl:message>
+  <wsdl:portType name="ITradingSupport">
+    <wsdl:operation name="UpdateEntityTree">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/UpdateEntityTree" message="tns:ITradingSupport_UpdateEntityTree_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/UpdateEntityTreeResponse" message="tns:ITradingSupport_UpdateEntityTree_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEntityTree">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/DeleteEntityTree" message="tns:ITradingSupport_DeleteEntityTree_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/DeleteEntityTreeResponse" message="tns:ITradingSupport_DeleteEntityTree_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GrantAccess">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/GrantAccess" message="tns:ITradingSupport_GrantAccess_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/GrantAccessResponse" message="tns:ITradingSupport_GrantAccess_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RevokeAccess">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/RevokeAccess" message="tns:ITradingSupport_RevokeAccess_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/RevokeAccessResponse" message="tns:ITradingSupport_RevokeAccess_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateCreditCard">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/CreateCreditCard" message="tns:ITradingSupport_CreateCreditCard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/CreateCreditCardResponse" message="tns:ITradingSupport_CreateCreditCard_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/CreateCreditCardRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_CreateCreditCard_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCreditCard">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/UpdateCreditCard" message="tns:ITradingSupport_UpdateCreditCard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/UpdateCreditCardResponse" message="tns:ITradingSupport_UpdateCreditCard_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateCreditCardRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_UpdateCreditCard_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCreditCard">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/DeleteCreditCard" message="tns:ITradingSupport_DeleteCreditCard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/DeleteCreditCardResponse" message="tns:ITradingSupport_DeleteCreditCard_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/DeleteCreditCardRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_DeleteCreditCard_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCard">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/GetCreditCard" message="tns:ITradingSupport_GetCreditCard_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/GetCreditCardResponse" message="tns:ITradingSupport_GetCreditCard_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/GetCreditCardRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_GetCreditCard_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConsumerDebtPayment">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerDebtPayment" message="tns:ITradingSupport_UpdateConsumerDebtPayment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerDebtPaymentResponse" message="tns:ITradingSupport_UpdateConsumerDebtPayment_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerDebtPaymentOptimisticConcurrencyFaultFault" name="OptimisticConcurrencyFaultFault" message="tns:ITradingSupport_UpdateConsumerDebtPayment_OptimisticConcurrencyFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerDebtPaymentRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_UpdateConsumerDebtPayment_RecordNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerDebtPaymentSecurityFaultFault" name="SecurityFaultFault" message="tns:ITradingSupport_UpdateConsumerDebtPayment_SecurityFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConsumerTrustPayment">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerTrustPayment" message="tns:ITradingSupport_UpdateConsumerTrustPayment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerTrustPaymentResponse" message="tns:ITradingSupport_UpdateConsumerTrustPayment_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerTrustPaymentOptimisticConcurrencyFaultFault" name="OptimisticConcurrencyFaultFault" message="tns:ITradingSupport_UpdateConsumerTrustPayment_OptimisticConcurrencyFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerTrustPaymentSecurityFaultFault" name="SecurityFaultFault" message="tns:ITradingSupport_UpdateConsumerTrustPayment_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerTrustPaymentRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_UpdateConsumerTrustPayment_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateDestinationOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/CreateDestinationOrders" message="tns:ITradingSupport_CreateDestinationOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/CreateDestinationOrdersResponse" message="tns:ITradingSupport_CreateDestinationOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DestroyDestinationOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/DestroyDestinationOrders" message="tns:ITradingSupport_DestroyDestinationOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/DestroyDestinationOrdersResponse" message="tns:ITradingSupport_DestroyDestinationOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeclineMatch">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/DeclineMatch" message="tns:ITradingSupport_DeclineMatch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/DeclineMatchResponse" message="tns:ITradingSupport_DeclineMatch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateNegotiation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/CreateNegotiation" message="tns:ITradingSupport_CreateNegotiation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/CreateNegotiationResponse" message="tns:ITradingSupport_CreateNegotiation_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/CreateNegotiationRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_CreateNegotiation_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNegotiation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/UpdateNegotiation" message="tns:ITradingSupport_UpdateNegotiation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/UpdateNegotiationResponse" message="tns:ITradingSupport_UpdateNegotiation_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateNegotiationRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_UpdateNegotiation_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeclineNegotiation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/DeclineNegotiation" message="tns:ITradingSupport_DeclineNegotiation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/DeclineNegotiationResponse" message="tns:ITradingSupport_DeclineNegotiation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OfferNegotiation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/OfferNegotiation" message="tns:ITradingSupport_OfferNegotiation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/OfferNegotiationResponse" message="tns:ITradingSupport_OfferNegotiation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateProvince">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/CreateProvince" message="tns:ITradingSupport_CreateProvince_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/CreateProvinceResponse" message="tns:ITradingSupport_CreateProvince_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/CreateProvinceRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_CreateProvince_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProvince">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/UpdateProvince" message="tns:ITradingSupport_UpdateProvince_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/UpdateProvinceResponse" message="tns:ITradingSupport_UpdateProvince_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateProvinceRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_UpdateProvince_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/CreateReport" message="tns:ITradingSupport_CreateReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/CreateReportResponse" message="tns:ITradingSupport_CreateReport_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/CreateReportRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_CreateReport_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReport">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/UpdateReport" message="tns:ITradingSupport_UpdateReport_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/UpdateReportResponse" message="tns:ITradingSupport_UpdateReport_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateReportRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_UpdateReport_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSecurity">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/CreateSecurity" message="tns:ITradingSupport_CreateSecurity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/CreateSecurityResponse" message="tns:ITradingSupport_CreateSecurity_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/CreateSecurityRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_CreateSecurity_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSecurity">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/DeleteSecurity" message="tns:ITradingSupport_DeleteSecurity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/DeleteSecurityResponse" message="tns:ITradingSupport_DeleteSecurity_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/DeleteSecurityRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_DeleteSecurity_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSecurity">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/GetSecurity" message="tns:ITradingSupport_GetSecurity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/GetSecurityResponse" message="tns:ITradingSupport_GetSecurity_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/GetSecurityRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_GetSecurity_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSecurity">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/UpdateSecurity" message="tns:ITradingSupport_UpdateSecurity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/UpdateSecurityResponse" message="tns:ITradingSupport_UpdateSecurity_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateSecurityRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_UpdateSecurity_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServerMetadata">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/GetServerMetadata" message="tns:ITradingSupport_GetServerMetadata_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/GetServerMetadataResponse" message="tns:ITradingSupport_GetServerMetadata_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSimulationParameters">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/GetSimulationParameters" message="tns:ITradingSupport_GetSimulationParameters_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/GetSimulationParametersResponse" message="tns:ITradingSupport_GetSimulationParameters_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetSimulationParameters">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/SetSimulationParameters" message="tns:ITradingSupport_SetSimulationParameters_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/SetSimulationParametersResponse" message="tns:ITradingSupport_SetSimulationParameters_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/GetUserId" message="tns:ITradingSupport_GetUserId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/GetUserIdResponse" message="tns:ITradingSupport_GetUserId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/GetUserIdRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_GetUserId_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateWorkingOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/CreateWorkingOrder" message="tns:ITradingSupport_CreateWorkingOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/CreateWorkingOrderResponse" message="tns:ITradingSupport_CreateWorkingOrder_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/CreateWorkingOrderRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_CreateWorkingOrder_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkingOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/UpdateWorkingOrder" message="tns:ITradingSupport_UpdateWorkingOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/UpdateWorkingOrderResponse" message="tns:ITradingSupport_UpdateWorkingOrder_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateWorkingOrderRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_UpdateWorkingOrder_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWorkingOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/DeleteWorkingOrder" message="tns:ITradingSupport_DeleteWorkingOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/DeleteWorkingOrderResponse" message="tns:ITradingSupport_DeleteWorkingOrder_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/DeleteWorkingOrderRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_DeleteWorkingOrder_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkingOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/GetWorkingOrder" message="tns:ITradingSupport_GetWorkingOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/GetWorkingOrderResponse" message="tns:ITradingSupport_GetWorkingOrder_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/GetWorkingOrderRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_GetWorkingOrder_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateCommissionSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/CreateCommissionSchedule" message="tns:ITradingSupport_CreateCommissionSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/CreateCommissionScheduleResponse" message="tns:ITradingSupport_CreateCommissionSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateDebtRule">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/CreateDebtRule" message="tns:ITradingSupport_CreateDebtRule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/CreateDebtRuleResponse" message="tns:ITradingSupport_CreateDebtRule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDebtRule">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/DeleteDebtRule" message="tns:ITradingSupport_DeleteDebtRule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/DeleteDebtRuleResponse" message="tns:ITradingSupport_DeleteDebtRule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDebtRule">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/UpdateDebtRule" message="tns:ITradingSupport_UpdateDebtRule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/UpdateDebtRuleResponse" message="tns:ITradingSupport_UpdateDebtRule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBlotter">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/GetBlotter" message="tns:ITradingSupport_GetBlotter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/GetBlotterResponse" message="tns:ITradingSupport_GetBlotter_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/GetBlotterRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_GetBlotter_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/UpdateEntity" message="tns:ITradingSupport_UpdateEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/UpdateEntityResponse" message="tns:ITradingSupport_UpdateEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateEntityTree">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/CreateEntityTree" message="tns:ITradingSupport_CreateEntityTree_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/CreateEntityTreeResponse" message="tns:ITradingSupport_CreateEntityTree_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AcceptMatch">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/AcceptMatch" message="tns:ITradingSupport_AcceptMatch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/AcceptMatchResponse" message="tns:ITradingSupport_AcceptMatch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearDestinationOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/ClearDestinationOrders" message="tns:ITradingSupport_ClearDestinationOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/ClearDestinationOrdersResponse" message="tns:ITradingSupport_ClearDestinationOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateConsumer">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/CreateConsumer" message="tns:ITradingSupport_CreateConsumer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/CreateConsumerResponse" message="tns:ITradingSupport_CreateConsumer_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/CreateConsumerRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_CreateConsumer_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateDebtHolderImportTranslation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/CreateDebtHolderImportTranslation" message="tns:ITradingSupport_CreateDebtHolderImportTranslation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/CreateDebtHolderImportTranslationResponse" message="tns:ITradingSupport_CreateDebtHolderImportTranslation_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/CreateDebtHolderImportTranslationRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_CreateDebtHolderImportTranslation_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteConsumer">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/DeleteConsumer" message="tns:ITradingSupport_DeleteConsumer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/DeleteConsumerResponse" message="tns:ITradingSupport_DeleteConsumer_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/DeleteConsumerRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_DeleteConsumer_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConsumer">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumer" message="tns:ITradingSupport_UpdateConsumer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerResponse" message="tns:ITradingSupport_UpdateConsumer_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_UpdateConsumer_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConsumer">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/GetConsumer" message="tns:ITradingSupport_GetConsumer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/GetConsumerResponse" message="tns:ITradingSupport_GetConsumer_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/GetConsumerRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_GetConsumer_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateConsumerDebt">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/CreateConsumerDebt" message="tns:ITradingSupport_CreateConsumerDebt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/CreateConsumerDebtResponse" message="tns:ITradingSupport_CreateConsumerDebt_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/CreateConsumerDebtRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_CreateConsumerDebt_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConsumerDebt">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerDebt" message="tns:ITradingSupport_UpdateConsumerDebt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerDebtResponse" message="tns:ITradingSupport_UpdateConsumerDebt_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerDebtRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_UpdateConsumerDebt_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteConsumerDebt">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/DeleteConsumerDebt" message="tns:ITradingSupport_DeleteConsumerDebt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/DeleteConsumerDebtResponse" message="tns:ITradingSupport_DeleteConsumerDebt_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/DeleteConsumerDebtRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_DeleteConsumerDebt_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConsumerDebt">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/GetConsumerDebt" message="tns:ITradingSupport_GetConsumerDebt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/GetConsumerDebtResponse" message="tns:ITradingSupport_GetConsumerDebt_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/GetConsumerDebtRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_GetConsumerDebt_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MoveConsumerDebtToBlotter">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/MoveConsumerDebtToBlotter" message="tns:ITradingSupport_MoveConsumerDebtToBlotter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/MoveConsumerDebtToBlotterResponse" message="tns:ITradingSupport_MoveConsumerDebtToBlotter_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/MoveConsumerDebtToBlotterRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_MoveConsumerDebtToBlotter_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteConsumerDebtNegotiation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/DeleteConsumerDebtNegotiation" message="tns:ITradingSupport_DeleteConsumerDebtNegotiation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/DeleteConsumerDebtNegotiationResponse" message="tns:ITradingSupport_DeleteConsumerDebtNegotiation_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/DeleteConsumerDebtNegotiationRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_DeleteConsumerDebtNegotiation_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConsumerDebtNegotiation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/GetConsumerDebtNegotiation" message="tns:ITradingSupport_GetConsumerDebtNegotiation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/GetConsumerDebtNegotiationResponse" message="tns:ITradingSupport_GetConsumerDebtNegotiation_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/GetConsumerDebtNegotiationRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_GetConsumerDebtNegotiation_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportDebtHolderRecords">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/ImportDebtHolderRecords" message="tns:ITradingSupport_ImportDebtHolderRecords_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/ImportDebtHolderRecordsResponse" message="tns:ITradingSupport_ImportDebtHolderRecords_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/ImportDebtHolderRecordsRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_ImportDebtHolderRecords_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportDebtNegotiatorRecords">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/ImportDebtNegotiatorRecords" message="tns:ITradingSupport_ImportDebtNegotiatorRecords_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/ImportDebtNegotiatorRecordsResponse" message="tns:ITradingSupport_ImportDebtNegotiatorRecords_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/ImportDebtNegotiatorRecordsRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_ImportDebtNegotiatorRecords_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateDebtHolder">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/CreateDebtHolder" message="tns:ITradingSupport_CreateDebtHolder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/CreateDebtHolderResponse" message="tns:ITradingSupport_CreateDebtHolder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateChat">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/CreateChat" message="tns:ITradingSupport_CreateChat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/CreateChatResponse" message="tns:ITradingSupport_CreateChat_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/CreateChatRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_CreateChat_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDebtHolder">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/UpdateDebtHolder" message="tns:ITradingSupport_UpdateDebtHolder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/UpdateDebtHolderResponse" message="tns:ITradingSupport_UpdateDebtHolder_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateDebtHolderRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_UpdateDebtHolder_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDebtHolder">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/DeleteDebtHolder" message="tns:ITradingSupport_DeleteDebtHolder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/DeleteDebtHolderResponse" message="tns:ITradingSupport_DeleteDebtHolder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateDebtNegotiator">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/CreateDebtNegotiator" message="tns:ITradingSupport_CreateDebtNegotiator_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/CreateDebtNegotiatorResponse" message="tns:ITradingSupport_CreateDebtNegotiator_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDebtNegotiator">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/UpdateDebtNegotiator" message="tns:ITradingSupport_UpdateDebtNegotiator_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/UpdateDebtNegotiatorResponse" message="tns:ITradingSupport_UpdateDebtNegotiator_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateDebtNegotiatorRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_UpdateDebtNegotiator_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDebtNegotiator">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/DeleteDebtNegotiator" message="tns:ITradingSupport_DeleteDebtNegotiator_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/DeleteDebtNegotiatorResponse" message="tns:ITradingSupport_DeleteDebtNegotiator_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AcceptConsumerDebtSettlement">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/AcceptConsumerDebtSettlement" message="tns:ITradingSupport_AcceptConsumerDebtSettlement_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/AcceptConsumerDebtSettlementResponse" message="tns:ITradingSupport_AcceptConsumerDebtSettlement_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/AcceptConsumerDebtSettlementRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_AcceptConsumerDebtSettlement_RecordNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/AcceptConsumerDebtSettlementSecurityFaultFault" name="SecurityFaultFault" message="tns:ITradingSupport_AcceptConsumerDebtSettlement_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/AcceptConsumerDebtSettlementArgumentFaultFault" name="ArgumentFaultFault" message="tns:ITradingSupport_AcceptConsumerDebtSettlement_ArgumentFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateConsumerDebtSettlement">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/CreateConsumerDebtSettlement" message="tns:ITradingSupport_CreateConsumerDebtSettlement_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/CreateConsumerDebtSettlementResponse" message="tns:ITradingSupport_CreateConsumerDebtSettlement_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/CreateConsumerDebtSettlementRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_CreateConsumerDebtSettlement_RecordNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/CreateConsumerDebtSettlementArgumentFaultFault" name="ArgumentFaultFault" message="tns:ITradingSupport_CreateConsumerDebtSettlement_ArgumentFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/CreateConsumerDebtSettlementPaymentMethodFaultFault" name="PaymentMethodFaultFault" message="tns:ITradingSupport_CreateConsumerDebtSettlement_PaymentMethodFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/CreateConsumerDebtSettlementSecurityFaultFault" name="SecurityFaultFault" message="tns:ITradingSupport_CreateConsumerDebtSettlement_SecurityFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RejectConsumerDebtNegotiation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/RejectConsumerDebtNegotiation" message="tns:ITradingSupport_RejectConsumerDebtNegotiation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/RejectConsumerDebtNegotiationResponse" message="tns:ITradingSupport_RejectConsumerDebtNegotiation_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/RejectConsumerDebtNegotiationSecurityFaultFault" name="SecurityFaultFault" message="tns:ITradingSupport_RejectConsumerDebtNegotiation_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/RejectConsumerDebtNegotiationRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_RejectConsumerDebtNegotiation_RecordNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/RejectConsumerDebtNegotiationOptimisticConcurrencyFaultFault" name="OptimisticConcurrencyFaultFault" message="tns:ITradingSupport_RejectConsumerDebtNegotiation_OptimisticConcurrencyFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ResetConsumerDebtSettlement">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/ResetConsumerDebtSettlement" message="tns:ITradingSupport_ResetConsumerDebtSettlement_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/ResetConsumerDebtSettlementResponse" message="tns:ITradingSupport_ResetConsumerDebtSettlement_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/ResetConsumerDebtSettlementRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_ResetConsumerDebtSettlement_RecordNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/ResetConsumerDebtSettlementSecurityFaultFault" name="SecurityFaultFault" message="tns:ITradingSupport_ResetConsumerDebtSettlement_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/ResetConsumerDebtSettlementArgumentFaultFault" name="ArgumentFaultFault" message="tns:ITradingSupport_ResetConsumerDebtSettlement_ArgumentFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MoveConsumerTrustToBlotter">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/MoveConsumerTrustToBlotter" message="tns:ITradingSupport_MoveConsumerTrustToBlotter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/MoveConsumerTrustToBlotterResponse" message="tns:ITradingSupport_MoveConsumerTrustToBlotter_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/MoveConsumerTrustToBlotterRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_MoveConsumerTrustToBlotter_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConsumerTrust">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerTrust" message="tns:ITradingSupport_UpdateConsumerTrust_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerTrustResponse" message="tns:ITradingSupport_UpdateConsumerTrust_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerTrustRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_UpdateConsumerTrust_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConsumerTrust">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/GetConsumerTrust" message="tns:ITradingSupport_GetConsumerTrust_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/GetConsumerTrustResponse" message="tns:ITradingSupport_GetConsumerTrust_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/GetConsumerTrustRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_GetConsumerTrust_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConsumerDebtNegotiation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerDebtNegotiation" message="tns:ITradingSupport_UpdateConsumerDebtNegotiation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerDebtNegotiationResponse" message="tns:ITradingSupport_UpdateConsumerDebtNegotiation_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerDebtNegotiationOptimisticConcurrencyFaultFault" name="OptimisticConcurrencyFaultFault" message="tns:ITradingSupport_UpdateConsumerDebtNegotiation_OptimisticConcurrencyFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerDebtNegotiationRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_UpdateConsumerDebtNegotiation_RecordNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerDebtNegotiationSecurityFaultFault" name="SecurityFaultFault" message="tns:ITradingSupport_UpdateConsumerDebtNegotiation_SecurityFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConsumerDebtNegotiationIsRead">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerDebtNegotiationIsRead" message="tns:ITradingSupport_UpdateConsumerDebtNegotiationIsRead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerDebtNegotiationIsReadResponse" message="tns:ITradingSupport_UpdateConsumerDebtNegotiationIsRead_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerDebtNegotiationIsReadOptimisticConcurrencyFaultFault" name="OptimisticConcurrencyFaultFault" message="tns:ITradingSupport_UpdateConsumerDebtNegotiationIsRead_OptimisticConcurrencyFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerDebtNegotiationIsReadSecurityFaultFault" name="SecurityFaultFault" message="tns:ITradingSupport_UpdateConsumerDebtNegotiationIsRead_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerDebtNegotiationIsReadRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_UpdateConsumerDebtNegotiationIsRead_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RejectConsumerTrustNegotiation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/RejectConsumerTrustNegotiation" message="tns:ITradingSupport_RejectConsumerTrustNegotiation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/RejectConsumerTrustNegotiationResponse" message="tns:ITradingSupport_RejectConsumerTrustNegotiation_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/RejectConsumerTrustNegotiationRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_RejectConsumerTrustNegotiation_RecordNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/RejectConsumerTrustNegotiationSecurityFaultFault" name="SecurityFaultFault" message="tns:ITradingSupport_RejectConsumerTrustNegotiation_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/RejectConsumerTrustNegotiationOptimisticConcurrencyFaultFault" name="OptimisticConcurrencyFaultFault" message="tns:ITradingSupport_RejectConsumerTrustNegotiation_OptimisticConcurrencyFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConsumerTrustNegotiation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerTrustNegotiation" message="tns:ITradingSupport_UpdateConsumerTrustNegotiation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerTrustNegotiationResponse" message="tns:ITradingSupport_UpdateConsumerTrustNegotiation_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerTrustNegotiationSecurityFaultFault" name="SecurityFaultFault" message="tns:ITradingSupport_UpdateConsumerTrustNegotiation_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerTrustNegotiationOptimisticConcurrencyFaultFault" name="OptimisticConcurrencyFaultFault" message="tns:ITradingSupport_UpdateConsumerTrustNegotiation_OptimisticConcurrencyFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerTrustNegotiationRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_UpdateConsumerTrustNegotiation_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConsumerTrustNegotiationIsRead">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerTrustNegotiationIsRead" message="tns:ITradingSupport_UpdateConsumerTrustNegotiationIsRead_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerTrustNegotiationIsReadResponse" message="tns:ITradingSupport_UpdateConsumerTrustNegotiationIsRead_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerTrustNegotiationIsReadSecurityFaultFault" name="SecurityFaultFault" message="tns:ITradingSupport_UpdateConsumerTrustNegotiationIsRead_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerTrustNegotiationIsReadOptimisticConcurrencyFaultFault" name="OptimisticConcurrencyFaultFault" message="tns:ITradingSupport_UpdateConsumerTrustNegotiationIsRead_OptimisticConcurrencyFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/UpdateConsumerTrustNegotiationIsReadRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_UpdateConsumerTrustNegotiationIsRead_RecordNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateConsumerTrustSettlement">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradingSupport/CreateConsumerTrustSettlement" message="tns:ITradingSupport_CreateConsumerTrustSettlement_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradingSupport/CreateConsumerTrustSettlementResponse" message="tns:ITradingSupport_CreateConsumerTrustSettlement_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/CreateConsumerTrustSettlementRecordNotFoundFaultFault" name="RecordNotFoundFaultFault" message="tns:ITradingSupport_CreateConsumerTrustSettlement_RecordNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/CreateConsumerTrustSettlementPaymentMethodFaultFault" name="PaymentMethodFaultFault" message="tns:ITradingSupport_CreateConsumerTrustSettlement_PaymentMethodFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/CreateConsumerTrustSettlementSecurityFaultFault" name="SecurityFaultFault" message="tns:ITradingSupport_CreateConsumerTrustSettlement_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ITradingSupport/CreateConsumerTrustSettlementArgumentFaultFault" name="ArgumentFaultFault" message="tns:ITradingSupport_CreateConsumerTrustSettlement_ArgumentFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TcpSupportEndpoint" type="tns:ITradingSupport">
+    <wsp:PolicyReference URI="#TcpSupportEndpoint_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="UpdateEntityTree">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/UpdateEntityTree" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEntityTree">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/DeleteEntityTree" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GrantAccess">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/GrantAccess" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RevokeAccess">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/RevokeAccess" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCreditCard">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/CreateCreditCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCreditCard">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/UpdateCreditCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCreditCard">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/DeleteCreditCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCreditCard">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/GetCreditCard" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConsumerDebtPayment">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/UpdateConsumerDebtPayment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="OptimisticConcurrencyFaultFault">
+        <soap12:fault use="literal" name="OptimisticConcurrencyFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap12:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConsumerTrustPayment">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/UpdateConsumerTrustPayment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="OptimisticConcurrencyFaultFault">
+        <soap12:fault use="literal" name="OptimisticConcurrencyFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap12:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDestinationOrders">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/CreateDestinationOrders" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DestroyDestinationOrders">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/DestroyDestinationOrders" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeclineMatch">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/DeclineMatch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNegotiation">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/CreateNegotiation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNegotiation">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/UpdateNegotiation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeclineNegotiation">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/DeclineNegotiation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OfferNegotiation">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/OfferNegotiation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateProvince">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/CreateProvince" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateProvince">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/UpdateProvince" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateReport">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/CreateReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReport">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/UpdateReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSecurity">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/CreateSecurity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSecurity">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/DeleteSecurity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetSecurity">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/GetSecurity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSecurity">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/UpdateSecurity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetServerMetadata">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/GetServerMetadata" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSimulationParameters">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/GetSimulationParameters" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSimulationParameters">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/SetSimulationParameters" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserId">
+      <wsp:PolicyReference URI="#TcpSupportEndpoint_GetUserId_policy" />
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/GetUserId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateWorkingOrder">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/CreateWorkingOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkingOrder">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/UpdateWorkingOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteWorkingOrder">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/DeleteWorkingOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkingOrder">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/GetWorkingOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCommissionSchedule">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/CreateCommissionSchedule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDebtRule">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/CreateDebtRule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDebtRule">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/DeleteDebtRule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDebtRule">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/UpdateDebtRule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBlotter">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/GetBlotter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEntity">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/UpdateEntity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEntityTree">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/CreateEntityTree" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AcceptMatch">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/AcceptMatch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearDestinationOrders">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/ClearDestinationOrders" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateConsumer">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/CreateConsumer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDebtHolderImportTranslation">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/CreateDebtHolderImportTranslation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteConsumer">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/DeleteConsumer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConsumer">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/UpdateConsumer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetConsumer">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/GetConsumer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateConsumerDebt">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/CreateConsumerDebt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConsumerDebt">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/UpdateConsumerDebt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteConsumerDebt">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/DeleteConsumerDebt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetConsumerDebt">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/GetConsumerDebt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="MoveConsumerDebtToBlotter">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/MoveConsumerDebtToBlotter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteConsumerDebtNegotiation">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/DeleteConsumerDebtNegotiation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetConsumerDebtNegotiation">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/GetConsumerDebtNegotiation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ImportDebtHolderRecords">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/ImportDebtHolderRecords" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ImportDebtNegotiatorRecords">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/ImportDebtNegotiatorRecords" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDebtHolder">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/CreateDebtHolder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateChat">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/CreateChat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDebtHolder">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/UpdateDebtHolder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDebtHolder">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/DeleteDebtHolder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDebtNegotiator">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/CreateDebtNegotiator" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDebtNegotiator">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/UpdateDebtNegotiator" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDebtNegotiator">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/DeleteDebtNegotiator" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AcceptConsumerDebtSettlement">
+      <wsp:PolicyReference URI="#TcpSupportEndpoint_AcceptConsumerDebtSettlement_policy" />
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/AcceptConsumerDebtSettlement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap12:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ArgumentFaultFault">
+        <soap12:fault use="literal" name="ArgumentFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateConsumerDebtSettlement">
+      <wsp:PolicyReference URI="#TcpSupportEndpoint_CreateConsumerDebtSettlement_policy" />
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/CreateConsumerDebtSettlement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ArgumentFaultFault">
+        <soap12:fault use="literal" name="ArgumentFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="PaymentMethodFaultFault">
+        <soap12:fault use="literal" name="PaymentMethodFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap12:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RejectConsumerDebtNegotiation">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/RejectConsumerDebtNegotiation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap12:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="OptimisticConcurrencyFaultFault">
+        <soap12:fault use="literal" name="OptimisticConcurrencyFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ResetConsumerDebtSettlement">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/ResetConsumerDebtSettlement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap12:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ArgumentFaultFault">
+        <soap12:fault use="literal" name="ArgumentFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="MoveConsumerTrustToBlotter">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/MoveConsumerTrustToBlotter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConsumerTrust">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/UpdateConsumerTrust" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetConsumerTrust">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/GetConsumerTrust" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConsumerDebtNegotiation">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/UpdateConsumerDebtNegotiation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="OptimisticConcurrencyFaultFault">
+        <soap12:fault use="literal" name="OptimisticConcurrencyFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap12:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConsumerDebtNegotiationIsRead">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/UpdateConsumerDebtNegotiationIsRead" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="OptimisticConcurrencyFaultFault">
+        <soap12:fault use="literal" name="OptimisticConcurrencyFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap12:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RejectConsumerTrustNegotiation">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/RejectConsumerTrustNegotiation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap12:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="OptimisticConcurrencyFaultFault">
+        <soap12:fault use="literal" name="OptimisticConcurrencyFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConsumerTrustNegotiation">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/UpdateConsumerTrustNegotiation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap12:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="OptimisticConcurrencyFaultFault">
+        <soap12:fault use="literal" name="OptimisticConcurrencyFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConsumerTrustNegotiationIsRead">
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/UpdateConsumerTrustNegotiationIsRead" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap12:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="OptimisticConcurrencyFaultFault">
+        <soap12:fault use="literal" name="OptimisticConcurrencyFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CreateConsumerTrustSettlement">
+      <wsp:PolicyReference URI="#TcpSupportEndpoint_CreateConsumerTrustSettlement_policy" />
+      <soap12:operation soapAction="http://tempuri.org/ITradingSupport/CreateConsumerTrustSettlement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="RecordNotFoundFaultFault">
+        <soap12:fault use="literal" name="RecordNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="PaymentMethodFaultFault">
+        <soap12:fault use="literal" name="PaymentMethodFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap12:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ArgumentFaultFault">
+        <soap12:fault use="literal" name="ArgumentFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TradingSupport">
+    <wsdl:port name="TcpSupportEndpoint" binding="tns:TcpSupportEndpoint">
+      <soap12:address location="net.tcp://localhost/Guardian/Trading%20Support" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost/Guardian/Trading%20Support</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>localhost</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

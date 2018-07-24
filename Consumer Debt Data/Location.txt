@@ -1,0 +1,962 @@
+﻿Elizabeth City	NC	27909
+West Jefferson	NC	286940000
+Sun City	CA	92585
+Lumberton	MS	39455
+Manning	SC	291021244
+Haslet	TX	76052
+Visalia	CA	932779381
+Miami	FL	33135
+Chiefland	FL	326440103
+Darby	PA	190234107
+Houston	TX	770401587
+Philadelphia	PA	19124
+Rutherfordton	NC	281396997
+Kansas City	KS	66106
+Philadelphia	PA	191191548
+Moreno Valley	CA	925578416
+Houston	TX	770471012
+West Chester	PA	193825164
+San Francisco	CA	94109
+Fresno	CA	93720
+Altadena	CA	910014515
+Clifton Heights	PA	190182207
+Richmond Hill	NY	11419
+Dallas	TX	75219
+Meraux	LA	700752436
+Moscow	ID	83843
+Summerville	SC	294851987
+Brentwood	NY	117174205
+Tacoma	WA	98467
+Altamonte Springs	FL	327142087
+Calabasas	CA	913021879
+Howey In The Hills	FL	34737
+Bradenton	FL	342094413
+Amarillo	TX	791044104
+Pulaski	MS	391529790
+Dickinson	TX	775396501
+Sugarloaf	CA	92386
+Houston	TX	770454728
+Kings Mtn	NC	28086
+San Francisco	CA	941122149
+Clinton	SC	29325
+Irving	TX	750612445
+Houston	TX	77020
+Decatur	GA	30032
+Norristown	PA	194014214
+Nashville	TN	37221
+Puyallup	WA	98374
+Cedar Hill	TX	751042959
+Houston	TX	770393315
+Durham	NC	277032433
+San Benito	TX	785866640
+Texas City	TX	77592
+Charlotte	NC	282299468
+Ephrata	PA	175221221
+Oxnard	CA	930335220
+Dalzell	SC	29040
+Troy	TX	765793531
+San Mateo	CA	944031445
+Abilene	TX	79605
+Jackson	MS	39213
+San Jose	CA	951282756
+Tallahassee	FL	32312
+Los Angeles	CA	90042
+Bryan	TX	778032973
+Brownsville	TX	78521
+Kings Mountain	NC	280868111
+Philadelphia	PA	19143
+New Orleans	LA	70127
+New Columbia	PA	178569540
+Cumby	TX	75433
+Orlando	FL	32805
+Hermosa Beach	CA	90254
+Albuquerque	NM	87106
+Elloree	SC	290470608
+Littlefield	TX	79339
+Jacksonville	FL	322093718
+Canton	MS	39046
+Orlando	FL	328120582
+Los Angeles	CA	900479641
+Jacksonville	NC	28540
+Hurst	TX	76053
+Diboll	TX	759411622
+Washington	DC	20011
+Joshua	TX	76058
+San Jose	CA	951264417
+Margate	FL	33068
+Atascosa	TX	780020463
+Atkins	AR	728236323
+Arlington	TX	760125401
+Louisville	KY	40219
+Miami	FL	331723535
+Fort Lauderdale	FL	33304
+Philadephia	PA	191390326
+Willow Spring	NC	27592
+Elon College	NC	272449206
+Oklahoma City	OK	731187348
+San Marcos	TX	786662650
+Vallejo	CA	945891463
+Murrells Inlet	SC	295766205
+Richardson	TX	750807016
+River Forest	IL	603053440
+Clearwater	FL	337593103
+Ontario	CA	91762
+Forest Hill	CA	95631
+Dallas	TX	752093939
+Ojai	CA	930233501
+Towson	MD	21286
+Dallas	TX	752124460
+Sumter	SC	29150
+Bridgeview	IL	60455
+Floresville	TX	78114
+Los Angeles	CA	90012
+Duncanville	TX	751374527
+Brooklyn	NY	11211
+Houston	TX	77095
+Miami	FL	331471417
+Spartanburg	SC	29306
+Comanche	TX	76442
+Jacksonville	FL	322064118
+Aiken	SC	298023814
+New York	NY	10014
+Wallburg	NC	27373
+Pittsburgh	PA	15212
+Austin	TX	787082315
+Miami	FL	331432048
+Jacksonville	FL	32210
+Jeanerette	LA	70544
+Dundalk	MD	21222
+Sacramento	CA	95828
+Charlotte	NC	282702481
+Flatonia	TX	789410816
+Huffman	TX	77336
+San Antonio	TX	782212319
+Marshall	TX	75672
+Mooresville	NC	28117
+Clinton	MS	390562233
+Glen Burnie	MD	21061
+Williamsburg	KY	407690910
+Dallas	TX	752180722
+Saint Rose	LA	700873357
+Houston	TX	77038
+Hercules	CA	945473592
+Oxford	MS	386552194
+Beaumont	TX	777034107
+Port Arthur	TX	77642
+Bronx	NY	10462
+Daly City	CA	940141832
+Jasper	TX	759519761
+Austin	TX	787453707
+Murphy	TX	750943727
+Prairieville	LA	707693536
+Sausalito	CA	949651269
+Washington	DC	20009
+Philadelphia	PA	19134
+Baltimore	MD	21218
+San Antonio	TX	782071707
+Hudson	NC	286380000
+Los Angeles	CA	90025
+Orlando	FL	328110268
+Richardson	TX	750804841
+Pooler	GA	313222523
+Pensacola	FL	325064680
+Kingsville	TX	783633458
+Los Angeles	CA	90023
+Portland	OR	972661037
+Yonkers	NY	10705
+Norcross	GA	300930307
+Gladewater	FL	75647
+Tuckahoe	NY	10707
+Macclesfield	NC	27852
+Odessa	NY	14869
+Rosenberg	TX	77471
+Rowland Hghts	CA	91748
+Riverside	CA	925090780
+Girard	PA	164170021
+Philadelphia	PA	191491126
+Bryan	TX	77802
+Lenoir	NC	286459653
+Philadelphia	PA	19140
+College Sta	TX	77845
+Belton	TX	765134547
+Bradenton	FL	342054519
+Kosciusko	MS	390904043
+Miami	FL	33161
+Lubbock	TX	794143117
+Connelly Springs	NC	28612
+Greenwood	MS	38930
+Saint Petersbur	FL	337094555
+City Of Indus	CA	917153595
+Dewy Rose	GA	30634
+Vidor	TX	776625535
+Yuma	AZ	85364
+Dallas	TX	752411546
+Dallas	TX	752877814
+Conroe	TX	773013643
+Brooklyn	PA	112242259
+Naples	FL	341093299
+Sacramento	CA	95824
+Kennedale	TX	76060
+St Petersburg	FL	33705
+Miami	FL	331452017
+Perris	CA	925706331
+Long Beach	CA	908052168
+Evansdale	IA	50707
+Crestview	FL	32536
+Grapevine	TX	760515066
+Coconut Creek	FL	330635987
+San Francisco	CA	941183307
+Mcallen	TX	785044439
+Stephenville	TX	76401
+Stone Mountain	GA	300833750
+Odessa	TX	797617028
+Salem	MA	01970
+Colton	CA	923244661
+Deerfield	NH	03037
+Jacksonville	FL	32208
+San Francisco	CA	941153956
+Far Rockaway	NY	11691
+Clermont	FL	347115136
+Greensboro	NC	274071206
+Baltimore	MD	21222
+Blue Mound	TX	761311108
+Del Rio	TX	788404142
+Fort Worth	TX	761125518
+Compton	CA	902221824
+College Station	TX	77477
+Fort Worth	TX	76107
+Burleson	TX	76028
+Arlington	TX	760181054
+Austin	TX	787452748
+Laredo	TX	780457896
+Bel Air	MD	21014
+Texarkana	AR	71854
+Los Angeles	CA	90043
+North Ogden	UT	844140295
+Altoona	PA	166019203
+Haltom City	TX	761171415
+Tampa	FL	336046655
+Pittsburg	CA	945655158
+Mineola	TX	75773
+Huffman	TX	77336
+Winnsboro	SC	291801225
+Oakland Park	FL	33334
+Prairie View	TX	774465954
+Filer	ID	83328
+Sunrise	FL	333231646
+Franklin	TN	37069
+San Antonio	TX	782093427
+Lynwood	CA	902621313
+Bellevue	WA	98008
+Houston	TX	770342523
+San Antonio	TX	782232804
+Woodland Hills	CA	91367
+Allen	TX	750023917
+Tomball	TX	773751737
+Philadelphia	PA	19115
+Clearwater	FL	337551325
+Houston	TX	77018
+Plymouth	PA	186513017
+Rockdale	TX	765673207
+Houston	TX	770155416
+Bradenton	FL	342099574
+Tucson	AZ	85710
+Lexington	SC	29072
+Los Angeles	CA	900695210
+Las Vegas	NV	89108
+Tunkhannock	PA	18657
+Greenville	MS	38701
+El Dorado	AR	717303928
+Tulsa	OK	74110
+Amarillo	TX	79159
+Glendale	CA	912041309
+Gonzales	LA	707377506
+Mabank	TX	75156
+Boothwyn	PA	190613605
+San Antonio	TX	78208
+Dover	PA	173150000
+Las Vegas	NV	89123
+Summerville	SC	294838139
+Humble	TX	77346
+Dover	PA	173150007
+Fort Worth	TX	761205921
+Austin	TX	787391482
+Milan	GA	310600305
+Gastonia	NC	280542432
+Eagle Pass	TX	788529356
+Philadelphia	PA	191446015
+New Providence	PA	175600025
+Tupelo	MS	388014643
+Pineland	TX	75968
+Des Plaines	IL	600166516
+Greenville	TX	754048802
+Newport	WA	99156
+Gautier	MS	39553
+Burbank	CA	915011316
+Duncanville	TX	75137
+Saint Cloud	FL	347690669
+Philadelphia	PA	191493502
+Irvine	CA	926147209
+New York	NY	100090339
+Philadelphia	PA	19150
+Philadelphia	PA	191433007
+Lumberton	NC	283603177
+Murrieta	CA	925623946
+Hope Mills	NC	28348
+Fresno	CA	93705
+Sunny Isles Beach	FL	331602263
+Houston	TX	770554946
+Cresco	PA	18326
+Morgan City	LA	703802646
+Leicester	NC	28748
+Ore City	TX	756833548
+West Columbia	SC	291697019
+Laguna Niguel	CA	926771616
+Pittsburg	PA	15206
+Los Osos	CA	934021614
+Derby	KS	67037
+Woodside	NY	11377
+Charlotte	NC	282152136
+San Francisco	CA	941022703
+Houston	TX	770746409
+Cheraw	SC	295200265
+Berkeley	CA	947042260
+Houston	TX	770531103
+Lakeland	FL	338031930
+Fort Worth	TX	761082439
+Norristown	PA	194010000
+Orlando	FL	328222338
+Laredo	TX	780401420
+Denison	TX	750206808
+Englewood	FL	34223
+Ocala	FL	344742253
+Houston	TX	770883529
+Pensacola	FL	325050163
+Lancaster	PA	176024948
+Wade	NC	28395
+Houston	TX	770864007
+Raleigh	NC	276101726
+Tulsa	OK	741300182
+Burlingame	CA	94010
+York	PA	174044005
+Waveland	MS	395763035
+Liberty	MS	396456113
+Brooklyn	NY	11220
+Van Nuys	CA	91405
+Hampton	GA	302280209
+Deltona	FL	327286225
+West Memphis	AR	72301
+Berea	KY	40403
+Miami	FL	33147
+Huntington Beach	CA	926462238
+Humacao	PR	007919402
+Pheba	MS	397559726
+Little River	SC	29566
+Zephyrhills	FL	33542
+Portland	OR	97204
+West Covina	CA	917911024
+Laurel	MS	39440
+Philadelphia	PA	19104
+Gonzales	TX	78629
+Runge	TX	781510038
+Harrisburg	PA	171113312
+Irving	TX	750630010
+Lake Isabella	CA	93240
+Houston	TX	770895314
+Cary	NC	27511
+Fort Lauderdale	FL	33312
+Lewisville	TX	75067
+Odessa	TX	797622922
+Ocala	FL	34473
+Morrisville	NC	28117
+Waldorf	MD	206022828
+Harlingen	TX	785509104
+Advance	NC	27006
+Niagara Falls	NY	143042693
+Lubbock	TX	79403
+Irving	TX	750384718
+Fontana	CA	923358013
+Punta Gorda	FL	33983
+Yuba City	CA	959911212
+Castaic	CA	913840375
+Salinas	CA	939012511
+Burlington	NC	272157339
+Philadelphia	PA	191464511
+Oakland	MD	215501540
+Riverside	CA	92506
+Louisville	KY	40214
+Houston	TX	770444924
+San Antonio	TX	782391942
+Euless	TX	76039
+Philadelphia	PA	191313107
+North Miami	FL	33161
+Suitland	MD	20746
+Lampas	CA	93435
+Pensacola	FL	325140325
+Wyandanch	NY	117983031
+Homer City	PA	157481521
+Fort Worth	TX	76116
+Pembroke Pines	FL	33028
+Carol City	FL	33055
+Denison	TX	750206365
+Durham	NC	27715
+Redmond	OR	97756
+Martinez	CA	750524027
+San Antonio	TX	782452836
+Los Angeles	CA	90017
+Santa Barbara	CA	93107
+Carrollton	TX	75006
+Mechanicsburg	PA	170500000
+Amarillo	TX	79106
+Mount Airy	NC	270306098
+Hayward	CA	945447532
+Houston	TX	77012
+Boca Raton	FL	33433
+Colonial Hgts	VA	238340302
+Middletown	OH	450421135
+Boynton Beach	FL	334260000
+Corsicana	TX	75110
+North Hollywood	CA	916062401
+Pembroke Pines	FL	33025
+Ridge Manok	FL	33523
+Gilbert	AZ	85233
+Burlingame	CA	940114467
+Pottsboro	TX	750760616
+Missouri City	TX	774892182
+Phoenix	MD	21131
+Porter	TX	7736504823
+Seminole	TX	79360
+Easthampton	MA	01027
+Charlotee	NC	282690000
+Atlanta	GA	30315
+Burleson	TX	760287409
+Huntington Beach	CA	92605
+Holly Springs	MS	38635
+Houston	TX	770453604
+Willow Spring	NC	275920393
+Miami Lakes	FL	330143005
+Los Angeles	CA	900344741
+Lancaster	TX	75146
+Pacoima	CA	91331
+Opa Locka	FL	33055
+Wilson	NC	27893
+Austin	TX	787493927
+Chatsworth	CA	91311
+Los Angeles	CA	900372084
+St Benedict	PA	15773
+Inman	NE	68742
+Palm Bay	FL	32907
+Orangevale	CA	95662
+Statesville	NC	28677
+Gilford	NH	03249
+Mound Bayou	MS	38762
+Roxboro	NC	275746973
+Lexington	NC	27295
+Spokane	WA	992023154
+Waynesville	NC	28786
+Houston	TX	770264059
+South Gate	CA	902802921
+Eunice	LA	705355413
+Tampa	FL	33617
+Sarasota	FL	34232
+Los Angeles	CA	900195347
+Hayesville	NC	28904
+Liberty	MO	64068
+Orlando	FL	3281904106
+Philadelphia	PA	191606224
+Raleigh	NC	276127039
+Philadelphia	PA	191430000
+Pampa	TX	790653501
+Orlando	FL	32807
+Raleigh	NC	27606
+New Braunfels	TX	781306023
+Farminton	UT	84025
+Woodlake	CA	932869679
+San Antonio	TX	782422218
+Crouse	NC	28033
+Bothell	WA	98011
+Allen	TX	750024416
+Brady	TX	76825
+San Antonio	TX	782372858
+Mesquite	TX	7514901645
+Fayetteville	NC	28304
+Elkridge	MD	21075
+Pompano Beach	FL	330642857
+Daly City	CA	940142127
+High Point	NC	272633488
+Garner	NC	275299707
+Marshall	TX	75672
+Fayetteville	NC	28306
+Los Angeles	CA	900084161
+Brownsville	TX	785208514
+Orlando	FL	328193541
+Austin	TX	78727
+New Waverly	TX	77358
+Philadelphia	PA	191341730
+Pompano Beach	FL	330648841
+Greenwood	SC	296463078
+Philadelphia	PA	191422823
+Opa Locka	FL	330554409
+Mathis	TX	783683343
+Yakima	WA	989025321
+Pittsburgh	PA	152152613
+Montebello	CA	90640
+Falmouth	MA	02541
+Coral Springs	FL	33071
+Blenheim	SC	29516
+Altamonte Sprin	FL	327143212
+Enoch	UT	847200727
+Port Charlotte	FL	33952
+Plant City	FL	335637155
+Tampa	FL	336347910
+El Paso	TX	799251667
+Hollywood	FL	330245821
+Burlingame	CA	940104212
+Jamaica	NY	11419
+Quitman	TX	757836139
+Mesquite	TX	751495495
+Cambridge Sprin	PA	164031321
+Oklahoma City	OK	731208410
+National City	CA	919507516
+Jersey Shore	PA	177407246
+Laredo	TX	7804105653
+Guys	TN	38339
+Weirton	WV	26062
+Winter Haven	FL	33880
+Philadelphia	PA	19134
+New Wilminton	PA	16142
+Houston	MS	388517628
+Houston	TX	77042
+Austin	TX	78753
+South Miami	FL	331430460
+Auburn	WA	98001
+Matthews	NC	28105
+Laredo	TX	780467459
+Covina	CA	917233534
+Columbia	SC	292606403
+Ashland	PA	17921
+Poplarville	MS	394703481
+Jamaica	NY	114332416
+Mission Viejo	CA	926913927
+Lawtey	FL	32058
+Noxapater	MS	39346
+New Albany	OH	43054
+N Hollywood	CA	91601
+Carrizo Spgs	TX	788341515
+Gainesville	FL	326084692
+East Patchogue	NY	11772
+Houston	TX	770841923
+San Antonio	TX	782072455
+Georgetown	SC	29440
+Tucson	AZ	85749
+Plano	TX	750243889
+Zebulon	NC	27597
+Berkeley	CA	94702
+Houston	TX	77087
+West Sacramento	CA	956912636
+San Antonio	TX	782401435
+Morgantown	WV	26507
+Freer	TX	78357
+Indio	CA	92201
+Goleta	CA	93117
+Jackson	MS	392729455
+San Antonio	TX	78227
+Philadelphia	PA	191240000
+Asheville	NC	28806
+Cape Coral	FL	339912417
+Mabank	TX	751566655
+Catawissa	PA	178207931
+North Hills	CA	913433051
+Smithfield	PA	154780547
+Indio	CA	922014017
+Carmichaels	PA	15320
+Seattle	WA	98168
+Greensboro	NC	27406
+Mercedes	TX	785709802
+Raleigh	NC	27604
+Houston	TX	77009
+Boynton Beach	FL	334367722
+Charlotte	NC	282021758
+London	KY	407455167
+Santa Rosa	CA	95404
+Methuen	MA	1844
+Miami	FL	33169
+Livingston	CA	953349720
+Wichita Falls	TX	763103950
+Seattle	WA	981220224
+Houston	TX	770926861
+Collinsville	MS	393259431
+Philadelphia	PA	19139
+Lansing	MI	48917
+Boynton Beach	FL	334357609
+Round Rock	TX	786816926
+Columbia	SC	292303956
+Long Beach	CA	908133832
+Sherman Oaks	CA	914114327
+El Paso	TX	799042818
+Abbeville	AL	36310
+Boynton Raton	FL	33429
+Scottsdale	AZ	85251
+Houston	TX	77048
+Cullman	AL	35057
+New Braunfels	TX	781324022
+Seagoville	TX	751592340
+Colton	CA	92324
+Wimberley	TX	786761673
+Philadelphia	PA	191431926
+Bronx	NY	10466
+simms	TX	75574
+Los Angeles	CA	900052128
+Big Spring	TX	79720
+Ocean City	MD	21842
+Houston	TX	770912337
+Brentwood	CA	945134427
+Arlington	TX	760151039
+Zachary	LA	70791
+Boca Raton	FL	334335922
+Victorville	CA	923926611
+Portland	OR	972202666
+Columbus	OH	43224
+Grand Prairie	TX	750528362
+Miami	FL	33161
+Lake Placid	FL	33852
+Orlando	FL	32810
+Miami	FL	33183
+Oakland	CA	946023643
+Robstown	TX	783803337
+Philadelphia	PA	191404121
+Laporte	TX	77571
+Starkville	MS	39759
+Plant City	FL	335670000
+Selma	NC	275765973
+San Francisco	CA	94110
+Weston	FL	333315052
+Wilkes Barre	PA	18702
+Eustis	FL	327265455
+W Alexander	PA	153760158
+Hastings	NE	68901
+Round Rock	TX	786643068
+Byhalia	MS	38611
+Whittier	CA	906052612
+Hartsville	SC	29550
+El Paso	TX	799125832
+Miami	FL	33172
+Dinuba	CA	93618
+Mesquite	TX	751499419
+Buffalo	NY	14220
+Hagerstown	MD	21740
+Philadelphia	PA	19132
+Los Angeles	CA	90061
+Columbus	OH	43232
+Pleasantville	NJ	08232
+Clairton	PA	150250784
+Wilkes Barre	PA	187025020
+Bay City	TX	774149151
+Moulton	AL	35650
+Bedford	TX	76021
+Raleigh	NC	276132231
+Cocoa	FL	329226718
+Newbury Park	CA	913201929
+Albuquerque	NM	87108
+Philadelphia	PA	191502006
+Los Angeles	CA	900442413
+Philadelphia	PA	19124
+San Antonio	TX	782470593
+Philadelphia	PA	191240275
+Monticello	MN	55362
+Dallas	TX	75206
+Houston	TX	770952271
+Brockway	PA	158240000
+Sunnyvale	CA	94086
+Tampa	FL	33624
+Altamonte Spg	FL	32701
+San Antonio	TX	782182804
+Zephyrhills	FL	335444384
+Rochester	NY	146171714
+San Francisco	CA	941034120
+Larue	TX	75770
+Los Angeles	CA	90005
+Lakeland	FL	338031422
+Weymouth	MA	2191
+Moncks Corner	SC	29461
+Orlando	FL	328392296
+San Francisco	CA	941242176
+El Paso	TX	799035007
+Mattawamkeag	ME	04459
+Chico	CA	95926
+Apopka	FL	32712
+Hialeah	FL	330127675
+Louisville	KY	402101146
+Boca Raton	FL	33498
+Tintah	MN	56583
+Philadelphia	PA	191485717
+Dayton	TX	775357715
+Mc Connells	SC	297266746
+Worcester	MA	01605
+Brooklyn	NY	11214
+Washington	DC	20001
+Philadelphia	PA	191502520
+Miami	FL	331251919
+Camp Pendleton	CA	92055
+New Orleans	LA	701178413
+Houston	TX	770174738
+Houston	TX	770664344
+Philadelphia	PA	191193840
+High Point	NC	272653416
+Carol City	FL	33055
+Philadelphia	PA	191452127
+Newark	NJ	07105
+Houston	TX	77082
+La Feria	TX	78559
+Plano	TX	750243465
+Charlotte	NC	28269
+Little Rock	AR	72205
+Helenwood	TN	37755
+Bullhead City	AZ	86429
+La Puente	CA	917441735
+Sherman Oaks	CA	914033911
+Nobleton	FL	346610187
+Hialeah	FL	33014
+Las Vegas	NV	89108
+Hawkins	TX	757655336
+Carthage	TX	75633
+Long Beach	CA	908134217
+Los Angeles	CA	900256724
+Wiggins	MS	395770655
+Brentwood	NY	117176817
+Moncks Corner	SC	294614131
+Baltimore	MD	212392202
+Edinburg	TX	785415492
+Alvarado	TX	76009
+Rome	GA	30161
+Edinburg	TX	78541
+Mc Kees Rocks	PA	151363300
+Longview	TX	75604
+Carriere	MS	394268122
+Belton	TX	765132976
+San Antonio	TX	782042027
+Mesquite	TX	751495978
+Merritt Islan	FL	329534133
+Stafford	TX	774773501
+Katiy	TX	774504711
+Tulsa	OK	74136
+San Marcos	TX	786662634
+Sherman	TX	75090
+Spartanburg	SC	293031910
+Calexico	CA	92231
+Macon	GA	312060000
+Oakland	CA	946033635
+Charleston	SC	29401
+Hyannis	MA	02601
+Conway	SC	29527
+Harrisburg	PA	171102607
+Fredericksbrg	TX	786245441
+Kensington	MD	20895
+Houston	TX	770633000
+Shamokin	PA	178660000
+Plano	TX	750253879
+Fuquay Varina	NC	275265137
+Greenville	SC	29617
+Granbury	TX	76049
+Houston	TX	770072525
+Livingston	TX	773519804
+Jeannette	PA	156442656
+Sunnvale	CA	94087
+Alvin	TX	77511
+Northridge	CA	91325
+Cisco	TX	764373029
+Macks Creek	MO	65786
+Buffalo	NY	142072519
+Bowie	MD	207210121
+Largo	FL	33774
+San Antonio	TX	782582771
+Upland	CA	91786
+Lake Wales	FL	338989625
+Palm Beach Gardens	FL	334106253
+Greenville	MS	38701
+New Stanton	PA	15672
+Houston	TX	770885034
+Florence	SC	29501
+Weimar	TX	789629802
+Refugio	TX	783770645
+Boca Raton	FL	334331132
+Pittsburgh	PA	152141112
+Pt Jefferson St	NY	11776
+Charlotte	NC	28212
+Los Angeles	CA	900663657
+Houston	TX	770770327
+Berea	KY	40403
+Hanover	PA	173311730
+San Francisco	CA	94103
+Ormond Beach	FL	321760321
+Greensboro	NC	274105606
+Tampa	FL	336050000
+Fredericksburg	TX	786243141
+Houston	TX	770063517
+Philadelphia	PA	191543716
+San Antonio	TX	782121508
+Shenandoah	PA	179760215
+Los Angeles	CA	90032
+Plano	TX	75026
+Corpus Christi	TX	784103427
+Midland	TX	797036057
+Laredo	TX	780413208
+Vidor	TX	776623744
+Mountain View	CA	940390081
+New Albany	MS	38652
+Winston Salem	NC	271072595
+Monticello	NY	127010850
+Hornbeck	LA	714390205
+Mesquite	TX	751496654
+Salem	SC	296762210
+Portland	OR	97214
+Del Rio	TX	788404924
+Bradenton	FL	342050000
+Houston	TX	770894603
+Meridian	MS	39307
+Fort Lauderdale	FL	333083816
+Eunice	LA	705350541
+Spring	TX	77380
+Woodland Hills	CA	91367
+Lyman	SC	293651328
+Gatesville	NC	27938
+San Diego	CA	921304111
+Sacramento	CA	95842
+La Vernia	TX	781214580
+Cape Coral	FL	33914
+Zephyrhills	FL	335415936
+Chicago	IL	606470461
+Royal Palm Be	FL	334113125
+Belmont	NC	280120254
+Brooklyn	NY	11236
+Albrightsville	PA	182100000
+Frisco	TX	750340014
+Houston	TX	772733027
+Spring	TX	77373
+Ladson	SC	294564921
+Howard Beach	NY	11414
+Huntington Pk	CA	90255
+Greenville	TX	754015951
+Palmdale	CA	935524583
+Fresno	CA	937107120
+Sylva	NC	287797136
+N Charleston	SC	29405
+Laurinburg	NC	28353
+Boca Raton	FL	33428
+Dallas	TX	752491417
+Monterey	CA	939403929
+Granbury	TX	760480112
+Houston	TX	77045
+Opa Locka	FL	330564636
+Pasadena	TX	775062324
+Spokane	WA	992180000
+Los Angeles	CA	900592629
+Mebane	NC	27302
+Miami	FL	33139
+Lake Toxaway	NC	28747
+Asheville	NC	288052370
+Anaheim	CA	92802
+Covington	PA	169179723
+Jacksonville	FL	322220000
+Rio Grande City	TX	785822616
+South San Francisco	CA	940804348
+Whiteford	MD	21160
+Bellflower	CA	907071637
+Fulton	NY	13069
+Donora	PA	150330000
+Prosser	WA	993506585
+Newton	TX	75966
+Terrytown	LA	70056
+Barnwell	SC	298121746
+Los Angeles	CA	900591048
+Jacksonville	FL	32218
+Saginaw	TX	76179
+Dublin	PA	18917
+Mount Oliver	PA	152102102
+Wayland	NY	14572
+San Francisco	CA	941221109
+Lompoc	CA	934363837
+La Joya	TX	78560
+Edinburg	TX	78541
+Boulder	CO	80304
+Natchez	MS	391208806
+Gainesville	FL	32607
+Saint Petersbur	FL	337094928
+Longs	SC	29568
+Saint Petersbur	FL	337052523
+Colleyville	TX	760342830
+Cape Coral	FL	339912814
+Los Angeles	CA	90036
+Aquebogue	NY	11931
+Miami	FL	331336312
+Chesterbrook	PA	190875816
+Pennsburg	PA	18073
+Charlotte	NC	282084516
+Orlando	FL	328392551
+Brockway	PA	15824
+Duncanville	TX	75137
+Kannapolis	NC	28081
+San Antonio	TX	78270
+Boynton	FL	33436
+Freeport	TX	77541
+Pittsburgh	PA	152082318
+Tampa	FL	336106524
+West Linn	OR	97068
+Brownsville	TX	785214103
+San Jose	CA	951222401
+Hacienda Hgts	CA	917451611
+Atlanta	GA	303010041
+Staunton	VA	24401
+Dallas	TX	752482211
+Culver City	CA	90230
+Inglewood	CA	903050895
+Erie	PA	165030206
+Columbus	MS	39701
+Pembroke Pines	FL	330293328
+Sylmar	CA	91342
+New York	NY	100217576
+Everett	MA	02149
+Pinconing	MI	48650
+Homestead	FL	330308161
+Clairton	PA	15025
+Oakland	CA	946052814
+Tyrone	PA	166862047
+North Augusta	SC	29860
+Fort Smith	AR	72914
+Long Beach	CA	90802
+Lester	PA	19029
+Heddick	FL	326860040
+Orlando	FL	32808
+Wilmington	NC	284122842
+Lake Mary	FL	327464737
+Philadelphia	PA	191412007
+Corpus Christi	TX	784082809
+Sarasota	FL	342430000
+San Angelo	TX	769047320
+Daly City	CA	940153209
+Corsicana	TX	751101748
+Caldwell	TX	77836
+Houston	TX	770991874
+Union	SC	293790296
+Lockney	TX	792419436
+Travelers Rst	SC	296908693
+Troutman	NC	281668647
+Saint James	MN	560810214
+Pittsburg	CA	945657042
+Hialeah	FL	330100700
+Eash Elmhurst	NY	11370
+Los Angeles	CA	90061
+San Antonio	TX	782286453
+Las Cruces	NM	88001
+Ventura	CA	930066853
+Kihei	HI	967531241
+Columbia	SC	29210
+Zephyrhills	FL	33542
+Franconia	NH	03580
+Terrytown	LA	700563816
+Flushing	NY	11354
+Ballinger	TX	768218006
+San Antonio	TX	782335515
+Brooklyn	NY	11235
+Lackawanna	NY	142181422
+Imperial Beach	CA	91932

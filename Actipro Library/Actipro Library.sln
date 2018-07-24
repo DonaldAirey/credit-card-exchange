@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actipro Library", "Actipro Library.csproj", "{4A9ECA0E-1559-4862-BB1A-EBFB398A6865}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{84828271-622C-45CA-8368-5957C97796CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{59E2477D-A9DD-429E-BCDC-5146606FF00B}"
+	ProjectSection(SolutionItems) = preProject
+		Setup\Sign.ps1 = Setup\Sign.ps1
+		Setup\Verify Off.ps1 = Setup\Verify Off.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://titania.fluidtrade.com:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Actipro\u0020Library.csproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = Setup\\Setup.vdproj
+		SccProjectName2 = Setup
+		SccLocalPath2 = Setup
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A9ECA0E-1559-4862-BB1A-EBFB398A6865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A9ECA0E-1559-4862-BB1A-EBFB398A6865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A9ECA0E-1559-4862-BB1A-EBFB398A6865}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4A9ECA0E-1559-4862-BB1A-EBFB398A6865}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4A9ECA0E-1559-4862-BB1A-EBFB398A6865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A9ECA0E-1559-4862-BB1A-EBFB398A6865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A9ECA0E-1559-4862-BB1A-EBFB398A6865}.Release|x64.ActiveCfg = Release|Any CPU
+		{4A9ECA0E-1559-4862-BB1A-EBFB398A6865}.Release|x86.ActiveCfg = Release|Any CPU
+		{84828271-622C-45CA-8368-5957C97796CE}.Debug|Any CPU.ActiveCfg = Debug
+		{84828271-622C-45CA-8368-5957C97796CE}.Debug|x64.ActiveCfg = Debug
+		{84828271-622C-45CA-8368-5957C97796CE}.Debug|x64.Build.0 = Debug
+		{84828271-622C-45CA-8368-5957C97796CE}.Debug|x86.ActiveCfg = Debug
+		{84828271-622C-45CA-8368-5957C97796CE}.Debug|x86.Build.0 = Debug
+		{84828271-622C-45CA-8368-5957C97796CE}.Release|Any CPU.ActiveCfg = Release
+		{84828271-622C-45CA-8368-5957C97796CE}.Release|Any CPU.Build.0 = Release
+		{84828271-622C-45CA-8368-5957C97796CE}.Release|x64.ActiveCfg = Release
+		{84828271-622C-45CA-8368-5957C97796CE}.Release|x64.Build.0 = Release
+		{84828271-622C-45CA-8368-5957C97796CE}.Release|x86.ActiveCfg = Release
+		{84828271-622C-45CA-8368-5957C97796CE}.Release|x86.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

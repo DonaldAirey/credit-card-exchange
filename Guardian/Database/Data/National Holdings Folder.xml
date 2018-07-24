@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<script name="National Holdings Folders">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+
+<!--################### Kai Hitori ############################### -->
+  <transaction>
+    <method name="CreateEntityEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="createdTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="description" value="Personal Folder of Kai Hitori" />
+      <parameter name="externalId0" value="Kai Hitori FOLDER" />
+      <parameter name="externalId7" value="Kai Hitori FOLDER" />
+      <parameter name="hidden" value="false" />
+      <parameter name="modifiedTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="imageKey" value="FOLDER" />
+      <parameter name="name" value="Kai Hitori" />
+      <parameter name="readOnly" value="false" />
+      <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+      <parameter name="typeKey" value="SYSTEM FOLDER" />
+    </method>
+    <method name="CreateFolderEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="entityKey" value="Kai Hitori FOLDER" />
+      <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+    </method>
+    <method name="CreateSystemFolderEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="folderKey" value="Kai Hitori FOLDER" />
+      <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+    </method> 
+		<method name="CreateAccessControlEx" client="DataModelClient">
+			<parameter name="accessRightKey" value="FULL CONTROL" />
+			<parameter name="configurationId" value="Default" />
+			<parameter name="entityKey" value="Kai Hitori FOLDER" />
+			<parameter name="rightsHolderKey" value="FLUID TRADE ADMINISTRATORS" />
+      			<parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+		</method>
+		<method name="CreateAccessControlEx" client="DataModelClient">
+			<parameter name="accessRightKey" value="FULL CONTROL" />
+			<parameter name="configurationId" value="Default" />
+			<parameter name="entityKey" value="Kai Hitori FOLDER" />
+			<parameter name="rightsHolderKey" value="National Holdings ADMINISTRATORS" />
+      			<parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+		</method>
+		<method name="CreateAccessControlEx" client="DataModelClient">
+			<parameter name="accessRightKey" value="FULL CONTROL" />
+			<parameter name="configurationId" value="Default" />
+			<parameter name="entityKey" value="Kai Hitori FOLDER" />
+			<parameter name="rightsHolderKey" value="Kai Hitori" />
+      			<parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+		</method>
+  </transaction>
+  
+	 <method name="CreateEntityTreeEx" client="DataModelClient">
+	    <parameter name="configurationId" value="Default" />
+	    <parameter name="entityKeyByChildId" value="Kai Hitori FOLDER" />
+	    <parameter name="entityKeyByParentId" value="Kai Hitori" />
+	    <parameter name="externalId0" value="{90aab218-38f0-4403-89dd-85e4343a1d75}" />
+	  </method>
+	  <method name="CreateEntityTreeEx" client="DataModelClient">
+	    <parameter name="configurationId" value="Default" />
+	    <parameter name="entityKeyByChildId" value="National Holdings" />
+	    <parameter name="entityKeyByParentId" value="Kai Hitori FOLDER" />
+	    <parameter name="externalId0" value="{cad2b18b-dfa0-4fa6-95a5-6175126017dc}" />
+	  </method>
+
+
+  <!--################### Ingrid Yeoh ############################### -->
+ <transaction>
+    <method name="CreateEntityEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="createdTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="description" value="Personal Folder of Ingrid Yeoh" />
+      <parameter name="externalId0" value="Ingrid Yeoh FOLDER" />
+      <parameter name="externalId7" value="Ingrid Yeoh FOLDER" />
+      <parameter name="hidden" value="false" />
+      <parameter name="modifiedTime" value="6/18/2009 4:41:46 PM" />
+      <parameter name="imageKey" value="FOLDER" />
+      <parameter name="name" value="Ingrid Yeoh" />
+      <parameter name="readOnly" value="false" />
+      <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+      <parameter name="typeKey" value="SYSTEM FOLDER" />
+    </method>
+    <method name="CreateFolderEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="entityKey" value="Ingrid Yeoh FOLDER" />
+      <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+    </method>
+    <method name="CreateSystemFolderEx" client="DataModelClient">
+      <parameter name="configurationId" value="Default" />
+      <parameter name="folderKey" value="Ingrid Yeoh FOLDER" />
+      <parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+    </method> 
+		<method name="CreateAccessControlEx" client="DataModelClient">
+			<parameter name="accessRightKey" value="FULL CONTROL" />
+			<parameter name="configurationId" value="Default" />
+			<parameter name="entityKey" value="Ingrid Yeoh FOLDER" />
+			<parameter name="rightsHolderKey" value="FLUID TRADE ADMINISTRATORS" />
+      			<parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+		</method>
+		<method name="CreateAccessControlEx" client="DataModelClient">
+			<parameter name="accessRightKey" value="FULL CONTROL" />
+			<parameter name="configurationId" value="Default" />
+			<parameter name="entityKey" value="Ingrid Yeoh FOLDER" />
+			<parameter name="rightsHolderKey" value="National Holdings ADMINISTRATORS" />
+      			<parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+		</method>
+		<method name="CreateAccessControlEx" client="DataModelClient">
+			<parameter name="accessRightKey" value="FULL CONTROL" />
+			<parameter name="configurationId" value="Default" />
+			<parameter name="entityKey" value="Ingrid Yeoh FOLDER" />
+			<parameter name="rightsHolderKey" value="Ingrid Yeoh" />
+      			<parameter name="tenantKey" value="National Holdings ORGANIZATION" />
+		</method>
+  </transaction>
+   	 <method name="CreateEntityTreeEx" client="DataModelClient">
+	    <parameter name="configurationId" value="Default" />
+	    <parameter name="entityKeyByChildId" value="Ingrid Yeoh FOLDER" />
+	    <parameter name="entityKeyByParentId" value="Ingrid Yeoh" />
+	    <parameter name="externalId0" value="{3d942fd1-a0b4-4c12-b700-29117fe0d741}" />
+	  </method>
+	  <method name="CreateEntityTreeEx" client="DataModelClient">
+	    <parameter name="configurationId" value="Default" />
+	    <parameter name="entityKeyByChildId" value="National Holdings" />
+	    <parameter name="entityKeyByParentId" value="Ingrid Yeoh FOLDER" />
+	    <parameter name="externalId0" value="{9d721fc4-4fa2-4801-ba97-1feac8923034}" />
+	  </method>
+  </script>

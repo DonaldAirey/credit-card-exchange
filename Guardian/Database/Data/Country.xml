@@ -1,0 +1,1470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="Country">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <transaction>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="AD" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="AD" />
+      <parameter name="name" value="Andorra" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="AE" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="AE" />
+      <parameter name="name" value="United Arab Emirates" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="AF" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="AF" />
+      <parameter name="name" value="Afghanistan" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="AG" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="AG" />
+      <parameter name="name" value="Antigua and Barbuda" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="AI" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="AI" />
+      <parameter name="name" value="Anguilla" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="AL" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="AL" />
+      <parameter name="name" value="Albania" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="AM" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="AM" />
+      <parameter name="name" value="Armenia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="AN" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="AN" />
+      <parameter name="name" value="Netherlands Antilles" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="AO" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="AO" />
+      <parameter name="name" value="Angola" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="AQ" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="AQ" />
+      <parameter name="name" value="Antarctica" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="AR" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="AR" />
+      <parameter name="name" value="Argentina" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="AS" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="AS" />
+      <parameter name="name" value="American Samoa" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="AT" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="AT" />
+      <parameter name="name" value="Austria" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="AU" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="AU" />
+      <parameter name="name" value="Australia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="AW" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="AW" />
+      <parameter name="name" value="Aruba" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="AZ" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="AZ" />
+      <parameter name="name" value="Azerbaijan" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="BA" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="BA" />
+      <parameter name="name" value="Bosnia and Herzegovina" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="BB" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="BB" />
+      <parameter name="name" value="Barbados" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="BD" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="BD" />
+      <parameter name="name" value="Bangladesh" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="BE" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="BE" />
+      <parameter name="name" value="Belgium" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="BF" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="BF" />
+      <parameter name="name" value="Burkina Faso" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="BG" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="BG" />
+      <parameter name="name" value="Bulgaria" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="BH" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="BH" />
+      <parameter name="name" value="Bahrain" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="BI" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="BI" />
+      <parameter name="name" value="Burundi" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="BJ" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="BJ" />
+      <parameter name="name" value="Benin" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="BM" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="BM" />
+      <parameter name="name" value="Bermuda" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="BN" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="BN" />
+      <parameter name="name" value="Brunei Darussalam" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="BO" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="BO" />
+      <parameter name="name" value="Bolivia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="BR" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="BR" />
+      <parameter name="name" value="Brazil" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="BS" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="BS" />
+      <parameter name="name" value="Bahamas" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="BT" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="BT" />
+      <parameter name="name" value="Bhutan" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="BV" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="BV" />
+      <parameter name="name" value="Bouvet Island" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="BW" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="BW" />
+      <parameter name="name" value="Botswana" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="BY" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="BY" />
+      <parameter name="name" value="Belarus" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="BZ" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="BZ" />
+      <parameter name="name" value="Belize" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="CA" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="CA" />
+      <parameter name="name" value="Canada" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="CC" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="CC" />
+      <parameter name="name" value="Cocos (Keeling) Islands" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="CF" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="CF" />
+      <parameter name="name" value="Central African Republic" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="CG" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="CG" />
+      <parameter name="name" value="Congo" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="CH" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="CH" />
+      <parameter name="name" value="Switzerland" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="CI" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="CI" />
+      <parameter name="name" value="Cote D'Ivoire (Ivory Coast)" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="CK" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="CK" />
+      <parameter name="name" value="Cook Islands" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="CL" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="CL" />
+      <parameter name="name" value="Chile" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="CM" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="CM" />
+      <parameter name="name" value="Cameroon" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="CN" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="CN" />
+      <parameter name="name" value="China" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="CO" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="CO" />
+      <parameter name="name" value="Colombia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="CR" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="CR" />
+      <parameter name="name" value="Costa Rica" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="CS" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="CS" />
+      <parameter name="name" value="Czechoslovakia (former)" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="CU" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="CU" />
+      <parameter name="name" value="Cuba" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="CV" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="CV" />
+      <parameter name="name" value="Cape Verde" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="CX" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="CX" />
+      <parameter name="name" value="Christmas Island" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="CY" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="CY" />
+      <parameter name="name" value="Cyprus" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="CZ" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="CZ" />
+      <parameter name="name" value="Czech Republic" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="DE" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="DE" />
+      <parameter name="name" value="Germany" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="DJ" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="DJ" />
+      <parameter name="name" value="Djibouti" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="DK" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="DK" />
+      <parameter name="name" value="Denmark" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="DM" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="DM" />
+      <parameter name="name" value="Dominica" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="DO" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="DO" />
+      <parameter name="name" value="Dominican Republic" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="DZ" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="DZ" />
+      <parameter name="name" value="Algeria" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="EC" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="EC" />
+      <parameter name="name" value="Ecuador" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="EE" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="EE" />
+      <parameter name="name" value="Estonia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="EU" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="EU" />
+      <parameter name="name" value="Europe" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="EG" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="EG" />
+      <parameter name="name" value="Egypt" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="EH" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="EH" />
+      <parameter name="name" value="Western Sahara" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="ER" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="ER" />
+      <parameter name="name" value="Eritrea" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="ES" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="ES" />
+      <parameter name="name" value="Spain" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="ET" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="ET" />
+      <parameter name="name" value="Ethiopia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="FI" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="FI" />
+      <parameter name="name" value="Finland" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="FJ" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="FJ" />
+      <parameter name="name" value="Fiji" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="FK" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="FK" />
+      <parameter name="name" value="Falkland Islands (Malvinas)" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="FM" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="FM" />
+      <parameter name="name" value="Micronesia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="FO" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="FO" />
+      <parameter name="name" value="Faroe Islands" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="FR" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="FR" />
+      <parameter name="name" value="France" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="FX" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="FX" />
+      <parameter name="name" value="France, Metropolitan" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="GA" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="GA" />
+      <parameter name="name" value="Gabon" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="GB" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="GB" />
+      <parameter name="name" value="Great Britain (UK)" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="GD" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="GD" />
+      <parameter name="name" value="Grenada" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="GE" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="GE" />
+      <parameter name="name" value="Georgia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="GF" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="GF" />
+      <parameter name="name" value="French Guiana" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="GH" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="GH" />
+      <parameter name="name" value="Ghana" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="GI" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="GI" />
+      <parameter name="name" value="Gibraltar" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="GL" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="GL" />
+      <parameter name="name" value="Greenland" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="GM" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="GM" />
+      <parameter name="name" value="Gambia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="GN" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="GN" />
+      <parameter name="name" value="Guinea" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="GP" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="GP" />
+      <parameter name="name" value="Guadeloupe" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="GQ" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="GQ" />
+      <parameter name="name" value="Equatorial Guinea" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="GR" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="GR" />
+      <parameter name="name" value="Greece" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="GS" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="GS" />
+      <parameter name="name" value="S. Georgia and S. Sandwich Isls." />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="GT" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="GT" />
+      <parameter name="name" value="Guatemala" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="GU" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="GU" />
+      <parameter name="name" value="Guam" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="GW" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="GW" />
+      <parameter name="name" value="Guinea-Bissau" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="GY" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="GY" />
+      <parameter name="name" value="Guyana" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="HK" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="HK" />
+      <parameter name="name" value="Hong Kong" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="HM" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="HM" />
+      <parameter name="name" value="Heard and McDonald Islands" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="HN" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="HN" />
+      <parameter name="name" value="Honduras" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="HR" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="HR" />
+      <parameter name="name" value="Croatia (Hrvatska)" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="HT" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="HT" />
+      <parameter name="name" value="Haiti" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="HU" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="HU" />
+      <parameter name="name" value="Hungary" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="ID" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="ID" />
+      <parameter name="name" value="Indonesia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="IE" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="IE" />
+      <parameter name="name" value="Ireland" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="IL" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="IL" />
+      <parameter name="name" value="Israel" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="IN" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="IN" />
+      <parameter name="name" value="India" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="IO" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="IO" />
+      <parameter name="name" value="British Indian Ocean Territory" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="IQ" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="IQ" />
+      <parameter name="name" value="Iraq" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="IR" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="IR" />
+      <parameter name="name" value="Iran" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="IS" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="IS" />
+      <parameter name="name" value="Iceland" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="IT" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="IT" />
+      <parameter name="name" value="Italy" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="JM" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="JM" />
+      <parameter name="name" value="Jamaica" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="JO" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="JO" />
+      <parameter name="name" value="Jordan" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="JP" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="JP" />
+      <parameter name="name" value="Japan" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="KE" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="KE" />
+      <parameter name="name" value="Kenya" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="KG" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="KG" />
+      <parameter name="name" value="Kyrgyzstan" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="KH" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="KH" />
+      <parameter name="name" value="Cambodia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="KI" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="KI" />
+      <parameter name="name" value="Kiribati" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="KM" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="KM" />
+      <parameter name="name" value="Comoros" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="KN" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="KN" />
+      <parameter name="name" value="Saint Kitts and Nevis" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="KP" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="KP" />
+      <parameter name="name" value="Korea (North)" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="KR" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="KR" />
+      <parameter name="name" value="Korea (South)" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="KW" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="KW" />
+      <parameter name="name" value="Kuwait" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="KY" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="KY" />
+      <parameter name="name" value="Cayman Islands" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="KZ" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="KZ" />
+      <parameter name="name" value="Kazakhstan" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="LA" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="LA" />
+      <parameter name="name" value="Laos" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="LB" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="LB" />
+      <parameter name="name" value="Lebanon" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="LC" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="LC" />
+      <parameter name="name" value="Saint Lucia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="LI" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="LI" />
+      <parameter name="name" value="Liechtenstein" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="LK" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="LK" />
+      <parameter name="name" value="Sri Lanka" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="LR" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="LR" />
+      <parameter name="name" value="Liberia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="LS" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="LS" />
+      <parameter name="name" value="Lesotho" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="LT" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="LT" />
+      <parameter name="name" value="Lithuania" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="LU" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="LU" />
+      <parameter name="name" value="Luxembourg" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="LV" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="LV" />
+      <parameter name="name" value="Latvia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="LY" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="LY" />
+      <parameter name="name" value="Libya" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MA" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="MA" />
+      <parameter name="name" value="Morocco" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MC" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="MC" />
+      <parameter name="name" value="Monaco" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MD" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="MD" />
+      <parameter name="name" value="Moldova" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MG" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="MG" />
+      <parameter name="name" value="Madagascar" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MH" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="MH" />
+      <parameter name="name" value="Marshall Islands" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MK" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="MK" />
+      <parameter name="name" value="Macedonia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="ML" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="ML" />
+      <parameter name="name" value="Mali" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MM" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="MM" />
+      <parameter name="name" value="Myanmar" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MN" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="MN" />
+      <parameter name="name" value="Mongolia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MO" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="MO" />
+      <parameter name="name" value="Macau" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MP" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="MP" />
+      <parameter name="name" value="Northern Mariana Islands" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MQ" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="MQ" />
+      <parameter name="name" value="Martinique" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MR" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="MR" />
+      <parameter name="name" value="Mauritania" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MS" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="MS" />
+      <parameter name="name" value="Montserrat" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MT" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="MT" />
+      <parameter name="name" value="Malta" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MU" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="MU" />
+      <parameter name="name" value="Mauritius" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MV" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="MV" />
+      <parameter name="name" value="Maldives" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MW" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="MW" />
+      <parameter name="name" value="Malawi" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MX" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="MX" />
+      <parameter name="name" value="Mexico" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MY" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="MY" />
+      <parameter name="name" value="Malaysia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="MZ" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="MZ" />
+      <parameter name="name" value="Mozambique" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="NA" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="NA" />
+      <parameter name="name" value="Namibia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="NC" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="NC" />
+      <parameter name="name" value="New Caledonia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="NE" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="NE" />
+      <parameter name="name" value="Niger" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="NF" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="NF" />
+      <parameter name="name" value="Norfolk Island" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="NG" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="NG" />
+      <parameter name="name" value="Nigeria" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="NI" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="NI" />
+      <parameter name="name" value="Nicaragua" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="NL" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="NL" />
+      <parameter name="name" value="Netherlands" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="NO" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="NO" />
+      <parameter name="name" value="Norway" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="NP" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="NP" />
+      <parameter name="name" value="Nepal" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="NR" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="NR" />
+      <parameter name="name" value="Nauru" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="NT" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="NT" />
+      <parameter name="name" value="Neutral Zone" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="NU" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="NU" />
+      <parameter name="name" value="Niue" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="NZ" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="NZ" />
+      <parameter name="name" value="New Zealand (Aotearoa)" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="OM" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="OM" />
+      <parameter name="name" value="Oman" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="PA" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="PA" />
+      <parameter name="name" value="Panama" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="PE" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="PE" />
+      <parameter name="name" value="Peru" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="PF" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="PF" />
+      <parameter name="name" value="French Polynesia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="PG" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="PG" />
+      <parameter name="name" value="Papua New Guinea" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="PH" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="PH" />
+      <parameter name="name" value="Philippines" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="PK" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="PK" />
+      <parameter name="name" value="Pakistan" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="PL" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="PL" />
+      <parameter name="name" value="Poland" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="PM" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="PM" />
+      <parameter name="name" value="St. Pierre and Miquelon" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="PN" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="PN" />
+      <parameter name="name" value="Pitcairn" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="PR" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="PR" />
+      <parameter name="name" value="Puerto Rico" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="PT" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="PT" />
+      <parameter name="name" value="Portugal" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="PW" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="PW" />
+      <parameter name="name" value="Palau" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="PY" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="PY" />
+      <parameter name="name" value="Paraguay" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="QA" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="QA" />
+      <parameter name="name" value="Qatar" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="RE" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="RE" />
+      <parameter name="name" value="Reunion" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="RO" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="RO" />
+      <parameter name="name" value="Romania" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="RU" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="RU" />
+      <parameter name="name" value="Russian Federation" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="RW" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="RW" />
+      <parameter name="name" value="Rwanda" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="SA" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="SA" />
+      <parameter name="name" value="Saudi Arabia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="Sb" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="Sb" />
+      <parameter name="name" value="Solomon Islands" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="SC" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="SC" />
+      <parameter name="name" value="Seychelles" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="SD" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="SD" />
+      <parameter name="name" value="Sudan" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="SE" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="SE" />
+      <parameter name="name" value="Sweden" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="SG" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="SG" />
+      <parameter name="name" value="Singapore" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="SH" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="SH" />
+      <parameter name="name" value="St. Helena" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="SI" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="SI" />
+      <parameter name="name" value="Slovenia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="SJ" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="SJ" />
+      <parameter name="name" value="Svalbard and Jan Mayen Islands" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="SK" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="SK" />
+      <parameter name="name" value="Slovak Republic" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="SL" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="SL" />
+      <parameter name="name" value="Sierra Leone" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="SM" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="SM" />
+      <parameter name="name" value="San Marino" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="SN" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="SN" />
+      <parameter name="name" value="Senegal" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="SO" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="SO" />
+      <parameter name="name" value="Somalia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="SR" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="SR" />
+      <parameter name="name" value="SuriName" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="ST" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="ST" />
+      <parameter name="name" value="Sao Tome and Principe" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="SU" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="SU" />
+      <parameter name="name" value="USSR (former)" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="SV" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="SV" />
+      <parameter name="name" value="El Salvador" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="SY" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="SY" />
+      <parameter name="name" value="Syria" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="SZ" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="SZ" />
+      <parameter name="name" value="Swaziland" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="TC" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="TC" />
+      <parameter name="name" value="Turks and Caicos Islands" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="TD" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="TD" />
+      <parameter name="name" value="Chad" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="TF" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="TF" />
+      <parameter name="name" value="French Southern Territories" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="TG" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="TG" />
+      <parameter name="name" value="Togo" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="TH" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="TH" />
+      <parameter name="name" value="Thailand" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="TJ" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="TJ" />
+      <parameter name="name" value="Tajikistan" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="TK" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="TK" />
+      <parameter name="name" value="Tokelau" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="TM" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="TM" />
+      <parameter name="name" value="Turkmenistan" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="TN" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="TN" />
+      <parameter name="name" value="Tunisia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="TO" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="TO" />
+      <parameter name="name" value="Tonga" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="TP" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="TP" />
+      <parameter name="name" value="East Timor" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="TR" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="TR" />
+      <parameter name="name" value="Turkey" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="TT" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="TT" />
+      <parameter name="name" value="Trinidad and Tobago" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="TV" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="TV" />
+      <parameter name="name" value="Tuvalu" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="TW" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="TW" />
+      <parameter name="name" value="Taiwan" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="TZ" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="TZ" />
+      <parameter name="name" value="Tanzania" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="UA" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="UA" />
+      <parameter name="name" value="Ukraine" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="UG" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="UG" />
+      <parameter name="name" value="Uganda" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="UK" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="UK" />
+      <parameter name="name" value="United Kingdom" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="UM" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="UM" />
+      <parameter name="name" value="US Minor Outlying Islands" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="US" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="US" />
+      <parameter name="name" value="United States" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="UY" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="UY" />
+      <parameter name="name" value="Uruguay" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="UZ" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="UZ" />
+      <parameter name="name" value="Uzbekistan" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="VA" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="VA" />
+      <parameter name="name" value="Vatican City State (Holy See)" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="VC" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="VC" />
+      <parameter name="name" value="Saint Vincent and the Grenadines" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="VE" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="VE" />
+      <parameter name="name" value="Venezuela" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="VG" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="VG" />
+      <parameter name="name" value="Virgin Islands (British)" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="VI" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="VI" />
+      <parameter name="name" value="Virgin Islands (U.S.)" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="VN" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="VN" />
+      <parameter name="name" value="Viet Nam" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="VU" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="VU" />
+      <parameter name="name" value="Vanuatu" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="WF" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="WF" />
+      <parameter name="name" value="Wallis and Futuna Islands" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="WS" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="WS" />
+      <parameter name="name" value="Samoa" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="YE" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="YE" />
+      <parameter name="name" value="Yemen" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="YT" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="YT" />
+      <parameter name="name" value="Mayotte" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="YU" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="YU" />
+      <parameter name="name" value="Yugoslavia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="ZA" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="ZA" />
+      <parameter name="name" value="South Africa" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="ZM" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="ZM" />
+      <parameter name="name" value="Zambia" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="ZR" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="ZR" />
+      <parameter name="name" value="Zaire" />
+    </method>
+    <method name="CreateCountryEx" client="DataModelClient">
+      <parameter name="abbreviation" value="ZW" />
+      <parameter name="configurationId" value="Default" />
+      <parameter name="externalId0" value="ZW" />
+      <parameter name="name" value="Zimbabwe" />
+    </method>
+  </transaction>
+</script>

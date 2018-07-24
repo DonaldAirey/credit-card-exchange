@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Accept" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Accept.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChatLeftBubble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChatLeftBubble.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChatRightBubble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChatRightBubble .png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="CommitFailedAccessDenied" xml:space="preserve">
+    <value>You do not have permission to modify {0}.</value>
+  </data>
+  <data name="CommitFailedNoDebtRule" xml:space="preserve">
+    <value>Top-level debt classes must have a debt rule.</value>
+  </data>
+  <data name="ConnectionFaulted" xml:space="preserve">
+    <value>Unable to contact the server.</value>
+  </data>
+  <data name="CreateUserFailed" xml:space="preserve">
+    <value>Unable to create user '{0}'.</value>
+  </data>
+  <data name="DeleteFailed" xml:space="preserve">
+    <value>Unable to delete '{0}'.</value>
+  </data>
+  <data name="DeleteFailedAccessDenied" xml:space="preserve">
+    <value>You do not have permission to delete {0}.</value>
+  </data>
+  <data name="DeleteFailedCompletely" xml:space="preserve">
+    <value>Unable to delete further items.</value>
+  </data>
+  <data name="DeleteFailedConnectionDropped" xml:space="preserve">
+    <value>Unable to delete further items because of communication problems with the server.</value>
+  </data>
+  <data name="DeleteFailedDebtRuleInUse" xml:space="preserve">
+    <value>The debt rule '{0}' cannot be deleted because it is in use by a debt class or account.</value>
+  </data>
+  <data name="DeleteFailedHasSettledAccounts" xml:space="preserve">
+    <value>{0} has settled accounts and cannot be deleted. Move the settled accounts to another debt class and try deleting it again.</value>
+  </data>
+  <data name="DeleteFailedIsSettledAccount" xml:space="preserve">
+    <value>{0} is a settled account and cannot be deleted.</value>
+  </data>
+  <data name="DeleteUserFailed" xml:space="preserve">
+    <value>Unable to remove user '{0}'.</value>
+  </data>
+  <data name="DeletingObject" xml:space="preserve">
+    <value>Deleting '{0}'....</value>
+  </data>
+  <data name="DeletingTitle" xml:space="preserve">
+    <value>Deleting</value>
+  </data>
+  <data name="EntityDeleted" xml:space="preserve">
+    <value>{0} has been deleted.</value>
+  </data>
+  <data name="ExcelTypeValidationFailed" xml:space="preserve">
+    <value>Expecting a value of type '{0}', but got a '{1}' in record {2} instead.</value>
+  </data>
+  <data name="FolderUpdateFailed" xml:space="preserve">
+    <value>Unable to properly merge data retrieved from the server. If this problem persists, try logging in again.</value>
+  </data>
+  <data name="GroupNotFound" xml:space="preserve">
+    <value>The group '{0}' could not be found. It has probably been removed.</value>
+  </data>
+  <data name="ImportAborted" xml:space="preserve">
+    <value>The import has been aborted. No further records will be imported. However, {0:at least 0 records were;0;some records may have been} imported successfully and will not be removed.</value>
+  </data>
+  <data name="ImportConfirmation" xml:space="preserve">
+    <value>Importing records from '{1}'
+
+This file contains {0} records. Do you want to continue?</value>
+  </data>
+  <data name="ImportEndedSuccessHeader" xml:space="preserve">
+    <value>All {0} records imported successfully</value>
+  </data>
+  <data name="ImportEndedSuccessMessage" xml:space="preserve">
+    <value>Finished importing records from {0}.</value>
+  </data>
+  <data name="ImportFailed" xml:space="preserve">
+    <value>The import process could not be completed. {0}</value>
+  </data>
+  <data name="ImportFailedNoHeaders" xml:space="preserve">
+    <value>None of the expected column headers could be found. While extra columns and leading rows are allowed, the expected column header names are case sensitive and must match exactly. Based on your translation table, the expected columns are:
+
+{0}</value>
+  </data>
+  <data name="ImportFailedRequiredColumnMissing" xml:space="preserve">
+    <value>The column headers for the following required fields are missing: {0}. While extra columns and leading rows are allowed, the expected column header names are case sensitive and must match exactly.</value>
+  </data>
+  <data name="ImportFailureReadonly" xml:space="preserve">
+    <value>The folder '{0}' is read-only and a failure file cannot be created. Would you like to continue to import without one?</value>
+  </data>
+  <data name="ImportFailureRollover" xml:space="preserve">
+    <value>There are too many failure files for this import file. Would you like to continue to import without one?</value>
+  </data>
+  <data name="ImportFailureRolloverTitle" xml:space="preserve">
+    <value>Import Error</value>
+  </data>
+  <data name="ImportSucceededWithErrors" xml:space="preserve">
+    <value>The import succeeded {0:and 0;and 0;but no} records were successfully imported. However, {1} could not be imported correctly.</value>
+  </data>
+  <data name="ImportSuccess" xml:space="preserve">
+    <value>Succeeded with importing {0:0;0;no} records, with {1:0;0;no} failed records, for a total of {2} records.</value>
+  </data>
+  <data name="ImportVersionMismatch" xml:space="preserve">
+    <value>The file format version of this import file is incorrect. The current version of the import file format is {0}.</value>
+  </data>
+  <data name="LinkFolderFailed" xml:space="preserve">
+    <value>Unable to create a link to the folder {0}.</value>
+  </data>
+  <data name="LinkFolderFailedRecordExists" xml:space="preserve">
+    <value>Unable to create a link to the folder {0}. There is already an item with the same name in this location.</value>
+  </data>
+  <data name="MoveFailed" xml:space="preserve">
+    <value>Unable to move '{0}'.</value>
+  </data>
+  <data name="MoveFailedAccessDenied" xml:space="preserve">
+    <value>You do not have permission to move {0}.</value>
+  </data>
+  <data name="MovePartialFail" xml:space="preserve">
+    <value>Not all of the items could be moved.</value>
+  </data>
+  <data name="MoveTitle" xml:space="preserve">
+    <value>Move Items</value>
+  </data>
+  <data name="MovingObject" xml:space="preserve">
+    <value>Moving '{0}'....</value>
+  </data>
+  <data name="MovingTitle" xml:space="preserve">
+    <value>Moving</value>
+  </data>
+  <data name="NotMappedToUser" xml:space="preserve">
+    <value>You are authorized to use the server but are not mapped to a user.</value>
+  </data>
+  <data name="NotNullable" xml:space="preserve">
+    <value>This field can not be null.</value>
+  </data>
+  <data name="OpenSettlementTemplateTitle" xml:space="preserve">
+    <value>Open Settlement Letter Template</value>
+  </data>
+  <data name="OperationFailed" xml:space="preserve">
+    <value>The operation failed, please try again.</value>
+  </data>
+  <data name="ProgressInitializing" xml:space="preserve">
+    <value>Initializing....</value>
+  </data>
+  <data name="RenameFailedInvalidName" xml:space="preserve">
+    <value>Names cannot be empty and cannot contain \ or / characters.</value>
+  </data>
+  <data name="RenameFailedRecordExists" xml:space="preserve">
+    <value>There is already an item with the same name in this location.</value>
+  </data>
+  <data name="ResetPasswordFailed" xml:space="preserve">
+    <value>Unable to reset the password of '{0}'.</value>
+  </data>
+  <data name="ResetPasswordFailedPasswordMismatch" xml:space="preserve">
+    <value>The passwords you entered did not match.</value>
+  </data>
+  <data name="ResetPasswordFailedPermissionDenied" xml:space="preserve">
+    <value>You do not have permission to set the password for {0}.</value>
+  </data>
+  <data name="ResetPasswordFailedPoorComplexity" xml:space="preserve">
+    <value>Unable to update the password. The value provided does not meet the length, complexity, or history requirements of the exchange.</value>
+  </data>
+  <data name="TemplateReviewEdit" xml:space="preserve">
+    <value>Review/Edit Template</value>
+  </data>
+  <data name="UnlinkFolderFailed" xml:space="preserve">
+    <value>Unable to remove '{0}' from '{1}'.</value>
+  </data>
+  <data name="UpdateUserFailed" xml:space="preserve">
+    <value>Unable to update '{0}'.</value>
+  </data>
+  <data name="UpdateUserFailedAccessDenied" xml:space="preserve">
+    <value>You do not have permission to update '{0}'.</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>The user '{0}' could not be found.</value>
+  </data>
+  <data name="ValidateNonNullColumnFailed" xml:space="preserve">
+    <value>The field '{0}' cannot be null or empty.</value>
+  </data>
+  <data name="Warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Warning.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XmlValidationFailed" xml:space="preserve">
+    <value>XML validation failed on line {0}, column {1}:
+{2}</value>
+  </data>
+</root>

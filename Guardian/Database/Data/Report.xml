@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="Reports">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+  <method name="CreateReportEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="externalId0" value="ALLOCATION REPORT" />
+    <parameter name="name" value="Allocation Report" />
+    <parameter name="reportTypeKey" value="WORKING ORDER" />
+    <parameter name="xaml">
+      <import path="../Reports/Allocation.xaml"/>
+    </parameter>
+  </method>
+  <method name="CreateReportEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default" />
+	<parameter name="name" value="Credit Card Detail Report" />
+	<parameter name="externalId0" value="CREDIT CARD DETAIL REPORT" />
+	<parameter name="reportTypeKey" value="CREDIT CARD DETAIL" />
+	<parameter name="xaml">
+	  <import path="../Reports/Credit Card Detail.xaml"/>
+	</parameter>
+  </method>
+  <method name="CreateReportEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="name" value="Consumer Debt Match Report" />
+    <parameter name="externalId0" value="CONSUMER DEBT MATCH REPORT" />
+    <parameter name="reportTypeKey" value="MATCH" />
+    <parameter name="xaml">
+      <import path="../Reports/Consumer Debt Match.xaml"/>
+    </parameter>
+  </method>
+  <method name="CreateReportEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="name" value="Consumer Debt Settlement Report" />
+    <parameter name="externalId0" value="CONSUMER DEBT SETTLEMENT REPORT" />
+    <parameter name="reportTypeKey" value="SETTLEMENT" />
+    <parameter name="xaml">
+      <import path="../Reports/Consumer Debt Settlement.xaml"/>
+    </parameter>
+  </method>
+  <method name="CreateReportEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="name" value="Consumer Debt Working Order Report" />
+    <parameter name="externalId0" value="CONSUMER DEBT WORKING ORDER REPORT" />
+    <parameter name="reportTypeKey" value="WORKING ORDER" />
+    <parameter name="xaml">
+      <import path="../Reports/Consumer Debt Working Order.xaml"/>
+    </parameter>
+  </method>
+  <method name="CreateReportEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="name" value="Consumer Trust Match Report" />
+    <parameter name="externalId0" value="CONSUMER TRUST MATCH REPORT" />
+    <parameter name="reportTypeKey" value="MATCH" />
+    <parameter name="xaml">
+      <import path="../Reports/Consumer Trust Match.xaml"/>
+    </parameter>
+  </method>
+  <method name="CreateReportEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default" />
+	<parameter name="name" value="Consumer Debt Payment Summary Report" />
+	<parameter name="externalId0" value="CONSUMER DEBT PAYMENT SUMMARY REPORT" />
+	<parameter name="reportTypeKey" value="PAYMENT SUMMARY" />
+	<parameter name="xaml">
+	  <import path="../Reports/Consumer Debt Payment Summary.xaml"/>
+	</parameter>
+  </method>
+  <method name="CreateReportEx" client="DataModelClient">
+	<parameter name="configurationId" value="Default" />
+	<parameter name="name" value="Consumer Trust Payment Summary Report" />
+	<parameter name="externalId0" value="PAYMENT SUMMARY REPORT" />
+	<parameter name="reportTypeKey" value="PAYMENT SUMMARY" />
+	<parameter name="xaml">
+	  <import path="../Reports/Consumer Trust Payment Summary.xaml"/>
+	</parameter>
+  </method>
+  <method name="CreateReportEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="name" value="Consumer Trust Settlement Report" />
+    <parameter name="externalId0" value="CONSUMER TRUST SETTLEMENT REPORT" />
+    <parameter name="reportTypeKey" value="SETTLEMENT" />
+    <parameter name="xaml">
+      <import path="../Reports/Consumer Trust Settlement.xaml"/>
+    </parameter>
+  </method>
+  <method name="CreateReportEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="name" value="Consumer Trust Working Order Report" />
+    <parameter name="externalId0" value="CONSUMER TRUST WORKING ORDER REPORT" />
+    <parameter name="reportTypeKey" value="WORKING ORDER" />
+    <parameter name="xaml">
+      <import path="../Reports/Consumer Trust Working Order.xaml"/>
+    </parameter>
+  </method>
+  <method name="CreateReportEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="name" value="Destination Order Report" />
+    <parameter name="externalId0" value="DESTINATION ORDER REPORT" />
+    <parameter name="reportTypeKey" value="DESTINATION ORDER" />
+    <parameter name="xaml">
+      <import path="../Reports/Destination Order.xaml"/>
+    </parameter>
+  </method>
+  <method name="CreateReportEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="name" value="Destination Order Detail Report" />
+    <parameter name="externalId0" value="DESTINATION ORDER DETAIL REPORT" />
+    <parameter name="reportTypeKey" value="DESTINATION ORDER DETAIL" />
+    <parameter name="xaml">
+      <import path="../Reports/Destination Order Detail.xaml"/>
+    </parameter>
+  </method>
+  <method name="CreateReportEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="name" value="Equity Match Report" />
+    <parameter name="externalId0" value="EQUITY MATCH REPORT" />
+    <parameter name="reportTypeKey" value="MATCH" />
+    <parameter name="xaml">
+      <import path="../Reports/Equity Match.xaml"/>
+    </parameter>
+  </method>
+  <method name="CreateReportEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="name" value="Execution Report" />
+    <parameter name="externalId0" value="EXECUTION REPORT" />
+    <parameter name="reportTypeKey" value="EXECUTION" />
+    <parameter name="xaml">
+      <import path="../Reports/Execution.xaml"/>
+    </parameter>
+  </method>
+  <method name="CreateReportEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="name" value="Execution Detail Report" />
+    <parameter name="externalId0" value="EXECUTION DETAIL REPORT" />
+    <parameter name="reportTypeKey" value="EXECUTION DETAIL" />
+    <parameter name="xaml">
+      <import path="../Reports/Execution Detail.xaml"/>
+    </parameter>
+  </method>
+  <method name="CreateReportEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="name" value="Source Order Report" />
+    <parameter name="externalId0" value="SOURCE ORDER REPORT" />
+    <parameter name="reportTypeKey" value="SOURCE ORDER" />
+    <parameter name="xaml">
+      <import path="../Reports/Source Order.xaml"/>
+    </parameter>
+  </method>
+  <method name="CreateReportEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="name" value="Source Order Detail Report" />
+    <parameter name="externalId0" value="SOURCE ORDER DETAIL REPORT" />
+    <parameter name="reportTypeKey" value="SOURCE ORDER DETAIL" />
+    <parameter name="xaml">
+      <import path="../Reports/Source Order Detail.xaml"/>
+    </parameter>
+  </method>
+  <method name="CreateReportEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="name" value="Equity Working Order Report" />
+    <parameter name="externalId0" value="EQUITY WORKING ORDER REPORT" />
+    <parameter name="reportTypeKey" value="WORKING ORDER" />
+    <parameter name="xaml">
+      <import path="../Reports/Equity Working Order.xaml"/>
+    </parameter>
+  </method>
+  <method name="CreateReportEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="name" value="Debt Working Order Report" />
+    <parameter name="externalId0" value="DEBT WORKING ORDER REPORT" />
+    <parameter name="reportTypeKey" value="WORKING ORDER" />
+    <parameter name="xaml">
+      <import path="../Reports/Debt Working Order.xaml"/>
+    </parameter>
+  </method>
+  <method name="CreateReportEx" client="DataModelClient">
+    <parameter name="configurationId" value="Default" />
+    <parameter name="name" value="Working Order Report" />
+    <parameter name="externalId0" value="WORKING ORDER REPORT" />
+    <parameter name="reportTypeKey" value="WORKING ORDER" />
+    <parameter name="xaml">
+      <import path="../Reports/Working Order.xaml"/>
+    </parameter>
+  </method>
+</script>

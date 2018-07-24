@@ -1,0 +1,75 @@
+﻿<Window x:Class="FluidTrade.Guardian.WindowMain"
+        Height="300"
+        Icon="Resources\Utility.ico"
+        Title="Fluid Trade Utilities"
+        Width="300"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:src="clr-namespace:FluidTrade.Guardian"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <!-- Command Bindings -->
+  <Window.CommandBindings>
+    <CommandBinding CanExecute="OnCanUseDataModel"
+                    Command="src:Commands.ClearCross"
+                    Executed="OnClearCross" />
+    <CommandBinding CanExecute="OnCanUseDataModel"
+                    Command="src:Commands.CreateAccessControlList"
+                    Executed="OnCreateAccessControlList" />
+    <CommandBinding CanExecute="OnCanUseDataModel"
+                    Command="src:Commands.CreateEquityOrders"
+                    Executed="OnCreateEquityOrders" />
+    <CommandBinding CanExecute="OnCanUseDataModel"
+                    Command="src:Commands.CreateFixedIncomeOrders"
+                    Executed="OnCreateFixedIncomeOrders" />
+    <CommandBinding CanExecute="OnCanUseDataModel"
+                    Command="src:Commands.DestroyOrders"
+                    Executed="OnDestroyOrders" />
+    <CommandBinding CanExecute="OnCanUseDataModel"
+                    Command="src:Commands.LoadDebtReport"
+                    Executed="OnLoadDebtReport" />
+    <CommandBinding CanExecute="OnCanUseDataModel"
+                    Command="src:Commands.LoadEquityReport"
+                    Executed="OnLoadEquityReport" />
+    <CommandBinding CanExecute="OnCanUseDataModel"
+                    Command="src:Commands.SimulateMarket"
+                    Executed="OnSimulateMarket" />
+    <CommandBinding CanExecute="OnCanUseDataModel"
+                    Command="src:Commands.LoadDebtNegotiatorInventory"
+                    Executed="OnLoadDebtNegotiatorInventory" />
+    <CommandBinding CanExecute="OnCanUseDataModel"
+                    Command="src:Commands.LoadDebtHolderInventory"
+                    Executed="OnLoadDebtHolderInventory" />
+  </Window.CommandBindings>
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="21" />
+      <RowDefinition />
+    </Grid.RowDefinitions>
+    <Menu Grid.Column="0"
+          Grid.Row="0"
+          Name="menuMain">
+      <MenuItem Header="_File"
+                Name="menuItemFile">
+        <MenuItem Command="FluidTradeCommands.Login"
+                  Name="menuItemLogin" />
+        <Separator />
+        <MenuItem Command="ApplicationCommands.Close"
+                  Header="_Exit"
+                  Name="menuItemExit" />
+      </MenuItem>
+      <MenuItem Name="menuItemAction"
+                IsEnabled="False"
+                Header="_Tools">
+        <MenuItem Command="src:Commands.ClearCross" />
+        <MenuItem Command="src:Commands.CreateAccessControlList" />
+        <MenuItem Command="src:Commands.CreateEquityOrders" />
+        <MenuItem Command="src:Commands.CreateFixedIncomeOrders" />
+        <MenuItem Command="src:Commands.DestroyOrders" />
+        <MenuItem Command="src:Commands.LoadDebtReport" />
+        <MenuItem Command="src:Commands.LoadEquityReport" />
+        <MenuItem Command="src:Commands.SimulateMarket" />
+        <MenuItem Command="src:Commands.LoadDebtNegotiatorInventory" />
+        <MenuItem Command="src:Commands.LoadDebtHolderInventory" />
+      </MenuItem>
+    </Menu>
+  </Grid>
+</Window>

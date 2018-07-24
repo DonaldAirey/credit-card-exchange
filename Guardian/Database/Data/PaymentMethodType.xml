@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="PaymentMethodType">
+	<client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+	<transaction>
+		<method name="CreatePaymentMethodTypeEx" client="DataModelClient">
+			<parameter name="configurationId" value="Default" />
+			<parameter name="externalId0" value="ACH" />
+			<parameter name="name" value="ACH" />
+		</method>
+		<method name="CreatePaymentMethodTypeEx" client="DataModelClient">
+			<parameter name="configurationId" value="Default" />
+			<parameter name="externalId0" value="MANUAL CHECK" />
+			<parameter name="name" value="Manual Check" />
+		</method>
+		<method name="CreatePaymentMethodTypeEx" client="DataModelClient">
+			<parameter name="configurationId" value="Default" />
+			<parameter name="externalId0" value="PHONE PAY" />
+			<parameter name="name" value="Phone Pay" />
+		</method>
+		<method name="CreatePaymentMethodTypeEx" client="DataModelClient">
+			<parameter name="configurationId" value="Default" />
+			<parameter name="externalId0" value="TRACKED" />
+			<parameter name="name" value="Tracked 2nd Day" />
+		</method>
+		<method name="CreatePaymentMethodTypeEx" client="DataModelClient">
+			<parameter name="configurationId" value="Default" />
+			<parameter name="externalId0" value="OVERNITE CHECK" />
+			<parameter name="name" value="Overnite Check" />
+		</method>
+		<method name="CreatePaymentMethodTypeEx" client="DataModelClient">
+			<parameter name="configurationId" value="Default" />
+			<parameter name="externalId0" value="WIRE TRANSFER" />
+			<parameter name="name" value="Wire Transfer" />
+		</method>
+	</transaction>
+</script>

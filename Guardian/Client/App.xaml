@@ -1,0 +1,322 @@
+﻿<Application x:Class="FluidTrade.Guardian.AssetExplorer"
+             StartupUri="WindowMain.xaml"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+						 xmlns:s="clr-namespace:System;assembly=mscorlib"
+             xmlns:guardian="http://schemas.fluidtrade.com/winfx/2006/xaml/guardian/presentation"
+						 xmlns:mwt="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero">
+	<Application.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Resources\ZoomButton.xaml" />
+        <ResourceDictionary Source="Resources\ZoomSlider.xaml" />
+      </ResourceDictionary.MergedDictionaries>
+      <!-- guardianSettings -->
+      <ObjectDataProvider x:Key="guardianSettings" ObjectType="{x:Type guardian:Properties.Settings}" />
+      <!-- Main menu style -->
+      <Style TargetType="{x:Type Menu}">
+				<Setter Property="BorderBrush" Value="#BBC" />
+				<Setter Property="BorderThickness" Value="0,0,0,1" />
+				<Style.Triggers>
+          <DataTrigger Binding="{Binding Path=IsKeyboardFocusWithin,RelativeSource={RelativeSource Mode=Self}}" Value="True">
+            <Setter Property="Height" Value="22" />
+          </DataTrigger>
+          <MultiDataTrigger>
+            <MultiDataTrigger.Conditions>
+              <Condition Binding="{Binding Path=IsKeyboardFocusWithin,RelativeSource={RelativeSource Mode=Self}}" Value="False" />
+              <Condition Binding="{Binding Source={StaticResource guardianSettings},Path=Default.AlwaysShowMainMenu, Mode=TwoWay}" Value="False" />
+            </MultiDataTrigger.Conditions>
+            <Setter Property="Height" Value="0" />
+          </MultiDataTrigger>
+        </Style.Triggers>
+      </Style>
+      <!-- Toolbar template -->
+      <ControlTemplate x:Key="ToolBarTemplate"  TargetType="{x:Type ToolBar}">
+        <Border BorderThickness="0,0,0,1" BorderBrush="#124">
+          <Border.Background>
+            <LinearGradientBrush StartPoint="0.0,0.5" EndPoint="1.0,0.5">
+              <GradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#444488" Offset="0.0"/>
+                  <GradientStop Color="#77FF88" Offset="1.0"/>
+                </GradientStopCollection>
+              </GradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Border.Background>
+          <Border BorderThickness="1" CornerRadius="1">
+            <Border.Background>
+              <LinearGradientBrush StartPoint="0.5,0.0" EndPoint="0.5,1.0">
+                <GradientBrush.GradientStops>
+                  <GradientStopCollection>
+                    <GradientStop Color="#CC7FA6BF" Offset="0.0"/>
+                    <GradientStop Color="#CC39759C" Offset="0.49"/>
+                    <GradientStop Color="#CC044875" Offset="0.5"/>
+										<GradientStop Color="#D268" Offset="0.8"/>
+										<GradientStop Color="#E0509AB0" Offset="1.0"/>
+                  </GradientStopCollection>
+                </GradientBrush.GradientStops>
+              </LinearGradientBrush>
+            </Border.Background>
+            <Border.BorderBrush>
+              <LinearGradientBrush StartPoint="0.5,0.0" EndPoint="0.5,1.0">
+                <GradientBrush.GradientStops>
+                  <GradientStopCollection>
+                    <GradientStop Color="#CCB0C8D8" Offset="0.0"/>
+                    <GradientStop Color="#CC83A9C1" Offset="0.49"/>
+                    <GradientStop Color="#CC57829E" Offset="0.5"/>
+                    <GradientStop Color="#CC93C0CE" Offset="1.0"/>
+                  </GradientStopCollection>
+                </GradientBrush.GradientStops>
+              </LinearGradientBrush>
+            </Border.BorderBrush>
+            <DockPanel KeyboardNavigation.TabIndex="1"
+                       KeyboardNavigation.TabNavigation="Local">
+              <ContentPresenter x:Name="ToolBarHeader"
+                                ContentSource="Header"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Margin="4,0,4,0"
+                                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+              <ToolBarPanel x:Name="PART_ToolBarPanel"
+                            IsItemsHost="true"
+                            Margin="0,1,2,2"
+                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+            </DockPanel>
+          </Border>
+        </Border>
+      </ControlTemplate>
+			<!-- Toolbar toggle button style -->
+			<Style x:Key="ToolBarToggleButtonStyle" TargetType="{x:Type ToggleButton}">
+				<Setter Property="Template">
+					<Setter.Value>
+						<ControlTemplate TargetType="{x:Type ToggleButton}">
+							<Border Name="outer"
+										BorderThickness="1"
+										BorderBrush="#00000000"
+										CornerRadius="2"
+										SnapsToDevicePixels="true">
+								<Border Name="inner"
+											BorderThickness="1"
+											BorderBrush="#00000000"
+											CornerRadius="2" 
+											Padding="4,0,4,0"
+											SnapsToDevicePixels="true">
+									<ContentPresenter RecognizesAccessKey="True"
+																		Content="{TemplateBinding ContentControl.Content}"
+																		ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}"
+																		ContentStringFormat="{TemplateBinding ContentControl.ContentStringFormat}"
+																		Margin="{TemplateBinding Control.Padding}"
+																		HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}"
+																		VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}"
+																		SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+
+								</Border>
+							</Border>
+
+							<ControlTemplate.Resources>
+								<LinearGradientBrush x:Key="WhiteFade">
+									<LinearGradientBrush.StartPoint>
+										<Point Y="0" X=".5"/>
+									</LinearGradientBrush.StartPoint>
+									<LinearGradientBrush.EndPoint>
+										<Point Y="1" X=".5"/>
+									</LinearGradientBrush.EndPoint>
+									<LinearGradientBrush.GradientStops>
+										<GradientStop Color="#8DDD" Offset="0"/>
+										<GradientStop Color="#3DDD" Offset="0.5"/>
+										<GradientStop Color="#0000" Offset="0.5"/>
+									</LinearGradientBrush.GradientStops>
+								</LinearGradientBrush>
+								<LinearGradientBrush x:Key="BlackFade">
+									<LinearGradientBrush.StartPoint>
+										<Point Y="0" X=".5"/>
+									</LinearGradientBrush.StartPoint>
+									<LinearGradientBrush.EndPoint>
+										<Point Y="1" X=".5"/>
+									</LinearGradientBrush.EndPoint>
+									<LinearGradientBrush.GradientStops>
+										<GradientStop Color="#8444" Offset="0"/>
+										<GradientStop Color="#0000" Offset="0.5"/>
+									</LinearGradientBrush.GradientStops>
+								</LinearGradientBrush>
+							</ControlTemplate.Resources>
+
+							<ControlTemplate.Triggers>
+								<Trigger Property="IsMouseOver" Value="true">
+									<Setter Property="BorderBrush" Value="#8444" TargetName="outer" />
+									<Setter Property="BorderBrush" Value="#ADDD" TargetName="inner" />
+									<Setter Property="Background" Value="{StaticResource WhiteFade}" TargetName="outer" />
+								</Trigger>
+								<Trigger Property="IsChecked" Value="true">
+									<Setter Property="BorderBrush" Value="#000" TargetName="outer" />
+									<Setter Property="BorderBrush" Value="#0000" TargetName="inner" />
+									<Setter Property="Padding" Value="6,2,2,0" TargetName="inner" />
+									<Setter Property="Background" Value="{StaticResource BlackFade}" TargetName="outer" />
+								</Trigger>
+							</ControlTemplate.Triggers>
+						</ControlTemplate>
+					</Setter.Value>
+				</Setter>
+			</Style>
+			<!-- Toolbar button style -->
+			<Style x:Key="ToolBarButtonStyle" TargetType="{x:Type Button}">
+				<Setter Property="Template">
+					<Setter.Value>
+						<ControlTemplate TargetType="{x:Type Button}">
+							<Border Name="outer"
+										BorderThickness="1"
+										BorderBrush="#00000000"
+										CornerRadius="2"
+										SnapsToDevicePixels="true">
+								<Border Name="inner"
+											BorderThickness="1"
+											BorderBrush="#00000000"
+											CornerRadius="2" 
+											Padding="4,0,4,0"
+											SnapsToDevicePixels="true">
+									<ContentPresenter RecognizesAccessKey="True"
+																		Content="{TemplateBinding ContentControl.Content}"
+																		ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}"
+																		ContentStringFormat="{TemplateBinding ContentControl.ContentStringFormat}"
+																		Margin="{TemplateBinding Control.Padding}"
+																		HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}"
+																		VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}"
+																		SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+
+								</Border>
+							</Border>
+
+							<ControlTemplate.Resources>
+								<LinearGradientBrush x:Key="WhiteFade">
+									<LinearGradientBrush.StartPoint>
+										<Point Y="0" X=".5"/>
+									</LinearGradientBrush.StartPoint>
+									<LinearGradientBrush.EndPoint>
+										<Point Y="1" X=".5"/>
+									</LinearGradientBrush.EndPoint>
+									<LinearGradientBrush.GradientStops>
+										<GradientStop Color="#8DDD" Offset="0"/>
+										<GradientStop Color="#3DDD" Offset="0.5"/>
+										<GradientStop Color="#0000" Offset="0.5"/>
+									</LinearGradientBrush.GradientStops>
+								</LinearGradientBrush>
+								<LinearGradientBrush x:Key="BlackFade">
+									<LinearGradientBrush.StartPoint>
+										<Point Y="0" X=".5"/>
+									</LinearGradientBrush.StartPoint>
+									<LinearGradientBrush.EndPoint>
+										<Point Y="1" X=".5"/>
+									</LinearGradientBrush.EndPoint>
+									<LinearGradientBrush.GradientStops>
+										<GradientStop Color="#8444" Offset="0"/>
+										<GradientStop Color="#0000" Offset="0.5"/>
+									</LinearGradientBrush.GradientStops>
+								</LinearGradientBrush>
+							</ControlTemplate.Resources>
+
+							<ControlTemplate.Triggers>
+								<Trigger Property="IsMouseOver" Value="true">
+									<Setter Property="BorderBrush" Value="#8444" TargetName="outer" />
+									<Setter Property="BorderBrush" Value="#ADDD" TargetName="inner" />
+									<Setter Property="Background" Value="{StaticResource WhiteFade}" TargetName="outer" />
+								</Trigger>
+								<Trigger Property="IsPressed" Value="true">
+									<Setter Property="BorderBrush" Value="#000" TargetName="outer" />
+									<Setter Property="BorderBrush" Value="#0000" TargetName="inner" />
+									<Setter Property="Padding" Value="6,2,2,0" TargetName="inner" />
+									<Setter Property="Background" Value="{StaticResource BlackFade}" TargetName="outer" />
+								</Trigger>
+							</ControlTemplate.Triggers>
+						</ControlTemplate>
+					</Setter.Value>
+				</Setter>
+			</Style>
+			
+			<!-- Generic text box style -->
+			<!--<Style TargetType="{x:Type TextBox}">
+				<Style.Triggers>
+					<Trigger Property="IsReadOnly" Value="true">
+						<Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" />
+					</Trigger>
+				</Style.Triggers>
+			</Style>-->
+			<Style TargetType="TextBox">
+				<Setter Property="OverridesDefaultStyle" Value="true" />
+				<Setter Property="TextElement.Foreground">
+					<Setter.Value>
+						<DynamicResource ResourceKey="{x:Static SystemColors.ControlTextBrushKey}" />
+					</Setter.Value>
+				</Setter>
+				<Setter Property="Panel.Background">
+					<Setter.Value>
+						<DynamicResource ResourceKey="{x:Static SystemColors.WindowBrushKey}" />
+					</Setter.Value>
+				</Setter>
+				<Setter Property="Border.BorderBrush">
+					<Setter.Value>
+						<LinearGradientBrush StartPoint="0,0" EndPoint="0,20" MappingMode="Absolute">
+							<LinearGradientBrush.GradientStops>
+								<GradientStop Color="#FFABADB3" Offset="0.05" />
+								<GradientStop Color="#FFE2E3EA" Offset="0.07" />
+								<GradientStop Color="#FFE3E9EF" Offset="1" />
+							</LinearGradientBrush.GradientStops>
+						</LinearGradientBrush>
+					</Setter.Value>
+				</Setter>
+				<Setter Property="Border.BorderThickness">
+					<Setter.Value>
+						<Thickness>1,1,1,1</Thickness>
+					</Setter.Value>
+				</Setter>
+				<Setter Property="Control.Padding">
+					<Setter.Value>
+						<Thickness>1,1,1,1</Thickness>
+					</Setter.Value>
+				</Setter>
+				<Setter Property="UIElement.AllowDrop">
+					<Setter.Value>
+						<s:Boolean>True</s:Boolean>
+					</Setter.Value>
+				</Setter>
+				<Setter Property="FrameworkElement.FocusVisualStyle">
+					<Setter.Value>
+						<x:Null />
+					</Setter.Value>
+				</Setter>
+				<Setter Property="Control.Template">
+					<Setter.Value>
+						<ControlTemplate TargetType="TextBox">
+							<Grid>
+								<mwt:ListBoxChrome Background="{TemplateBinding Panel.Background}" BorderBrush="{TemplateBinding Border.BorderBrush}" BorderThickness="{TemplateBinding Border.BorderThickness}" RenderMouseOver="{TemplateBinding UIElement.IsMouseOver}" RenderFocused="{TemplateBinding UIElement.IsKeyboardFocusWithin}" Name="Bd" SnapsToDevicePixels="True">
+								</mwt:ListBoxChrome>
+								<ScrollViewer Name="PART_ContentHost" Margin="{TemplateBinding Border.BorderThickness}" SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+							</Grid>
+							<ControlTemplate.Triggers>
+								<Trigger Property="IsReadOnly" Value="true">
+									<Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" TargetName="Bd" />
+									<!--<Setter Property="BorderBrush" Value="Gray" TargetName="Bd" />-->
+									<Setter Property="IsEnabled" Value="false" TargetName="Bd" />
+								</Trigger>
+								<Trigger Property="UIElement.IsEnabled">
+									<Setter Property="Panel.Background" TargetName="Bd">
+										<Setter.Value>
+											<DynamicResource ResourceKey="{x:Static SystemColors.ControlBrushKey}" />
+										</Setter.Value>
+									</Setter>
+									<Setter Property="TextElement.Foreground">
+										<Setter.Value>
+											<DynamicResource ResourceKey="{x:Static SystemColors.GrayTextBrushKey}" />
+										</Setter.Value>
+									</Setter>
+									<Trigger.Value>
+										<s:Boolean>False</s:Boolean>
+									</Trigger.Value>
+								</Trigger>
+							</ControlTemplate.Triggers>
+						</ControlTemplate>
+					</Setter.Value>
+				</Setter>
+			</Style>
+		</ResourceDictionary>
+  </Application.Resources>
+</Application>

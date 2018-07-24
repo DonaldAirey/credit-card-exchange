@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CrystalReport", "CrystalReportSetup\CrystalReportSetup.vdproj", "{3B6CE5C9-073D-4CCD-ACD8-F751F9F21164}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetupWatchDog", "SetupWatchDog\SetupWatchDog.csproj", "{D5CDED2B-C8A7-4C97-9167-D94385DC1EE4}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://titania.fluidtrade.com:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CrystalReportSetup\\CrystalReportSetup.vdproj
+		SccProjectName1 = CrystalReportSetup
+		SccLocalPath1 = CrystalReportSetup
+		SccProjectUniqueName2 = SetupWatchDog\\SetupWatchDog.csproj
+		SccProjectName2 = SetupWatchDog
+		SccLocalPath2 = SetupWatchDog
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B6CE5C9-073D-4CCD-ACD8-F751F9F21164}.Debug|Any CPU.ActiveCfg = Debug
+		{3B6CE5C9-073D-4CCD-ACD8-F751F9F21164}.Debug|Any CPU.Build.0 = Debug
+		{3B6CE5C9-073D-4CCD-ACD8-F751F9F21164}.Release|Any CPU.ActiveCfg = Release
+		{3B6CE5C9-073D-4CCD-ACD8-F751F9F21164}.Release|Any CPU.Build.0 = Release
+		{D5CDED2B-C8A7-4C97-9167-D94385DC1EE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5CDED2B-C8A7-4C97-9167-D94385DC1EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5CDED2B-C8A7-4C97-9167-D94385DC1EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5CDED2B-C8A7-4C97-9167-D94385DC1EE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

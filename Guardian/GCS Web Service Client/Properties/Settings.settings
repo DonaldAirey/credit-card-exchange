@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FluidTrade.Guardian.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WebServiceUser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">testwebsrvcDT</Value>
+    </Setting>
+    <Setting Name="WebServicePassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">53rV1c3</Value>
+    </Setting>
+    <Setting Name="BalanceCheckTime" Type="System.TimeSpan" Scope="Application">
+      <Value Profile="(Default)">10:30:00</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<script name="National Holdings Schedule">
+  <client name="DataModelClient" type="DataModelClient, FluidTrade.ClientDataModel" endpoint="TcpDataModelEndpoint" />
+	<method name="CreateCommissionScheduleEx" client="DataModelClient">
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="National Holdings SCHEDULE" />
+		<parameter name="name" value="National Holdings Schedule" />
+	</method>
+	<method name="CreateCommissionTrancheEx" client="DataModelClient">
+		<parameter name="commissionScheduleKey" value="National Holdings SCHEDULE" />
+		<parameter name="commissionTypeKey" value="PERCENT" />
+		<parameter name="commissionUnitKey" value="MARKET VALUE" />
+		<parameter name="configurationId" value="Default" />
+		<parameter name="externalId0" value="National Holdings TRANCHE 1" />
+		<parameter name="startRange" value="0" />
+		<parameter name="value" value="0.045" />
+	</method>
+</script>

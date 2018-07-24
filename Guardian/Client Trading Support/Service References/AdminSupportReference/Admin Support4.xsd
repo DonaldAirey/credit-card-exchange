@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/FluidTrade.Guardian" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/Guardian/Admin Support?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://localhost/Guardian/Admin Support?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="User" nillable="true" type="tns:User" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUser" nillable="true" type="tns:ArrayOfUser" />
+  <xs:complexType name="User">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GroupId" type="ser:guid" />
+      <xs:element minOccurs="0" name="LookupId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Organization" type="ser:guid" />
+      <xs:element minOccurs="0" name="UserId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="User" nillable="true" type="tns:User" />
+  <xs:complexType name="UserContextData">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:User">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountDisabled" type="xs:boolean" />
+          <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="AvailabeleOperations" nillable="true" type="q1:ArrayOfstring" />
+          <xs:element minOccurs="0" name="IsPasswordExpired" type="xs:boolean" />
+          <xs:element minOccurs="0" name="PasswordExpires" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ServerVersion" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UserContextData" nillable="true" type="tns:UserContextData" />
+  <xs:complexType name="ArrayOfOrganization">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Organization" nillable="true" type="tns:Organization" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrganization" nillable="true" type="tns:ArrayOfOrganization" />
+  <xs:complexType name="Organization">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ContactName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrganizationId" type="ser:guid" />
+      <xs:element minOccurs="0" name="TenantId" type="ser:guid" />
+      <xs:element minOccurs="0" name="TenantIdExternalId0" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TenantName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" type="tns:OrganizationType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Organization" nillable="true" type="tns:Organization" />
+  <xs:simpleType name="OrganizationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DebtHolder" />
+      <xs:enumeration value="DebtNegotiator" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OrganizationType" nillable="true" type="tns:OrganizationType" />
+  <xs:complexType name="ArrayOfUserContextData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserContextData" nillable="true" type="tns:UserContextData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserContextData" nillable="true" type="tns:ArrayOfUserContextData" />
+</xs:schema>
